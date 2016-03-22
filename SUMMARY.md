@@ -14,5 +14,5 @@
    * Code Quality and Testing
    * Shipping Software
    * Software Support
-* Access to e-Infrastructure
+* [Access to e-Infrastructure](e-infrastructure.md)
 
