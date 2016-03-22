@@ -5,7 +5,8 @@ There are several ways to improve software quality.
 # Coding style
 Here a very nice article about why coding styles matter, and increase software quality:
 [Improving software quality, why Coding Style Matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
-For eclipse, we will provide good default settings for formatting and cleaning your code, for different languages.
+
+See the collection of config files for automated coding style [here](https://github.com/NLeSC/knowledge/tree/master/software/config)
 
 Q: Do we want to enforce layout on commits to the repository?
 
@@ -13,7 +14,7 @@ Q: Do we want to enforce layout on commits to the repository?
 Use [.editorconfig](http://editorconfig.org/) to adhere to the basic code style
 rules.
 
-[download](https://github.com/NLeSC/wiki/wiki/attachments/.editorconfig) nlesc editor config file
+[download](https://github.com/NLeSC/knowledge/tree/master/software/config) nlesc editor config file.
 
 **editorconfig**  supports most of the editors. [Here](http://editorconfig.org/)
 you can download plugins for your editor of choice.
