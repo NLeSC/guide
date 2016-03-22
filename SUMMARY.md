@@ -10,7 +10,7 @@
    * [End of a Project](projects/end_of_a_project.md)
 * [Developing Software](software/software_overview.md)
    * Choosing Languages and Libraries
-   * Licensing Software
+   * [Licensing Software](software/licensing_software.md)
    * [Code Hosting and Version Management](software/version_management.md)
    * Code Quality and Testing
    * Shipping Software
