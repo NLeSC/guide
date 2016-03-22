@@ -7,4 +7,5 @@
    * [Project Reviews](projects/project_reviews.md)
    * [End of a Project](projects/end_of_a_project.md)
    * [Publishing Scientific Results](projects/publishing_results.md)
+* Developing Software
 
