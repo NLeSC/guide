@@ -1,3 +1,5 @@
+#Publishing Scientific Result
+
 ## Handling datasets and results
 Assuming you have only the software in a (private) git repo, you might want to also add and share with others the data and results related to that software:
 * Add also the data and figures using git lfs ([Git Large File Storage](https://git-lfs.github.com/)). 
