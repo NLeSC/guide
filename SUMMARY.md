@@ -16,7 +16,7 @@
    * [Continuous Integration](software/continuous_integration.md)
    * [Testing](software/testing.md)
    * [Writing Documentation](software/writing_documentation.md)
-   * Making Releases
+   * [Making Releases](software/making_releases.md)
    * [Software Support](software/support.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Reports](reports/reports.md)
