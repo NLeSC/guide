@@ -47,12 +47,12 @@ We will no no formal code reviews. However, for each project, there is a single 
 
 ## Software quality improvement tools
 
-There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a [[Continuous-Integration]] server. They are free for open source projects. We also run our own SonarQube instance.
+There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a Continuous-Integration server. They are free for open source projects. We also run our own SonarQube instance.
 
 ### SonarQube
 
 SonarQube (http://www.sonarqube.org/) is an open platform to manage code quality.
-On our [[Jenkins]] build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
+On our Jenkins build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
 Sonar Qube can analyze Java, Python and Javascript.
 
 ### [Code climate](https://codeclimate.com)
