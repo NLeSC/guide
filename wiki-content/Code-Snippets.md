@@ -1,2 +1,0 @@
-### Code snippets library
-Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. For example, Maarten van Meersbergen wrote several reusable GUI elements to handle colorspaces. We store these code snippets in git.
