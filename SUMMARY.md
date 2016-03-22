@@ -9,7 +9,7 @@
    * [Publishing Scientific Results](projects/publishing_results.md)
    * [End of a Project](projects/end_of_a_project.md)
 * [Developing Software](software/software_overview.md)
-   * Choosing Languages and Libraries
+   * [Choosing Languages and Libraries](software/choosing_languages_and_libraries.md)
    * [Licensing Software](software/licensing_software.md)
    * [Code Hosting and Version Management](software/version_management.md)
    * [Code Quality](software/code_quality.md)
