@@ -7,6 +7,7 @@
    * [Project Reviews](projects/project_reviews.md)
    * [End of a Project](projects/end_of_a_project.md)
    * [Publishing Scientific Results](projects/publishing_results.md)
+   * Project Planning
 * [Developing Software](software/software_overview.md)
    * Choosing Languages and Libraries
    * Licensing Software
