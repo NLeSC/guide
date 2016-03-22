@@ -1,3 +1,3 @@
 # Projects
 
-NLeSC is a projects based organization
+NLeSC is a projects based organization.
