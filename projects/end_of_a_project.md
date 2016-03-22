@@ -17,7 +17,7 @@ As this kind of documentation is only valuable if engineers can freely share the
 * pointers (URL) to project documentation
 * motivation for chosen approach,
 * high-level description of used or developed tools and references to them (github, website, )
-* escience presentation for (re-)use in the form of a powerpoint document (so the images, text, and or slides can be extracted). Check the pitch and project presentations to see if they are sufficient, ask coordinator.
+* eScience presentation for (re-)use in the form of a powerpoint document (so the images, text, and or slides can be extracted). Check the pitch and project presentations to see if they are sufficient, ask coordinator.
 
 
 
