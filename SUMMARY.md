@@ -10,7 +10,7 @@
 * [Developing Software](software/software_overview.md)
    * Choosing Languages and Libraries
    * Licensing Software
-   * Code Hosting and Version Management
+   * [Code Hosting and Version Management](software/version_management.md)
    * Code Quality and Testing
    * Shipping Software
    * Software Support
