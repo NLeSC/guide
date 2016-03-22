@@ -1,7 +1,5 @@
 # Kickoff Meeting
 
-#Kickoff
-
 Each project starts with a kickoff meeting at the NLeSC. At this meeting the PI, eScience engineer, Coordinator, and an MT-member are present. Other project partners are welcome.    
 
 For this meeting the standard agenda is:
