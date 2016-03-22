@@ -10,4 +10,5 @@
 * [Developing Software](software/software_overview.md)
    * Choosing Languages and Libraries
    * Licensing Software
+   * Code Hosting and Version Management
 
