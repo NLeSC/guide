@@ -13,9 +13,9 @@
    * [Licensing Software](software/licensing_software.md)
    * [Code Hosting and Version Management](software/version_management.md)
    * [Code Quality](software/code_quality.md)
+   * [Testing](software/testing.md)
    * Shipping Software
    * [Software Support](software/support.md)
-   * [Testing](software/testing.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Reports](reports/reports.md)
 
