@@ -9,4 +9,5 @@
    * [Publishing Scientific Results](projects/publishing_results.md)
 * [Developing Software](software/software_overview.md)
    * Choosing Languages and Libraries
+   * Licensing Software
 
