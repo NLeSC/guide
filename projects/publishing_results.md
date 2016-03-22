@@ -1,2 +1,3 @@
-# Publishing datasets, software, and results
+# Publishing Scientific Results
 
+(from the kb)
