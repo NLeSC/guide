@@ -9,6 +9,16 @@ To allow non-NLeSC employees to push changes to NLeSC repositories they can be a
 
 You can get a free GitHub Micro Plan (5 private repo's) on your own account if you ask nicely. Very useful when writing papers and such.
 
+## Git documentation:
+
+* Github help: http://help.github.com
+* Git homepage: http://git-scm.com/
+* Pro Git Online Book: http://git-scm.com/book
+* Reference: http://gitref.org/index.html
+* In depth book: [Version Control with Git](http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387/ref=sr_1_1?ie=UTF8&qid=1347950111&sr=8-1&keywords=git)
+* for those who know subversion and want to learn git: [Git - SVN Crash Course](http://git-scm.com/course/svn.html)
+
+
 ## branching model
 
 For a branching model, we will use [this](http://nvie.com/posts/a-successful-git-branching-model/) model. Graphical cheat-sheet for it be found [here](http://danielkummer.github.io/git-flow-cheatsheet/).
