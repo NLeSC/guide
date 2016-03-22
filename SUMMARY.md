@@ -12,7 +12,7 @@
    * Choosing Languages and Libraries
    * [Licensing Software](software/licensing_software.md)
    * [Code Hosting and Version Management](software/version_management.md)
-   * Code Quality
+   * [Code Quality](software/code_quality.md)
    * Shipping Software
    * [Software Support](software/support.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
