@@ -1,5 +1,8 @@
 #Publishing Scientific Results
 
+## Ready-to-go demos
+For many projects, we will prepare attractive demos. We want to be able to show a working demo at any moment in time. Therefore, we want to have special branches in git that contain fully stand-alone demos, including a slide deck, that can just be checked out and used directly.
+
 ## Handling datasets and results
 Assuming you have only the software in a (private) git repo, you might want to also add and share with others the data and results related to that software:
 * Add also the data and figures using git lfs ([Git Large File Storage](https://git-lfs.github.com/)). 
