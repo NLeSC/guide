@@ -37,3 +37,6 @@ Commit messages make a history of the repository. It is important that they are 
 
 Github has some interesting features that allow you to [close issues directly from commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
+## Code snippets library
+Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. For example, Maarten van Meersbergen wrote several reusable GUI elements to handle colorspaces. We store these code snippets in git.
+
