@@ -13,6 +13,6 @@
    * [Code Hosting and Version Management](software/version_management.md)
    * Code Quality and Testing
    * Shipping Software
-   * Software Support
+   * [Software Support](software/support.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 
