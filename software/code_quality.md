@@ -23,6 +23,8 @@ If you use eclipse, use [this plugin](https://github.com/ncjones/editorconfig-ec
 
 ### Style guides for different languages and frameworks
 
+If you cannot find here the style guide for particular language, check [google style guide page](https://code.google.com/p/google-styleguide/).
+
 #### Web development
 * [general front dev guidelines](https://github.com/bendc/frontend-guidelines)
 * [AngularJS styleguide](https://github.com/johnpapa/angular-styleguide)
@@ -31,7 +33,30 @@ If you use eclipse, use [this plugin](https://github.com/ncjones/editorconfig-ec
 #### Python
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 
-If you cannot find here the style guide for particular language, check [google style guide page](https://code.google.com/p/google-styleguide/).
+#### MATLAB
+
+Good Coding Practice By Example
+
+##### One assignment per line
+###### Good
+    a=1;
+    b=3;
+###### Bad
+    a=1;b=3;
+
+##### Use sensible variable names to iterate over for loops
+###### Good
+    nameStrings = {'John','Matthew','Veronica','Michael','Nico'};
+    nNames = numel(nameStrings);
+    for iName = 1:nNames
+        disp(nameStrings{iName})
+    end
+###### Bad
+    nameStrings = {'John','Matthew','Veronica','Michael','Nico'};
+    nNames = numel(nameStrings);
+    for x = 1:nNames
+        disp(nameStrings{x})
+    end
 
 ### Name spaces
 If your language supports namespaces, use **nl.esciencecenter**
