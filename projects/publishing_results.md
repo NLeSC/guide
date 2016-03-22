@@ -1,4 +1,4 @@
-#Publishing Scientific Result
+#Publishing Scientific Results
 
 ## Handling datasets and results
 Assuming you have only the software in a (private) git repo, you might want to also add and share with others the data and results related to that software:
