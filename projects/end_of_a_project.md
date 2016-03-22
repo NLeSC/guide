@@ -37,5 +37,5 @@ As this kind of documentation is only valuable if engineers can freely share the
 ### schedule
 
 * should be written during the last weeks of the project
-* Stored on the internal
+* Stored on the internal sharepoint site
 
