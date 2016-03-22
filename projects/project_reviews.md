@@ -6,7 +6,7 @@ by Scott and the PI, eScience engineer(s), eScience coordinator, Rob and other p
 
 The goals are as follows:
 
-* Progess of project relative to planning.
+* Progress of project relative to planning.
 * Innovation, research, deliverables, eStep.
 * Identify key success stories/messages to share with key opinion formers.
 * Ensure efficient use of engineer resources, identify bottlenecks and areas to improve.
@@ -20,4 +20,4 @@ The standard agenda for this 1.5 hour meeting is:
 * Presentation by the PI (20 minutes)
 * Presentation eScience Engineer (20 minutes)  including description of role and deliverables.
 * Discussion (40 minutes)
-* Summary, actionpoints and conclusions.
+* Summary, action points and conclusions.
