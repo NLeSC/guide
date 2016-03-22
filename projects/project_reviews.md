@@ -1,8 +1,6 @@
 # Project Reviews
 
-For all project longer than a year (typically full projects and alliances), the MT organizes annual reviews. The
-details are described in Section 9.4.2 of the protocol document. The annual reviews are organized and chaired 
-by Scott and the PI, eScience engineer(s), eScience coordinator, Rob and other partners (posdocs, co-PIs, etc) are present.
+For all project longer than a year (typically full projects and alliances), the MT organizes annual reviews. The details are described in Section 9.4.2 of the protocol document. The annual reviews are organized and chaired by an MT member, and the PI, eScience engineer(s), eScience coordinator, and other partners (posdocs, co-PIs, etc) are present.
 
 The goals are as follows:
 
