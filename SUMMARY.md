@@ -15,7 +15,7 @@
    * [Code Quality](software/code_quality.md)
    * [Continuous Integration](software/continuous_integration.md)
    * [Testing](software/testing.md)
-   * Writing Documentation
+   * [Writing Documentation](software/writing_documentation.md)
    * Making Releases
    * [Software Support](software/support.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
