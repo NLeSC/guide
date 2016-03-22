@@ -11,4 +11,5 @@
    * Choosing Languages and Libraries
    * Licensing Software
    * Code Hosting and Version Management
+   * Code Quality and Testing
 
