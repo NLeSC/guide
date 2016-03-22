@@ -16,7 +16,7 @@
    * Continuous Integration
    * [Testing](software/testing.md)
    * Writing Documentation
-   * Shipping Software
+   * Making Releases
    * [Software Support](software/support.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Reports](reports/reports.md)
