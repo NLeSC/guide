@@ -15,3 +15,27 @@ PS. If you want to get mails from Travis-CS then you have to login at https://tr
 
 At the NLeSC we run a [Jenkins-CI](http://jenkins-ci.org/) instance which is behind a login at https://ci.esciencecenter.nl .
 It is used for private repositories and repositories requiring HPC middlewares.
+
+Features of jobs:
+- compile project.
+- runs tests.
+- generates documentation.
+- triggers by GitHub commit.
+- notifications to commit author when unstable.
+- when applicable launches a SonarQube analysis, which can be viewed at https://sonar.esciencecenter.nl .
+
+## New job by copying existing job
+
+1. Create a new job
+    1. Give job name,
+    2. Select the 'Copy existing Job' and type name of existing job.
+    3. Press `OK`
+2. Adjust GitHub project url
+3. Adjust git repository url. Use https or ssh as protocol
+4. Make sure in the *Build Trigger* section the *Build when a change is pushed to GitHub* item is checked
+5. Go over all *Build steps* and *Post-build actions* and replace the existing names with the new ones.
+6. On the GitHub project > Settings > Service Hooks, check `Jenkins (github plugin`.
+    1. Jenkins Hook Url: *https://ci.esciencecenter.nl/github-webhook/*
+    2. Check activate and press `Update settings`.
+    3. Now any commit added to GitHub on the configure branch will start a Jenkins build.
+
