@@ -60,7 +60,7 @@ Any NLeSC employee can get a DAS-5 account, usually available within a few hours
 
 If needed a project can use commercial cloud resources, normally only if all SURF resources do not meet the requirements. As long as the costs are within limits these can come out of the NLeSC general project budget, for larger amounts the PI will need to provide funding.
 
-The standard commercial cloud provider used by NLeSC is Amazon. Microsoft has also shown interest in supplying interested projects with Azure access.
+The standard commercial cloud provider used by NLeSC is Amazon.
 
 ## Procolix
 
