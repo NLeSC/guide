@@ -2,7 +2,7 @@
 
 There are several ways to improve software quality.
 
-# Coding style
+## Coding style
 Here a very nice article about why coding styles matter, and increase software quality:
 [Improving software quality, why Coding Style Matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
 
@@ -10,7 +10,7 @@ See the collection of config files for automated coding style [here](https://git
 
 Q: Do we want to enforce layout on commits to the repository?
 
-## editor configuration
+### editor configuration
 Use [.editorconfig](http://editorconfig.org/) to adhere to the basic code style
 rules.
 
@@ -21,19 +21,19 @@ you can download plugins for your editor of choice.
 
 If you use eclipse, use [this plugin](https://github.com/ncjones/editorconfig-eclipse).
 
-## Style guides for different languages and frameworks
+### Style guides for different languages and frameworks
 
-### Web development
+#### Web development
 * [general front dev guidelines](https://github.com/bendc/frontend-guidelines)
 * [AngularJS styleguide](https://github.com/johnpapa/angular-styleguide)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
-### Python
+#### Python
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 
 If you cannot find here the style guide for particular language, check [google style guide page](https://code.google.com/p/google-styleguide/).
 
-## Name spaces
+### Name spaces
 If your language supports namespaces, use **nl.esciencecenter**
 
 # Static analysis
@@ -41,20 +41,19 @@ If your language supports namespaces, use **nl.esciencecenter**
 * Clang (C)
 * Valgrind (C)
 
-# Code reviews
+## Code reviews
 
 We will no no formal code reviews. However, for each project, there is a single person, called the integration manager, responsible for the repository. The integration manager is the only person who commits to the 'blessed' repository. A number of developers then clone from that repository, push to their own independent repositories, and ask the integrator to pull in their changes. If needed, the integration manager can perform a quality review of the code when he handles the pull request.
 
-# Software quality improvement tools
+## Software quality improvement tools
 
-## SonarQube
+There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a [[Continuous-Integration]] server. They are free for open source projects. We also run our own SonarQube instance.
+
+### SonarQube
 
 SonarQube (http://www.sonarqube.org/) is an open platform to manage code quality.
 On our [[Jenkins]] build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
 Sonar Qube can analyze Java, Python and Javascript.
-
-## Alternatives
-There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a [[Continuous-Integration]] server. They are free for open source projects.
 
 ### [Code climate](https://codeclimate.com)
 Can analyze Javascript (and Ruby, PHP).
@@ -72,15 +71,15 @@ For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashbo
 Can analyze Python (and PHP, Ruby).
 For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
 
-## [Landscape](https://landscape.io)
+### [Landscape](https://landscape.io)
 Can analyze Python. It is missing code coverage.
 For example project see https://landscape.io/github/NLeSC/MAGMa
 
-## [Coveralls](https://coveralls.io)
+### [Coveralls](https://coveralls.io)
 Can show code coverages over time for many languages including Java, Python and Javascript.
 For example project see https://coveralls.io/r/NLeSC/MAGMa
 
-## [Codecov](https://codecov.io)
+### [Codecov](https://codecov.io)
 Can show code coverages for many languages including Java, Python and Javascript.
 Shows unified coverage and separate coverage for matrix builds.
 For example project see https://codecov.io/github/NLeSC/Xenon
