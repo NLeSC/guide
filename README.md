@@ -1,5 +1,5 @@
 
 ![Header](images/ESCIENCE-KB-black-tape.jpg)
-# knowledge
+# Knowledge Base
 
-Knowledge Base GitBook
+This knowledge base is meant to provide a collection of HOWTO's, pointers, and "best practices" for and by the Netherlands eScience Center Research Engineers.
