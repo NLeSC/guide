@@ -14,4 +14,5 @@
    * Code Quality and Testing
    * Shipping Software
    * Software Support
+* Access to e-Infrastructure
 
