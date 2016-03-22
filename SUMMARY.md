@@ -13,7 +13,7 @@
    * [Licensing Software](software/licensing_software.md)
    * [Code Hosting and Version Management](software/version_management.md)
    * [Code Quality](software/code_quality.md)
-   * Continuous Integration
+   * [Continuous Integration](software/continuous_integration.md)
    * [Testing](software/testing.md)
    * Writing Documentation
    * Making Releases
