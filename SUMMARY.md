@@ -15,7 +15,7 @@
    * [Code Quality](software/code_quality.md)
    * Shipping Software
    * [Software Support](software/support.md)
-   * Testing
+   * [Testing](software/testing.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Reports](reports/reports.md)
 
