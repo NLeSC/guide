@@ -1,3 +1,5 @@
+# Code Quality
+
 There are several ways to improve software quality.
 
 # Coding style
