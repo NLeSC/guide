@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* Projects
+* [Projects](projects.md)
    * new Project()
 
