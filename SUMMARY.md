@@ -13,5 +13,5 @@
    * Code Hosting and Version Management
    * Code Quality and Testing
    * Shipping Software
-   * Software support
+   * Software Support
 
