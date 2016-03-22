@@ -1,0 +1,10 @@
+{
+    "plugins": ["edit-link", "multipart" ],
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/NLeSC/knowledge/edit/master",
+                "label": "Edit"
+            }
+    
+    }
+}
