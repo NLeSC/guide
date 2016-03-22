@@ -8,7 +8,9 @@ data sets in computer vision
 E. Ranguelova  
 August 2015  
 
-
+  
+  
+  
 [Modern Data Management Solutions](https://github.com/NLeSC/knowledge/raw/master/reports/Modern_Data_Management.pdf)  
 A Short Overview  
 M. Ivanova  
