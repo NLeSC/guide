@@ -17,6 +17,7 @@
    * [Testing](software/testing.md)
    * Shipping Software
    * [Software Support](software/support.md)
+   * Writing Documentation
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Reports](reports/reports.md)
 
