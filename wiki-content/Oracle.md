@@ -1,1 +1,0 @@
-We have expertise with the major database vendor system. We also use Oracle Spatial and Graph.
