@@ -2,7 +2,7 @@
     "plugins": ["edit-link", "multipart" ],
     "pluginsConfig": {
             "edit-link": {
-                "base": "https://github.com/NLeSC/project-guide/edit/master",
+                "base": "https://github.com/NLeSC/guide/edit/master",
                 "label": "Edit"
             }
     
