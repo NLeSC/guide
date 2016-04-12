@@ -18,6 +18,7 @@
   * [Writing Documentation](software/writing_documentation.md)
   * [Making Releases](software/making_releases.md)
   * [Software Support](software/support.md)
+  * [Language Specific Info](software/language_specific_info.md)
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
