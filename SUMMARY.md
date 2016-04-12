@@ -1,12 +1,14 @@
 # Summary
 
+
 * [Introduction](README.md)
-* [new Project()](new_project.md)
-* [Kickoff Meeting](kickoff_meeting.md)
-* [Project Planning](project_planning.md)
+* [Projects](projects/projects_overview.md)
+  * [new Project()](projects/new_project.md)
+  * [Kickoff Meeting](projects/kickoff_meeting.md)
+  * [Project Planning](projects/project_planning.md)
+  * [Project Reviews](projects/project_reviews.md)
+  * [End of a Project](projects/end_of_a_project.md)
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
-* [Project Reviews](project_reviews.md)
-* [End of a Project](end_of_a_project.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
 
