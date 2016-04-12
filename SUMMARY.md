@@ -2,7 +2,7 @@
 
 
 * [Introduction](README.md)
-* [Projects](projects/projects_overview.md)
+* [Projects](projects/project_overview.md)
   * [new Project()](projects/new_project.md)
   * [Kickoff Meeting](projects/kickoff_meeting.md)
   * [Project Planning](projects/project_planning.md)
