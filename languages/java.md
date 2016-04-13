@@ -1,59 +1,66 @@
-Java code has the big advantage of being very portable. Its recommended to use the latest official Oracle version (Java 7) if at all possible. OpenJDK is usually ok as well, but definitely avoid gcj.
+Java code has the big advantage of being very portable.
+
+# Recommended sources of information
+
+* [Javadoc API Documentation](http://docs.oracle.com/javase/8/docs/api/)
+
+# Installing Compilers and Runtimes
+
+Its recommended to use the latest official Oracle version (Java 8) if at all possible. OpenJDK is usually ok as well, but definitely avoid gcj.
 
 * [Download Oracle Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Javadoc API Documentation](http://docs.oracle.com/javase/7/docs/api/)
+* [Installing Oracle Java in Ubuntu (via Webupd8)](http://www.webupd8.org/2014/03/oracle-java-8-stable-released-install.html)
 
-###Installing Oracle Java 7 in Ubuntu
+# Editors and IDEs
 
-To install Ocracle Java 7 (or 6) in Ubuntu, use the webupd8 ppa:
+For Java we normally use the [Eclipse](https://www.eclipse.org/) IDE.
 
-http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
+# Coding style conventions
 
-After updating, don't forget to switch to it using:
+We follow the standard coding style defined by SUN.
 
-    update-java-alternatives -s java-7-oracle
+Latest version seems to be available [here](https://www.scribd.com/doc/15884743/Java-Coding-Style-by-Achut-Reddy).
 
-Do not use "update-alternatives --display java", as this only sets the java vm, not javac, jar, jconsole, etc.
+We have standard code formatting settings for eclipse.
 
-###Logging
+TODO: describe tabs-vs-spaces and indentation size.
+
+[code-format-nlesc-v2.xml](java-eclipse-config/code-format-nlesc-v2.xml)
+[code-cleanup-nlesc.xml](java-eclipse-config/code-cleanup-nlesc.xml)
+
+Automated checking of the code style can be done with PMD and FindBugs.
+
+TODO: add (a link to) our standard ruleset.
+
+# Building and packaging code
+
+As a build system we normally use [Gradle](http://gradle.org/). This also determines the project layout, and has standard features for packaging code.
+
+# Testing
+
+The standard unit testing framework in Java is [JUnit](http://junit.org/junit4/). Try to use Junit 4 if at all possible.
+
+Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For running and viewing Jacoco code coverage, use [eclemma](http://www.eclemma.org/)
+
+# Debugging and Profiling
+
+Use jConsole or jVisualVM.
+
+#Logging
 
 For logging, we use [the slf4j api](http://www.slf4j.org). The advantage of slf4j is that it is trivial to change logging implementations. The API distribution also contains a few simple implementations.
 
 To get logging info into Eclipse, one option is to use [logback beagle](http://logback.qos.ch/beagle).
 
-###Project directory tree conventions
+#Writing documentation
 
-* src - root of Java source
-* lib - external dependencies
-* build - temporary build files
-* dist - self-contained directory distribution (compiled jar files, copy of lib)
-* scripts - utility scripts (e.g. to start a main and set the classpath, etc)
+Java has the inbuild [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html) system for generating API documentation, usually in the form of HTML. Highly recommended.
 
-* Be careful when using 'bin' to store executables, as it is used by eclipse to generate class files to. 
-  It is recommend to change the default eclipse class output directory to for example 'build' or 'build/eclipse'. 
+#Recommended additional packages and libraries
 
+[JFreeChart](http://www.jfree.org/jfreechart/) is a Java library that allows to do nice looking charts.
 
-### Graphs
+#Available Templates
 
-JFreeChart is a Java library that allows to do nice looking charts.
-
-### Eclipse
-
-#### Java Code Style
-
-Formatter and cleanup can be imported into Eclipse by:
-
-1. Go to Window>Preferences 
-2. Go to Java>Code Style>Formatter
-3. Import [code-format-nlesc-v2.xml](java-eclipse-config/code-format-nlesc-v2.xml) (Updated 08-08-2013)
-4. Go to Java>Code Style>Clean Up
-5. Import [code-cleanup-nlesc.xml](java-eclipse-config/code-cleanup-nlesc.xml)
-
-#### Java Code coverage
-
-For running and viewing Jacoco code coverage, use eclemma
-
-- Website: http://www.eclemma.org/
-- Eclipse update site: http://update.eclemma.org/
-
+There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/nlesc/xenon) as an (rather complex) example.
 
