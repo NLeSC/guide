@@ -45,9 +45,9 @@ Formatter and cleanup can be imported into Eclipse by:
 
 1. Go to Window>Preferences 
 2. Go to Java>Code Style>Formatter
-3. Import [attachments/code-format-nlesc-v2.xml](attachments/code-format-nlesc-v2.xml) (Updated 08-08-2013)
+3. Import [code-format-nlesc-v2.xml](java-eclipse-config/code-format-nlesc-v2.xml) (Updated 08-08-2013)
 4. Go to Java>Code Style>Clean Up
-5. Import [attachments/code-cleanup-nlesc.xml](attachments/code-cleanup-nlesc.xml)
+5. Import [code-cleanup-nlesc.xml](java-eclipse-config/code-cleanup-nlesc.xml)
 
 #### Java Code coverage
 
