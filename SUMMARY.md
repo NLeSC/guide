@@ -9,6 +9,7 @@
   * [Project Reviews](projects/project_reviews.md)
   * [End of a Project](projects/end_of_a_project.md)
 * [Software Development](software/software_overview.md)
+<!--
   * [Choosing Languages and Libraries](software/choosing_languages_and_libraries.md)
   * [Licensing Software](software/licensing_software.md)
   * [Code Hosting and Version Management](software/version_management.md)
@@ -18,6 +19,7 @@
   * [Writing Documentation](software/writing_documentation.md)
   * [Making Releases](software/making_releases.md)
   * [Software Support](software/support.md)
+-->
 * [Language Guides](languages/languages_overview.md)
   * [Java](languages/java.md)
   * [JavaScript and TypeScript](languages/javascript.md)
