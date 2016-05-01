@@ -59,3 +59,16 @@ Pydev is the Python development environment for Eclipse.
 - Website: http://pydev.org/
 - Eclipse update site: http://pydev.org/updates
 
+## Testing
+
+* [unittest](https://docs.python.org/3/library/unittest.html) is a framework awailable in Python Standard Library
+* [nose](https://nose.readthedocs.org/en/latest/) extends `unittest` to priovide easier testing functionality. [Intro to nose by Titus Brown](http://ivory.idyll.org/articles/nose-intro.html)
+* [pytest](http://pytest.org/latest/) is a full featured Python testing tool, that can be used with `nose`, `unittest` and other Python testing tools.
+
+## Wrtiting Documentation
+
+Python uses **Docstrings** for function level documentation. You can read detail description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/).
+
+#### autogenerating the documentation
+It is possible to automatically generate documentation from docstrings with [pydoc](https://docs.python.org/2/library/pydoc.html) or [sphinx](http://sphinx-doc.org).
+

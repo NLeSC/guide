@@ -28,7 +28,7 @@ TODO: describe tabs-vs-spaces and indentation size.
 [code-format-nlesc-v2.xml](java-eclipse-config/code-format-nlesc-v2.xml)
 [code-cleanup-nlesc.xml](java-eclipse-config/code-cleanup-nlesc.xml)
 
-Automated checking of the code style can be done with PMD and FindBugs.
+Automated checking of the code style can be done with PMD and FindBugs.`
 
 TODO: add (a link to) our standard ruleset.
 
@@ -39,6 +39,10 @@ As a build system we normally use [Gradle](http://gradle.org/). This also determ
 ## Testing
 
 The standard unit testing framework in Java is [JUnit](http://junit.org/junit4/). Try to use Junit 4 if at all possible.
+
+Use following naming scheme to distinguish unit and integration tests:
+* Unit tests: **/Test*.java, **/*Test.java, and **/*TestCase.java
+* Integration tests: **/IT*.java, **/*IT.java, and **/*ITCase.java
 
 Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For running and viewing Jacoco code coverage, use [eclemma](http://www.eclemma.org/)
 

@@ -21,6 +21,7 @@
   * [Software Support](software/support.md)
 -->
 * [Language Guides](languages/languages_overview.md)
+  * [Generic and Multi-language tools](languages/generic.md)
   * [Java](languages/java.md)
   * [JavaScript and TypeScript](languages/javascript.md)
   * [Python](languages/python.md)

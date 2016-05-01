@@ -110,3 +110,4 @@ Shows unified coverage and separate coverage for matrix builds.
 For example project see https://codecov.io/github/NLeSC/Xenon
 
 For other choices see http://shields.io/ or https://github.com/ripienaar/free-for-dev#code-quality
+://codecov.io Develop academic models for sharing and disseminating research software.

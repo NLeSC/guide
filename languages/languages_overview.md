@@ -11,8 +11,9 @@ Each chapter should contain:
 - Coding style conventions
 - Building and packaging code
 - Testing
+- Code quality analysis tools and services
 - Debugging and Profiling
 - Logging
 - Writing documentation
 - Recommended additional packages and libraries
-- Available templates (on https://github.com/NLeSC-templates)
+- Available templates

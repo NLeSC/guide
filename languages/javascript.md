@@ -73,7 +73,19 @@ A simple webserver can be started from the directory you want to host files with
 
 ## Testing
 
-See [[Testing#javascript]] for unit testing and [[Testing#web-based-tests]] for integration tests.
+* [Jasmine](http://jasmine.github.io/), a behavior-driven development framework for testing JavaScript code.
+* [Karma](http://karma-runner.github.io/), Test runner, runs tests in web browser with code coverage. Use [PhantomJS](http://phantomjs.org/) as headless webbrowser on CI-servers.
+
+## Web based tests
+To interact with web-browsers use [Selenium](http://docs.seleniumhq.org/).
+
+Test with
+* Local web browser
+* Web browsers hosted by [Sauce Labs](https://saucelabs.com/), it has a matrix of web-browsers and Operating Systems. Free for open source projects.
+
+## AngularJS applications
+
+[AngularJS](http://angularjs.org/) applications can be tested with [Protractor](http://angular.github.io/protractor). Protractor uses Selenium.
 
 ## Syntax checking
 
@@ -92,6 +104,12 @@ There are 2 choices for Javascript development in Eclipse:
 One has outline in it's editor, while other editor has prettier highlighting.
 
 For server side Javascript use [node Eclipse](http://www.nodeclipse.org/)
+
+## Style Guides
+
+* [general front dev guidelines](https://github.com/bendc/frontend-guidelines)
+* [AngularJS styleguide](https://github.com/johnpapa/angular-styleguide)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 # TypeScript
 

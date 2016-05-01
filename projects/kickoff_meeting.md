@@ -22,5 +22,3 @@ In the NLeSC introduction presentation several important topics are explained:
 * Communication by the NLeSC (project page at NLeSC website, pitches, etc.).
 * Software and software quality.
 * Role of eStep, knowledge base, etc.
-
-TODO: Add link to standard kickoff slide deck

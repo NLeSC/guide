@@ -46,7 +46,7 @@ Make sure the source has a central build system that can compile the software, t
 [For more information on version control and Github, see this page.](https://github.com/NLeSC/wiki/wiki/Version-Control)
 
 # 6. Put your release in the NLeSC app store.
-More info on the app store will be announced soon.
+~~More info on the app store will be announced soon.~~
 
-# 7. Send an e-mail to Scott.
-Send an email announcing the release. He can make a news item on the web site, etc.
+# 7. Announce the release
+Send an email announcing the release to the communication team They can make a news item on the web site, etc.

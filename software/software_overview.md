@@ -1,4 +1,6 @@
-# Checklist with explanations
+# Software Development
+
+In this chapter we give an overview of the best practices for software development at NLeSC, including a rationale.
 
 ## [Version control](#version-control)
 
@@ -91,7 +93,7 @@ Think of it as a kind of code review but with focus on mechanics, not code. The 
 (ii) download works, (iii) there are instructions on how to (iv) install and (v) start using software,
 some of the things in this *scan* could be automated with continuous integration.
 
-### [notify Lode for dissemination](#notify-lode)
+### [Dissemination](#dissemination)
 
 news item on site / annual report, etc.
 
