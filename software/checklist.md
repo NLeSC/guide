@@ -1,8 +1,8 @@
 Checklist for 'eStep friendly' projects.
 
-## [Version control](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#version-control)
+## [Version control](software/version_control.md)
 
-- [version control from the beginning of the project](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#version-control-from-the-beginning-of-the-project)
+- [version control from the beginning of the project](software/version_control#version-control-from-the-beginning-of-the-project)
 - [use git as version control system (vcs)](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#use-git-as-version-control-system-vcs)
 - [choose one branching model](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#choose-one-branching-model)
 - [public vcs repository](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#public-vcs-repository)
