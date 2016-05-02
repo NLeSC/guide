@@ -1,4 +1,4 @@
-# [Version control](#version-control)
+# Version control
 
 To keep our code transparent and findable the preferred code hosting platform is Github and version management or scm is git. The repo preferable should be public from the start.
 
@@ -8,8 +8,9 @@ To allow non-NLeSC employees to push changes to NLeSC repositories they can be a
 
 You can get a free GitHub Micro Plan (5 private repo's) on your own account if you ask nicely. Very useful when writing papers and such.
 
-## [version control from the beginning of the project](#version-control-from-begining)
-## [use git as version control system (vcs)](#git-as-version-control)
+## Version Control From The Beginning Of The Project
+
+## Use git as version control system (vcs)
 
 Other VCS can be used if the project does not start in NLeSC and does not use git or when the prevailing VCS in particular community
 is not git. Even then changing VCS should be considered (especially if svn or other centralised system is used).
@@ -23,7 +24,7 @@ is not git. Even then changing VCS should be considered (especially if svn or ot
 * In depth book: [Version Control with Git](http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387/ref=sr_1_1?ie=UTF8&qid=1347950111&sr=8-1&keywords=git)
 * for those who know subversion and want to learn git: [Git - SVN Crash Course](http://git-scm.com/course/svn.html)
 
-## [choose one branching model](#choose-one-branching-model)
+## Choose one branching model
 
 Make the choice explicit in contribution guidelines, link to documentation on how to get started with it.
 NLeSC default choice is [GitHub flow branching model](https://guides.github.com/introduction/flow/)
