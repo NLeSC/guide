@@ -1,10 +1,10 @@
 Checklist for 'eStep friendly' projects.
 
-## [Version control](version-control)
+## [Version control](version_control)
 
-## [Version control](version-control.md)
+## [Version control](version_control.md)
 
-## [Version control](version-control.html)
+## [Version control](version_control.html)
 
 - [version control from the beginning of the project](software/version_control#version-control-from-the-beginning-of-the-project)
 - [use git as version control system (vcs)](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#use-git-as-version-control-system-vcs)
