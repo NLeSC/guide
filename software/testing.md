@@ -2,7 +2,7 @@
 
 These points do not apply to prototype / throwaway phase.
 
-## [unit tets](#unit-tests)
+## unit tests
 
 * [unit tests](https://en.wikipedia.org/wiki/Unit_testing)
 * [Guide: Writing Testable Code](http://misko.hevery.com/code-reviewers-guide/)
