@@ -7,6 +7,6 @@ This is a guide to projects and software development at the Netherlands eScience
 
 Read this book online on GitBook here: https://nlesc.gitbooks.io/guide/content/
 
-Download this book as a pdf from GitBook here: https://www.gitbook.com/download/pdf/book/nlesc/geospatial-handbook
+Download this book as a pdf from GitBook here: https://www.gitbook.com/download/pdf/book/nlesc/guide
 
 View the source and contribute on GitHub here: https://github.com/NLeSC/guide
