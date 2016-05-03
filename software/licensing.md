@@ -1,6 +1,6 @@
-# [Licensing](#licensing)
+# Licensing
 
-## [Apache 2 license](#apache-2)
+## Apache 2 license
 
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -10,12 +10,12 @@ already attached license or there are commercial partners that require different
 The formal text of the licence is here: http://www.apache.org/licenses/LICENSE-2.0.html
 An informal explanation of what that means is here: http://www.oss-watch.ac.uk/resources/apache2
 
-## [compatible licenses of all libraries](#compatible-licenses)
+## Compatible licenses of all libraries
 
 All software used in the project **MUST HAVE** compatible licenses. Compatibility should be checked
 when new external code is added to the project.
 
-## [NOTICE(.txt|.md)](#notice)
+## NOTICE(.txt|.md)
 
 Listing licenses, request citation of paper if applicable.
 

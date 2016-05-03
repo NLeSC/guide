@@ -1,4 +1,4 @@
-# [Testing](#testing)
+# Testing
 
 These points do not apply to prototype / throwaway phase.
 
@@ -7,7 +7,7 @@ These points do not apply to prototype / throwaway phase.
 * [unit tests](https://en.wikipedia.org/wiki/Unit_testing)
 * [Guide: Writing Testable Code](http://misko.hevery.com/code-reviewers-guide/)
 
-## [continuous integration](#continuous-integration)
+## Continuous integration
 
 To run testing, perform code quality analysis and build artifacts a Continuous Integration server can be used. The build will be performed every git push and pull request. Using a CI server will help with `it works for me` problems.
 NLeSC uses continuous integration services as much as possible when creating code.
@@ -39,19 +39,19 @@ Features of jobs:
 - notifications to commit author when unstable.
 - when applicable launches a SonarQube analysis, which can be viewed at https://sonar.esciencecenter.nl .
 
-## [continuous code coverage](#continuous-code-coverage)
+## Continuous code coverage
 
 and code quality metrics public, minimum 70% coverage required
 
 It is easy to generate those automatically, once the test are setup, with use of external services.
 
-## [end2end tests](#e2e-tests)
+## End2end tests
 
 For (web) user interfaces. [example with protractor and angular](https://angular.github.io/protractor/#/)
 
 Once the web page has any interface, e2e tests should be implemented.
 
-## [dependencies tracking](#dependencies-tracking)
+## Dependencies tracking
 
 [VersionEye](https://www.versioneye.com/),
 [David](https://david-dm.org/) or other service depending on codebase language.

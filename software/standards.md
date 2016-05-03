@@ -1,4 +1,4 @@
-# [Use standards](#use-standards)
+# Use standards
 
 ## exchange format (Unicode, W3C, OGN, NetCDF, etc)
 ## protocols (HTTP, TCP, TLS, etc)
