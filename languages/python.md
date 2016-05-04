@@ -10,6 +10,12 @@ Introduction to python for data science: http://skillsmatter.com/podcast/java-je
 
 For numerical work in Python, use NumPy and SciPy and their "vectorized" (MATLAB-style) computations. Good vectorized NumPy code can be several orders of magnitude faster than naive Python loops, and more readable as well.
 
+## Standard project/module layout
+
+The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
+
+Tt is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
+
 ### Anaconda package and environment manager
 The way to go if (your preferred version of) **Python is not available and you are not root** is to use the [Anaconda installer](http://continuum.io/downloads).
 
@@ -30,7 +36,6 @@ Very much recommended for all Python projects, since it fixes all Python depende
 But virtualenv is most handy if you want to **install Python modules when you are not root**. It involves only two commands!
 
 ### IPython
-[IPython](http://ipython.org) is a great alternative to default python shell.
 
 
 ### Plotting
@@ -70,7 +75,7 @@ Pydev is the Python development environment for Eclipse.
 * [nose](https://nose.readthedocs.org/en/latest/) extends `unittest` to priovide easier testing functionality. [Intro to nose by Titus Brown](http://ivory.idyll.org/articles/nose-intro.html)
 * [pytest](http://pytest.org/latest/) is a full featured Python testing tool, that can be used with `nose`, `unittest` and other Python testing tools.
 
-## Wrtiting Documentation
+## Writing Documentation
 
 Python uses **Docstrings** for function level documentation. You can read detail description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/).
 
