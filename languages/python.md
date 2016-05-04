@@ -10,12 +10,17 @@ Introduction to python for data science: http://skillsmatter.com/podcast/java-je
 
 For numerical work in Python, use NumPy and SciPy and their "vectorized" (MATLAB-style) computations. Good vectorized NumPy code can be several orders of magnitude faster than naive Python loops, and more readable as well.
 
-### Anaconda installer
+### Anaconda package and environment manager
 The way to go if (your preferred version of) **Python is not available and you are not root** is to use the [Anaconda installer](http://continuum.io/downloads).
 
 The standard .sh installs dozens of Python modules, likely everything you need.
+If you need more, the `conda` command acts like a package manager for Python packages.
+Use `conda install` to install new packages and `conda update` to keep your system up to date.
 
 Alternatively, if you just want Python, you can use the [Miniconda installer](http://conda.pydata.org/miniconda.html).
+
+The `conda` command can also be used to create virtual environments.
+The advantage of using `conda` over `virtualenv`/`pip` (see below) is that `conda` downloads compiled packages, whereas `pip` may need to compile things after downloading, which can take quite long.
 
 ### Python Virtual Environment
 Create isolated Python environments with [virtualenv](https://virtualenv.pypa.io/en/latest/).
