@@ -62,12 +62,11 @@ There are a set of web frameworks for Python that are very easy to run. We recom
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
 
-## Python development in Eclipse
+## Editor
 
-Pydev is the Python development environment for Eclipse.
+The standard IDE for Python is JetBrains [PyCharm](https://www.jetbrains.com/pycharm/).
 
-- Website: http://pydev.org/
-- Eclipse update site: http://pydev.org/updates
+[Pydev](http://pydev.org/) is the Python development environment for Eclipse. Add the update site http://pydev.org/updates to Eclipse.
 
 ## Testing
 
