@@ -16,24 +16,31 @@ The recommended layout for files/modules etc in Python is described by [Kenneth 
 
 Tt is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
 
-### Anaconda package and environment manager
-The way to go if (your preferred version of) **Python is not available and you are not root** is to use the [Anaconda installer](http://continuum.io/downloads).
+### Standard Python package management
 
-The standard .sh installs dozens of Python modules, likely everything you need.
-If you need more, the `conda` command acts like a package manager for Python packages.
-Use `conda install` to install new packages and `conda update` to keep your system up to date.
+Create isolated Python environments with [virtualenv](https://virtualenv.pypa.io/en/latest/). Very much recommended for all Python projects since it:
 
-Alternatively, if you just want Python, you can use the [Miniconda installer](http://conda.pydata.org/miniconda.html).
+* installs Python modules when you are not root,
+* contains all Python dependencies so the environment keeps working after an upgrade, and
+* lets you select the Python version per environment, so you can test code compatibility between Python 2.x and 3.x.
 
-The `conda` command can also be used to create virtual environments.
-The advantage of using `conda` over `virtualenv`/`pip` (see below) is that `conda` downloads compiled packages, whereas `pip` may need to compile things after downloading, which can take quite long.
+To manage multiple virtualenv environments and reference them only by name, use [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org). To create a new environment, run `mkvirtualenv environment_name`, to start using it, run `workon environment_name` and to stop working with it, run `deactivate`.
 
-### Python Virtual Environment
-Create isolated Python environments with [virtualenv](https://virtualenv.pypa.io/en/latest/).
+With virtualenv, pip is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so pip downloads and installs them as binaries. This means they have no build dependencies and are much faster to install. If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you have to revert to Conda (see below).
 
-Very much recommended for all Python projects, since it fixes all Python dependencies. These may otherwise break, e.g., after a Python upgrade. 
+To keep a log of the packages used in your package, run `pip freeze > requirements.txt` in the root of your package. If some of the packages listed in `requirements.txt` are needed during testing only, use an editor to move those lines to `test_requirements.txt`. Now your package can be installed with
+```
+pip install -r requirements.txt
+pip install -e .
+```
 
-But virtualenv is most handy if you want to **install Python modules when you are not root**. It involves only two commands!
+### Conda package and environment manager
+
+Conda acts as a replacement of virtualenv and pip. It easily installs binary dependencies, like Python itself or system libraries. Installation of packages that are not using `wheel` but have a lot of native code is much faster than `pip` because Conda does not compile the package, it only downloads compiled packages. The disadvantage of Conda is that the package needs to have a Conda build recipe. Many Conda build recipes already exist, but they are less common than the `setup.py` that generally all Python packages have.
+
+There are two main distributions of Conda: [Anaconda](http://continuum.io/downloads) and [Miniconda](http://conda.pydata.org/miniconda.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
+
+Use `conda install` to install new packages and `conda update` to keep your system up to date. The `conda` command can also be used to create virtual environments.
 
 ### IPython
 
