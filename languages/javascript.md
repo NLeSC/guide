@@ -52,8 +52,12 @@ grunt serve
 Our editor of choice is Eclipse (Kepler). You'll need to extend it by installing the Aptana Studio plugin. In Eclipse, go to 'Help', then select 'Install new software...', then click the 'Add...' button. Fill in ```http://download.aptana.com/studio3/plugin/install``` for Aptana Studio 3. 
 
 Alternative editors:
-* [Brackets](http://brackets.io/?lang=en), [screenshot](https://raw.githubusercontent.com/wiki/NLeSC/kb/attachments/screenshot-brackets.png)
-* [Atom](http://atom.io)
+* JetBeans [WebStorm](https://www.jetbrains.com/webstorm/),
+* Adobe [Brackets](http://brackets.io/?lang=en), [screenshot](https://raw.githubusercontent.com/wiki/NLeSC/kb/attachments/screenshot-brackets.png)
+* Github [Atom](http://atom.io)
+* Microsoft [Visual Studio Code](https://code.visualstudio.com)
+
+WebStorm and Visual Studio code have good support for TypeScript.
 
 ## Debugging
 
