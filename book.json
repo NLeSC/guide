@@ -7,4 +7,7 @@
             }
     
     }
+    "structure": {
+	"readme": "introduction.md"
+    }
 }
