@@ -97,8 +97,6 @@ checklist. If tools are not available, they should be checked manually.
 Here is a list of things to consider when looking at the program as a whole,
 rather than when looking at an individual file or change.
 
-(TODO: look at how this interacts with the eSTeP checklist)
-
 #### Documentation
 
 Documentation is a prerequisite for using, developing and reviewing the
