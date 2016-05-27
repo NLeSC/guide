@@ -10,6 +10,8 @@ This is a list of Conferences, Journals, and Workshops related to eScience.
 
 * [Conference of Research Software Engineers](http://www.software.ac.uk/news/2016-05-09-first-ever-conference-research-software-engineers-call-participation).
 
+There is also a [community page with a list of upcoming events](https://www.esciencecenter.nl/community) on the NLeSC Website.
+
 ## Journals
 
 
