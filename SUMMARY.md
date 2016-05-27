@@ -1,7 +1,6 @@
 # Summary
 
-
-* [Introduction](README.md)
+* [Introduction](introduction.md)
 * [Projects](projects/project_overview.md)
   * [new Project()](projects/new_project.md)
   * [Kickoff Meeting](projects/kickoff_meeting.md)
