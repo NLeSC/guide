@@ -25,6 +25,8 @@
   * [Python](languages/python.md)
   * [OpenCL and CUDA](languages/opencl-cuda.md)
   * [R](languages/r.md)
+  * [C and C++](languages/ccpp.md)
+  * [Fortran](languages/fortran.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)

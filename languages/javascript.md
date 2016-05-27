@@ -115,6 +115,27 @@ For server side Javascript use [node Eclipse](http://www.nodeclipse.org/)
 * [AngularJS styleguide](https://github.com/johnpapa/angular-styleguide)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
+## Code quality analysis tools and services
+
+### [Code climate](https://codeclimate.com)
+Can analyze Javascript (and Ruby, PHP).
+For example project see https://codeclimate.com/github/NLeSC/PattyVis
+
+### [Codacy](https://www.codacy.com)
+Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
+The analysis for Java and Python is not as good as for Javascript.
+The analysis is quite slow, as it analyzes each past commit.
+For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
+
+### [Coveralls](https://coveralls.io)
+Can show code coverages over time for many languages including Java, Python and Javascript.
+For example project see https://coveralls.io/r/NLeSC/MAGMa
+
+### [Codecov](https://codecov.io)
+Can show code coverages for many languages including Java, Python and Javascript.
+Shows unified coverage and separate coverage for matrix builds.
+For example project see https://codecov.io/github/NLeSC/Xenon
+
 # TypeScript
 
 http://www.typescriptlang.org

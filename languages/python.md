@@ -86,5 +86,29 @@ The standard IDE for Python is JetBrains [PyCharm](https://www.jetbrains.com/pyc
 Python uses **Docstrings** for function level documentation. You can read detail description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/).
 
 #### autogenerating the documentation
-It is possible to automatically generate documentation from docstrings with [pydoc](https://docs.python.org/2/library/pydoc.html) or [sphinx](http://sphinx-doc.org).
+It is possible to automatically generate documentation from docstrings with [pydoc](https://docs.python.org/2/library/pydoc.html) or [sphinx](http://sphinx-doc.org).A
 
+## Software quality improvement tools
+
+### [Codacy](https://www.codacy.com)
+Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
+The analysis for Java and Python is not as good as for Javascript.
+The analysis is quite slow, as it analyzes each past commit.
+For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
+
+### [Scrutinizer](https://scrutinizer-ci.com/)
+Can analyze Python (and PHP, Ruby).
+For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
+
+### [Landscape](https://landscape.io)
+Can analyze Python. It is missing code coverage.
+For example project see https://landscape.io/github/NLeSC/MAGMa
+
+### [Coveralls](https://coveralls.io)
+Can show code coverages over time for many languages including Java, Python and Javascript.
+For example project see https://coveralls.io/r/NLeSC/MAGMa
+
+### [Codecov](https://codecov.io)
+Can show code coverages for many languages including Java, Python and Javascript.
+Shows unified coverage and separate coverage for matrix builds.
+For example project see https://codecov.io/github/NLeSC/Xenon
