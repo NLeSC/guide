@@ -26,6 +26,7 @@
    * [OpenCL and CUDA](languages/opencl-cuda.md)
    * [R](languages/r.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
+   * [Overview](intellectual_property/overview.md)
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
