@@ -29,5 +29,4 @@
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
-* Test
 
