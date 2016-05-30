@@ -34,43 +34,11 @@ Google has a style guide for most languages [google style guide page](https://co
 
 ## Software quality improvement tools
 
-There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a Continuous-Integration server. They are free for open source projects. We also run our own SonarQube instance.
+There are several web services that analyze code. The analyze code when triggered by a git push and can ingest code coverage generated on a Continuous-Integration server. They are usually free for open source projects.
 
-### SonarQube
+See the language guides for good options per language.
 
-SonarQube (http://www.sonarqube.org/) is an open platform to manage code quality.
-On our Jenkins build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
-Sonar Qube can analyze Java, Python and Javascript.
-
-### [Code climate](https://codeclimate.com)
-Can analyze Javascript (and Ruby, PHP).
-For example project see https://codeclimate.com/github/NLeSC/PattyVis
-
-### [Codacy](https://www.codacy.com)
-Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
-The analysis for Java and Python is not as good as for Javascript.
-The analysis is quite slow, as it analyzes each past commit.
-For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
-
-### [Scrutinizer](https://scrutinizer-ci.com/)
-Can analyze Python (and PHP, Ruby).
-For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
-
-### [Landscape](https://landscape.io)
-Can analyze Python. It is missing code coverage.
-For example project see https://landscape.io/github/NLeSC/MAGMa
-
-### [Coveralls](https://coveralls.io)
-Can show code coverages over time for many languages including Java, Python and Javascript.
-For example project see https://coveralls.io/r/NLeSC/MAGMa
-
-### [Codecov](https://codecov.io)
-Can show code coverages for many languages including Java, Python and Javascript.
-Shows unified coverage and separate coverage for matrix builds.
-For example project see https://codecov.io/github/NLeSC/Xenon
-
-For other choices see http://shields.io/ or https://github.com/ripienaar/free-for-dev#code-quality
-://codecov.io Develop academic models for sharing and disseminating research software.
+For a list of choices see http://shields.io/ or https://github.com/ripienaar/free-for-dev#code-quality
 
 ## Name spaces
 If your language supports namespaces, use **nl.esciencecenter**
@@ -78,5 +46,4 @@ If your language supports namespaces, use **nl.esciencecenter**
 
 ## Code reviews
 
-~~We will no no formal code reviews. However, for each project, there is a single person, called the integration manager, responsible for the repository. The integration manager is the only person who commits to the 'blessed' repository. A number of developers then clone from that repository, push to their own independent repositories, and ask the integrator to pull in their changes. If needed, the integration manager can perform a quality review of the code when he handles the pull request.~~
-
+See the [Code Reviews](software_development/code_reviews.html) section.

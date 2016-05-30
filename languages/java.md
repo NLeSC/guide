@@ -46,6 +46,24 @@ Use following naming scheme to distinguish unit and integration tests:
 
 Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For running and viewing Jacoco code coverage, use [eclemma](http://www.eclemma.org/)
 
+## Code quality analysis tools and services
+
+### SonarQube
+
+SonarQube (http://www.sonarqube.org/) is an open platform to manage code quality.
+On our Jenkins build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
+Sonar Qube can analyze Java, Python and Javascript.
+
+### [Coveralls](https://coveralls.io)
+Can show code coverages over time for many languages including Java, Python and Javascript.
+For example project see https://coveralls.io/r/NLeSC/MAGMa
+
+### [Codecov](https://codecov.io)
+Can show code coverages for many languages including Java, Python and Javascript.
+Shows unified coverage and separate coverage for matrix builds.
+For example project see https://codecov.io/github/NLeSC/Xenon
+
+
 ## Debugging and Profiling
 
 Use jConsole or jVisualVM.

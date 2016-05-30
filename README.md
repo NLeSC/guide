@@ -9,4 +9,6 @@ Read this book online on GitBook here: https://nlesc.gitbooks.io/guide/content/
 
 Download this book as a pdf from GitBook here: https://www.gitbook.com/download/pdf/book/nlesc/guide
 
-View the source and contribute on GitHub here: https://github.com/NLeSC/guide
+If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
