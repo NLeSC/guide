@@ -27,6 +27,7 @@
    * [R](languages/r.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
    * [Overview](intellectual_property/overview.md)
+   * [Software Licenses](intellectual_property/software_licenses.md)
 * [Publishing Scientific Results](publishing_results.md)
 * [Access to e-Infrastructure](e-infrastructure.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
