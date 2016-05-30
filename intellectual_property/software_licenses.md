@@ -118,7 +118,7 @@ When creating a combined work, a further distinction can be made. _Strong_ copyl
     </tbody>
 </table>
 
-* Under any license for the MIT license
+ * Under any license for the MIT license
 ** Relicensing LGPL to GPL is allowed
 
 ### License compatibility
@@ -133,7 +133,5 @@ When you use different pieces of software together to solve a problem, and want 
 - Can the combined works be distributed, i.e. are the licenses compatible?
 - How should the result be licensed?
 
-
-
-
+The next section shows some examples of how this is done.
 
