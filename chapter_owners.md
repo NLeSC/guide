@@ -9,7 +9,7 @@ This is a list of who is end responsible for which part of the guide.
 * Language Guides: ?
   * Java: ?
   * JavaScript and TypeScript: ?
-  * Python: ?
+  * Python: Janneke van der Zwaan
   * OpenCL and CUDA: ?
   * R: ?
   * C and C++: ?
