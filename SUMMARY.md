@@ -27,6 +27,7 @@
    * [R](languages/r.md)
        * [Getting started](languages/R_getting_started.md)
        * [Data handling](languages/R_data_handling.md)
+       * Graphics
    * [C and C++](languages/ccpp.md)
    * [Fortran](languages/fortran.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
