@@ -25,7 +25,7 @@
    * [Python](languages/python.md)
    * [OpenCL and CUDA](languages/opencl-cuda.md)
    * [R](languages/r.md)
-       * Getting started
+       * [Getting started](languages/R_getting_started.md)
    * [C and C++](languages/ccpp.md)
    * [Fortran](languages/fortran.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
