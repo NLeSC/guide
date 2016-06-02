@@ -11,7 +11,7 @@ This is a list of who is end responsible for which part of the guide.
   * JavaScript and TypeScript: ?
   * Python: Janneke van der Zwaan
   * OpenCL and CUDA: ?
-  * R: ?
+  * R: Vincent van Hees
   * C and C++: ?
   * Fortran: ?
 * Intellectual Property: Lourens Veen
