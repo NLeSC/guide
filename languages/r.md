@@ -4,6 +4,3 @@ One of the strengths of R is the large number of available open source statistic
 
 
 
-#### building reports
-[knitr](http://yihui.name/knitr/) is R package designed to build dynamic reports in R. It's possible to generete on the fly new pdf or html documents with results of computations embedded inside.
-
