@@ -25,7 +25,7 @@
    * [Python](languages/python.md)
    * [OpenCL and CUDA](languages/opencl-cuda.md)
    * [R](languages/r.md)
-       * [Getting started](languages/R_getting_started.md)
+       * [Getting started](languages/rgetting_started_md.md)
        * [Data handling](languages/R_data_handling.md)
        * [Graphics](languages/R_graphics.md)
    * [C and C++](languages/ccpp.md)
