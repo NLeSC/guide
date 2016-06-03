@@ -28,7 +28,7 @@
        * [Getting started](languages/r-subsections/rgettingstarted.md)
        * [Data handling](languages/r-subsections/rdata_handling.md)
        * [Graphics](languages/r-subsections/rgraphics.md)
-       * Writting packages and documentation
+       * [Writting packages and documentation](languages/r-subsections/writting_packages_and_documentation.md)
    * [C and C++](languages/ccpp.md)
    * [Fortran](languages/fortran.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
