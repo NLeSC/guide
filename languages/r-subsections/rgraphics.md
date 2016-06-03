@@ -8,4 +8,5 @@ However, R also comes with plotting packages. Probably the most popular and powe
 #### building interactive web applications
 Thanks to [shiny.app](http://shiny.rstudio.com) it is possible to make interactive web application in R without the need to write javascript or html.
 
-
+#### building reports
+[knitr](http://yihui.name/knitr/) is R package designed to build dynamic reports in R. It's possible to generete on the fly new pdf or html documents with results of computations embedded inside.
