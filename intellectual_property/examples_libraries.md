@@ -91,9 +91,11 @@ Now, we will consider all three of the above examples at the same time.
   The xtas Python code should be licensed under our default Apache License v2, and the combined work under the GPL version 3 or higher.
 
 
-### PRIMAVERA
+### In the Clouds
 
-The PRIMAVERA project aims to develop high-resolution global climate models for simulating regional climate. As part of this project, new software will be developed. We would like to use (possibly modified versions of) the OpenIFS and Dales libraries in this software. The OpenIFS library (part of the ECMWF weather model code) is available under a proprietary license that allows running the program and making private modifications, but does not allow distributing the program or any derivatives. Dales is published under the GNU GPL version 3.
+For the project "Towards Large-Scale Cloud-Resolving Climate Simulations", we want to combine the OpenIFS global circulation model with the DALES large-eddy simulation model. Both these models are available as libraries, so the project entails combining (possibly modified versions of) the OpenIFS and Dales libraries into a single program.
+
+The OpenIFS library (part of the ECMWF weather model code) is available under a proprietary license that allows running the program and making private modifications, but does not allow distributing the program or any derivatives. Dales is published under the GNU GPL version 3.
 
 - How many separate works are there, and what is derived from what?
 
@@ -107,11 +109,13 @@ The PRIMAVERA project aims to develop high-resolution global climate models for 
 
   The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project within NLeSC without violating the licenses, as long as we do not share the results with anyone.
 
-  However, as in any project we work together with a principal investigator outside NLeSC. If both the PI and NLeSC develop the software together, aren't we distributing our changed versions to each other? The GPL version 3 says the following about this:
+  However, as in any project we work together with a principal investigator outside NLeSC. If both the PI and NLeSC develop the software together, does that still count as private, or are we distributing our changed versions to each other? The GPL version 3 says the following about this:
 
   > You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
 
-  This wording is clearly written to allow hiring contractors to work on private modifications, and doesn't seem to apply well to the collaborative relationship we have with our PIs. If there is any question as to how a license applies to a particular case, then it is best to contact the copyright owners and ask them whether what you want to do is okay. Getting explicit permission is a great way of reducing legal risk.
+  This wording is clearly written to allow hiring contractors to work on private modifications, and doesn't seem to apply well to the collaborative relationship we have with our PIs. On the other hand, we're still not making copies available to the public.
+
+  In a situation like this, when there is any question as to how a license applies to a particular case, it is best to contact the copyright owners and ask them whether what you want to do is okay. Getting explicit permission is a great way of reducing legal risk.
 
 
 ### Trademarks
