@@ -130,8 +130,8 @@ If two licenses specify incompatible constraints on the license of the combined 
 When you use different pieces of software together to solve a problem, and want to distribute the result, here are the questions you have to answer:
 
 - How many separate works are there, and what is derived from what?
-- Can the combined works be distributed, i.e. are the licenses compatible?
-- How should the result be licensed?
+- Can the works be distributed, i.e. do the licenses allow this and are they compatible?
+- How should the work(s) be licensed?
 
 The next section shows some examples of how this is done.
 

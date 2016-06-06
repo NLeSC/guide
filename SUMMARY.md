@@ -30,6 +30,7 @@
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
    * [Overview](intellectual_property/overview.md)
    * [Software Licenses](intellectual_property/software_licenses.md)
+   * [Examples](intellectual_property/examples.md)
 * [Publishing Scientific Results](publishing/publishing_results.md)
 	* [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
 * [Access to e-Infrastructure](e-infrastructure/e-infrastructure.md)
