@@ -12,3 +12,7 @@ Please use branches and pull requests to contribute content. You can also view t
 
 https://nlesc.gitbooks.io/guide/content/v/BRANCH_NAME
 
+## Chapter Owners
+
+To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
+

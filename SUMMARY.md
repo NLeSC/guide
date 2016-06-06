@@ -35,3 +35,4 @@
 	* [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
 * [Access to e-Infrastructure](e-infrastructure/e-infrastructure.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
+	* [Chapter Owners](chapter_owners.md)
