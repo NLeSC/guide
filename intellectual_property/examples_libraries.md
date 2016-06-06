@@ -91,6 +91,29 @@ Now, we will consider all three of the above examples at the same time.
   The xtas Python code should be licensed under our default Apache License v2, and the combined work under the GPL version 3 or higher.
 
 
+### PRIMAVERA
+
+The PRIMAVERA project aims to develop high-resolution global climate models for simulating regional climate. As part of this project, new software will be developed. We would like to use (possibly modified versions of) the OpenIFS and Dales libraries in this software. The OpenIFS library (part of the ECMWF weather model code) is available under a proprietary license that allows running the program and making private modifications, but does not allow distributing the program or any derivatives. Dales is published under the GNU GPL version 3.
+
+- How many separate works are there, and what is derived from what?
+
+  There are six works: OpenIFS, modified OpenIFS, Dales, modified Dales, the rest of the program written by us, and the combination of them all.
+
+- Can the works be distributed, i.e. do the licenses allow this and are they compatible?
+
+  The OpenIFS license does not allow redistribution, so it cannot be distributed. Dales can be distributed, under the GPLv3. The rest of the program is written by us and can be distributed. The whole combined work cannot be distributed, since it incorporates OpenIFS. If it did not include OpenIFS, it would have to be distributed under the GPLv3, because of the Dales dependency.
+
+- Can we work on this privately, without distributing anything?
+
+  The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project within NLeSC without violating the licenses, as long as we do not share the results with anyone.
+
+  However, as in any project we work together with a principal investigator outside NLeSC. If both the PI and NLeSC develop the software together, aren't we distributing our changed versions to each other? The GPL version 3 says the following about this:
+
+  > You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+
+  This wording is clearly written to allow hiring contractors to work on private modifications, and doesn't seem to apply well to the collaborative relationship we have with our PIs. If there is any question as to how a license applies to a particular case, then it is best to contact the copyright owners and ask them whether what you want to do is okay. Getting explicit permission is a great way of reducing legal risk.
+
+
 ### Trademarks
 
 Unicode is a registered trademark of Unicode, Inc. in the United States and other countries.
