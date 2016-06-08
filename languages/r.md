@@ -2,7 +2,7 @@
 
 One of the strengths of R is the large number of available open source statistical packages. They can be found on [The Comprehensive R Archive Network](http://cran.r-project.org).
 
-#### Advantages compared with other tools
+#### Advantages compared with other languages
 
 * Open source compared with statistical software packages like Stata, SAS and SPSS
 1. No need for notebooks like in Python, RStudio provides an interactive programming interface where you can quickly inspect variable values and run sections of the code (select section and then Ctrl+Enter). Consequently R also does not have the problems with merging notebooks.
