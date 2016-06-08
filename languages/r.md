@@ -9,10 +9,10 @@ Statistical package:
 
 R versus Python:
 * R does not need notebooks to program interactively. RStudio provides an interactive programming interface where the user can quickly inspect variable values or run sections of the code (select section and then Ctrl+Enter). Consequently R also does not have the problems with merging notebooks on github.
-
-* R is based on C by which speed of code is heavily dependent on how well you master R. There are plenty of tricks in R to avoid programming looks.
-* R syntax is backward well compatible. So, no Pythonic discussion about what version to use, just download the most recent version.
-* R comes with detailed compulsory function documentation for every package contributed
+* Indexing of object dimensions is intuitive for the domain scientists:  value 2, 3 and 4 of an object are selected as 2:4
+* The speed of R code is dependent on well you are able to avoid using loops. R is based on C and it is possible to speed up your R code by writing aspects in C. R can work with Spark and MapReduce, and also comes with some parallel processing tools like packages: parallel and foreach.
+* R syntax is backward compatible, so need for a discussion about what version to use, just download the most recent version.
+* For every package contributed R comes with detailed compulsory function documentation.
  
 
 
