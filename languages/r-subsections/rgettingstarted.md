@@ -8,4 +8,4 @@ R programs can be writen in any editor of choice and run on the command line. R 
 
 [RSudio](http://www.rstudio.com/products/RStudio/) is a free powerfull integrated development environment (IDE) for R. It features editor with code completion, command line environment, file manager, package manager and history lookup among others.
 
-Within RStudio you can work on ad-hoc code or create a project. A project is like a virtual environment in Python as it preserves the working environment for a specific project. Further, creating a project is also the starting point for creating an R package.
+Within RStudio you can work on ad-hoc code or create a project. Compared with Python an R project is like a virtual environment as it preserves the working environment for a specific project. Creating a project is needed to build an R package.
