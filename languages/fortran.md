@@ -36,5 +36,7 @@ standard conventions, described in the [official documentation](http://www.fortr
 * Use free-form text input style (the default), with a maximal line width well below the 132 characters imposed by the Fortran90 standard.
 * When a method does not need to alter any data in any module and returns a single value, use a function for it, otherwise use a subroutine. Minimize the latter to reasonable extent.
 * Use the intent attributes in subroutine variable declarations as it makes the code much easier to understand.
-* Use a data-driven approach to the architecture, do not use the object-oriented features of Fortran90 if they cause performance degradation. Encapsulation by modules is perfectly acceptable.
-* Provide a test suite with your code, containing both unit and integration tests.
+* Use a performance-driven approach to the architecture, do not use the object-oriented features of Fortran90 if they slow down execution. Encapsulation by modules is perfectly acceptable.
+* Add concise comments to modules and routines, and add comments to less obvious lines of code.
+* Provide a test suite with your code, containing both unit and integration tests. Both automake and cmake provide test
+  suite functionality; if you create your makefile yourself, add a separate testing target.
