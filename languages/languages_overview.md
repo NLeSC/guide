@@ -31,3 +31,12 @@ At NLeSC we prefer Java and Python over C++ and Perl, as these languages in gene
 - OpenCL and CUDA
 - R
 
+## Selecting tools and libraries
+
+To get some inspiration on available tools and libraries see this awesome list:
+
+https://getawesomeness.herokuapp.com/
+
+and this list of free-for-opensource services:
+
+https://github.com/ripienaar/free-for-dev
