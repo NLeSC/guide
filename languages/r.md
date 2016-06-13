@@ -18,7 +18,7 @@ Some comparisons with Python:
 Not needed
 
 #### Editors and IDEs
-RStudio is the best EDI for R. You will have to install this in addition to installing R.
+RStudio is the best EDI for R. You will have to install this in addition to installing R. See [paragraph](./r-subsections/rgettingstarted.md) on getting started with R.
 
 #### Coding style conventions
 
