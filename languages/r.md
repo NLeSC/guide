@@ -24,7 +24,7 @@ RStudio is the best EDI for R. You will have to install this in addition to inst
 #### Coding style conventions
 Please see R style conventions as posted by Hadley Wickham in: http://adv-r.had.co.nz/Style.html
 
-One style conversion that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials you will see that authors use 'a <- 3' syntax to assign value 3 to object 'a'. However, R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered be more efficient and readable. Further, the = syntax avoids risk for typos like a < -1, which will produce a boolean, and a <- 1 which will produce a numeric value. Further, the = syntax may be more natural for you when you previously used it in a different language.
+One style convention aspect that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use 'a <- 3' syntax to assign value 3 to object 'a'. However, R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids risk for typos like a < -1, which will produce a boolean, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in a other computing languages.
 
 In the example below I have shown the practical difference between the two types of syntax:
 - addone = function(x) return(x + 1)
@@ -34,11 +34,11 @@ In the example below I have shown the practical difference between the two types
 - addone(b=3)
   - will throw an error message because the function does not know argument b
 - addone(b<-3)
-  - will produce 4 as it will first assign 3 to b and then uses b as input argument for addone
+  - will produce 4 as it will first assign 3 to b and then uses b as value for the first argument in addone, which happens to be x
 - addone(x=3)
   - will produce 4 as it will assign 3 to known function argument x
 
-The <- supporters would argue that this demonstrates that = should be avoided. However, if you favour the = syntax then you should use your own convention to only assign values to expected input arguments by the function (x in the example above) and to never introduce new objects as part of a function call (b in the example above).
+The <- supporters will argue that this demonstrates that = should be avoided. However, if you really do not want to give up on the = syntax then you should only use it for assigning values to input arguments that are expected by the function (x in the example above) and to never introduce new R objects as part of a function call (b in the example above).
 
 #### Building and packaging code 
 Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
