@@ -119,6 +119,7 @@ The OpenIFS library (part of the ECMWF weather model code) is available under a 
 
   In a situation like this, when there is any question as to how a license applies to a particular case, it is best to contact the copyright owners and ask them whether what you want to do is okay. Getting explicit permission is a great way of reducing legal risk.
 
+  Another option is to try to distance the components as much as possible, e.g. by having them communicate over a very generic protocol. Just like a web browser is not a derivative work of a web server just because it is designed to connect to one via HTTP, the components could then be considered separate works. One might argue that this is disingenious however, and violates the spirit of the license. Much will depend on the specific situation.
 
 ### Trademarks
 
