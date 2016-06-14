@@ -1,4 +1,4 @@
-## Examples
+## Examples: Using Libraries
 
 Many of the examples in this section relate to [xtas](http://xtas.net). xtas is a natural language processing toolkit for Python that reuses many third-party libraries, programs and data sets, and therefore provides a variety of nice examples.
 
