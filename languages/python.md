@@ -75,6 +75,10 @@ The recommended layout for files/modules etc in Python is described by [Kenneth 
 
 It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
 
+Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that is more NLeSC-like, but not perfect (e.g., needs replacing of project name).
+
+An alternative might be to create a project template using (for example) [cookiecutter](https://github.com/audreyr/cookiecutter). This solution needs more research.
+
 ## Dependencies and package management
 
 Use `pip` or `conda` (note that pip and conda can be used side by side, see also [what is the difference between pip and conda?](http://stackoverflow.com/questions/20994716/what-is-the-difference-between-pip-and-conda)).
