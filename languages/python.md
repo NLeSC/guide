@@ -15,6 +15,7 @@ Generally, Python 2.x is legacy, Python 3.x is the present and future of the lan
 
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
+* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
 ### General scientific
 
@@ -118,9 +119,10 @@ Use `conda install` to install new packages and `conda update` to keep your syst
 
 ## Testing
 
-* [unittest](https://docs.python.org/3/library/unittest.html) is a framework awailable in Python Standard Library
+* [unittest](https://docs.python.org/3/library/unittest.html) is a framework awailable in Python Standard Library. [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
 * [nose](https://nose.readthedocs.org/en/latest/) extends `unittest` to provide easier testing functionality. [Intro to nose by Titus Brown](http://ivory.idyll.org/articles/nose-intro.html)
 * [pytest](http://pytest.org/latest/) is a full featured Python testing tool, that can be used with `nose`, `unittest` and other Python testing tools.
+* [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
 
 Please use `nose` (aka `nosetests`), because nose tests are more readable and easier to run.
 
@@ -134,6 +136,14 @@ Python uses **Docstrings** for function level documentation. You can read a deta
 * [Sphinx](http://sphinx-doc.org) (uses reStructuredText as its markup language)
   * [sphinx tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
   * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html))
+
+## Debugging
+
+TODO
+
+## Profiling
+
+TODO
 
 ## Software quality improvement tools
 
