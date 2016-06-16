@@ -1,5 +1,5 @@
 ## What is R?
-R is a programming language and software environment for statistical computing and graphics, for more information see: https://www.r-project.org/. See paragraph on getting started [here](./r-subsections/rgettingstarted.md)
+R is a programming language and software environment for statistical computing and graphics, for more information see: https://www.r-project.org/. See paragraph on getting started [here](./r-subsections/rgettingstarted.md) for instructions on how to install R.
 
 ### Phylosophy and typical use cases
 R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), image analyses, and neuro-linguistic programming. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment.
