@@ -44,21 +44,6 @@ The <- supporters will argue that this example demonstrates that = should be avo
 
 From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
-#### Building and packaging code 
-Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
-
-#### Testing
-...
-#### Code quality analysis tools and services
-...
-#### Debugging and Profiling
-Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
-For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
-
-#### Logging
-...
-#### Writing documentation
-Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
 
 #### Recommended additional packages and libraries
 See paragraph on graphics [here](./r-subsections/rgraphics.md).
