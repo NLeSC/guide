@@ -89,10 +89,10 @@ Use ?functionname to access fucntion documentation.
 
 # Package development
 
-## Building R packages
+### Building R packages
 There is a great tutorial written by Hadley Wickam describing all the nitty gritty of building your own package in R. It's called [R packages](http://r-pkgs.had.co.nz).
 
-## Package documentation
+### Package documentation
 Read [Documentation](http://r-pkgs.had.co.nz/man.html) chapter of Hadleys [R packages](http://r-pkgs.had.co.nz) book for details about documenting R code.
 
 Customary R uses `.Rd` files in `/man` directory for documentation. These files are folders are automatically created by RStudio when you create a new project from your existing R-function files.  
@@ -101,9 +101,8 @@ If you use 'roxygen' function level comments starting with `#'` are recognised b
 
 R function documentation offers plenty of space to document the functionality, including code examples, literature references, and links to related functions. Nevertheless, it can sometimes be helpful for the user to also have a more generic description of the package with for example use-cases. You can do this with a `vignette`. Read more about vignettes in [Package documentation](http://r-pkgs.had.co.nz/vignettes.html) chapter of Hadleys [R packages](http://r-pkgs.had.co.nz) book.
 
-## Building reports
+### Building reports
 [knitr](http://yihui.name/knitr/) is R package designed to build dynamic reports in R. It's possible to generete on the fly new pdf or html documents with results of computations embedded inside.
-
 
 
 # Available templates
@@ -111,16 +110,17 @@ http://rapport-package.info/
 http://shiny.rstudio.com/articles/templates.html
 http://rmarkdown.rstudio.com/developer_document_templates.html
 
-# Testing, Debugging and Profiling
+# Testing, Checking, Debugging and Profiling
 
+### Testing and checking
 [Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`.
 
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
+### Debugging and profelling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
 
 ### Not in this tutorial yet:
-* Code quality analysis tools and services
 * Logging
 
