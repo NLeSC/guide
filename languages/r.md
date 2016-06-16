@@ -15,8 +15,6 @@ Some remarks for readers familiar with Python:
 ### Recommended sources of information
 Some R packages have their own google.group. All R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz). Further, stackoverflow and google should answer most of your questions.
 
-
-
 ### Coding style conventions
 It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
 
@@ -40,9 +38,8 @@ The <- supporters will argue that this example demonstrates that = should be avo
 From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
 ### Recommended additional packages and libraries
-See paragraph on graphics [here](./r-subsections/rgraphics.md)
-See paragraph on data handling [here](./r-subsections/rdata_handling.md)
-
+See paragraph on graphics packages and functions [here](./r-subsections/rgraphics.md)
+See paragraph on data handling packages and functions [here](./r-subsections/rdata_handling.md)
 
 ### Available templates
 http://rapport-package.info/
