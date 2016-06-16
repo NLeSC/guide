@@ -48,6 +48,18 @@ From a computer science perspective it is probably best to adhere to the <- conv
 #### Recommended additional packages and libraries
 See paragraph on graphics [here](./r-subsections/rgraphics.md).
 See paragraph on data handling [here](./r-subsections/rdata_handling.md).
+
 #### Available templates
 ...
 
+#### Testing
+* [testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`.
+
+#### Code quality analysis tools and services
+...
+
+#### Debugging and Profiling
+Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
+
+#### Logging
+...
