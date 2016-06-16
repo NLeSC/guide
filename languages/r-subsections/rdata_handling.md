@@ -18,6 +18,7 @@ As in many computing languages loops should be avoided in R. Here is a list of t
 * table() for getting a frequency table of categorical data
 * grep()
 * gsub()
+* dplyr package, see [also](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
 Use ?functionname to access fucntion documentation.
 
