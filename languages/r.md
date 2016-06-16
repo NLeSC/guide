@@ -15,7 +15,6 @@ Some remarks for readers familiar with Python:
 ### Recommended sources of information
 Stackoverflow, some R packages have their own google.group, and all R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz).
 
-
 ### Installing compilers and runtimes
 ...
 
