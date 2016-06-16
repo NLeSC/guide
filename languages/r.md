@@ -22,9 +22,9 @@ Stackoverflow, some R packages have their own google.group, and all R functions 
 RStudio is the best EDI for R. You will have to install this in addition to installing R. See [paragraph](./r-subsections/rgettingstarted.md) on getting started with R.
 
 #### Coding style conventions
-It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is similar to the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
+It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
 
-One point in both style conventions has resulted in some discussion being the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. 'a <- 3' to assign value 3 to object 'a'. Please note that R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids the risk for typos like a < -1, which will produce a boolean if a exists, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in a other computing languages.
+One point in both style conventions that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. 'a <- 3' to assign value 3 to object 'a'. Please note that R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids the risk for typos like a < -1, which will produce a boolean if a exists, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in a other computing languages.
 
 The difference between '<-' and '=' is mainly related to scoping, for an official R definition look [here](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html). The example below demonstrates the difference in behaviour:
 
@@ -39,9 +39,9 @@ Define a simple function named addone to add 1 to the function input:
 - addone(x=3)
   - will produce 4 as it will assign 3 to known function argument x
 
-The <- supporters will argue that this demonstrates that = should be avoided. However, it also demonstrates that = syntax can work in the context of function input if you only use = for assigning values to input arguments that are expected by the function (x in the example above) and to never introduce new R objects as part of a function call (b in the example above).
+The <- supporters will argue that this example demonstrates that = should be avoided. However, it also demonstrates that = syntax can work in the context of function input if = is only used for assigning values to input arguments that are expected by the function (x in the example above) and to never introduce new R objects as part of a function call (b in the example above).
 
-From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is possible to develop code with = and transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
+From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
 #### Building and packaging code 
 Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
@@ -51,7 +51,8 @@ Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
 #### Code quality analysis tools and services
 ...
 #### Debugging and Profiling
-...
+Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+
 #### Logging
 ...
 #### Writing documentation
