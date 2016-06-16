@@ -15,9 +15,6 @@ Some remarks for readers familiar with Python:
 ### Recommended sources of information
 Some R packages have their own google.group. All R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz). Further, stackoverflow and google should answer most of your questions.
 
-### Installing compilers and runtimes
-See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html). Not needed as most functions in R are already compile in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html).
-
 
 
 ### Coding style conventions
