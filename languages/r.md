@@ -16,7 +16,7 @@ Some remarks for readers familiar with Python:
 Stackoverflow, some R packages have their own google.group, and all R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz).
 
 ### Installing compilers and runtimes
-...
+See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html). Not needed as most functions in R are already compile in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html).
 
 #### Editors and IDEs
 RStudio is the best EDI for R. You will have to install this in addition to installing R. See [paragraph](./r-subsections/rgettingstarted.md) on getting started with R.
