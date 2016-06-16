@@ -2,12 +2,12 @@
 R is a programming language and software environment for statistical computing and graphics, for more information see: https://www.r-project.org/.
 
 ## Phylosophy and typical use cases
-R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), image analyses, and neuro-linguistic programming. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment.
+R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), image analyses, and neuro-linguistic programming. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment in science.
 
 One of the strengths of R is the large number of available open source statistical packages of developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
-* Compared with Python, R does not really need a notebook to program interactively. In RStudio the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently R also does not have problems equivalent to merging notebooks on github and you can quickly transition from working with scripts to working interactively using the Ctrl+Enter key and back.
+* Compared with Python, R does not really need a notebook to program interactively. In EDI RStudio the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently you can quickly transition from working with scripts to working interactively using the Ctrl+Enter key and back.
 * Numbering in R starts with 1 and not with 0.
 
 ### Recommended sources of information
@@ -68,10 +68,10 @@ Thanks to [shiny.app](http://shiny.rstudio.com) it is possible to make interacti
 [knitr](http://yihui.name/knitr/) is R package designed to build dynamic reports in R. It's possible to generete on the fly new pdf or html documents with results of computations embedded inside.
 
 
-## preparing data for analysis
+## Preparing data for analysis
 There are packages that ease tidying up messy data, e.g. [tidyr](https://github.com/hadley/tidyr) and [reshape2](https://github.com/hadley/reshape). The idea of tidy and messy data is explained in a [tidy data](http://vita.had.co.nz/papers/tidy-data.html) paper by Hadley Wickham. There is also [manipulatr](https://groups.google.com/forum/#!forum/manipulatr) group used to discuss topics related to data manipulation in R.
 
-## speeding up code
+## Speeding up code
 As in many computing languages loops should be avoided in R. Here is a list of tricks to speed up your code:
 
 * read.table() is sometimes faster than read.csv()
