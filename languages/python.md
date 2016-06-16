@@ -7,64 +7,6 @@ Python is the "dynamic language of choice" of the Netherlands eScience Center.
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
 
-## Python versions and libraries
-
-Currently, there are two Python versions: 2 and 3.
-[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
-Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
-
-* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
-* [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
-* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
-
-### General scientific
-
-* [NumPy](http://www.numpy.org/)
-* [SciPy](https://www.scipy.org/)
-* [Pandas](http://pandas.pydata.org/) data analysis toolkit
-* [scikit-learn](http://scikit-learn.org/): machine learning in Python
-* [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
-
-### IPython and IPython notebooks
-
-TODO
-
-### Plotting
-
-* [Matplotlib](http://matplotlib.org) together with Numpy can be used when plotting your data.
-* [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
-* [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is Python visualisation
-library based on matplotlib. It supports numpy, pandas, scipy and statmodels.
-
-### Database Interface
-
-* [psycopg](http://initd.org/psycopg/) is an [PostgreSQL](http://www.postgresql.org) adapter
-* [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
-* [monetdb.sql](https://www.monetdb.org/Documentation/Manuals/SQLreference/Programming/Python)
-is [monetdb](https://www.monetdb.org) Python client
-* [pymongo](http://api.mongodb.org/python/current/#) allows for work with [MongoDB](http://www.mongodb.com) database
-* [py-leveldb](https://code.google.com/p/py-leveldb/) are thread-safe Python bindings for [LevelDb](https://github.com/google/leveldb)
-
-### Parallelisation
-
-The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
-
-### Web Frameworks
-
-There are a lot web frameworks for Python that are very easy to run.
-
-* [flask](http://flask.pocoo.org/)
-* [cherrypy](http://www.cherrypy.org/)
-* [Django](https://www.djangoproject.com/)
-
-We recommend `flask`.
-
-### NLP/text mining
-
-* [nltk](http://www.nltk.org/) Natural Language Toolkit
-* [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
-* [gensim](https://radimrehurek.com/gensim/): Topic modeling
-
 ## Coding style conventions
 
 The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up.
@@ -148,6 +90,64 @@ TODO
 ## Profiling
 
 TODO
+
+## Python versions and libraries
+
+Currently, there are two Python versions: 2 and 3.
+[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
+Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
+
+* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
+* [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
+* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
+
+### General scientific
+
+* [NumPy](http://www.numpy.org/)
+* [SciPy](https://www.scipy.org/)
+* [Pandas](http://pandas.pydata.org/) data analysis toolkit
+* [scikit-learn](http://scikit-learn.org/): machine learning in Python
+* [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
+
+### IPython and IPython notebooks
+
+TODO
+
+### Plotting
+
+* [Matplotlib](http://matplotlib.org) together with Numpy can be used when plotting your data.
+* [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
+* [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is Python visualisation
+library based on matplotlib. It supports numpy, pandas, scipy and statmodels.
+
+### Database Interface
+
+* [psycopg](http://initd.org/psycopg/) is an [PostgreSQL](http://www.postgresql.org) adapter
+* [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
+* [monetdb.sql](https://www.monetdb.org/Documentation/Manuals/SQLreference/Programming/Python)
+is [monetdb](https://www.monetdb.org) Python client
+* [pymongo](http://api.mongodb.org/python/current/#) allows for work with [MongoDB](http://www.mongodb.com) database
+* [py-leveldb](https://code.google.com/p/py-leveldb/) are thread-safe Python bindings for [LevelDb](https://github.com/google/leveldb)
+
+### Parallelisation
+
+The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+
+### Web Frameworks
+
+There are a lot web frameworks for Python that are very easy to run.
+
+* [flask](http://flask.pocoo.org/)
+* [cherrypy](http://www.cherrypy.org/)
+* [Django](https://www.djangoproject.com/)
+
+We recommend `flask`.
+
+### NLP/text mining
+
+* [nltk](http://www.nltk.org/) Natural Language Toolkit
+* [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
+* [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
 ## Software quality improvement tools
 
