@@ -57,9 +57,11 @@ For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 #### Logging
 ...
 #### Writing documentation
-...
+Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
+
 #### Recommended additional packages and libraries
-...
+See paragraph on graphics [here](./r-subsections/rgraphics.md).
+See paragraph on data handling [here](./r-subsections/rdata_handling.md).
 #### Available templates
 ...
 
