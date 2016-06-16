@@ -10,4 +10,8 @@ R programs can be writen in any editor. R code can be run from the command line 
 
 Within RStudio you can work on ad-hoc code or create a project. Compared with Python an R project is a bit like a virtual environment as it preserves the workspace and installed packages for that project. Creating a project is needed to build an R package. A project is created via the menu at the top of the screen.
 
+### Installing compilers and runtimes
+See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html). Not needed as most functions in R are already compile in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html).
+
+
  
