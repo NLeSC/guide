@@ -121,6 +121,6 @@ See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-p
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
 
-### Not in this tutorial yet:
+# Not in this tutorial yet:
 * Logging
 
