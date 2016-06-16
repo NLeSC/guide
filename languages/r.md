@@ -13,15 +13,15 @@ Some remarks for readers familiar with Python:
 * There is no need for a discussion about what R version to use like in Python: just download the most recent version.
 
 ### Recommended sources of information
-Stackoverflow, some R packages have their own google.group, and all R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz).
+Some R packages have their own google.group. All R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz). Further, stackoverflow and google should answer most of your questions.
 
 ### Installing compilers and runtimes
 See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html). Not needed as most functions in R are already compile in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html).
 
-#### Editors and IDEs
+### Editors and IDEs
 RStudio is the best EDI for R. You will have to install this in addition to installing R. See [paragraph](./r-subsections/rgettingstarted.md) on getting started with R.
 
-#### Coding style conventions
+### Coding style conventions
 It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
 
 One point in both style conventions that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. 'a <- 3' to assign value 3 to object 'a'. Please note that R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids the risk for typos like a < -1, which will produce a boolean if a exists, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in a other computing languages.
@@ -43,21 +43,24 @@ The <- supporters will argue that this example demonstrates that = should be avo
 
 From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
-#### Recommended additional packages and libraries
+### Recommended additional packages and libraries
 See paragraph on graphics [here](./r-subsections/rgraphics.md).
 See paragraph on data handling [here](./r-subsections/rdata_handling.md).
+See paragraph on getting started [here](./r-subsections/rgettingstarted.md).
 
-#### Available templates
+### Available templates
+http://rapport-package.info/
+http://shiny.rstudio.com/articles/templates.html
+http://rmarkdown.rstudio.com/developer_document_templates.html
+
+### Testing
+* [testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`. See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
+
+### Code quality analysis tools and services
 ...
 
-#### Testing
-* [testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`.
-
-#### Code quality analysis tools and services
-...
-
-#### Debugging and Profiling
+### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
-#### Logging
+### Logging
 ...
