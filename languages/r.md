@@ -52,6 +52,7 @@ Is discussed [here](./r-subsections/writting_packages_and_documentation.md).
 ...
 #### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
 #### Logging
 ...
