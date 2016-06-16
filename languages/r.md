@@ -13,7 +13,8 @@ Some remarks for readers familiar with Python:
 * There is no need for a discussion about what R version to use like in Python: just download the most recent version.
 
 ### Recommended sources of information
-Stackoverflow, some R packages have their own google.group, and all R functions have their own documentation in a standardized format. 
+Stackoverflow, some R packages have their own google.group, and all R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a great book about programming in R. It's called [Advanced R](http://adv-r.had.co.nz).
+
 
 ### Installing compilers and runtimes
 ...
