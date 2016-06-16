@@ -18,8 +18,7 @@ Some R packages have their own google.group. All R functions have their own docu
 ### Installing compilers and runtimes
 See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html). Not needed as most functions in R are already compile in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html).
 
-### Editors and IDEs
-RStudio is the best EDI for R. You will have to install this in addition to installing R. See [paragraph](./r-subsections/rgettingstarted.md) on getting started with R.
+
 
 ### Coding style conventions
 It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
