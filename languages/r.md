@@ -1,5 +1,5 @@
 ## What is R?
-R is a programming language and software environment for statistical computing and graphics, for more information see: https://www.r-project.org/.
+R is a programming language and software environment for statistical computing and graphics, for more information see: https://www.r-project.org/. See paragraph on getting started [here](./r-subsections/rgettingstarted.md)
 
 ### Phylosophy and typical use cases
 R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), image analyses, and neuro-linguistic programming. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment.
@@ -44,9 +44,9 @@ The <- supporters will argue that this example demonstrates that = should be avo
 From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
 ### Recommended additional packages and libraries
-See paragraph on graphics [here](./r-subsections/rgraphics.md).
-See paragraph on data handling [here](./r-subsections/rdata_handling.md).
-See paragraph on getting started [here](./r-subsections/rgettingstarted.md).
+See paragraph on graphics [here](./r-subsections/rgraphics.md)
+See paragraph on data handling [here](./r-subsections/rdata_handling.md)
+
 
 ### Available templates
 http://rapport-package.info/
