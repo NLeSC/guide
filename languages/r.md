@@ -106,9 +106,9 @@ R function documentation offers plenty of space to document the functionality, i
 
 
 # Available templates
-http://rapport-package.info/
-http://shiny.rstudio.com/articles/templates.html
-http://rmarkdown.rstudio.com/developer_document_templates.html
+* http://rapport-package.info/
+* http://shiny.rstudio.com/articles/templates.html
+* http://rmarkdown.rstudio.com/developer_document_templates.html
 
 # Testing, Checking, Debugging and Profiling
 
