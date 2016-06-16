@@ -111,7 +111,7 @@ http://rapport-package.info/
 http://shiny.rstudio.com/articles/templates.html
 http://rmarkdown.rstudio.com/developer_document_templates.html
 
-### Testing, Debugging and Profiling
+# Testing, Debugging and Profiling
 
 [Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`.
 
