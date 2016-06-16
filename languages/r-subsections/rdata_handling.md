@@ -14,10 +14,12 @@ As in many computing languages loops should be avoided in R. Here is a list of t
 * grep()
 * %in% for testing whether and where values in one object occur in another object
 * aggregate()
-* which()
-* table()
+* which() for identifying which object indices match a certain condition
+* table() for getting a frequency table of categorical data
 * grep()
 * gsub()
+
+Use ?functionname to access fucntion documentation.
 
 
 
