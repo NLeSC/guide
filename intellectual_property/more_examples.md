@@ -17,3 +17,11 @@ Under this interpretation, xtas as a whole can be distributed under any license 
 In practice, we do not distribute CoreNLP at all; we only distribute the xtas Python code, under the Apache License version 2. If we made, say, a Docker container with xtas and CoreNLP in it, we could license that under the GPLv3+.
 
 
+### Data sets: Movie review emotion
+
+xtas contains a function that detects emotions in movie reviews. It works by fitting a model to a set of training data, and then applying the model to the xtas user's data. The training data set it uses is available on the Internet from the website of a European university, with a note saying that it can be used for academic research purposes only. xtas automatically downloads this data set the first time the user calls the function.
+
+Since it was created in Europe, the training data set is protected by database rights, which limit copying substantial parts of it. This means that the xtas user needs permission to have xtas download the data set, which they only have if they use the data for research purposes. Since the download happens automatically this may not be obvious, so it is documented in the function's documentation, and the function will refuse to work  unless a named argument `for_academic_research=True` is used when calling it.
+
+xtas itself is not a database, and therefore cannot be a derivative work of the data set. The same goes for the model that is fit to the data. An alternative way to provide this functionality would be to fit the model once, and then distribute the model (but not the data set) with xtas. Whether doing so constitutes academic research is debatable however.
+
