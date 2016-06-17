@@ -25,3 +25,14 @@ Since it was created in Europe, the training data set is protected by database r
 
 xtas itself is not a database, and therefore cannot be a derivative work of the data set. The same goes for the model that is fit to the data. An alternative way to provide this functionality would be to fit the model once, and then distribute the model (but not the data set) with xtas. Whether doing so constitutes academic research is debatable however.
 
+
+### Download a car?
+
+For an internal research project, we needed annotated images of cars to train a neural network on. Such images can be found easily on car trading web sites, and so the question arose whether we could just grab a big collection of images from such a site.
+
+Dutch database law contains a provision (article 5.b.) that says that retrieval of a substantial part of the contents of a database for scientific research is allowed, as long as the source is acknowledged and the use is non-commercial.
+
+Unfortunately, this is not the only barrier. The photos on the site are also copyrighted works, owned by whoever made them, and making a copy requires their permission. Furthermore, the web site has a set of general terms and conditions, which forbids retrieving a substantial portion of the database. These apply to anyone using the web site.
+
+Downloading a car? Bad idea.
+
