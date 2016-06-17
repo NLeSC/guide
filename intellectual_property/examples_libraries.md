@@ -55,11 +55,13 @@ xtas uses chardet, a Python library for detecting the character set used in a st
 
 ![An illustration of the xtas vs. unidecode example. A large rectangle represents the combined work xtas. Within this rectangle, there is a wide low rectangle at the top representing the xtas Python code, licensed under the Apache License v2. Below that is a square containing the words "unidecode" and "Python lib GPLv2+".](xtas_unidecode_96.svg.png)
 
-xtas uses unidecode, a Python library for converting text encoded according to The Unicode® Standard into an ASCII approximation of it. Unidecode is published under the GNU General Public License version 2 or later. Considering only xtas and unidecode, we can answer the three questions as follows:
+xtas previously used unidecode, a Python library for converting text encoded according to The Unicode® Standard into an ASCII approximation of it. Unidecode is published under the GNU General Public License version 2 or later. Considering only xtas and unidecode, we can answer the three questions as follows:
 
 - How many separate works are there, and what is derived from what?
 
-  There are three works: unidecode, the xtas Python code, and the combined work. The combined work derives from unidecode and from the xtas Python code. Whether the xtas Python code is a derivative work of unidecode is unclear; there is no case law on this, and where the Apache license and the LGPL explicitly state that for the purpose of those licenses, it is not the case, the GPL does not contain such a clause.
+  There are three works: unidecode, the xtas Python code, and the combined work. The combined work derives from unidecode and from the xtas Python code.
+
+  Whether the xtas Python code is a derivative work of unidecode is not clearly defined by the law, and there is no case law on this. The Apache license and the LGPL explicitly state that it is not for the purpose of those licenses, but the GPL does not contain such a clause. As they are developed separately and there is no code from unidecode in the xtas code, we assume here that it is not a derivative work.
 
 - Can the works be distributed, i.e. do the licenses allow this and are they compatible?
 
@@ -67,11 +69,15 @@ xtas uses unidecode, a Python library for converting text encoded according to T
 
 - How should the work(s) be licensed?
 
-  If we distribute unidecode, we should do so under the GPL version 2 or higher, as arbitrarily removing licenses from someone else's code does not make sense. The combined work xtas must be distributed under the same licenses, or a subset of them. The xtas Python code must be licensed under the GPLv2+ (if we do consider it to be a derivative work), or can be licensed in any way we want (if we consider it to not be a derivative work of Unidecode).
+  If we distribute unidecode, we should do so under the GPL version 2 or higher, as arbitrarily removing licenses from someone else's code does not make sense. The combined work xtas must be distributed under the same licenses, or a subset of them. The xtas Python code can be licensed in any way we want.
 
-  If we choose the latter option and a license that is not compatible with the GPL, then the combined work will not be distributable. The Apache License v2 is incompatible with the GPL version 2 for technical reasons, but it is compatible with the GPL version 3. Since unidecode is (also) licensed under the GPL version 3, we can, again if it isn't a derivative work, license the xtas Python code under the Apache License v2, and the combined work under the GPL version 3 or later.
+  We should choose a license for the xtas Python code that is compatible with at least one of the licenses that unidecode can be distributed under, so that others can assemble and distribute combined works. Our default license, the ALv2, is compatible with the GPLv3 (but not with the GPLv2, for technical reasons), so we can use it here.
 
-Since this is a gray area, and whether something is a derivative work or not may depend on the exact relationship between the components, we will decide on an interpretation and license on a case-by-case basis. In this particular case, the dependency was removed.
+  The combined work should then be licensed under the GPL version 3 or later. If it is important that it can be used under the GPLv2 as well, then we can license the xtas Python code under both the ALv2 and the GPLv2 (i.e. we offer both licenses, and the user can choose to accept either or both), and the combined work under the GPL version 2 or later.
+
+  Finally, if it is decided at some point in the future that the xtas Python source code is a derivative work of unidecode because it calls into it, even if none of unidecode is included in the work, then we must distribute the xtas Python code under at least one of the GPL licenses that unidecode is distributed under. In that case, we can offer xtas under the ALv2 and GPLv2+ set of licenses.
+
+As is probably clear by now, dependencies that are under a strong copyleft license complicate your life if you want people to be able to make proprietary works based on your software. For this reason, we try to avoid them at NLeSC.
 
 
 ### All together now
@@ -82,7 +88,7 @@ Now, we will consider all three of the above examples at the same time.
 
 - How many separate works are there, and what is derived from what?
 
-  There are five works: Snowball, chardet, unidecode, the xtas Python code, and xtas the combined work. The combined work is derived from all its components. The xtas Python code may be a derivative work of the libraries used, depending on how one interprets the law.
+  There are five works: Snowball, chardet, unidecode, the xtas Python code, and xtas the combined work. The combined work is derived from all its components.
 
 - Can the works be distributed, i.e. do the licenses allow this and are they compatible?
 
@@ -90,7 +96,7 @@ Now, we will consider all three of the above examples at the same time.
 
 - How should the work(s) be licensed?
 
-  If it is not considered a derivative work, the xtas Python code should be licensed under our default Apache License v2, and the combined work under the GPL version 3 or higher. If it is considered a derivative work, both the xtas code and the combined work should be GPLv2+. Again, this will be decided on a case-by-case basis.
+  The xtas Python code should be licensed under our default Apache License v2, and the combined work under the GPL version 3 or higher. (See the unidecode example above for alternatives.)
 
 
 ### In the Clouds
