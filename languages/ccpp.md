@@ -12,7 +12,7 @@ It is *not possible* to write this guide without making some choices that not ev
 ## C vs. C++
 The first of these choices is: **don't write C**. C++ is a superset of C with much more powerful means of abstraction. This results in cleaner, more maintainable and even faster code. If you need fine-grained control over resources, you'll have it; if you can do with a more Pythonesque approach, you'll have it. If you're dealing with legacy C code, it is easy to write a small wrapper for C++. If you're still not convinced, it is worth your time to learn C++ classes, templates, and study what the STL has to offer; simply because it will save others time in the future. See the books section below. Here's an [instruction video](https://www.youtube.com/watch?v=YnWhqhNdYyk).
 
-## Standards
+### Standards
 The latest ratified standard of C++ is C++14. The first standardised version of C++ is from 1998. The next version of C++ is scheduled for 2017. With these updates (especially the 2011 one) the preferred style of C++ changed drastically. As a result, a program written in 1998 looks very different from one from 2016, but it still compiles. There are many videos on Youtube describing some of these changes and how they can be used to make your code look better (i.e. more maintainable). This goes with a warning: Don't try to be too smart; other people still have to understand your code.
 
 ## Practical use
@@ -40,6 +40,24 @@ There is no package manager like `pip`, `npm` or `gem` for C++. The first go-to 
 
 ### Editors
 Any code editor will do. Try to avoid relying on IDEs too much; by helping your memory they can also help you to write less maintainable code.
+* Vim, recommended plugins: 
+  + [NERDTree](https://github.com/scrooloose/nerdtree) file explorer.
+  + [editorconfig](https://github.com/editorconfig/editorconfig-vim)
+  + [stl.vim](http://www.vim.org/scripts/script.php?script_id=4293) adds STL to syntax highlighting 
+  + [Syntastic](https://github.com/scrooloose/syntastic)
+  + Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
+* Emacs:
+  + Has GDB mode for debugging.
+* Atom
+* Sublime
+* Eclipse
+* CodeLite (has integrated debugger)
+
+### Debugging
+* GDB - the GNU Debugger, many graphical front-ends are based on GDB.
+* Valgrind - detect memory leaks.
+* DDD - primitive GUI frontend for GDB.
+* Nemiver - standalone graphical debugger for Gnome.
 
 ## Style
 ### Style guides
@@ -48,6 +66,7 @@ Good style is not just about layout and linting on trailing whitespace. It will 
 * [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 * [Guidelines Support Library](https://github.com/Microsoft/GSL)
 * [Google Style Guide](https://google.github.io/styleguide/cppguide.html)
+* [Google Style Guide - github](https://github.com/google/styleguide) Contains the CppLint linter.
 
 ### Project layout
 A C++ project will usually have directories `/src` for source codes, `/doc` for Doxygen output, `/test` for testing code. Some people like to put header files in `/include`. In C++ though, many header files will contain functioning code (templates and inline functions). This makes the separation between code and interface a bit murky, so it makes more sense to put headers and implementation in the same tree.
@@ -76,4 +95,3 @@ Use [Doxygen](http://www.stack.nl/~dimitri/doxygen/). It is the de-facto standar
 ### Books
 * Bjarne Soustrup - The C++ Language
 * Scott Meyers - Effective Modern C++
-
