@@ -103,31 +103,34 @@ Now, we will consider all three of the above examples at the same time.
 
 ### In the Clouds
 
-For the project "Towards Large-Scale Cloud-Resolving Climate Simulations", we want to combine the OpenIFS global circulation model with the DALES large-eddy simulation model. Both these models are available as libraries, so the project entails combining (possibly modified versions of) the OpenIFS and Dales libraries into a single program.
+For the project "Towards Large-Scale Cloud-Resolving Climate Simulations", we want to combine the OpenIFS global circulation model with the DALES large-eddy simulation model. Both these models are available as libraries, so the project entails combining the OpenIFS and Dales libraries into a single program. (This is a simplified example, the reality of this project is a notch or two more complicated, and the below is not exactly what we do.)
 
-The OpenIFS library (part of the ECMWF weather model code) is available under a proprietary license that allows running the program and making private modifications, but does not allow distributing the program or any derivatives. Dales is published under the GNU GPL version 3.
+The OpenIFS library (part of the ECMWF weather model code) is available under a proprietary license that allows running the program and making private modifications, but does not allow distributing the program or any derivatives. DALES is published under the GNU GPL version 3.
 
 - How many separate works are there, and what is derived from what?
 
-  There are six works: OpenIFS, modified OpenIFS, Dales, modified Dales, the rest of the program written by us, and the combination of them all.
+  There are four works: OpenIFS, DALES, the rest of the program written by us, and the combination of them all. The combined work is derived from its components.
 
 - Can the works be distributed, i.e. do the licenses allow this and are they compatible?
 
-  The OpenIFS license does not allow redistribution, so it cannot be distributed. Dales can be distributed, under the GPLv3. The rest of the program is written by us and can be distributed. The whole combined work cannot be distributed, since it incorporates OpenIFS. If it did not include OpenIFS, it would have to be distributed under the GPLv3, because of the Dales dependency.
+  The OpenIFS license does not allow redistribution, so it cannot be distributed. DALES can be distributed, under the GPLv3. The rest of the program is written by us and can be licensed by us if we want to. The whole combined work cannot be distributed, since it incorporates OpenIFS. If it did not include OpenIFS, it would have to be distributed under the GPLv3, because of the DALES dependency.
 
 - Can we work on this privately, without distributing anything?
 
-  The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project within NLeSC without violating the licenses, as long as we do not share the results with anyone.
+  The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project (and prepare and run combined works) within NLeSC without violating the licenses, as long as we do not share the results with anyone.
 
-  However, as in any project we work together with a principal investigator outside NLeSC. If both the PI and NLeSC develop the software together, does that still count as private, or are we distributing our changed versions to each other? The GPL version 3 says the following about this:
+  However, as in any project we work together with a principal investigator outside NLeSC. This means that we exchange materials between different legal entities, which counts as distribution. We can do that with our own code (which we can even publish openly under the ALv2) and with DALES, but not with OpenIFS or any combined works.
 
-  > You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+- What other options are there in this kind of situation?
 
-  This wording is clearly written to allow hiring contractors to work on private modifications, and doesn't seem to apply well to the collaborative relationship we have with our PIs. On the other hand, we're still not making copies available to the public.
+  We can try to split up the system into independent programs that run in separate processes and communicate with each other over well-documented, generic interfaces. In this way, there would never be a combined work, just a few independent works that exchange information. Exactly how separate the programs have to be to not be considered a single work is, again, a gray area.
 
-  In a situation like this, when there is any question as to how a license applies to a particular case, it is best to contact the copyright owners and ask them whether what you want to do is okay. Getting explicit permission is a great way of reducing legal risk.
+  We could also ask the OpenIFS and DALES copyright owners for permission to share combined works between NLeSC and the PI. That would remove all uncertainty, but may not be practical in general.
 
-  Another option is to try to distance the components as much as possible, e.g. by having them communicate over a very generic protocol. Just like a web browser is not a derivative work of a web server just because it is designed to connect to one via HTTP, the components could then be considered separate works. One might argue that this is disingenious however, and violates the spirit of the license. Much will depend on the specific situation.
+  Another option would be to replace one of the dependencies by one written by ourselves. This is usually impractical, both due to time constraints and because the new version would not have the scientific pedigree of the existing one.
+
+  The fundamental issue here is that the GPL tries to make all of us shared stewards of the software we use, while proprietary software tries to keep control over it in the hands of a single owner. Combining them in a single project is complicated and not without legal risk, and we should avoid it. If that's not possible, we should tread carefully.
+
 
 ### Trademarks
 
