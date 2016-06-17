@@ -1,6 +1,6 @@
 # C and C++
 
-**Disclaimer: In general NLeSC does not recommend using C or C++. However, in some cases it is the only viable option, for instance if a project builds on existing code written in these languages.**
+With great power comes great responsibility. **Always asume someone with half your skill will use, edit and expand your code.** Every C++ programmer has a slightly different dialect; aim for consistency and document choices you make. Add lot's of examples, be a teacher.
 
 That being said, C++ (over its older brother C) is a very powerful, and possibly beautiful language, with a long history of opiniated debates. These debates are more often based on myth than fact.
 
