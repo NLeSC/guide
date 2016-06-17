@@ -39,7 +39,7 @@ Downloading a car? Bad idea.
 
 ### Back to the future
 
-We have a research project on using deep learning on time series data called [https://github.com/NLeSC/mcfly](mcfly), named after the main character of the Back to the Future movies. Of course, this is a commercial franchise, so the question arose whether we can use that name for our project.
+We have a research project on using deep learning on time series data called [mcfly](https://github.com/NLeSC/mcfly), named after the main character of the Back to the Future movies. Of course, this is a commercial franchise, so the question arose whether we can use that name for our project.
 
 A simple name is too short to be a copyrightable work, but names can be trademarked. A trademark search revealed an English band called McFly, who have trademarked that name for the class of entertainment services. Since our research project is not in that market, this is no problem.
 
