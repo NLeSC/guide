@@ -65,7 +65,9 @@ xtas previously used unidecode, a Python library for converting text encoded acc
 
 - Can the works be distributed, i.e. do the licenses allow this and are they compatible?
 
-  Unidecode is licensed under a strong copyleft license, so it can be redistributed under the terms of that license. Derivative works must be licensed under the same license. Unidecode is licensed under the GPL version 2 or later, which means that anyone can choose to redistribute it, and any derivative works, under any combination of licenses from this (infinite) list.
+  Unidecode is licensed under a strong copyleft license, so it can be redistributed under the terms of that license. Derivative works must be licensed under the same license.
+
+  Unidecode is licensed under the GPL version 2 or later. This is known as a *disjunctive license*. The copyright owners of unidecode offer everyone a GPLv2 license, but also a GPLv3 license, and even proactively any later version of the GNU GPL that may be created in the future. A potential user may choose to accept any one of these licenses, or a combination of multiple, if they want to copy the work or make derivative works.
 
 - How should the work(s) be licensed?
 
