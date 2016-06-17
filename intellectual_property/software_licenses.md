@@ -1,8 +1,8 @@
-## Software licenses
+# Software licenses
 
 There are many software licenses in existence. Many of those allow the licensee to do very little, but some give you more freedom to use and re-use the licensed software. To make some sense of this variety, we can categorize them as follows.
 
-### License categories
+## License categories
 
 <table>
     <thead>
@@ -29,7 +29,7 @@ There are many software licenses in existence. Many of those allow the licensee 
     </tbody>
 </table>
 
-### Free software
+## Free software
 
 The main distinction among software licenses is that of Free software versus proprietary software. Free software is software with license terms that give you ([Stallman, 1986](https://www.gnu.org/philosophy/free-sw.html))
 
@@ -38,13 +38,17 @@ The main distinction among software licenses is that of Free software versus pro
 2. The freedom to redistribute copies so you can help your neighbor (freedom 2).
 3. The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
 
-These four freedoms together effectively neutralize copyright: freedoms 1 and 3 let you create derivative works, and freedoms 2 and 3 let you make copies. Note that it's perfectly fine to sell copies of Free software, or warranty, or development services; this is about freedom to do things with the software, not about its price.
+These four freedoms together effectively neutralize copyright: freedoms 1 and 3 let you create derivative works, and freedoms 2 and 3 let you make copies.
 
-Note that there are two other, similar definitions in use, the Open Source Institute's [Open Source Definition](https://opensource.org/osd-annotated) and the [Debian Free Software Guidelines](https://www.debian.org/social_contract#guidelines). The Free Software definition above, due to Richard Stallman, is the simplest and most concise, and in practice the categories they define are almost identical.
+Note that it's perfectly fine to sell copies of Free software, or warranty, or development services; this is about freedom to do things with the software, not about its price.
 
-Software that is not Free is proprietary. Software that you're not allowed to copy or modify falls into this category, as does software with usage restrictions, e.g. "For research use only" or "For non-commercial use only". There are some confusingly-named subcategories of proprietary software. _Freeware_ is software that can be copied without paying anyone, but comes without source and cannot be modified. _Shared source_ comes with source, but without permission to modify. Neither of these are Free in the above sense.
+There are two other, similar definitions in use, the Open Source Institute's [Open Source Definition](https://opensource.org/osd-annotated) and the [Debian Free Software Guidelines](https://www.debian.org/social_contract#guidelines). The Free Software definition above, due to Richard Stallman, is the simplest and most concise, and in practice the categories they define are almost identical.
 
-### Derivative software
+Software that is not Free is proprietary. Software that you're not allowed to copy or modify falls into this category, as does software with usage restrictions, e.g. "For research use only" or "For non-commercial use only".
+
+There are some confusingly-named subcategories of proprietary software. _Freeware_ is software that can be copied without paying anyone, but comes without source and cannot be modified. _Shared source_ comes with source, but without permission to modify. Neither of these are Free in the above sense.
+
+## Derivative software
 
 Within the category of Free software, there are several subcategories, which are distinguished by what is allowed when making derivative software. There are two basic ways of making a derivative work of a program or library: modifying it (forking), and combining it with other software (e.g. using a library in your program). Of course, you can modify and then combine as well.
 
@@ -54,17 +58,21 @@ As an example of combining software, imagine a program A that uses two pre-exist
 
 Different Free software licenses place different constraints on how modified versions and combined works can be licensed.
 
-### Permissive licenses
+## Permissive licenses
 
-As the name implies, permissive Free software licenses are the least restrictive. They let you distribute the software unchanged under that license, with or without source code. They will also let you distribute a modified version under any license you like, and let you distribute a combined work under any license. Examples of well-known permissive licenses are the various BSD licenses, the MIT license, and the Apache License 2.0 that we have standardized on.
+As the name implies, permissive Free software licenses are the least restrictive. They let you distribute the software unchanged under that license, with or without source code. They will also let you distribute a modified version under any license you like, and let you distribute a combined work under any license.
 
-### Copyleft
+Examples of well-known permissive licenses are the various BSD licenses, the MIT license, and the Apache License 2.0 that we have standardized on.
 
-Copyleft licenses add some restrictions to the licensing of derivative works. Like permissive licenses, they let you distribute the software unchanged under that license, but you have to include the source code as well if you distribute a binary. Modified versions have to be distributed under the same license as the original; you are not allowed to change the license.
+## Copyleft
 
-When creating a combined work, a further distinction can be made. _Strong_ copyleft licenses require a combined work to be licensed under the same license as the part. In the example above, if library B is distributed under a strong copyleft license such as the GNU GPL, then program A must be distributed under that same license. _Weak_ copyleft licenses allow the combined work (A) to be distributed under any license, as long as the source for the licensed component (B) is made available as well. They may also require that the recipient of the combined work can relink the modules after modifying the component.
+Copyleft licenses add some restrictions to the licensing of derivative works. Like permissive licenses, they let you distribute the software unchanged under that license, but if you distribute a binary, then you have to include the source code as well. Modified versions have to be distributed under the same license as the original; you are not allowed to change the license.
 
-### Permission overview
+When creating a combined work, a further distinction can be made. _Strong_ copyleft licenses on a component require a combined work to be licensed under the same license as the component. In the example above, if library B is distributed under a strong copyleft license such as the GNU GPL, then program A must be distributed under that same license.
+
+_Weak_ copyleft licenses allow the combined work (A) to be distributed under any license, as long as the source for the licensed component (B) is made available as well under its original license. They may also require that the recipient of the combined work can relink the modules after modifying the component.
+
+## Permission overview
 
 <table>
     <thead>
@@ -121,15 +129,17 @@ When creating a combined work, a further distinction can be made. _Strong_ copyl
  * Under any license for the MIT license
 ** Relicensing LGPL to GPL is allowed
 
-### License compatibility
+## License compatibility
 
 If you use multiple external components in your program, then you may end up with multiple different constraints on the license of the combined work. If these constraints conflict, then you cannot legally distribute the result (if proprietary software is involved, then you may not legally be able to make the combined work at all).
 
-If two licenses specify incompatible constraints on the license of the combined work, then they are _incompatible_. The GNU GPL for instance is incompatible with proprietary licenses, because it requires the combined work to be licensed under the GPL, with no additional restrictions allowed. Having a part of the work under a proprietary license is such an additional restriction, so you cannot distribute such a combination (unless the copyright owner of the GPL code gives a special permission).
+If two licenses specify incompatible constraints on the license of the combined work, then they are _incompatible_.
+
+The GNU GPL for instance is incompatible with proprietary licenses, because it requires the combined work to be licensed under the GPL, with no additional restrictions allowed. Having a part of the work under a proprietary license is such an additional restriction, so you cannot distribute such a combination (unless the copyright owner of the GPL code gives a special permission).
 
 When you use different pieces of software together to solve a problem, and want to distribute the result, here are the questions you have to answer:
 
-- How many separate works are there, and what is derived from what?
+- Which separate works are there, and what is derived from what?
 - Can the works be distributed, i.e. do the licenses allow this and are they compatible?
 - How should the work(s) be licensed?
 
