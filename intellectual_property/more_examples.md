@@ -26,7 +26,7 @@ Since it was created in Europe, the training data set is protected by database r
 xtas itself is not a database, and therefore cannot be a derivative work of the data set. The same goes for the model that is fit to the data. An alternative way to provide this functionality would be to fit the model once, and then distribute the model (but not the data set) with xtas. Whether doing so constitutes academic research is debatable however.
 
 
-### Download a car?
+### Mixed: Download a car?
 
 For an internal research project, we needed annotated images of cars to train a neural network on. Such images can be found easily on car trading web sites, and so the question arose whether we could just grab a big collection of images from such a site.
 
@@ -37,7 +37,7 @@ Unfortunately, this is not the only barrier. The photos on the site are also cop
 Downloading a car? Bad idea.
 
 
-### Back to the future
+### Trademarks: Back to the future
 
 We have a research project on using deep learning on time series data called [mcfly](https://github.com/NLeSC/mcfly), named after the main character of the Back to the Future movies. Of course, this is a commercial franchise, so the question arose whether we can use that name for our project.
 
