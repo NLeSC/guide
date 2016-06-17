@@ -35,7 +35,7 @@
    * [Copyright](intellectual_property/copyright.md)
    * [Software Licenses](intellectual_property/software_licenses.md)
    * [Examples: Using Libraries](intellectual_property/examples_libraries.md)
-   * [Examples: External Programs](intellectual_property/examples_external_programs.md)
+   * [More Examples](intellectual_property/more_examples.md)
 * [Publishing Scientific Results](publishing/publishing_results.md)
 	* [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
 * [Access to e-Infrastructure](e-infrastructure/e-infrastructure.md)

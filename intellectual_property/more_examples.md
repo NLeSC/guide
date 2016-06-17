@@ -1,8 +1,6 @@
-## Examples: External Programs
+## More Examples
 
-Not all reusable software components come in the form of libraries. Sometimes you want to use an external program, and communicate with it through pipes or sockets. This adds some more shades of gray.
-
-### xtas vs. CoreNLP
+### External programs: xtas vs. CoreNLP
 
 xtas can run the Stanford CoreNLP program, which is written in Java and distributed under the GNU GPL version 3 or later. When the user calls the corresponding xtas function, CoreNLP is started by xtas, the user's input is sent to it through a pipe, the CoreNLP output is read back out, and handed to the user or processed further.
 
