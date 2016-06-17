@@ -36,3 +36,16 @@ Unfortunately, this is not the only barrier. The photos on the site are also cop
 
 Downloading a car? Bad idea.
 
+
+### Back to the future
+
+We have a research project on using deep learning on time series data called [https://github.com/NLeSC/mcfly](mcfly), named after the main character of the Back to the Future movies. Of course, this is a commercial franchise, so the question arose whether we can use that name for our project.
+
+A simple name is too short to be a copyrightable work, but names can be trademarked. A trademark search revealed an English band called McFly, who have trademarked that name for the class of entertainment services. Since our research project is not in that market, this is no problem.
+
+There is also a registered trademark for "McFly & Brown", an Amsterdam recruitment company, and that registration covers the class of "Scientific and technological services and research and design relating thereto" (even though this company does not seem to do any science or software development itself).
+
+Of course, "McFly & Brown" is not the same as "mcfly", and the question in this case is whether the two are confusingly similar. First, the two names are not actually the same, as we don't have the second part. Second, it seems unlikely that anyone would assume a highly technical scientific research project would be associated with a recruitment agency. Third, both names are derived from a well-known movie, which probably makes people more likely to conclude that the similarity is coincidental.
+
+Whether any of that reasoning holds up in court we're not sure of, but it sounded reasonable enough to name the project "mcfly".
+
