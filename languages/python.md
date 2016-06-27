@@ -2,26 +2,24 @@
 
 Python is the "dynamic language of choice" of the Netherlands eScience Center.
 
+Currently, there are two Python versions: 2 and 3.
+[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
+Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
+
+* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
+* [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
+* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
+
+TODO: _intro: philosophy, typical usecases_
+
+TODO: _Mention IPython?_
+
 ## Recommended sources of information
 
 * A good way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
 * Introduction to python for data science: http://skillsmatter.com/podcast/java-jee/introducing-python-for-data-science
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
-
-## Coding style conventions
-
-The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up.
-
-## Standard project/module layout
-
-The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
-
-It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
-
-Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that is more NLeSC-like, but not perfect (e.g., needs replacing of project name).
-
-An alternative might be to create a project template using (for example) [cookiecutter](https://github.com/audreyr/cookiecutter). This solution needs more research.
 
 ## Dependencies and package management
 
@@ -53,17 +51,21 @@ There are two main distributions of Conda: [Anaconda](http://continuum.io/downlo
 
 Use `conda install` to install new packages and `conda update` to keep your system up to date. The `conda` command can also be used to create virtual environments.
 
-## Building and packaging code
-
-* [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html) (so it can be installed with pip)
-* [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
-
 ## Editors and IDEs
 
 * [atom](https://atom.io/)
 * JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
 * [Pydev](http://pydev.org/) (Python development environment for Eclipse)
   * To install add the update site http://pydev.org/updates to Eclipse.
+
+## Coding style conventions
+
+The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up.
+
+## Building and packaging code
+
+* [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html) (so it can be installed with pip)
+* [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
 
 ## Testing
 
@@ -73,6 +75,42 @@ Use `conda install` to install new packages and `conda update` to keep your syst
 * [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
 
 Please use `nose` (aka `nosetests`), because nose tests are more readable and easier to run.
+
+## Code quality analysis tools and services
+
+TODO: _Which tool does what?_
+TODO: _Focus on Python!_
+
+### [Codacy](https://www.codacy.com)
+Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
+The analysis for Java and Python is not as good as for Javascript.
+The analysis is quite slow, as it analyzes each past commit.
+For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
+
+### [Scrutinizer](https://scrutinizer-ci.com/)
+Can analyze Python (and PHP, Ruby).
+For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
+
+### [Landscape](https://landscape.io)
+Can analyze Python. It is missing code coverage.
+For example project see https://landscape.io/github/NLeSC/MAGMa
+
+### [Coveralls](https://coveralls.io)
+Can show code coverages over time for many languages including Java, Python and Javascript.
+For example project see https://coveralls.io/r/NLeSC/MAGMa
+
+### [Codecov](https://codecov.io)
+Can show code coverages for many languages including Java, Python and Javascript.
+Shows unified coverage and separate coverage for matrix builds.
+For example project see https://codecov.io/github/NLeSC/Xenon
+
+## Debugging and profiling
+
+TODO
+
+## Logging
+
+TODO
 
 ## Writing Documentation
 
@@ -85,23 +123,7 @@ Python uses **Docstrings** for function level documentation. You can read a deta
   * [sphinx tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
   * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html))
 
-## Debugging
-
-TODO
-
-## Profiling
-
-TODO
-
-## Python versions and libraries
-
-Currently, there are two Python versions: 2 and 3.
-[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
-Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
-
-* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
-* [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
-* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
+## Recommended additional packages and libraries
 
 ### General scientific
 
@@ -151,27 +173,16 @@ We recommend `flask`.
 * [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
-## Software quality improvement tools
+## Available templates
 
-### [Codacy](https://www.codacy.com)
-Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
-The analysis for Java and Python is not as good as for Javascript.
-The analysis is quite slow, as it analyzes each past commit.
-For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
+TODO: _What needs to be added here?_
 
-### [Scrutinizer](https://scrutinizer-ci.com/)
-Can analyze Python (and PHP, Ruby).
-For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
+### Standard project/module layout
 
-### [Landscape](https://landscape.io)
-Can analyze Python. It is missing code coverage.
-For example project see https://landscape.io/github/NLeSC/MAGMa
+The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
 
-### [Coveralls](https://coveralls.io)
-Can show code coverages over time for many languages including Java, Python and Javascript.
-For example project see https://coveralls.io/r/NLeSC/MAGMa
+It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
 
-### [Codecov](https://codecov.io)
-Can show code coverages for many languages including Java, Python and Javascript.
-Shows unified coverage and separate coverage for matrix builds.
-For example project see https://codecov.io/github/NLeSC/Xenon
+Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that is more NLeSC-like, but not perfect (e.g., needs replacing of project name).
+
+An alternative might be to create a project template using (for example) [cookiecutter](https://github.com/audreyr/cookiecutter). This solution needs more research.
