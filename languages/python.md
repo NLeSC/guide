@@ -153,7 +153,12 @@ is [monetdb](https://www.monetdb.org) Python client
 
 ### Parallelisation
 
-The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock).
+
+Having said that, there are many packages that circumvent this constraint.
+* The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+* [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
+* At NLeSC, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
 
