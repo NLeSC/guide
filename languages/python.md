@@ -53,10 +53,8 @@ Use `conda install` to install new packages and `conda update` to keep your syst
 
 ## Editors and IDEs
 
-* [atom](https://atom.io/)
-* JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
-* [Pydev](http://pydev.org/) (Python development environment for Eclipse)
-  * To install add the update site http://pydev.org/updates to Eclipse.
+* Every major text editor supports Python, either natively or through plugins. At NLeSC, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
+* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice.
 
 ## Coding style conventions
 
