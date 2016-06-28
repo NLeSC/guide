@@ -10,7 +10,7 @@ Generally, Python 2.x is legacy, Python 3.x is the present and future of the lan
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
-TODO: _intro: philosophy, typical usecases_
+The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/). In Python, this text can be retrieved with the `import this` command.
 
 TODO: _Mention IPython?_
 
@@ -53,10 +53,8 @@ Use `conda install` to install new packages and `conda update` to keep your syst
 
 ## Editors and IDEs
 
-* [atom](https://atom.io/)
-* JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
-* [Pydev](http://pydev.org/) (Python development environment for Eclipse)
-  * To install add the update site http://pydev.org/updates to Eclipse.
+* Every major text editor supports Python, either natively or through plugins. At NLeSC, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
+* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice.
 
 ## Coding style conventions
 
@@ -155,7 +153,12 @@ is [monetdb](https://www.monetdb.org) Python client
 
 ### Parallelisation
 
-The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock).
+
+Having said that, there are many packages that circumvent this constraint.
+* The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+* [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
+* At NLeSC, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
 
