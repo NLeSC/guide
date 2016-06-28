@@ -10,7 +10,7 @@ Generally, Python 2.x is legacy, Python 3.x is the present and future of the lan
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
-TODO: _intro: philosophy, typical usecases_
+The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/). In Python, this text can be retrieved with the `import this` command.
 
 TODO: _Mention IPython?_
 
