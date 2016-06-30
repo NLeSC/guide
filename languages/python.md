@@ -113,13 +113,15 @@ TODO
 ## Writing Documentation
 
 Python uses **Docstrings** for function level documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/).
+The default location to put HTML documentation is [Read the Docs](https://readthedocs.org). You can connect your account at Read the Docs to your GitHub account and let the HTML be generated automatically using Sphinx.
 
 ### Autogenerating the documentation
-
+There are several tools that automatically generate documentation from docstrings. These are the most used:
 * [pydoc](https://docs.python.org/2/library/pydoc.html)
 * [Sphinx](http://sphinx-doc.org) (uses reStructuredText as its markup language)
   * [sphinx tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
-  * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html))
+  * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
+  * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
 ## Recommended additional packages and libraries
 
