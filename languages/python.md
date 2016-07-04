@@ -12,8 +12,6 @@ Generally, Python 2.x is legacy, Python 3.x is the present and future of the lan
 
 The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/). In Python, this text can be retrieved with the `import this` command.
 
-TODO: _Mention IPython?_
-
 ## Recommended sources of information
 
 * A good way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
@@ -64,6 +62,7 @@ The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). 
 
 * [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html) (so it can be installed with pip)
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
+* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for Linux and OSX) and Appveyor.
 
 ## Testing
 
@@ -135,10 +134,11 @@ We recommend using Sphinx and documentation style TODO: choose preferred documen
 * [scikit-learn](http://scikit-learn.org/): machine learning in Python
 * [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
 
-### IPython and IPython notebooks
+### IPython and Jupyter notebooks (aka IPython notebooks)
 
-TODO
+[IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](http://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
 
+[Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 ### Plotting
 
 * [Matplotlib](http://matplotlib.org) together with Numpy can be used when plotting your data.
