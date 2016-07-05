@@ -64,6 +64,8 @@ The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). 
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for Linux and OSX) and Appveyor.
 
+TODO: choose recommended approach (issue #38)
+
 ## Testing
 
 * [unittest](https://docs.python.org/3/library/unittest.html) is a framework awailable in Python Standard Library. [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
