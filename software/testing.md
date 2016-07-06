@@ -54,7 +54,7 @@ For triggering nightly builds in Travis-CI the https://nightli.es/ tool can be u
 Code coverage is a measure which describes how much of the source code is exercised by the test suite.
 At the NLeSC we require minimum of 70% coverage.
 
-Setting up code coverage for a repository depends on the programming language, see the [language specific guides](languages/languages_overview.html) for setup instructions.
+Setting up code coverage for a repository depends on the programming language, see the [language specific guides](../languages/languages_overview.html) for setup instructions.
 
 The code coverage should be performed when a test suite is run as part of Continuous Integration build job.
 The code coverage results can be published on code coverage and/or [code quality services](code_quality.html#Software quality improvement tools).
@@ -63,7 +63,7 @@ The code coverage results can be published on code coverage and/or [code quality
 
 The publishing of the code coverage can be performed during a Continuous Integration build job.
 The code coverage service offers a visualization of the coverage and a metric which can be displayed as a badge/shield icon on the repository website.
-Code coverage services like [Coveralls](https://coveralls.io) and [Codecov](https://codecov.io) support many languages, see the [language specific guides](languages/languages_overview.html) which code coverage services are available and preferred for that language.
+Code coverage services like [Coveralls](https://coveralls.io) and [Codecov](https://codecov.io) support many languages, see the [language specific guides](../languages/languages_overview.html) which code coverage services are available and preferred for that language.
 
 ## End2end tests
 
