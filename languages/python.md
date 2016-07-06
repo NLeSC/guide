@@ -68,40 +68,47 @@ TODO: choose recommended approach (issue #38)
 
 ## Testing
 
-* [unittest](https://docs.python.org/3/library/unittest.html) is a framework awailable in Python Standard Library. [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
+* [unittest](https://docs.python.org/3/library/unittest.html) is a framework available in Python Standard Library. [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
 * [nose](https://nose.readthedocs.org/en/latest/) extends `unittest` to provide easier testing functionality. [Intro to nose by Titus Brown](http://ivory.idyll.org/articles/nose-intro.html)
 * [pytest](http://pytest.org/latest/) is a full featured Python testing tool, that can be used with `nose`, `unittest` and other Python testing tools.
 * [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
 
 Please use `nose` (aka `nosetests`), because nose tests are more readable and easier to run.
 
+### Code coverage
+
+When you have tests it is also a good to see which source code is exercised by the test suite.
+[Code coverage](../software/testing.html#Code_Coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
+The coverage package can also generate html reports which show which line was covered.
+Most test runners have have the coverage package integrated.
+
+The code coverage reports can be published online in code quality service or code coverage services.
+Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
+If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../sofware/testing.md#Code_coverage_services).
+
 ## Code quality analysis tools and services
 
-TODO: _Which tool does what?_
-TODO: _Focus on Python!_
+Code quality service is explained in the [Generic software guide](../software/code_quality.html#Software_quality_improvement_tools).
+There are multiple code quality services available for Python.
+There is not a best one, below is a short list of services with their different strenghts.
 
 ### [Codacy](https://www.codacy.com)
-Can analyze Java, Python and Javascript (and CSS, PHP, Scala).
-The analysis for Java and Python is not as good as for Javascript.
-The analysis is quite slow, as it analyzes each past commit.
-For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
+
+Code quality and coverage grouped by file.
+Can setup goals to improve quality or coverage by file or category.
+For example project see https://www.codacy.com/app/3D-e-Chem/kripodb/dashboard
 
 ### [Scrutinizer](https://scrutinizer-ci.com/)
-Can analyze Python (and PHP, Ruby).
+
+Code quality and coverage grouped by class and function.
 For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
 
 ### [Landscape](https://landscape.io)
-Can analyze Python. It is missing code coverage.
+
+Dedicated for Python code quality.
+Celery, Django and Flask specific behaviors.
+The Landscape analysis tool called [prospector](https://github.com/landscapeio/prospector) can be run locally.
 For example project see https://landscape.io/github/NLeSC/MAGMa
-
-### [Coveralls](https://coveralls.io)
-Can show code coverages over time for many languages including Java, Python and Javascript.
-For example project see https://coveralls.io/r/NLeSC/MAGMa
-
-### [Codecov](https://codecov.io)
-Can show code coverages for many languages including Java, Python and Javascript.
-Shows unified coverage and separate coverage for matrix builds.
-For example project see https://codecov.io/github/NLeSC/Xenon
 
 ## Debugging and profiling
 
