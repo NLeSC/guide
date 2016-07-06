@@ -20,30 +20,50 @@ It will save you a lot of time on debugging and allow for much quicker problem d
 
 ### Travis-CI
 
-The NLeSC public repositories should be build with [Travis-CI](https://travis-ci.org). Travis-CI is free for Open Source projects. A repo can be added from Github to Travis-CI by a Github administrator.
+The NLeSC public repositories should be build with [Travis-CI](https://travis-ci.org).
+Travis-CI is free for Open Source projects.
+A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
+At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
 
 [Getting started with Travis CI](http://docs.travis-ci.com/user/getting-started/)
 
 PS. If you want to get mails from Travis-CI then you have to login at https://travis-ci.org
+
+### AppVeyor
+
+To build repositories inside the Microsoft Windows operation system use [AppVeyor](https://www.appveyor.com/).
+AppVeyor is free for Open Source projects.
 
 ### Jenkins-CI
 
 At the NLeSC we run a [Jenkins-CI](http://jenkins-ci.org/) instance which is behind a login at https://ci.esciencecenter.nl .
 It is used mostly for private repositories.
 
-Features of jobs:
-- compile project.
-- runs tests.
-- generates documentation.
-- triggers by GitHub commit.
-- notifications to commit author when unstable.
-- when applicable launches a SonarQube analysis, which can be viewed at https://sonar.esciencecenter.nl .
+### Nightly builds
 
-## Continuous code coverage
+Most CI builds are triggered by a git push, but sometimes the repository must be build every night.
+Possible reasons for nightly builds:
 
-and code quality metrics public, minimum 70% coverage required
+* Make sure the repository stays working even if there are no changes pushed to the repository, but it's dependencies are changing possibly breaking the code in the repository.
+* The build performs an action that needs to be performed daily like updating a cache.
 
-It is easy to generate those automatically, once the test are setup, with use of external services.
+For triggering nightly builds in Travis-CI the https://nightli.es/ tool can be used.
+
+## Code coverage
+
+Code coverage is a measure which describes how much of the source code is exercised by the test suite.
+At the NLeSC we require minimum of 70% coverage.
+
+Setting up code coverage for a repository depends on the programming language, see the [language specific guides](languages/languages_overview.html) for setup instructions.
+
+The code coverage should be performed when a test suite is run as part of Continuous Integration build job.
+The code coverage results can be published on code coverage and/or [code quality services](code_quality.html#Software quality improvement tools).
+
+### Code coverage services
+
+The publishing of the code coverage can be performed during a Continuous Integration build job.
+The code coverage service offers a visualization of the coverage and a metric which can be displayed as a badge/shield icon on the repository website.
+Code coverage services like [Coveralls](https://coveralls.io) and [Codecov](https://codecov.io) support many languages, see the [language specific guides](languages/languages_overview.html) which code coverage services are available and preferred for that language.
 
 ## End2end tests
 
@@ -58,5 +78,3 @@ Once the web page has any interface, e2e tests should be implemented.
 
 Checking for dependency updates should be done regularly. It can save a lot of time,
 avoiding code dependent on deprecated functionality.
-
-
