@@ -63,7 +63,20 @@ The code coverage results can be published on code coverage and/or [code quality
 
 The publishing of the code coverage can be performed during a Continuous Integration build job.
 The code coverage service offers a visualization of the coverage and a metric which can be displayed as a badge/shield icon on the repository website.
-Code coverage services like [Coveralls](https://coveralls.io) and [Codecov](https://codecov.io) support many languages, see the [language specific guides](../languages/languages_overview.html) which code coverage services are available and preferred for that language.
+See the [language specific guides](../languages/languages_overview.html) which code coverage services are available and preferred for that language.
+
+Code coverage services support many languages and a usually free for Open Source projects.
+Below is a short list of services and their strengths.
+
+#### [Codecov](https://codecov.io)
+
+Shows unified coverage and separate coverage for [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix) e.g. different Python versions.
+For example project see https://codecov.io/gh/NLeSC/Xenon, with a Java 7/8 and Linux/Windows/OSX OS build matrix.
+
+#### [Coveralls](https://coveralls.io)
+
+More popular then Codedov.
+For example project see https://coveralls.io/r/NLeSC/MAGMa
 
 ## End2end tests
 
