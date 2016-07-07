@@ -12,11 +12,13 @@ Lack of e-Infrastructure should never be a reason for not being able to to a pro
 
 SURF is the most obvious supplier of e-Infrastructure for NLeSC projects. For all e-Infrastructure needs we usually first look to SURF. This does not mean SURF is the exclusive e-Infrastructure provider for NLeSC. We use whatever infrastructure is best for the project, provided by SURF or otherwise.
 
+<!--
 ### New project meeting with SURF
 
 It is not always apparent what is available at SURF, under what conditions machines can be used, etc. Also SURF is more than willing to try to accommodate any special requests from projects, _if_ some lead-time is available before the infrastructure is actually needed.
 
 Once NLeSC has a good idea of what e-Infrastructure is required in a project (probably some time after the official start of a project), a meeting with SURF is held to see what infrastructure needs can be filled with SURF infrastructure. The first point of contact is Jan Bot (jan.bot@surfsara.nl) who works at SURFsara, and across the hall from NLeSC. For now please also invite Niels Drost to the meeting, and perhaps bring your coordinator.
+-->
 
 ### Getting access to SURF infrastructure
 
@@ -60,7 +62,7 @@ Any NLeSC employee can get a DAS-5 account, usually available within a few hours
 
 If needed a project can use commercial cloud resources, normally only if all SURF resources do not meet the requirements. As long as the costs are within limits these can come out of the NLeSC general project budget, for larger amounts the PI will need to provide funding.
 
-The standard commercial cloud provider used by NLeSC is Amazon.
+We do not have an official standard commercial cloud provider, but have the most experience with Amazon AWS.
 
 ## Procolix
 
