@@ -180,7 +180,7 @@ There are a lot web frameworks for Python that are very easy to run.
 * [flask](http://flask.pocoo.org/)
 * [cherrypy](http://www.cherrypy.org/)
 * [Django](https://www.djangoproject.com/)
-* [bottle](http://bottlepy.org/)
+* [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
 
 We recommend `flask`.
 
