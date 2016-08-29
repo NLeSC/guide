@@ -62,7 +62,7 @@ The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). 
 
 * [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html) (so it can be installed with pip)
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
-* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for Linux and OSX) and Appveyor.
+* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor.
 
 TODO: choose recommended approach (issue #38)
 
@@ -180,6 +180,7 @@ There are a lot web frameworks for Python that are very easy to run.
 * [flask](http://flask.pocoo.org/)
 * [cherrypy](http://www.cherrypy.org/)
 * [Django](https://www.djangoproject.com/)
+* [bottle](http://bottlepy.org/)
 
 We recommend `flask`.
 
