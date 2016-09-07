@@ -319,7 +319,7 @@ If you are using Zenhub in your repository, you can make a category
   - Heavily integrated with Github
 
 - ReviewNinja (http://www.review.ninja)
-  - AL2.0, hosted at SAP for free, or hosted locally
+  - AL2.0, free online demo, production use hosted locally
   - Heavily integrated with Github
   - Approve changes, or flag a problem
   - Looks a bit less highly developed than Reviewable, maybe not much better than bare Github
@@ -341,7 +341,6 @@ If you are using Zenhub in your repository, you can make a category
 
 - Review Board (http://reviewboard.org)
   - Permissive open source, $10/user/month with Github Enterprise, $29/month with hosting
-    - free for open source and educational use
   - Issue tracking for comments
   - Moved code detection
   - File attachment review
@@ -355,13 +354,12 @@ If you are using Zenhub in your repository, you can make a category
   - Commercial development environment
 
 - CodeReviewHub (https://www.codereviewhub.com)
-  - Hosted online, free (but for how long)
+  - Hosted online, free
   - Heavily integrated with Github
   - CodeReviewHub automatically adds a task list in every pull requests description. Every
 comment a reviewer makes in a pull request gets added as a task for the developer. The
 developer then works through all these tasks, fixes them and marks them as completed.
-After this the reviewer comes back and either approves the pull request or adds new items to
-the task list by writing new comments.
+After this the reviewer comes back and either approves the pull request or adds new items to the task list by writing new comments.
 
 - Gitmate (http://gitmate.io)
   - Workflow automation
