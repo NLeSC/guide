@@ -10,7 +10,7 @@ Using editor config is not necessary, but saves a lot of time and keeps develope
 from the style of choice and helps to avoid some problems caused by formatting differences
 (line ending, tabs vs spaces)
 
-[download](https://github.com/NLeSC/knowledge/tree/master/software/config) nlesc editor config file.
+[download](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig) nlesc editor config file.
 
 Support most editors. [Here](http://editorconfig.org/) you can download plugins for your editor of choice.
 
