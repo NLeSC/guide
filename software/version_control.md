@@ -1,10 +1,15 @@
 # Version control
 
-To keep our code transparent and findable the preferred code hosting platform is Github and version management or scm is git. The repo preferable should be public from the start.
+To keep our code transparent and findable the preferred code hosting platform is GitHub and version management or scm is git. The repo preferable should be public from the start.
 
-On Github there is a NLeSC organization at https://github.com/NLeSC which contains cross-project repositories. The NLeSC organisation can also host non-public code for projects if there is a good reason to do so. Projects host their repo inside the NLeSC organization or in it's own project organization.
+## GitHub
 
-To allow non-NLeSC employees to push changes to NLeSC repositories they can be added as outside collaborators.
+Projects host their repositories in a GitHub organization named after the project.
+These GitHub organizations MUST have at least two owners that are employees of the NLeSC. Private repositories can be created as part of GitHub's education policy if you ask nicely. The number of private repositories is always limited (we advise to request 5). Note that [NLeSC's IP policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) is that any software the NLeSC contributes to SHOULD become open source.
+Please add any newly created project GitHub organization to the https://nlesc.github.io/ site by creating a Markdown file in the https://github.com/NLeSC/nlesc.github.io repository using a Pull Request.
+
+On GitHub there is a NLeSC organization at https://github.com/NLeSC which contains cross-project repositories.
+Creation of repository must be requested, afterwards the NLeSC employee will have admin rights on the repository. There is a limited number of private repo's for software which for some pressing reason cannot be open source. In principle, we do not add non-employees to teams in the NLeSC GitHub organization, but they can be added as per-project collaborator or added to an associate organization such as described in the paragraph above.
 
 You can get a free GitHub Micro Plan (5 private repo's) on your own account if you ask nicely. Very useful when writing papers and such.
 
@@ -19,7 +24,7 @@ is not git. Even then changing VCS should be considered (especially if svn or ot
 
 ### Git documentation:
 
-* Github help: http://help.github.com
+* GitHub help: http://help.github.com
 * Git homepage: http://git-scm.com/
 * Pro Git Online Book: http://git-scm.com/book
 * Reference: http://gitref.org/index.html
@@ -34,7 +39,7 @@ NLeSC default choice is [GitHub flow branching model](https://guides.github.com/
 GitHub flow is a very simple and sane branching model. It supports collaboration and is based on pull requests, therefore relies
 heavily on GitHub. The [Pro Git](https://git-scm.com/doc) book describes in detail the workflow of collaboration on the project
 with use of git branches,
-forks and github in [Contributing to a Project chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
+forks and GitHub in [Contributing to a Project chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 Other more complicated models could be used if necessary, but we should strive for simplicity and uniformity
 in NLeSc since that will enhance collaboration between the engineers. Learning new branching model should not stand in the way
 of contributions.
@@ -42,7 +47,7 @@ You can learn more about those other models from [atlasian page](https://www.atl
 
 ## Public vcs repository
 
-If at all possible, use ([github](https://github.com/)).
+If at all possible, use ([GitHub](https://github.com/)).
 
 Unless code cannot be open (usually commercial partners, or some competitiveness issues ) it should be in public online repository.
 In case the code uses data, that cannot be open, an engineer should try to keep sensitive parts outside of the main codebase.
@@ -55,7 +60,7 @@ behind implementation choices. To learn more about writing good commit messages 
 [tpope’s guide](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 and [this post](http://who-t.blogspot.nl/2009/12/on-commit-messages.html)
 
-Github has some interesting features that allow you to [close issues directly from commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
+GitHub has some interesting features that allow you to [close issues directly from commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
 ## Code snippets library
 Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. We store these code snippets in git, in [GitHub Gists](https://gist.github.com/).
