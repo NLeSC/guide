@@ -148,12 +148,15 @@ We recommend using Sphinx and documentation style TODO: choose preferred documen
 [IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](http://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
 
 [Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
-### Plotting
 
-* [Matplotlib](http://matplotlib.org) together with Numpy can be used when plotting your data.
-* [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
-* [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is Python visualisation
-library based on matplotlib. It supports numpy, pandas, scipy and statmodels.
+### Visualization
+
+* [Matplotlib](http://matplotlib.org) has been the standard in scientific visualization. It supports quick-and-dirty plotting through the `pyplot` submodule. Its object oriented interface can be somewhat arcane, but is highly customizable and runs natively on many platforms, making it compatible with all major OSes and environments. It supports most sources of data, including native Python objects, Numpy and Pandas.
+    - [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is a Python visualisation library based on Matplotlib and aimed towards statistical analysis. It supports numpy, pandas, scipy and statmodels.
+* Web-based:
+    - [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
+    - [Plotly](https://plot.ly/) is another platform for interactive plotting through a web browser, including in Jupyter notebooks.
+    - [altair](https://github.com/ellisonbg/altair) is a _grammar of graphics_ style declarative statistical visualization library. It does not render visualizations itself, but rather outputs Vega-Lite JSON data. This can lead to a simplified workflow.
 
 ### Database Interface
 
