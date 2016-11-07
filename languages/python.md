@@ -112,7 +112,17 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 
 ## Debugging and profiling
 
+### Debugging
 TODO
+
+### Profiling
+There are a number of available profiling tools that are suitable for different situations.
+
+* [cProfile](https://docs.python.org/2/library/profile.html) measures number of function calls and how much CPU time they take. The output can be further analyzed using the `pstats` module.
+* For more fine-grained, line-by-line CPU time profiling, two modules can be used:
+    - [line_profiler](https://github.com/rkern/line_profiler) provides a function decorator that measures the time spent on each line inside the function.
+    - [pprofile](https://github.com/vpelletier/pprofile) is less intrusive; it simply times entire Python scripts line-by-line. It can give output in callgrind format, which allows you to study the statistics and call tree in `kcachegrind` (often used for analyzing c(++) profiles from `valgrind`).
+
 
 ## Logging
 
