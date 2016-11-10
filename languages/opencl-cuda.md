@@ -1,18 +1,33 @@
-# OpenCL and CUDA
+# OpenCL & CUDA
 
 
-Open Computing Language (OpenCL) is a language for writing efficient parallel code on both GPU's and CPU's.
+## Sources for learning
+    - university courses
+    - informative videos
 
-###Installing Intel OpenCL on Ubuntu
+## Documentation
 
-OpenCL can be used on any modern machine by installing the Intel OpenCL SDK. Unfortunately, there is no Ubuntu package available. Creating it is straightforward though. See:
 
-http://develnoter.blogspot.nl/2012/05/installing-opencl-in-ubuntu-1204.html
+## Overview of libraries
 
-###Installing PyOpenCL on Ubuntu
 
-The PyOpenCL package in Ubuntu (python-pyopencl) is broken because of a packaging issue. Fix here:
+## Foreign Function Interfaces for CUDA and OpenCL
 
-http://tuxicate.blogspot.nl/2013/04/opencl-python-and-ubuntu-1210.html
+ * Python: PyCuda, PyOpenCL
+ * Java: JCuda, JOCL
+
+
+## Testing
+    - unit tests
+    - comparing results
+
+
+## Debugging and Profiling Tools
+
+
+## Performance Optimization
+
+
+## Useful online resources
 
 
