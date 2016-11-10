@@ -2,8 +2,8 @@
 
 
 ## Sources for learning
-    - university courses
-    - informative videos
+ * university courses
+ * informative videos
 
 ## Documentation
 
@@ -18,8 +18,8 @@
 
 
 ## Testing
-    - unit tests
-    - comparing results
+ * unit testing
+ * comparing results (precision)
 
 
 ## Debugging and Profiling Tools
