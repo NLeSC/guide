@@ -43,7 +43,7 @@
 * [Publishing Scientific Results](publishing/publishing_results.md)
    * [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
 * [Access to e-Infrastructure](e-infrastructure/e-infrastructure.md)
-   * [DAS-5](e-infrastructure/DAS-5.md)
+   * [DAS-5](e-infrastructure/das5.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
    * [Chapter Owners](chapter_owners.md)
 
