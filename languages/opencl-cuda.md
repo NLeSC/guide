@@ -12,19 +12,34 @@
 
 ## Documentation
 
+* OpenCL specification [[1.2](https://www.khronos.org/registry/cl/sdk/1.2/docs/man/xhtml/)] [[2.0](https://www.khronos.org/registry/cl/sdk/2.0/docs/man/xhtml/)]
+* CUDA Toolkit [[latest](http://docs.nvidia.com/cuda/index.html)]
+   * [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
+   * [CUDA Runtime API](http://docs.nvidia.com/cuda/cuda-runtime-api/index.html)
 
 ## Overview of libraries
+* OpenCL-based libraries
+  * [CLBlast](https://github.com/CNugteren/CLBlast)
+  * [clFFT](https://github.com/clMathLibraries/clFFT)
+* CUDA-based libraries
+  * [cuBLAS](http://docs.nvidia.com/cuda/cublas/index.html)
+  * [NVBLAS](http://docs.nvidia.com/cuda/nvblas/index.html)
+  * [cuFFT](http://docs.nvidia.com/cuda/cufft/index.html)
+  * [nvGRAPH](http://docs.nvidia.com/cuda/nvgraph/index.html)
+  * [cuRAND](http://docs.nvidia.com/cuda/curand/index.html)
+  * [cuSPARSE](http://docs.nvidia.com/cuda/cusparse/index.html)
 
 
 ## Foreign Function Interfaces for CUDA and OpenCL
 
- * Python: PyCuda, PyOpenCL
- * Java: JCuda, JOCL
+ * C++: [[Cuda](https://github.com/eyalroz/cuda-api-wrappers/)], [[OpenCL](https://github.com/KhronosGroup/OpenCL-CLHPP)]
+ * Python: [[PyCuda](https://mathema.tician.de/software/pycuda/)], [[PyOpenCL](https://mathema.tician.de/software/pycuda/)]
+ * Java: [[JCuda](http://www.jcuda.org/)], [[JOCL](http://www.jocl.org/)]
 
 
 ## Testing
  * unit testing
- * comparing results (precision)
+ * [comparing floating-point results](http://docs.nvidia.com/cuda/floating-point/index.html)
 
 
 ## Debugging and Profiling Tools
