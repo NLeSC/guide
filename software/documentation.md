@@ -42,6 +42,7 @@ when initialising git repository.
 
 * [StackOverflow on good readme](http://stackoverflow.com/questions/2304863/how-to-write-a-good-readme)
 * [short gist with README.md template](https://gist.github.com/jxson/1784669)
+* [The art of README](https://github.com/noffle/art-of-readme/blob/master/README.md) from nodejs community
 
 ## Well defined functionality
 
