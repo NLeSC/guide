@@ -17,7 +17,7 @@
    * [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
    * [CUDA Runtime API](http://docs.nvidia.com/cuda/cuda-runtime-api/index.html)
    
-## Source-to-source translator from Cuda to OpenCl
+## Source-to-source translator from Cuda to OpenCL
 
 * vtsynergy (https://github.com/vtsynergy)
    * This was shown to work on DAS5 after copying /usr/include/limits.h to $PWD and commenting out the lines around # include_next (122-125) :    
