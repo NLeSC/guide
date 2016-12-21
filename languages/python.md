@@ -49,7 +49,7 @@ There are two main distributions of Conda: [Anaconda](http://continuum.io/downlo
 
 Use `conda install` to install new packages and `conda update` to keep your system up to date. The `conda` command can also be used to create virtual environments.
 
-For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda seems very robust. If you want to add packages to the (Ana)conda repositories, please check [Build using conda](http://conda.pydata.org/docs/build_tutorials.html). 
+For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda seems very robust. If you want to add packages to the (Ana)conda repositories, please check [Build using conda](http://conda.pydata.org/docs/build_tutorials.html).
 A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues.
 
 ## Editors and IDEs
@@ -64,6 +64,7 @@ The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). 
 ## Building and packaging code
 
 * [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html) (so it can be installed with pip)
+  * Packages should be uploaded to PyPI using the `nlesc` account
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor.
 
