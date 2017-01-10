@@ -72,12 +72,15 @@ TODO: choose recommended approach (issue #38)
 
 ## Testing
 
-* [unittest](https://docs.python.org/3/library/unittest.html) is a framework available in Python Standard Library. [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
-* [nose](https://nose.readthedocs.org/en/latest/) extends `unittest` to provide easier testing functionality. [Intro to nose by Titus Brown](http://ivory.idyll.org/articles/nose-intro.html)
-* [pytest](http://pytest.org/latest/) is a full featured Python testing tool, that can be used with `nose`, `unittest` and other Python testing tools.
+* [unittest](https://docs.python.org/3/library/unittest.html) is a
+framework available in Python Standard Library.
+[Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
+* [pytest](http://pytest.org/latest/) is a full featured Python
+testing tool. You can use it with `unittest`.
+[Pytest intro](http://pythontesting.net/framework/pytest/pytest-introduction/)
 * [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
 
-Please use `nose` (aka `nosetests`), because nose tests are more readable and easier to run.
+Please use `pytest`.
 
 ### Code coverage
 
