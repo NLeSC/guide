@@ -20,7 +20,7 @@ It will save you a lot of time on debugging and allow for much quicker problem d
 
 ### Travis-CI
 
-The NLeSC public repositories should be build with [Travis-CI](https://travis-ci.org).
+The NLeSC public repositories should be built with [Travis-CI](https://travis-ci.org).
 Travis-CI is free for Open Source projects.
 A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
 At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
@@ -34,11 +34,6 @@ PS. If you want to get mails from Travis-CI then you have to login at https://tr
 To build repositories inside the Microsoft Windows operation system use [AppVeyor](https://www.appveyor.com/).
 AppVeyor is free for Open Source projects.
 
-### Jenkins-CI
-
-At the NLeSC we run a [Jenkins-CI](http://jenkins-ci.org/) instance which is behind a login at https://ci.esciencecenter.nl .
-It is used mostly for private repositories.
-
 ### Nightly builds
 
 Most CI builds are triggered by a git push, but sometimes the repository must be build every night.
@@ -48,6 +43,10 @@ Possible reasons for nightly builds:
 * The build performs an action that needs to be performed daily like updating a cache.
 
 For triggering nightly builds in Travis-CI the https://nightli.es/ tool can be used.
+
+### Polling tools
+
+All major CI services support some form of cctray.xml feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) and [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) give you a tray icon that turns red when a build fails.
 
 ## Code coverage
 
