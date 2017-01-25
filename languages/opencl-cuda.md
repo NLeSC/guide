@@ -2,8 +2,8 @@
 
 
 ## Sources for learning
- * university courses
- * informative videos
+ *please add university courses and informative videos*
+ * Parallel Reduction [[Slides](http://developer.download.nvidia.com/compute/cuda/1.1-Beta/x86_website/projects/reduction/doc/reduction.pdf)]
  * GPU Memory bootcamp - Tony Scudiero [[git repo](https://github.com/tscudiero/MemBootcamp)]
    * Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5353_Scudiero_Bootcamp1.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5353.html)]
    * Beyond the Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5376-Scudiero_Bootcamp2.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5376.html)]
@@ -44,7 +44,7 @@
 
 
 ## Testing
- * unit testing
+ * Unit Testing
     * Example of a unit test for CUDA kernel using the [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner/blob/master/examples/cuda/test_vector_add.py)
  * [comparing floating-point results](http://docs.nvidia.com/cuda/floating-point/index.html)
 
@@ -56,7 +56,13 @@
 
 
 ## Performance Optimization
- * [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner) (Python)
- * [CLTune](https://github.com/CNugteren/CLTune) (C++)
+ * Resources:
+     * Better Performance at Lower Occupancy [[Slides](http://www.nvidia.com/content/gtc-2010/pdfs/2238_gtc2010.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2010/video/S12238-Better-Performance-at-Lower-Occupancy.mp4)]
+     * [Maxwell Tuning Guide](http://docs.nvidia.com/cuda/maxwell-tuning-guide)
+     * [Pascal Tuning Guide](http://docs.nvidia.com/cuda/pascal-tuning-guide)
+
+ * Generic Auto Tuners:
+     * [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner) (Python)
+     * [CLTune](https://github.com/CNugteren/CLTune) (C++)
 
 
