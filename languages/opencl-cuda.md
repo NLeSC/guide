@@ -8,7 +8,7 @@
    * Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5353_Scudiero_Bootcamp1.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5353.html)]
    * Beyond the Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5376-Scudiero_Bootcamp2.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5376.html)]
    * Collaborative Access Patterns [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S6181-Scudiero_Bootcamp3.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2016/video/s6181-tony-scudiero-bootcamp-3.mp4)]
- * CUB: CUDA Collective primitives library [[Git](https://github.com/NVlabs/cub)] [[Slides](http://on-demand.gputechconf.com/gtc/2014/presentations/S4566-cub-collective-software-primitives.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2014/video/S4566-cub-collective-software-primitives.mp4)]
+ * CUB: CUDA Collective primitives library [[Git](https://github.com/NVlabs/cub)] [[Slides](http://on-demand.gputechconf.com/gtc/2015/presentation/S5617-Duane-Merrill.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5617.html)]
 
 ## Documentation
 * OpenCL specification [[1.2](https://www.khronos.org/registry/cl/sdk/1.2/docs/man/xhtml/)] [[2.0](https://www.khronos.org/registry/cl/sdk/2.0/docs/man/xhtml/)]
