@@ -1,12 +1,6 @@
 # Summary
 
 * [Introduction](introduction.md)
-* [Projects](projects/project_overview.md)
-   * [new Project()](projects/new_project.md)
-   * [Kickoff Meeting](projects/kickoff_meeting.md)
-   * [Project Planning](projects/project_planning.md)
-   * [Project Reviews](projects/project_reviews.md)
-   * [End of a Project](projects/end_of_a_project.md)
 * [Software Development](software/software_overview.md)
    * [Version Control](software/version_control.md)
    * [Releases](software/releases.md)
@@ -42,8 +36,14 @@
    * [More Examples](intellectual_property/more_examples.md)
 * [Publishing Scientific Results](publishing/publishing_results.md)
    * [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
-* [Access to e-Infrastructure](e-infrastructure/e-infrastructure.md)
+* [Access to (Dutch) e-Infrastructure](e-infrastructure/e-infrastructure.md)
    * [DAS-5](e-infrastructure/das5.md)
+ * [Projects](projects/project_overview.md)
+   * [new Project()](projects/new_project.md)
+   * [Kickoff Meeting](projects/kickoff_meeting.md)
+   * [Project Planning](projects/project_planning.md)
+   * [Project Reviews](projects/project_reviews.md)
+   * [End of a Project](projects/end_of_a_project.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
    * [Chapter Owners](chapter_owners.md)
 
