@@ -38,7 +38,7 @@
    * [eScience Conferences, Journals, and Workshops](publishing/conferences_journals_workshops.md)
 * [Access to (Dutch) e-Infrastructure](e-infrastructure/e-infrastructure.md)
    * [DAS-5](e-infrastructure/das5.md)
- * [Projects](projects/project_overview.md)
+* [Projects](projects/project_overview.md)
    * [new Project()](projects/new_project.md)
    * [Kickoff Meeting](projects/kickoff_meeting.md)
    * [Project Planning](projects/project_planning.md)
