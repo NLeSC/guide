@@ -1,4 +1,4 @@
-# Access to e-Infrastructure
+# Access to (Dutch) e-Infrastructure
 
 To successfully run a project and to make sure the project is sustainable after it has ended, it is important to choose the e-Infrastructure carefully. Examples of e-Infrastructure used by NLeSC projects are High Performance Computing machines (Supercomputers, Grids, Clusters), Clouds, data storage infrastructure, and web application servers.
 
