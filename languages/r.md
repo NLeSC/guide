@@ -117,7 +117,10 @@ R function documentation offers plenty of space to document the functionality, i
 
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
-### Debugging and profelling
+### Continuous integration
+Continuous integration can be done with for example [Travis], (https://travis-ci.org/), see [Chapter](https://github.com/NLeSC/guide/blob/master/software/testing.md) on testing
+
+### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
 
