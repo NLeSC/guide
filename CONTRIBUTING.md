@@ -1,6 +1,8 @@
 # Contributing
 
-This Knowledge Base is by and for the eScience Research Engineers at NLeSC.
+This Knowledge Base is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audiance is anyone interested in eScience and research software developement in general or how this is done at the eScience Center specifically.
+
+Contributions by anyone are most welcome.
 
 ## Scope
 
@@ -11,6 +13,8 @@ To make sure the information in this knowledge base stays relevant and  up to da
 Please use branches and pull requests to contribute content. You can also view the GitBook at a certain branch:
 
 https://nlesc.gitbooks.io/guide/content/v/BRANCH_NAME
+
+If your are not part of the NLeSC organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ## Chapter Owners
 
