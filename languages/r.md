@@ -7,11 +7,11 @@ R is particularly popular in the social, health, and biological sciences where i
 One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
-* Compared with Python, R does not need a notebook to program interactively. In IDE RStudio the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently you can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
+* Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://www.rstudio.com/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
 * Numbering in R starts with 1 and not with 0.
 
 ### Recommended sources of information
-Some R packages have their own google.group. All R functions have their own documentation in a standardized format. To learn R, Hadley Wickham wrote a book about programming in R, but their are various other books around. It's called [Advanced R](http://adv-r.had.co.nz). Further, stackoverflow and google should answer most of your questions.
+Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R, see the book [Advanced R](http://adv-r.had.co.nz) by Hadley Wickham, or [Writing better R code](www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) from the same author. Further, stackoverflow and standard search engines can lead you to answers to issues.
 
 # Getting started
 
@@ -113,7 +113,7 @@ R function documentation offers plenty of space to document the functionality, i
 # Testing, Checking, Debugging and Profiling
 
 ### Testing and checking
-[Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`.
+[Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`. Further, [testthat: Get Started with Testing](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf) by Whickham may also provide a good starting point.
 
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
