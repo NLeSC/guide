@@ -42,6 +42,6 @@ running somewhere so that they can *play around with it* and give usability feed
 
 For most software it should be possible to create a screencast. This is very useful for people to get a quick impression of what exactly you are doing without diving into the code itself. In case your software does not have a graphical user interface, even a screencast of a terminal session can be quite informative. Try to add audio, or at least subtitles, so people know what is going on in the video.
 
-At NLeSC we gather screencasts in our [https://www.youtube.com/user/NLeScienceCenter](Youtube Channel).
+At NLeSC we gather screencasts in our [Youtube Channel](https://www.youtube.com/user/NLeScienceCenter).
 
 
