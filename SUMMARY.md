@@ -43,6 +43,7 @@
    * [Kickoff Meeting](projects/kickoff_meeting.md)
    * [Project Planning](projects/project_planning.md)
    * [Project Reviews](projects/project_reviews.md)
+   * [Communication](projects/communication.md)
    * [End of a Project](projects/end_of_a_project.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
    * [Chapter Owners](chapter_owners.md)
