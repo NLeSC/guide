@@ -23,7 +23,7 @@ The philosophy of Python is summarized in the [Zen of Python](https://www.python
 
 Use `pip` or `conda` (note that pip and conda can be used side by side, see also [what is the difference between pip and conda?](http://stackoverflow.com/questions/20994716/what-is-the-difference-between-pip-and-conda)).
 
-If you are planning on distributing your code at a later stage, be aware that your choice of package management may affect your packaging process. See [Building and packaging](#building-and-packaging-code) form more info.
+If you are planning on distributing your code at a later stage, be aware that your choice of package management may affect your packaging process. See [Building and packaging](#building-and-packaging-code) for more info.
 
 ### Pip + virtualenv
 
