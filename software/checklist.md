@@ -29,11 +29,10 @@ Checklist for software development. Items link to explanation in other sections 
 ## [Communication](communication.html)
 
 - [home page](communication.html#home-page)
-- [project discussion list](communication.html#project-discussion-list)
+- [discussion list](communication.html#discussion-list)
 - [demo docker image in dockerhub (with Dockerfile)](communication.html#demo-docker-image-in-dockerhub-with-dockerfile)
 - [an online demo](communication.html#an-online-demo)
-- [Pitch presentation (1 to 3 slides)](communication.html#pitch-presentation-1-to-3-slides)
-- [few sentences summary of the project](communication.html#few-sentences-summary-of-the-project)
+- [screencast](communication.html#screencast)
 
 ## [Code Quality](code_quality.html)
 
