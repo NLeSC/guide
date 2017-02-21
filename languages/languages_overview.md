@@ -33,9 +33,9 @@ At NLeSC we prefer Java and Python over C++ and Perl, as these languages in gene
 
 ## Selecting tools and libraries
 
-To get some inspiration on available tools and libraries see this awesome list:
+To get some inspiration on available tools and libraries see this awesome list of awesome lists:
 
-https://getawesomeness.herokuapp.com/
+https://awesome.re/
 
 and this list of free-for-opensource services:
 
