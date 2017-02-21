@@ -33,10 +33,14 @@ At NLeSC we prefer Java and Python over C++ and Perl, as these languages in gene
 
 ## Selecting tools and libraries
 
-To get some inspiration on available tools and libraries see this awesome list of awesome lists:
+On GitHub there is a concept of an "awesome list", that collects awesome libraries and tools on some topic. For instance, here is one for Python: https://github.com/vinta/awesome-python
 
-https://awesome.re/
+Now, someone has been smart enough to see the pattern, and has created an awesome list of awesome lists: https://awesome.re/
 
-and this list of free-for-opensource services:
+Highly recommented to get some inspiration on available tools and libraries!
 
-https://github.com/ripienaar/free-for-dev
+## Development Services
+
+To do development in any language you first need infrastructure (code hosting, ci, etc). Luckily a lot is available for free now.
+
+See this list: https://github.com/ripienaar/free-for-dev
