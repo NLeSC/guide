@@ -1,4 +1,4 @@
-Broken link checker status [![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide)
+[![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide) (Broken link checker)
 
 
 # Guide
