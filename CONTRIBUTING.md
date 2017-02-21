@@ -10,9 +10,11 @@ To make sure the information in this knowledge base stays relevant and  up to da
 
 ## Branches
 
-Please use branches and pull requests to contribute content. You can also view the GitBook at a certain branch:
+Please use branches and pull requests to contribute content. You can also view the GitBook at a certain branch by replacing 'master' with the branch you would like to preview:
 
-https://nlesc.gitbooks.io/guide/content/v/BRANCH_NAME
+```
+https://nlesc.gitbooks.io/guide/content/v/master
+```
 
 If your are not part of the NLeSC organization but would still like to contribute please do by submitting a pull request from a fork.
 
