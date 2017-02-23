@@ -26,8 +26,6 @@ Use of linters will not only help to keep code cleaner but will also help findin
 Here a very nice article about why coding styles matter, and increase software quality:
 [Improving software quality, why Coding Style Matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
 
-See the collection of config files for automated coding style [here](https://github.com/NLeSC/knowledge/tree/master/software/config)
-
 For style guides see the different languages in [the Language Guides](../languages/languages_overview.html).
 
 Google has a style guide for most languages [google style guide page](https://code.google.com/p/google-styleguide/).
