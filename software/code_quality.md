@@ -28,7 +28,7 @@ Here a very nice article about why coding styles matter, and increase software q
 
 See the collection of config files for automated coding style [here](https://github.com/NLeSC/knowledge/tree/master/software/config)
 
-For style guides see the different languages in [the Language Guides](languages/languages_overview.html).
+For style guides see the different languages in [the Language Guides](../languages/languages_overview.html).
 
 Google has a style guide for most languages [google style guide page](https://code.google.com/p/google-styleguide/).
 
@@ -60,4 +60,4 @@ If your language supports namespaces, use **nl.esciencecenter**
 
 ## Code reviews
 
-See the [Code Reviews](software_development/code_reviews.html) section.
+See the [Code Reviews](./code_review.html) section.

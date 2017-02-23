@@ -124,7 +124,7 @@ Identifiers should be associated with releases and should be created together wi
 
 Make it easy to cite your software. Read more in [the post by Robin Wilson](http://www.software.ac.uk/blog/2013-09-02-encouraging-citation-software-introducing-citation-files)
 This file should be human readable. Should point to the journal article if there is one and to DOI. More about obtaining DOI
-in [DIO section](https://github.com/NLeSC/estep-checklist/blob/master/checklist-verbose.md#doi-or-pid).
+in [DIO section](./documentation.html#doi-or-pid.html).
 
 ## Print software version
 

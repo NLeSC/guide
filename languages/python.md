@@ -95,7 +95,7 @@ Most test runners have have the coverage package integrated.
 
 The code coverage reports can be published online in code quality service or code coverage services.
 Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
-If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../sofware/testing.md#Code_coverage_services).
+If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](./software/testing.html#Code_coverage_services).
 
 ## Code quality analysis tools and services
 
