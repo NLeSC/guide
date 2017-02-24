@@ -48,27 +48,27 @@ Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For run
 
 ## Code quality analysis tools and services
 
-### SonarQube
+### [Codacy](https://www.codacy.com)
 
-SonarQube (http://www.sonarqube.org/) is an open platform to manage code quality.
-On our Jenkins build server we do a SonarQube analysis for each Jenkins job. Out SonarQube instance is hosted at https://sonar.esciencecenter.nl and is behind a login.
+Code quality and coverage grouped by file.
+Can setup goals to improve quality or coverage by file or category.
+For example project see https://www.codacy.com/app/NLeSC/Xenon/dashboard
+
+### [SonarQube](https://sonarqube.com/about)
+
+SonarQube is an open platform to manage code quality which can show code coverage and count test results over time.
 Sonar Qube can analyze Java, Python and Javascript.
-
-### [Coveralls](https://coveralls.io)
-Can show code coverages over time for many languages including Java, Python and Javascript.
-For example project see https://coveralls.io/r/NLeSC/MAGMa
 
 ### [Codecov](https://codecov.io)
 Can show code coverages for many languages including Java, Python and Javascript.
 Shows unified coverage and separate coverage for matrix builds.
 For example project see https://codecov.io/github/NLeSC/Xenon
 
-
 ## Debugging and Profiling
 
 Use jConsole or jVisualVM.
 
-##Logging
+## Logging
 
 For logging, we use [the slf4j api](http://www.slf4j.org). The advantage of slf4j is that it is trivial to change logging implementations. The API distribution also contains a few simple implementations.
 
@@ -82,7 +82,6 @@ Java has the inbuild [JavaDoc](http://www.oracle.com/technetwork/java/javase/doc
 
 [JFreeChart](http://www.jfree.org/jfreechart/) is a Java library that allows to do nice looking charts.
 
-##Available Templates
+## Available Templates
 
 There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/nlesc/xenon) as an (rather complex) example.
-
