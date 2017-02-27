@@ -26,6 +26,7 @@
    * [C and C++](languages/ccpp.md)
    * [Fortran](languages/fortran.md)
 * [Intellectual Property](intellectual_property/intellectual_property_overview.md)
+   * [TL;DR: Some rules](intellectual_property/some_rules.md)
    * [About the Law](intellectual_property/about_the_law.md)
    * [Trademarks](intellectual_property/trademarks.md)
    * [Trade Secrets and Patents](intellectual_property/trade_secrets_patents.md)
