@@ -28,12 +28,12 @@ NLeSC also has access to the infrastructure provided by SURFnet. Access is norma
 
 ### Available systems at SURF
 
-Here we list some of the most likely to be used resources at SURF. See [this site](https://www.surf.nl/en/services-and-products) for an overview all SURF services and products, and [here](https://userinfo.surfsara.nl/systems) for detailed information on the SURFsara infrastructure. 
+Here we list some of the most likely to be used resources at SURF. See [this site](https://www.surf.nl/en/services-and-products) for an overview all SURF services and products, and [here](https://userinfo.surfsara.nl/systems) for detailed information on the SURFsara infrastructure.
 
 SURFsara:
 
 - **Cartesius**: The national supercomputer of The Netherlands. It contains a lot of very high performance machines, connected through a fast interconnect (about 41000 cores in total, plus 132 GPUs). It also has a large storage system (7+ Pb). Cartesius is typically designed for large parallel applications that require thousands of cores at once.
-- **Lisa**: National Cluster. Similar machines as the Cartesius, without the interconnect (about 8000 cores in total). Storage also more limited. Lisa is typically designed to run lots of small (1 to 16 core) applications at the same time. 
+- **Lisa**: National Cluster. Similar machines as the Cartesius, without the interconnect (about 8000 cores in total). Storage also more limited. Lisa is typically designed to run lots of small (1 to 16 core) applications at the same time.
 - **Grid**: Same machines again, now with a Grid Middleware. Not recommended for use in NLeSC projects.
 - **HPC Cloud**: On demand computing infrastructure. Nice if you need longer running services, or have a lot of special software requirements.
 - **Hadoop**: Big Data analytics framework.
@@ -66,7 +66,7 @@ We do not have an official standard commercial cloud provider, but have the most
 
 ## Procolix
 
-If a more long term infrastructure is needed which cannot be provided by SURF, the default company we use for managed hosting is [Procolix](https://www.procolix.com/). Procolix hosts our eduroam/surfconext authentication machines, as well as the Jenkins testing infrastructure.
+If a more long term infrastructure is needed which cannot be provided by SURF, the default company we use for managed hosting is [Procolix](https://www.procolix.com/). Procolix hosts our eduroam/surfconext authentication machines.
 
 In principle the NLeSC will not pay for infrastructure needed by projects. In these cases the PI's will have to pay the bill.
 
