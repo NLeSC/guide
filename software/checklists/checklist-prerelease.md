@@ -60,7 +60,7 @@ meaning of issue labels used|
 
 Item / Phase | Done      |
 :------------|:---------:|
-using the NLeSC coding style is required|
+using the eScience Center coding style is required|
 [editorconfig](http://editorconfig.org/)|
 applied code style in automated way if possible (i.e using linters and code formaters)|
 dev environment docker images in Dockerhub (with Dockerfile)|
