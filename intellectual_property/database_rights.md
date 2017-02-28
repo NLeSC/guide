@@ -18,5 +18,5 @@ A database can also be protected by copyright, if the selection and arrangement 
 
 Permission to extract and reuse substantial parts of a database can be given to others by the owner of the database rights via a license. Starting with version 4.0, the well-known [Creative Commons](https://www.creativecommons.org) (CC) licenses include a grant of database rights, making them suitable for use with databases. There is also the Open Database License, which predates CC 4.0, and has a more academic origin.
 
-The default database license at NLeSC is the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. Putting this license on your database will simultaneously license both the database rights and the copyright (if any) on the database itself and on its contents all under the same well-known and widely used terms.
+The default database license at the Netherlands eScience Center is the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. Putting this license on your database will simultaneously license both the database rights and the copyright (if any) on the database itself and on its contents all under the same well-known and widely used terms.
 

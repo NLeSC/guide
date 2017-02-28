@@ -4,7 +4,7 @@
 
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
-Apache 2.0 is the default choice for the NLeSC software license. Other license can be used in special cases, when software has
+Apache 2.0 is the default choice for the Netherlands eScience Center software license. Other license can be used in special cases, when software has
 already attached license or there are commercial partners that require different licensing.
 
 The formal text of the licence is here: http://www.apache.org/licenses/LICENSE-2.0.html

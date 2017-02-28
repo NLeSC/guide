@@ -10,7 +10,7 @@ These points do not apply to prototype / throwaway phase.
 ## Continuous integration
 
 To run testing, perform code quality analysis and build artifacts a Continuous Integration server can be used. The build will be performed every git push and pull request. Using a CI server will help with `it works for me` problems.
-NLeSC uses continuous integration services as much as possible when creating code.
+The Netherlands eScience Center uses continuous integration services as much as possible when creating code.
 
 [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI), public on [Travis](https://travis-ci.org/)
 
@@ -20,7 +20,7 @@ It will save you a lot of time on debugging and allow for much quicker problem d
 
 ### Travis-CI
 
-The NLeSC public repositories should be built with [Travis-CI](https://travis-ci.org).
+The eScience Center public repositories should be built with [Travis-CI](https://travis-ci.org).
 Travis-CI is free for Open Source projects.
 A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
 At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
@@ -51,7 +51,7 @@ All major CI services support some form of cctray.xml feed. This feed can be rea
 ## Code coverage
 
 Code coverage is a measure which describes how much of the source code is exercised by the test suite.
-At the NLeSC we require minimum of 70% coverage.
+At the Netherlands eScience Center we require minimum of 70% coverage.
 
 Setting up code coverage for a repository depends on the programming language, see the [language specific guides](../languages/languages_overview.html) for setup instructions.
 
@@ -74,7 +74,7 @@ For example project see https://codecov.io/gh/NLeSC/Xenon, with a Java 7/8 and L
 
 #### [Coveralls](https://coveralls.io)
 
-More popular then Codedov.
+More popular then Codecov.
 For example project see https://coveralls.io/r/NLeSC/MAGMa
 
 ## End2end tests

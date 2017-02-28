@@ -59,12 +59,12 @@ API documentation should explain function arguments and outputs, or the object m
 ## Usage documentation
 
 * User manual (as PDF) in the "doc" directory. This is the real manual, targeted at your users. Make sure this is readable by domain experts, and not only software developers. Make sure to include:
-    * NLeSC logo.
+    * Netherlands eScience Center logo.
     * Examples.
     * Author name(s).
     * Versions numbers of the software and documentation.
     * References to:
-        * The NLeSC web site.
+        * The eScience Center web site.
         * The project web site.
         * The Github page of the project.
         * Location of the issue tracker.
@@ -79,8 +79,8 @@ It should be made available once there is more than one developer working on the
 
 [example](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md)
 Guidelines should be made available once the code is available online and there is a process
-for external contributions. External contributions not necessary mean ‘out of NLeSC’
-it could be other engineer in NLeSC. Good guidelines will save time of both lead
+for external contributions. External contributions do not necessary mean from outside the eScience Center,
+it could be another engineer within the eScience Center. Good guidelines will save time of both lead
 developer and contributor since things have to be explained only once.
 [GitHub supports CONTRIBUTING file](https://github.com/blog/1184-contributing-guidelines).
 
@@ -94,13 +94,13 @@ developers join.
 
 ## Documented code style
 
-From the beginning of the project, decision on the code style has to be made
-and then it should be documented. Not having documented code style will highly
+From the beginning of the project, a decision on the code style has to be made
+and then should be documented. Not having a documented code style will highly
 increase the chance of inconsistent style across the codebase, even when only
-one developer writes code. NLeSC should have sane suggestion of coding style
-for each programming language in use in NLeSC. Coding styles are about consistency
-and making a choice and not so much about the superiority of one style over the other.
-Sane set of guides can be found on in [google documentation](https://github.com/google/styleguide).
+one developer writes code. The Netherlands eScience Center should have a sane suggestion of coding style
+for each programming language we use. Coding styles are about consistency
+and making a choice, and not so much about the superiority of one style over the other.
+A sane set of guides can be found on in [google documentation](https://github.com/google/styleguide).
 
 ## How to file a bug report
 
