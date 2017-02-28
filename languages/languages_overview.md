@@ -1,4 +1,4 @@
-This chapter provides practical info on each of the main programming languages of NLeSC.
+This chapter provides practical info on each of the main programming languages of the Netherlands eScience Center.
 
 This info is (on purpose) high level, try to provide "default" options, and mostly link to more info.
 
@@ -21,7 +21,7 @@ Each chapter should contain:
 
 ## Preferred Languages
 
-At NLeSC we prefer Java and Python over C++ and Perl, as these languages in general produce more sustainable code. It is not always possible to choose which libraries we use, as almost all projects have existing code as a starting point.
+At the Netherlands eScience Center we prefer Java and Python over C++ and Perl, as these languages in general produce more sustainable code. It is not always possible to choose which libraries we use, as almost all projects have existing code as a starting point.
 
 (In alphabetical order)
 

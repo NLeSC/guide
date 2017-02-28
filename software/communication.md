@@ -1,10 +1,10 @@
 # Communication
 
-Communication to the outside world is important for visibility of NLeSC projects and for building
+Communication to the outside world is important for visibility of Netherlands eScience Center projects and for building
 the user base.
 
 Communication to other developers is a way to build community and contributors. It also increases
-NLeSC visibility in development world.
+our visibility in development world.
 
 ## Home page
 
@@ -42,6 +42,6 @@ running somewhere so that they can *play around with it* and give usability feed
 
 For most software it should be possible to create a screencast. This is very useful for people to get a quick impression of what exactly you are doing without diving into the code itself. In case your software does not have a graphical user interface, even a screencast of a terminal session can be quite informative. Try to add audio, or at least subtitles, so people know what is going on in the video.
 
-At NLeSC we gather screencasts in our [Youtube Channel](https://www.youtube.com/user/NLeScienceCenter).
+At the Netherlands eScience Center we gather screencasts in our [Youtube Channel](https://www.youtube.com/user/NLeScienceCenter).
 
 

@@ -277,7 +277,6 @@ In all cases, file many small pull requests, not one big one, as GitHub's
 support for code reviews is rather limited. Putting too many issues into a
 single pull request quickly becomes unwieldy.
 
-
 ## References
 
 Atwood, Jeff (2006) [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/)

@@ -43,7 +43,7 @@ project discussion list (github issues, mailing list, not private email) for all
 for services: a demo docker image in dockerhub (with Dockerfile)|
 for websites: an online demo|
 Pitch presentation (1 to 3 slides)|
-Few sentences about the project for [nlesc technology pages](https://www.esciencecenter.nl/technology)|
+Few sentences about the project for [the technology pages on our website](https://www.esciencecenter.nl/technology)|
 
 ##Testing
 
@@ -76,7 +76,7 @@ DOI or PID ([making your code citable](https://guides.github.com/activities/cita
 
 Item / Phase | Done      |
 :------------|:---------:|
-using the NLeSC coding style is required|
+using the eScienc Center coding style is required|
 [editorconfig](http://editorconfig.org/)|
 applied code style in automated way if possible (i.e using linters and code formaters)|
 dev environment docker images in Dockerhub (with Dockerfile)|

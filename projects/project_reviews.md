@@ -11,7 +11,7 @@ The goals are as follows:
 * Financial status.
 * Look for ways to extend collaborations.
 * Consider project legacy and post-funding support.
-* Potential interaction with other NLeSC projects.
+* Potential interaction with other eScience Center projects.
 
 The standard agenda for this 1.5 hour meeting is:
 

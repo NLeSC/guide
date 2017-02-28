@@ -33,7 +33,7 @@ Snowball is licensed under a permissive license, so it can be redistributed unde
 
 ### How should the work(s) be licensed?
 
-The xtas Python code, and the xtas combined work, can be licensed under any license we want, so we should use the default NLeSC license, which is the Apache License v2.0.
+The xtas Python code, and the xtas combined work, can be licensed under any license we want, so we should use the default eScience Center license, which is the Apache License v2.0.
 
 If we redistribute Snowball, we must do so under the BSD license granted by its authors. (We cannot give additional permissions for Snowball, since we don't own the copyright, and additional restrictions would be unenforceable for the same reason.)
 
@@ -54,7 +54,7 @@ Chardet is licensed under a weak copyleft license, so it can be redistributed un
 
 ### How should the work(s) be licensed?
 
-xtas as a whole, and the xtas Python code, can be licensed in any way we want, so we use the default NLeSC license, which is the Apache License v2.0. If we distribute chardet, we must do so under the LGPL v2.1 license granted by its copyright owners.
+xtas as a whole, and the xtas Python code, can be licensed in any way we want, so we use the default eScience Center license, which is the Apache License v2.0. If we distribute chardet, we must do so under the LGPL v2.1 license granted by its copyright owners.
 
 
 ## xtas vs. unidecode
@@ -89,7 +89,7 @@ Finally, if it is decided at some point in the future that the xtas Python sourc
 
 The simplest solution in this case would be to simply license the xtas Python code and the derived work under the GPLv3. However, we want people to be able to use as much of our software as possible in proprietary software, which is why our preferred license is the permissive ALv2.
 
-As is probably clear by now, dependencies that are under a strong copyleft license complicate your life if you want people to be able to make proprietary works based on your software. For this reason, we try to avoid them at NLeSC.
+As is probably clear by now, dependencies that are under a strong copyleft license complicate your life if you want people to be able to make proprietary works based on your software. For this reason, we try to avoid them.
 
 
 ## All together now
@@ -131,15 +131,15 @@ The whole combined work cannot be distributed, since it incorporates OpenIFS. If
 
 ### Can we work on this privately, without distributing anything?
 
-The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project (and prepare and run combined works) within NLeSC without violating the licenses, as long as we do not share the results with anyone.
+The GPL allows making private modifications of software covered by it, with no restrictions, provided the changed software is not distributed at all. The OpenIFS license also allows making private modifications. So we can work on this project (and prepare and run combined works) within the Netherlands eScience Center without violating the licenses, as long as we do not share the results with anyone.
 
-However, as in most of our projects, we work together with a principal investigator outside NLeSC. This means that we exchange materials between different legal entities, which counts as distribution. We can do that with our own code (which we can even publish openly under the ALv2) and with DALES, but not with OpenIFS or any combined works.
+However, as in most of our projects, we work together with a principal investigator outside the eScience Center. This means that we exchange materials between different legal entities, which counts as distribution. We can do that with our own code (which we can even publish openly under the ALv2) and with DALES, but not with OpenIFS or any combined works.
 
 ### What other options are there in this kind of situation?
 
 We can try to split up the system into independent programs that run in separate processes and communicate with each other over well-documented, generic interfaces. In this way, there would never be a combined work, just a few independent works that exchange information. Exactly how separate the programs have to be to not be considered a single work is, again, a gray area.
 
-We could also ask the OpenIFS and DALES copyright owners for permission to share combined works between NLeSC and the PI. That would remove all uncertainty, but may not be practical in general.
+We could also ask the OpenIFS and DALES copyright owners for permission to share combined works between the eScience Center and the PI. That would remove all uncertainty, but may not be practical in general.
 
 Another option would be to replace one of the dependencies by one written by ourselves. This is usually impractical, both due to time constraints and because the new version would not have the scientific pedigree of the existing one.
 
