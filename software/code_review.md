@@ -305,9 +305,6 @@ If you are using Zenhub in your repository, you can make a category
     - Review documents (user stories, test plans)
   - Github: pull request support, creates a link to external review
 
-- Klocwork (http://www.klocwork.com/Code-Review-Tools)
-  - Link dead, doesn't appear to offer any code review tools
-
 - Jetbrains Upsource (https://upsource.jetbrains.com/)
   - License: proprietary, runs on your own server or cloud
   - Integrates with JetBrains IDEs (PyCharm, IntelliJ)
