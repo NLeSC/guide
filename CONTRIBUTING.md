@@ -16,7 +16,7 @@ Please use branches and pull requests to contribute content. You can also view t
 https://nlesc.gitbooks.io/guide/content/v/master
 ```
 
-If your are not part of the NLeSC organization but would still like to contribute please do by submitting a pull request from a fork.
+If your are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ## Chapter Owners
 

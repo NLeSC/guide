@@ -2,7 +2,7 @@ Checkmatrix for 'eStep friendly' projects.
 
 This matrix shows what parts of the software sustainability checklist should be taken care of at(perhaps slightly before) what state of a project.
 
-Though very generic in scope and context, this is as a NLeSC specific list. This allows us to keep the number of "states" low.
+Though very generic in scope and context, this is an eScience Center specific list. This allows us to keep the number of "states" low.
 
 ## Explanation of project states
 
@@ -20,7 +20,7 @@ Though very generic in scope and context, this is as a NLeSC specific list. This
   - The software has a release.
   - The software has users: people actually using your software/code
   - You have external contributor
-  - The software could  is actively used and contributed to by so many people that it becomes a community project rather than a NLeSC project.
+  - The software is actively used and contributed to by so many people that it becomes a community project rather than an eScience Center project.
 
 These states happen in order and are exclusive.
 
@@ -64,7 +64,7 @@ project discussion list (github issues, mailing list, not private email) for all
 for services: a demo docker image in dockerhub (with Dockerfile)|||X
 for websites: an online demo|||X
 Pitch presentation (1 to 3 slides)||X
-Few sentences about the project for [nlesc technology pages](https://www.esciencecenter.nl/technology)|||X
+Few sentences about the project for [the technology pages on our website](https://www.esciencecenter.nl/technology)|||X
 
 ##Testing
 
@@ -97,7 +97,7 @@ DOI or PID ([making your code citable](https://guides.github.com/activities/cita
 
 Item / Phase | Prototype | Pre-release | Mature |
 :------------|:---------:|:-----------:|:------:|
-using the NLeSC coding style is required||X
+using the eScience Center coding style is required||X
 [editorconfig](http://editorconfig.org/)||X
 applied code style in automated way if possible (i.e using linters and code formaters)||X
 dev environment docker images in Dockerhub (with Dockerfile)||X

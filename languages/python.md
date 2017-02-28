@@ -56,7 +56,7 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 
 ## Editors and IDEs
 
-* Every major text editor supports Python, either natively or through plugins. At NLeSC, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
+* Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
 * For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice.
 
 ## Coding style conventions
@@ -196,7 +196,7 @@ CPython (the official and mainstream Python implementation) is not built for par
 Having said that, there are many packages that circumvent this constraint.
 * The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
 * [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
-* At NLeSC, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
+* At the eScience Center, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
 
@@ -225,6 +225,6 @@ The recommended layout for files/modules etc in Python is described by [Kenneth 
 
 It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
 
-Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that is more NLeSC-like, but not perfect (e.g., needs replacing of project name).
+Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that brings it closer to our ideal, but it is stil not perfect (e.g., needs replacing of project name).
 
 An alternative might be to create a project template using (for example) [cookiecutter](https://github.com/audreyr/cookiecutter). This solution needs more research.
