@@ -13,10 +13,10 @@ An informal explanation of what that means is here: http://www.oss-watch.ac.uk/r
 
 Each source file in your program or library should start with the following copyright statement in a comment block at the top (but underneath a shebang line if present, for technical reasons):
 
-    Copyright <years> Netherlands eScience Center and <Institution of PI>
+    Copyright <years> Netherlands eScience Center and <Other owners>
     Licensed under the Apache License, version 2.0. See LICENSE for details.
 
-The same notice should be somewhere in your README file, which should also contain an overview of dependencies and which licenses they are under. For <years>, you should list all years in which changes were published, so if you started in a private repository in 2015, opened it up in 2016, and did the final commit in 2017, <years> should be 2016, 2017.
+The same notice should be somewhere in your README file, which should also contain an overview of dependencies and which licenses they are under. For <years>, you should list all years in which changes were published, so if you started in a private repository in 2015, opened it up in 2016, and did the final commit in 2017, <years> should be 2016, 2017. For our "standard" projects, the default is to share the copyright between the eScience Center and the PI(s) institutions, but other arrangements may have been made. So check that, and make sure everyone is represented under <Otehr owners>.
 
 ## Compatible licenses of all libraries
 
