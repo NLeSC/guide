@@ -4,7 +4,7 @@
 
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
 
-The Apache License version 2.0 is the default choice for licensing software developed at the Netherlands eScience Center. Other licenses can be used in special cases, e.g. when we add to existing software that already has a different license, or if there are commercial partners that require different licensing.
+The Apache License version 2.0 is the default choice for licensing software developed at the Netherlands eScience Center. Other licenses can be used in special cases, e.g. when we add to existing software that already has a different license (see below), or if there are commercial partners that require different licensing.
 
 The formal text of the licence is here: http://www.apache.org/licenses/LICENSE-2.0.html
 An informal explanation of what that means is here: http://www.oss-watch.ac.uk/resources/apache2
@@ -28,4 +28,8 @@ when a new dependency is added to the project. See the Intellectual Property sec
 The NOTICE file is the Apache License' way of dealing with attributions. If you have any dependencies that are distributed under the Apache License, and you redistribute them (in either binary or source code form), then you must include the original NOTICE file(s) as well. If you have any attribution requirements of your own, you can add them in your own NOTICE file. If you do not distribute the dependencies, but only e.g. list them in a requirements.txt, then you do not need to include their NOTICE files in your program.
 
 Read more [here](http://www.apache.org/dev/licensing-howto.html)
+
+## Modifying existing software
+
+If you are modifying a file written by someone else, which already has its own copyright statement and Open Source license grant (possibly with a different license), then that existing statement and the grant must be kept. If you've added more than a trivial fix, add the first of the two lines above to the copyright statement, but keep the existing license grant. In these cases, we simply release our contributions under the same license the other contributors have chosen, as this avoids a lot of unnecessary complexity. If the software is proprietary, ask for advice first.
 
