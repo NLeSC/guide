@@ -9,6 +9,6 @@ install:
 - node_modules/.bin/gitbook install
 - node_modules/.bin/gitbook serve --no-live --no-watch &
 # wait for gitboook serve spinup
-- sleep 10
+- sleep 20
 #check all links using blc, skip example http://localhost:8000 link from the javascript chapter.
 script: node_modules/.bin/blc --exclude http://localhost:8000 --recursive http://localhost:4000
