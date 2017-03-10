@@ -207,7 +207,7 @@ npm install react --save
 ```
 
 To be able to use its functionality in TypeScript we need to install the typings. 
-We can search for the correct package at (http://microsoft.github.io/TypeSearch/)[http://microsoft.github.io/TypeSearch/].
+We can search for the correct package at http://microsoft.github.io/TypeSearch/ .
 
 And install it with:
 
