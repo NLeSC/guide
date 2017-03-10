@@ -48,6 +48,10 @@ Think of it as a kind of code review but with focus on mechanics, not code. The 
 (ii) download works, (iii) there are instructions on how to (iv) install and (v) start using software,
 some of the things in this *scan* could be automated with continuous integration.
 
+### Citeable
+
+Create a DOI for each release see [Publishing results chapter](../publishing/publishing_results.md#citing-datasets,-software-and-results).
+
 ### Dissemination
 
 news item on site / annual report, etc.
