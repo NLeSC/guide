@@ -19,10 +19,9 @@ Among others, he mentions the following style guides:
 [These](http://www.youtube.com/watch?v=yQaAGmHNn9s&list=PLA56F6A06883A2AD8) video tutorials (totaling a couple of hours) are useful if you're just starting with learning the JavaScript language.
 
 To develop a website, usually, JavaScript frameworks are used. 
-For direct manipulation of the HTML DOM tree and HTTP calls [jQuery](http://jquery.com) can be used. 
-[AngularJS](https://angularjs.org) is a framework that separates the view from JavaScript and binds HTML elements to JavaScript code. 
-It can be used for single and multi-page web applications. 
-We advise to use [John Papas style guide](https://github.com/johnpapa/angularjs-styleguide) when making an Angular application.
+For direct manipulation of the HTML DOM tree and HTTP calls [jQuery](http://jquery.com) can be used.
+[React](https://facebook.github.io/react/) is a library which can used to create interactive User Interfaces by combining components.
+[Redux](http://redux.js.org/) is a library which can be used to let state changes flow through React components.
 
 ## Web Standards Curriculum
 
@@ -34,57 +33,33 @@ In particular, see the page about [Javascript best practices](http://www.w3.org/
 
 # Basic workflow
 
+
 ## Starting a project
 
-[Yeoman](http://yeoman.io/) is a tool that generates an initial project setup while adhering to industry best practices. 
-[Here](http://code.tutsplus.com/tutorials/building-apps-with-the-yeoman-workflow--net-33254) is a blog entry that lays out Yeoman's philosophy. 
-In order to run Yeoman, you'll need to install [node.js](http://nodejs.org/) and [node.js package manager](https://www.npmjs.org/). 
-To actually use Yeoman, it needs a generator. We recommend using the [generator-angular](https://github.com/yeoman/generator-angular). 
-``generator-angular`` creates an Angular application using [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io) for unit testing and [SASS](http://sass-lang.com) (structural layer on top of CSS) for styling webpages. 
+To create a [React](https://facebook.github.io/react/) application use the [Create React App](https://github.com/facebookincubator/create-react-app)
+
 To run JavaScript commands from the command-line, you will need to install some global Javascript libraries. 
 On Ubuntu (14.04) based systems, you can use the following commands to install these packages:
 
-```
+```shell
 # system packages (Ubuntu/Debian)
-sudo apt-get install npm
-#
-sudo apt-get install nodejs
-#
-sudo apt-get install nodejs-legacy
-#
-sudo apt-get install ruby
-#
-sudo apt-get install ruby-dev
-
-# Ruby package
-sudo gem install compass
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 # Node packages
-npm install -g yo
-#
-npm install -g generator-angular
-#
-npm install -g grunt-cli
-#
-npm install -g bower
+# Install the create react app cli tool
+npm install -g create-react-app
 ```
 
 For example:
 
 ```bash
-# make a new directory 'myproject'
-mkdir myproject
-# change directory into it
-cd myproject
-# call yeoman (yo) and create the scaffolding for an
-# angular application called appName
-yo angular appName
-....
-# download and install the packages listed in bower.json
-bower install
-# serve the web application (look in the Gruntfile.js for 
-# details on where it's served)
-grunt serve
+# Generates a React application skeleton in a new directory 'my-app/'
+create-react-app my-app
+cd my-app
+# serve the web application
+npm start
+# Will open web browser with the web application
 ```
 
 ## Editor
@@ -97,7 +72,6 @@ These are some good JavaScript editors:
 * Adobe [Brackets](http://brackets.io/?lang=en)
 
 The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom can have some performance problems, especially with larger files.
-
 
 ## Debugging
 
@@ -135,6 +109,7 @@ Then open the webbrowser to http://localhost:8000.
 * [Jasmine](http://jasmine.github.io/), a behavior-driven development framework for testing JavaScript code.
 * [Karma](http://karma-runner.github.io/), Test runner, runs tests in web browser with code coverage. Use [PhantomJS](http://phantomjs.org/) as headless webbrowser on CI-servers.
 * [Tape](https://github.com/substack/tape), a minimal testing framework that helps remove some of the black-box approach of some of the other frameworks.
+* [Jest](https://github.com/facebook/jest), a test framework from Facebook which is integrated into the [Create React App](https://github.com/NLeSC/create-react-app)
 
 ## Web based tests
 To interact with web-browsers use [Selenium](http://docs.seleniumhq.org/).
@@ -166,10 +141,7 @@ The JSFiddle result is not stored, however.
 ## Code quality analysis tools and services
 
 * [Code climate](https://codeclimate.com) can analyze Javascript (and Ruby, PHP). For example project see https://codeclimate.com/github/NLeSC/PattyVis
-* [Codacy](https://www.codacy.com) can analyze Java, Python and Javascript (and CSS, PHP, Scala). The analysis for Java and Python is not as good as for Javascript. The analysis is quite slow, as it analyzes each past commit. For example project see https://www.codacy.com/public/sverhoeven/PattyVis/dashboard
-* [Coveralls](https://coveralls.io) can show code coverages over time for many languages including Java, Python and Javascript. For example project see https://coveralls.io/r/NLeSC/MAGMa
-* [Codecov](https://codecov.io) can show code coverages for many languages including Java, Python and Javascript. Shows unified coverage and separate coverage for matrix builds. For example project see https://codecov.io/github/NLeSC/Xenon
-
+* [Codacy](https://www.codacy.com) can analyze Java, Python, Javascript and Typescript (and CSS, PHP, Scala). The analysis for Java and Python is not as good as for Javascript. The analysis is quite slow, as it analyzes each past commit. For example project see https://www.codacy.com/app/3D-e-Chem/molviewer-tsx/dashboard
 
 # TypeScript
 
@@ -195,90 +167,56 @@ To install most common TypeScript dependencies run:
 
 ```shell
 # system packages (Ubuntu/Debian)
-sudo apt-get install npm
-#
-sudo apt-get install nodejs
-#
-sudo apt-get install nodejs-legacy
-#
-sudo apt-get install ruby
-#
-sudo apt-get install ruby-dev
-
-# Ruby package
-sudo gem install compass
-
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
 # Node packages
-npm install -g typescript
-#
-npm install -g typings
-#
-npm install -g bower
-#
-npm install -g nodemon
-#
-npm install -g http-server
+sudo npm install -g typescript
 ```
 
 ### Starting a project
 
-Similar to JavaScript a new project could be created using [Yeoman](http://yeoman.io/). 
-For instance [Fountainjs](http://fountainjs.io/) is a generator that can create a project that uses TypeScript.
+To create a [React](https://facebook.github.io/react/) application use the [Create React App](https://github.com/NLeSC/create-react-app) made by the Netherlands eScience Center which adds Typescript support to the create-react-app of Facebook.
 
 ```shell
-#
-npm install -g yo
-#
-npm install -g generator-fountain-webapp
-#
-npm install -g bower
+# Install the create react app cli tool
+npm install -g create-react-app
+# Generates a React application skeleton in a new directory 'my-app/'
+create-react-app my-app --scripts-version @nlesc/react-scripts
+cd my-app
+# serve the web application
+npm start
+# Will open web browser with the web application
 ```
 
-```shell
-#
-yo fountain-webapp
-```
-
-However, most of these generators use either ``gulp`` or ``grunt`` as a build system, while for most cases ``npm`` works just fine by defining a number of npm scripts in the package.json.
+However, the create create app uses [webpacker](https://webpack.github.io/) as a build system, while for most cases ``npm`` works just fine by defining a number of npm scripts in the package.json.
 See [this blog post](http://substack.net/task_automation_with_npm_run) for more information.
 
 ### Dealing with Types
 
 In TypeScript, variables are typed and these types are checked.
-This implies that when using frameworks, the types of these frameworks need to be installed.
-The easiest way to make sure you have the correct types for your framework is by using the [typings tool](https://github.com/typings/typings), which can be installed using ``npm``.
+This implies that when using libraries, the types of these libraries need to be installed.
+The easiest way to make sure you have the correct types for your library is by using the `@types/&lt;library-name&gt;` npm package, which can be installed using ``npm``.
 
 ```shell
-npm install -g typings
+npm install --save-dev @types/<library-name>
 ```
 
-This tool works similar to bower and npm in that you can search for typings and install them.
-For example say we want to use the ``angular-ui-bootstrap`` package which we installed using ``bower``:
+For example say we want to use the ``react`` package which we installed using ``npm``:
 ```shell
-bower install angular-bootstrap --save
+npm install react --save
 ```
 
 To be able to use its functionality in TypeScript we need to install the typings. 
-We can search for the correct package:
-
-```shell
-> typings search angular-ui-bootstrap
-Viewing 1 of 1
-
-NAME                 SOURCE HOMEPAGE                                DESCRIPTION VERSIONS UPDATED                 
-angular-ui-bootstrap dt     https://github.com/angular-ui/bootstrap             1        2016-07-05T22:14:53.000Z
-```
+We can search for the correct package at (http://microsoft.github.io/TypeSearch/)[http://microsoft.github.io/TypeSearch/].
 
 And install it with:
 
 ```shell
-typings install angular-ui-bootstrap --global --save
+npm install --save-dev @types/react
 ```
 
-The ``--global`` flag is needed as it is a framework package.
-The ``--save`` flag saves this installation to the typings.json file.
-The typings.json file can be used to quickly install all typings when cloning the repository. 
-
+The ``--save-dev`` flag saves this installation to the package.json file as a development dependency.
+Do not use ``--save`` for types because a production build will have been transpiled to Javascript and has no use for Typescript types.
 
 ### Development Environment
 
@@ -287,20 +225,11 @@ These are some good TypeScript editors:
 * JetBeans [WebStorm](https://www.jetbrains.com/webstorm/)
 * Github [Atom](http://atom.io) with the ``atom-typescript`` Atom package.
 * Microsoft [Visual Studio Code](https://code.visualstudio.com)
-* Adobe [Brackets](http://brackets.io/?lang=en)
+* Adobe [Brackets](http://brackets.io/?lang=en), [screenshot](https://raw.githubusercontent.com/wiki/NLeSC/kb/attachments/screenshot-brackets.png)
 
 The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom can have some performance problems.
 
-
-
-* JetBeans [WebStorm](https://www.jetbrains.com/webstorm/)
-* Github [Atom](http://atom.io) with the ``atom-typescript`` Atom package when using TypeScript
-* Microsoft [Visual Studio Code](https://code.visualstudio.com)
-* Adobe [Brackets](http://brackets.io/?lang=en), [screenshot](https://raw.githubusercontent.com/wiki/NLeSC/kb/attachments/screenshot-brackets.png)
-
-
 ### Debugging
-
 
 In web development, debugging is typically done in the browser. 
 
