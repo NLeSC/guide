@@ -125,7 +125,19 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 ## Debugging and profiling
 
 ### Debugging
-TODO
+* Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution. If you would like to integrate it with **vim** editor, you can use [Pyclewn](http://pyclewn.sourceforge.net/).
+* [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
+
+* If you are looking for IDE's with debugging capabilities, these are the most used free IDEs:
+  - [PyCharm](https://www.jetbrains.com/pycharm)
+  - [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS)
+  - [PyDev](http://www.pydev.org/)
+
+If you are looking for some tutorials to get started:
+- https://pymotw.com/2/pdb
+- https://github.com/spiside/pdb-tutorial
+- https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
+- https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
 
 ### Profiling
 There are a number of available profiling tools that are suitable for different situations.
@@ -137,8 +149,11 @@ There are a number of available profiling tools that are suitable for different 
 
 
 ## Logging
-
-TODO
+* [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
+* Tutorials:
+    - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+    - http://docs.python-guide.org/en/latest/writing/logging
+    - [Python logging best practices with JSON steroids](https://logmatic.io/blog/python-logging-with-json-steroids)
 
 ## Writing Documentation
 
