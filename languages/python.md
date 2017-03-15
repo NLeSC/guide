@@ -125,19 +125,24 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 ## Debugging and profiling
 
 ### Debugging
-* Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution. If you would like to integrate it with **vim** editor, you can use [Pyclewn](http://pyclewn.sourceforge.net/).
+* Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
 * [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
 
-* If you are looking for IDE's with debugging capabilities, these are the most used free IDEs:
-  - [PyCharm](https://www.jetbrains.com/pycharm)
-  - [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS)
-  - [PyDev](http://www.pydev.org/)
+* If you are looking for IDE's with debugging capabilities, these are the most used open source IDE's:
+  - [PyCharm](https://www.jetbrains.com/pycharm) Community Edition is open source. The source code is available [here](https://github.com/JetBrains/intellij-community/tree/master/python).
+  - [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available [here](https://github.com/fabioz/Pydev).
 
-If you are looking for some tutorials to get started:
-- https://pymotw.com/2/pdb
-- https://github.com/spiside/pdb-tutorial
-- https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
-- https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
+* If you are using Windows [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
+* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](http://pyclewn.sourceforge.net/).
+
+* List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
+
+* If you are looking for some tutorials to get started:
+ - https://pymotw.com/2/pdb
+ - https://github.com/spiside/pdb-tutorial
+ - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
+ - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
+ - http://www.pydev.org/manual_101_run.html
 
 ### Profiling
 There are a number of available profiling tools that are suitable for different situations.
