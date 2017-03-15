@@ -102,6 +102,12 @@ notebook server and type:
 ``jupyter notebook --ip=* --no-browser``  
 If you still get the 'Permission Denied' error, type `unset XDG_RUNTIME_DIR`.
 
+Now, there are 2 different approaches to connect to our notebook server:
+  1. starting a browser on the headnode of the DAS and use X-forwarding to access that browser
+  2. run your browser locally and setup a socks proxy to forward your http traffic to the headnode of the DAS
+
+### Using X-Forwarding
+
 Using another terminal, create an `ssh -X` connection to the headnode of 
 the DAS-5. Note that, it is very important that you use `ssh -X` for the 
 whole chain of connections to node, including the one used to connect to 
@@ -114,4 +120,24 @@ On the headnode type `firefox http://node0XX:8888/`, where `node0XX`
 should be replaced with the hostname of the node you are running the 
 notebook server on. Now in the browser open your notebook and get 
 started using notebooks on a remote server!
+
+### Using a SOCKS proxy
+
+In this step, we will create an ssh tunnel that we will use to forward
+our http traffic, effectively turning the headnode of the DAS into your
+private proxy server.
+The following command is rather handy, you might want to
+save it in your bashrc:  
+`` alias dasproxy="ssh -fNq -D 8080 <username>@fs0.das5.cs.vu.nl" ``  
+Do not forget to replace `<username>` with your own username on the DAS.
+
+After executing the above ssh command, start your local browser and
+configure your browser to use the proxyserver. Manually configure the proxy 
+as a "Socks v5" proxy with the address 'localhost' and port 8080. 
+
+After changing this setting navigate to the page `http://node0XX:8888/`, 
+where `node0XX` should be replaced with the hostname of the node you
+are running the notebook server on. Now in the browser open your
+notebook and get started using notebooks on a remote server!
+
 
