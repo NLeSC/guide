@@ -78,33 +78,63 @@ using the native Python 2 installation on the DAS don't forget to add
 the `--user` option to the following pip command. You can install 
 Jupyter using: `pip install jupyter`.
 
-Now comes the tricky bit, connect to the headnode of the DAS5 and reserve 
-a node through the reservation system, for example with the gpurun alias 
-explained above. This time we want to start an interactive session so 
-you can reserve a node using, for example: `gpurun --pty bash`.
+Now comes the tricky bit, we are going to connect to the headnode of the DAS5 and reserve 
+a node through the reservation system and start a notebook server on that node.
+You can use the following alias for that, I suggest storing it in your .bashrc file:  
+`alias notebook-server="srun -N 1 -C TitanX --gres=gpu:1 bash -c 'hostname; XDG_RUNTIME_DIR= jupyter notebook --ip=* --no-browser'"`   
 
-The intermediate step of first creating an interactive terminal and only 
-then starting the notebook server, as opposed to directly starting the 
-notebook server on a node using `srun` is necessary, unless you unset the 
-XDG_RUNTIME_DIR environment variable, but I'd rather not because it 
-might break other applications.
+The first part of the command is similar to the `gpurun` alias explained above. If you
+do not require a GPU in your node, please remove the `-C TitanX --gres=gpu:1` part.
+Now let's take a look at what the rest of this command is doing.
 
-The notebook server that we want to start will only listen to 
+On the node that we reserve through `srun` we execute the following bash command:  
+`hostname; XDG_RUNTIME_DIR= jupyter notebook --ip=* --no-browser'`  
+This is actually two commands, the first only prints the name of the host,
+which is important because you'll need to connect to that node later. The
+second command starts with unsetting the environment variable XDG_RUNTIME_DIR.
+
+On the DAS, we normally do not have access to the default directory
+pointed to by the environment variable XDG_RUNTIME_DIR. The Jupyter notebook
+server wants to use this directory for storing temporary files, if
+XDG_RUNTIME_DIR is not set it will just use /tmp or something for
+which it does have permission to access.
+
+The notebook server that we start would normally only listen to 
 connections from localhost, which is the node on which the notebook 
-server is running. However, on the DAS system firefox is only installed 
-on the headnode. We need to configure the notebook server to listen to 
-incoming connections from the headnode.
+server is running. That is why we pass the `--ip=*` option, to configure the
+notebook server to listen to incoming connections from the headnode. Be warned
+that this is actually highly insecure and should only be used within trusted
+environments with strict access control, like the DAS-5 system. 
 
-Be warned that the following is highly insecure and should only be used 
-within trusted environments with strict access control, like the DAS-5 
-system. Go to the desired directory where you want to start your 
-notebook server and type:  
-``jupyter notebook --ip=* --no-browser``  
-If you still get the 'Permission Denied' error, type `unset XDG_RUNTIME_DIR`.
+We also need the ``--no-browser`` no browser option, because we do not want to run the browser on the DAS node.
 
-Now, there are 2 different approaches to connect to our notebook server:
-  1. starting a browser on the headnode of the DAS and use X-forwarding to access that browser
-  2. run your browser locally and setup a socks proxy to forward your http traffic to the headnode of the DAS
+Now that we have a running Jupyter notebook server, there are 2 different approaches to connect to our notebook server:
+  1. run your browser locally and setup a socks proxy to forward your http traffic to the headnode of the DAS
+  2. starting a browser on the headnode of the DAS and use X-forwarding to access that browser
+
+Approach 1 is very much recommended, but if you can't get it to work, you can defer to option 2.
+
+### Using a SOCKS proxy
+
+In this step, we will create an ssh tunnel that we will use to forward
+our http traffic, effectively turning the headnode of the DAS into your
+private proxy server. Make sure you that you can connect to the headnode
+of the DAS, for example using a VPN. 
+The following command is rather handy, you might want to
+save it in your bashrc:  
+`` alias dasproxy="ssh -fNq -D 8080 <username>@fs0.das5.cs.vu.nl" ``  
+Do not forget to replace `<username>` with your own username on the DAS.
+
+Option `-f` stands for background mode, which means the process started with this command will keep running in the background, `-N` means there is no command to be executed on the remote host, and `-q` stands for quiet mode, meaning that most output will be surpressed.
+
+After executing the above ssh command, start your local browser and
+configure your browser to use the proxyserver. Manually configure the proxy 
+as a "Socks v5" proxy with the address 'localhost' and port 8080. 
+
+After changing this setting navigate to the page `http://node0XX:8888/`, 
+where `node0XX` should be replaced with the hostname of the node you
+are running the notebook server on. Now in the browser open your
+notebook and get started using notebooks on a remote server!
 
 ### Using X-Forwarding
 
@@ -120,24 +150,3 @@ On the headnode type `firefox http://node0XX:8888/`, where `node0XX`
 should be replaced with the hostname of the node you are running the 
 notebook server on. Now in the browser open your notebook and get 
 started using notebooks on a remote server!
-
-### Using a SOCKS proxy
-
-In this step, we will create an ssh tunnel that we will use to forward
-our http traffic, effectively turning the headnode of the DAS into your
-private proxy server.
-The following command is rather handy, you might want to
-save it in your bashrc:  
-`` alias dasproxy="ssh -fNq -D 8080 <username>@fs0.das5.cs.vu.nl" ``  
-Do not forget to replace `<username>` with your own username on the DAS.
-
-After executing the above ssh command, start your local browser and
-configure your browser to use the proxyserver. Manually configure the proxy 
-as a "Socks v5" proxy with the address 'localhost' and port 8080. 
-
-After changing this setting navigate to the page `http://node0XX:8888/`, 
-where `node0XX` should be replaced with the hostname of the node you
-are running the notebook server on. Now in the browser open your
-notebook and get started using notebooks on a remote server!
-
-
