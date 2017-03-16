@@ -58,6 +58,27 @@ DAS-5 is explicitly meant as an experimentation platform: any job should be able
 
 Any eScience Center employee can get a DAS-5 account, usually available within a few hours.
 
+## Security and convenience when committing code to GitHub from a cluster
+
+When accessing a cluster, it is generally [safer to use a pair of keys than to login using a username and password](https://superuser.com/questions/303358/why-is-ssh-key-authentication-better-than-password-authentication). [Here](https://www.cyberciti.biz/faq/how-to-set-up-ssh-keys-on-linux-unix/) is a guide on how to setup those keys. Make sure you encrypt your private key and that it is not automatically decrypted when you login to your local machine.
+Make a separate pair of keys to access your GitHub account following [these](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) instructions. It involves [uploading your public key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and [testing](https://help.github.com/articles/testing-your-ssh-connection/).
+
+When committing code from a cluster to GitHub, one needs to store an encrypted private key in the $HOME/.ssh directory on the cluster. This is inconvenient, because it requires submitting a password to unlock the private key. This password has to be resubmitted when SSHing to a local node from the head node. To bypass this inconvenience [SSH agent forwarding](https://developer.github.com/guides/using-ssh-agent-forwarding/) is recommended. It is very simple. On your local machine, make a $HOME/.ssh/config file to contain the following:
+```
+Host example.com
+    ForwardAgent yes
+```
+Replace example.com by the head node of your cluster, i.e. the node you use to login to.
+Next,
+```
+chmod 600 $HOME/.ssh/config.
+```
+Done!
+
+The only remaining problem is that SSH keys cannot be used when git cloning was done using https instead of SSH, but that can be [corrected](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password):
+
+git remote set-url origin git@github.com:username/repo.git
+
 ## Commercial Clouds
 
 If needed a project can use commercial cloud resources, normally only if all SURF resources do not meet the requirements. As long as the costs are within limits these can come out of the eScience Center general project budget, for larger amounts the PI will need to provide funding.
