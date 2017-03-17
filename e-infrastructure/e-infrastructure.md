@@ -76,9 +76,9 @@ chmod 600 $HOME/.ssh/config.
 Done!
 
 The only remaining problem is that SSH keys cannot be used when git cloning was done using https instead of SSH, but that can be [corrected](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password):
-
+```
 git remote set-url origin git@github.com:username/repo.git
-
+```
 ## Commercial Clouds
 
 If needed a project can use commercial cloud resources, normally only if all SURF resources do not meet the requirements. As long as the costs are within limits these can come out of the eScience Center general project budget, for larger amounts the PI will need to provide funding.
