@@ -115,6 +115,7 @@ A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 * [CppReference.com](http://en.cppreference.com/w/)
 * [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/)
 * [CPlusPlus.com](http://www.cplusplus.com/)
+* [Modern C++, according to Microsoft](https://msdn.microsoft.com/en-us/library/hh279654.aspx)
 
 ### Books
 * Bjarne Soustrup - The C++ Language
