@@ -244,10 +244,6 @@ We recommend `flask`.
 
 ## Available templates
 
-TODO: _What needs to be added here?_
-
-### Standard project/module layout
-
 The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
 
 It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
