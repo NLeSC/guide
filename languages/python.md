@@ -172,7 +172,7 @@ There are several tools that automatically generate documentation from docstring
   * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
   * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
-We recommend using Sphinx and documentation style TODO: choose preferred documentation style.
+We recommend using Sphinx and Google documentation style.
 
 ## Recommended additional packages and libraries
 
