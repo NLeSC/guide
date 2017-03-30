@@ -57,7 +57,8 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 ## Editors and IDEs
 
 * Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
-* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice.
+* [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available [here](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
+* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available [here](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. List of other tools can be found [here](https://www.jetbrains.com/pycharm/features/tools.html).
 
 ## Coding style conventions
 
@@ -125,7 +126,22 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 ## Debugging and profiling
 
 ### Debugging
-TODO
+* Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
+* [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
+
+* If you are looking for IDE's with debugging capabilities, please check **Editors and IDEs** section.
+
+* If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
+* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](http://pyclewn.sourceforge.net/).
+
+* List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
+
+* If you are looking for some tutorials to get started:
+ - https://pymotw.com/2/pdb
+ - https://github.com/spiside/pdb-tutorial
+ - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
+ - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
+ - http://www.pydev.org/manual_101_run.html
 
 ### Profiling
 There are a number of available profiling tools that are suitable for different situations.
@@ -137,8 +153,11 @@ There are a number of available profiling tools that are suitable for different 
 
 
 ## Logging
-
-TODO
+* [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
+* Tutorials:
+    - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+    - http://docs.python-guide.org/en/latest/writing/logging
+    - [Python logging best practices with JSON steroids](https://logmatic.io/blog/python-logging-with-json-steroids)
 
 ## Writing Documentation
 
@@ -170,6 +189,8 @@ We recommend using Sphinx and documentation style TODO: choose preferred documen
 [IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](http://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
 
 [Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
+[Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
+[JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools. JupyterLab is still under **development** and may not be suitable if you need a stable tool.
 
 ### Visualization
 
@@ -179,6 +200,7 @@ We recommend using Sphinx and documentation style TODO: choose preferred documen
     - [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
     - [Plotly](https://plot.ly/) is another platform for interactive plotting through a web browser, including in Jupyter notebooks.
     - [altair](https://github.com/ellisonbg/altair) is a _grammar of graphics_ style declarative statistical visualization library. It does not render visualizations itself, but rather outputs Vega-Lite JSON data. This can lead to a simplified workflow.
+    - [ggplot](https://github.com/yhat/ggpy) is a plotting library imported from R.
 
 ### Database Interface
 
