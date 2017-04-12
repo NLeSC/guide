@@ -52,7 +52,7 @@ Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For run
 
 SonarQube is an open platform to manage code quality which can also show code coverage and count test results over time.
 SonarQube can analyze Java, C, C++, Python and Javascript.
-The analysis can be done in IDE using http://www.sonarlint.org/
+The analysis can be done in IDE or command line using http://www.sonarlint.org/
 For example project see https://sonarqube.com/dashboard?id=nlesc%3Axenon-cli
 Notifications of each project must be configured in your own account settings.
 
