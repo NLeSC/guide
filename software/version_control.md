@@ -7,10 +7,7 @@ To keep our code transparent and findable the preferred code hosting platform is
 Netherlands eScience center uses GitHub (http://www.github.com) for version control.
 
 By default an eScience Research Engineer is expected to create a new [Github organization](https://help.github.com/articles/creating-a-new-organization-account/) for each  project and create repositories in there.
-However a new repository should be made in the [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC) when:
-
-* Project of repository is small or short
-* Repository is used in multiple projects
+However a new repository should be made in the [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC) when repository is used in multiple projects.
 
 ### Policy
 
