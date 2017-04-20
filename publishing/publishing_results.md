@@ -13,6 +13,7 @@ Assuming you have only the software in a (private) git repo, you might want to a
 * Make a release in github.
 * Zenodo automatically tracks the release and generates a unique DOI.
 * Use the DOI for citing your software/data/results.
+* A badge can be added to the README reflecting the DOI of the latest release
 
 ## Available archival / preprint servers or services
 * [arXiv](http://arxiv.org/) (physics, mathematics, computer science, quantitative biology, quantitative finance, statistics)

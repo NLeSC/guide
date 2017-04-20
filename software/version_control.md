@@ -4,14 +4,24 @@ To keep our code transparent and findable the preferred code hosting platform is
 
 ## GitHub
 
-Projects host their repositories in a GitHub organization named after the project.
-These GitHub organizations MUST have at least two owners that are employees of the Netherlands eScience Center. Private repositories can be created as part of GitHub's education policy if you ask nicely. The number of private repositories is always limited (we advise to request 5). Note that the [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) is that any software we contribute to SHOULD become open source.
-Please add any newly created project GitHub organization to the https://nlesc.github.io/ site by creating a Markdown file in the https://github.com/NLeSC/nlesc.github.io repository using a Pull Request.
+Netherlands eScience center uses GitHub (http://www.github.com) for version control.
 
-On GitHub there is an eScience Center organization at https://github.com/NLeSC which contains cross-project repositories.
-Creation of repository must be requested, afterwards the eScience Center employee will have admin rights on the repository. There is a limited number of private repo's for software which for some pressing reason cannot be open source. In principle, we do not add non-employees to teams in the NLeSC GitHub organization, but they can be added as per-project collaborator or added to an associate organization such as described in the paragraph above.
+By default an eScience Research Engineer is expected to create a new [Github organization](https://help.github.com/articles/creating-a-new-organization-account/) for each  project and create repositories in there.
+However a new repository should be made in the [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC) when repository is used in multiple projects.
 
-You can get a free GitHub Micro Plan (5 private repo's) on your own account if you ask nicely. Very useful when writing papers and such.
+### Policy
+
+* No repositories which Netherlands eScience center is paying for should be in personal accounts, they SHOULD always be in either in the [Netherlands eScience center Github organization](https://github.com/NLeSC) or in a project based GitHub organization
+* GitHub supports [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/). This SHOULD be enabled for your account
+* Project based GitHub organizations
+  * MUST have at least two owners that are Netherlands eScience center employees
+  * MUST be [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization) at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all the project organizations
+  * Private repositories can be created. Free when [GitHub's education discount](https://education.github.com/) is requested. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point
+* [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC)
+  * Only Netherlands eScience center employees are members
+  * All members have permission to create new repositories
+  * [Collaborators](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/) SHOULD be used to grant access to non-members
+  * A limited number of slots for private repositories is available, but using them is discouraged
 
 ## Version control from the beginning of the project
 

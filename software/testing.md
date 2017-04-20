@@ -20,7 +20,7 @@ It will save you a lot of time on debugging and allow for much quicker problem d
 
 ### Travis-CI
 
-The eScience Center public repositories should be built with [Travis-CI](https://travis-ci.org).
+The Netherlands eScience Center public repositories should be built with [Travis-CI](https://travis-ci.org).
 Travis-CI is free for Open Source projects.
 A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
 At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
@@ -42,7 +42,7 @@ Possible reasons for nightly builds:
 * Make sure the repository stays working even if there are no changes pushed to the repository, but it's dependencies are changing possibly breaking the code in the repository.
 * The build performs an action that needs to be performed daily like updating a cache.
 
-For triggering nightly builds in Travis-CI the https://nightli.es/ tool can be used.
+For triggering nightly builds in Travis-CI [Cron jobs](https://docs.travis-ci.com/user/cron-jobs/) can be used.
 
 ### Polling tools
 
