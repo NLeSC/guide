@@ -18,6 +18,7 @@ The philosophy of Python is summarized in the [Zen of Python](https://www.python
 * Introduction to python for data science: http://skillsmatter.com/podcast/java-jee/introducing-python-for-data-science
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
+* Using `pylint` and `yapf` while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
 ## Dependencies and package management
 
@@ -35,7 +36,9 @@ Create isolated Python environments with [virtualenv](https://virtualenv.pypa.io
 
 To manage multiple virtualenv environments and reference them only by name, use [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org). To create a new environment, run `mkvirtualenv environment_name`, to start using it, run `workon environment_name` and to stop working with it, run `deactivate`.
 
-With virtualenv, pip is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so pip downloads and installs them as binaries. This means they have no build dependencies and are much faster to install. If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you have to revert to Conda (see below).
+If you are using Python 3 only, you can also make use of the standard library [venv](https://docs.python.org/3/library/venv.html) module. Creating a virtual environment with it is as easy as running `python3 -m venv /path/to/environment`. Run `. /path/to/environment/bin/activate` to start using it and `deactivate` to deactivate.
+
+With virtualenv and venv, pip is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so pip downloads and installs them as binaries. This means they have no build dependencies and are much faster to install. If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you have to revert to Conda (see below).
 
 To keep a log of the packages used in your package, run `pip freeze > requirements.txt` in the root of your package. If some of the packages listed in `requirements.txt` are needed during testing only, use an editor to move those lines to `test_requirements.txt`. Now your package can be installed with
 ```
@@ -62,7 +65,11 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 
 ## Coding style conventions
 
-The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up.
+The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The more comprehensive [`yapf`](https://github.com/google/yapf) tool can automatically format code for optimal readability according to a chosen style (PEP 8 is the default). The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+
+The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up. Even more comprehensive than `pyflakes`, [`pylint`](https://www.pylint.org) is a configurable tool that checks for style, good coding practices, and some common mistakes.
+
+Most of these tools can be integrated in text editors and IDEs for convenience.
 
 ## Building and packaging code
 
