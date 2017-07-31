@@ -172,7 +172,7 @@ There are several tools that automatically generate documentation from docstring
   * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
   * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
-We recommend using Sphinx and documentation style TODO: choose preferred documentation style.
+We recommend using Sphinx and Google documentation style.
 
 ## Recommended additional packages and libraries
 
@@ -238,10 +238,6 @@ We recommend `flask`.
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
 ## Available templates
-
-TODO: _What needs to be added here?_
-
-### Standard project/module layout
 
 The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
 
