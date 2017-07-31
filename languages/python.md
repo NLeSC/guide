@@ -123,11 +123,6 @@ Celery, Django and Flask specific behaviors.
 The Landscape analysis tool called [prospector](https://github.com/landscapeio/prospector) can be run locally.
 For example project see https://landscape.io/github/NLeSC/MAGMa
 
-### [pyup.io](https://pyup.io/)
-
-Pyup helps to keep track of security and regular dependency updates by sending automated pull requests if a security update for a dependency is available.
-For an example project see https://pyup.io/account/repos/github/NLeSC/scriptcwl/
-
 ## Debugging and profiling
 
 ### Debugging
