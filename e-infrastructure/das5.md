@@ -69,8 +69,23 @@ If you have a Jupyter notebook that needs a powerfull GPU it can be
 useful to run the notebook not on your laptop, but on a GPU-equipped 
 DAS-5 node instead.
 
-It can be a bit tricky to get this to work though. That is why I wrote this
-text to guide you through all the required steps.
+### How to set it up
+
+It can be a bit tricky to get this to work. In short, what you need is
+to install jupyter, for example using the following command:
+```
+pip install jupyter
+```
+And it's recommended that you add this alias to your .bashrc file:
+```
+`alias notebook-server="srun -N 1 -C TitanX --gres=gpu:1 bash -c 'hostname; XDG_RUNTIME_DIR= jupyter notebook --ip=* --no-browser'"`
+```
+Now you can start the server with the command ``notebook-server``.
+
+You just need to connect to your jupyter notebook server after this.
+The easiest way to do this is to start firefox on the headnode (fs0) and connect to the node that was printed by the ``notebook-server`` command. Depending on what node you got from the scheduler you can go to the address ``http://node0XX:8888/``. For more details and different ways of connecting to the server see the longer explanation below.
+
+### More detailed explanation
 
 First of all, you need to install jupyter into your DAS-5 account. I 
 recommend using miniconda, but any Python environment works. If you are 
@@ -83,6 +98,7 @@ a node through the reservation system and start a notebook server on that node.
 You can use the following alias for that, I suggest storing it in your .bashrc file:  
 `alias notebook-server="srun -N 1 -C TitanX --gres=gpu:1 bash -c 'hostname; XDG_RUNTIME_DIR= jupyter notebook --ip=* --no-browser'"`   
 
+Let's first explain what this alias actually does for you.
 The first part of the command is similar to the `gpurun` alias explained above. If you
 do not require a GPU in your node, please remove the `-C TitanX --gres=gpu:1` part.
 Now let's take a look at what the rest of this command is doing.
@@ -107,6 +123,8 @@ that this is actually highly insecure and should only be used within trusted
 environments with strict access control, like the DAS-5 system. 
 
 We also need the ``--no-browser`` no browser option, because we do not want to run the browser on the DAS node.
+
+You can type ``notebook-server`` now to actually reserve a node and start the jupyter notebook server.
 
 Now that we have a running Jupyter notebook server, there are 2 different approaches to connect to our notebook server:
   1. run your browser locally and setup a socks proxy to forward your http traffic to the headnode of the DAS
