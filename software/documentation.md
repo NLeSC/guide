@@ -16,7 +16,7 @@ More information about markdown can be found here:
 
 Retext is a markdown aware text editor, that can be used to edit markdown files and convert them into HTML or PDF. It can be found at:
 
-<http://sourceforge.net/projects/retext/>
+<https://github.com/retext-project/retext>
 
 Alternatively, 'pandoc' is a command line utility that can convert markdown documents to into several other formats (including latex):
 
