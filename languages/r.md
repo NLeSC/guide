@@ -1,17 +1,17 @@
 # What is R?
-R is a programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
+R is a functional programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
 
 ## Philosophy and typical use cases
-R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), machine learning, image analyses, and neuro-linguistic programming. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment in science.
+R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), machine learning, image analyses, and natural language processing. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment in science.
 
-One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
+One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org). 
 
 A few remarks for readers familiar with Python:
 * Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://www.rstudio.com/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
 * Numbering in R starts with 1 and not with 0.
 
 ### Recommended sources of information
-Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R, see the book [Advanced R](http://adv-r.had.co.nz) by Hadley Wickham, or [Writing better R code]htt(http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) from the same author. Further, stackoverflow and standard search engines can lead you to answers to issues.
+Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R, see the book [Advanced R](http://adv-r.had.co.nz) by Hadley Wickham, or [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) from the same author. Further, stackoverflow and standard search engines can lead you to answers to issues.
 
 # Getting started
 
