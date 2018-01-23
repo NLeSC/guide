@@ -42,6 +42,7 @@ Other VCSes can be used if the project does not start in the eScience Center and
 
 ## Choose one branching model
 
+A branching model describes how the project deals with different versions of the codebase, like releases and various development versions, and how to accept code contributions.
 Make the choice explicit in the contribution guidelines, and link to documentation on how to get started with it.
 Our default choice is [GitHub flow branching model](https://guides.github.com/introduction/flow/)
 
