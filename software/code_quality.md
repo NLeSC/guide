@@ -1,6 +1,19 @@
 # Code Quality
 
-There are several ways to improve software quality.
+There are several ways to improve software quality and find bugs quickly and easily.
+By following a set of conventions, code will look 'cleaner' and be more understandable.
+It will also help spot syntax errors and other errors early, without having to run or compile all the time.
+
+## Coding style
+
+A coding style gives guidance on those parts of programming that are irrelevant to the compiler or interpreter.
+For instance, what do you call your variables? do you use spaces or tabs for indentation? Where do you put comments? etc.
+
+Here is a very nice article about why coding styles matter, and increase software quality:
+[Improving software quality, why Coding Style Matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
+
+For style guides see the different languages in [the Language Guides](../languages/languages_overview.html).
+Google has a style guide for most languages [google style guide page](https://code.google.com/p/google-styleguide/).
 
 ## Editorconfig
 
@@ -8,29 +21,21 @@ Use [editorconfig](http://editorconfig.org/) to adhere to the basic code style r
 
 Using editor config is not necessary, but saves a lot of time and keeps developers from straying
 from the style of choice and helps to avoid some problems caused by formatting differences
-(line ending, tabs vs spaces)
+(line ending, tabs vs spaces).
 
-[download](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig) eScience Center editor config file.
-
-Support most editors. [Here](http://editorconfig.org/) you can download plugins for your editor of choice.
-
+There is support for editorconfig in most editors.
+[Here](http://editorconfig.org/) you can download plugins for your editor of choice.
 If you use eclipse, use [this plugin](https://github.com/ncjones/editorconfig-eclipse).
 
+The eScience Center editor config file can be downloaded [here](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig)
 
-if possible (i.e using linters and code formatters)
+## Automatic code formatters and linters
 
-Use of linters will not only help to keep code cleaner but will also help finding bugs
+These are small programs that check if your code follows a specific coding style.
+Some code formatters can find more issues (unused variables, missing documentation, ...)
+They are often langauge dependent, and can be integrated with an editor.
 
-## Coding style
-
-Here a very nice article about why coding styles matter, and increase software quality:
-[Improving software quality, why Coding Style Matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
-
-For style guides see the different languages in [the Language Guides](../languages/languages_overview.html).
-
-Google has a style guide for most languages [google style guide page](https://code.google.com/p/google-styleguide/).
-
-## Software quality improvement tools
+## Online software quality improvement tools
 
 There are several web services that analyze code and make the quality of the code visible.
 
@@ -54,6 +59,7 @@ See the [language guides](../languages/languages_overview.html) for good options
 For a list of choices see http://shields.io/ or https://github.com/ripienaar/free-for-dev#code-quality
 
 ## Name spaces
+
 If your language supports namespaces, use **nl.esciencecenter**
 
 ## Code reviews
