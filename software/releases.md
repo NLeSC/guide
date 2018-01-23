@@ -17,9 +17,10 @@ Increment the:
 
 Very often package managers depend on `semver` and will not work as expected otherwise.
 
-### Tagged releases
+### Releasing code on github
 
-Use [github releases](https://help.github.com/categories/releases/).
+Github makes it easy to do a release straight from your repositories website.
+See [github releases](https://help.github.com/categories/releases/) for more information.
 
 ### CHANGELOG.md
 
