@@ -4,7 +4,7 @@ To keep our code transparent and findable the preferred code hosting platform is
 
 ## GitHub
 
-Netherlands eScience center uses GitHub (http://www.github.com) for version control.
+Netherlands eScience center uses GitHub [GitHub](https://www.github.com) for version control.
 
 By default an eScience Research Engineer is expected to create a new [Github organization](https://help.github.com/articles/creating-a-new-organization-account/) for each  project and create repositories in there.
 However a new repository should be made in the [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC) when repository is used in multiple projects.
@@ -51,16 +51,9 @@ heavily on GitHub. The [Pro Git](https://git-scm.com/doc) book describes in deta
 with use of git branches,
 forks and GitHub in [Contributing to a Project chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 Other more complicated models could be used if necessary, but we should strive for simplicity and uniformity
-within the eScience Center since that will enhance collaboration between the engineers. Learning new branching model should not stand in the way
+within the eScience Center since that will enhance collaboration between the engineers. Learning a new branching model should not stand in the way
 of contributions.
 You can learn more about those other models from [atlasian page](https://www.atlassian.com/git/tutorials/comparing-workflows).
-
-## Public vcs repository
-
-If at all possible, use ([GitHub](https://github.com/)).
-
-Unless code cannot be open (usually commercial partners, or some competitiveness issues ) it should be in public online repository.
-In case the code uses data, that cannot be open, an engineer should try to keep sensitive parts outside of the main codebase.
 
 ## Meaningful commit messages
 
@@ -73,4 +66,5 @@ and [this post](http://who-t.blogspot.nl/2009/12/on-commit-messages.html)
 GitHub has some interesting features that allow you to [close issues directly from commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
 ## Code snippets library
+
 Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. We store these code snippets in git, in [GitHub Gists](https://gist.github.com/).
