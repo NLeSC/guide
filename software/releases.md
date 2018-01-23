@@ -1,12 +1,20 @@
 ## Release
 
-Releases are a way to signify and point to particular milestone in software development.
+Releases are a way to mark or point to a particular milestone in software development.
 [Apache foundation](http://www.apache.org/) describes their [release policy](http://www.apache.org/dev/release.html).
 
 ### Semantic versioning
 
 [Semantic Versioning (semver)](http://semver.org/) is the most accepted and used way to add numbers to software versions.
 It is a way of communicating impact of changes in the software on users.
+
+A version number consists of three numbers: major, minor, and patch, separated by a dot: _2.0.0_.
+After some changes to the code, you would do a new release, and increment the version number.
+Increment the:
+ * MAJOR version when you make incompatible API changes,
+ * MINOR version when you add functionality in a backwards-compatible manner, and
+ * PATCH version when you make backwards-compatible bug fixes.
+
 Very often package managers depend on `semver` and will not work as expected otherwise.
 
 ### Tagged releases
