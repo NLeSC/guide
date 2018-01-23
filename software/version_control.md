@@ -1,6 +1,6 @@
 # Version control
 
-To keep our code transparent and findable the preferred code hosting platform is GitHub and version management or scm is git. The repo preferable should be public from the start.
+To keep our code transparent and findable the preferred code hosting platform is GitHub and version management or source control management (SCM) is git. The repo preferable should be public from the start.
 
 ## GitHub
 
