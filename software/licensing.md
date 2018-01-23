@@ -23,13 +23,15 @@ Github can add this file automatically when you create a new repository, or you 
 
 ## NOTICE
 
-NOTICE should contain only the following text, adapted with the product's name and copyright dates:
+NOTICE should contain the following text, adapted with the product's name and copyright dates:
 ```
   [PRODUCT_NAME]
   Copyright [XXXX-XXXX] The Netherlands eScience Center, [PROJECT_PARTNERS]
 
   This product includes software developed at
-  The Netherlands eScience Center (https://www.netherlandsesciencecenter.nl/).
+  The Netherlands eScience Center (https://www.esciencecenter.nl/)
+  For the [PROJECT_NAME] project
 ```
 
+If any of the software dependencies has a NOTICE file, its contents shoud be appended below.
 Read more [here](http://www.apache.org/dev/licensing-howto.html)
