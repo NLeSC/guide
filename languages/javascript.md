@@ -296,7 +296,7 @@ The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom 
 * JetBeans [WebStorm](https://www.jetbrains.com/webstorm/)
 * Github [Atom](http://atom.io) with the ``atom-typescript`` Atom package when using TypeScript
 * Microsoft [Visual Studio Code](https://code.visualstudio.com)
-* Adobe [Brackets](http://brackets.io/?lang=en), [screenshot](https://raw.githubusercontent.com/wiki/NLeSC/kb/attachments/screenshot-brackets.png)
+* Adobe [Brackets](http://brackets.io/?lang=en), [screenshot](http://brackets.io/img/hero.png)
 
 
 ### Debugging
