@@ -9,7 +9,7 @@ Assuming you have only the software in a (private) git repo, you might want to a
 * If not, make the repo public. 
 
 ## Citing datasets, software and results
-* Make a [Zenodo](https://zenodo.org/) account and link it with your github account.
+* Make a [Zenodo](https://zenodo.org/) account and link it with your github account as explained on [guides.github.com/activities/citable-code](https://guides.github.com/activities/citable-code/)
 * Make a release in github.
 * Zenodo automatically tracks the release and generates a unique DOI.
 * Use the DOI for citing your software/data/results.
