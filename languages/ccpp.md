@@ -45,7 +45,7 @@ Any code editor will do. Try to avoid relying on IDEs too much; by helping your 
 * Vim, recommended plugins: 
   + [NERDTree](https://github.com/scrooloose/nerdtree) file explorer.
   + [editorconfig](https://github.com/editorconfig/editorconfig-vim)
-  + [stl.vim](https://www.vim.org/scripts/script.php?script_id=4293) adds STL to syntax highlighting 
+  + [stl.vim](https://vim.sourceforge.io/scripts/script.php?script_id=4293) adds STL to syntax highlighting 
   + [Syntastic](https://github.com/scrooloose/syntastic)
   + Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
 * Emacs:
