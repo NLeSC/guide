@@ -90,7 +90,11 @@ page](https://www.atlassian.com/git/tutorials/comparing-workflows).
 Unless code cannot be open (e.g. when working with commercial partners, or when
 there are competitiveness issues) it should be in a public online repository. In
 case the code uses data that cannot be open, an engineer should try to keep
-sensitive parts outside of the main codebase.
+sensitive parts outside of the main codebase. If you accidentally included
+copyrighted files in your repository, you need to remove them from the HEAD as
+well as from history. There is a gist
+[here](https://gist.github.com/jspaaks/df292d42ecbd5e28d4620f011c602b90) that
+explains how.
 
 ## Meaningful commit messages
 
