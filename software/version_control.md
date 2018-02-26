@@ -6,27 +6,27 @@ public from the start.
 
 ## GitHub
 
-Netherlands eScience center uses GitHub (http://www.github.com) for version
+Netherlands eScience Center uses GitHub (http://www.github.com) for version
 control.
 
 By default an eScience Research Engineer is expected to create a new [Github
 organization](https://help.github.com/articles/creating-a-new-organization-account/)
 for each  project and create repositories in there.
-However a new repository should be made in the [Netherlands eScience center
+However a new repository should be made in the [Netherlands eScience Center
 Github organization (https://github.com/NLeSC)](https://github.com/NLeSC) when
 repository is used in multiple projects.
 
 ### Policy
 
-* No repositories which Netherlands eScience center is paying for should be in
+* No repositories which Netherlands eScience Center is paying for should be in
 personal accounts, they SHOULD always be in either in the [Netherlands eScience
-center Github organization](https://github.com/NLeSC) or in a project based
+Center Github organization](https://github.com/NLeSC) or in a project based
 GitHub organization
 * GitHub supports [two-factor
 authentication](https://help.github.com/articles/about-two-factor-authentication/).
 This SHOULD be enabled for your account
 * Project based GitHub organizations
-  * MUST have at least two owners that are Netherlands eScience center employees
+  * MUST have at least two owners that are Netherlands eScience Center employees
   * MUST be
 [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization)
 at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all
@@ -37,8 +37,8 @@ discount](https://education.github.com/) is requested. **NOTE**: The
 policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) applies to
 any software we contribute to, so the repository SHOULD become open source at
 some point
-* [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC)
-  * Only Netherlands eScience center employees are members
+* [Netherlands eScience Center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC)
+  * Only Netherlands eScience Center employees are members
   * All members have permission to create new repositories
   * [Collaborators](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/)
 SHOULD be used to grant access to non-members
