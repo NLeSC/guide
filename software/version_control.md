@@ -1,8 +1,8 @@
 # Version control
 
 To keep our code transparent and findable the preferred code hosting platform is
-GitHub and version management or scm is git. The repo preferable should be
-public from the start.
+GitHub and version management is git. The repository should preferably be public
+from the start.
 
 ## GitHub
 
@@ -11,15 +11,15 @@ control.
 
 By default an eScience Research Engineer is expected to create a new [GitHub
 organization](https://help.github.com/articles/creating-a-new-organization-account/)
-for each  project and create repositories in there.
+for each project and create repositories in there.
 However a new repository should be made in the [Netherlands eScience Center
 GitHub organization (https://github.com/NLeSC)](https://github.com/NLeSC) when
-repository is used in multiple projects.
+the repository is used in multiple projects.
 
 ### Policy
 
-* No repositories which Netherlands eScience Center is paying for should be in
-personal accounts, they SHOULD always be in either in the [Netherlands eScience
+* No repositories which the Netherlands eScience Center is paying for should be in
+personal accounts, they SHOULD always be in either the [Netherlands eScience
 Center GitHub organization](https://github.com/NLeSC) or in a project based
 GitHub organization
 * GitHub supports [two-factor
@@ -48,12 +48,13 @@ SHOULD be used to grant access to non-members
 
 It is highly recommended to start using version control on day one of the project.
 
-## Use git as version control system (VCS)
+## Use git as version control system
 
-Other VCSes can be used if the project does not start in the eScience Center and
-does not use git, or when the prevailing VCS in the particular community is not
-git. Even then, changing VCS should be considered (especially if Subversion or
-another centralised system is used).
+Other version control systems can be used if the project does not start in the
+eScience Center and does not use git, or when the prevailing version control
+system in the particular community is not git. Even then, changing version
+control systems should be considered (especially if Subversion or another
+centralised system is used).
 
 ### Git documentation:
 
@@ -79,27 +80,25 @@ collaboration on the project with use of git branches, forks and GitHub in
 chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project). Other
 more complicated models could be used if necessary, but we should strive for
 simplicity and uniformity within the eScience Center since that will enhance
-collaboration between the engineers. Learning new branching model should not
+collaboration between the engineers. Learning a new branching model should not
 stand in the way of contributions. You can learn more about those other models
-from [atlasian
+from [atlassian
 page](https://www.atlassian.com/git/tutorials/comparing-workflows).
 
-## Public vcs repository
+## Repositories should be public
 
-If at all possible, use ([GitHub](https://github.com/)).
-
-Unless code cannot be open (usually commercial partners, or some competitiveness
-issues ) it should be in public online repository. In case the code uses data,
-that cannot be open, an engineer should try to keep sensitive parts outside of
-the main codebase.
+Unless code cannot be open (e.g. when working with commercial partners, or when
+there are competitiveness issues) it should be in a public online repository. In
+case the code uses data that cannot be open, an engineer should try to keep
+sensitive parts outside of the main codebase.
 
 ## Meaningful commit messages
 
 Commit messages are the way for other developers to understand changes in the
-codebase. In case of using GitHub flow model commit messages can be very short
-but pull request comment should explain all the changes. It is very important is
+codebase. In case of using GitHub flow model, commit messages can be very short
+but pull request comments should explain all the changes. It is very important
 to explain the why behind implementation choices. To learn more about writing
-good commit messages read [tpope’s
+good commit messages, read [tpope’s
 guide](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) and
 [this post](http://who-t.blogspot.nl/2009/12/on-commit-messages.html)
 
@@ -108,4 +107,7 @@ from commit
 messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
 ## Code snippets library
-Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. We store these code snippets in git, in [GitHub Gists](https://gist.github.com/).
+
+Sometimes, we develop small snippets of code that can be directly reused in
+other projects, but that are too small to put in a library. We store these code
+snippets in git, in [GitHub Gists](https://gist.github.com/).
