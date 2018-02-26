@@ -240,7 +240,7 @@ yo fountain-webapp
 ```
 
 However, most of these generators use either ``gulp`` or ``grunt`` as a build system, while for most cases ``npm`` works just fine by defining a number of npm scripts in the package.json.
-See [this blog post](http://substack.net/task_automation_with_npm_run) for more information.
+See [this blog post](https://github.com/substack/blog/blob/master/npm_run.markdown) for more information.
 
 ### Dealing with Types
 
