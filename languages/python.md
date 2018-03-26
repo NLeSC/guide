@@ -18,7 +18,7 @@ The philosophy of Python is summarized in the [Zen of Python](https://www.python
 * Introduction to python for data science: http://skillsmatter.com/podcast/java-jee/introducing-python-for-data-science
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
-* Using `pylint` and `yapf` while learning Python is an easy way to get familiar with best practices and commonly used coding styles
+* Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
 ## Dependencies and package management
 
@@ -40,11 +40,12 @@ If you are using Python 3 only, you can also make use of the standard library [v
 
 With virtualenv and venv, pip is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so pip downloads and installs them as binaries. This means they have no build dependencies and are much faster to install. If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you have to revert to Conda (see below).
 
-To keep a log of the packages used in your package, run `pip freeze > requirements.txt` in the root of your package. If some of the packages listed in `requirements.txt` are needed during testing only, use an editor to move those lines to `test_requirements.txt`. Now your package can be installed with
+To keep a log of the packages used by your package, run `pip freeze > requirements.txt` in the root of your package. If some of the packages listed in `requirements.txt` are needed during testing only, use an editor to move those lines to `test_requirements.txt`. Now your package can be installed with
 ```
 pip install -r requirements.txt
 pip install -e .
 ```
+The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
 ### Conda
 
@@ -65,13 +66,21 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 
 ## Coding style conventions
 
-The style guide for Python is [PEP8](http://www.python.org/dev/peps/pep-0008/). The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The more comprehensive [`yapf`](https://github.com/google/yapf) tool can automatically format code for optimal readability according to a chosen style (PEP 8 is the default). The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). The `autopep8` package can automatically format most Python code to conform to the PEP 8 style guide. The more comprehensive [`yapf`](https://github.com/google/yapf) tool can automatically format code for optimal readability according to a chosen style (PEP 8 is the default). The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
 
-The `pep8` package is a tool to check your Python code against some of the style conventions in PEP 8. The `pyflakes` program checks for semantic errors and some style issues that `pep8` doesn't pick up. Even more comprehensive than `pyflakes`, [`pylint`](https://www.pylint.org) is a configurable tool that checks for style, good coding practices, and some common mistakes.
+Many linters exists for Python, [`prospector`](https://github.com/landscapeio/prospector) is a tool for running a suite of linters, it supports, among others:
+* [pycodestyle](https://github.com/PyCQA/pycodestyle)
+* [pydocstyle](https://github.com/PyCQA/pydocstyle)
+* [pyflakes](https://pypi.python.org/pypi/pyflakes)
+* [pylint](https://www.pylint.org/)
+* [mccabe](https://github.com/PyCQA/mccabe)
+* [pyroma](https://github.com/regebro/pyroma)
 
-Most of these tools can be integrated in text editors and IDEs for convenience.
+Make sure to set strictness to `veryhigh` for best results. `prospector` has it's own configuration file, see [here](https://github.com/benvanwerkhoven/empty_python/blob/master/.prospector.yml) for an example, but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 ## Building and packaging code
+
+To create an installable Python package, create a file `setup.py` and use the [`setuptools`](https://setuptools.readthedocs.io) module. Make sure you only import standard library packages in `setup.py`, directly or through importing other modules of your package, or your package will fail to install on systems that do not have the required dependencies pre-installed. Set up continuous integration to test your installation script. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation script.
 
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
@@ -85,15 +94,18 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 
 ## Testing
 
-* [unittest](https://docs.python.org/3/library/unittest.html) is a
-framework available in Python Standard Library.
-[Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
 * [pytest](http://pytest.org/latest/) is a full featured Python
 testing tool. You can use it with `unittest`.
 [Pytest intro](http://pythontesting.net/framework/pytest/pytest-introduction/)
 * [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
+* [unittest](https://docs.python.org/3/library/unittest.html) is a
+framework available in Python Standard Library.
+[Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
+* [doctest](https://docs.python.org/3/library/doctest.html) searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown. Always use this if you have example code in your documentation to make sure your examples actually work.
 
-Please use `pytest`.
+Using `pytest` is preferred over `unittest`, `pytest` has a much more concise syntax and supports many useful features.
+
+Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described [here](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
 
 ### Code coverage
 
@@ -116,7 +128,8 @@ There is not a best one, below is a short list of services with their different 
 
 Code quality and coverage grouped by file.
 Can setup goals to improve quality or coverage by file or category.
-For example project see https://www.codacy.com/app/3D-e-Chem/kripodb/dashboard
+For example project see https://www.codacy.com/app/3D-e-Chem/kripodb/dashboard.
+Note that Codacy does not install your depencencies, which prevents it from correctly identifying import errors.
 
 ### [Scrutinizer](https://scrutinizer-ci.com/)
 
@@ -127,7 +140,7 @@ For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-W
 
 Dedicated for Python code quality.
 Celery, Django and Flask specific behaviors.
-The Landscape analysis tool called [prospector](https://github.com/landscapeio/prospector) can be run locally.
+The Landscape analysis tool called [`prospector`](https://github.com/landscapeio/prospector) can be run locally.
 For example project see https://landscape.io/github/NLeSC/MAGMa
 
 ## Debugging and profiling
@@ -144,11 +157,11 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 * List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
 
 * If you are looking for some tutorials to get started:
- - https://pymotw.com/2/pdb
- - https://github.com/spiside/pdb-tutorial
- - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
- - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
- - http://www.pydev.org/manual_101_run.html
+    - https://pymotw.com/2/pdb
+    - https://github.com/spiside/pdb-tutorial
+    - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
+    - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
+    - http://www.pydev.org/manual_101_run.html
 
 ### Profiling
 There are a number of available profiling tools that are suitable for different situations.
@@ -158,6 +171,10 @@ There are a number of available profiling tools that are suitable for different 
     - [line_profiler](https://github.com/rkern/line_profiler) provides a function decorator that measures the time spent on each line inside the function.
     - [pprofile](https://github.com/vpelletier/pprofile) is less intrusive; it simply times entire Python scripts line-by-line. It can give output in callgrind format, which allows you to study the statistics and call tree in `kcachegrind` (often used for analyzing c(++) profiles from `valgrind`).
 
+More realistic profiling information can usually be obtained by using statistical or sampling profilers. The profilers listed below all create nice flame graphs.
+* [vprof](https://github.com/nvdv/vprof)
+* [Pyflame](https://github.com/uber/pyflame)
+* [nylas-perftools](https://github.com/nylas/nylas-perftools)
 
 ## Logging
 * [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
@@ -179,7 +196,7 @@ There are several tools that automatically generate documentation from docstring
   * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
   * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
-We recommend using Sphinx and Google documentation style.
+We recommend using Sphinx and Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
 
 ## Recommended additional packages and libraries
 
@@ -190,6 +207,7 @@ We recommend using Sphinx and Google documentation style.
 * [Pandas](http://pandas.pydata.org/) data analysis toolkit
 * [scikit-learn](http://scikit-learn.org/): machine learning in Python
 * [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
+* [dask](http://dask.pydata.org) larger than memory arrays and parallel execution
 
 ### IPython and Jupyter notebooks (aka IPython notebooks)
 
@@ -220,11 +238,13 @@ is [monetdb](https://www.monetdb.org) Python client
 
 ### Parallelisation
 
-CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock).
+CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock). Note that the GIL only applies to actual Python code, so compiled modules like e.g. `numpy` do not suffer from it.
 
-Having said that, there are many packages that circumvent this constraint.
-* The [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) module allows to do very easy and fast parallel executions in one or multiple machines.
+Having said that, there are many ways to run Python code in parallel:
+* The [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module is the standard way to do parallel executions in one or multiple machines, it circumvents the GIL by creating multiple Python processess.
+* A much simpler alternative in Python 3 is the [`concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) module.
 * [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
+* Many modules have parallel capabilities or can be compiled to have them.
 * At the eScience Center, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
