@@ -1,4 +1,7 @@
-Checklist for software development. Items link to explanation in other sections of this chapter.
+# Software checklist
+This section contains a list of items which are required to help software reach a sufficient quality standard. The following list of items links to explanation in other sections of this chapter.
+
+The [checklist matrix](./checklist-matrix.md) provides an indication of which items are important at different development stages.
 
 ## [Version control](version_control.html)
 
@@ -70,4 +73,3 @@ Checklist for software development. Items link to explanation in other sections 
 
 - [Exchange formats](standards.html#exchange-formats)
 - [Protocols](standards.html#protocols)
-

@@ -3,7 +3,7 @@
 Printable check-list -- complete this checklist to ensure your project is eStep-ready. If you can tick all boxes on this form, your project should be included as an eStep *Mature* project.
 
 
-##Version Control
+## Version Control
 
 Item / Phase | Done      |
 :------------|:---------:|
@@ -13,7 +13,7 @@ public vcs repository ([github](https://github.com/))|
 meaningful commit messages|
 
 
-##Releases
+## Releases
 
 Item / Phase | Done      |
 :------------|:---------:|
@@ -26,15 +26,15 @@ discuss release cycle with coordinator|
 release quick-scan by other engineer (is documentation understandable, can it be installed, etc)|
 notify Lode for dissemination (news item on site / annual report, etc)|
 
-##Licensing
+## Licensing
 
 Item / Phase | Done      |
 :------------|:---------:|
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)|
 compatible license of all libraries|
-`NOTICE(.txt|.md)` listing licenses, request citation of paper if applicable|
+`NOTICE(.txt or .md)` listing licenses, request citation of paper if applicable|
 
-##Communication
+## Communication
 
 Item / Phase | Done      |
 :------------|:---------:|
@@ -45,7 +45,7 @@ for websites: an online demo|
 Pitch presentation (1 to 3 slides)|
 Few sentences about the project for [the technology pages on our website](https://www.esciencecenter.nl/technology)|
 
-##Testing
+## Testing
 
 Item / Phase | Done      |
 :------------|:---------:|
@@ -56,7 +56,7 @@ continuous code coverage and code quality metrics public, minimum 70% coverage r
 end2end test for (web) user interfaces|
 track dependencies (with [VersionEye](https://www.versioneye.com/), [David](https://david-dm.org/) or other service depending on codebase language)|
 
-##Documentation
+## Documentation
 
 Item / Phase | Done      |
 :------------|:---------:|
