@@ -3,13 +3,13 @@
 To learn about JavaScript, view the presentations by [Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_crockford):
 
 * [Crockford on JavaScript](http://www.youtube.com/playlist?list=PL7664379246A246CB)
-* [JavaScript: The Good Parts](http://www.youtube.com/watch?v=hQVTIJBZook) 
+* [JavaScript: The Good Parts](http://www.youtube.com/watch?v=hQVTIJBZook)
 * JavaScript trilogy:
     * [The JavaScript Programming Language](http://www.youtube.com/watch?v=v2ifWcnQs6M) (1h50m)
     * [Theory of the DOM](http://www.youtube.com/watch?v=Y2Y0U-2qJMs) (1h18m)
     * [Advanced JavaScript](http://www.youtube.com/watch?v=DwYPG6vreJg) (1h07m)
 
-In [this video](http://www.youtube.com/watch?v=c-kav7Tf834) (47m04s), Nicholas Zakas talks about sustainability aspects, such as how to write maintainable JavaScript, how to do JavaScript testing, and good programming style (much needed in JavaScript). 
+In [this video](http://www.youtube.com/watch?v=c-kav7Tf834) (47m04s), Nicholas Zakas talks about sustainability aspects, such as how to write maintainable JavaScript, how to do JavaScript testing, and good programming style (much needed in JavaScript).
 Among others, he mentions the following style guides:
 
 * [Google's style guide for JavaScript](https://google.github.io/styleguide/javascriptguide.xml);
@@ -18,10 +18,10 @@ Among others, he mentions the following style guides:
 
 [These](http://www.youtube.com/watch?v=yQaAGmHNn9s&list=PLA56F6A06883A2AD8) video tutorials (totaling a couple of hours) are useful if you're just starting with learning the JavaScript language.
 
-To develop a website, usually, JavaScript frameworks are used. 
-For direct manipulation of the HTML DOM tree and HTTP calls [jQuery](http://jquery.com) can be used. 
-[AngularJS](https://angularjs.org) is a framework that separates the view from JavaScript and binds HTML elements to JavaScript code. 
-It can be used for single and multi-page web applications. 
+To develop a website, usually, JavaScript frameworks are used.
+For direct manipulation of the HTML DOM tree and HTTP calls [jQuery](http://jquery.com) can be used.
+[AngularJS](https://angularjs.org) is a framework that separates the view from JavaScript and binds HTML elements to JavaScript code.
+It can be used for single and multi-page web applications.
 We advise to use [John Papas style guide](https://github.com/johnpapa/angularjs-styleguide) when making an Angular application.
 
 ## Web Standards Curriculum
@@ -36,12 +36,12 @@ In particular, see the page about [Javascript best practices](http://www.w3.org/
 
 ## Starting a project
 
-[Yeoman](http://yeoman.io/) is a tool that generates an initial project setup while adhering to industry best practices. 
-[Here](http://code.tutsplus.com/tutorials/building-apps-with-the-yeoman-workflow--net-33254) is a blog entry that lays out Yeoman's philosophy. 
-In order to run Yeoman, you'll need to install [node.js](http://nodejs.org/) and [node.js package manager](https://www.npmjs.org/). 
-To actually use Yeoman, it needs a generator. We recommend using the [generator-angular](https://github.com/yeoman/generator-angular). 
-``generator-angular`` creates an Angular application using [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io) for unit testing and [SASS](http://sass-lang.com) (structural layer on top of CSS) for styling webpages. 
-To run JavaScript commands from the command-line, you will need to install some global Javascript libraries. 
+[Yeoman](http://yeoman.io/) is a tool that generates an initial project setup while adhering to industry best practices.
+[Here](http://code.tutsplus.com/tutorials/building-apps-with-the-yeoman-workflow--net-33254) is a blog entry that lays out Yeoman's philosophy.
+In order to run Yeoman, you'll need to install [node.js](http://nodejs.org/) and [node.js package manager](https://www.npmjs.org/).
+To actually use Yeoman, it needs a generator. We recommend using the [generator-angular](https://github.com/yeoman/generator-angular).
+``generator-angular`` creates an Angular application using [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io) for unit testing and [SASS](http://sass-lang.com) (structural layer on top of CSS) for styling webpages.
+To run JavaScript commands from the command-line, you will need to install some global Javascript libraries.
 On Ubuntu (14.04) based systems, you can use the following commands to install these packages:
 
 ```
@@ -82,7 +82,7 @@ yo angular appName
 ....
 # download and install the packages listed in bower.json
 bower install
-# serve the web application (look in the Gruntfile.js for 
+# serve the web application (look in the Gruntfile.js for
 # details on where it's served)
 grunt serve
 ```
@@ -101,21 +101,21 @@ The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom 
 
 ## Debugging
 
-In web development, debugging is typically done in the browser. 
+In web development, debugging is typically done in the browser.
 
 * The best debugging tool suite is currently the debugger built into the Google Chrome webbrowser, and its open-source counterpart, Chromium. It can watch variables, step through the code, lets you monitor network traffic, and much more. Activate the debugger through the F12 key.
 * On Firefox, use either the built-in debugging functionality (again accessible through the F12 button) or install the [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) Addon for some more advanced debugging functionality.
-* Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox. 
+* Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox.
 * In Safari on OS X, press ⌘⌥U.
 
-Sometimes the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser. 
-All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code. 
+Sometimes the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser.
+All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code.
 Look for the 'create sourcemaps' option when using minification/uglification/transpiling tools.
 
 ## Hosting data files
 
 To load data files with JavaScript you can't use any file system URLs due to safety restrictions.
-You should use a web server (which may still serve files that are local). 
+You should use a web server (which may still serve files that are local).
 A simple webserver can be started from the directory you want to host files with:
 
 ```bash
@@ -222,8 +222,8 @@ npm install -g http-server
 
 ### Starting a project
 
-Similar to JavaScript a new project could be created using [Yeoman](http://yeoman.io/). 
-For instance [Fountainjs](http://fountainjs.io/) is a generator that can create a project that uses TypeScript.
+Similar to JavaScript a new project could be created using [Yeoman](http://yeoman.io/).
+For instance [Fountainjs](https://opencollective.com/fountainjs) is a generator that can create a project that uses TypeScript.
 
 ```shell
 #
@@ -258,7 +258,7 @@ For example say we want to use the ``angular-ui-bootstrap`` package which we ins
 bower install angular-bootstrap --save
 ```
 
-To be able to use its functionality in TypeScript we need to install the typings. 
+To be able to use its functionality in TypeScript we need to install the typings.
 We can search for the correct package:
 
 ```shell
@@ -277,7 +277,7 @@ typings install angular-ui-bootstrap --global --save
 
 The ``--global`` flag is needed as it is a framework package.
 The ``--save`` flag saves this installation to the typings.json file.
-The typings.json file can be used to quickly install all typings when cloning the repository. 
+The typings.json file can be used to quickly install all typings when cloning the repository.
 
 
 ### Development Environment
@@ -302,15 +302,15 @@ The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom 
 ### Debugging
 
 
-In web development, debugging is typically done in the browser. 
+In web development, debugging is typically done in the browser.
 
 * The best debugging tool suite is currently the debugger built into the Google Chrome webbrowser, and its open-source counterpart, Chromium. It can watch variables, step through the code, lets you monitor network traffic, and much more. Activate the debugger through the F12 key.
 * On Firefox, use either the built-in debugging functionality (again accessible through the F12 button) or install the [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) Addon for some more advanced debugging functionality.
-* Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox. 
+* Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox.
 * In Safari on OS X, press ⌘⌥U.
 
-Sometimes the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser. 
-All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code. 
+Sometimes the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser.
+All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code.
 Look for the 'create sourcemaps' option when using minification/uglification/transpiling tools.
 
 See [this blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps.html) for more information.

@@ -42,7 +42,7 @@ Item / Phase | Prototype | Pre-release | Mature |
 tagged releases ([github releases](https://help.github.com/categories/releases/))|||X
 CHANGELOG.md ([Keep a CHANGELOG](http://keepachangelog.com/))|||X
 one command install ([pip](https://pypi.python.org/pypi/pip), [npm](https://www.npmjs.com/package/npm) etc)|||X
-package in package manager ([pypi](https://pypi.python.org/pypi), [npm](https://www.npmjs.com/) etc)|||X
+package in package manager ([pypi](https://pypi.python.org/), [npm](https://www.npmjs.com/) etc)|||X
 discuss release cycle with coordinator||X
 release quick-scan by other engineer (is documentation understandable, can it be installed, etc)|||X
 notify Lode for dissemination (news item on site / annual report, etc)|||X

@@ -30,7 +30,7 @@ default package managers.
 
 ### Package in package manager
 
-Use [pypi](https://pypi.python.org/pypi), [npm](https://www.npmjs.com/) etc.
+Use [pypi](https://pypi.python.org/), [npm](https://www.npmjs.com/) etc.
 
 This is a way to publish the package.
 
