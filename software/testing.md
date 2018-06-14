@@ -85,7 +85,6 @@ Once the web page has any interface, e2e tests should be implemented.
 
 ## Dependencies tracking
 
-[VersionEye](https://www.versioneye.com/),
 [David](https://david-dm.org/) or other service depending on codebase language.
 
 Checking for dependency updates should be done regularly. It can save a lot of time,

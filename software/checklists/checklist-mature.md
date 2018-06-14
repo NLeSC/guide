@@ -54,7 +54,7 @@ build tests|
 [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), public on [Travis](https://travis-ci.org/)|
 continuous code coverage and code quality metrics public, minimum 70% coverage required|
 end2end test for (web) user interfaces|
-track dependencies (with [VersionEye](https://www.versioneye.com/), [David](https://david-dm.org/) or other service depending on codebase language)|
+track dependencies (with [David](https://david-dm.org/) or other service depending on codebase language)|
 
 ##Documentation
 
