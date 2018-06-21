@@ -65,10 +65,7 @@ We strongly advise to store your research data in a secure location where regula
 
 #### Checksum and sign your data archive:
 
-- Do a checksum on your files to check preservation of integrity. This means you will need to store the checksum somewhere, usually they are tiny, so they can be provided along with the data. In fact, some Linux distributions provide the checksum of the iso image so you can check your image when you download it. Storing checksums within the filename is not common practice anymore. A lot of data formats allow storing the checksum in the file; ie. the metadata part contains the checksum of the data part. For example netcdf, and FITST. Here are tutorials on how to do a checksum for [Linux](https://linux.die.net/man/1/sha256sum) ([second link](https://www.computerhope.com/unix/ucksum.htm)), [Windows](https://www.microsoft.com/en-us/download/details.aspx?id=11533), and [Mac OSx](https://www.rekha.com/how-to-verify-md5-sha1-and-sha256-checksum-on-mac.html).
-- Sign your archives with [GnuPG](https://wiki.archlinux.org/index.php/GnuPG) ([download](https://www.gnupg.org/download/index.en.html ))which would require you to set up a 'ring of thrust'.
-
-Only having both gpg-es and checksum-ed the archive ensures you that it is not altered.
+- Do a checksum on your files to check preservation of integrity. This means you will need to store the checksum somewhere, usually they are tiny, so they can be provided along with the data. In fact, some Linux distributions provide the checksum of the iso image so you can check your image when you download it. Storing checksums within the filename is not common practice anymore. A lot of data formats allow storing the checksum in the file; ie. the metadata part contains the checksum of the data part.
 
 #### File permissions and location:
 
@@ -76,11 +73,9 @@ Only having both gpg-es and checksum-ed the archive ensures you that it is not a
 - Try to avoid processing files that are also being synced with a cloud platform (like dropbox or onedrive).
 - Try to make a back-up if possible and store this back-up at a different physical location.
 
-#### Specific remarks on human data:
+#### Specific remarks on person identifiable information:
 
-- Avoid storing person identifiable information with your data where possible, but use person identifiers instead with the key being stored in a secure location.
-- If person identifiable information needs to be stored as part of the dataset then make sure the data and data carrier (e.g. hard-drive) is encrypted and the storage procedure complies with a data management plan approved by an ethics committee.
-- For all human data make sure that only data is stored for which consent was given by the participant or their guardian following the protocol approved by an ethics committee.
+- Do not do anything without consulting your privacy consultant.
 
 ### Tips for long term storage
 
@@ -92,6 +87,3 @@ For researchers outside the Netherlands alternative data storing platforms inclu
 -	www.re3data.org
 -	https://zenodo.org/
 -	http://rd-alliance.github.io/metadata-directory/standards/
-
-### Data storage certificates:
--	https://serverius.net/about/datacenter-and-network-certification/
