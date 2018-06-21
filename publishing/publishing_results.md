@@ -80,7 +80,7 @@ We strongly advise to store your research data in a secure location where regula
 ### Tips for long term storage
 
 For long term storage we advise researchers based in The Netherlands to explore the services of [SURFsara website](https://userinfo.surfsara.nl/), the Collaborative organization for ICT in Dutch education and research, including but not exclusively:
--	[Surfdrive](https://www.surf.nl/en/service-and-products/surfdrive/surfdrive.html) for secure data sharing up to 250 GB.
+-	[Surfdrive](https://www.surf.nl/en/services-and-products/surfdrive/surfdrive.html) for secure data sharing up to 250 GB.
 -	[Data archive](https://userinfo.surfsara.nl/systems/data-archive) for long term storage of extremely large datasets.
 
 For researchers outside the Netherlands alternative data storing platforms include:
