@@ -57,7 +57,7 @@ For a generic impression of what R can do see: http://www.r-graph-gallery.com/al
 
 The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. A tutorial with some examples of plotting optins in R can be found [here](http://www.statmethods.net/graphs/index.html).
 
-However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](http://ggplot2.org). Also see this overview (pdf) of [ggplot2](http://ggplot2.org/resources/2007-past-present-future.pdf) options. Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](http://www.statmethods.net/advgraphs/ggplot2.html).
+However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](http://ggplot2.org). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](http://www.statmethods.net/advgraphs/ggplot2.html).
 
 In summary, it is good to familiarize yourself with both the basic plotting functions as well as the contributed graphics packages. In theory, the basic plot functions can do everything that ggplot2 can do, it is mostly a matter of how much you like either syntax and how much freedom you need to tailor the visualisation to your use case.
 
@@ -65,7 +65,7 @@ In summary, it is good to familiarize yourself with both the basic plotting func
 Thanks to [shiny.app](http://shiny.rstudio.com) it is possible to make interactive web application in R without the need to write javascript or html.
 
 ## Building reports with knitr
-[knitr](http://yihui.name/knitr/) is an R package designed to build dynamic reports in R. It's possible to generate on the fly new pdf or html documents with results of computations embedded inside.
+[knitr](https://yihui.name/knitr/) is an R package designed to build dynamic reports in R. It's possible to generate on the fly new pdf or html documents with results of computations embedded inside.
 
 ## Preparing data for analysis
 There are packages that ease tidying up messy data, e.g. [tidyr](https://github.com/hadley/tidyr) and [reshape2](https://github.com/hadley/reshape). The idea of tidy and messy data is explained in a [tidy data](http://vita.had.co.nz/papers/tidy-data.html) paper by Hadley Wickham. There is also the google group [manipulatr](https://groups.google.com/forum/#!forum/manipulatr) to discuss topics related to data manipulation in R.
@@ -118,7 +118,7 @@ R function documentation offers plenty of space to document the functionality, i
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
 ### Continuous integration
-Continuous integration can be done with for example [Travis], (https://travis-ci.org/), see [Chapter](https://github.com/NLeSC/guide/blob/master/software/testing.md) on testing
+Continuous integration can be done with for example [Travis], (https://travis-ci.org/), see [Chapter](../testing.md) on testing.
 
 ### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
