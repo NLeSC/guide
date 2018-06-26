@@ -13,6 +13,10 @@
    * [Development Setup](software/development_setup.md)
    * [Standards](software/standards.md)
    * [Checklist](software/checklist.md)
+     * [Development stages matrix](software/checklist-matrix.md)
+     * [Prototype phase](software/checklists/checklist-prototype.md)
+     * [Prerelease phase](software/checklists/checklist-prerelease.md)
+     * [Mature phase](software/checklists/checklist-mature.md)
 * [Language Guides](languages/languages_overview.md)
    * [Java](languages/java.md)
    * [JavaScript and TypeScript](languages/javascript.md)
@@ -47,4 +51,3 @@
    * [End of a Project](projects/end_of_a_project.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
    * [Chapter Owners](chapter_owners.md)
-

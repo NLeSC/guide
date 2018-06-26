@@ -3,7 +3,7 @@
 Printable check-list -- complete this checklist to ensure your project is eStep-ready. If you can tick all boxes on this form, your project should be included as an eStep *Prototype* project.
 
 
-##Version Control
+## Version Control
 
 
 Item / Phase | Done      |
@@ -13,21 +13,21 @@ public vcs repository ([github](https://github.com/))|
 meaningful commit messages|
 
 
-##Licensing
+## Licensing
 
 Item / Phase | Done      |
 :------------|:---------:|
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)|
 compatible license of all libraries|
-`NOTICE(.txt|.md)` listing licenses, request citation of paper if applicable|
+`NOTICE(.txt or .md)` listing licenses, request citation of paper if applicable|
 
-##Communication
+## Communication
 
 Item / Phase | Done      |
 :------------|:---------:|
 project discussion list (github issues, mailing list, not private email) for all project related discussions from the beginning of the project|
 
-##Documentation
+## Documentation
 
 Item / Phase | Done      |
 :------------|:---------:|

@@ -39,7 +39,9 @@ Installing the code should be easy, a one command process.
 The process itself typically includes installing dependencies, compiling, testing, and finally actual installation, and can be quite complex.
 The use of a proper build system is strongly recommended.
 
-To deal with your code's dependencies you can use:
+### Package in package manager
+
+If your software is useful for a wider audience, create a package that can be installed with a package manager. Package managers can also be used to install dependencies quickly and easily.
 * For Python use [pip](https://pypi.python.org/pypi/pip)
 * For Javascript use [npm](https://www.npmjs.com/package/npm)
 * C, C++, Fortran, ... use packages from your distributions official repository. List your actual dependencies in the *INSTALL.md* or *README.md*
