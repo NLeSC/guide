@@ -26,6 +26,12 @@ npm install -g gitbook-cli
 npm install -g broken-link-checker
 ```
 
+To install ``gitbook``'s dependencies:
+
+```
+gitbook install
+```
+
 To build the documentation:
 
 ```
