@@ -1,5 +1,14 @@
 # Testing
 
+
+Write tests obviously takes time, so why should you do it? Test save time later on, and increase the quality of the software. More specifically: 
+* Makes you more confident that your software is correct.
+* It saves time in finding bugs, the tests give an indication where the bug is.
+* Makes it easier to make changes to the code, the tests will catch changes to way the software functions.
+* Tests communicate how software is intended to function.
+
+
+
 These points do not apply to prototype / throwaway phase.
 
 ## unit tests
