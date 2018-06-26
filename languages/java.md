@@ -85,3 +85,18 @@ Java has the inbuild [JavaDoc](http://www.oracle.com/technetwork/java/javase/doc
 ## Available Templates
 
 There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/nlesc/xenon) as an (rather complex) example.
+
+## Distribution
+
+We use [Bintray](https://bintray.com/howbintrayworks) to publish packages.
+
+To make the package easy for users to install, the packages can be added to [JCenter](http://jcenter.bintray.com/).
+JCenter is the largest repository in the world for Java and Android OSS libraries, packages and components.
+In a Gradle build file the JCenter repository can be used by adding:
+```
+repositories {
+    jcenter()
+}
+```
+
+Packages of the Netherlands eSciencenter can be seen at [https://bintray.com/nlesc](https://bintray.com/nlesc).
