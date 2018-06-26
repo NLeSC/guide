@@ -73,7 +73,7 @@ API documentation should explain function arguments and outputs, or the object m
 ## Documented development setup
 
 (good example is [Getting started with khmer development](http://khmer.readthedocs.org/en/latest/dev/getting-started.html))
-It should be made available once there is more than one developer working on the codebase.
+It should be made available once there is more than one developer working on the codebase. If your development setup is very complicated, please consider providing a Dockerfile and docker image.
 
 ## Contribution guidelines
 
