@@ -8,7 +8,7 @@ our visibility in development world.
 
 ## Home page
 
-with all the necessary introduction information, links to documentation, source code (github) and latest release download (e.g. [github.io pages](https://pages.github.com/))
+The software should have a homepage with all the necessary introduction information, links to documentation, source code (github) and latest release download (e.g. [github.io pages](https://pages.github.com/))
 
 The page should be created at the latest when the software is ready to be seen by the outside world. It is the place where people will learn about software, so it is important to describe its goals and functionality.
 It should be targeted towards non-programming users (unless software is meant for programers i.e library) but should have

@@ -1,5 +1,8 @@
 # Version control
 
+## GitHub
+
+Netherlands eScience center uses GitHub [GitHub](https://www.github.com) for version control.
 To keep our code transparent and findable the preferred code hosting platform is
 GitHub and version management is git. The repository should preferably be public
 from the start.
@@ -28,7 +31,7 @@ This SHOULD be enabled for your account
 * Project based GitHub organizations
   * MUST have at least two owners that are Netherlands eScience center employees
   * MUST be [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization) at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all the project organizations
-  * Private repositories can be created. Free when [GitHub's education discount](https://education.github.com/) is requested. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
+  * Private repositories can be created. Free when [GitHub's education discount](https://education.github.com/) is requested. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/nlesc_ip_policy_2017.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
     * Why is this repository private?
     * On which date can this repository be made public?
     * Who should be consulted if we would like to make the repository public in the future?
@@ -66,22 +69,18 @@ Course](http://git-scm.com/course/svn.html)
 
 ## Choose one branching model
 
-Make the choice explicit in the contribution guidelines, and link to
-documentation on how to get started with it. Our default choice is [GitHub flow
-branching model](https://guides.github.com/introduction/flow/)
+A branching model describes how the project deals with different versions of the codebase, like releases and various development versions, and how to accept code contributions.
+Make the choice explicit in the contribution guidelines, and link to documentation on how to get started with it.
+Our default choice is [GitHub flow branching model](https://guides.github.com/introduction/flow/)
 
-GitHub flow is a very simple and sane branching model. It supports collaboration
-and is based on pull requests, therefore relies heavily on GitHub. The [Pro
-Git](https://git-scm.com/doc) book describes in detail the workflow of
-collaboration on the project with use of git branches, forks and GitHub in
-[Contributing to a Project
-chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project). Other
-more complicated models could be used if necessary, but we should strive for
-simplicity and uniformity within the eScience Center since that will enhance
-collaboration between the engineers. Learning a new branching model should not
-stand in the way of contributions. You can learn more about those other models
-from [atlassian
-page](https://www.atlassian.com/git/tutorials/comparing-workflows).
+GitHub flow is a very simple and sane branching model. It supports collaboration and is based on pull requests, therefore relies
+heavily on GitHub. The [Pro Git](https://git-scm.com/doc) book describes in detail the workflow of collaboration on the project
+with use of git branches,
+forks and GitHub in [Contributing to a Project chapter](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
+Other more complicated models could be used if necessary, but we should strive for simplicity and uniformity
+within the eScience Center since that will enhance collaboration between the engineers. Learning a new branching model should not stand in the way
+of contributions.
+You can learn more about those other models from [atlasian page](https://www.atlassian.com/git/tutorials/comparing-workflows).
 
 ## Repositories should be public
 
@@ -110,6 +109,4 @@ messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
 ## Code snippets library
 
-Sometimes, we develop small snippets of code that can be directly reused in
-other projects, but that are too small to put in a library. We store these code
-snippets in git, in [GitHub Gists](https://gist.github.com/).
+Sometimes, we develop small snippets of code that can be directly reused in other projects, but that are too small to put in a library. We store these code snippets in git, in [GitHub Gists](https://gist.github.com/).
