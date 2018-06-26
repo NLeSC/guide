@@ -28,6 +28,9 @@
    * [More Examples](intellectual_property_and_licensing/more_examples.md)
 * [Citable software](citable_software/publishing_results.md)
    * [eScience Conferences, Journals, and Workshops](citable_software/conferences_journals_workshops.md)
+* [Findability](findability/findability.md)
+* [Governance](governance/governance.md)
+* [Reproducibility](reproducibility/reproducibility.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
 * NLeSC specific
    * [Chapter Owners](chapter_owners.md)
