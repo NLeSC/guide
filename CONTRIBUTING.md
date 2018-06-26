@@ -19,7 +19,7 @@ git checkout newbranch
 ```
 Add your new awesome feature, fix bugs, make other changes.
 
-To view changes locally, first install ``gitbook-cli`` (Gitbook command line interface) and ``broken-link-checker``.
+To view changes locally, first install ``gitbook-cli`` (Gitbook command line interface) and ``broken-link-checker`` (may require root permissions, depending on your setup).
 
 ```
 npm install -g gitbook-cli
