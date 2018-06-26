@@ -1,15 +1,15 @@
 # Software checklist
 This section contains a list of items which are required to help software reach a sufficient quality standard. The following list of items links to explanation in other sections of this chapter.
 
-The [checklist matrix](./checklist-matrix.md) provides an indication of which items are important at different development stages.
+The [checklist matrix](./checklist_matrix.md) provides an indication of which items are important at different development stages.
 
-## [Version control](version_control.html)
+## [Version control](../best_practices/version_control.html)
 
-- [version control from the beginning of the project](version_control.html#version-control-from-the-beginning-of-the-project)
-- [use git as version control system (vcs)](version_control.html#use-git-as-version-control-system-vcs)
-- [choose one branching model](version_control.html#choose-one-branching-model)
-- [public vcs repository](version_control.html#public-vcs-repository)
-- [meaningful commit messages](version_control.html#meaningful-commit-messages)
+- [version control from the beginning of the project](../best_practices/version_control.html#version-control-from-the-beginning-of-the-project)
+- [use git as version control system (vcs)](../best_practices/version_control.html#use-git-as-version-control-system-vcs)
+- [choose one branching model](../best_practices/version_control.html#choose-one-branching-model)
+- [public vcs repository](../best_practices/version_control.html#public-vcs-repository)
+- [meaningful commit messages](../best_practices/version_control.html#meaningful-commit-messages)
 
 ## [Releases](releases.html)
 
@@ -37,39 +37,35 @@ The [checklist matrix](./checklist-matrix.md) provides an indication of which it
 - [an online demo](communication.html#an-online-demo)
 - [screencast](communication.html#screencast)
 
-## [Code Quality](code_quality.html)
+## [Code Quality](../best_practices/code_quality.html)
 
-- [use editorconfig](code_quality.html#use-editorconfig)
-- [code style applied in automated way](code_quality.html#coding-style)
+- [use editorconfig](../best_practices/code_quality.html#use-editorconfig)
+- [code style applied in automated way](../best_practices/code_quality.html#coding-style)
 
-## [Testing](testing.html)
+## [Testing](../best_practices/testing.html)
 
-- [unit tests](testing.html#unit-tests)
-- [continuous integration](testing.html#continuous-integration)
-- [continuous code coverage](testing.html#continuous-code-coverage)
-- [end2end test](testing.html#end2end-tests)
-- [dependencies tracking](testing.html#dependencies-tracking)
+- [unit tests](../best_practices/testing.html#unit-tests)
+- [continuous integration](../best_practices/testing.html#continuous-integration)
+- [continuous code coverage](../best_practices/testing.html#continuous-code-coverage)
+- [end2end test](../best_practices/testing.html#end2end-tests)
+- [dependencies tracking](../best_practices/testing.html#dependencies-tracking)
 
-## [Documentation](documentation.html)
-- [README.md](documentation.html#readmemd)
-- [well defined functionality](documentation.html#well-defined-functionality)
-- [source code documentation](documentation.html#source-code-documentation)
-- [usage documentation](documentation.html#usage-documentation)
-- [documented development setup](documentation.html#documented-development-setup)
-- [contribution guidelines](documentation.html#contribution-guidelines)
-- [code of conduct](documentation.html#code-of-conduct)
-- [documented code style](documentation.html#documented-code-style)
-- [how to file a bug report](documentation.html#howto-bug-report)
-- [explained meaning of issue labels](documentation.html#explained-meaning-of-issue-labels)
-- [DOI or PID](documentation.html#doi-or-pid)
-- [CITATION file](documentation.html#citation)
-- [print software version](documentation.html#print-software-version)
+## [Documentation](../best_practices/documentation.html)
+- [README.md](../best_practices/documentation.html#readmemd)
+- [well defined functionality](../best_practices/documentation.html#well-defined-functionality)
+- [source code documentation](../best_practices/documentation.html#source-code-documentation)
+- [usage documentation](../best_practices/documentation.html#usage-documentation)
+- [documented development setup](../best_practices/documentation.html#documented-development-setup)
+- [contribution guidelines](../best_practices/documentation.html#contribution-guidelines)
+- [code of conduct](../best_practices/documentation.html#code-of-conduct)
+- [documented code style](../best_practices/documentation.html#documented-code-style)
+- [how to file a bug report](../best_practices/documentation.html#howto-bug-report)
+- [explained meaning of issue labels](../best_practices/documentation.html#explained-meaning-of-issue-labels)
+- [DOI or PID](../best_practices/documentation.html#doi-or-pid)
+- [CITATION file](../best_practices/documentation.html#citation)
+- [print software version](../best_practices/documentation.html#print-software-version)
 
-## [Development setup](development_setup.html)
+## [Standards](../best_practices/standards.html)
 
-- [dev environment docker images in Dockerhub (with Dockerfile)](development_setup.html#dev-environment-docker-images-in-dockerhub-with-dockerfile)
-
-## [Standards](standards.html)
-
-- [Exchange formats](standards.html#exchange-formats)
-- [Protocols](standards.html#protocols)
+- [Exchange formats](../best_practices/standards.html#exchange-formats)
+- [Protocols](../best_practices/standards.html#protocols)

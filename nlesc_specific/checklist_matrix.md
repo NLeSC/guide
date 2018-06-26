@@ -6,17 +6,17 @@ Though very generic in scope and context, this is an eScience Center specific li
 
 ## Explanation of project states
 
-- [*Prototype phase*](checklists/checklist-prototype.md). The first step in most software development is trying out different things with no intention in keeping the intermediate results. Signs you could be in this phase:
+- [*Prototype phase*](checklist/checklist_prototype.md). The first step in most software development is trying out different things with no intention in keeping the intermediate results. Signs you could be in this phase:
   - You switch programming languages.
   - You throw away all of your code once in a while
   - You work on the code by yourself
   - You are waiting with showing other people your code until you "clean it up a bit first".
-- [*Pre-release phase*](checklists/checklist-prerelease.md). Eventually you get software you intend to keep. Signs you could be in this phase:
+- [*Pre-release phase*](checklist/checklist_prerelease.md). Eventually you get software you intend to keep. Signs you could be in this phase:
   - You have multiple developers.
   - You have external contributors.
   - You are working up to a release.
   - Users ask you if the software is done yet.
-- [*Maturity phase*](checklists/checklist-mature.md): Software that has reached maturity, has a clear function and scope, and is used. Signs you could be in this phase:
+- [*Maturity phase*](checklist/checklist_mature.md): Software that has reached maturity, has a clear function and scope, and is used. Signs you could be in this phase:
   - The software has a release.
   - The software has users: people actually using your software/code
   - You have external contributor
