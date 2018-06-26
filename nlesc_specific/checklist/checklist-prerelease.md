@@ -25,7 +25,7 @@ Item / Phase | Done      |
 :------------|:---------:|
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)|
 compatible license of all libraries|
-`NOTICE(.txt|.md)` listing licenses, request citation of paper if applicable|
+`NOTICE(.txt or .md)` listing licenses, request citation of paper if applicable|
 
 ##Communication
 

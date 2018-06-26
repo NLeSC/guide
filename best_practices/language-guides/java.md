@@ -48,16 +48,19 @@ Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For run
 
 ## Code quality analysis tools and services
 
+### [SonarQube](https://about.sonarqube.com/)
+
+SonarQube is an open platform to manage code quality which can also show code coverage and count test results over time.
+SonarQube can analyze Java, C, C++, Python and Javascript.
+The analysis can be done in IDE or command line using http://www.sonarlint.org/
+For example project see https://sonarqube.com/dashboard?id=nlesc%3Axenon-cli
+Notifications of each project must be configured in your own account settings.
+
 ### [Codacy](https://www.codacy.com)
 
 Code quality and coverage grouped by file.
 Can setup goals to improve quality or coverage by file or category.
 For example project see https://www.codacy.com/app/NLeSC/Xenon/dashboard
-
-### [SonarQube](https://sonarqube.com/about)
-
-SonarQube is an open platform to manage code quality which can show code coverage and count test results over time.
-Sonar Qube can analyze Java, Python and Javascript.
 
 ### [Codecov](https://codecov.io)
 Can show code coverages for many languages including Java, Python and Javascript.
@@ -85,3 +88,18 @@ Java has the inbuild [JavaDoc](http://www.oracle.com/technetwork/java/javase/doc
 ## Available Templates
 
 There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/nlesc/xenon) as an (rather complex) example.
+
+## Distribution
+
+We use [Bintray](https://bintray.com/howbintrayworks) to publish packages.
+
+To make the package easy for users to install, the packages can be added to [JCenter](http://jcenter.bintray.com/).
+JCenter is the largest repository in the world for Java and Android OSS libraries, packages and components.
+In a Gradle build file the JCenter repository can be used by adding:
+```
+repositories {
+    jcenter()
+}
+```
+
+Packages of the Netherlands eSciencenter can be seen at [https://bintray.com/nlesc](https://bintray.com/nlesc).
