@@ -110,17 +110,17 @@ Please make sure the command `python setup.py test` can be used to run your test
 ### Code coverage
 
 When you have tests it is also a good to see which source code is exercised by the test suite.
-[Code coverage](../software/testing.html#Code_Coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
+[Code coverage](../testing.md#Code_Coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
 The coverage package can also generate html reports which show which line was covered.
 Most test runners have have the coverage package integrated.
 
 The code coverage reports can be published online in code quality service or code coverage services.
 Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
-If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../software/testing.html#Code_coverage_services).
+If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../testing.md#Code_coverage_services).
 
 ## Code quality analysis tools and services
 
-Code quality service is explained in the [Generic software guide](../software/code_quality.html#Software_quality_improvement_tools).
+Code quality service is explained in the [Generic software guide](../code_quality.html#Software_quality_improvement_tools).
 There are multiple code quality services available for Python.
 There is not a best one, below is a short list of services with their different strenghts.
 
@@ -152,7 +152,7 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 * If you are looking for IDE's with debugging capabilities, please check **Editors and IDEs** section.
 
 * If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
-* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn/).
+* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use Pyclewn.
 
 * List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
 

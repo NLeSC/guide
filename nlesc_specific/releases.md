@@ -69,7 +69,7 @@ some of the things in this *scan* could be automated with continuous integration
 
 ### Citeable
 
-Create a DOI for each release see [Publishing results chapter](../publishing/publishing_results.md#citing-datasets,-software-and-results).
+Create a DOI for each release see [Citable software ](../citable_software/publishing_results.md#citing-datasets,-software-and-results).
 
 ### Dissemination
 

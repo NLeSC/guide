@@ -25,8 +25,8 @@ We have standard code formatting settings for eclipse.
 
 TODO: describe tabs-vs-spaces and indentation size.
 
-[code-format-nlesc-v2.xml](java-eclipse-config/code-format-nlesc-v2.xml)
-[code-cleanup-nlesc.xml](java-eclipse-config/code-cleanup-nlesc.xml)
+[code_format_nlesc_v2.xml](java_eclipse_config/code_format_nlesc_v2.xml)
+[code_cleanup_nlesc.xml](java_eclipse_config/code_cleanup_nlesc.xml)
 
 Automated checking of the code style can be done with PMD and FindBugs.`
 
