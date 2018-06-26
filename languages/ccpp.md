@@ -55,9 +55,46 @@ Any code editor will do. Try to avoid relying on IDEs too much; by helping your 
 * Eclipse
 * CodeLite (has integrated debugger)
 
+### Code and program quality analysis
+
+C++ (and C) compilers come with built in linters and tools to check that your program runs correctly, make sure you use those. In order to find issues, it is probably a good idea to use both compilers (and maybe the valgrind memcheck tool too), because they tend to detect different problems.
+
+#### Static code analysis with GCC
+To use the GCC linter, use the following set of compiler flags when compiling C++ code:
+```
+-O2 -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 
+-Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast 
+-Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel 
+-Wstrict-overflow=5 -Wswitch-default -Wundef -Wno-unused
+```
+and these flags when compiling C code:
+```
+-O2 -Wall -Wextra -Wformat-nonliteral -Wcast-align -Wpointer-arith -Wbad-function-cast 
+-Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations -Winline -Wundef 
+-Wnested-externs -Wcast-qual -Wshadow -Wwrite-strings -Wno-unused-parameter 
+-Wfloat-equal
+```
+Use at least optimization level 2 (`-O2`) to have GCC perform code analysis up to a level where you get all warnings. Use the `-Werror` flag to turn warnings into errors, i.e. your code won't compile if you have warnings. See this [post](https://stackoverflow.com/questions/5088460/flags-to-enable-thorough-and-verbose-g-warnings) for an explanation of why this is a reasonable selection of warning flags.
+
+#### Static code analysis with Clang (LLVM)
+Clang has the very convenient flag
+```
+-Weverything
+```
+A good strategy is probably to start out using this flag and then disable any warnings that you do not find useful.
+
+#### Dynamic program analysis using `-fsanitize`
+Both GCC and Clang allow you to compile your code with the `-fsanitize=` flag , which will instrument your program to detect various errors quickly. The most useful option is probably
+```
+-fsanitize=address -O2 -fno-omit-frame-pointer -g
+```
+which is a fast memory error detector. There are also other options available like `-fsanitize=thread` and `-fsanitize=undefined`. See the GCC man page or the [Clang online manual](https://clang.llvm.org/docs/index.html) for more information.
+
+#### Dynamic program analysis using the valgrind suite of tools
+The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical  profiler](https://en.wikipedia.org/wiki/Profiling_(computer_programming)#Statistical_profilers) may give you more realistic results.
+
 ### Debugging
 * GDB - the GNU Debugger, many graphical front-ends are based on GDB.
-* Valgrind - detect memory leaks.
 * DDD - primitive GUI frontend for GDB.
 * Nemiver - standalone graphical debugger for Gnome.
 

@@ -21,7 +21,7 @@ Item / Phase | Done      |
 tagged releases ([github releases](https://help.github.com/categories/releases/))|
 CHANGELOG.md ([Keep a CHANGELOG](http://keepachangelog.com/))|
 one command install ([pip](https://pypi.python.org/pypi/pip), [npm](https://www.npmjs.com/package/npm) etc)|
-package in package manager ([pypi](https://pypi.python.org/pypi), [npm](https://www.npmjs.com/) etc)|
+package in package manager ([pypi](https://pypi.python.org/), [npm](https://www.npmjs.com/) etc)|
 discuss release cycle with coordinator|
 release quick-scan by other engineer (is documentation understandable, can it be installed, etc)|
 notify Lode for dissemination (news item on site / annual report, etc)|
@@ -54,7 +54,7 @@ build tests|
 [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), public on [Travis](https://travis-ci.org/)|
 continuous code coverage and code quality metrics public, minimum 70% coverage required|
 end2end test for (web) user interfaces|
-track dependencies (with [VersionEye](https://www.versioneye.com/), [David](https://david-dm.org/) or other service depending on codebase language)|
+track dependencies (with [David](https://david-dm.org/) or other service depending on codebase language)|
 
 ## Documentation
 

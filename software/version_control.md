@@ -26,23 +26,21 @@ GitHub organization
 authentication](https://help.github.com/articles/about-two-factor-authentication/).
 This SHOULD be enabled for your account
 * Project based GitHub organizations
-  * MUST have at least two owners that are Netherlands eScience Center employees
-  * MUST be
-[registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization)
-at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all
-the project organizations
-  * Private repositories can be created. Free when [GitHub's education
-discount](https://education.github.com/) is requested. **NOTE**: The
-[Netherlands eScience Center IP
-policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) applies to
-any software we contribute to, so the repository SHOULD become open source at
-some point
-* [Netherlands eScience Center GitHub organization (https://github.com/NLeSC)](https://github.com/NLeSC)
-  * Only Netherlands eScience Center employees are members
+  * MUST have at least two owners that are Netherlands eScience center employees
+  * MUST be [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization) at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all the project organizations
+  * Private repositories can be created. Free when [GitHub's education discount](https://education.github.com/) is requested. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/NLeSC_IP_policy_vJan2015.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
+    * Why is this repository private?
+    * On which date can this repository be made public?
+    * Who should be consulted if we would like to make the repository public in the future?
+* [Netherlands eScience center Github organization (https://github.com/NLeSC)](https://github.com/NLeSC)
+  * Only Netherlands eScience center employees are members
   * All members have permission to create new repositories
-  * [Collaborators](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/)
-SHOULD be used to grant access to non-members
+  * [Collaborators](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/) SHOULD be used to grant access to non-members
   * A limited number of slots for private repositories is available, but using them is discouraged
+  * To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
+    * Why is this repository private?
+    * On which date can this repository be made public?
+    * Who should be consulted if we would like to make the repository public in the future?
 
 ## Version control from the beginning of the project
 
