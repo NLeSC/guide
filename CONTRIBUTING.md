@@ -10,7 +10,7 @@ To make sure the information in this knowledge base stays relevant and  up to da
 
 Contributions by anyone are most welcome.
 
-Please use branches and pull requests to contribute content.
+Please use branches and pull requests to contribute content. If you are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ```
 git clone https://github.com/NLeSC/guide.git
@@ -49,8 +49,6 @@ blc --recursive http://localhost:4000
 ```
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
-
-If your are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ## Chapter Owners
 
