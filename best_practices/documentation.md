@@ -124,11 +124,13 @@ Once users start submitting issues labels should be documented.
 
 Identifiers should be associated with releases and should be created together with first release.
 
-## CITATION file
+## Software citation
 
-Make it easy to cite your software. Read more in [the post by Robin Wilson](http://www.software.ac.uk/blog/2013-09-02-encouraging-citation-software-introducing-citation-files)
-This file should be human readable. Should point to the journal article if there is one and to DOI. More about obtaining DOI
-in [DIO section](./documentation.html#doi-or-pid.html).
+Make it easy to cite your software. Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](./documentation.html#doi-or-pid.html)). It is recommended that this information is contained on a single file.
+
+You can use the [CITATION file format](https://citation-file-format.github.io/) to provide this information on a human- and machine-readable format.
+
+Read more in [the post by Robin Wilson](http://www.software.ac.uk/blog/2013-09-02-encouraging-citation-software-introducing-citation-files).
 
 ## Print software version
 
