@@ -1,6 +1,6 @@
 # Contributing
 
-This Knowledge Base is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audiance is anyone interested in eScience and research software developement in general or how this is done at the eScience Center specifically.
+This Knowledge Base is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audience is anyone interested in eScience and research software development in general or how this is done at the eScience Center specifically.
 
 Contributions by anyone are most welcome.
 
