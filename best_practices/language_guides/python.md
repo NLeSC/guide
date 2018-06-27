@@ -152,7 +152,7 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 * If you are looking for IDE's with debugging capabilities, please check **Editors and IDEs** section.
 
 * If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
-* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use <a href="&#104;ttps://sourceforge.net/projects/pyclewn/">Pyclewn</a>. <!--the &#104; notation here is to avoid probleas with the broken-link-checker-->
+* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
 
 * List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
 
