@@ -45,7 +45,7 @@ gitbook serve
 
 To check if there are any broken links:
 ```
-blc --exclude http://localhost:8000 --recursive http://localhost:4000
+blc --recursive http://localhost:4000
 ```
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.

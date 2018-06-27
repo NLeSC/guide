@@ -124,7 +124,9 @@ python -m SimpleHTTPServer 8000
 # Python 3
 python -m http.server 8000
 ```
-Then open the webbrowser to http://localhost:8000.
+
+<!-- the &#104; notation below is to avoid problems with the link checker (broken-link-checker) -->
+Then open the webbrowser to &#104;ttp://localhost:8000.
 
 ## Documentation
 
