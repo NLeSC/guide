@@ -2,15 +2,15 @@
 
 This Knowledge Base is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audience is anyone interested in eScience and research software development in general or how this is done at the eScience Center specifically.
 
-Contributions by anyone are most welcome.
-
 ## Scope
 
 To make sure the information in this knowledge base stays relevant and  up to date it is intentionally low on technical details. The Knowledge base contains information on the process we use to do projects and develop software.
 
 ## Workflow for making contributions
 
-Please use branches and pull requests to contribute content. You can also view the GitBook at a certain branch by replacing 'master' with the branch you would like to preview:
+Contributions by anyone are most welcome.
+
+Please use branches and pull requests to contribute content.
 
 ```
 git clone https://github.com/NLeSC/guide.git
