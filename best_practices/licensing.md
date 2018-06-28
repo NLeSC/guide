@@ -1,5 +1,17 @@
 # Licensing
 
+
+##Why use a license in the first place?
+
+Without a license, all rights are at the author of the code, and that means nobody else can use, copy, distribute, or modify it work without consent. A license gives this consent.
+
+If you don't have a licence for your software, it is effectively unusable by the whole research community, and those potential collaborators will turn to someone else's software. 
+
+##Why choose a permissive open-source license?
+ 
+As a researcher, you want to encourage use of your software, because use of software leads to credit for your software. A permissive open-source license gives the least amount of restrictions (while still requiring attribution), removing most barriers for usage.
+
+
 ## Apache 2 license
 
 [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0)
