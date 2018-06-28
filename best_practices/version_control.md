@@ -1,5 +1,12 @@
 # Version control
 
+Why would you use version control software and hosting (such as GitHub)?
+* **Easier to collaborate** Version control makes it easier to work on the same code simultaneously, while everyone still has a well defined version of the software (in contrast to a google-docs or shared file system type of system). Moreover, version control hosting websites such as Github provide way to communicate in a more structed way, such as in code reviews, about commits and about issues.
+* **Reproducability** By using version control, you never lose previous versions of the software. This also gives you a log of changes and allows you to understand what happened. 
+* **Backup** Version control is usually pushed to an external a shared server, which immediately provides a backup.
+* **Integration** Version control software and host makes it more easy to integrate with other software that support modern software development, such as testing (continuous integration ,automatically run tests, build documentation, check code style, integration with bug-tracker, code review infrastructure, comment on code).
+
+
 ## GitHub
 
 Netherlands eScience center uses GitHub [GitHub](https://www.github.com) for version control.
@@ -78,6 +85,12 @@ of contributions.
 You can learn more about those other models from [atlasian page](https://www.atlassian.com/git/tutorials/comparing-workflows).
 
 ## Repositories should be public
+
+A public code repository has several benefits:
+* It makes your code findable.
+* It is a central point for users and collaborators.
+* It shows your code to world, allowing (re)use and enables you to get credit for your work.
+* It is usually not hosted on your laptop, and hence provides an external backup.
 
 Unless code cannot be open (e.g. when working with commercial partners, or when
 there are competitiveness issues) it should be in a public online repository. In

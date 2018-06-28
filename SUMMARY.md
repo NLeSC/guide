@@ -20,7 +20,6 @@
       * [R](best_practices/language_guides/r.md)
       * [C and C++](best_practices/language_guides/ccpp.md)
       * [Fortran](best_practices/language_guides/fortran.md)
-
 * [Intellectual Property and Licensing](intellectual_property_and_licensing/intellectual_property_overview.md)
    * [Executive summary](intellectual_property_and_licensing/summary.md)
    * [About the Law](intellectual_property_and_licensing/about_the_law.md)

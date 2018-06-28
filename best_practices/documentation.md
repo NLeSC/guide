@@ -77,6 +77,8 @@ It should be made available once there is more than one developer working on the
 
 ## Contribution guidelines
 
+Contribution guidelines make it easier for collaborators to contribute, and smooth the process of collaboration.
+
 Guidelines should be made available once the code is available online and there is a process
 for contributions by other people. Good guidelines will save time of both lead
 developer and contributor since things have to be explained only once. A good CONTRIBUTING.md
@@ -90,9 +92,15 @@ An extensive example can be found [here](https://github.com/angular/angular.js/b
 
 ## Code of conduct
 
+A code of conduct is a set of rules outlining the social norms, religious rules and responsibilities of, and or proper practices for an individual. Such a document is advantagous for collaberation, for several reasons:
+* It shows your intent to work together in a positive way with everyone.
+* It reminds everyone to communicate in a welcoming and inclusive way.
+* It provides a set of guidelines in case of conflict.
+
+
 [contributor covenant](http://contributor-covenant.org/)
 
-CofC should be attached from the beginning of the project. There is no gain fro having it with one
+CofC should be attached from the beginning of the project. There is no gain from having it with one
 developer, but it does not cost anything to include it in the project and will be handy when more
 developers join.
 
@@ -126,7 +134,9 @@ Identifiers should be associated with releases and should be created together wi
 
 ## Software citation
 
-Make it easy to cite your software. Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](./documentation.html#doi-or-pid.html)). It is recommended that this information is contained on a single file.
+To get credit for your work, it should be as easy as possible to cite your software. 
+
+Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](./documentation.html#doi-or-pid.html)). It is recommended that this information is contained on a single file.
 
 You can use the [CITATION file format](https://citation-file-format.github.io/) to provide this information on a human- and machine-readable format.
 

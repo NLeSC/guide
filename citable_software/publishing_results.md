@@ -9,6 +9,9 @@ Assuming you have only the software in a (private) git repo, you might want to a
 * If not, make the repo public.
 
 ## Making software citable
+
+Digital Object Identifiers are globally unique identifiers which can point to any digital object, such as a version of a paper, a version of software etc. This has the advantage that it is unambigous and standardized. For papers, using DOIs is commonplace, and a DOI is usually provided by the publisher. For software, you can make your own DOI with __zenodo__:
+
 * Make a [Zenodo](https://zenodo.org/) account and link it with your github account as explained on [guides.github.com/activities/citable-code](https://guides.github.com/activities/citable-code/)
 * Add a ``.zenodo.json`` file to the root of your repository. File format
   largely follows that of the REST API
