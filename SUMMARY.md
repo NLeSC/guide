@@ -2,6 +2,7 @@
 
 * [Introduction](introduction.md)
 * [Best practices](best_practices/overview.md)
+   * [Checklist](best_practices/checklist.md)
    * [Version Control](best_practices/version_control.md)
    * [Code Quality](best_practices/code_quality.md)
    * [Code Review](best_practices/code_review.md)
@@ -16,6 +17,7 @@
       * [R](best_practices/language_guides/r.md)
       * [C and C++](best_practices/language_guides/ccpp.md)
       * [Fortran](best_practices/language_guides/fortran.md)
+
 * [Intellectual Property and Licensing](intellectual_property_and_licensing/intellectual_property_overview.md)
    * [Executive summary](intellectual_property_and_licensing/summary.md)
    * [About the Law](intellectual_property_and_licensing/about_the_law.md)
