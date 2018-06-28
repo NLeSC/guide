@@ -4,15 +4,18 @@ Here we provide a short checklist for software projects, the rest of this chapte
 
 
 The __bare minimum__ that every software project should do, from the start, is:
-* Pick & include an [open source license](No link yet)
+* Pick & include an [open source license](licensing.html)
 * Use [version control](version_control.html) 
-* Use a publicly accessible version control repository 
+* Use a [publicly accessible](version_control.html#repositories-should-be-public)
+ version control repository 
 * Add a [readme describing the project](documentation.html#readme) 
+
 
 We recommend that you also do the following (from the start of the project):
 * Use [code quality tools](code_quality.html)
 * [Testing](testing.html)
 * Use [standards](standards.html)
+
 
 Additional steps depend on the goal of the software (zero or more can apply):
 * [I'm publishing a paper](#im-publishing-a-paper)
@@ -21,23 +24,25 @@ Additional steps depend on the goal of the software (zero or more can apply):
 
 ## I'm publishing a paper
 
-* Release your software 
-* Add a [DOI to your release](../publishing_results.html#making-software-citable) 
+* [Release](releases.html) your software 
+* Add a [DOI to your release](../citable_software/publishing_results.html#making-software-citable) 
+* Add a [CITATION file](documentation.html#software-citation)
 * Cite DOI in paper 
-* Add a CITATION file 
+
 
 ## I'm expecting users
 
 * Provide [user documentation](documentation.html)
-* Easy installation
+* [Easy installation]((releases.html#one-command-install) 
 * Provide issue tracker
+
 
 ## I'm expecting contributors
 
 * Provide [development documentation](documentation.html#source-code-documentation)
-* Provide a means of communication
-* Add a code of conduct
-* Contribution guideline
+* Provide a [means of communication](communication.html#discussion-list)
+* Add a [code of conduct](documentation.html#code-of-conduct)
+* [Contribution guideline](documentation.html#contribution-guidelines)
 
 
 
