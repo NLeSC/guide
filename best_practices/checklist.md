@@ -33,7 +33,7 @@ Additional steps depend on the goal of the software (zero or more can apply):
 ## I'm expecting users
 
 * Provide [user documentation](documentation.html)
-* [Easy installation]((releases.html#one-command-install) 
+* [Easy installation](releases.html#one-command-install) 
 * Provide issue tracker
 
 

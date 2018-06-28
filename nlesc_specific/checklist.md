@@ -11,31 +11,31 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 - [public vcs repository](../best_practices/version_control.html#public-vcs-repository)
 - [meaningful commit messages](../best_practices/version_control.html#meaningful-commit-messages)
 
-## [Releases](releases.html)
+## [Releases](../best_practices/releases.html)
 
 
-- [semantic versioning](releases.html#semantic-versioning)
-- [tagged releases](releases.html#tagged-releases)
-- [CHANGELOG.md](releases.html#changelogmd)
-- [one command install](releases.html#one-command-install)
-- [package in package manager](releases.html#package-in-package-manager)
-- [discuss release cycle with coordinator](releases.html#discuss-release-cycle-with-coordinator)
-- [release quick-scan by other engineer](releases.html#release-quick-scan-by-other-engineer)
-- [Dissemination](releases.html#dissemination)
+- [semantic versioning](../best_practices/releases.html#semantic-versioning)
+- [tagged releases](../best_practices/releases.html#tagged-releases)
+- [CHANGELOG.md](../best_practices/releases.html#changelogmd)
+- [one command install](../best_practices/releases.html#one-command-install)
+- [package in package manager](../best_practices/releases.html#package-in-package-manager)
+- [discuss release cycle with coordinator](../best_practices/releases.html#discuss-release-cycle-with-coordinator)
+- [release quick-scan by other engineer](../best_practices/releases.html#release-quick-scan-by-other-engineer)
+- [Dissemination](../best_practices/releases.html#dissemination)
 
-## [Licensing](licensing.html)
+## [Licensing](../best_practices/licensing.html)
 
-- [Apache 2 license](licensing.html#apache-2-license)
-- [compatible license of all libraries](licensing.html#compatible-licenses-of-all-libraries)
-- [NOTICE(.txt|.md)](licensing.html#noticetxtmd)
+- [Apache 2 license](../best_practices/licensing.html#apache-2-license)
+- [compatible license of all libraries](../best_practices/licensing.html#compatible-licenses-of-all-libraries)
+- [NOTICE(.txt|.md)](../best_practices/licensing.html#notice)
 
-## [Communication](communication.html)
+## [Communication](../best_practices/communication.html)
 
-- [home page](communication.html#home-page)
-- [discussion list](communication.html#discussion-list)
-- [demo docker image in dockerhub (with Dockerfile)](communication.html#demo-docker-image-in-dockerhub-with-dockerfile)
-- [an online demo](communication.html#an-online-demo)
-- [screencast](communication.html#screencast)
+- [home page](../best_practices/communication.html#home-page)
+- [discussion list](../best_practices/communication.html#discussion-list)
+- [demo docker image in dockerhub (with Dockerfile)](../best_practices/communication.html#demo-docker-image-in-dockerhub-with-dockerfile)
+- [an online demo](../best_practices/communication.html#an-online-demo)
+- [screencast](../best_practices/communication.html#screencast)
 
 ## [Code Quality](../best_practices/code_quality.html)
 

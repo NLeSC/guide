@@ -39,7 +39,6 @@
 * [Contributing to this Guide](CONTRIBUTING.md)
 * NLeSC specific
    * [Chapter Owners](chapter_owners.md)
-   * [Releases](nlesc_specific/releases.md)
    * [Access to (Dutch) e-Infrastructure](nlesc_specific/e-infrastructure/e-infrastructure.md)
       * [DAS-5](nlesc_specific/e-infrastructure/das5.md)
    * [Projects](nlesc_specific/projects/project_overview.md)
@@ -49,8 +48,6 @@
       * [Project Reviews](nlesc_specific/projects/project_reviews.md)
       * [Communication](nlesc_specific/projects/communication.md)
       * [End of a Project](nlesc_specific/projects/end_of_a_project.md)
-   * [Licensing](nlesc_specific/licensing.md)
-   * [Communication](nlesc_specific/communication.md)
    * [Checklist](nlesc_specific/checklist.md)
       * [Development stages matrix](nlesc_specific/checklist_matrix.md)
       * [Prototype phase](nlesc_specific/checklist/checklist_prototype.md)
