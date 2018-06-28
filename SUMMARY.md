@@ -17,7 +17,7 @@
       * [C and C++](best_practices/language_guides/ccpp.md)
       * [Fortran](best_practices/language_guides/fortran.md)
 * [Intellectual Property and Licensing](intellectual_property_and_licensing/intellectual_property_overview.md)
-   * [TL;DR: Some rules](intellectual_property_and_licensing/some_rules.md)
+   * [Executive summary](intellectual_property_and_licensing/summary.md)
    * [About the Law](intellectual_property_and_licensing/about_the_law.md)
    * [Trademarks](intellectual_property_and_licensing/trademarks.md)
    * [Trade Secrets and Patents](intellectual_property_and_licensing/trade_secrets_patents.md)
@@ -28,6 +28,9 @@
    * [More Examples](intellectual_property_and_licensing/more_examples.md)
 * [Citable software](citable_software/publishing_results.md)
    * [eScience Conferences, Journals, and Workshops](citable_software/conferences_journals_workshops.md)
+* [Findability](findability/findability.md)
+* [Governance](governance/governance.md)
+* [Reproducibility](reproducibility/reproducibility.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
 * NLeSC specific
    * [Chapter Owners](chapter_owners.md)
