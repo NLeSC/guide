@@ -1,6 +1,7 @@
 ## Release
 
-Releases are a way to mark or point to a particular milestone in software development.
+Releases are a way to mark or point to a particular milestone in software development. This is useful for users and collaborators, e.g. I found a bug running version x. For publications that refer to software, refering to a specific release enhances the reproducability. 
+
 [Apache foundation](http://www.apache.org/) describes their [release policy](http://www.apache.org/dev/release.html).
 
 Release cycles will depend on the project specifics, but in general we encourage quick agile development: *release early and often*
@@ -35,7 +36,7 @@ See [Keep a CHANGELOG](http://keepachangelog.com/) for some best practices.
 
 ### One command install
 
-Installing the code should be easy, a one command process.
+To not scare away users and (potential) collaborators, installing the software should be easy, a one command process.
 The process itself typically includes installing dependencies, compiling, testing, and finally actual installation, and can be quite complex.
 The use of a proper build system is strongly recommended.
 

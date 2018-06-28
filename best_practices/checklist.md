@@ -32,6 +32,7 @@ Additional steps depend on the goal of the software (zero or more can apply):
 
 ## I'm expecting users
 
+* [Release](releases.html) your software 
 * Provide [user documentation](documentation.html)
 * [Easy installation](releases.html#one-command-install) 
 * Provide issue tracker
@@ -41,7 +42,7 @@ Additional steps depend on the goal of the software (zero or more can apply):
 
 * Provide [development documentation](documentation.html#source-code-documentation)
 * Provide a [means of communication](communication.html#discussion-list)
-* Add a [code of conduct](documentation.html#code-of-conduct)
+* Implement and add a [code of conduct](documentation.html#code-of-conduct)
 * [Contribution guideline](documentation.html#contribution-guidelines)
 
 

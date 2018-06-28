@@ -86,6 +86,12 @@ You can learn more about those other models from [atlasian page](https://www.atl
 
 ## Repositories should be public
 
+A public code repository has several benefits:
+* It makes your code findable.
+* It is a central point for users and collaborators.
+* It shows your code to world, allowing (re)use and enables you to get credit for your work.
+* It is usually not hosted on your laptop, and hence provides an external backup.
+
 Unless code cannot be open (e.g. when working with commercial partners, or when
 there are competitiveness issues) it should be in a public online repository. In
 case the code uses data that cannot be open, an engineer should try to keep
