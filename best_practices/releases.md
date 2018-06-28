@@ -52,13 +52,6 @@ Some standard solutions for building (compiling) code are:
 * [CMake](https://cmake.org/)
 * [Make](https://www.gnu.org/software/make/)
 
-### Package in package manager
-
-To further simplify use of your code, you can publish it with a package manager.
-This can be provided by your distribution (when using Linux), and there are also language specific repositories:
-* For Python use [pypi](https://pypi.python.org/pypi)
-* For Javascript use [npm](https://www.npmjs.com/)
-
 ### Release quick-scan by other engineer
 
 A check by a fellow engineer to see if the documentation is understandable? can the software be installed? etc.
