@@ -2,6 +2,12 @@
 
 Python is the "dynamic language of choice" of the Netherlands eScience Center.
 
+## Project setup
+
+When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.  
+
+## Python versions
+
 Currently, there are two Python versions: 2 and 3.
 [Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
 Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
@@ -263,13 +269,3 @@ We recommend `flask`.
 * [nltk](http://www.nltk.org/) Natural Language Toolkit
 * [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
-
-## Available templates
-
-The recommended layout for files/modules etc in Python is described by [Kenneth Reitz here]( http://www.kennethreitz.org/essays/repository-structure-and-python)
-
-It is also available as a example repo [on GitHub here](https://github.com/kennethreitz/samplemod).
-
-Ben made a [version of this repository](https://github.com/benvanwerkhoven/empty_python) that brings it closer to our ideal, but it is stil not perfect (e.g., needs replacing of project name).
-
-An alternative might be to create a project template using (for example) [cookiecutter](https://github.com/audreyr/cookiecutter). This solution needs more research.
