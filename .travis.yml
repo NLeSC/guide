@@ -11,4 +11,6 @@ install:
 # wait for gitboook serve spinup
 - sleep 20
 #check all links using blc, skip example http://localhost:8000 link from the javascript chapter.
-script: node_modules/.bin/blc --exclude http://localhost:8000 --recursive http://localhost:4000
+#script: node_modules/.bin/blc --exclude http://localhost:8000 --recursive http://localhost:4000
+script: bash blc-good-enough.sh 10
+
