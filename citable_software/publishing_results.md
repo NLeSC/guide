@@ -87,6 +87,6 @@ For long term storage we advise researchers based in The Netherlands to explore 
 -	[Data archive](https://userinfo.surfsara.nl/systems/data-archive) for long term storage of extremely large datasets.
 
 For researchers outside the Netherlands alternative data storing platforms include:
--	www.re3data.org
+-	https://www.re3data.org
 -	https://zenodo.org/
 -	http://rd-alliance.github.io/metadata-directory/standards/
