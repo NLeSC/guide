@@ -6,15 +6,15 @@
 broken_max="$1"
 
 # run the link checker
-node_modules/.bin/blc --recursive http://localhost:4000 | tee stdout.txt
+node_modules/.bin/blc --recursive --ordered http://localhost:4000 2>/dev/null | tee stdout.txt
 
 # get the actual number of broken links
 broken=$(cat stdout.txt | tail -n 2 | head -n 1 | grep --word-regexp --only-matching --extended-regexp --regexp='[0-9]{1,}' | tail -n 1)
 
 echo
-echo
 echo "-------------------------------------------------------------------------------------------"
-echo
+echo "--                                     SUMMARY                                           --"
+echo "-------------------------------------------------------------------------------------------"
 echo
 cat stdout.txt | grep --only-matching --extended-regexp --regexp='^(Getting links from.*)|(.*BROKEN.*)'
 
