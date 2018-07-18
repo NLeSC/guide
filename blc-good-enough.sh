@@ -19,8 +19,7 @@ echo "--------------------------------------------------------------------------
 echo "--                             BROKEN LINK CHECKER: SUMMARY                              --"
 echo "-------------------------------------------------------------------------------------------"
 echo
-cat stdout.txt | grep --only-matching --extended-regexp --regexp='^(Getting links from.*)|(.*BROKEN.*)'
-
+cat stdout.txt | grep --invert-match --regexp='^.*[^BR]OK[^EN].*$' | grep --before-context=1 --after-context=1 --regexp="^.*BROKEN.*$"
 if [ "$broken" -gt "$broken_max" ]; then
     echo "Number of broken links (${broken}) exceeds maximum allowed number (${broken_max})." >&2
     exit 1
