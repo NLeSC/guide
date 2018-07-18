@@ -6,7 +6,9 @@
 broken_max="$1"
 
 # run the link checker
+echo "travis_fold:start:blc"
 node_modules/.bin/blc --recursive --ordered http://localhost:4000 2>/dev/null | tee stdout.txt
+echo "travis_fold:end:blc"
 
 # get the actual number of broken links
 broken=$(cat stdout.txt | tail -n 2 | head -n 1 | grep --word-regexp --only-matching --extended-regexp --regexp='[0-9]{1,}' | tail -n 1)
