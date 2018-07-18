@@ -7,6 +7,7 @@ broken_max="$1"
 
 # run the link checker
 echo "travis_fold:start:blc"
+echo "Checking for any broken links..."
 node_modules/.bin/blc --recursive --ordered http://localhost:4000 2>/dev/null | tee stdout.txt
 echo "travis_fold:end:blc"
 
