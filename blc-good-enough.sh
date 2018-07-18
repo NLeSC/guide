@@ -16,7 +16,7 @@ broken=$(cat stdout.txt | tail -n 2 | head -n 1 | grep --word-regexp --only-matc
 
 echo
 echo "-------------------------------------------------------------------------------------------"
-echo "--                                     SUMMARY                                           --"
+echo "--                             BROKEN LINK CHECKER: SUMMARY                              --"
 echo "-------------------------------------------------------------------------------------------"
 echo
 cat stdout.txt | grep --only-matching --extended-regexp --regexp='^(Getting links from.*)|(.*BROKEN.*)'
