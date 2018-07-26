@@ -32,14 +32,25 @@ EXIT_CODE=0
 # read an individual line from the changed-files.txt file
 while read line;
 do 
+    echo "travis_fold:start:blc"
     # Use awk to find and replace the filename extension .md with .html,
     # concatenate with the gitbook server location, feed that to
     # broken-link-checker via its 'input' argument
-    blc --input `echo $GITBOOK_LOCATION/$line | awk '{ gsub(".md$",".html",$1); print $1 }'`;
+    blc --input `echo $GITBOOK_LOCATION/$line | awk '{ gsub(".md$",".html",$1); print $1 }'` 2>/dev/null | tee stdout.txt;
     # Take note of the success or failure of the blc command.
     if [ $? -ne 0 ]; then
         EXIT_CODE=1
     fi
+
+    N_BROKEN=$(cat stdout.txt | grep --regexp="^.\{2\}[BROKEN]" | wc -l)
+    if [ $N_BROKEN -eq 0 ]; then
+        echo "No broken links found."
+        echo "travis_fold:end:blc"
+    else
+        echo "travis_fold:end:blc"
+        cat stdout.txt | grep --invert-match --regexp="^.\{2\}[^BR]\{2\}OK[^EN]\{2\}"
+    fi
+
 done < changed-files.txt
 
 # If any failures have occurred during the above while loop, exit with a failure
