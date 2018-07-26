@@ -315,7 +315,7 @@ Sometimes the JavaScript code in the browser is not an exact copy of the code yo
 All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code.
 Look for the 'create sourcemaps' option when using minification/uglification/transpiling tools.
 
-See [this blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps.html) for more information.
+See [this blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps) for more information.
 
 ### Documentation
 
