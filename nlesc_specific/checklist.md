@@ -62,7 +62,7 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 - [how to file a bug report](../best_practices/documentation.html#howto-bug-report)
 - [explained meaning of issue labels](../best_practices/documentation.html#explained-meaning-of-issue-labels)
 - [DOI or PID](../best_practices/documentation.html#doi-or-pid)
-- [CITATION file](../best_practices/documentation.html#citation)
+- [CITATION.cff file](../best_practices/documentation.html#software-citation)
 - [print software version](../best_practices/documentation.html#print-software-version)
 
 ## [Standards](../best_practices/standards.html)
