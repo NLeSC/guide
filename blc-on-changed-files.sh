@@ -4,6 +4,10 @@ BASE_BRANCH='master'
 CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`
 GITBOOK_LOCATION='http://localhost:4000'
 
+echo "TRAVIS_BRANCH=$TRAVIS_BRANCH"
+echo "TRAVIS_PULL_REQUEST_SHA=$TRAVIS_PULL_REQUEST_SHA"
+echo "TRAVIS_PULL_REQUEST_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH"
+
 # If the git diff result below is something like:
 # readme.md
 # readme.txt
