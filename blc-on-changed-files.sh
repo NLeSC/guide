@@ -21,7 +21,7 @@ BASE_BRANCH_SHA=`git rev-parse origin/$BASE_BRANCH`
 # dir.md/anotherdir/readme.md
 git diff --name-only $BASE_BRANCH_SHA | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
 
-if [ `cat changed-files.txt | wc -l` -ge 0 ]; then
+if [ `cat changed-files.txt | wc -l` -eq 0 ]; then
     echo "There are no GitBook MarkDown files to check."
 else
     echo "These files need to be checked:"
