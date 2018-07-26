@@ -18,7 +18,10 @@ GITBOOK_LOCATION='http://localhost:4000'
 # dir/readme.md
 # dir/anotherdir/readme.md
 # dir.md/anotherdir/readme.md
-git diff --name-only $BASE_BRANCH...$CURRENT_BRANCH | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
+git diff --name-only $BASE_BRANCH | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
+
+echo "These are changed files:"
+cat changed-files.txt
 
 EXIT_CODE=0
 # read an individual line from the changed-files.txt file
