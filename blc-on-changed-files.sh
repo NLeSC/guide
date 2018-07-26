@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
 BASE_BRANCH='master'
-CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`
 GITBOOK_LOCATION='http://localhost:4000'
 
-echo "TRAVIS_BRANCH=$TRAVIS_BRANCH"
-echo "TRAVIS_PULL_REQUEST_SHA=$TRAVIS_PULL_REQUEST_SHA"
-echo "TRAVIS_PULL_REQUEST_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH"
-
+git fetch origin refs/heads/$BASE_BRANCH:refs/remotes/origin/$BASE_BRANCH
+BASE_BRANCH_SHA=`git rev-parse origin/$BASE_BRANCH`
 # If the git diff result below is something like:
 # readme.md
 # readme.txt
@@ -22,10 +19,14 @@ echo "TRAVIS_PULL_REQUEST_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH"
 # dir/readme.md
 # dir/anotherdir/readme.md
 # dir.md/anotherdir/readme.md
-git diff --name-only $BASE_BRANCH | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
+git diff --name-only $BASE_BRANCH_SHA | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
 
-echo "These are changed files:"
-cat changed-files.txt
+if [ `cat changed-files.txt | wc -l` -ge 0 ]; then
+    echo "There are no GitBook MarkDown files to check."
+else
+    echo "These files need to be checked:"
+    cat changed-files.txt
+fi
 
 EXIT_CODE=0
 # read an individual line from the changed-files.txt file
