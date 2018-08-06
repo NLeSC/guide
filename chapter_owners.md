@@ -1,14 +1,16 @@
 # Chapter Owners
 
-This is a list of who is end responsible for which part of the guide.
+This is a list of who is responsible for which part of the guide.
 
-* Introduction: Niels Drost
-* Projects: Jisk Attema
+Overall Maintainer: Jason Maassen
+
+* Introduction: Jason Maassen
+
 * Software Development:
-  * Overall: Mateusz Kuzak
+  * Overall: Jason Maassen
   * Code Review: Lourens Veen
 * Language Guides:
-  * Introduction: Niels Drost
+  * Introduction: Jason Maassen
   * Java: Christiaan Meijer
   * JavaScript and TypeScript: Jurriaan Spaaks
   * Python: Janneke van der Zwaan
@@ -18,5 +20,6 @@ This is a list of who is end responsible for which part of the guide.
   * Fortran: Gijs van den Oord
 * Intellectual Property: Lourens Veen
 * Publishing Scientific Results: Willem van Hage
-* Access to e-Infrastructure: Niels Drost
-* Contributing to this Guide: Niels Drost
+* Access to e-Infrastructure: Jason Maassen
+* Projects: Jisk Attema
+* Contributing to this Guide: Jason Maassen
