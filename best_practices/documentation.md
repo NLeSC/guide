@@ -138,9 +138,9 @@ To get credit for your work, it should be as easy as possible to cite your softw
 
 Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](./documentation.html#doi-or-pid.html)). It is recommended that this information is contained on a single file.
 
-You can use the [CITATION file format](https://citation-file-format.github.io/) to provide this information on a human- and machine-readable format.
+You can use the [Citation File Format](https://citation-file-format.github.io/) to provide this information on a human- and machine-readable format.
 
-Read more in [the post by Robin Wilson](http://www.software.ac.uk/blog/2013-09-02-encouraging-citation-software-introducing-citation-files).
+Read more in [the blog post by Druskat et al.](https://software.ac.uk/blog/2017-12-12-standard-format-citation-files).
 
 ## Print software version
 

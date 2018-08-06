@@ -102,4 +102,4 @@ repositories {
 }
 ```
 
-Packages of the Netherlands eSciencenter can be seen at [https://bintray.com/nlesc](https://bintray.com/nlesc).
+Packages developed at the Netherlands eScience Center can be found [here](https://bintray.com/nlesc).

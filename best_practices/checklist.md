@@ -26,7 +26,7 @@ Additional steps depend on the goal of the software (zero or more can apply):
 
 * [Release](releases.html) your software 
 * Add a [DOI to your release](../citable_software/publishing_results.html#making-software-citable) 
-* Add a [CITATION file](documentation.html#software-citation)
+* Add a [CITATION.cff file](documentation.html#software-citation)
 * Cite DOI in paper 
 
 
