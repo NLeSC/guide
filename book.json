@@ -2,11 +2,11 @@
   "plugins": [
     "edit-link",
     "multipart",
-    "analytics"
+    "ga"
   ],
   "pluginsConfig": {
-    "analytics": {
-      "google": "UA-55088238-8"
+    "ga": {
+      "token": "UA-55088238-8"
     },
     "edit-link": {
       "base": "https://github.com/NLeSC/guide/edit/master",
