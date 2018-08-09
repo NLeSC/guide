@@ -1,13 +1,19 @@
 {
-    "plugins": ["edit-link", "multipart" ],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/NLeSC/guide/edit/master",
-                "label": "Edit"
-            }
-    
+  "plugins": [
+    "edit-link",
+    "multipart",
+    "ga"
+  ],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-55088238-8"
     },
-    "structure": {
-	 "readme": "introduction.md"
+    "edit-link": {
+      "base": "https://github.com/NLeSC/guide/edit/master",
+      "label": "Edit"
     }
+  },
+  "structure": {
+    "readme": "introduction.md"
+  }
 }
