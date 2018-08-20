@@ -64,6 +64,17 @@ Digital Object Identifiers are globally unique identifiers which can point to an
 
 We strongly advise to store your research data in a secure location where regular back-ups of the data are made, before you start working with the data. If it is logistically impossible to store the data in a secure location immediately after data collection then here are some tips on how to improve data preservation in the time window in between data collection and data arrival at a secure location. For example, you collect data on humans in an environment without (secure) internet connection and need to temporarily store your data offline on a laptop before being able to upload it to a data archive.
 
+### Planning data storage
+
+We recommend that you start as early as possible to think how are you managing your data during and after your project. Some questions you should ask yourself are:
+
+ - What data am I using in my project ? Think about measurements coming from experiments (performed by you or by third parties), but also interviews, statistical information, etc.
+ - Where is my data coming from ? How is it being collected ?
+ - Where and how is this information being stored ?
+ - Does my data comply with the required standards applicable ? For example think of the FAIR principles, GDPR, or other ethical restrictions.
+
+These type of considerations should usually be covered by your data management plan, if your funding agency requires so. And when it is not required by your funding agency, it is probably a good idea to have a data management plan for yourself. If you are writing a data management plan, considering using [DMPOnline](https://dmponline.dcc.ac.uk/).
+
 ### Tips for short term storage
 
 #### Checksum and sign your data archive:
