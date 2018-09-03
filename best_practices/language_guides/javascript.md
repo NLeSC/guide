@@ -142,7 +142,6 @@ Use a linter like [eslint](https://eslint.org/) to detect errors and potential p
 
 Code examples can be stored in Gists in GitHub. [bl.ocks.org](http://bl.ocks.org) allows you to view the resulting page, and serve as a small demo.
 There's also [jsfiddle](https://jsfiddle.net/), which shows you a live preview of your web page while you fiddle with the underlying HTML, JavaScript and CSS code.
-The JSFiddle result is not stored, however.
 
 # Code quality analysis tools and services
 
@@ -181,7 +180,8 @@ npm install -g typescript
 
 In TypeScript, variables are typed and these types are checked.
 This implies that when using libraries, the types of these libraries need to be installed.
-The easiest way to make sure you have the correct types for your library is by using the `@types/&lt;library-name&gt;` npm package, which can be installed using ``npm``.
+More and more libraries ship with type declarations in them so they can be used directly. These libraries will have a "typings" key in their package.json.
+When a library does not ship with type declarations then the libriaries `@types/<library-name>` package must be installed using npm:
 
 ```shell
 npm install --save-dev @types/<library-name>
