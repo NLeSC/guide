@@ -10,46 +10,32 @@ Assuming you have only the software in a (private) git repo, you might want to a
 
 ## Making software citable
 
-Digital Object Identifiers are globally unique identifiers which can point to any digital object, such as a version of a paper, a version of software etc. This has the advantage that it is unambigous and standardized. For papers, using DOIs is commonplace, and a DOI is usually provided by the publisher. For software, you can make your own DOI with __zenodo__:
+Digital Object Identifiers are globally unique identifiers which can point to any digital object, such as a version of a paper, a version of software etc. This has the advantage that it is unambigous and standardized. For papers, using DOIs is commonplace, and a DOI is usually provided by the publisher. For software, you can make your own DOI with [Zenodo](https://zenodo.org/):
 
-* Make a [Zenodo](https://zenodo.org/) account and link it with your github account as explained on [guides.github.com/activities/citable-code](https://guides.github.com/activities/citable-code/)
-* Add a ``.zenodo.json`` file to the root of your repository. File format
-  largely follows that of the REST API
-  http://developers.zenodo.org/#representation. For example:
+1. Make a [Zenodo](https://zenodo.org/) account and link it with your github account as explained on [guides.github.com/activities/citable-code](https://guides.github.com/activities/citable-code/).
+1. You can tell Zenodo what metadata you want to associate with the software by including a ``.zenodo.json`` file in the root of your repository, but writing that file by hand is error-prone. Therefore it is advisable to just generate it from the ``CITATION.cff`` file that should already be in the root of the repository. To do so, you'll need a command line tool ``cffconvert`` which you can install [from PyPI](https://pypi.org/project/cffconvert/) by:
 
-    ```json
-    {
-        "description": "This is the description that will be used on Zenodo instead of the release title, readme content, or github repo subtitle.",
-        "license": "Apache-2.0",
-        "title": "Just the name of the tool here, no need to include the github organization or version",
-        "upload_type": "software",
-        "creators": [
-            {
-                "affiliation": "Netherlands eScience Center",
-                "name": "Spaaks, Jurriaan H."
-            },
-            {
-                "affiliation": "Netherlands eScience Center",
-                "name": "Diblen, Faruk"
-            }
-        ],
-        "access_right": "open",
-        "keywords": [
-            "these",
-            "are",
-            "the keywords",
-            "I have all the best keywords"
-        ]
-    }
+    ```bash
+    pip install --user cffconvert
     ```
-    Note that including version information as well as date information in the
-    ``.zenodo.json`` file is not advised, Zenodo can accurately derive that from
-    the information that GitHub provides in its webhook. Regarding the license information, choose one from this list:
-    http://licenses.opendefinition.org/licenses/groups/all.json
-* Make a release in github
-* Zenodo automatically tracks the release and generates a unique DOI
-* Use the DOI for citing your software
-* A badge can be added to the README reflecting the DOI of the latest release
+1. Make sure that your ``CITATION.cff`` is valid YAML by copy-pasting the contents to http://www.yamllint.com/.
+1. Make sure that your ``CITATION.cff`` is valid CFF, by:
+
+    ```bash
+    # (in the repository's root directory)
+    cffconvert --validate
+    ```
+If the command does not return anything, that means the CFF is valid.
+1. Generate the ``.zenodo.json`` file using ``cffconvert`` as follows:
+
+    ```bash
+    cffconvert --ignore-suspect-keys --outputformat zenodo --outfile .zenodo.json
+    ```
+1. On Zenodo, make sure to 'Flip the switch' to the ``on`` position on the GitHub repository that you want to make a release of.
+1. Go to your Github repository, use the _Create a new release_ button to create a release on GitHub.
+1. Zenodo should automatically be notified and should make a snapshot copy of the current state of your repository (just one branch, without any history), and should also assign that snapshot a persistent identifier (DOI).
+1. Use the DOI whenever you refer to your software, be it in papers, posters, or even tweets and blogs.
+1. Add the software's Zenodo badge to your repository's README.
 
 ## Available archival / preprint servers or services
 * [arXiv](http://arxiv.org/) (physics, mathematics, computer science, quantitative biology, quantitative finance, statistics)
