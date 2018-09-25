@@ -48,6 +48,23 @@ a release on GitHub.
 1. Zenodo should automatically be notified and should make a snapshot copy of
 the current state of your repository (just one branch, without any history), and
 should also assign a persistent identifier (DOI) to that snapshot.
+
+    **when things don't work**
+
+    In case the GitHub-Zenodo integration does not work as expected, there are
+    two places to go and look for information:
+    1. On GitHub:
+        - go to ``https://github.com/<org>/<repo>/``
+        - select ``Settings``
+        - select ``Webhooks``
+        - select select the Zenodo webhook (may require GitHub login)
+        - scroll down to ``Recent deliveries``
+        - click on one of the listed deliveries for details on the request, the response, and to request redelivery.
+    1. On Zenodo:
+        - go to ``https://zenodo.org/account/settings/github/``
+        - select the repository that you want to see the diagnostic information of
+        - click on one of the releases to see the _Payload_ Zenodo received from GitHub, as well as the _Metadata_ that Zenodo has associated with your release, or _Errors_ if there were any.
+
 1. Use the DOI whenever you refer to your software, be it in papers, posters, or
 even tweets and blogs.
 1. Add the software's Zenodo badge to your repository's README.
