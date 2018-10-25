@@ -246,6 +246,7 @@ A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 
 ## Resources
 ### Online
+* [CppCon videos](https://www.youtube.com/user/CppCon): Many really good talks recorded at the various CppCon meetings.
 * [CppReference.com](http://en.cppreference.com/w/)
 * [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/)
 * [CPlusPlus.com](http://www.cplusplus.com/)
