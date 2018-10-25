@@ -85,6 +85,9 @@ Using XStow in this way alows you to keep a single additional search path when c
 
 A lot of libraries come with a package description for `pkg-config`. These descriptions are installed in `/usr/lib/pkgconfig`. You can point `pkg-config` to your additional libraries by setting the `PKG_CONFIG_PATH` environment variable. This also helps for instance when trying to automatically locate dependencies from CMake, which has `pkg-config` support as a fallback for when libraries don't support CMake's `find_package`.
 
+Note that C++20 will bring Modules, which can be used as an alternative to including (precompiled) header files.
+This will allow for easier packaging and will probably cause the ecosystem landscape to change considerably.
+
 ### Editors
 This is largely a matter of taste, but not always.
 
@@ -166,6 +169,43 @@ There are some really good CppCon videos about debugging on YouTube.
 * DDD - primitive GUI frontend for GDB.
 * The IDEs mentioned above either have custom built-in debuggers or provide an interface to GDB or LLDB.
 
+
+## Libraries
+Historically, many C and C++ projects have seemed rather hestitant about using external dependencies (see also .
+However, many good scientific computing libraries are available today that you should consider using if applicable.
+Here follows a list of libraries that we recommend and/or have experience with.
+
+### Usual suspects
+These libraries are well known, widely used and have a lot of good online documentation.
+
+* [GNU Scientific library (GSL)](https://www.gnu.org/software/gsl/doc/html/index.html)
+* [FFTW](http://www.fftw.org): Fastest Fourier Transform in the West
+* [OpenMPI](https://www.open-mpi.org). Use with caution, since it will strongly define the structure of your code, which may or may not be desirable.
+
+### Boost
+This is what the Google style guide has to say about Boost:
+
+>  * **Definition:** The Boost library collection is a popular collection of peer-reviewed, free, open-source C++ libraries.
+>  * **Pros:** Boost code is generally very high-quality, is widely portable, and fills many important gaps in the C++ standard library, such as type traits and better binders.
+>  * **Cons:** Some Boost libraries encourage coding practices which can hamper readability, such as metaprogramming and other advanced template techniques, and an excessively "functional" style of programming.
+
+As a general rule, don't use Boost when there is equivalent STL functionality.
+
+### xtensor
+[xtensor](http://quantstack.net/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
+It aims for maximum performance (and in most cases it succeeds) and has an active development community.
+This library features, among other things:
+* Lazy-evaluation: only calculate when necessary.
+* Extensible template expressions: automatically optimize many subsequent operations into one "kernel".
+* NumPy style syntax, including broadcasting.
+* C++ STL style interfaces for easy integration with STL functionality.
+* [Very low-effort integration with today's main data science languages Python](https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef?gi=23ebfce3ae77), R and Julia.
+This all makes xtensor a very interesting choice compared to similar older libraries like Eigen and Armadillo.
+
+
+<!-- ### ZeroMQ -->
+
+
 ## Style
 ### Style guides
 Good style is not just about layout and linting on trailing whitespace. It will mean the difference between a blazing fast code and a broken one.
@@ -179,17 +219,6 @@ Good style is not just about layout and linting on trailing whitespace. It will 
 A C++ project will usually have directories `/src` for source codes, `/doc` for Doxygen output, `/test` for testing code. Some people like to put header files in `/include`. In C++ though, many header files will contain functioning code (templates and inline functions). This makes the separation between code and interface a bit murky.
 In this case, it can make more sense to put headers and implementation in the same tree, but different communities will have different opinions on this.
 A third option that is sometimes used is to make separate "template implementation" header files.
-
-### Boost
-This is what the Google style guide has to say about Boost:
-
->  * **Definition:** The Boost library collection is a popular collection of peer-reviewed, free, open-source C++ libraries.
->  * **Pros:** Boost code is generally very high-quality, is widely portable, and fills many important gaps in the C++ standard library, such as type traits and better binders.
->  * **Cons:** Some Boost libraries encourage coding practices which can hamper readability, such as metaprogramming and other advanced template techniques, and an excessively "functional" style of programming.
->
->  As a general rule, don't use Boost when there is equivalent STL functionality. Use of `boost::variant` should be Ok.
-
-Note that both `boost::variant` and `boost::optional` are available in the STL in C++17.
 
 ## Sustainability
 ### Testing
