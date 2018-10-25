@@ -171,12 +171,12 @@ There are some really good CppCon videos about debugging on YouTube.
 
 
 ## Libraries
-Historically, many C and C++ projects have seemed rather hestitant about using external dependencies (see also .
-However, many good scientific computing libraries are available today that you should consider using if applicable.
+Historically, many C and C++ projects have seemed rather hestitant about using external dependencies (perhaps due to the poor dependency management situation mentioned above).
+However, many good (scientific) computing libraries are available today that you should consider using if applicable.
 Here follows a list of libraries that we recommend and/or have experience with.
 
 ### Usual suspects
-These libraries are well known, widely used and have a lot of good online documentation.
+These scientific libraries are well known, widely used and have a lot of good online documentation.
 
 * [GNU Scientific library (GSL)](https://www.gnu.org/software/gsl/doc/html/index.html)
 * [FFTW](http://www.fftw.org): Fastest Fourier Transform in the West
@@ -203,7 +203,20 @@ This library features, among other things:
 This all makes xtensor a very interesting choice compared to similar older libraries like Eigen and Armadillo.
 
 
-<!-- ### ZeroMQ -->
+### General purpose, I/O
+* Configuration file reading and writing:
+    * [yaml-cpp](https://github.com/jbeder/yaml-cpp): A YAML parser and emitter in C++
+    * [JSON for Modern C++](https://nlohmann.github.io/json/)
+* Command line argument parsing:
+    * [argagg](https://github.com/vietjtnguyen/argagg)
+    * [Clara](https://github.com/catchorg/Clara)
+* [fmt](https://github.com/fmtlib/fmt): pythonic string formatting
+<!--* [hdf5-cpp]-->
+
+
+### Parallel processing
+* [Intel TBB](https://www.threadingbuildingblocks.org) (Threading Building Blocks): template library for task parallelism
+* [ZeroMQ](http://zeromq.org): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
 
 
 ## Style
