@@ -24,10 +24,10 @@ from the style of choice and helps to avoid some problems caused by formatting d
 (line ending, tabs vs spaces).
 
 There is support for editorconfig in most editors.
-[Here](http://editorconfig.org/) you can download plugins for your editor of choice.
+The [Editorconfig website](http://editorconfig.org/) provides plugins for your editor of choice.
 If you use eclipse, use [this plugin](https://github.com/ncjones/editorconfig-eclipse).
 
-The eScience Center editor config file can be downloaded [here](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig)
+The eScience Center has a [shared editor config file](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig)
 
 ## Automatic code formatters and linters
 

@@ -67,8 +67,8 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 ## Editors and IDEs
 
 * Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
-* [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available [here](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
-* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available [here](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. List of other tools can be found [here](https://www.jetbrains.com/pycharm/features/tools.html).
+* [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available in the [PyDev GitHub repository](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
+* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available in the [python folder of the IntelliJ repository](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. JetBrains provides a [list of all tools in PyCharm](https://www.jetbrains.com/pycharm/features/tools.html).
 
 ## Coding style conventions
 
@@ -82,7 +82,7 @@ Many linters exists for Python, [`prospector`](https://github.com/landscapeio/pr
 * [mccabe](https://github.com/PyCQA/mccabe)
 * [pyroma](https://github.com/regebro/pyroma)
 
-Make sure to set strictness to `veryhigh` for best results. `prospector` has it's own configuration file, see [here](https://github.com/benvanwerkhoven/empty_python/blob/master/.prospector.yml) for an example, but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like [Ben van Werkhoven's .prospector.yml example](https://github.com/benvanwerkhoven/empty_python/blob/master/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 ## Building and packaging code
 
@@ -111,7 +111,7 @@ framework available in Python Standard Library.
 
 Using `pytest` is preferred over `unittest`, `pytest` has a much more concise syntax and supports many useful features.
 
-Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described [here](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
+Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described in the [`pytest` documentation](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
 
 ### Code coverage
 
@@ -160,7 +160,7 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 * If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
 * If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
 
-* List of other available software can be found [here](https://wiki.python.org/moin/PythonDebuggingTools).
+* List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
 
 * If you are looking for some tutorials to get started:
     - https://pymotw.com/2/pdb

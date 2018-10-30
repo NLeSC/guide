@@ -19,7 +19,7 @@ For Java we normally use the [Eclipse](https://www.eclipse.org/) IDE.
 
 We follow the standard coding style defined by SUN.
 
-Latest version seems to be available [here](https://www.scribd.com/doc/15884743/Java-Coding-Style-by-Achut-Reddy).
+Latest version seems to be the [Java Coding Style on Scribd](https://www.scribd.com/doc/15884743/Java-Coding-Style-by-Achut-Reddy).
 
 We have standard code formatting settings for eclipse.
 
@@ -102,4 +102,4 @@ repositories {
 }
 ```
 
-Packages developed at the Netherlands eScience Center can be found [here](https://bintray.com/nlesc).
+Packages developed at the Netherlands eScience Center can be found in the [Bintray NLeSC repository](https://bintray.com/nlesc).
