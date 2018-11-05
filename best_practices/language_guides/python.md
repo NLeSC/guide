@@ -82,7 +82,7 @@ Many linters exists for Python, [`prospector`](https://github.com/landscapeio/pr
 * [mccabe](https://github.com/PyCQA/mccabe)
 * [pyroma](https://github.com/regebro/pyroma)
 
-Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like [Ben van Werkhoven's .prospector.yml example](https://github.com/benvanwerkhoven/empty_python/blob/master/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 ## Building and packaging code
 
