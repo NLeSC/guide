@@ -88,7 +88,7 @@ file describes at least how to perform the following tasks:
 - What [code style](code_quality.html#coding-style) to use
 - Reference to [code of conduct](#code-of-conduct)
 - When using a [git branching model](version_control.html#choose-one-branching-model), the choice of branching model
-An extensive example can be found [here](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md). [Note that GitHub has built in support for a CONTRIBUTING.md file](https://github.com/blog/1184-contributing-guidelines).
+An extensive example is [Angular.js's CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md). Note that [GitHub has built in support for a CONTRIBUTING.md file](https://github.com/blog/1184-contributing-guidelines).
 
 ## Code of conduct
 

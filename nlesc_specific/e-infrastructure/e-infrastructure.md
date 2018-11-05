@@ -28,7 +28,7 @@ The Netherlands eScience Center also has access to the infrastructure provided b
 
 ### Available systems at SURF
 
-Here we list some of the most likely to be used resources at SURF. See [this site](https://www.surf.nl/en/services-and-products) for an overview all SURF services and products, and [here](https://userinfo.surfsara.nl/systems) for detailed information on the SURFsara infrastructure.
+Here we list some of the most likely to be used resources at SURF. See the [overview of all SURF services and products](https://www.surf.nl/en/services-and-products), and [detailed information on the SURFsara infrastructure](https://userinfo.surfsara.nl/systems).
 
 SURFsara:
 
@@ -60,8 +60,8 @@ Any eScience Center employee can get a DAS-5 account, usually available within a
 
 ## Security and convenience when committing code to GitHub from a cluster
 
-When accessing a cluster, it is generally [safer to use a pair of keys than to login using a username and password](https://superuser.com/questions/303358/why-is-ssh-key-authentication-better-than-password-authentication). [Here](https://www.cyberciti.biz/faq/how-to-set-up-ssh-keys-on-linux-unix/) is a guide on how to setup those keys. Make sure you encrypt your private key and that it is not automatically decrypted when you login to your local machine.
-Make a separate pair of keys to access your GitHub account following [these](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) instructions. It involves [uploading your public key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and [testing](https://help.github.com/articles/testing-your-ssh-connection/).
+When accessing a cluster, it is generally [safer to use a pair of keys than to login using a username and password](https://superuser.com/questions/303358/why-is-ssh-key-authentication-better-than-password-authentication). There is a [guide on how to setup those keys](https://www.cyberciti.biz/faq/how-to-set-up-ssh-keys-on-linux-unix/). Make sure you encrypt your private key and that it is not automatically decrypted when you login to your local machine.
+Make a separate pair of keys to access your GitHub account following [GitHub's instructions](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). It involves [uploading your public key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) and [testing your connection](https://help.github.com/articles/testing-your-ssh-connection/).
 
 When committing code from a cluster to GitHub, one needs to store an encrypted private key in the $HOME/.ssh directory on the cluster. This is inconvenient, because it requires submitting a password to unlock the private key. This password has to be resubmitted when SSHing to a local node from the head node. To bypass this inconvenience [SSH agent forwarding](https://developer.github.com/guides/using-ssh-agent-forwarding/) is recommended. It is very simple. On your local machine, make a $HOME/.ssh/config file to contain the following:
 ```

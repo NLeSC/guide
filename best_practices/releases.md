@@ -48,7 +48,7 @@ If your software is useful for a wider audience, create a package that can be in
 * C, C++, Fortran, ... use packages from your distributions official repository. List your actual dependencies in the *INSTALL.md* or *README.md*
 
 Some standard solutions for building (compiling) code are:
-* The Autotools: _autoconf_, _automake_, and _libtool_. Documentation can be found [here](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), or some introductionary presentation [here](https://elinux.org/images/4/43/Petazzoni.pdf)
+* The Autotools: _autoconf_, _automake_, and _libtool_. See the [Autotools Documentation](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), or an [introductionary presentation by Thomas Petazzoni](https://elinux.org/images/4/43/Petazzoni.pdf)
 * [CMake](https://cmake.org/)
 * [Make](https://www.gnu.org/software/make/)
 

@@ -55,7 +55,7 @@ NOTICE should contain the following text, adapted with the product's name and co
 ```
 
 If any of the software dependencies has a NOTICE file, its contents shoud be appended below.
-Read more [here](http://www.apache.org/dev/licensing-howto.html)
+Read more in the [ASF licensing how-to](http://www.apache.org/dev/licensing-howto.html).
 
 ## Modifying existing software
 

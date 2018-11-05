@@ -26,14 +26,14 @@ R programs can be written in any text editor. R code can be run from the command
 Within RStudio you can work on ad-hoc code or create a project. Compared with Python an R project is a bit like a virtual environment as it preserves the workspace and installed packages for that project. Creating a project is needed to build an R package. A project is created via the menu at the top of the screen.
 
 ### Installing compilers and runtimes
-Not needed as most functions in R are already compiled in C, nevertheless R has compiling functionality see [here](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html). See overview by Hadley Wickham [here](http://r-pkgs.had.co.nz/src.html).
+Not needed as most functions in R are already compiled in C, nevertheless R has compiling functionality as described in the [R manual](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html). See [overview by Hadley Wickham](http://r-pkgs.had.co.nz/src.html).
 
 # Coding style conventions
 It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
 
 One point in both style conventions that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. 'a <- 3' to assign value 3 to object 'a'. Please note that R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids the risk for typos like a < -1, which will produce a boolean if 'a' exists, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in other computing languages.
 
-The difference between '<-' and '=' is mainly related to scoping, for an official R definition look [here](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html). The example below demonstrates the difference in behaviour:
+The difference between '<-' and '=' is mainly related to scoping. See the [official R definition](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html) for more information. The example below demonstrates the difference in behaviour:
 
 Define a simple function named addone to add 1 to the function input:
 - addone = function(x) return(x + 1)
@@ -55,7 +55,7 @@ From a computer science perspective it is probably best to adhere to the <- conv
 ## Plotting with basic functions and ggplot2 and ggvis
 For a generic impression of what R can do see: http://www.r-graph-gallery.com/all-graphs/
 
-The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. A tutorial with some examples of plotting optins in R can be found [here](http://www.statmethods.net/graphs/index.html).
+The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. There is a [Statmethods.net tutorial with some examples of plotting options in R](http://www.statmethods.net/graphs/index.html).
 
 However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](http://ggplot2.org). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](http://www.statmethods.net/advgraphs/ggplot2.html).
 
