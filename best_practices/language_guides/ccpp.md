@@ -8,10 +8,13 @@ The latest ratified standard of C++ is C++17. The first standardised version of 
 ## Practical use
 ### Compilers
 There are two main-stream open-source C++ compilers. 
-<!--GCC traditionally has the most up-to-date C++ support, and generally generates the fastest binary code. In terms of compile times LLVM is often a bit faster; also it has a bit more modern design, making it easier to use for code analysis.-->
 
 * [GCC](https://gcc.gnu.org/)
 * [LLVM - CLANG](http://llvm.org/)
+
+Overall, these compilers are more or less similar in terms of features, language support, compile times and (perhaps most importantly) performance of the generated binaries.
+The generated binary performance does differ for specific algorithms.
+See for instance [this Phoronix benchmark for a comparison of GCC 9 and Clang 7/8](https://www.phoronix.com/scan.php?page=article&item=gcc9-stage3-skylake).
 
 MacOS (XCode) has a custom branch of `clang`, which misses some features like OpenMP support, and its own libcxx, which misses some standard library things like the very useful `std::filesystem` module.
 It is nevertheless recommended to use it as much as possible to maintain binary compatibility with the rest of macOS.
