@@ -90,9 +90,9 @@ To create an installable Python package, create a file `setup.py` and use the [`
 
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
-* Use [twine](https://github.com/pypa/twine) to upload your package to PyPI (so it can be installed with pip) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/))
-  * Packages should be uploaded to PyPI using your own account
-  * The PyPI `nlesc` account should be added as collaborator with owner role for safety
+* Use [twine](https://github.com/pypa/twine) to upload your package to the [Python Package Index (PyPI)](https://pypi.org) (so it can be installed with pip) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/))
+  * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
+  * For packages co-owned by the Netherlands eScience Center it is advised to make the PyPI `nlesc` account an collaborator with the owner role. This will give the center a way to perform emergency maintenance of the package if the original uploader is unable to.
   * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
   * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
