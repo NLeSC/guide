@@ -79,7 +79,7 @@ Below is a short list of services and their strengths.
 #### [Codecov](https://codecov.io)
 
 Shows unified coverage and separate coverage for [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix) e.g. different Python versions.
-For example project see https://codecov.io/gh/NLeSC/Xenon, with a Java 7/8 and Linux/Windows/OSX OS build matrix.
+For example project see https://codecov.io/gh/xenon-middleware/xenon, with a Java 7/8 and Linux/Windows/OSX OS build matrix.
 
 #### [Coveralls](https://coveralls.io)
 

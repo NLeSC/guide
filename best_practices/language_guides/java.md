@@ -60,12 +60,12 @@ Notifications of each project must be configured in your own account settings.
 
 Code quality and coverage grouped by file.
 Can setup goals to improve quality or coverage by file or category.
-For example project see https://www.codacy.com/app/NLeSC/Xenon/dashboard
+For example project see https://www.codacy.com/app/xenon-middleware/xenon/dashboard
 
 ### [Codecov](https://codecov.io)
 Can show code coverages for many languages including Java, Python and Javascript.
 Shows unified coverage and separate coverage for matrix builds.
-For example project see https://codecov.io/github/NLeSC/Xenon
+For example project see https://codecov.io/github/xenon-middleware/xenon
 
 ## Debugging and Profiling
 
@@ -87,7 +87,7 @@ Java has the inbuild [JavaDoc](http://www.oracle.com/technetwork/java/javase/doc
 
 ## Available Templates
 
-There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/nlesc/xenon) as an (rather complex) example.
+There are currently no Java templates available. See [The Xenon repo on GitHub](https://github.com/xenon-middleware/xenon) as a (rather complex) example.
 
 ## Distribution
 
