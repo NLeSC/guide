@@ -188,7 +188,7 @@ More realistic profiling information can usually be obtained by using statistica
 * Tutorials:
     - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
     - http://docs.python-guide.org/en/latest/writing/logging
-    - [Python logging best practices with JSON steroids](https://logmatic.io/blog/python-logging-with-json-steroids)
+    - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
 
 ## Writing Documentation
 
