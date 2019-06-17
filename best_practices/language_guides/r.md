@@ -11,7 +11,12 @@ A few remarks for readers familiar with Python:
 * Numbering in R starts with 1 and not with 0.
 
 ### Recommended sources of information
-Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R, see the book [Advanced R](http://adv-r.had.co.nz) by Hadley Wickham, or [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) from the same author. Further, stackoverflow and standard search engines can lead you to answers to issues.
+Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R see the following resources:
+* [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham,
+* [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham,
+* [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto. 
+
+Further, stackoverflow and standard search engines can lead you to answers to issues.
 
 # Getting started
 
