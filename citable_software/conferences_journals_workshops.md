@@ -6,9 +6,16 @@ This is a list of Conferences, Journals, and Workshops related to eScience.
 
 * [The IEEE International Conference on eScience](https://escience-conference.org/) Yearly (computer science) conference on eScience.
 
+* [UK Conference of Research Software Engineers](https://rse.ac.uk/conf2019/).
+
+* [German Conference of Research Software Engineers](https://www.de-rse.org/en/conf2019/index.html).
+
 * The [European Geosciences Union General Assembly (EGU)](http://www.egu.eu/) has a track by the [Division on Earth and Space Science Informatics (ESSI)](http://www.egu.eu/essi/home/).
 
-* [Conference of Research Software Engineers](http://www.software.ac.uk/news/2016-05-09-first-ever-conference-research-software-engineers-call-participation).
+* [Free Open Source Software for GeoInformatics](https://2019.foss4g.org/)
+
+* [International Conference on Computational Science](https://www.iccs-meeting.org/iccs2019/)
+
 
 There is also a [community page with a list of upcoming events](https://www.esciencecenter.nl/community) on the eScience Center website.
 
