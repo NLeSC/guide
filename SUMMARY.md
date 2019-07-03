@@ -33,9 +33,6 @@
 * [Publishing](citable_software/publishing_results.md)
    * [Making software citable](citable_software/making_software_citable.md)
    * [eScience Conferences, Journals, and Workshops](citable_software/conferences_journals_workshops.md)
-* [Findability](findability/findability.md)
-* [Governance](governance/governance.md)
-* [Reproducibility](reproducibility/reproducibility.md)
 * [Contributing to this Guide](CONTRIBUTING.md)
 * NLeSC specific
    * [Chapter Owners](chapter_owners.md)
