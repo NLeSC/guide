@@ -43,7 +43,7 @@ Code quality analysis services are web applications which have the following fea
 
  * Automaticly analyse your code after a Github push
  * Usually free for open source projects
- * Most supports multiple programming languages, but not every language will be have the same level of features
+ * Most supports multiple programming languages, but not every language will have the same level of features
  * Grade or score for the quality of all of the code in the repository
  * List of issues with the code, grouped by severity
  * Drill down to location of issue
