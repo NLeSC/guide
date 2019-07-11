@@ -8,9 +8,11 @@ When starting a new Python project, consider using our [Python template](https:/
 
 ## Python versions
 
-Currently, there are two Python versions: 2 and 3.
-[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
-Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
+Currently, there are two Python versions: 2 and 3. If you are creating a new package, use Python 3, unless you really
+need Python 2 (e.g., because Python libraries you need are incompatible with Python 3). If you are working with existing
+code that only supports Python 2, consider adding support for Python 3.
+For a more thourough discussion of which version to choose, have a look at
+[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3).
 
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
