@@ -14,6 +14,7 @@ code that only supports Python 2, consider adding support for Python 3.
 For a more thourough discussion of which version to choose, have a look at
 [Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3).
 
+* [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
