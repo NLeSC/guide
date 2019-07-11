@@ -4,7 +4,7 @@ Python is the "dynamic language of choice" of the Netherlands eScience Center.
 
 ## Project setup
 
-When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.  
+When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.
 
 ## Python versions
 
@@ -223,6 +223,9 @@ We recommend using Sphinx and Google documentation style. Sphinx can easily be [
 [Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 [Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
 [JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools. JupyterLab is still under **development** and may not be suitable if you need a stable tool.
+
+Jupyter notebooks contain data that makes it hard to nicely keep track of code changes using version control. If you are using git,
+you can [add filters that automatically remove unneeded noise from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
 
 ### Visualization
 
