@@ -74,8 +74,6 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 
 The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
-Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
-
 Many linters exists for Python, [`prospector`](https://github.com/landscapeio/prospector) is a tool for running a suite of linters, it supports, among others:
 * [pycodestyle](https://github.com/PyCQA/pycodestyle)
 * [pydocstyle](https://github.com/PyCQA/pydocstyle)
@@ -85,6 +83,8 @@ Many linters exists for Python, [`prospector`](https://github.com/landscapeio/pr
 * [pyroma](https://github.com/regebro/pyroma)
 
 Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+
+Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
 
 ## Building and packaging code
 
