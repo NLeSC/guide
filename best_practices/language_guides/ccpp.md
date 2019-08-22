@@ -66,30 +66,81 @@ We do not recommend these if you don't also supply an option for building with C
 Another modern alternative that has been gaining attention mainly in the GNU/Gnome/Linux world is [Meson](http://mesonbuild.com/), which is also based on [Ninja](https://ninja-build.org/).
 
 
-### Library ecosystem
+### Package management
 There is no standard package manager like `pip`, `npm` or `gem` for C++.
-The first go-to for libraries should be your OS package manager.
-If the target package is not in there, try to see if there is an equivalent library that is, and see what kind of software uses it.
-A good, cross-platform option nowadays is to use [`miniconda`](https://conda.io/miniconda.html), which works on Linux, macOS and Windows.
-The `conda-forge` channel especially has a lot of C++ libraries; specify that you want to use this with command line option `-c conda-forge`.
+This means that you will have to choose depending on your particular circumstances what tool to use for installing libraries and, possibly, packaging the tools you yourself built.
+Some important factors include:
+- Whether or not you have root/admin access to your system
+- What kind of environment/ecosystem you are working in. For instance:
+    * There are many tools targeted specifically at HPC/cluster environments.
+    * Specific communities (e.g. NLP research or bioinformatics) may have gravitated towards specific tools, so you'll probably want to use those for maximum impact.
+- Whether software is packaged at all; many C/C++ tools only come in source form, hopefully with [build setup configuration](#build-systems).
 
-If you do have to install a library, or you are working in a cluster environment without the apropriate module (`module avail`), you enter what is called *dependency hell*.
+
+#### Yes root access
+If you have root/admin access to your system, the first go-to for libraries may be your OS package manager.
+If the target package is not in there, try to see if there is an equivalent library that is, and see what kind of software uses it.
+
+
+#### No root access
+A good, cross-platform option nowadays is to use [`miniconda`](https://conda.io/miniconda.html), which works on Linux, macOS and Windows.
+The `conda-forge` channel especially has a lot of C++ libraries.
+Specify that you want to use this channel with command line option `-c conda-forge`.
+The `bioconda` channel in turn builds upon the `conda-forge` libraries, hosting a lot of bioinformatics tools.
+
+
+#### Managing non-packaged software
+If you do have to install a library, or you are working in an HPC/cluster environment without the appropriate module (`module avail`), you enter what is called *dependency hell*.
 Some agility in compiling and installing libraries is essential.
 You can install libraries in `/usr/local` or in `${HOME}/.local` if you aren't root, but there you have no package management.
 
-One way around this if the system does use `module` is to use [Easybuild](https://easybuild.readthedocs.io/en/latest/), which makes installing modules in your home directory quite easy.
-Many recipes (called Easyblocks) for building packages or whole toolchains are [available online](https://easybuild.readthedocs.io/en/latest/version-specific/Supported_software.html).
-These are written in Python.
+A lot of libraries come with a package description for `pkg-config`.
+These descriptions are installed in `/usr/lib/pkgconfig`.
+You can point `pkg-config` to your additional libraries by setting the `PKG_CONFIG_PATH` environment variable.
+This also helps for instance when trying to automatically locate dependencies from CMake, which has `pkg-config` support as a fallback for when libraries don't support CMake's `find_package`.
 
-Another simple solution is to use something like `xstow`.
+If you want to keep things organized on systems where you use multiple versions of the same software for different projects, a simple solution is to use something like `xstow`.
 [XStow](http://xstow.sourceforge.net/) is a poor-mans package manager.
 You install each library in its own directory (`~/.local/pkg/<package>` for instance), then running `xstow` will create symlinks to the files in the `~/.local` directory (one above the XStow package directory).
 Using XStow in this way alows you to keep a single additional search path when compiling your next library.
 
-A lot of libraries come with a package description for `pkg-config`. These descriptions are installed in `/usr/lib/pkgconfig`. You can point `pkg-config` to your additional libraries by setting the `PKG_CONFIG_PATH` environment variable. This also helps for instance when trying to automatically locate dependencies from CMake, which has `pkg-config` support as a fallback for when libraries don't support CMake's `find_package`.
+
+#### Packaging software
+In case you find the manual compilation too cumbersome, or want to conveniently distribute software (your own or perhaps one of your project's dependencies that the author did not package themselves), you'll have to build your own package.
+The above solutions are good defaults for this, but there are some additional options that are widely used.
+- For distribution to root/admin users: system package managers (Linux: `apt`, `yum`, `pacman`, macOS: Homebrew, Macports)
+- For distribution to any users: [Conda](https://conda.io/miniconda.html) and [Conan](https://conan.io/) are cross-platform (Linux, macOS, Windows)
+- For distribution to HPC/cluster users: see options below
+
+When choosing which system to build your package for, it is imporant to consider your target audience.
+If any of these tools are already widely used in your audience, pick that one.
+If not, it is really up to your personal preferences, as all tools have their pros and cons.
+Some general guidelines could be:
+- prefer multi-platform over single platform
+- prefer widely used over obscure (even if it's technically magnificent, if nobody uses it, it's useless for distributing your software)
+- prefer multi-language over single language (especially for C++, because it is so often used to build libraries that power higher level languages)
+
+But, as the state of the package management ecosystem shows, in practice, there will be many exceptions to these guidelines.
+
+
+#### HPC/cluster environments
+One way around this if the system does use `module` is to use [Easybuild](https://easybuild.readthedocs.io/en/latest/), which makes installing modules in your home directory quite easy.
+Many recipes (called Easyblocks) for building packages or whole toolchains are [available online](https://easybuild.readthedocs.io/en/latest/version-specific/Supported_software.html).
+These are written in Python.
+
+A similar package that is used a lot in the bioinformatics community is [guix](https://hpc.guix.info/).
+With guix, you can create virtual environments, much like those in Python `virtualenv` or Conda.
+You can also create relocatable binaries to use your binaries on systems that do not have guix installed.
+This makes it easy to test your packages on your laptop before deploying to a cluster system.
+
+
+#### Near future: Modules
 
 Note that C++20 will bring Modules, which can be used as an alternative to including (precompiled) header files.
-This will allow for easier packaging and will probably cause the ecosystem landscape to change considerably.
+This will allow for easier packaging and will probably cause the package management landscape to change considerably.
+For this reason, it may be wise at this time to keep your options open and keep an eye on developments within the different package management solutions.
+
+
 
 ### Editors
 This is largely a matter of taste, but not always.
@@ -177,6 +228,7 @@ There are some really good CppCon videos about debugging on YouTube.
 Historically, many C and C++ projects have seemed rather hestitant about using external dependencies (perhaps due to the poor dependency management situation mentioned above).
 However, many good (scientific) computing libraries are available today that you should consider using if applicable.
 Here follows a list of libraries that we recommend and/or have experience with.
+These can typically be installed from a wide range of [package managers](#package-management).
 
 ### Usual suspects
 These scientific libraries are well known, widely used and have a lot of good online documentation.
