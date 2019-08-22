@@ -119,6 +119,7 @@ Some general guidelines could be:
 - prefer multi-platform over single platform
 - prefer widely used over obscure (even if it's technically magnificent, if nobody uses it, it's useless for distributing your software)
 - prefer multi-language over single language (especially for C++, because it is so often used to build libraries that power higher level languages)
+
 But, as the state of the package management ecosystem shows, in practice, there will be many exceptions to these guidelines.
 
 
