@@ -295,7 +295,7 @@ It is light-weight, good and is used a lot.
 [Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion IDE.
 
 ### Documentation
-Use [Doxygen](http://www.stack.nl/~dimitri/doxygen/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly.
+Use [Doxygen](http://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
 
 A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 
