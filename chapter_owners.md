@@ -16,7 +16,7 @@ Overall Maintainer: Jason Maassen
   * Python: Janneke van der Zwaan
   * OpenCL and CUDA: Ben van Werkhoven
   * R: Vincent van Hees
-  * C and C++: Johan Hidding
+  * C and C++: Johan Hidding and Patrick Bos
   * Fortran: Gijs van den Oord
 * Intellectual Property: Lourens Veen
 * Publishing Scientific Results: Willem van Hage

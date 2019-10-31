@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide)
-
+Dead-link checker status (does not actually build guide itself): [![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide)
 
 # Guide
 

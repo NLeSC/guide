@@ -1,14 +1,20 @@
 sudo: false
 language: node_js
-node_js: node
+node_js: 8
 cache:
   directories:
-  - node_modules
+    - node_modules
 install:
-- npm install gitbook-cli broken-link-checker
-- node_modules/.bin/gitbook install
-- node_modules/.bin/gitbook serve --no-live --no-watch &
-# wait for gitboook serve spinup
-- sleep 20
-#check all links using blc, skip example http://localhost:8000 link from the javascript chapter.
-script: node_modules/.bin/blc --exclude http://localhost:8000 --recursive http://localhost:4000
+  - npm install gitbook-cli broken-link-checker
+  - node_modules/.bin/gitbook install
+  - node_modules/.bin/gitbook serve --no-live --no-watch &
+  # wait for gitboook serve spinup
+  - sleep 20
+jobs:
+  include:
+    # check all links in changed files using blc
+    - script: bash blc-on-changed-files.sh
+    - stage: cron
+      if: type = cron
+      # check all links using blc
+      script: bash blc-good-enough.sh 10
