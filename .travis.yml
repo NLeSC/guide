@@ -1,20 +1,15 @@
-sudo: false
 language: node_js
-node_js: 8
-cache:
-  directories:
-    - node_modules
+node_js:
+  - lts/*
 install:
-  - npm install gitbook-cli broken-link-checker
-  - node_modules/.bin/gitbook install
-  - node_modules/.bin/gitbook serve --no-live --no-watch &
-  # wait for gitboook serve spinup
-  - sleep 20
-jobs:
-  include:
-    # check all links in changed files using blc
-    - script: bash blc-on-changed-files.sh
-    - stage: cron
-      if: type = cron
-      # check all links using blc
-      script: bash blc-good-enough.sh 10
+  - npm ci
+script:
+  - npm run docs:build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist
+  github-token: $GITHUB_TOKEN # a token generated on github allowing travis to push code on you repository
+  keep-history: true
+  on:
+    branch: master

@@ -1,0 +1,50 @@
+body
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* font-size: 14px; */
+a
+  // color: #00a3d8
+a.sidebar-link.active
+  // color: #00a3d8 !important
+a.sidebar-link:hover
+  // color: #00a3d8 !important
+
+  
+.home .hero .action-button 
+    // background-color: #00a3d8 !important;
+    // border-bottom: 1px solid #0ca8dc !important;
+
+.navbar .site-name 
+    // font-size: small !important
+    // font-weight: normal !important
+    // color: #888888 !important
+
+.sidebar
+.sidebar-heading 
+  font-size: 14px !important
+  background: #f7f7f7 !important;
+  & > .sidebar-links
+    padding 1.5rem 0 3rem 0 !important
+    & > li > a.sidebar-link
+      font-size 0.9em !important
+      line-height 0.7 !important
+      font-weight bold
+    & > li:not(:first-child)
+      margin-top .75rem
+  
+/* width */
+.sidebar::-webkit-scrollbar 
+  width: 5px
+
+/* Track */
+.sidebar::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 5px grey
+  border-radius: 99px
+ 
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb 
+  background: #f7f7f7 
+  border-radius: 99px
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover 
+  background: #3eaf7c

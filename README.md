@@ -1,3 +1,14 @@
+---
+home: true
+heroImage: /assets/img/0.jpeg
+heroText: Enabling digitally enhanced research
+tagline: We are always interested in setting up new collaborations to achieve scientific impact!
+actionText: Get Started →
+actionLink: /introduction/
+sidebar: false
+footer: MIT Licensed | Copyright © 2018-present Netherlands eScience Center
+---
+
 Dead-link checker status (does not actually build guide itself): [![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide)
 
 # Guide
