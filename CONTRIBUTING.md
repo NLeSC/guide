@@ -19,7 +19,16 @@ git checkout newbranch
 ```
 Add your new awesome feature, fix bugs, make other changes.
 
-To view changes locally, first install ``gitbook-cli`` (Gitbook command line interface) and ``broken-link-checker`` (may require root permissions, depending on your setup).
+<!-- # install globally -->
+yarn global add vuepress # OR npm install -g vuepress
+
+<!-- # start writing -->
+vuepress dev
+
+<!-- # build -->
+vuepress build
+
+<!-- To view changes locally, first install ``gitbook-cli`` (Gitbook command line interface) and ``broken-link-checker`` (may require root permissions, depending on your setup).
 
 ```
 npm install -g gitbook-cli
@@ -46,7 +55,7 @@ gitbook serve
 To check if there are any broken links:
 ```
 blc --recursive http://localhost:4000
-```
+``` -->
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
 
