@@ -11,8 +11,7 @@ When starting a new Python project, consider using our [Python template](https:/
 Currently, there are two Python versions: 2 and 3. If you are creating a new package, use Python 3, unless you really
 need Python 2 (e.g., because Python libraries you need are incompatible with Python 3). If you are working with existing
 code that only supports Python 2, consider adding support for Python 3.
-For a more thourough discussion of which version to choose, have a look at
-[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3).
+For more information on the upcoming end of Python 2, see [pythonclock.org](https://pythonclock.org).
 
 * [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
@@ -98,11 +97,11 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
   * Or configure [Travis CI](https://docs.travis-ci.com/user/deployment/pypi/) or [Circle-CI](https://circleci.com/blog/continuously-deploying-python-packages-to-pypi-with-circleci/) to do it automatically for each release.
   * Additional guidelines:
     * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
-    * For packages co-owned by the Netherlands eScience Center it is advised to make the PyPI `nlesc` account an collaborator with the owner role. This will give the center a way to perform emergency maintenance of the package if the original uploader is unable to.
+    * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
     * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
     * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
-  * If possible, add packages to [conda-forge](https://conda-forge.github.io/). Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
+  * If desired, add packages to [conda-forge](https://conda-forge.github.io/). Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
 
 ## Testing
