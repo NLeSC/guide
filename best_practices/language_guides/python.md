@@ -4,14 +4,16 @@ Python is the "dynamic language of choice" of the Netherlands eScience Center.
 
 ## Project setup
 
-When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.  
+When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.
 
 ## Python versions
 
-Currently, there are two Python versions: 2 and 3.
-[Should I use Python 2 or Python 3 for my development activity?](https://wiki.python.org/moin/Python2orPython3)
-Generally, Python 2.x is legacy, Python 3.x is the present and future of the language. However, not all Python libraries are compatible with Python 3.
+Currently, there are two Python versions: 2 and 3. If you are creating a new package, use Python 3, unless you really
+need Python 2 (e.g., because Python libraries you need are incompatible with Python 3). If you are working with existing
+code that only supports Python 2, consider adding support for Python 3.
+For more information on the upcoming end of Python 2, see [pythonclock.org](https://pythonclock.org).
 
+* [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
@@ -92,13 +94,16 @@ To create an installable Python package, create a file `setup.py` and use the [`
 
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
-* Use [twine](https://github.com/pypa/twine) to upload your package to the [Python Package Index (PyPI)](https://pypi.org) (so it can be installed with pip) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/))
-  * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
-  * For packages co-owned by the Netherlands eScience Center it is advised to make the PyPI `nlesc` account an collaborator with the owner role. This will give the center a way to perform emergency maintenance of the package if the original uploader is unable to.
-  * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
-  * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
+* Upload your package to the [Python Package Index (PyPI)](https://pypi.org) so it can be installed with pip.
+  * Either do this manually by using [twine](https://github.com/pypa/twine) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/)),
+  * Or configure [Travis CI](https://docs.travis-ci.com/user/deployment/pypi/) or [Circle-CI](https://circleci.com/blog/continuously-deploying-python-packages-to-pypi-with-circleci/) to do it automatically for each release.
+  * Additional guidelines:
+    * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
+    * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
+    * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
+    * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
-  * If possible, add packages to [conda-forge](https://conda-forge.github.io/). Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
+  * If desired, add packages to [conda-forge](https://conda-forge.github.io/). Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
 
 ## Testing
@@ -225,6 +230,9 @@ We recommend using Sphinx and Google documentation style. Sphinx can easily be [
 [Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 [Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
 [JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools. JupyterLab is still under **development** and may not be suitable if you need a stable tool.
+
+Jupyter notebooks contain data that makes it hard to nicely keep track of code changes using version control. If you are using git,
+you can [add filters that automatically remove unneeded noise from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
 
 ### Visualization
 
