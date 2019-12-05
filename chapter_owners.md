@@ -2,7 +2,7 @@
 
 This is a list of who is responsible for which part of the guide.
 
-Overall Maintainer: Jason Maassen
+Overall Maintainer: Bouwe Andela
 
 * Introduction: Jason Maassen
 
@@ -13,7 +13,7 @@ Overall Maintainer: Jason Maassen
   * Introduction: Jason Maassen
   * Java: Christiaan Meijer
   * JavaScript and TypeScript: Jurriaan Spaaks
-  * Python: Janneke van der Zwaan
+  * Python: Patrick Bos
   * OpenCL and CUDA: Ben van Werkhoven
   * R: Vincent van Hees
   * C and C++: Johan Hidding and Patrick Bos
