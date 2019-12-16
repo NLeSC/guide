@@ -28,12 +28,9 @@ Building and/or using Python 2 is probably discouraged even more than, say, usin
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
 
-## Recommended sources of information
+## Learning Python
 
-* A good way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
-* Introduction to python for data science: http://skillsmatter.com/podcast/java-jee/introducing-python-for-data-science
-* [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
-* [Planet Python](http://planetpython.org)
+* A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
 * Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
 
