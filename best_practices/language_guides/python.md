@@ -5,23 +5,28 @@ We use it for data analysis and data science projects using the SciPy stack and 
 It is a good default choice for many kinds of projects due to its generic nature, its large and broad ecosystem of third-party modules and its compact syntax which allows for rapid prototyping.
 It is not the language of maximum performance, although in many cases performance critical components can be easily replaced by modules written in faster, compiled languages like C(++) or Cython.
 
+The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/).
+In Python, this text can be retrieved with the `import this` command.
+
+
 ## Project setup
 
 When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.
 
-## Python versions
 
-Currently, there are two Python versions: 2 and 3. If you are creating a new package, use Python 3, unless you really
-need Python 2 (e.g., because Python libraries you need are incompatible with Python 3). If you are working with existing
-code that only supports Python 2, consider adding support for Python 3.
-For more information on the upcoming end of Python 2, see [pythonclock.org](https://pythonclock.org).
+## Use Python 3, avoid 2
+
+Python 2 and Python 3 have co-existed for a long time, but [starting from 2020, development of Python 2 is officially abandoned](https://www.python.org/doc/sunset-python-2/), meaning Python 2 will no longer be improved, even in case of security issues.
+If you are creating a new package, use Python 3.
+It is possible to write Python that is both Python 2 and Python 3 compatible (e.g. using [Six](https://pythonhosted.org/six/)), but only do this when you are 100% sure that your package won't be used otherwise.
+If you need Python 2 because of old, incompatible Python 2 libraries, strongly consider upgrading those libraries to Python 3 or replacing them altogether.
+Building and/or using Python 2 is probably discouraged even more than, say, using Fortran 77, since at least Fortran 77 compilers are still being maintained.
 
 * [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
 * [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
-The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/). In Python, this text can be retrieved with the `import this` command.
 
 ## Recommended sources of information
 
@@ -30,6 +35,7 @@ The philosophy of Python is summarized in the [Zen of Python](https://www.python
 * [Blog](http://ianozsvald.com/) by Ian Ozsvald, mostly on high performance python.
 * [Planet Python](http://planetpython.org)
 * Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
+
 
 ## Dependencies and package management
 
@@ -69,11 +75,13 @@ Use `conda install` to install new packages and `conda update` to keep your syst
 For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda seems very robust. If you want to add packages to the (Ana)conda repositories, please check [Build using conda](http://conda.pydata.org/docs/build_tutorials.html).
 A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues.
 
+
 ## Editors and IDEs
 
 * Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
 * [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available in the [PyDev GitHub repository](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
 * For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available in the [python folder of the IntelliJ repository](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. JetBrains provides a [list of all tools in PyCharm](https://www.jetbrains.com/pycharm/features/tools.html).
+
 
 ## Coding style conventions
 
@@ -90,6 +98,7 @@ Many linters exists for Python, [`prospector`](https://github.com/landscapeio/pr
 Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+
 
 ## Building and packaging code
 
@@ -109,6 +118,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
   * If desired, add packages to [conda-forge](https://conda-forge.github.io/). Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
 
+
 ## Testing
 
 * [pytest](http://pytest.org/latest/) is a full featured Python
@@ -124,6 +134,7 @@ Using `pytest` is preferred over `unittest`, `pytest` has a much more concise sy
 
 Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described in the [`pytest` documentation](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
 
+
 ### Code coverage
 
 When you have tests it is also a good to see which source code is exercised by the test suite.
@@ -134,6 +145,7 @@ Most test runners have have the coverage package integrated.
 The code coverage reports can be published online in code quality service or code coverage services.
 Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
 If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../testing.md#Code_coverage_services).
+
 
 ## Code quality analysis tools and services
 
@@ -159,6 +171,7 @@ Dedicated for Python code quality.
 Celery, Django and Flask specific behaviors.
 The Landscape analysis tool called [`prospector`](https://github.com/landscapeio/prospector) can be run locally.
 For example project see https://landscape.io/github/NLeSC/MAGMa
+
 
 ## Debugging and profiling
 
@@ -193,12 +206,14 @@ More realistic profiling information can usually be obtained by using statistica
 * [Pyflame](https://github.com/uber/pyflame)
 * [nylas-perftools](https://github.com/nylas/nylas-perftools)
 
+
 ## Logging
 * [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
 * Tutorials:
     - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
     - http://docs.python-guide.org/en/latest/writing/logging
     - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
+
 
 ## Writing Documentation
 
@@ -214,6 +229,7 @@ There are several tools that automatically generate documentation from docstring
   * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
 We recommend using Sphinx and Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
+
 
 ## Recommended additional packages and libraries
 
