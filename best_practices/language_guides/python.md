@@ -299,4 +299,6 @@ We recommend `flask`.
 
 ### Creating programs with command line arguments
 
-* For run-time configuration via command-line options, the built-in `argparse` module usually suffices. A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
+* For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
+* A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
+* Other popular libraries are [`click`](https://google.github.io/python-fire/) and [`fire`](https://google.github.io/python-fire/).
