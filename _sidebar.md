@@ -1,6 +1,5 @@
-# Summary
 
-* [Introduction](introduction.md)
+* [Introduction](README.md)
 * [Best practices](best_practices/overview.md)
    * [Checklist](best_practices/checklist.md)
    * [Version Control](best_practices/version_control.md)
