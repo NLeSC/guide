@@ -12,40 +12,26 @@ Contributions by anyone are most welcome.
 
 Please use branches and pull requests to contribute content. If you are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
-```
+```shell
 git clone https://github.com/NLeSC/guide.git
 git branch newbranch
 git checkout newbranch
 ```
+
 Add your new awesome feature, fix bugs, make other changes.
 
-To view changes locally, first install ``gitbook-cli`` (Gitbook command line interface) and ``broken-link-checker`` (may require root permissions, depending on your setup).
+To view changes locally, host the repo with a static file web server.
 
-```
-npm install -g gitbook-cli
-npm install -g broken-link-checker
-```
-
-To install ``gitbook``'s dependencies:
-
-```
-gitbook install
-```
-
-To build the documentation:
-
-```
-gitbook build
+```shell
+python3 -m http.server 4000
 ```
 
 To view the documentation in a web browser (default address: http://localhost:4000):
-```
-gitbook serve
-```
 
-To check if there are any broken links:
-```
-blc --recursive http://localhost:4000
+To check if there are any broken links using [liche](https://github.com/raviqqe/liche) in a Docker container:
+
+```shell
+docker run -v $PWD:/docs peterevans/liche -t 60 -c 16 -d /docs -r /docs
 ```
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
