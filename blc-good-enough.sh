@@ -8,7 +8,7 @@ broken_max="$1"
 # run the link checker
 echo "travis_fold:start:blc"
 echo "Checking for any broken links..."
-docker run -v $PWD:/docs peterevans/liche -t 60 -c 16 -d /docs -r /docs >/dev/null 2| tee stdout.txt
+docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs -r /docs >/dev/null 2| tee stdout.txt
 echo "travis_fold:end:blc"
 
 # get the actual number of broken links

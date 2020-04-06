@@ -31,7 +31,7 @@ To view the documentation in a web browser (default address: http://localhost:40
 To check if there are any broken links using [liche](https://github.com/raviqqe/liche) in a Docker container:
 
 ```shell
-docker run -v $PWD:/docs peterevans/liche -t 60 -c 16 -d /docs -r /docs
+docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs -r /docs
 ```
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
