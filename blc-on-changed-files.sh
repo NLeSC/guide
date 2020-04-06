@@ -34,7 +34,8 @@ while read line;
 do 
     echo "travis_fold:start:blc"
     # Use liche to check links in Markdown file
-    docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs /docs/$line >/dev/null 2| tee stdout.txt;
+    echo /docs/$line
+    docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs /docs/$line 2> stdout.txt;
     # Take note of the success or failure of the blc command.
     if [ $? -ne 0 ]; then
         EXIT_CODE=1

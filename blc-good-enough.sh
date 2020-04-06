@@ -8,7 +8,7 @@ broken_max="$1"
 # run the link checker
 echo "travis_fold:start:blc"
 echo "Checking for any broken links..."
-docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs -r /docs >/dev/null 2| tee stdout.txt
+docker run -v $PWD:/docs peterevans/liche:1.1.1 -v -t 60 -c 16 -d /docs -r /docs 2> stdout.txt
 echo "travis_fold:end:blc"
 
 # get the actual number of broken links
@@ -19,9 +19,9 @@ echo "--------------------------------------------------------------------------
 echo "--                             BROKEN LINK CHECKER: SUMMARY                              --"
 echo "-------------------------------------------------------------------------------------------"
 echo
-cat stdout.txt
 if [ "$broken" -gt "$broken_max" ]; then
     echo "Number of broken links (${broken}) exceeds maximum allowed number (${broken_max})." >&2
+    cat stdout.txt
     exit 1
 else
     echo "Number of broken links (${broken}) less than or equal to maximum allowed number (${broken_max})."
