@@ -84,10 +84,10 @@ for contributions by other people. Good guidelines will save time of both lead
 developer and contributor since things have to be explained only once. A good CONTRIBUTING.md
 file describes at least how to perform the following tasks:
 - How to [install the dependencies](#documented-development-setup)
-- How to run [(unit) tests](testing.html#unit-tests)
-- What [code style](code_quality.html#coding-style) to use
+- How to run [(unit) tests](testing.md#unit-tests)
+- What [code style](code_quality.md#coding-style) to use
 - Reference to [code of conduct](#code-of-conduct)
-- When using a [git branching model](version_control.html#choose-one-branching-model), the choice of branching model
+- When using a [git branching model](version_control.md#choose-one-branching-model), the choice of branching model
 An extensive example is [Angular.js's CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md). Note that [GitHub has built in support for a CONTRIBUTING.md file](https://github.com/blog/1184-contributing-guidelines).
 
 ## Code of conduct
@@ -136,7 +136,7 @@ Identifiers should be associated with releases and should be created together wi
 
 To get credit for your work, it should be as easy as possible to cite your software. 
 
-Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](./documentation.html#doi-or-pid.html)). It is recommended that this information is contained on a single file.
+Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](documentation.md#doi-or-pid)). It is recommended that this information is contained on a single file.
 
 You can use the [Citation File Format](https://citation-file-format.github.io/) to provide this information on a human- and machine-readable format.
 

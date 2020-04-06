@@ -146,7 +146,7 @@ If this is not possible or does not fit then use one of the generic code coverag
 
 ## Code quality analysis tools and services
 
-Code quality service is explained in the [Generic software guide](../code_quality.html#Software_quality_improvement_tools).
+Code quality service is explained in the [Generic software guide](../code_quality.md#Software_quality_improvement_tools).
 There are multiple code quality services available for Python.
 There is not a best one, below is a short list of services with their different strenghts.
 
