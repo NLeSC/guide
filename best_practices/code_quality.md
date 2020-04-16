@@ -64,4 +64,4 @@ If your language supports namespaces, use **nl.esciencecenter**
 
 ## Code reviews
 
-See the [Code Reviews](./code_review.html) section.
+See the [Code Reviews](code_review.md) section.

@@ -1,15 +1,8 @@
-sudo: false
-language: node_js
-node_js: 8
-cache:
-  directories:
-    - node_modules
+language: python
+services:
+  - docker
 install:
-  - npm install gitbook-cli broken-link-checker
-  - node_modules/.bin/gitbook install
-  - node_modules/.bin/gitbook serve --no-live --no-watch &
-  # wait for gitboook serve spinup
-  - sleep 20
+  - docker pull peterevans/liche:1.1.1
 jobs:
   include:
     # check all links in changed files using blc
