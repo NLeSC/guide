@@ -46,7 +46,7 @@ There are several build systems that handle C/C++.
 Currently, [the CMake system is most popular](https://www.jetbrains.com/research/devecosystem-2018/cpp/).
 It is not actually a build system itself; it generates build files based on (in theory) platform-independent and compiler-independent configuration files.
 It can generate Makefiles, but also [Ninja](https://ninja-build.org/) files, which gives much faster build times, NMake files for Windows and more.
-Some popular IDEs keep automatic count for CMake, or are even completely built around it ((CLion)[https://www.jetbrains.com/clion/]).
+Some popular IDEs keep automatic count for CMake, or are even completely built around it ([CLion](http://www.jetbrains.com/clion/)).
 The major drawback of CMake is the confusing documentation, but this is generally made up for in terms of community support.
 When Googling for ways to write your CMake files, make sure you look for "modern CMake", which is a style that has been gaining traction in the last few years and makes everything better (e.g. dependency management, but also just the CMake files themselves).
 
