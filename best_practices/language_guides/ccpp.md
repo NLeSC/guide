@@ -133,6 +133,9 @@ With guix, you can create virtual environments, much like those in Python `virtu
 You can also create relocatable binaries to use your binaries on systems that do not have guix installed.
 This makes it easy to test your packages on your laptop before deploying to a cluster system.
 
+A package that gains more traction at the moment for HPC environments is [spack](https://spack.readthedocs.io/en/latest/).
+The main advantage of Spack over Conda is its ability to choose a specific compiler and BLAS/LAPACK or MPI library. Spack also has better platform support for supercomputers. On the other hand, Conda offers Windows support.
+
 
 #### Near future: Modules
 
