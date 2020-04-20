@@ -249,7 +249,7 @@ This is what the Google style guide has to say about Boost:
 As a general rule, don't use Boost when there is equivalent STL functionality.
 
 ### xtensor
-[xtensor](http://quantstack.net/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
+[xtensor](http://github.com/xtensor-stack/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
 It aims for maximum performance (and in most cases it succeeds) and has an active development community.
 This library features, among other things:
 * Lazy-evaluation: only calculate when necessary.
@@ -294,7 +294,8 @@ A third option that is sometimes used is to make separate "template implementati
 ### Testing
 Use [Google Test](https://github.com/google/googletest).
 It is light-weight, good and is used a lot.
-[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion IDE.
+[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the 
+IDE.
 
 ### Documentation
 Use [Doxygen](http://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
