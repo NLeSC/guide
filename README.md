@@ -6,9 +6,7 @@ This is a guide to projects and software development at the Netherlands eScience
 
 **This Guide is a work in progress**
 
-Read this book online on GitBook here: https://nlesc.gitbooks.io/guide/content/
-
-Download this book as a pdf from GitBook here: https://www.gitbook.com/download/pdf/book/nlesc/guide
+Read this book online here: https://guide.esciencecenter.nl
 
 If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.md).
 
