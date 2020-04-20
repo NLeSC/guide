@@ -104,6 +104,8 @@ If you want to keep things organized on systems where you use multiple versions 
 You install each library in its own directory (`~/.local/pkg/<package>` for instance), then running `xstow` will create symlinks to the files in the `~/.local` directory (one above the XStow package directory).
 Using XStow in this way alows you to keep a single additional search path when compiling your next library.
 
+Another way to install multiple versions of the same software are [environment modules](https://modules.readthedocs.io/en/latest/) , which allow you to easily populate your `$PATH` and other environment variables to find the respective package. 
+
 
 #### Packaging software
 In case you find the manual compilation too cumbersome, or want to conveniently distribute software (your own or perhaps one of your project's dependencies that the author did not package themselves), you'll have to build your own package.
