@@ -209,6 +209,10 @@ which is a fast memory error detector. There are also other options available li
 #### Dynamic program analysis using the valgrind suite of tools
 The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical  profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
 
+#### Automatic Formatting with clang-format
+
+While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines. 
+
 ### Debugging
 Most of your time programming C(++) will probably be spent on debugging.
 At some point, surrounding every line of your code with `printf("here %d", i++);` will no longer avail you and you will need a more powerful tool.
