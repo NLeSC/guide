@@ -294,7 +294,7 @@ A third option that is sometimes used is to make separate "template implementati
 ### Testing
 Use [Google Test](https://github.com/google/googletest).
 It is light-weight, good and is used a lot.
-[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the 
+[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion
 IDE.
 
 ### Documentation
