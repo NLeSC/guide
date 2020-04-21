@@ -134,8 +134,7 @@ You can also create relocatable binaries to use your binaries on systems that do
 This makes it easy to test your packages on your laptop before deploying to a cluster system.
 
 A package that gains more traction at the moment for HPC environments is [spack](https://spack.readthedocs.io/en/latest/).
-The main advantage of Spack over Conda is its ability to choose a specific compiler and BLAS/LAPACK or MPI library. Spack also has better platform support for supercomputers. On the other hand, Conda offers Windows support.
-
+Spack allows you to pick from many compilers. When installing packages, it compiles every package from scratch. This allows you to be tailor compilation flags and such to take fullest advantage of your cluster's hardware, which can be essential in HPC situations
 
 #### Near future: Modules
 
