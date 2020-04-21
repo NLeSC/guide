@@ -90,9 +90,12 @@ The `bioconda` channel in turn builds upon the `conda-forge` libraries, hosting 
 
 
 #### Managing non-packaged software
-If you do have to install a library, or you are working in an HPC/cluster environment without the appropriate module (`module avail`), you enter what is called *dependency hell*.
+If you do have to install a programm, which depends on a specific version of a library which depends on a specific version of another library, you enter what is called *dependency hell*.
 Some agility in compiling and installing libraries is essential.
+
 You can install libraries in `/usr/local` or in `${HOME}/.local` if you aren't root, but there you have no package management.
+
+Many HPC administrations provide [environment modules](https://modules.readthedocs.io/en/latest/) (`module avail`), which allow you to easily populate your `$PATH` and other environment variables to find the respective package. You can also write your own module files to solve your *dependency hell*.
 
 A lot of libraries come with a package description for `pkg-config`.
 These descriptions are installed in `/usr/lib/pkgconfig`.
@@ -103,8 +106,6 @@ If you want to keep things organized on systems where you use multiple versions 
 [XStow](http://xstow.sourceforge.net/) is a poor-mans package manager.
 You install each library in its own directory (`~/.local/pkg/<package>` for instance), then running `xstow` will create symlinks to the files in the `~/.local` directory (one above the XStow package directory).
 Using XStow in this way alows you to keep a single additional search path when compiling your next library.
-
-Another way to install multiple versions of the same software are [environment modules](https://modules.readthedocs.io/en/latest/) , which allow you to easily populate your `$PATH` and other environment variables to find the respective package. 
 
 
 #### Packaging software
