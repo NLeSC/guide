@@ -136,6 +136,8 @@ With guix, you can create virtual environments, much like those in Python `virtu
 You can also create relocatable binaries to use your binaries on systems that do not have guix installed.
 This makes it easy to test your packages on your laptop before deploying to a cluster system.
 
+A package that gains more traction at the moment for HPC environments is [spack](https://spack.readthedocs.io/en/latest/).
+Spack allows you to pick from many compilers. When installing packages, it compiles every package from scratch. This allows you to be tailor compilation flags and such to take fullest advantage of your cluster's hardware, which can be essential in HPC situations
 
 #### Near future: Modules
 
