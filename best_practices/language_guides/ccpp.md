@@ -218,6 +218,10 @@ which is a fast memory error detector. There are also other options available li
 #### Dynamic program analysis using the valgrind suite of tools
 The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical  profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
 
+### Automated code refactoring
+
+Sometimes you have to update large parts of your code base a little bit, like when you move from one standard to another or you changed a function definition. Although this can be accomplished with a `sed` command using regular expressions, this approach is dangerous, if you use macros, your code is not formatted properly etc.... [Clang-tidy](https://clang.llvm.org/extra/clang-tidy/) can do these things and many more by using the abstract syntax tree of the compiler instead of the source code files to refactor your code and thus is much more robust but also powerful.  
+
 
 ### Debugging
 Most of your time programming C(++) will probably be spent on debugging.
