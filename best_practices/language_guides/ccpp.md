@@ -1,4 +1,4 @@
-# C and C++
+# C++
 
 C++ is one of the hardest languages to learn. Entering a project where C++ coding is needed should not be taken lightly. This guide focusses on tools and documentation for use of C++ in an open-source environment.
 
