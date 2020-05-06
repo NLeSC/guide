@@ -1,6 +1,6 @@
 # Examples
 
-Examples using libraries can be found in the [Turing Way software license chapter](https://the-turing-way.netlify.app/licensing/01/softwarelicenses).
+Examples using libraries can be found in the [Turing Way software license](https://the-turing-way.netlify.app/licensing/01/softwarelicenses) chapter.
 
 ## Data sets: Movie review emotion
 
