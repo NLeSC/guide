@@ -4,7 +4,7 @@ Without a license, all rights are at the author of the code or data, and that me
 
 ## Software licences
 
-Software licenses are explained in [The Turing Way](https://the-turing-way.netlify.app/licensing/01/softwarelicenses.html) chapter. The chapter includes [examples](https://the-turing-way.netlify.app/licensing/01/softwarelicenses.html#Examples) how different license types can work together.
+Software licenses are explained in [The Turing Way](https://the-turing-way.netlify.app/licensing/01/softwarelicenses.html) chapter.
 
 ## Apache 2 license
 
