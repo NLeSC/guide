@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 BASE_BRANCH='master'
-GITBOOK_LOCATION='http://localhost:4000'
 
 git fetch origin refs/heads/$BASE_BRANCH:refs/remotes/origin/$BASE_BRANCH
 BASE_BRANCH_SHA=`git rev-parse origin/$BASE_BRANCH`
@@ -22,7 +21,7 @@ BASE_BRANCH_SHA=`git rev-parse origin/$BASE_BRANCH`
 git diff --name-only $BASE_BRANCH_SHA | grep --regexp="\.md$" | grep --regexp="^.*/" > changed-files.txt
 
 if [ `cat changed-files.txt | wc -l` -eq 0 ]; then
-    echo "There are no GitBook MarkDown files to check."
+    echo "There are no MarkDown files to check."
 else
     echo "These files need to be checked:"
     cat changed-files.txt
