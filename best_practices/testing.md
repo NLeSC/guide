@@ -40,7 +40,7 @@ For triggering nightly builds in GitHub actions [on.schedule](https://help.githu
 
 Status changes or failures of a CI job can sent notifications via emails and comments in pull requests. There are some polling tools which can give you notification in your desktop environment.
 
-All major CI services support some form of cctray.xml feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) and [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) give you a tray icon that turns red when a build fails.
+All major CI services support some form of [cctray](https://cctray.org/) XML feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) give you a tray icon that turns red when a build fails.
 
 ## Code coverage
 
