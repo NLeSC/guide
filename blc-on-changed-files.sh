@@ -56,7 +56,6 @@ do
 
 done < changed-files.txt
 
-echo $EXIT_CODE
 # If any failures have occurred during the above while loop, exit with a failure
 # code (1), otherwise, exit with a success code (0).
 exit $EXIT_CODE
