@@ -31,7 +31,12 @@ EXIT_CODE=0
 # read an individual line from the changed-files.txt file
 while read line;
 do 
+    # Ignore deleted files
     echo "travis_fold:start:blc"
+    if [ ! -f $line ]; then
+        continue
+    fi
+
     # Use liche to check links in Markdown file
     echo /docs/$line
     docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs /docs/$line 2> stdout.txt;
@@ -51,6 +56,7 @@ do
 
 done < changed-files.txt
 
+echo $EXIT_CODE
 # If any failures have occurred during the above while loop, exit with a failure
 # code (1), otherwise, exit with a success code (0).
 exit $EXIT_CODE
