@@ -1,6 +1,6 @@
 # Testing
 
-Write tests obviously takes time, so why should you do it? Test save time later on, and increase the quality of the software. More specifically:
+Writing tests takes time, so why should you do it? Tests save time later on, and increase the quality of the software. More specifically:
 
 * Makes you more confident that your software is correct.
 * It saves time in finding bugs, the tests give an indication where the bug is.
