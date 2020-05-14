@@ -1,4 +1,5 @@
 # Software checklist
+
 This section contains a list of items which are required to help software reach a sufficient quality standard. The following list of items links to explanation in other sections of this chapter.
 
 The [checklist matrix](./checklist_matrix.md) provides an indication of which items are important at different development stages.
@@ -12,7 +13,6 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 - [meaningful commit messages](../best_practices/version_control.md#meaningful-commit-messages)
 
 ## [Releases](../best_practices/releases.md)
-
 
 - [semantic versioning](../best_practices/releases.md#semantic-versioning)
 - [tagged releases](../best_practices/releases.md#tagged-releases)
@@ -40,7 +40,7 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 ## [Code Quality](../best_practices/code_quality.md)
 
 - [use editorconfig](../best_practices/code_quality.md#use-editorconfig)
-- [code style applied in automated way](../best_practices/code_quality.md#coding-style)
+- [code style applied in automated way](https://the-turing-way.netlify.app/code_quality/code_quality.html#Automatic-formatting)
 
 ## [Testing](../best_practices/testing.md)
 
@@ -51,6 +51,7 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 - [dependencies tracking](../best_practices/testing.md#dependencies-tracking)
 
 ## [Documentation](../best_practices/documentation.md)
+
 - [README.md](../best_practices/documentation.md#readmemd)
 - [well defined functionality](../best_practices/documentation.md#well-defined-functionality)
 - [source code documentation](../best_practices/documentation.md#source-code-documentation)

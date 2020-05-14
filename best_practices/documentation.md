@@ -51,9 +51,11 @@ Ideally in README.md
 ## Source code documentation
 
 ### Code comments
+
 Code comments, can be block comments or inline comments. They are used to explain what is the piece of code doing. Those should explain why something is done in the domain language and not programming language - why instead of what.
 
 ### API documention
+
 API documentation should explain function arguments and outputs, or the object methods. How they are formulated will depend on the language.
 
 ## Usage documentation
@@ -83,20 +85,22 @@ Guidelines should be made available once the code is available online and there 
 for contributions by other people. Good guidelines will save time of both lead
 developer and contributor since things have to be explained only once. A good CONTRIBUTING.md
 file describes at least how to perform the following tasks:
-- How to [install the dependencies](#documented-development-setup)
-- How to run [(unit) tests](testing.md#unit-tests)
-- What [code style](code_quality.md#coding-style) to use
-- Reference to [code of conduct](#code-of-conduct)
-- When using a [git branching model](version_control.md#choose-one-branching-model), the choice of branching model
+
+* How to [install the dependencies](#documented-development-setup)
+* How to run [(unit) tests](testing.md#unit-tests)
+* What [code style](https://the-turing-way.netlify.app/code_quality/code_quality.html#Code-style) to use
+* Reference to [code of conduct](#code-of-conduct)
+* When using a [git branching model](version_control.md#choose-one-branching-model), the choice of branching model
+
 An extensive example is [Angular.js's CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md). Note that [GitHub has built in support for a CONTRIBUTING.md file](https://github.com/blog/1184-contributing-guidelines).
 
 ## Code of conduct
 
 A code of conduct is a set of rules outlining the social norms, religious rules and responsibilities of, and or proper practices for an individual. Such a document is advantagous for collaberation, for several reasons:
+
 * It shows your intent to work together in a positive way with everyone.
 * It reminds everyone to communicate in a welcoming and inclusive way.
 * It provides a set of guidelines in case of conflict.
-
 
 [contributor covenant](http://contributor-covenant.org/)
 
@@ -145,6 +149,7 @@ Read more in [the blog post by Druskat et al.](https://software.ac.uk/blog/2017-
 ## Print software version
 
 Make it easy to see which version of the software is in use.
-- if it's a command line tool: print version on the command line
-- if it's a website: print version within the interface
-- if the tool generates the output: output file should contain the version of software that generated the output
+
+* if it's a command line tool: print version on the command line
+* if it's a website: print version within the interface
+* if the tool generates the output: output file should contain the version of software that generated the output
