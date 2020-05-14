@@ -1,13 +1,11 @@
 # Testing
 
-
 Write tests obviously takes time, so why should you do it? Test save time later on, and increase the quality of the software. More specifically: 
+
 * Makes you more confident that your software is correct.
 * It saves time in finding bugs, the tests give an indication where the bug is.
 * Makes it easier to make changes to the code, the tests will catch changes to way the software functions.
 * Tests communicate how software is intended to function.
-
-
 
 These points do not apply to prototype / throwaway phase.
 
@@ -18,30 +16,15 @@ These points do not apply to prototype / throwaway phase.
 
 ## Continuous integration
 
-To run testing, perform code quality analysis and build artifacts a Continuous Integration server can be used. The build will be performed every git push and pull request. Using a CI server will help with `it works for me` problems.
+Why continous integration is useful or how it can help can be read in the [Turing Way Continous integration](https://the-turing-way.netlify.app/continuous_integration/continuous_integration.html) chapter.
+
 The Netherlands eScience Center uses continuous integration services as much as possible when creating code.
 
-[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI), public on [Travis](https://travis-ci.org/)
+### GitHub Actions
 
-CI meaning: compile, unit test, integration test, quality analysis etc.
-Once there is some build process established and tests set up, CI should be configured too.
-It will save you a lot of time on debugging and allow for much quicker problem diagnosis.
-
-### Travis-CI
-
-The Netherlands eScience Center public repositories should be built with [Travis-CI](https://travis-ci.org).
-Travis-CI is free for Open Source projects.
-A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
-At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
-
-[Getting started with Travis CI](http://docs.travis-ci.com/user/getting-started/)
-
-PS. If you want to get mails from Travis-CI then you have to login at https://travis-ci.org
-
-### AppVeyor
-
-To build repositories inside the Microsoft Windows operation system use [AppVeyor](https://www.appveyor.com/).
-AppVeyor is free for Open Source projects.
+The Continous integration for Netherlands eScience Center repositories should be built with [GitHub Actions](https://help.github.com/en/actions).
+We choose GitHub actions at the center because our code already lives on GitHub.
+GitHub Actions is free for Open Source projects and able to run jobs on Linux, macOS and/or Windows on GitHub hardware or your [own hardware](https://github.com/NLESC-JCER/linux_actions_runner).
 
 ### Nightly builds
 
@@ -51,11 +34,13 @@ Possible reasons for nightly builds:
 * Make sure the repository stays working even if there are no changes pushed to the repository, but it's dependencies are changing possibly breaking the code in the repository.
 * The build performs an action that needs to be performed daily like updating a cache.
 
-For triggering nightly builds in Travis-CI [Cron jobs](https://docs.travis-ci.com/user/cron-jobs/) can be used.
+For triggering nightly builds in GitHub actions [on.schedule](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule) can be used.
 
 ### Polling tools
 
-All major CI services support some form of cctray.xml feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) and [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) give you a tray icon that turns red when a build fails.
+Status changes or failures of a CI job can sent notifications via emails and comments in pull requests. There are some polling tools which can give you notification in your desktop environment.
+
+All major CI services support some form of [cctray](https://cctray.org/) XML feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) give you a tray icon that turns red when a build fails.
 
 ## Code coverage
 

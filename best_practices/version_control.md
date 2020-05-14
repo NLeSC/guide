@@ -1,11 +1,11 @@
 # Version control
 
 Why would you use version control software and hosting (such as GitHub)?
+
 * **Easier to collaborate** Version control makes it easier to work on the same code simultaneously, while everyone still has a well defined version of the software (in contrast to a google-docs or shared file system type of system). Moreover, version control hosting websites such as Github provide way to communicate in a more structed way, such as in code reviews, about commits and about issues.
 * **Reproducibility** By using version control, you never lose previous versions of the software. This also gives you a log of changes and allows you to understand what happened. 
 * **Backup** Version control is usually pushed to an external a shared server, which immediately provides a backup.
 * **Integration** Version control software and host makes it more easy to integrate with other software that support modern software development, such as testing (continuous integration ,automatically run tests, build documentation, check code style, integration with bug-tracker, code review infrastructure, comment on code).
-
 
 ## GitHub
 
