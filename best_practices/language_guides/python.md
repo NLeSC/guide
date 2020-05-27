@@ -8,11 +8,9 @@ It is not the language of maximum performance, although in many cases performanc
 The philosophy of Python is summarized in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/).
 In Python, this text can be retrieved with the `import this` command.
 
-
 ## Project setup
 
 When starting a new Python project, consider using our [Python template](https://github.com/NLeSC/python-template). This template provides a basic project structure, so you can spend less time setting up and configuring your new Python packages, and comply with the software guide right from the start.
-
 
 ## Use Python 3, avoid 2
 
@@ -27,12 +25,10 @@ Building and/or using Python 2 is probably discouraged even more than, say, usin
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
-
 ## Learning Python
 
 * A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
 * Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
-
 
 ## Dependencies and package management
 
@@ -84,6 +80,7 @@ When `setup.py` is written, your package can be installed with
 ```
 pip install -e .
 ```
+
 The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
 Set up continuous integration to test your installation script. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation script.
@@ -104,19 +101,18 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
 
 
-
 ## Editors and IDEs
 
 * Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
 * [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available in the [PyDev GitHub repository](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
 * For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available in the [python folder of the IntelliJ repository](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. JetBrains provides a [list of all tools in PyCharm](https://www.jetbrains.com/pycharm/features/tools.html).
 
-
 ## Coding style conventions
 
 The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
 Many linters exists for Python, [`prospector`](https://github.com/landscapeio/prospector) is a tool for running a suite of linters, it supports, among others:
+
 * [pycodestyle](https://github.com/PyCQA/pycodestyle)
 * [pydocstyle](https://github.com/PyCQA/pydocstyle)
 * [pyflakes](https://pypi.python.org/pypi/pyflakes)
@@ -144,7 +140,6 @@ Using `pytest` is preferred over `unittest`, `pytest` has a much more concise sy
 
 Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described in the [`pytest` documentation](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
 
-
 ### Code coverage
 
 When you have tests it is also a good to see which source code is exercised by the test suite.
@@ -156,10 +151,9 @@ The code coverage reports can be published online in code quality service or cod
 Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
 If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../testing.md#Code_coverage_services).
 
-
 ## Code quality analysis tools and services
 
-Code quality service is explained in the [Generic software guide](../code_quality.html#Software_quality_improvement_tools).
+Code quality service is explained in the [The Turing Way](https://the-turing-way.netlify.app/code_quality/code_quality.html#Online-services-providing-software-quality-checks).
 There are multiple code quality services available for Python.
 There is not a best one, below is a short list of services with their different strenghts.
 
@@ -182,10 +176,10 @@ Celery, Django and Flask specific behaviors.
 The Landscape analysis tool called [`prospector`](https://github.com/landscapeio/prospector) can be run locally.
 For example project see https://landscape.io/github/NLeSC/MAGMa
 
-
 ## Debugging and profiling
 
 ### Debugging
+
 * Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
 * [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
 
@@ -197,6 +191,7 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 * List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
 
 * If you are looking for some tutorials to get started:
+
     - https://pymotw.com/2/pdb
     - https://github.com/spiside/pdb-tutorial
     - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
@@ -204,6 +199,7 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
     - http://www.pydev.org/manual_101_run.html
 
 ### Profiling
+
 There are a number of available profiling tools that are suitable for different situations.
 
 * [cProfile](https://docs.python.org/2/library/profile.html) measures number of function calls and how much CPU time they take. The output can be further analyzed using the `pstats` module.
@@ -212,18 +208,18 @@ There are a number of available profiling tools that are suitable for different 
     - [pprofile](https://github.com/vpelletier/pprofile) is less intrusive; it simply times entire Python scripts line-by-line. It can give output in callgrind format, which allows you to study the statistics and call tree in `kcachegrind` (often used for analyzing c(++) profiles from `valgrind`).
 
 More realistic profiling information can usually be obtained by using statistical or sampling profilers. The profilers listed below all create nice flame graphs.
+
 * [vprof](https://github.com/nvdv/vprof)
 * [Pyflame](https://github.com/uber/pyflame)
 * [nylas-perftools](https://github.com/nylas/nylas-perftools)
 
-
 ## Logging
+
 * [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
 * Tutorials:
     - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
     - http://docs.python-guide.org/en/latest/writing/logging
     - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
-
 
 ## Writing Documentation
 
@@ -231,7 +227,9 @@ Python uses **Docstrings** for function level documentation. You can read a deta
 The default location to put HTML documentation is [Read the Docs](https://readthedocs.org). You can connect your account at Read the Docs to your GitHub account and let the HTML be generated automatically using Sphinx.
 
 ### Autogenerating the documentation
+
 There are several tools that automatically generate documentation from docstrings. These are the most used:
+
 * [pydoc](https://docs.python.org/2/library/pydoc.html)
 * [Sphinx](http://sphinx-doc.org) (uses reStructuredText as its markup language)
   * [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
@@ -239,7 +237,6 @@ There are several tools that automatically generate documentation from docstring
   * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
 We recommend using Sphinx and Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
-
 
 ## Recommended additional packages and libraries
 
@@ -309,3 +306,9 @@ We recommend `flask`.
 * [nltk](http://www.nltk.org/) Natural Language Toolkit
 * [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
+
+### Creating programs with command line arguments
+
+* For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
+* A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
+* Other popular libraries are [`click`](https://click.palletsprojects.com) and [`fire`](https://google.github.io/python-fire/).

@@ -1,11 +1,13 @@
 # Version control
 
 Why would you use version control software and hosting (such as GitHub)?
+
 * **Easier to collaborate** Version control makes it easier to work on the same code simultaneously, while everyone still has a well defined version of the software (in contrast to a google-docs or shared file system type of system). Moreover, version control hosting websites such as Github provide way to communicate in a more structed way, such as in code reviews, about commits and about issues.
 * **Reproducibility** By using version control, you never lose previous versions of the software. This also gives you a log of changes and allows you to understand what happened. 
 * **Backup** Version control is usually pushed to an external a shared server, which immediately provides a backup.
 * **Integration** Version control software and host makes it more easy to integrate with other software that support modern software development, such as testing (continuous integration ,automatically run tests, build documentation, check code style, integration with bug-tracker, code review infrastructure, comment on code).
 
+More reasons can be found in the [Version control](https://the-turing-way.netlify.app/version_control/version_control.html) chapter of the Turing Way.
 
 ## GitHub
 
@@ -33,7 +35,7 @@ This SHOULD be enabled for your account
 * Project based GitHub organizations
   * MUST have at least two owners that are Netherlands eScience center employees
   * MUST be [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization) at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all the project organizations
-  * Private repositories can be created. Free when [GitHub's education discount](https://education.github.com/) is requested. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/nlesc_ip_policy_2017.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
+  * Private repositories can be created. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/nlesc_ip_policy_2017.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
     * Why is this repository private?
     * On which date can this repository be made public?
     * Who should be consulted if we would like to make the repository public in the future?

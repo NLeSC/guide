@@ -1,13 +1,11 @@
 # Testing
 
+Writing tests takes time, so why should you do it? Tests save time later on, and increase the quality of the software. More specifically:
 
-Write tests obviously takes time, so why should you do it? Test save time later on, and increase the quality of the software. More specifically: 
 * Makes you more confident that your software is correct.
 * It saves time in finding bugs, the tests give an indication where the bug is.
 * Makes it easier to make changes to the code, the tests will catch changes to way the software functions.
 * Tests communicate how software is intended to function.
-
-
 
 These points do not apply to prototype / throwaway phase.
 
@@ -65,13 +63,13 @@ At the Netherlands eScience Center we require minimum of 70% coverage.
 Setting up code coverage for a repository depends on the programming language, see the [language specific guides](language_guides/languages_overview.md) for setup instructions.
 
 The code coverage should be performed when a test suite is run as part of Continuous Integration build job.
-The code coverage results can be published on code coverage and/or [code quality services](code_quality.html#Software quality improvement tools).
+The code coverage results can be published on code coverage and/or [code quality services](https://the-turing-way.netlify.app/code_quality/code_quality.html#Online-services-providing-software-quality-checks).
 
 ### Code coverage services
 
 The publishing of the code coverage can be performed during a Continuous Integration build job.
 The code coverage service offers a visualization of the coverage and a metric which can be displayed as a badge/shield icon on the repository website.
-See the [language specific guides](language_guides/languages_overview.html) which code coverage services are available and preferred for that language.
+See the [language specific guides](language_guides/languages_overview.md) which code coverage services are available and preferred for that language.
 
 Code coverage services support many languages and a usually free for Open Source projects.
 Below is a short list of services and their strengths.

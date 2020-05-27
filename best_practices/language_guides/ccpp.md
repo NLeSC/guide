@@ -46,7 +46,7 @@ There are several build systems that handle C/C++.
 Currently, [the CMake system is most popular](https://www.jetbrains.com/research/devecosystem-2018/cpp/).
 It is not actually a build system itself; it generates build files based on (in theory) platform-independent and compiler-independent configuration files.
 It can generate Makefiles, but also [Ninja](https://ninja-build.org/) files, which gives much faster build times, NMake files for Windows and more.
-Some popular IDEs keep automatic count for CMake, or are even completely built around it ((CLion)[https://www.jetbrains.com/clion/]).
+Some popular IDEs keep automatic count for CMake, or are even completely built around it ([CLion](http://www.jetbrains.com/clion/)).
 The major drawback of CMake is the confusing documentation, but this is generally made up for in terms of community support.
 When Googling for ways to write your CMake files, make sure you look for "modern CMake", which is a style that has been gaining traction in the last few years and makes everything better (e.g. dependency management, but also just the CMake files themselves).
 
@@ -90,9 +90,12 @@ The `bioconda` channel in turn builds upon the `conda-forge` libraries, hosting 
 
 
 #### Managing non-packaged software
-If you do have to install a library, or you are working in an HPC/cluster environment without the appropriate module (`module avail`), you enter what is called *dependency hell*.
+If you do have to install a programm, which depends on a specific version of a library which depends on a specific version of another library, you enter what is called *dependency hell*.
 Some agility in compiling and installing libraries is essential.
+
 You can install libraries in `/usr/local` or in `${HOME}/.local` if you aren't root, but there you have no package management.
+
+Many HPC administrations provide [environment modules](https://modules.readthedocs.io/en/latest/) (`module avail`), which allow you to easily populate your `$PATH` and other environment variables to find the respective package. You can also write your own module files to solve your *dependency hell*.
 
 A lot of libraries come with a package description for `pkg-config`.
 These descriptions are installed in `/usr/lib/pkgconfig`.
@@ -133,6 +136,8 @@ With guix, you can create virtual environments, much like those in Python `virtu
 You can also create relocatable binaries to use your binaries on systems that do not have guix installed.
 This makes it easy to test your packages on your laptop before deploying to a cluster system.
 
+A package that gains more traction at the moment for HPC environments is [spack](https://spack.readthedocs.io/en/latest/).
+Spack allows you to pick from many compilers. When installing packages, it compiles every package from scratch. This allows you to be tailor compilation flags and such to take fullest advantage of your cluster's hardware, which can be essential in HPC situations
 
 #### Near future: Modules
 
@@ -172,6 +177,10 @@ Good/popular IDEs are
 
 C++ (and C) compilers come with built in linters and tools to check that your program runs correctly, make sure you use those. In order to find issues, it is probably a good idea to use both compilers (and maybe the valgrind memcheck tool too), because they tend to detect different problems.
 
+#### Automatic Formatting with clang-format
+
+While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines. 
+
 #### Static code analysis with GCC
 To use the GCC linter, use the following set of compiler flags when compiling C++ code:
 ```
@@ -208,6 +217,11 @@ which is a fast memory error detector. There are also other options available li
 
 #### Dynamic program analysis using the valgrind suite of tools
 The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical  profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
+
+### Automated code refactoring
+
+Sometimes you have to update large parts of your code base a little bit, like when you move from one standard to another or you changed a function definition. Although this can be accomplished with a `sed` command using regular expressions, this approach is dangerous, if you use macros, your code is not formatted properly etc.... [Clang-tidy](https://clang.llvm.org/extra/clang-tidy/) can do these things and many more by using the abstract syntax tree of the compiler instead of the source code files to refactor your code and thus is much more robust but also powerful.  
+
 
 ### Debugging
 Most of your time programming C(++) will probably be spent on debugging.
@@ -247,7 +261,7 @@ This is what the Google style guide has to say about Boost:
 As a general rule, don't use Boost when there is equivalent STL functionality.
 
 ### xtensor
-[xtensor](http://quantstack.net/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
+[xtensor](http://github.com/xtensor-stack/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
 It aims for maximum performance (and in most cases it succeeds) and has an active development community.
 This library features, among other things:
 * Lazy-evaluation: only calculate when necessary.
@@ -292,7 +306,8 @@ A third option that is sometimes used is to make separate "template implementati
 ### Testing
 Use [Google Test](https://github.com/google/googletest).
 It is light-weight, good and is used a lot.
-[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion IDE.
+[Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion
+IDE.
 
 ### Documentation
 Use [Doxygen](http://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
