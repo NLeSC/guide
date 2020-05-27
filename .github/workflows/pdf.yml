@@ -1,0 +1,18 @@
+name: Generate PDF
+on: [push]
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Change absolute paths to relative
+        run: perl -pi -e 's@\]\(\/@\]\(@' _sidebar.md
+      - name: Install converter
+        run: npm install docsify-pdf-converter
+      - name: Generate PDF
+        run: npx docsify-pdf-converter
+      - name: Upload PDF
+        uses: actions/upload-artifact@v1
+        with:
+          name: guide-nlesc.pdf
+          path: guide-nlesc.pdf
