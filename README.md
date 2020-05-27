@@ -11,3 +11,5 @@ Read this book online here: https://guide.esciencecenter.nl
 If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
+
+The guide is best read online, but there is a [PDF document]() for offline reading.

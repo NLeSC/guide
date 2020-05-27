@@ -11,8 +11,9 @@ jobs:
         run: npm install docsify-pdf-converter
       - name: Generate PDF
         run: npx docsify-pdf-converter
-      - name: Upload PDF
-        uses: actions/upload-artifact@v1
+      - name: Commit PDF
+        uses: EndBug/add-and-commit@v4
         with:
-          name: guide-nlesc.pdf
-          path: guide-nlesc.pdf
+          add: guide-nlesc.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
