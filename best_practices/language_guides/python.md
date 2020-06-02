@@ -16,12 +16,12 @@ When starting a new Python project, consider using our [Python template](https:/
 
 Python 2 and Python 3 have co-existed for a long time, but [starting from 2020, development of Python 2 is officially abandoned](https://www.python.org/doc/sunset-python-2/), meaning Python 2 will no longer be improved, even in case of security issues.
 If you are creating a new package, use Python 3.
-It is possible to write Python that is both Python 2 and Python 3 compatible (e.g. using [Six](https://pythonhosted.org/six/)), but only do this when you are 100% sure that your package won't be used otherwise.
+It is possible to write Python that is both Python 2 and Python 3 compatible (e.g. using [Six](https://six.readthedocs.io/)), but only do this when you are 100% sure that your package won't be used otherwise.
 If you need Python 2 because of old, incompatible Python 2 libraries, strongly consider upgrading those libraries to Python 3 or replacing them altogether.
 Building and/or using Python 2 is probably discouraged even more than, say, using Fortran 77, since at least Fortran 77 compilers are still being maintained.
 
 * [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
-* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
+* [Six](https://six.readthedocs.io/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
@@ -62,7 +62,7 @@ This can be useful when writing the `setup.py` script for your package (see [Bui
 
 [Conda](http://conda.pydata.org/docs/) can be used instead of virtualenv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries. Installation of packages that are not using `wheel` but have a lot of native code is much faster than `pip` because Conda does not compile the package, it only downloads compiled packages. The disadvantage of Conda is that the package needs to have a Conda build recipe. Many Conda build recipes already exist, but they are less common than the `setup.py` that generally all Python packages have.
 
-There are two main distributions of Conda: [Anaconda](http://continuum.io/downloads) and [Miniconda](http://conda.pydata.org/miniconda.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
+There are two main distributions of Conda: [Anaconda](https://www.anaconda.com/products/individual) and [Miniconda](http://conda.pydata.org/miniconda.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
 
 For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda is very robust.
 A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues.
@@ -95,7 +95,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
     * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
     * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
     * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
-* [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
+* [Build using conda](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/index.html)
   * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
   * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 * [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
@@ -127,7 +127,7 @@ Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`]
 
 ## Testing
 
-* [pytest](http://pytest.org/latest/) is a full featured Python
+* [pytest](https://docs.pytest.org/) is a full featured Python
 testing tool. You can use it with `unittest`.
 [Pytest intro](http://pythontesting.net/framework/pytest/pytest-introduction/)
 * [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
@@ -304,7 +304,7 @@ We recommend `flask`.
 ### NLP/text mining
 
 * [nltk](http://www.nltk.org/) Natural Language Toolkit
-* [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
+* [Pattern](https://github.com/clips/pattern): web/text mining module
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
 ### Creating programs with command line arguments
