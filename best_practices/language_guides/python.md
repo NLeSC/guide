@@ -113,18 +113,15 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 
 ## Testing
 
-* [pytest](http://pytest.org/latest/) is a full featured Python
-testing tool. You can use it with `unittest`.
-[Pytest intro](http://pythontesting.net/framework/pytest/pytest-introduction/)
-* [Using mocks in Python](https://docs.python.org/3/library/unittest.mock.html)
-* [unittest](https://docs.python.org/3/library/unittest.html) is a
-framework available in Python Standard Library.
-[Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
-* [doctest](https://docs.python.org/3/library/doctest.html) searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown. Always use this if you have example code in your documentation to make sure your examples actually work.
+Use [pytest](https://docs.pytest.org/) as the basis for your testing setup.
+This is preferred over the `unittest` standard library, because it has a much more concise syntax and supports many useful features.
 
-Using `pytest` is preferred over `unittest`, `pytest` has a much more concise syntax and supports many useful features.
+It [has many plugins](https://docs.pytest.org/en/stable/plugins.html).
+For linting, we have found `pytest-pycodestyle`, `pytest-mypy` and `pytest-flake8` to be useful.
+Other plugins we had good experience with are `pytest-cov`, `pytest-html`, `pytest-xdist` and `pytest-nbmake`.
 
-Please make sure the command `python setup.py test` can be used to run your tests. When using `pytest`, this can be easily configured as described in the [`pytest` documentation](https://docs.pytest.org/en/latest/goodpractices.html#integrating-with-setuptools-python-setup-py-test-pytest-runner).
+Creating mocks can also be done within the pytest framework by using the `mocker` fixture provided by the `pytest-mock` plugin or by using `MagicMock` and `patch` from `unittest`.
+For a general explanation about mocking, see the [standard library docs on mocking](https://docs.python.org/3/library/unittest.mock.html).
 
 ### Code coverage
 
