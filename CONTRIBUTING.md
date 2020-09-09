@@ -41,3 +41,8 @@ If you have made a significant contribution to the guide, please make sure to ad
 ## Chapter Owners
 
 To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
+
+## Create a PDF file
+
+We host a PDF version of the guide on [Zenodo](https://doi.org/10.5281/zenodo.4020565).
+To update it a [new release](https://github.com/NLeSC/guide/releases) needs to be made of the guide. This will trigger a GitHub action to create a new Zenodo version with the PDF file.
