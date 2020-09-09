@@ -1,10 +1,8 @@
 name: Generate PDF
 
 on:
-  push:
-    branches: [pdf]
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
 
 jobs:
   generate:
@@ -16,9 +14,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - name: Install converter + uploader
+      - name: Install converter + uploadergit
         run: npm install docsify-pdf-converter @iomeg/zenodo-upload
       - name: Generate PDF
         run: npx docsify-pdf-converter
       - name: Upload PDF to Zenodo
-        run: npx --package @iomeg/zenodo-upload zenodo_upload --sandbox 351033 guide-nlesc.pdf ${{ github.ref }} ${{ secrets.ZENODO_TOKEN }}
+        run: npx --package @iomeg/zenodo-upload zenodo_upload --sandbox 351033 guide-nlesc.pdf "${github_ref:10}" ${{ secrets.ZENODO_TOKEN }}
+        env:
+          github_ref: ${{ github.ref }}
