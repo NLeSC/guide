@@ -2,8 +2,9 @@ name: Generate PDF
 
 on:
   push:
-    branches:
-        - master
+    branches: [pdf]
+  # release:
+  #   types: [published]
 
 jobs:
   generate:
@@ -13,12 +14,12 @@ jobs:
       - name: Change absolute paths to relative
         run: perl -pi -e 's@\]\(\/@\]\(@' _sidebar.md
       - name: Install converter
-        run: npm install docsify-pdf-converter
+        run: npm install docsify-pdf-converter @iomeg/zenodo-upload
       - name: Generate PDF
         run: npx docsify-pdf-converter
-      - name: Commit PDF
-        uses: EndBug/add-and-commit@v4
-        with:
-          add: guide-nlesc.pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload PDF to Zenodo
+        run: >
+          npx --package @iomeg/zenodo-upload zenodo_upload
+           --sandbox
+           351033 guide-nlesc.pdf
+           ${{ github.ref }} ${{ secrets.ZENODO_TOKEN}}
