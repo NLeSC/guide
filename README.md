@@ -12,4 +12,4 @@ If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.
 
 To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
 
-The guide is best read online, but there is a [PDF document](guide-nlesc.pdf) for offline reading.
+The guide is best read online, but there is a [PDF document](https://doi.org/10.5281/zenodo.4020564) for offline reading.
