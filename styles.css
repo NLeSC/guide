@@ -1,0 +1,20 @@
+/* General theme*/
+body {
+    --theme-color: #009FE3;
+}
+
+/* Sidebar element order */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .app-name {
+    order: 1;
+    margin: 10px 10px 0 10px;
+}
+.sidebar .search {
+    order: 2
+}
+.sidebar .sidebar-nav {
+    order: 3
+}
