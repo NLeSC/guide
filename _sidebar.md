@@ -12,6 +12,7 @@
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
    * [Language Guides](/best_practices/language_guides/languages_overview.md)
+      * [Bash](/best_practices/language_guides/bash.md)
       * [Java](/best_practices/language_guides/java.md)
       * [JavaScript and TypeScript](/best_practices/language_guides/javascript.md)
       * [Python](/best_practices/language_guides/python.md)
