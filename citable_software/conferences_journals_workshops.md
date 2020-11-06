@@ -19,7 +19,7 @@ This is a list of Conferences, Journals, and Workshops related to eScience.
 * [PASC Conference](https://pasc19.pasc-conference.org)
 
 
-There is also a [community page with a list of upcoming events](https://www.esciencecenter.nl/community) on the eScience Center website.
+There is also a [page with a list of upcoming events](https://www.esciencecenter.nl/events/) on the eScience Center website.
 
 ## Journals
 
