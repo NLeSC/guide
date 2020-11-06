@@ -32,13 +32,14 @@ As this kind of documentation is only valuable if engineers can freely share the
 
 ## Support
 
-The Netherlands eScience Center provides very limited support for software. During a project we make every effort to create low-maintenance code by building (as much as possible) on top of packages supported by a large community and putting a lot of effort into documenting and testing software. Also, by using standard file formats and API's we try to limit the effort required to maintain software, and make it easier to continue development.
+The Netherlands eScience Center provides very limited support for software outside of projects. We have a strong preference for building top of and contributing to existing packages supported by a community -- do not reinvent the wheel!
+During a project we make every effort to create low-maintenance code and put a lot of effort into documenting and testing software. Also, by using standard file formats and API's we try to limit the effort required to maintain software, and make it easier to continue development.
 
 After a project has finished the eScience Center will in principle not further support the software. Reported bugs in our own software will of course have a high chance of being looked at, but this also has its limits. We cannot in any way contribute to the administration of infrastructure needed after a project has ended.
 
 Because of the lack of support after projects it is a good idea to start to think about and make agreements on where software will land and who will maintain infrastructure at the very beginning of a project. The project proposal should already contain a [plan](https://doi.org/10.5281/zenodo.1451750). When the software will no longer be maintained, this should be clearly indicated in the repository. For example, a warning should be added in the `README`, of the repository, such as:
 
-```Markdown
+```
 > This repository is currently not maintained. We welcome people to fork this repository for further development and maintenance.
 ```
 
