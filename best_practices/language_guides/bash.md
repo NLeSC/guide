@@ -155,9 +155,9 @@ line in text file and e.g. running the file with `bash some-file.sh`.
 However, doing this is only recommended if there really are no other options.
 If you have the option to write a Python script instead, that is the recommended
 way to go.
-This will bring you all the advantages of a fully-fledged programming
-language and Python is the recommended programming language at the
-Netherlands eScience Center.
+This will bring you all the advantages of a fully-fledged programming language
+(such as libraries, frameworks for testing and documentation) and Python is the
+recommended programming language at the Netherlands eScience Center.
 If you do not mind having an extra dependency and would like to use the features
 and commands available in the shell from Python, the
 [sh](https://amoffat.github.io/sh/) library is a nice option.
@@ -188,6 +188,7 @@ set -e
 
 ## Further resources
 
+- [Bash Tutorial](https://swcarpentry.github.io/shell-novice/)
 - [Bash Cheat sheet](https://devhints.io/bash)
 - The [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html) or use `man bash`
 - [Oh My Zsh](https://ohmyz.sh/) offers an extensive set of themes and shortcuts for the Zsh
