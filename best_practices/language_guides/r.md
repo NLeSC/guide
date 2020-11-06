@@ -58,11 +58,11 @@ From a computer science perspective it is probably best to adhere to the <- conv
 # Recommended additional packages and libraries
 
 ## Plotting with basic functions and ggplot2 and ggvis
-For a generic impression of what R can do see: http://www.r-graph-gallery.com/all-graphs/
+For a generic impression of what R can do see: https://www.r-graph-gallery.com/all-graphs
 
 The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. There is a [Statmethods.net tutorial with some examples of plotting options in R](http://www.statmethods.net/graphs/index.html).
 
-However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](http://ggplot2.org). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](http://www.statmethods.net/advgraphs/ggplot2.html).
+However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](https://ggplot2.tidyverse.org/). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](https://www.statmethods.net/advgraphs/ggplot2.html).
 
 In summary, it is good to familiarize yourself with both the basic plotting functions as well as the contributed graphics packages. In theory, the basic plot functions can do everything that ggplot2 can do, it is mostly a matter of how much you like either syntax and how much freedom you need to tailor the visualisation to your use case.
 

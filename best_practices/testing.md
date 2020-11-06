@@ -12,7 +12,7 @@ These points do not apply to prototype / throwaway phase.
 ## unit tests
 
 * [unit tests](https://en.wikipedia.org/wiki/Unit_testing)
-* [Guide: Writing Testable Code](http://misko.hevery.com/code-reviewers-guide/)
+* [Guide: Writing Testable Code](https://raw.githubusercontent.com/jptiancai/Guide-Writing-Testable-Code/master/Guide-Writing%20Testable%20Code.pdf)
 
 ## Continuous integration
 
@@ -47,7 +47,7 @@ For triggering nightly builds in GitHub Actions [Cron jobs](https://docs.github.
 
 ### Polling tools
 
-All major CI services support some form of cctray.xml feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://bitbucket.org/Anay/buildnotify/wiki/Home), [CCMenu](http://ccmenu.org/) and [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) give you a tray icon that turns red when a build fails.
+All major CI services support some form of cctray.xml feed. This feed can be read by polling tools to automatically keep an eye on your project builds. For instance, [BuildNotify](https://anaynayak.github.io/buildnotify/), [CCMenu](http://ccmenu.org/) and [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) give you a tray icon that turns red when a build fails.
 
 ## Code coverage
 
