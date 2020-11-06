@@ -152,6 +152,7 @@ For further inspiration, see this
 It is possible to write bash scripts.
 This is done by writing the commands that you would normally use on the command
 line in text file and e.g. running the file with `bash some-file.sh`.
+
 However, doing this is only recommended if there really are no other options.
 If you have the option to write a Python script instead, that is the recommended
 way to go.
@@ -162,7 +163,14 @@ If you do not mind having an extra dependency and would like to use the features
 and commands available in the shell from Python, the
 [sh](https://amoffat.github.io/sh/) library is a nice option.
 
-If you really must write a bash script, always use
+Disclaimer: if you are an experienced Bash developer, there might be situations
+where using a Bash script solves your problem faster or in a more portable way
+than a Python script.
+Do take take a moment to think about whether such a solution is easy to
+contribute to for collaborators and will be easy to maintain in the future, as
+the number of features, supported systems, and code paths grows.
+
+When writing a bash script, always use
 [`shellcheck`](https://www.shellcheck.net/)
 to make sure that your bash script is as likely to do what you think it should
 do as possible.
