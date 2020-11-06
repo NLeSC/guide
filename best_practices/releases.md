@@ -1,6 +1,6 @@
 ## Release
 
-Releases are a way to mark or point to a particular milestone in software development. This is useful for users and collaborators, e.g. I found a bug running version x. For publications that refer to software, refering to a specific release enhances the reproducability. 
+Releases are a way to mark or point to a particular milestone in software development. This is useful for users and collaborators, e.g. I found a bug running version x. For publications that refer to software, refering to a specific release enhances the reproducability.
 
 [Apache foundation](http://www.apache.org/) describes their [release policy](http://www.apache.org/dev/release.html).
 
@@ -68,4 +68,4 @@ Create a DOI for each release see [Making software citable](../citable_software/
 ### Dissemination
 
 When you have a first stable release, or a subsequent major releases, let the world know!
-Inform your coordinator and our Communications Advisor (Lode) so we can write news item on our site, add it to the annual report, etc.
+Inform your coordinator and our Communications Advisor so we can write news item on our site, add it to the annual report, etc.

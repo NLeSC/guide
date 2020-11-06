@@ -45,7 +45,7 @@ one command install ([pip](https://pypi.python.org/pypi/pip), [npm](https://www.
 package in package manager ([pypi](https://pypi.python.org/pypi), [npm](https://www.npmjs.com/) etc)|||X
 discuss release cycle with coordinator||X|
 release quick-scan by other engineer (is documentation understandable, can it be installed, etc)|||X
-notify Lode for dissemination (news item on site / annual report, etc)|||X
+notify our Communications Advisor for dissemination (news item on site / annual report, etc)|||X
 
 ## Licensing
 
@@ -64,7 +64,6 @@ project discussion list (github issues, mailing list, not private email) for all
 for services: a demo docker image in dockerhub (with Dockerfile)|||X
 for websites: an online demo|||X
 Pitch presentation (1 to 3 slides)||X|
-Few sentences about the project for [the technology pages on our website](https://www.esciencecenter.nl/technology)|||X
 
 ## Testing
 
