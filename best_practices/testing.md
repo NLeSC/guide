@@ -19,27 +19,21 @@ These points do not apply to prototype / throwaway phase.
 To run testing, perform code quality analysis and build artifacts a Continuous Integration server can be used. The build will be performed every git push and pull request. Using a CI server will help with `it works for me` problems.
 The Netherlands eScience Center uses continuous integration services as much as possible when creating code.
 
-[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI), public on [Travis](https://travis-ci.org/)
+[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI)
 
 CI meaning: compile, unit test, integration test, quality analysis etc.
 Once there is some build process established and tests set up, CI should be configured too.
 It will save you a lot of time on debugging and allow for much quicker problem diagnosis.
 
-### Travis-CI
+### Online services for continuous integration
 
-The Netherlands eScience Center public repositories should be built with [Travis-CI](https://travis-ci.org).
-Travis-CI is free for Open Source projects.
-A Github repository can be added to Travis-CI by a Github user with admin right on the repository.
-At the moment Travis-CI performs builds in Ubuntu and OS X operating systems.
+- [AppVeyor](https://www.appveyor.com/)
+- [CircleCI](https://circleci.com/)
+- [GitHub Actions](https://github.com/features/actions)
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
-[Getting started with Travis CI](http://docs.travis-ci.com/user/getting-started/)
-
-PS. If you want to get mails from Travis-CI then you have to login at https://travis-ci.org
-
-### AppVeyor
-
-To build repositories inside the Microsoft Windows operation system use [AppVeyor](https://www.appveyor.com/).
-AppVeyor is free for Open Source projects.
+The Netherlands eScience Center public repositories should be built with a
+free public continous integration service.
 
 ### Nightly builds
 
@@ -49,7 +43,7 @@ Possible reasons for nightly builds:
 * Make sure the repository stays working even if there are no changes pushed to the repository, but it's dependencies are changing possibly breaking the code in the repository.
 * The build performs an action that needs to be performed daily like updating a cache.
 
-For triggering nightly builds in Travis-CI [Cron jobs](https://docs.travis-ci.com/user/cron-jobs/) can be used.
+For triggering nightly builds in GitHub Actions [Cron jobs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule) can be used.
 
 ### Polling tools
 
@@ -76,7 +70,7 @@ Below is a short list of services and their strengths.
 
 #### [Codecov](https://codecov.io)
 
-Shows unified coverage and separate coverage for [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix) e.g. different Python versions.
+Shows unified coverage and separate coverage for [build matrix](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix) e.g. different Python versions.
 For example project see https://codecov.io/gh/xenon-middleware/xenon, with a Java 7/8 and Linux/Windows/OSX OS build matrix.
 
 #### [Coveralls](https://coveralls.io)

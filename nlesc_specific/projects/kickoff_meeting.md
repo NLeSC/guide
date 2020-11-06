@@ -21,4 +21,3 @@ In the Netherlands eScience Center introduction presentation several important t
 * Intellectual property (IP).
 * Communication by the Netherlands eScience Center (project page at eScience Center website, pitches, etc.).
 * Software and software quality.
-* Role of eStep, knowledge base, etc.

@@ -4,7 +4,7 @@ R is a functional programming language and software environment for statistical 
 ## Philosophy and typical use cases
 R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), machine learning, image analyses, and natural language processing. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment in science.
 
-One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org). 
+One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
 * Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://www.rstudio.com/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
@@ -14,7 +14,7 @@ A few remarks for readers familiar with Python:
 Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R see the following resources:
 * [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham,
 * [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham,
-* [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto. 
+* [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto.
 
 Further, stackoverflow and standard search engines can lead you to answers to issues.
 
@@ -123,7 +123,7 @@ R function documentation offers plenty of space to document the functionality, i
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
 ### Continuous integration
-Continuous integration can be done with for example [Travis], (https://travis-ci.org/), see [Chapter](../testing.md) on testing.
+Continuous integration should be done with an [online service](../testing.md#Online-services-for-continuous-integration), see [Chapter](../testing.md) on testing.
 
 ### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)

@@ -5,7 +5,7 @@ For all project longer than a year (typically full projects and alliances), the 
 The goals are as follows:
 
 * Progress of project relative to planning.
-* Innovation, research, deliverables, eStep.
+* Innovation, research, deliverables.
 * Identify key success stories/messages to share with key opinion formers.
 * Ensure efficient use of engineer resources, identify bottlenecks and areas to improve.
 * Financial status.

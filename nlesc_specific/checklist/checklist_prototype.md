@@ -1,6 +1,6 @@
-# Checkmatrix for 'eStep friendly' projects.
+# Checkmatrix for software projects.
 
-Printable check-list -- complete this checklist to ensure your project is eStep-ready. If you can tick all boxes on this form, your project should be included as an eStep *Prototype* project.
+Printable check-list -- complete this checklist to ensure your project is in good shape.
 
 
 ## Version Control

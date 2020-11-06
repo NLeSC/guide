@@ -1,6 +1,6 @@
-# Checkmatrix for 'eStep friendly' projects.
+# Checkmatrix for software projects.
 
-Printable check-list -- complete this checklist to ensure your project is eStep-ready. If you can tick all boxes on this form, your project should be included as an eStep *Mature* project.
+Printable check-list -- complete this checklist to ensure your project is in good shape.
 
 
 ## Version Control
@@ -51,7 +51,7 @@ Item / Phase | Done      |
 :------------|:---------:|
 [unit tests](https://en.wikipedia.org/wiki/Unit_testing)|
 build tests|
-[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), public on [Travis](https://travis-ci.org/)|
+[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), using a [publicly available service](../../best_practices/testing.md#Online-services-for-continuous-integration)
 continuous code coverage and code quality metrics public, minimum 70% coverage required|
 end2end test for (web) user interfaces|
 track dependencies (with [David](https://david-dm.org/) or other service depending on codebase language)|
