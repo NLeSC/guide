@@ -11,6 +11,7 @@
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
+   * [UX - User Experience](/best_practices/user_experience.md)
    * [Language Guides](/best_practices/language_guides/languages_overview.md)
       * [Java](/best_practices/language_guides/java.md)
       * [JavaScript and TypeScript](/best_practices/language_guides/javascript.md)
