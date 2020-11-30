@@ -13,7 +13,7 @@ User Experience Design (UX) is a broad, holistic science that combines many cogn
 
 ### UX disciplines
 
-At eScience Center, we follow the principles and indications taught by [interaction-design.org](https://www.interaction-design.org/literature) when going through the iteration process of creating research software.
+The principles and indications taught by [interaction-design.org](https://www.interaction-design.org/literature) can be useful in the process of creating research software.
 
 The main UX disciplines are:
 
@@ -24,10 +24,13 @@ The main UX disciplines are:
 5.  **Accessibility evaluation:** measuring the quality of a product or system to be accessed irrespective of personal abilities and device properties.
 6.  **Visual design**: designing the visual attributes of a product or system in an aesthetically pleasing way.
 
-<img src="https://user-images.githubusercontent.com/4195550/99543543-92942800-29b3-11eb-8def-940592bb1977.png" width="700" />
+The known UX umbrella diagram represents the different disciplines of UX:
+
+<img src="https://user-images.githubusercontent.com/4195550/100587866-681a6700-32f1-11eb-87d2-c40616d45c4f.png" width="800" />
+ 
+*Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
 
 
-The known UX umbrella diagram represents the different disciplines of UX.
 
 ### Design Thinking
 Design thinking is an approach, mindset, or ideology for product development. According to the [IxF(Interaction Design Foundation](https://interaction-design.org), Design thinking achieves all these advantages at the same time:
@@ -36,9 +39,11 @@ Design thinking is an approach, mindset, or ideology for product development. Ac
 *   It leverages the collective expertise and establishes a shared language and buy-in amongst your team.
 *   It encourages innovation by exploring multiple avenues for the same problem.
 
-<img src="https://user-images.githubusercontent.com/4195550/99543973-13532400-29b4-11eb-9179-f74db459dfbe.png" width="700" />
+<img src="https://user-images.githubusercontent.com/4195550/99543973-13532400-29b4-11eb-9179-f74db459dfbe.png" width="700"/>
 
-You can find more information about Design Thinking on the [IxF page](https://www.interaction-design.org/literature/topics/design-thinking)
+*Author/Copyright holder: Teo Yu Siang and Interaction Design Foundation. Copyright licence: CC BY-NC-SA 3.0*
+
+You can find more information about Design Thinking on the [IxF page](https://www.interaction-design.org/literature/topics/design-thinking).
 
 ### Designing software
 
@@ -49,9 +54,10 @@ Heuristics, or commonly known 'as the rule of thumb,' play a significant role wh
 When delivering software iteratively, one of the common approaches to follow is to define a Minimum Value Product that contains the minimum requirements. Often is forgotten in this approach to deliver software that attracts and engages the users. When developing research software, researchers should present the new and innovative outcomes in a way that feels comfortable and easy to use from the very beginning, eliminating any cognitive burden that the software's interaction may include.
  
  <img src="https://user-images.githubusercontent.com/4195550/99543638-ad669c80-29b3-11eb-92c6-1754fa9c837c.png" width="800" />
+ 
+ *Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
 
-
-MLP approach **focuses on essential features** instead of the bare minimum expected from a class software. The outcomes mush contains all elements in the pyramid being functional, reliable, usable, and pleasurable.
+While MVP (Minumun Product Value) focuses on provide users with a way to explore the product and understand its main intent, MLP (Minimun Loveable Product) approach focuses on essential features instead of the bare minimum expected from a class software. Going beyond the bare functionality, the attention is driven towards a great user experience. The outcomes mush contains all elements in the pyramid being **functional, reliable, usable, and pleasurable.**
 
 
 ### Tools and resources
