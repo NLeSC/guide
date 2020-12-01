@@ -58,3 +58,11 @@ For researchers outside the Netherlands alternative data storing platforms inclu
 -	https://www.re3data.org
 -	https://zenodo.org/
 -	http://rd-alliance.github.io/metadata-directory/standards/
+
+## Research Data Management Resources
+### 23 Things: Support for Research Data
+- [Updated version for the Dutch Community by the LCRDM task group RDA/23 Things](https://doi.org/10.5281/zenodo.3465896
+)
+- [Audience-specific versions by the Dutch Community](https://doi.org/10.5281/zenodo.3773663)
+- [Field guides to Research Data Management an intteractive tool](https://23things.sites.uu.nl/)
+
