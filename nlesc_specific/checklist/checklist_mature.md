@@ -1,6 +1,6 @@
-# Checkmatrix for 'eStep friendly' projects.
+# Checkmatrix for software projects.
 
-Printable check-list -- complete this checklist to ensure your project is eStep-ready. If you can tick all boxes on this form, your project should be included as an eStep *Mature* project.
+Printable check-list -- complete this checklist to ensure your project is in good shape.
 
 
 ## Version Control
@@ -24,7 +24,7 @@ one command install ([pip](https://pypi.python.org/pypi/pip), [npm](https://www.
 package in package manager ([pypi](https://pypi.python.org/), [npm](https://www.npmjs.com/) etc)|
 discuss release cycle with coordinator|
 release quick-scan by other engineer (is documentation understandable, can it be installed, etc)|
-notify Lode for dissemination (news item on site / annual report, etc)|
+notify our Communications Advisor for dissemination (news item on site / annual report, etc)|
 
 ## Licensing
 
@@ -43,7 +43,6 @@ project discussion list (github issues, mailing list, not private email) for all
 for services: a demo docker image in dockerhub (with Dockerfile)|
 for websites: an online demo|
 Pitch presentation (1 to 3 slides)|
-Few sentences about the project for [the technology pages on our website](https://www.esciencecenter.nl/technology)|
 
 ## Testing
 
@@ -51,7 +50,7 @@ Item / Phase | Done      |
 :------------|:---------:|
 [unit tests](https://en.wikipedia.org/wiki/Unit_testing)|
 build tests|
-[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), public on [Travis](https://travis-ci.org/)|
+[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), using a [publicly available service](../../best_practices/testing.md#Online-services-for-continuous-integration)
 continuous code coverage and code quality metrics public, minimum 70% coverage required|
 end2end test for (web) user interfaces|
 track dependencies (with [David](https://david-dm.org/) or other service depending on codebase language)|

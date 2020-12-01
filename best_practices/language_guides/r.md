@@ -4,7 +4,7 @@ R is a functional programming language and software environment for statistical 
 ## Philosophy and typical use cases
 R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), machine learning, image analyses, and natural language processing. The R syntax is similar in compactness and readability as python and matlab by which it serves as a good prototyping environment in science.
 
-One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org). 
+One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
 * Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://www.rstudio.com/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
@@ -14,7 +14,7 @@ A few remarks for readers familiar with Python:
 Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R see the following resources:
 * [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham,
 * [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham,
-* [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto. 
+* [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto.
 
 Further, stackoverflow and standard search engines can lead you to answers to issues.
 
@@ -58,11 +58,11 @@ From a computer science perspective it is probably best to adhere to the <- conv
 # Recommended additional packages and libraries
 
 ## Plotting with basic functions and ggplot2 and ggvis
-For a generic impression of what R can do see: http://www.r-graph-gallery.com/all-graphs/
+For a generic impression of what R can do see: https://www.r-graph-gallery.com/all-graphs
 
 The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. There is a [Statmethods.net tutorial with some examples of plotting options in R](http://www.statmethods.net/graphs/index.html).
 
-However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](http://ggplot2.org). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](http://www.statmethods.net/advgraphs/ggplot2.html).
+However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](https://ggplot2.tidyverse.org/). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](https://www.statmethods.net/advgraphs/ggplot2.html).
 
 In summary, it is good to familiarize yourself with both the basic plotting functions as well as the contributed graphics packages. In theory, the basic plot functions can do everything that ggplot2 can do, it is mostly a matter of how much you like either syntax and how much freedom you need to tailor the visualisation to your use case.
 
@@ -123,7 +123,7 @@ R function documentation offers plenty of space to document the functionality, i
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
 ### Continuous integration
-Continuous integration can be done with for example [Travis], (https://travis-ci.org/), see [Chapter](../testing.md) on testing.
+Continuous integration should be done with an [online service](../testing.md#Online-services-for-continuous-integration), see [Chapter](../testing.md) on testing.
 
 ### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
