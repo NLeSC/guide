@@ -18,6 +18,7 @@ Overall Maintainer: Bouwe Andela
   * R: Vincent van Hees
   * C and C++: Johan Hidding and Patrick Bos
   * Fortran: Gijs van den Oord
+  * UX: Jesus Garcia
 * Intellectual Property: Lourens Veen
 * Publishing Scientific Results: Willem van Hage
 * Access to e-Infrastructure: Jason Maassen
