@@ -137,7 +137,8 @@ Approach 1 is very much recommended, but if you can't get it to work, you can de
 In this step, we will create an ssh tunnel that we will use to forward
 our http traffic, effectively turning the headnode of the DAS into your
 private proxy server. Make sure you that you can connect to the headnode
-of the DAS, for example using a VPN. 
+of the DAS, for example using a VPN.
+If you are using another ssh host in between, it makes sense to configure your SSH client with a proxyjump or use proxycommand.
 The following command is rather handy, you might want to
 save it in your bashrc:  
 `` alias dasproxy="ssh -fNq -D 8080 <username>@fs0.das5.cs.vu.nl" ``  
@@ -148,8 +149,9 @@ Option `-f` stands for background mode, which means the process started with thi
 After executing the above ssh command, start your local browser and
 configure your browser to use the proxyserver. Manually configure the proxy 
 as a "Socks v5" proxy with the address 'localhost' and port 8080. 
+Do not forget to also tick the box to also proxy DNS traffic over this proxy.
 
-After changing this setting navigate to the page `http://node0XX:8888/`, 
+After changing these settings navigate to the page `http://node0XX:8888/`, 
 where `node0XX` should be replaced with the hostname of the node you
 are running the notebook server on. Now in the browser open your
 notebook and get started using notebooks on a remote server!
