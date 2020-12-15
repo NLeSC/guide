@@ -1,0 +1,26 @@
+name: Link Checker Example Command
+on: push
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: List content
+        run: find ${{ github.workspace }}
+      - name: Link Checker
+        uses: peter-evans/link-checker@v1
+        id: lc
+        with:
+          args: -v -t 60 -c 16 -d /github/workspace -r *
+      - name: Count broken links
+        run: |
+            broken_max=10
+            broken=$(grep ERROR ./link-checker/out.md | wc -l)
+
+            if [ "$broken" -gt "$broken_max" ]; then
+                echo "Number of broken links (${broken}) exceeds maximum allowed number (${broken_max})."
+                exit 1
+            else
+                echo "Number of broken links (${broken}) less than or equal to maximum allowed number (${broken_max})."
+                exit 0
+            fi
