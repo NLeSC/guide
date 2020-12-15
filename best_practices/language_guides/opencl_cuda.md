@@ -9,7 +9,7 @@
    * Beyond the Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5376-Scudiero_Bootcamp2.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5376.html)]
    * Collaborative Access Patterns [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S6181-Scudiero_Bootcamp3.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2016/video/s6181-tony-scudiero-bootcamp-3.mp4)]
  * CUB: CUDA Collective primitives library [[Git](https://github.com/NVlabs/cub)] [[Slides](http://on-demand.gputechconf.com/gtc/2015/presentation/S5617-Duane-Merrill.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5617.html)]
- * Best Practices Guide by PRACE [[HTML](http://www.prace-ri.eu/best-practice-guide-gpgpu-january-2017/#gpu_programming)] [[PDF](http://www.prace-ri.eu/IMG/pdf/Best-Practice-Guide-GPGPU-1.pdf)]
+ * Best Practices Guide by PRACE [[HTML](https://prace-ri.eu/training-support/best-practice-guides/best-practice-guide-gpgpu/)] [[PDF](https://prace-ri.eu/wp-content/uploads/Best-Practice-Guide_GPGPU.pdf)]
 
 ## Documentation
 * OpenCL specification [[1.2](https://www.khronos.org/registry/cl/sdk/1.2/docs/man/xhtml/)] [[2.0](https://www.khronos.org/registry/cl/sdk/2.0/docs/man/xhtml/)]
@@ -17,14 +17,14 @@
    * [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
    * [CUDA Runtime API](http://docs.nvidia.com/cuda/cuda-runtime-api/index.html)
 
-   
+
 ## Source-to-source translation between CUDA and OpenCL
 * vtsynergy (https://github.com/vtsynergy)
    * This was shown to work on DAS5 after copying /usr/include/limits.h to $PWD and commenting out the lines around # include_next (122-125) :    
    "cu2cl-tool host_code.cc device_code.cu  -- -DGPU_ON -I$PWD:/usr/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include".
 * cutocl (https://github.com/benvanwerkhoven/cutocl)
 
-   
+
 ## Overview of libraries
 * OpenCL-based libraries
   * [CLBlast](https://github.com/CNugteren/CLBlast)
@@ -65,5 +65,3 @@
  * Generic Auto Tuners:
      * [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner) (Python)
      * [CLTune](https://github.com/CNugteren/CLTune) (C++)
-
-

@@ -48,7 +48,7 @@ Test coverage can be measured with [Jacoco](http://eclemma.org/jacoco/). For run
 
 ## Code quality analysis tools and services
 
-### [SonarQube](https://about.sonarqube.com/)
+### [SonarQube](https://about.sonarqube.org/)
 
 SonarQube is an open platform to manage code quality which can also show code coverage and count test results over time.
 SonarQube can analyze Java, C, C++, Python and Javascript.
@@ -93,7 +93,7 @@ There are currently no Java templates available. See [The Xenon repo on GitHub](
 
 We use [Bintray](https://bintray.com/howbintrayworks) to publish packages.
 
-To make the package easy for users to install, the packages can be added to [JCenter](http://jcenter.bintray.com/).
+To make the package easy for users to install, the packages can be added to [JCenter](https://jcenter.bintray.com/).
 JCenter is the largest repository in the world for Java and Android OSS libraries, packages and components.
 In a Gradle build file the JCenter repository can be used by adding:
 ```

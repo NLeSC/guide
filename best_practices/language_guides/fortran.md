@@ -31,7 +31,7 @@ completion and refactoring tools one might consider the [CBFortran](http://cbfor
 ## Coding style conventions
 
 If working on an existing code base, adopt the existing conventions. Otherwise we recommend the
-standard conventions, described in the [official documentation](http://www.fortran90.org/src/best-practices.html#fortran-style-guide) and the [Fortran company style guide](http://www.fortran.com/Fortran_Style.pdf). We would like to add the following advice:
+standard conventions, described in the [official documentation](http://www.fortran90.org/src/best-practices.html#fortran-style-guide) and the [Fortran company style guide](http://www.fortran.com/). We would like to add the following advice:
 
 * Use free-form text input style (the default), with a maximal line width well below the 132 characters imposed by the Fortran90 standard.
 * When a method does not need to alter any data in any module and returns a single value, use a function for it, otherwise use a subroutine. Minimize the latter to reasonable extent.

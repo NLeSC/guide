@@ -16,12 +16,12 @@ When starting a new Python project, consider using our [Python template](https:/
 
 Python 2 and Python 3 have co-existed for a long time, but [starting from 2020, development of Python 2 is officially abandoned](https://www.python.org/doc/sunset-python-2/), meaning Python 2 will no longer be improved, even in case of security issues.
 If you are creating a new package, use Python 3.
-It is possible to write Python that is both Python 2 and Python 3 compatible (e.g. using [Six](https://pythonhosted.org/six/)), but only do this when you are 100% sure that your package won't be used otherwise.
+It is possible to write Python that is both Python 2 and Python 3 compatible (e.g. using [Six](https://pypi.org/project/six/)), but only do this when you are 100% sure that your package won't be used otherwise.
 If you need Python 2 because of old, incompatible Python 2 libraries, strongly consider upgrading those libraries to Python 3 or replacing them altogether.
 Building and/or using Python 2 is probably discouraged even more than, say, using Fortran 77, since at least Fortran 77 compilers are still being maintained.
 
 * [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
-* [Six](https://pythonhosted.org/six/): Python 2 and 3 Compatibility Library
+* [Six](https://pypi.org/project/six/): Python 2 and 3 Compatibility Library
 * [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
 * [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
@@ -116,7 +116,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 * [pytest](http://pytest.org/latest/) is a full featured Python
 testing tool. You can use it with `unittest`.
 [Pytest intro](http://pythontesting.net/framework/pytest/pytest-introduction/)
-* [Using mocks in Python](http://www.drdobbs.com/testing/using-mocks-in-python/240168251)
+* [Using mocks in Python](https://docs.python.org/3/library/unittest.mock.html)
 * [unittest](https://docs.python.org/3/library/unittest.html) is a
 framework available in Python Standard Library.
 [Dr.Dobb's on Unit Testing with Python](http://www.drdobbs.com/testing/unit-testing-with-python/240165163)
@@ -260,7 +260,7 @@ you can [add filters that automatically remove unneeded noise from your notebook
 
 * [psycopg](http://initd.org/psycopg/) is an [PostgreSQL](http://www.postgresql.org) adapter
 * [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
-* [monetdb.sql](https://www.monetdb.org/Documentation/Manuals/SQLreference/Programming/Python)
+* [monetdb.sql](https://www.monetdb.org/Documentation/SQLreference/Programming/Python)
 is [monetdb](https://www.monetdb.org) Python client
 * [pymongo](http://api.mongodb.org/python/current/#) allows for work with [MongoDB](http://www.mongodb.com) database
 * [py-leveldb](https://code.google.com/p/py-leveldb/) are thread-safe Python bindings for [LevelDb](https://github.com/google/leveldb)
@@ -290,7 +290,7 @@ We recommend `flask`.
 ### NLP/text mining
 
 * [nltk](http://www.nltk.org/) Natural Language Toolkit
-* [Pattern](http://www.clips.ua.ac.be/pattern): web/text mining module
+* [Pattern](https://github.com/clips/pattern): web/text mining module
 * [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
 ### Creating programs with command line arguments

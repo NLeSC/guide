@@ -69,7 +69,7 @@ centralised system is used).
 * Reference: http://gitref.org/index.html
 * In depth book: [Version Control with Git](http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387/ref=sr_1_1?ie=UTF8&qid=1347950111&sr=8-1&keywords=git)
 * for those who know subversion and want to learn git: [Git - SVN Crash
-Course](http://git-scm.com/course/svn.html)
+Course](https://git.wiki.kernel.org/index.php/GitSvnCrashCourse)
 
 ## Choose one branching model
 

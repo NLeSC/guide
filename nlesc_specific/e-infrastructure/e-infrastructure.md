@@ -28,7 +28,7 @@ The Netherlands eScience Center also has access to the infrastructure provided b
 
 ### Available systems at SURF
 
-Here we list some of the most likely to be used resources at SURF. See the [overview of all SURF services and products](https://www.surf.nl/en/services-and-products), and [detailed information on the SURFsara infrastructure](https://userinfo.surfsara.nl/systems).
+Here we list some of the most likely to be used resources at SURF. See the [overview of all SURF services and products](https://www.surf.nl/en/services-and-support/services-provided-by-surf), and [detailed information on the SURFsara infrastructure](https://userinfo.surfsara.nl/systems).
 
 SURFsara:
 

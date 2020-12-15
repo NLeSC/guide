@@ -14,7 +14,7 @@ Among others, he mentions the following style guides:
 
 * [Google's style guide for JavaScript](https://google.github.io/styleguide/javascriptguide.xml);
 * [Crockford's style guide](http://javascript.crockford.com/code.html) integrates with [JSLint](http://www.jslint.com/), which in turn is available as a plugin for Eclipse.
-* Zakas has also written [an excellent book](http://shop.oreilly.com/product/0636920025245.do) on writing maintainable JavaScript, also within the context of working in teams. The appendix contains a style guide with explanation.
+* Zakas has also written [an excellent book](https://www.oreilly.com/library/view/maintainable-javascript/9781449328092/) on writing maintainable JavaScript, also within the context of working in teams. The appendix contains a style guide with explanation.
 
 [These](http://www.youtube.com/watch?v=yQaAGmHNn9s&list=PLA56F6A06883A2AD8) video tutorials (totaling a couple of hours) are useful if you're just starting with learning the JavaScript language.
 
@@ -45,7 +45,7 @@ To create a Angular application use [Angular CLI](https://cli.angular.io/).
 
 [React](https://facebook.github.io/react/) is a library which can used to create interactive User Interfaces by combining components. It is developed by Facebook.
 Where Angular and Vue.js are frameworks, including all the rendering, routing, state management functonality inside them. React only does rendering so other libraries must be used for routing and state management.
-[Redux](http://redux.js.org/) can be used to let state changes flow through React components. [React Router](https://reacttraining.com/react-router/) can be used to navigate the application using URLs. 
+[Redux](http://redux.js.org/) can be used to let state changes flow through React components. [React Router](https://reacttraining.com/react-router/) can be used to navigate the application using URLs.
 
 To create a React application use the [Create React App](https://github.com/facebookincubator/create-react-app)
 How to develop the bootstrapped app further is described in the README.md.
@@ -54,7 +54,7 @@ How to develop the bootstrapped app further is described in the README.md.
 
 ## Vue.js
 
-[Vue.js](https://vuejs.org/) is an open-source JavaScript framework for building user interfaces. 
+[Vue.js](https://vuejs.org/) is an open-source JavaScript framework for building user interfaces.
 
 To create a Vue.js application use [Vue CLI](https://cli.vuejs.org/).
 
@@ -92,7 +92,7 @@ The best JavaScript editors are currently WebStorm and Visual Studio Code. Atom 
 In web development, debugging is typically done in the browser.
 
 * The best debugging tool suite is currently the debugger built into the Google Chrome webbrowser, and its open-source counterpart, Chromium. It can watch variables, step through the code, lets you monitor network traffic, and much more. Activate the debugger through the F12 key.
-* On Firefox, use either the built-in debugging functionality (again accessible through the F12 button) or install the [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) Addon for some more advanced debugging functionality.
+* On Firefox, use either the built-in debugging functionality (again accessible through the F12 button) or install the [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools).
 * Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox.
 * In Safari on OS X, press ⌘⌥U.
 
@@ -166,7 +166,7 @@ To learn about TypeScript the following resources are available:
 * [tutorial](http://www.typescriptlang.org/Tutorial) from Microsoft's TypeScript website  
 * [blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps) about how TypeScript can be used with the Google Chrome/Chromium debuggers (and [presumably](http://blog.oio.de/2014/04/04/internet-explorer-11-source-map-based-debugging/) Firefox, and Internet Explorer) through the use of so-called 'source maps'. (Follow [this](http://www.codeproject.com/Articles/649271/How-to-Enable-Source-Maps-in-Firefox) link to set up source mapping for Firefox, also useful for debugging minified JavaScript code).
 * [blog post](http://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/) that supposedly is the definitive guide to TypeScript
-* [TypeScript Language Specification](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
+* [TypeScript Language Specification](https://github.com/microsoft/TypeScript/tree/master/doc)
 
 ## Quickstart
 
@@ -192,7 +192,7 @@ For example say we want to use the ``react`` package which we installed using ``
 npm install react --save
 ```
 
-To be able to use its functionality in TypeScript we need to install the typings. 
+To be able to use its functionality in TypeScript we need to install the typings.
 We can search for the correct package at http://microsoft.github.io/TypeSearch/ .
 
 And install it with:
@@ -213,11 +213,11 @@ These are some good TypeScript editors:
 * [Visual Studio Code](https://code.visualstudio.com) by Microsoft
 * [WebStorm](https://www.jetbrains.com/webstorm/) by JetBeans
 
-The best TypeScript editors is currently Visual Studio Code as Microsoft develops both the editor and Typescript. 
+The best TypeScript editors is currently Visual Studio Code as Microsoft develops both the editor and Typescript.
 
 ## Debugging
 
-In web development, debugging is typically done in the browser. 
+In web development, debugging is typically done in the browser.
 Typescript can not be run directly in web browser so it must be transpiled to Javascript. To map a breakpoint in the browser to a line in the original Typescript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps.
 
 ## Documentation
