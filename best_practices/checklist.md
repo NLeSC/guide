@@ -22,11 +22,13 @@ Additional steps depend on the goal of the software (zero or more can apply):
 * [I'm expecting users](#im-expecting-users)
 * [I'm expecting contributors](#im-expecting-contributors)
 
+A more thorough checklist is the [Core Infrastructures Initiative Badge Best Practices Badge Program](https://bestpractices.coreinfrastructure.org/en/criteria/0). This list is not aimed at research software, and the criteria (for example those focused on security) might go beyond what is necessary. However the aim is **not** to show perfect compliance, but rather to be transparent about the state of the code while providing the necessary guidance on which aspects could be improved.
+
 ## I'm publishing a paper
 
 * Add a [CITATION.cff file](documentation.md#software-citation)
 * [Make your software citable](../citable_software/making_software_citable.md)
-* Cite DOI in paper 
+* Cite DOI in paper
 
 ## I'm expecting users
 
