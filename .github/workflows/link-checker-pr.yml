@@ -1,0 +1,29 @@
+name: Link Checker for Pull requests
+on: pull_request
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: changed_files
+        uses: jitterbit/get-changed-files@v1
+      - name: Link Checker
+        uses: peter-evans/link-checker@v1
+        id: lc
+        with:
+          args: -v -t 60 -c 16 -d /github/workspace -r ${{ steps.changed_files.outputs.all }}
+      - name: Count broken links
+        run: |
+            broken_max=10
+            broken=$(grep ERROR ./link-checker/out.md || echo "Ok")
+            broken_count=$(echo "$broken" | wc -l)
+
+            if [ "$broken_count" -gt "$broken_max" ]; then
+                echo "Number of broken links (${broken_count}) exceeds maximum allowed number (${broken_max})."
+                echo "Broken links: "
+                echo "$broken"
+                exit 1
+            else
+                echo "Number of broken links (${broken_count}) less than or equal to maximum allowed number (${broken_max})."
+                exit 0
+            fi
