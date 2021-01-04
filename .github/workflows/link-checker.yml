@@ -1,4 +1,4 @@
-name: Link Checker Example Command
+name: Link Checker
 on: push
 jobs:
   linkChecker:
