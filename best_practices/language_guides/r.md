@@ -111,7 +111,7 @@ R function documentation offers plenty of space to document the functionality, i
 
 
 # Available templates
-* http://rapport-package.info/
+* https://rapporter.github.io/rapport/
 * http://shiny.rstudio.com/articles/templates.html
 * http://rmarkdown.rstudio.com/developer_document_templates.html
 
