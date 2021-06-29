@@ -297,6 +297,13 @@ In all cases, file many small pull requests, not one big one, as GitHub's
 support for code reviews is rather limited. Putting too many issues into a
 single pull request quickly becomes unwieldy.
 
+## Reviewing Jupyter notebooks with ReviewNB
+For rich diffs and commenting on Jupyter notebooks Github is not very useful. 
+You can use [ReviewNB](https://www.reviewnb.com/) for that. If you configure
+your esciencecenter.nl email address as your primary email for your Github
+account [here](https://github.com/settings/emails) you have access to the 
+academic plan with full benefits.
+
 ## References
 
 Atwood, Jeff (2006) [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/)
