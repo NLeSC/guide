@@ -12,6 +12,7 @@
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
    * [UX - User Experience](/best_practices/user_experience.md)
+   * [Teamwork](/best_practices/teamwork.md)
    * [Language Guides](/best_practices/language_guides/languages_overview.md)
       * [Bash](/best_practices/language_guides/bash.md)
       * [Java](/best_practices/language_guides/java.md)
