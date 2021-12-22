@@ -8,7 +8,7 @@ You can learn more about teamwork in [The Turing Way](https://deploy-preview-223
 Also checkout the [Teamwork for Research Software Development lesson](https://nlesc.github.io/teamwork-for-research-software-development/index.html) that we developed.
 
 ## How we do teams at the Netherlands eScience Center
-![image](https://user-images.githubusercontent.com/9945255/147092058-3451a5f9-48ec-40ee-b762-2de4ad5a2439.png)
+![image](../images/teams-at-nlesc.png)
 *Schematic overview of how teams operate at the Netherlands eScience Center*
 
 There is not one fixed way of how teams operate at the center.
@@ -27,4 +27,4 @@ Here are a few guidelines on working in teams (the above figure could help visua
 * The team has a dedicated Section Head that serves as a coach, escalation point, and final authority in team composition.
 * Usually the team members commit most of the time to projects within the team.
 * Engineers that are not part of the team can act as 'consultant' for the team. A consultant can for example bring in some expertise that the team does not have.
-* It is useful to have someone in the team who has the role of team coach.
+ It is useful to have someone in the team who has the role of team coach.
