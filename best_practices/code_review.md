@@ -298,7 +298,7 @@ support for code reviews is rather limited. Putting too many issues into a
 single pull request quickly becomes unwieldy.
 
 ## Reviewing Jupyter notebooks with ReviewNB
-For rich diffs and commenting on Jupyter notebooks Github is not very useful. 
+For rich diffs and commenting on Jupyter notebooks Github is not very useful, because Github shows differences between Jupyter notebooks as a diff between json files.
 You can use [ReviewNB](https://www.reviewnb.com/) for that. If you configure
 your esciencecenter.nl email address as your primary email for your Github
 account [here](https://github.com/settings/emails) you have access to the 
