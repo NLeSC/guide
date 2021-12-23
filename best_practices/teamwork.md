@@ -20,13 +20,11 @@ about the range of teams we have at the center.
 
 Here are a few guidelines on working in teams (the above figure could help visualizing)
 * Working in a team is optional.
-* Teams are self-organizing, there is no boss.
+* Teams are self-organizing, there is no boss outside of the team that tells the team what to do.
 * We aim for diverse teams. In terms of technical skills and seniority, but also gender, ethnic, and cultural diversity.
 * Teams are responsible for entire projects from start to finish.
 * Teams are responsible for their own planning.
 * Most engineers in the team are Lead Engineer on at least one project.
-* The team is in close contact with the relevant Programme Manager(s) and Tech Lead(s).
-* The team has a dedicated Section Head that serves as a coach, escalation point, and final authority in team composition.
 * Usually the team members commit most of the time to projects within the team.
 * Engineers that are not part of the team can act as 'consultant' for the team. A consultant can for example bring in some expertise that the team does not have.
- It is useful to have someone in the team who has the role of team coach.
+* It is useful to have someone in the team who has the role of team coach.
