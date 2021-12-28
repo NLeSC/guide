@@ -21,7 +21,7 @@ about the range of teams we have at the center.
 Here are a few guidelines on working in teams (the above figure could help visualizing)
 * Working in a team is optional.
 * Teams are self-organizing, there is no boss outside of the team that tells the team what to do.
-* We aim for diverse teams. In terms of technical skills and seniority, but also gender, ethnic, and cultural diversity.
+* Teams should consider diversity in terms of technical skills, seniority and perspectives (for example sex, age, ethnic group).
 * Teams are responsible for entire projects from start to finish.
 * Teams are responsible for their own planning.
 * Most engineers in the team are Lead Engineer on at least one project.
