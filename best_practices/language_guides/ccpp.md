@@ -209,7 +209,7 @@ A good strategy is probably to start out using this flag and then disable any wa
 An additional good tool that detects many issues is cppcheck. Most editors/IDEs have plugins to use it automatically.
 
 #### Dynamic program analysis using `-fsanitize`
-Both GCC and Clang allow you to compile your code with the `-fsanitize=` flag , which will instrument your program to detect various errors quickly. The most useful option is probably
+Both GCC and Clang allow you to compile your code with the `-fsanitize=` flag, which will instrument your program to detect various errors quickly. The most useful option is probably
 ```
 -fsanitize=address -O2 -fno-omit-frame-pointer -g
 ```
