@@ -4,7 +4,7 @@ If done well, working in a team can be more fun, more productive, and more effec
 There are both benefits and downsides of working in teams, 
 and the key is to work together in such a way that the advantages outweigh the disadvantages.
 
-You can learn more about teamwork in [The Turing Way](https://deploy-preview-2239--the-turing-way.netlify.app/collaboration/new-community/new-community-teamwork.html#cl-new-community-teamwork).
+You can learn more about teamwork in [The Turing Way](https://the-turing-way.netlify.app/collaboration/new-community/new-community-teamwork.html#cl-new-community-teamwork).
 Also checkout the [Teamwork for Research Software Development lesson](https://nlesc.github.io/teamwork-for-research-software-development/index.html) that we developed.
 
 ## How we do teams at the Netherlands eScience Center
