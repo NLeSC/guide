@@ -11,7 +11,6 @@ Overall Maintainer: Bouwe Andela
   * Code Review: Lourens Veen
 * Language Guides:
   * Introduction: Jason Maassen
-  * Java: Christiaan Meijer
   * JavaScript and TypeScript: Jurriaan Spaaks
   * Python: Patrick Bos
   * OpenCL and CUDA: Ben van Werkhoven
