@@ -67,6 +67,9 @@ There are two main distributions of Conda: [Anaconda](https://docs.anaconda.com/
 
 For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda is very robust.
 A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues, because all packages are open source and can still be obtained elsewhere.
+Do note that since 2020, [Anaconda has started to ask money from large institutes](https://www.anaconda.com/blog/anaconda-commercial-edition-faq) for downloading packages from their servers through `conda`.
+This does not apply to universities and most research institutes, but could apply to some government institutes that also perform research and definitely applies to large for-profit companies.
+Be aware of this when choosing the distribution channel for your package.
 
 ## Building and packaging code
 
