@@ -40,7 +40,7 @@ The [checklist matrix](./checklist_matrix.md) provides an indication of which it
 ## [Code Quality](../best_practices/code_quality.md)
 
 - [use editorconfig](../best_practices/code_quality.md#use-editorconfig)
-- [code style applied in automated way](https://the-turing-way.netlify.app/code_quality/code_quality.html#Automatic-formatting)
+- [code style applied in automated way](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html#automatic-formatting)
 
 ## [Testing](../best_practices/testing.md)
 

@@ -139,7 +139,7 @@ If this is not possible or does not fit then use one of the generic code coverag
 
 ## Code quality analysis tools and services
 
-Code quality service is explained in the [The Turing Way](https://the-turing-way.netlify.app/code_quality/code_quality.html#Online-services-providing-software-quality-checks).
+Code quality service is explained in the [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks).
 There are multiple code quality services available for Python.
 There is not a best one, below is a short list of services with their different strenghts.
 
@@ -150,17 +150,15 @@ Can setup goals to improve quality or coverage by file or category.
 For example project see https://www.codacy.com/app/3D-e-Chem/kripodb/dashboard.
 Note that Codacy does not install your depencencies, which prevents it from correctly identifying import errors.
 
+### [Sonarcloud](https://sonarcloud.io/)
+Provides reports similar to Codacy, but can be run from CI (e.g. GitHub Actions), which allows you to install dependencies yourself and thus provide a more complete coverage.
+This is currently the default choice in our [Python template](https://github.com/NLeSC/python-template).
+
 ### [Scrutinizer](https://scrutinizer-ci.com/)
 
 Code quality and coverage grouped by class and function.
 For example project see https://scrutinizer-ci.com/g/NLeSC/eEcology-Annotation-WS/
 
-### [Landscape](https://landscape.io)
-
-Dedicated for Python code quality.
-Celery, Django and Flask specific behaviors.
-The Landscape analysis tool called [`prospector`](https://github.com/landscapeio/prospector) can be run locally.
-For example project see https://landscape.io/github/NLeSC/MAGMa
 
 ## Debugging and profiling
 
