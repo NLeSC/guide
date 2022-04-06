@@ -47,57 +47,68 @@ Advantages over installing packages system-wide or in a single user folder:
 * Keeps environments clean for each project, so you don't get more than you need (and can easily reproduce that minimal working situation).
 * Lets you select the Python version per environment, so you can test code compatibility between Python 2.x and 3.x.
 
-### Pip + virtualenv
+### Pip + a virtual environment
 
-If you don't want to use `conda`, create isolated Python environments with [virtualenv](https://virtualenv.pypa.io/en/latest/), [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org) or, if you are using Python 3 only, the standard library [venv](https://docs.python.org/3/library/venv.html) module.
+If you don't want to use `conda`, create isolated Python environments with the standard library [`venv`](https://docs.python.org/3/library/venv.html) module.
+If you are still using Python 2, [`virtualenv`](https://virtualenv.pypa.io/en/latest/) and [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.org) can be used instead.
 
-With virtualenv and venv, pip is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so pip downloads and installs them as binaries. This means they have no build dependencies and are much faster to install.
+With `venv` and `virtualenv`, `pip` is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so `pip` downloads and installs them as binaries. This means they have no build dependencies and are much faster to install.
 
 If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you could switch to `conda` (see below).
 
 To get an overview of the packages used by your package, run `pip freeze` in your environment.
-This can be useful when writing the `setup.py` script for your package (see [Building and packaging](#building-and-packaging-code)).
+This can be useful when writing the `setup.cfg` configuration file for your package (see [Building and packaging](#building-and-packaging-code)).
 
 ### Conda
 
-[Conda](http://conda.pydata.org/docs/) can be used instead of virtualenv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries. Installation of packages that are not using `wheel` but have a lot of native code is much faster than `pip` because Conda does not compile the package, it only downloads compiled packages. The disadvantage of Conda is that the package needs to have a Conda build recipe. Many Conda build recipes already exist, but they are less common than the `setup.py` that generally all Python packages have.
+[Conda](http://conda.pydata.org/docs/) can be used instead of virtualenv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries. Installation of packages that are not using `wheel` but have a lot of native code is much faster than `pip` because Conda does not compile the package, it only downloads compiled packages. The disadvantage of Conda is that the package needs to have a Conda build recipe. Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
 
 There are two main distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
 
 For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda is very robust.
-A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues.
+A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues, because all packages are open source and can still be obtained elsewhere.
 
-### Building and packaging code
+## Building and packaging code
 
-To create an installable Python package, create a file `setup.py` and use the [`setuptools`](https://setuptools.readthedocs.io) module.
+### Making an installable package
+To create an installable Python package, use the [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html) module.
+This involves creating two files: `setup.cfg` and `pyproject.toml`.
 
-This is also the primary location where you should list your dependencies (find the currently installed packages with `pip freeze` or `conda list`).
+`setup.cfg` is the primary location where you should list your dependencies (find the currently installed packages with `pip freeze` or `conda list`).
 Use the `install_requires` argument to list them.
 Keep version constraints to a minimum; use, in order of descending preference: no constraints, lower bounds, lower + upper bounds, exact versions.
 Use of `requirements.txt` is discouraged, unless necessary for something specific, see the [discussion here](https://github.com/NLeSC/guide/issues/156).
+Most other configuration should also be in `setup.cfg`.
+`pyproject.toml` can be used to specify the build system, i.e. `setuptools` itself.
 
-When `setup.py` is written, your package can be installed with
+It's possible that in the future all configuration will move from `setup.cfg` to `pyproject.toml`, but as of yet this is not common practice.
+Most tools, like `pytest`, `mypy` and others do support using `pyproject.toml` already.
+The Python build system is still very much in flux, though, so be sure to look up some current practices in [authoritative blogs like this one](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html).
+One important thing to note is that use of `setup.py` has been officially deprecated and we should migrate away from that.
+
+When the `setup.cfg` is written, your package can be installed with
 ```
 pip install -e .
 ```
 The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
-Set up continuous integration to test your installation script. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation script.
+Set up continuous integration to test your installation setup. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation configuration.
 
+### Packaging and distributing your package
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
 * Upload your package to the [Python Package Index (PyPI)](https://pypi.org) so it can be installed with pip.
   * Either do this manually by using [twine](https://github.com/pypa/twine) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/)),
-  * Or configure [Travis CI](https://docs.travis-ci.com/user/deployment/pypi/) or [Circle-CI](https://circleci.com/blog/continuously-deploying-python-packages-to-pypi-with-circleci/) to do it automatically for each release.
+  * Or configure GitHub Actions to do it automatically for each release: see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
   * Additional guidelines:
     * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
     * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
     * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
-    * To test whether your distribution will work correctly before uploading to PyPI, you can run `python setup.py sdist` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
+    * To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
   * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
   * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
-* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using Travis (for pure python, Linux and OS X) and Appveyor (for Windows).
+* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using GitHub Actions or another CI solution.
 
 
 
@@ -234,7 +245,8 @@ At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which use
 * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
 * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
-We recommend using the Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
+We recommend using the Google documentation style.
+Use `sphinx-build` to build your documentation.
 
 You can also integrate entire Jupyter notebooks into your HTML Sphinx output with [nbsphinx](https://nbsphinx.readthedocs.io).
 This way, your demo notebooks, for instance, can double as documentation.
