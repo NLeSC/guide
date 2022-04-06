@@ -39,13 +39,13 @@ If you are planning on distributing your code at a later stage, be aware that yo
 ### Use virtual environments
 
 We strongly recommend creating isolated "virtual environments" for each Python project.
-These can be created with `virtualenv` or with `conda`.
+These can be created with `venv` or with `conda`.
 Advantages over installing packages system-wide or in a single user folder:
 
 * Installs Python modules when you are not root.
 * Contains all Python dependencies so the environment keeps working after an upgrade.
 * Keeps environments clean for each project, so you don't get more than you need (and can easily reproduce that minimal working situation).
-* Lets you select the Python version per environment, so you can test code compatibility between Python 2.x and 3.x.
+* Lets you select the Python version per environment, so you can test code compatibility between Python versions
 
 ### Pip + a virtual environment
 
@@ -54,33 +54,42 @@ If you are still using Python 2, [`virtualenv`](https://virtualenv.pypa.io/en/la
 
 With `venv` and `virtualenv`, `pip` is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so `pip` downloads and installs them as binaries. This means they have no build dependencies and are much faster to install.
 
-If the installation of a package fails because of its native extensions or system library dependencies and you are not root, you could switch to `conda` (see below).
-
-To get an overview of the packages used by your package, run `pip freeze` in your environment.
-This can be useful when writing the `setup.cfg` configuration file for your package (see [Building and packaging](#building-and-packaging-code)).
+If the installation of a package fails because of its non-Python extensions or system library dependencies and you are not root, you could switch to `conda` (see below).
 
 ### Conda
 
-[Conda](http://conda.pydata.org/docs/) can be used instead of virtualenv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries. Installation of packages that are not using `wheel` but have a lot of native code is much faster than `pip` because Conda does not compile the package, it only downloads compiled packages. The disadvantage of Conda is that the package needs to have a Conda build recipe. Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
+[Conda](http://conda.pydata.org/docs/) can be used instead of venv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries.
+Installation of packages that are not using `wheel`, but have a lot of non-Python code, is much faster with Conda than with `pip` because Conda does not compile the package, it only downloads compiled packages.
+The disadvantage of Conda is that the package needs to have a Conda build recipe.
+Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
 
 There are two main distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
+If installation with the `conda` command is too slow for your purposes, it is recommended that you use [`mamba`](https://github.com/mamba-org/mamba) instead.
 
-For environments where you do not have admin rights (e.g. DAS-5) either Anaconda or Miniconda is highly recommended, since the install is very straightforward. The installation of packages through Conda is very robust.
+For environments where you do not have admin rights (e.g. DAS-6) either Anaconda or Miniconda is highly recommended since the installation is very straightforward.
+The installation of packages through Conda is very robust.
+
 A possible downside of Anaconda is the fact that this is offered by a commercial supplier, but we don't foresee any vendor lock-in issues, because all packages are open source and can still be obtained elsewhere.
-Do note that since 2020, [Anaconda has started to ask money from large institutes](https://www.anaconda.com/blog/anaconda-commercial-edition-faq) for downloading packages from their servers through `conda`.
+Do note that since 2020, [Anaconda has started to ask money from large institutes](https://www.anaconda.com/blog/anaconda-commercial-edition-faq) for downloading packages from their [main channel (called the `default` channel)](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#what-is-a-conda-channel) through `conda`.
 This does not apply to universities and most research institutes, but could apply to some government institutes that also perform research and definitely applies to large for-profit companies.
 Be aware of this when choosing the distribution channel for your package.
+An alternative installer that avoids this problem altogether because it only installs packages from `conda-forge` by default is [miniforge](https://github.com/conda-forge/miniforge).
+There is also a mambaforge version that uses the faster `mamba` by default.
 
 ## Building and packaging code
 
 ### Making an installable package
 To create an installable Python package, use the [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html) module.
 This involves creating two files: `setup.cfg` and `pyproject.toml`.
+Our [Python template](https://github.com/NLeSC/python-template) already does this for you.
 
-`setup.cfg` is the primary location where you should list your dependencies (find the currently installed packages with `pip freeze` or `conda list`).
-Use the `install_requires` argument to list them.
+`setup.cfg` is the primary location where you should list your dependencies; use the `install_requires` argument to list them.
 Keep version constraints to a minimum; use, in order of descending preference: no constraints, lower bounds, lower + upper bounds, exact versions.
 Use of `requirements.txt` is discouraged, unless necessary for something specific, see the [discussion here](https://github.com/NLeSC/guide/issues/156).
+It is possible to find the currently installed packages with `pip freeze` or `conda list`, but note that this is not ideal for listing dependencies in `setup.cfg`, because it also lists all dependencies of the dependencies that you use.
+It is better to keep track of direct dependencies for your project from the start.
+Another quick way to find all direct dependencies is by running your code in a clean environment (probably by running your test suite) and installing one by one the dependencies that are missing, as reported by the ensuing errors.
+
 Most other configuration should also be in `setup.cfg`.
 `pyproject.toml` can be used to specify the build system, i.e. `setuptools` itself.
 
@@ -100,7 +109,7 @@ Set up continuous integration to test your installation setup. Use `pyroma` (can
 ### Packaging and distributing your package
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
-* Upload your package to the [Python Package Index (PyPI)](https://pypi.org) so it can be installed with pip.
+* [Build and upload your package](https://packaging.python.org/en/latest/tutorials/packaging-projects/) to the [Python Package Index (PyPI)](https://pypi.org) so it can be installed with pip.
   * Either do this manually by using [twine](https://github.com/pypa/twine) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/)),
   * Or configure GitHub Actions to do it automatically for each release: see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
   * Additional guidelines:
@@ -108,11 +117,11 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
     * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
     * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
     * To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
+    * `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
+
 * [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
   * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
   * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
-* [Python wheels](http://pythonwheels.com/) are the new standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. For pure python code, without C extensions, use [`bdist_wheel`](https://packaging.python.org/distributing/#pure-python-wheels) with a Python 2 and Python 3 setup, or use [`bdist_wheel --universal`](https://packaging.python.org/distributing/#universal-wheels) if the code is compatible with both Python 2 and 3. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) docker images can be used for building wheels compatible with multiple Linux distributions. See [the manylinux demo](https://github.com/pypa/python-manylinux-demo) for an example. Wheel building can be automated using GitHub Actions or another CI solution.
-
 
 
 ## Editors and IDEs
