@@ -169,11 +169,9 @@ For example project see https://landscape.io/github/NLeSC/MAGMa
 
 * Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
 * [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
-
-* If you are looking for IDE's with debugging capabilities, please check **Editors and IDEs** section.
-
+* If you are looking for IDEs with debugging capabilities, see the [Editors and IDEs section](#editors-and-ides).
 * If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
-* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with **vim** editor, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
+* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with `vim`, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
 
 * List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
 
@@ -215,15 +213,18 @@ The default location to put HTML documentation is [Read the Docs](https://readth
 
 ### Autogenerating the documentation
 
-There are several tools that automatically generate documentation from docstrings. These are the most used:
+There are several tools that automatically generate documentation from docstrings.
+At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which uses reStructuredText as its markup language, but can be extended to use Markdown as well.
 
-* [pydoc](https://docs.python.org/2/library/pydoc.html)
-* [Sphinx](http://sphinx-doc.org) (uses reStructuredText as its markup language)
-  * [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
-  * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
-  * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
+* [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
+* [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
+* Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
-We recommend using Sphinx and Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
+We recommend using the Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
+
+You can also integrate entire Jupyter notebooks into your HTML Sphinx output with [nbsphinx](https://nbsphinx.readthedocs.io).
+This way, your demo notebooks, for instance, can double as documentation.
+Of course, the notebooks will not be interactive in the compiled HTMl, but they will include all code and output cells.
 
 ## Recommended additional packages and libraries
 
@@ -242,10 +243,12 @@ We recommend using Sphinx and Google documentation style. Sphinx can easily be [
 
 [Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 [Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
-[JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools. JupyterLab is still under **development** and may not be suitable if you need a stable tool.
+[JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools.
 
 Jupyter notebooks contain data that makes it hard to nicely keep track of code changes using version control. If you are using git,
-you can [add filters that automatically remove unneeded noise from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
+you can [add filters that automatically remove output cells and unneeded metadata from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
+If you do choose to keep output cells in the notebooks (which can be useful to showcase your code's capabilities statically from GitHub) use [ReviewNB](https://www.reviewnb.com/) to automatically create nice visual diffs in your GitHub pull request threads.
+It is good practice to restart the kernel and run the notebook from start to finish in one go before saving and committing, so you are sure that everything works as expected.
 
 ### Visualization
 
@@ -279,7 +282,7 @@ Having said that, there are many ways to run Python code in parallel:
 
 ### Web Frameworks
 
-There are a lot web frameworks for Python that are very easy to run.
+There are convenient Python web frameworks available:
 
 * [flask](http://flask.pocoo.org/)
 * [cherrypy](http://www.cherrypy.org/)
