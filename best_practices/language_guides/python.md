@@ -221,6 +221,10 @@ At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which use
 
 We recommend using the Google documentation style. Sphinx can easily be [integrated with setuptools](http://www.sphinx-doc.org/en/stable/setuptools.html), so documentation can be built with in the command `python setup.py build_sphinx`.
 
+You can also integrate entire Jupyter notebooks into your HTML Sphinx output with [nbsphinx](https://nbsphinx.readthedocs.io).
+This way, your demo notebooks, for instance, can double as documentation.
+Of course, the notebooks will not be interactive in the compiled HTMl, but they will include all code and output cells.
+
 ## Recommended additional packages and libraries
 
 ### General scientific
@@ -243,6 +247,7 @@ We recommend using the Google documentation style. Sphinx can easily be [integra
 Jupyter notebooks contain data that makes it hard to nicely keep track of code changes using version control. If you are using git,
 you can [add filters that automatically remove output cells and unneeded metadata from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
 If you do choose to keep output cells in the notebooks (which can be useful to showcase your code's capabilities statically from GitHub) use [ReviewNB](https://www.reviewnb.com/) to automatically create nice visual diffs in your GitHub pull request threads.
+It is good practice to restart the kernel and run the notebook from start to finish in one go before saving and committing, so you are sure that everything works as expected.
 
 ### Visualization
 
@@ -276,7 +281,7 @@ Having said that, there are many ways to run Python code in parallel:
 
 ### Web Frameworks
 
-There are a lot of web frameworks for Python that are very easy to run.
+There are convenient Python web frameworks available:
 
 * [flask](http://flask.pocoo.org/)
 * [cherrypy](http://www.cherrypy.org/)
