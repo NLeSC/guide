@@ -117,11 +117,15 @@ Use [pytest](https://docs.pytest.org/) as the basis for your testing setup.
 This is preferred over the `unittest` standard library, because it has a much more concise syntax and supports many useful features.
 
 It [has many plugins](https://docs.pytest.org/en/stable/plugins.html).
-For linting, we have found `pytest-pycodestyle`, `pytest-mypy` and `pytest-flake8` to be useful.
+For linting, we have found `pytest-pycodestyle`, `pytest-pydocstyle`, `pytest-mypy` and `pytest-flake8` to be useful.
 Other plugins we had good experience with are `pytest-cov`, `pytest-html`, `pytest-xdist` and `pytest-nbmake`.
 
 Creating mocks can also be done within the pytest framework by using the `mocker` fixture provided by the `pytest-mock` plugin or by using `MagicMock` and `patch` from `unittest`.
 For a general explanation about mocking, see the [standard library docs on mocking](https://docs.python.org/3/library/unittest.mock.html).
+
+To run your test suite, it can be convenient to use `tox`.
+Testing with `tox` allows for keeping the testing environment separate from your development environment.
+The development environment will typically accumulate (old) packages during development that interfere with testing; this problem is avoided by testing with `tox`.
 
 ### Code coverage
 
