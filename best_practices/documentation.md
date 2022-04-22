@@ -88,7 +88,7 @@ file describes at least how to perform the following tasks:
 
 * How to [install the dependencies](#documented-development-setup)
 * How to run [(unit) tests](testing.md#unit-tests)
-* What [code style](https://the-turing-way.netlify.app/code_quality/code_quality.html#Code-style) to use
+* What [code style](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html) to use
 * Reference to [code of conduct](#code-of-conduct)
 * When using a [git branching model](version_control.md#choose-one-branching-model), the choice of branching model
 

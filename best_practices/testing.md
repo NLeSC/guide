@@ -57,7 +57,7 @@ At the Netherlands eScience Center we require minimum of 70% coverage.
 Setting up code coverage for a repository depends on the programming language, see the [language specific guides](language_guides/languages_overview.md) for setup instructions.
 
 The code coverage should be performed when a test suite is run as part of Continuous Integration build job.
-The code coverage results can be published on code coverage and/or [code quality services](https://the-turing-way.netlify.app/code_quality/code_quality.html#Online-services-providing-software-quality-checks).
+The code coverage results can be published on code coverage and/or [code quality services](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks).
 
 ### Code coverage services
 
