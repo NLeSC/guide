@@ -33,7 +33,7 @@ contents to http://www.yamllint.com/.
     # (in the repository's root directory)
     cffconvert --validate
     ```
-    
+
     If the command does not return anything, that means the CFF is valid.
 
 1. Generate the ``.zenodo.json`` file using ``cffconvert`` as follows:

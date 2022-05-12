@@ -302,7 +302,7 @@ For rich diffs and commenting on Jupyter notebooks Github is not very useful, be
 You can use [ReviewNB](https://www.reviewnb.com/) for reviewing Jupyter notebooks. ReviewNB shows the diff between notebooks in a human readable way.
  If you configure
 your esciencecenter.nl email address as your primary email for your Github
-account [here](https://github.com/settings/emails) you have access to the 
+account [here](https://github.com/settings/emails) you have access to the
 academic plan with full benefits.
 
 ## References
