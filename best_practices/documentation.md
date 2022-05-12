@@ -3,7 +3,7 @@
 Developed programs should be documented at multiple levels, from code comments, through API documentation, to installation and usage documentation.
 Comments at each level should take into account different target audience, from experienced developers, to end users with no programming skills.
 
-Example of good documentation: [A Guide to NumPy/SciPy Documentation](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt)
+Example of good documentation: [A Guide to NumPy/SciPy Documentation](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
 
 ## Markdown
 
@@ -138,7 +138,7 @@ Identifiers should be associated with releases and should be created together wi
 
 ## Software citation
 
-To get credit for your work, it should be as easy as possible to cite your software. 
+To get credit for your work, it should be as easy as possible to cite your software.
 
 Your software should contain sufficient information for others to be able to cite your software, such as: authors, title, version, journal article (if there is one) and DOI (as described in the [DOI section](documentation.md#doi-or-pid)). It is recommended that this information is contained on a single file.
 

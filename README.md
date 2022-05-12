@@ -1,5 +1,4 @@
-Dead-link checker status (does not actually build guide itself): [![Build Status](https://travis-ci.org/NLeSC/guide.svg?branch=master)](https://travis-ci.org/NLeSC/guide)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4020564.svg)](https://doi.org/10.5281/zenodo.4020564)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4020564.svg)](https://doi.org/10.5281/zenodo.4020564)[![Link Checker](https://github.com/NLeSC/guide/actions/workflows/link-checker.yml/badge.svg)](https://github.com/NLeSC/guide/actions/workflows/link-checker.yml)
 
 # Guide
 
