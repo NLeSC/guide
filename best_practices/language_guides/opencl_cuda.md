@@ -20,7 +20,7 @@
 
 ## Source-to-source translation between CUDA and OpenCL
 * vtsynergy (https://github.com/vtsynergy)
-   * This was shown to work on DAS5 after copying /usr/include/limits.h to $PWD and commenting out the lines around # include_next (122-125) :    
+   * This was shown to work on DAS5 after copying /usr/include/limits.h to $PWD and commenting out the lines around # include_next (122-125) :
    "cu2cl-tool host_code.cc device_code.cu  -- -DGPU_ON -I$PWD:/usr/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include".
 * cutocl (https://github.com/benvanwerkhoven/cutocl)
 

@@ -7,7 +7,7 @@ The latest ratified standard of C++ is C++17. The first standardised version of 
 
 ## Practical use
 ### Compilers
-There are two main-stream open-source C++ compilers. 
+There are two main-stream open-source C++ compilers.
 
 * [GCC](https://gcc.gnu.org/)
 * [LLVM - CLANG](http://llvm.org/)
@@ -52,7 +52,7 @@ When Googling for ways to write your CMake files, make sure you look for "modern
 
 Traditionally, the auto-tools suite (AutoConf and AutoMake) was *the* way to build things on Unix; you'll probably know the three command salute:
 
-    > ./configure --prefix=~/.local 
+    > ./configure --prefix=~/.local
         ...
     > make -j4
         ...
@@ -153,10 +153,10 @@ This is largely a matter of taste, but not always.
 In theory, given that there are many good command line tools available for working with C(++) code, any code editor will do to write C(++).
 Some people also prefer to avoid relying on IDEs too much; by helping your memory they can also help you to write less maintainable code.
 People of this persuasion would usually recommend any of the following editors:
-* Vim, recommended plugins: 
+* Vim, recommended plugins:
   + [NERDTree](https://github.com/scrooloose/nerdtree) file explorer.
   + [editorconfig](https://github.com/editorconfig/editorconfig-vim)
-  + [stl.vim](https://vim.sourceforge.io/scripts/script.php?script_id=4293) adds STL to syntax highlighting 
+  + [stl.vim](https://vim.sourceforge.io/scripts/script.php?script_id=4293) adds STL to syntax highlighting
   + [Syntastic](https://github.com/scrooloose/syntastic)
   + Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
 * Emacs:
@@ -179,21 +179,21 @@ C++ (and C) compilers come with built in linters and tools to check that your pr
 
 #### Automatic Formatting with clang-format
 
-While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines. 
+While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines.
 
 #### Static code analysis with GCC
 To use the GCC linter, use the following set of compiler flags when compiling C++ code:
 ```
--O2 -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 
--Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast 
--Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel 
+-O2 -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2
+-Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast
+-Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel
 -Wstrict-overflow=5 -Wswitch-default -Wundef -Wno-unused
 ```
 and these flags when compiling C code:
 ```
--O2 -Wall -Wextra -Wformat-nonliteral -Wcast-align -Wpointer-arith -Wbad-function-cast 
--Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations -Winline -Wundef 
--Wnested-externs -Wcast-qual -Wshadow -Wwrite-strings -Wno-unused-parameter 
+-O2 -Wall -Wextra -Wformat-nonliteral -Wcast-align -Wpointer-arith -Wbad-function-cast
+-Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations -Winline -Wundef
+-Wnested-externs -Wcast-qual -Wshadow -Wwrite-strings -Wno-unused-parameter
 -Wfloat-equal
 ```
 Use at least optimization level 2 (`-O2`) to have GCC perform code analysis up to a level where you get all warnings. Use the `-Werror` flag to turn warnings into errors, i.e. your code won't compile if you have warnings. See this [post](https://stackoverflow.com/questions/5088460/flags-to-enable-thorough-and-verbose-g-warnings) for an explanation of why this is a reasonable selection of warning flags.
@@ -220,7 +220,7 @@ The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools sim
 
 ### Automated code refactoring
 
-Sometimes you have to update large parts of your code base a little bit, like when you move from one standard to another or you changed a function definition. Although this can be accomplished with a `sed` command using regular expressions, this approach is dangerous, if you use macros, your code is not formatted properly etc.... [Clang-tidy](https://clang.llvm.org/extra/clang-tidy/) can do these things and many more by using the abstract syntax tree of the compiler instead of the source code files to refactor your code and thus is much more robust but also powerful.  
+Sometimes you have to update large parts of your code base a little bit, like when you move from one standard to another or you changed a function definition. Although this can be accomplished with a `sed` command using regular expressions, this approach is dangerous, if you use macros, your code is not formatted properly etc.... [Clang-tidy](https://clang.llvm.org/extra/clang-tidy/) can do these things and many more by using the abstract syntax tree of the compiler instead of the source code files to refactor your code and thus is much more robust but also powerful.
 
 
 ### Debugging

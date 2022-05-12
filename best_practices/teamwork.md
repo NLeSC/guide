@@ -1,7 +1,7 @@
 # Teamwork
 
 If done well, working in a team can be more fun, more productive, and more effective.
-There are both benefits and downsides of working in teams, 
+There are both benefits and downsides of working in teams,
 and the key is to work together in such a way that the advantages outweigh the disadvantages.
 
 You can learn more about teamwork in [The Turing Way](https://the-turing-way.netlify.app/collaboration/new-community/new-community-teamwork.html#cl-new-community-teamwork).
@@ -12,7 +12,7 @@ Also checkout the [Teamwork for Research Software Development lesson](https://nl
 *Schematic overview of how teams operate at the Netherlands eScience Center*
 
 There is not one fixed way of how teams operate at the center.
-Even the definition of what a team is is flexible. 
+Even the definition of what a team is is flexible.
 On one side there are formally defined teams in which engineers mostly work within the team and focus on a few projects.
 On the other extreme a pair of two engineers that occasianally review each other's code can also already be called a team.
 Checkout this [whitepaper](https://collegeville.github.io/CW21/WorkshopResources/WhitePapers/structured-unstructured-teams.pdf)

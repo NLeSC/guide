@@ -27,7 +27,7 @@ The main UX disciplines are:
 The known UX umbrella diagram represents the different disciplines of UX:
 
 <img src="https://user-images.githubusercontent.com/4195550/100587866-681a6700-32f1-11eb-87d2-c40616d45c4f.png" width="800" />
- 
+
 *Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
 
 
@@ -52,9 +52,9 @@ Heuristics, or commonly known 'as the rule of thumb,' play a significant role wh
 #### Designing Lovable software
 
 When delivering software iteratively, one of the common approaches to follow is to define a Minimum Value Product that contains the minimum requirements. Often is forgotten in this approach to deliver software that attracts and engages the users. When developing research software, researchers should present the new and innovative outcomes in a way that feels comfortable and easy to use from the very beginning, eliminating any cognitive burden that the software's interaction may include.
- 
+
  <img src="https://user-images.githubusercontent.com/4195550/99543638-ad669c80-29b3-11eb-92c6-1754fa9c837c.png" width="800" />
- 
+
  *Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
 
 While MVP (Minumun Product Value) focuses on provide users with a way to explore the product and understand its main intent, MLP (Minimun Loveable Product) approach focuses on essential features instead of the bare minimum expected from a class software. Going beyond the bare functionality, the attention is driven towards a great user experience. The outcomes mush contains all elements in the pyramid being **functional, reliable, usable, and pleasurable.**
