@@ -51,7 +51,7 @@ well defined functionality|
 source code documentation|
 usage documentation|
 documented development setup (good example is [Getting started with khmer development](http://khmer.readthedocs.org/en/latest/dev/getting-started.html))|
-contribution guidelines [egzample](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md)|
+contribution guidelines [example](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md)|
 code of conduct ([contributor covenant](http://contributor-covenant.org/))|
 documented code style|
 meaning of issue labels used|

@@ -143,7 +143,7 @@ Many linters exists for Python, [`prospector`](https://github.com/landscapeio/pr
 * [mccabe](https://github.com/PyCQA/mccabe)
 * [pyroma](https://github.com/regebro/pyroma)
 
-Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/main/%7B%7Bcookiecutter.directory_name%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
 
@@ -240,7 +240,7 @@ At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which use
 
 * [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
 * [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
-* Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
+* Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
 We recommend using the Google documentation style.
 Use `sphinx-build` to build your documentation.

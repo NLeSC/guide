@@ -3,7 +3,7 @@
 Developed programs should be documented at multiple levels, from code comments, through API documentation, to installation and usage documentation.
 Comments at each level should take into account different target audience, from experienced developers, to end users with no programming skills.
 
-Example of good documentation: [A Guide to NumPy/SciPy Documentation](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt)
+Example of good documentation: [A Guide to NumPy/SciPy Documentation](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
 
 ## Markdown
 
