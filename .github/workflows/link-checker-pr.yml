@@ -13,7 +13,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.TOKEN_GITHUB}}        
         with:
-          args: --verbose --no-progress --exclude-all-private --exclude-mail ${{ steps.changed_files.outputs.all }}
+          args: ${{ steps.changed_files.outputs.all }}
       - name: Count broken links
         run: |
             broken_max=10
