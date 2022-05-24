@@ -4,20 +4,16 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - id: changed_files
-        uses: jitterbit/get-changed-files@v1
+      - uses: actions/checkout@v3
       - name: Link Checker
-        uses: peter-evans/link-checker@v1
-        id: lc
+        uses: lycheeverse/lychee-action@v1.4.1
+        id: lychee
         with:
-          args: -v -t 60 -c 16 -d /github/workspace -r ${{ steps.changed_files.outputs.all }}
+          args: "--verbose --no-progress '${{ steps.changed_files.outputs.all }}'"
       - name: Count broken links
         run: |
             broken_max=10
-            broken=$(grep ERROR ./link-checker/out.md || echo "Ok")
-            broken_count=$(echo "$broken" | wc -l)
-
+            broken_count=$(printf "%d" $(grep "🚫 Errors" lychee/out.md | cut -d'|' -f3))
             if [ "$broken_count" -gt "$broken_max" ]; then
                 echo "Number of broken links (${broken_count}) exceeds maximum allowed number (${broken_max})."
                 echo "Broken links: "
