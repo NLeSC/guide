@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 4 * * *'  
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
