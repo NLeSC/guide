@@ -9,7 +9,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.4.1
         id: lychee
         with:
-          args: "--verbose --no-progress '${{ steps.changed_files.outputs.all }}'"
+          args: --verbose --no-progress ${{ steps.changed_files.outputs.all }}
       - name: Count broken links
         run: |
             broken_max=10
