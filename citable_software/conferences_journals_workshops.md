@@ -6,7 +6,7 @@ This is a list of Conferences, Journals, and Workshops related to eScience.
 
 * [The IEEE International Conference on eScience](https://escience-conference.org/) Yearly (computer science) conference on eScience.
 
-* [UK Conference of Research Software Engineers](https://rse.ac.uk/conf2019/).
+* [UK Conference of Research Software Engineers](https://rsecon2022.society-rse.org/).
 
 * [German Conference of Research Software Engineers](https://www.de-rse.org/en/conf2019/index.html).
 

@@ -74,7 +74,7 @@ build tests||X|
 [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration), using a [publicly available service](../best_practices/testing.md#Online-services-for-continuous-integration)||X|
 continuous code coverage and code quality metrics public, minimum 70% coverage required|||X
 end2end test for (web) user interfaces|||X
-track dependencies (with [David](https://david-dm.org/) or other service depending on codebase language)|||X
+track dependencies (with [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)) or other service depending on codebase language)|||X
 
 ## Documentation
 

@@ -86,7 +86,7 @@ Once the web page has any interface, e2e tests should be implemented.
 
 ## Dependencies tracking
 
-[David](https://david-dm.org/) or other service depending on codebase language.
+[Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) or other service depending on codebase language.
 
 Checking for dependency updates should be done regularly. It can save a lot of time,
 avoiding code dependent on deprecated functionality.

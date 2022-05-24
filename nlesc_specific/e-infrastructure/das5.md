@@ -1,12 +1,15 @@
 # DAS-5
 
+*This text is about DAS-5. However, most of the advice should also be
+applicable to its successor [DAS-6](https://www.cs.vu.nl/das/home.shtml).*
+
 This text gives a couple of practical hints to get you started using the
 DAS-5 quickly. It is intended for people with little to no experience
 using compute clusters.
 
 First of all, and this is the most important point in this text: read
 the usage policy and make sure you understand every word of it:
-http://www.cs.vu.nl/das5/usage.shtml
+https://www.cs.vu.nl/das5/usage.shtml
 
 The DAS-5 consists of multiple cluster sites, the largest one is located
 at the VU, which you can reach using by the hostname

@@ -146,7 +146,7 @@ There's also [jsfiddle](https://jsfiddle.net/), which shows you a live preview o
 # Code quality analysis tools and services
 
 * [Code climate](https://codeclimate.com) can analyze Javascript (and Ruby, PHP). For example project see https://codeclimate.com/github/NLeSC/PattyVis
-* [Codacy](https://www.codacy.com) can analyze Java, Python, Javascript and Typescript (and CSS, PHP, Scala). The analysis for Java and Python is not as good as for Javascript. The analysis is quite slow, as it analyzes each past commit. For example project see https://www.codacy.com/app/3D-e-Chem/molviewer-tsx/dashboard
+* [Codacy](https://www.codacy.com) can analyze [many different languages](https://docs.codacy.com/getting-started/supported-languages-and-tools/) using open source tools.
 * [SonarCloud](https://sonarcloud.io) is an open platform to manage code quality which can also show code coverage and count test results over time.
 Can analyze Java (best supported), C, C++, Python, Javascript and Typescript. For example project see https://sonarcloud.io/dashboard?id=e3dchem%3Amolviewer
 
@@ -164,7 +164,7 @@ To learn about TypeScript the following resources are available:
 
 * [youtube](http://www.youtube.com/playlist?list=PLyJiOytEPs4d9QUQHHSuY3n3nBmkBuqro): tutorials playlist about TypeScript
 * [tutorial](http://www.typescriptlang.org/Tutorial) from Microsoft's TypeScript website
-* [blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps) about how TypeScript can be used with the Google Chrome/Chromium debuggers (and [presumably](http://blog.oio.de/2014/04/04/internet-explorer-11-source-map-based-debugging/) Firefox, and Internet Explorer) through the use of so-called 'source maps'. (Follow [this](http://www.codeproject.com/Articles/649271/How-to-Enable-Source-Maps-in-Firefox) link to set up source mapping for Firefox, also useful for debugging minified JavaScript code).
+* [blog post](http://www.aaron-powell.com/posts/2012-10-03-typescript-source-maps) about how TypeScript can be used with the Google Chrome/Chromium debuggers (and [presumably](https://blog.oio.de/2014/04/04/internet-explorer-11-source-map-based-debugging/) Firefox, and Internet Explorer) through the use of so-called 'source maps'. (Follow [this](http://www.codeproject.com/Articles/649271/How-to-Enable-Source-Maps-in-Firefox) link to set up source mapping for Firefox, also useful for debugging minified JavaScript code).
 * [blog post](http://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/) that supposedly is the definitive guide to TypeScript
 * [TypeScript Language Specification](https://github.com/microsoft/TypeScript/tree/main/doc)
 

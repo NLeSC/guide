@@ -12,14 +12,6 @@ Lack of e-Infrastructure should never be a reason for not being able to to a pro
 
 SURF is the most obvious supplier of e-Infrastructure for Netherlands eScience Center projects. For all e-Infrastructure needs we usually first look to SURF. This does not mean SURF is our exclusive e-Infrastructure provider. We use whatever infrastructure is best for the project, provided by SURF or otherwise.
 
-<!--
-### New project meeting with SURF
-
-It is not always apparent what is available at SURF, under what conditions machines can be used, etc. Also SURF is more than willing to try to accommodate any special requests from projects, _if_ some lead-time is available before the infrastructure is actually needed.
-
-Once we have a good idea of what e-Infrastructure is required in a project (probably some time after the official start of a project), a meeting with SURF is held to see what infrastructure needs can be filled with SURF infrastructure. The first point of contact is Jan Bot (jan.bot@surfsara.nl) who works at SURFsara, and across the hall from our office. For now please also invite Niels Drost to the meeting, and perhaps bring your coordinator.
--->
-
 ### Getting access to SURF infrastructure
 
 In general access to SURFsara resources is free of charge for scientists in The Netherlands. For most infrastructure gaining access is a matter of filling in a simple web-form, which you can do yourself on behalf of the scientists in the project. Exceptions are the Cartesius and Lisa, for which a more involved process is required. For these machines, only the PI of a project can submit (or anyone else with an NWO Iris account).
@@ -28,12 +20,12 @@ The Netherlands eScience Center also has access to the infrastructure provided b
 
 ### Available systems at SURF
 
-Here we list some of the most likely to be used resources at SURF. See the [overview of all SURF services and products](https://www.surf.nl/en/services-and-support/services-provided-by-surf), and [detailed information on the SURFsara infrastructure](https://userinfo.surfsara.nl/systems).
+Here we list some of the most likely to be used resources at SURF. See the [overview of SURF services and products](https://www.surf.nl/en/research-it), and [detailed information on the SURFsara infrastructure](https://userinfo.surfsara.nl/systems).
 
 SURFsara:
 
-- **Cartesius**: The national supercomputer of The Netherlands. It contains a lot of very high performance machines, connected through a fast interconnect (about 41000 cores in total, plus 132 GPUs). It also has a large storage system (7+ Pb). Cartesius is typically designed for large parallel applications that require thousands of cores at once.
-- **Lisa**: National Cluster. Similar machines as the Cartesius, without the interconnect (about 8000 cores in total). Storage also more limited. Lisa is typically designed to run lots of small (1 to 16 core) applications at the same time.
+- **Snellius**: Snellius is the Dutch national supercomputer. Snellius is a general purpose capability system and is designed to be a well balanced system. If you need one or more of: many cores, large symmetric multi-processing nodes, high memory, a fast interconnect, a lot of work space on disk, or a fast I/O subsystem then Snellius is the machine of choice.
+- **Lisa**: National Cluster. Similar machines as the Cartesius (the previous Dutch national supercomputer), without the interconnect (about 8000 cores in total). Storage also more limited. Lisa is typically designed to run lots of small (1 to 16 core) applications at the same time.
 - **Grid**: Same machines again, now with a Grid Middleware. Not recommended for use in eScience Center projects.
 - **HPC Cloud**: On demand computing infrastructure. Nice if you need longer running services, or have a lot of special software requirements.
 - **Hadoop**: Big Data analytics framework.
