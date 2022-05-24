@@ -119,7 +119,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
     * To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
     * `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
 
-* [Build using conda](http://conda.pydata.org/docs/build_tutorials.html)
+* [Build using conda](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/index.html)
   * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
   * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 
@@ -239,7 +239,7 @@ There are several tools that automatically generate documentation from docstring
 At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which uses reStructuredText as its markup language, but can be extended to use Markdown as well.
 
 * [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
-* [Restructured Text (reST) and Sphinx CheatSheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
+* [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
 * Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
 
 We recommend using the Google documentation style.
@@ -289,7 +289,7 @@ It is good practice to restart the kernel and run the notebook from start to fin
 * [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
 * [monetdb.sql](https://www.monetdb.org/Documentation/SQLreference/Programming/Python)
 is [monetdb](https://www.monetdb.org) Python client
-* [pymongo](http://api.mongodb.org/python/current/#) allows for work with [MongoDB](http://www.mongodb.com) database
+* [pymongo](https://pymongo.readthedocs.io) and [motor](https://motor.readthedocs.io) allow for work with [MongoDB](http://www.mongodb.com) database
 * [py-leveldb](https://code.google.com/p/py-leveldb/) are thread-safe Python bindings for [LevelDb](https://github.com/google/leveldb)
 
 ### Parallelisation
