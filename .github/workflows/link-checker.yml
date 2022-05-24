@@ -8,6 +8,8 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.4.1
         id: lychee
+        with:
+          args: --verbose --no-progress --exclude-all-private --exclude-mail './**/*.md'
       - name: Count broken links
         run: |
             broken_max=10
