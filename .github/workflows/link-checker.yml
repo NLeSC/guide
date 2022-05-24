@@ -1,5 +1,8 @@
 name: Link Checker
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
