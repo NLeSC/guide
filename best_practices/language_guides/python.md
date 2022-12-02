@@ -301,7 +301,7 @@ Having said that, there are many ways to run Python code in parallel:
 * A much simpler alternative in Python 3 is the [`concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) module.
 * [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
 * Many modules have parallel capabilities or can be compiled to have them.
-* At the eScience Center, we have developed the [Noodles package](http://nlesc.github.io/noodles/) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
+* At the eScience Center, we have developed the [Noodles package](https://research-software-directory.org/software/noodles) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
 

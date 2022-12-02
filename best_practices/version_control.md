@@ -34,7 +34,7 @@ authentication](https://help.github.com/articles/about-two-factor-authentication
 This SHOULD be enabled for your account
 * Project based GitHub organizations
   * MUST have at least two owners that are Netherlands eScience center employees
-  * MUST be [registered](https://github.com/NLeSC/nlesc.github.io#adding-an-github-organization) at [https://nlesc.github.io/](https://nlesc.github.io/), to keep track of all the project organizations
+  * MUST be registered at the [Research Software Directory](https://research-software-directory.org/projects/), to keep track of all the project organizations
   * Private repositories can be created. **NOTE**: The [Netherlands eScience Center IP policy](https://www.esciencecenter.nl/wp-content/uploads/2020/05/nlesc_ip_policy_2017.pdf) applies to any software we contribute to, so the repository SHOULD become open source at some point. To prevent private repositories from remaining unnecessarily private forever please add a brief statement in the README of your repository, clarifying:
     * Why is this repository private?
     * On which date can this repository be made public?
