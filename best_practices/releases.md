@@ -24,7 +24,7 @@ Very often package managers depend on `semver` and will not work as expected oth
 ### Releasing code on github
 
 Github makes it easy to do a release straight from your repositories website.
-See [github releases](https://help.github.com/categories/releases/) for more information.
+See [github releases](https://docs.github.com/en/repositories/releasing-projects-on-github) for more information.
 
 ### CHANGELOG.md
 
