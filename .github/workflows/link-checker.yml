@@ -1,21 +1,24 @@
 name: Link Checker
-on: push
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 4 * * *'  
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Link Checker
-        uses: peter-evans/link-checker@v1
-        id: lc
-        with:
-          args: -v -t 60 -c 16 -d /github/workspace -r *
+        uses: lycheeverse/lychee-action@v1.4.1
+        id: lychee
+        env:
+          GITHUB_TOKEN: ${{secrets.TOKEN_GITHUB}}
       - name: Count broken links
         run: |
             broken_max=10
-            broken=$(grep ERROR ./link-checker/out.md)
-            broken_count=$(echo "$broken" | wc -l)
-
+            broken_count=$(printf "%d" $(grep "🚫 Errors" lychee/out.md | cut -d'|' -f3))
             if [ "$broken_count" -gt "$broken_max" ]; then
                 echo "Number of broken links (${broken_count}) exceeds maximum allowed number (${broken_max})."
                 echo "Broken links: "

@@ -28,10 +28,10 @@ python3 -m http.server 4000
 
 To view the documentation in a web browser (default address: http://localhost:4000):
 
-To check if there are any broken links using [liche](https://github.com/raviqqe/liche) in a Docker container:
+To check if there are any broken links using [lychee](https://github.com/lycheeverse/lychee) in a Docker container:
 
 ```shell
-docker run -v $PWD:/docs peterevans/liche:1.1.1 -t 60 -c 16 -d /docs -r /docs
+docker run --init -it -v `pwd`:/docs lycheeverse/lychee /docs --config=docs/lychee.toml
 ```
 
 If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
