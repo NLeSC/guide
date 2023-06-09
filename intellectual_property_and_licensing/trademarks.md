@@ -8,7 +8,7 @@ As an example, Apple Records and Apple Computer can co-exist peacefully despite 
 
 ## Getting a trademark
 
-Trademarks can be registered with the patent and trademark office, after which they're marked with an ® symbol. In some countries, notably the US, this in not required, and just using it in practice to identify your products is in principle enough. Non-registered trademarks are marked with a ™ symbol.
+Trademarks can be registered with the patent and trademark office, after which they're marked with an ® symbol. In some countries, notably the US, this is not required, and just using it in practice to identify your products is in principle enough. Non-registered trademarks are marked with a ™ symbol.
 
 Our Netherlands eScience Center logo is an example of a (non-registered) service mark (℠, although there is no legal protection for unregistered marks here). Service marks are essentially the same thing as trademarks, but they don't identify physical products (we don't make any) but services or intangible products, and as such are applied to equipment and uniforms and such. The idea is the same however.
 
