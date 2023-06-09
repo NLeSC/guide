@@ -1,6 +1,6 @@
 # Licensing
 
-Without a license, all [rights](../intellectual_property_and_licensing/copyright.md) are at the author of the code or data, and that means nobody else can use, copy, distribute, or modify it work without consent. A license gives this consent.
+Without a license, all [rights](../intellectual_property_and_licensing/copyright.md) are at the author of the code or data, and that means nobody else can use, copy, distribute, or modify the work without consent. A license gives this consent.
 
 ## Software licences
 
