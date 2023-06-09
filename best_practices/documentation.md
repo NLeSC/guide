@@ -96,7 +96,7 @@ An extensive example is [Angular.js's CONTRIBUTING.md](https://github.com/angula
 
 ## Code of conduct
 
-A code of conduct is a set of rules outlining the social norms, religious rules and responsibilities of, and or proper practices for an individual. Such a document is advantagous for collaberation, for several reasons:
+A code of conduct is a set of rules outlining the social norms, religious rules and responsibilities of, and or proper practices for an individual. Such a document is advantagous for collaboration, for several reasons:
 
 * It shows your intent to work together in a positive way with everyone.
 * It reminds everyone to communicate in a welcoming and inclusive way.

@@ -25,9 +25,9 @@ create the mailing list.
 
 ## Demo docker image in dockerhub (with Dockerfile)
 
-When applies, ususally for services.
+When applies, usually for services.
 
-If software is the service Docker image should be created at the very early stage. This will allow for easier testing and platform
+If software is the service, Docker image should be created at a very early stage. This will allow for easier testing and platform
 independent use.
 
 ## An online demo

@@ -37,7 +37,7 @@ free public continous integration service.
 
 ### Nightly builds
 
-Most CI builds are triggered by a git push, but sometimes the repository must be build every night.
+Most CI builds are triggered by a git push, but sometimes the repository must be built every night.
 Possible reasons for nightly builds:
 
 * Make sure the repository stays working even if there are no changes pushed to the repository, but it's dependencies are changing possibly breaking the code in the repository.
