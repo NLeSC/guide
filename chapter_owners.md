@@ -22,4 +22,5 @@ Overall Maintainer: Bouwe Andela
 * Publishing Scientific Results: Willem van Hage
 * Access to e-Infrastructure: Jason Maassen
 * Projects: Jisk Attema
+  * Planning: Barbara Vreede
 * Contributing to this Guide: Jason Maassen
