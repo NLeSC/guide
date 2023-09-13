@@ -10,6 +10,10 @@ The following tips and tricks on how to plan a long term project are therefore s
 
 A lot of decisions you will make along the line depend on the exact kind of project you are working on.
 Knowing the project and the place you are starting from is therefore an important initial step.
+
+Take the early phase to get to know the domain, and read up on the subject matter.
+Understanding the context of the project is not just important to make planning decisions, but it will also allow you to communicate better with your project partners.
+
 Are you doing an experimental project? Then estimating time to completion can be particularly difficult.
 Is the project simply an idea? Is it risky? What is the outcome of the project if a key hypothesis is wrong?
 
@@ -22,10 +26,12 @@ What subtasks can you define in your project?
 Make a list, as comprehensive as possible, of all the different steps you need to take and elements you want to complete as part of this project.
 The resolution of this list should not be too high; at this point, think about the project as a whole, and don’t lose yourself in details like individual issues or work items.
 
-Also, do not make this list alone: work together with the Lead Applicant, they are the designer of the project, after all.
+Constructing this list should be done in collaboration with the project partners.
+It provides a good opportunity to define the project together, and to ensure everyone agrees about its goals.
 
-On this list, specify which elements are “need-to-have” and which are “nice-to-have”.
-Specifically, define your Minimum Viable Product (MVP), and be honest here.Which components are essential for the project? They are part of the MVP.
+On the list, specify which elements are “need-to-have” and which are “nice-to-have”.
+Specifically, define your Minimum Viable Product (MVP), and be honest here.
+Which components are essential for the project? They are part of the MVP.
 If a module or task falls outside the MVP that does not mean that it cannot or will not be done, but it should have a lower priority than those parts that are make-or-break components.
 
 ### Make a time budget
@@ -41,7 +47,7 @@ Some other things to keep in mind:
 - Don’t forget to include time for learning new essential skills.
 - Depending on how good you are at estimating time, it may be wise to double, triple, or even quintuple your initial time estimates to come to a more realistic number.
 - The question is not “how long does this take”, but “how long does this take you”. Look at comparable things you have done in the past, learn from it, and apply the lesson to your current time budget.
-- Operations uses 10-15% of hours off your budget as overhead, so you have less time than is listed on the proposal.
+- Management uses 10-15% of hours off your budget as overhead, so you have less time than is listed on the proposal.
 
 ### Get what you need
 
