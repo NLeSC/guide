@@ -1,10 +1,17 @@
 # Contributing
 
-This Knowledge Base is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audience is anyone interested in eScience and research software development in general or how this is done at the eScience Center specifically.
+This guide is primarily written by the eScience Research Engineers at the Netherlands eScience Center. The intended audience is anyone interested in eScience and research software development in general or how this is done at the eScience Center specifically.
 
 ## Scope
 
-To make sure the information in this knowledge base stays relevant and  up to date it is intentionally low on technical details. The Knowledge base contains information on the process we use to do projects and develop software.
+Please check if your contribution fits in
+[The Turing Way](https://github.com/the-turing-way/the-turing-way)
+before considering contributing to this guide.
+If it does not fit, please open an [issue](https://github.com/NLeSC/guide/issues)
+to discuss your planned contribution before starting to work on it, to avoid
+disappointment later.
+
+To make sure the information in this guide stays relevant and  up to date it is intentionally low on technical details. The guide contains information on the process we use to do projects and develop software.
 
 ## Workflow for making contributions
 
