@@ -46,3 +46,21 @@ To see who is responsible for which part of the guide see [chapter_owners.md](ch
 
 We host a PDF version of the guide on [Zenodo](https://doi.org/10.5281/zenodo.4020565).
 To update it a [new release](https://github.com/NLeSC/guide/releases) needs to be made of the guide. This will trigger a GitHub action to create a new Zenodo version with the PDF file.
+
+# Technical details
+
+The basics of how the Guide is implemented.
+
+The Guide is built on [docsify](https://docsify.js.org) and hosted on GitHub Pages.
+Deployment is "automatic" from the main branch, because docsify requires no build step into static HTML pages, but rather generates HTML dynamically from the MarkDown files in the Guide repository.
+The only configuration that was necessary for this automatic deployment is:
+1. The [index.html](https://github.com/NLeSC/guide/blob/main/index.html) file in the root directory that loads docsify.
+2. The empty [.nojekyll](https://github.com/NLeSC/guide/blob/main/.nojekyll) file, which tells GitHub that we're not dealing with Jekyll here (the GitHub Pages default).
+3. Telling GitHub in the Settings -> Pages menu to load the Pages content from the root directory.
+
+Plugins that we use:
+- The [docsify full text search plugin](https://docsify.js.org/#/plugins?id=full-text-search)
+- The [docsify Google Analytics plugin](https://docsify.js.org/#/plugins?id=google-analytics)
+- [Prism](https://docsify.js.org/#/language-highlight) is used for language highlighting.
+
+If you want to change anything in this part, please discuss in an issue.
