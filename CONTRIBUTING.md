@@ -51,12 +51,13 @@ To update it a [new release](https://github.com/NLeSC/guide/releases) needs to b
 
 The basics of how the Guide is implemented.
 
-The Guide is built on [docsify](https://docsify.js.org) and hosted on GitHub Pages.
+The Guide is rendered by [docsify](https://docsify.js.org) and hosted on GitHub Pages.
 Deployment is "automatic" from the main branch, because docsify requires no build step into static HTML pages, but rather generates HTML dynamically from the MarkDown files in the Guide repository.
 The only configuration that was necessary for this automatic deployment is:
 1. The [index.html](https://github.com/NLeSC/guide/blob/main/index.html) file in the root directory that loads docsify.
 2. The empty [.nojekyll](https://github.com/NLeSC/guide/blob/main/.nojekyll) file, which tells GitHub that we're not dealing with Jekyll here (the GitHub Pages default).
 3. Telling GitHub in the Settings -> Pages menu to load the Pages content from the root directory.
+4. The [_sidebar.md](https://github.com/NLeSC/guide/blob/main/_sidebar.md) file for the table of contents.
 
 Plugins that we use:
 - The [docsify full text search plugin](https://docsify.js.org/#/plugins?id=full-text-search)
