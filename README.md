@@ -2,17 +2,21 @@
 
 # Guide
 
-This is a guide to projects and software development at the Netherlands eScience Center. It both serves as a source of information for exactly how we work at the eScience Center, and as a basis for discussions and reaching consensus on this topic.
+This is a guide to software development at the Netherlands eScience Center.
+It both serves as a source of information for how we work at the eScience
+Center, and as a basis for discussions and reaching consensus on this topic.
 
 **Read The Turing Way instead**
 
-Most of the generic content of this guide has been moved to
-[The Turing Way](https://the-turing-way.netlify.app/index.html).
-Because The Turing Way is language agnostic, we have not yet been able to find
-an appropriate place for the [language guides](best_practices/language_guides/languages_overview.md),
-so we try to keep those up to date.
-*Most of the other information is outdated, be careful when using it.*
-
-**This Guide is a work in progress**
+If you are looking for an overall picture of best practices, read
+[The Turing Way](https://the-turing-way.netlify.app/index.html) first.
+We joined forces with that guide for most of our generic research software
+engineering advice.
+Because The Turing Way is language agnostic, this guide mostly provides
+addtional specific
+[language guides](best_practices/language_guides/languages_overview.md).
+*Please be aware that most remaining language agnostic content is outdated,
+be careful when using it.*
+We plan on removing that content (#286).
 
 If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.md).
