@@ -30,9 +30,6 @@
    * [Copyright](/intellectual_property_and_licensing/copyright.md)
    * [Software Licenses](/intellectual_property_and_licensing/software_licenses.md)
    * [Examples](/intellectual_property_and_licensing/examples.md)
-* [Publishing](/citable_software/publishing_results.md)
-   * [Making software citable](/citable_software/making_software_citable.md)
-   * [eScience Conferences, Journals, and Workshops](/citable_software/conferences_journals_workshops.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
 * NLeSC specific
    * [Chapter Owners](/chapter_owners.md)
