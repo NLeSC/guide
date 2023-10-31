@@ -27,7 +27,7 @@ A more thorough checklist is the [Core Infrastructures Initiative Badge Best Pra
 ## I'm publishing a paper
 
 * Add a [CITATION.cff file](documentation.md#software-citation)
-* [Make your software citable](../citable_software/making_software_citable.md)
+* [Make your software citable](#doi-or-pid)
 * Cite DOI in paper
 
 ## I'm expecting users
