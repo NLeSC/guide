@@ -1,7 +1,6 @@
 
 * [Introduction](/README.md)
 * [Best practices](/best_practices/overview.md)
-   * [Checklist](/best_practices/checklist.md)
    * [Version Control](/best_practices/version_control.md)
    * [Code Quality](/best_practices/code_quality.md)
    * [Code Review](/best_practices/code_review.md)
@@ -42,8 +41,3 @@
       * [Project Reviews](/nlesc_specific/projects/project_reviews.md)
       * [Communication](/nlesc_specific/projects/communication.md)
       * [End of a Project](/nlesc_specific/projects/end_of_a_project.md)
-   * [Checklist](/nlesc_specific/checklist.md)
-      * [Development stages matrix](/nlesc_specific/checklist_matrix.md)
-      * [Prototype phase](/nlesc_specific/checklist/checklist_prototype.md)
-      * [Prerelease phase](/nlesc_specific/checklist/checklist_prerelease.md)
-      * [Mature phase](/nlesc_specific/checklist/checklist_mature.md)
