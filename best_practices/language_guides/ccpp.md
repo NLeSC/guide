@@ -326,3 +326,5 @@ A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 * Bjarne Soustrup - The C++ Language
 * Scott Meyers - Effective Modern C++
 
+
+*Page maintainers: Johan Hidding* [@jhidding](https://github.com/jhidding) *and Patrick Bos* [@egpbos](https://github.com/egpbos)

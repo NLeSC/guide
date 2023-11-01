@@ -65,3 +65,6 @@
  * Generic Auto Tuners:
      * [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner) (Python)
      * [CLTune](https://github.com/CNugteren/CLTune) (C++)
+
+
+*Page maintainer: unmaintained*

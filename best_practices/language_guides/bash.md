@@ -200,3 +200,6 @@ set -e
 - [Bash Cheat sheet](https://devhints.io/bash)
 - The [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html) or use `man bash`
 - [Oh My Zsh](https://ohmyz.sh/) offers an extensive set of themes and shortcuts for the Zsh
+
+
+*Page maintainer: Bouwe Andela* [@bouweandela](https://github.com/bouweandela)

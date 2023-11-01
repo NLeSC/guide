@@ -40,3 +40,6 @@ standard conventions, described in the [official documentation](http://www.fortr
 * Add concise comments to modules and routines, and add comments to less obvious lines of code.
 * Provide a test suite with your code, containing both unit and integration tests. Both automake and cmake provide test
   suite functionality; if you create your makefile yourself, add a separate testing target.
+
+
+*Page maintainer: Gijs van den Oord* [@goord](https://github.com/goord)

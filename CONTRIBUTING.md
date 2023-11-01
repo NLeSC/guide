@@ -45,9 +45,10 @@ If everything works as it should, ``git add``, ``commit`` and ``push`` like norm
 
 If you have made a significant contribution to the guide, please make sure to add yourself to the `CITATION.cff` file so your name can be included in the list of authors of the guide.
 
-## Chapter Owners
+## Page maintainers
 
-To see who is responsible for which part of the guide see [chapter_owners.md](chapter_owners.md).
+To see who is responsible for which part of the guide see the maintainer listed at the bottom of a page.
+If you are interested in becoming a chapter owner for a page that is listed as *unmaintained*, please open a pull request to add your name instead of *unmaintained*.
 
 ## Create a PDF file
 

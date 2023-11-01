@@ -131,3 +131,6 @@ Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-u
 
 # Not in this tutorial yet:
 * Logging
+
+
+*Page maintainer: unmaintained*

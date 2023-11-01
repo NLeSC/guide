@@ -67,3 +67,6 @@ Design tools used for Visual Design, Prototyping, and IxD testing collaborative,
 *   [Figma](https://www.figma.com/)
 *   [Miro](https://miro.com/)
 *   [Whimsical](https://whimsical.com/)
+
+
+*Page maintainer: Jesus Garcia* [@ctwhome](https://github.com/ctwhome)
