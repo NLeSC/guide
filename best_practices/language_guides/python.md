@@ -107,7 +107,8 @@ pip install -e .
 ```
 The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
-Set up continuous integration to test your installation setup. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation configuration.
+Set up continuous integration to test your installation setup.
+You can use `pyroma` as a linter for your installation configuration.
 
 ### Packaging and distributing your package
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
@@ -137,16 +138,14 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 
 The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
-Many linters exists for Python, [`prospector`](https://github.com/landscapeio/prospector) is a tool for running a suite of linters, it supports, among others:
+Many linters exists for Python.
+We have long promoted use of [`prospector`](https://github.com/landscapeio/prospector), a tool for running a suite of linters, including, among others [pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://www.pylint.org/), [mccabe](https://github.com/PyCQA/mccabe) and [pyroma](https://github.com/regebro/pyroma).
 
-* [pycodestyle](https://github.com/PyCQA/pycodestyle)
-* [pydocstyle](https://github.com/PyCQA/pydocstyle)
-* [pyflakes](https://pypi.python.org/pypi/pyflakes)
-* [pylint](https://www.pylint.org/)
-* [mccabe](https://github.com/PyCQA/mccabe)
-* [pyroma](https://github.com/regebro/pyroma)
+However, we have [since 2023 been switching](https://github.com/NLeSC/python-template/issues/336) to [Ruff](https://github.com/astral-sh/ruff).
+It is much faster and aims to support most of the functionality that `prospector` does (see the website for the complete function parity overview). 
+It can be configured in a `pyproject.toml` section.
 
-Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/main/%7B%7Bcookiecutter.directory_name%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
 
