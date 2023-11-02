@@ -1,4 +1,8 @@
 # What is R?
+
+*Page maintainer: unmaintained*
+
+
 R is a functional programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
 
 ## Philosophy and typical use cases

@@ -1,5 +1,8 @@
 # C and C++
 
+*Page maintainers: Johan Hidding* [@jhidding](https://github.com/jhidding) *and Patrick Bos* [@egpbos](https://github.com/egpbos)
+
+
 C++ is one of the hardest languages to learn. Entering a project where C++ coding is needed should not be taken lightly. This guide focusses on tools and documentation for use of C++ in an open-source environment.
 
 ### Standards
@@ -325,4 +328,3 @@ A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 ### Books
 * Bjarne Soustrup - The C++ Language
 * Scott Meyers - Effective Modern C++
-

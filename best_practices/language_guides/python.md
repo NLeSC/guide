@@ -1,5 +1,8 @@
 # Python
 
+*Page maintainer: Patrick Bos* [@egpbos](https://github.com/egpbos)
+
+
 Python is the "dynamic language of choice" of the Netherlands eScience Center.
 We use it for data analysis and data science projects using the SciPy stack and Jupyter notebooks, and for [many other types of projects](https://github.com/NLeSC?language=python): workflow management, visualization, NLP, web-based tools and much more.
 It is a good default choice for many kinds of projects due to its generic nature, its large and broad ecosystem of third-party modules and its compact syntax which allows for rapid prototyping.

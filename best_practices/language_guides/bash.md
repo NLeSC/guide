@@ -1,5 +1,8 @@
 # Bash
 
+*Page maintainer: Bouwe Andela* [@bouweandela](https://github.com/bouweandela)
+
+
 Bash is both a command line interface,
 also known as a **shell**, and a scripting language.
 On most Linux distributions, the Bash shell is the default way of interacting

@@ -1,5 +1,7 @@
 # OpenCL & CUDA
 
+*Page maintainer: Alessio Sclocco* [@isazi](https://github.com/isazi)
+
 
 ## Sources for learning
  *please add university courses and informative videos*

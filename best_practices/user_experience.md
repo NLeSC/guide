@@ -1,5 +1,7 @@
-
 # User Experience (UX)
+
+*Page maintainer: Jesus Garcia* [@ctwhome](https://github.com/ctwhome)
+
 
 User Experience Design (UX) is a broad, holistic science that combines many cognitive and brain sciences disciplines like psychology and sociology, content strategies, and arts and aesthetics by following human-center approaches.
 
