@@ -1,3 +1,7 @@
+
+*Page maintainer: unmaintained*
+
+
 This chapter provides practical info on each of the main programming languages of the Netherlands eScience Center.
 
 This info is (on purpose) high level, try to provide "default" options, and mostly link to more info.
@@ -44,6 +48,3 @@ Highly recommented to get some inspiration on available tools and libraries!
 To do development in any language you first need infrastructure (code hosting, ci, etc). Luckily a lot is available for free now.
 
 See this list: https://github.com/ripienaar/free-for-dev
-
-
-*Page maintainer: unmaintained*

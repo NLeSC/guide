@@ -1,5 +1,8 @@
 # Getting started
 
+*Page maintainer: Jurriaan Spaaks* [@jspaaks](https://github.com/jspaaks)
+
+
 To learn about JavaScript, view the presentations by [Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_crockford):
 
 * [Crockford on JavaScript](http://www.youtube.com/playlist?list=PL7664379246A246CB)
@@ -230,6 +233,3 @@ Alternative could be [TSdoc](https://www.npmjs.com/package/tsdoc)
 [TSLint](https://github.com/palantir/tslint) is a good tool to check your codestyle.
 
 For the [sim-city-cs project](https://github.com/indodutch/sim-city-cs/) we use [this](https://github.com/ReGIS-org/regis/blob/develop/tslint.json) tslint.json file.
-
-
-*Page maintainer: Jurriaan Spaaks* [@jspaaks](https://github.com/jspaaks)

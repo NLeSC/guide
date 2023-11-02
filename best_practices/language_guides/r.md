@@ -1,4 +1,8 @@
 # What is R?
+
+*Page maintainer: unmaintained*
+
+
 R is a functional programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
 
 ## Philosophy and typical use cases
@@ -131,6 +135,3 @@ Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-u
 
 # Not in this tutorial yet:
 * Logging
-
-
-*Page maintainer: unmaintained*

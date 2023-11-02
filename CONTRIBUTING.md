@@ -47,7 +47,7 @@ If you have made a significant contribution to the guide, please make sure to ad
 
 ## Page maintainers
 
-To see who is responsible for which part of the guide see the maintainer listed at the bottom of a page.
+To see who is responsible for which part of the guide see the maintainer listed at the top of a page.
 If you are interested in becoming a chapter owner for a page that is listed as *unmaintained*, please open a pull request to add your name instead of *unmaintained*.
 
 ## Create a PDF file
