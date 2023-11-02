@@ -1,7 +1,6 @@
 
 * [Introduction](/README.md)
 * [Best practices](/best_practices/overview.md)
-   * [Checklist](/best_practices/checklist.md)
    * [Version Control](/best_practices/version_control.md)
    * [Code Quality](/best_practices/code_quality.md)
    * [Code Review](/best_practices/code_review.md)
@@ -35,8 +34,3 @@
    * [Chapter Owners](/chapter_owners.md)
    * [Access to (Dutch) e-Infrastructure](/nlesc_specific/e-infrastructure/e-infrastructure.md)
       * [DAS-5](/nlesc_specific/e-infrastructure/das5.md)
-   * [Checklist](/nlesc_specific/checklist.md)
-      * [Development stages matrix](/nlesc_specific/checklist_matrix.md)
-      * [Prototype phase](/nlesc_specific/checklist/checklist_prototype.md)
-      * [Prerelease phase](/nlesc_specific/checklist/checklist_prerelease.md)
-      * [Mature phase](/nlesc_specific/checklist/checklist_mature.md)
