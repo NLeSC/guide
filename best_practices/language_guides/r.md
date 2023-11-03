@@ -11,7 +11,7 @@ R is particularly popular in the social, health, and biological sciences where i
 One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
-* Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://www.rstudio.com/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
+* Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
 * Numbering in R starts with 1 and not with 0.
 
 ### Recommended sources of information
@@ -30,7 +30,7 @@ To install R check detailed description at [CRAN website](http://cran.r-project.
 #### IDE
 R programs can be written in any text editor. R code can be run from the command line or interactively within R environment, that can be started with `R` command in the shell. To quit R environment type `q()`.
 
-[RStudio](http://www.rstudio.com/products/RStudio/) is a free powerful integrated development environment (IDE) for R. It features editor with code completion, command line environment, file manager, package manager and history lookup among others. You will have to install RStudio in addition to installing R. Please note that updating RStudio does not automatically update R and the other way around.
+[RStudio](https://posit.co/products/open-source/rstudio/) is a free powerful integrated development environment (IDE) for R. It features editor with code completion, command line environment, file manager, package manager and history lookup among others. You will have to install RStudio in addition to installing R. Please note that updating RStudio does not automatically update R and the other way around.
 
 Within RStudio you can work on ad-hoc code or create a project. Compared with Python an R project is a bit like a virtual environment as it preserves the workspace and installed packages for that project. Creating a project is needed to build an R package. A project is created via the menu at the top of the screen.
 
@@ -71,7 +71,7 @@ However, externally contributed plotting packages may offer easier syntax or con
 In summary, it is good to familiarize yourself with both the basic plotting functions as well as the contributed graphics packages. In theory, the basic plot functions can do everything that ggplot2 can do, it is mostly a matter of how much you like either syntax and how much freedom you need to tailor the visualisation to your use case.
 
 ## Building interactive web applications with shiny
-Thanks to [shiny.app](http://shiny.rstudio.com) it is possible to make interactive web application in R without the need to write javascript or html.
+Thanks to [shiny.app](https://shiny.posit.co/) it is possible to make interactive web application in R without the need to write javascript or html.
 
 ## Building reports with knitr
 [knitr](https://yihui.name/knitr/) is an R package designed to build dynamic reports in R. It's possible to generate on the fly new pdf or html documents with results of computations embedded inside.
@@ -116,8 +116,8 @@ R function documentation offers plenty of space to document the functionality, i
 
 # Available templates
 * https://rapporter.github.io/rapport/
-* http://shiny.rstudio.com/articles/templates.html
-* http://rmarkdown.rstudio.com/developer_document_templates.html
+* https://shiny.posit.co/r/articles/build/templates/
+* https://bookdown.org/yihui/rmarkdown/document-templates.html
 
 # Testing, Checking, Debugging and Profiling
 
@@ -130,7 +130,7 @@ See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-p
 Continuous integration should be done with an [online service](../testing.md#Online-services-for-continuous-integration), see [Chapter](../testing.md) on testing.
 
 ### Debugging and Profiling
-Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
+Debugging is possible in RStudio, see [link](https://support.posit.co/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
 
 
 # Not in this tutorial yet:
