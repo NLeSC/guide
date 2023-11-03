@@ -288,7 +288,7 @@ It is good practice to restart the kernel and run the notebook from start to fin
 
 ### Database Interface
 
-* [psycopg](http://initd.org/psycopg/) is an [PostgreSQL](http://www.postgresql.org) adapter
+* [psycopg](https://www.psycopg.org/) is a [PostgreSQL](http://www.postgresql.org) adapter
 * [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
 * [monetdb.sql](https://www.monetdb.org/Documentation/SQLreference/Programming/Python)
 is [monetdb](https://www.monetdb.org) Python client
