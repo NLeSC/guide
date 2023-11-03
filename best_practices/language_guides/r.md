@@ -1,6 +1,6 @@
 # What is R?
 
-*Page maintainer: unmaintained*
+*Page maintainer: Malte Lüken* [@maltelueken](https://github.com/maltelueken)
 
 
 R is a functional programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
