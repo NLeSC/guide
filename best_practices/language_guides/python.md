@@ -66,7 +66,8 @@ Installation of packages that are not using `wheel`, but have a lot of non-Pytho
 The disadvantage of Conda is that the package needs to have a Conda build recipe.
 Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
 
-There are two main distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
+There are two main "official" distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) (and variants of the latter like miniforge, explained below).
+Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
 If installation with the `conda` command is too slow for your purposes, it is recommended that you use [`mamba`](https://github.com/mamba-org/mamba) instead.
 
 For environments where you do not have admin rights (e.g. DAS-6) either Anaconda or Miniconda is highly recommended since the installation is very straightforward.
@@ -76,8 +77,8 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 Do note that since 2020, [Anaconda has started to ask money from large institutes](https://www.anaconda.com/blog/anaconda-commercial-edition-faq) for downloading packages from their [main channel (called the `default` channel)](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#what-is-a-conda-channel) through `conda`.
 This does not apply to universities and most research institutes, but could apply to some government institutes that also perform research and definitely applies to large for-profit companies.
 Be aware of this when choosing the distribution channel for your package.
-An alternative installer that avoids this problem altogether because it only installs packages from `conda-forge` by default is [miniforge](https://github.com/conda-forge/miniforge).
-There is also a mambaforge version that uses the faster `mamba` by default.
+An alternative, community-driven Conda distribution that avoids this problem altogether because it only installs packages from `conda-forge` by default is [miniforge](https://github.com/conda-forge/miniforge).
+Miniforge includes both the faster `mamba` as well as the traditional `conda`.
 
 ## Building and packaging code
 
