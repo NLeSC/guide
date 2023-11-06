@@ -4,7 +4,6 @@
    * [Version Control](/best_practices/version_control.md)
    * [Code Quality](/best_practices/code_quality.md)
    * [Code Review](/best_practices/code_review.md)
-   * [Communication](/best_practices/communication.md)
    * [Testing](/best_practices/testing.md)
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
