@@ -140,15 +140,16 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
 Many linters exists for Python.
-We have long promoted use of [`prospector`](https://github.com/landscapeio/prospector), a tool for running a suite of linters, including, among others [pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://www.pylint.org/), [mccabe](https://github.com/PyCQA/mccabe) and [pyroma](https://github.com/regebro/pyroma).
-
-However, we have [since 2023 been switching](https://github.com/NLeSC/python-template/issues/336) to [Ruff](https://github.com/astral-sh/ruff).
-It is much faster and aims to support most of the functionality that `prospector` does (see the website for the complete function parity overview). 
-It can be configured in a `pyproject.toml` section.
+The most popular one is currently [Ruff](https://github.com/astral-sh/ruff).
+Although it is new (see the website for the complete function parity comparison with alternatives), it works well and has an active community.
+An alternative is [`prospector`](https://github.com/landscapeio/prospector), a tool for running a suite of linters, including, among others [pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://www.pylint.org/), [mccabe](https://github.com/PyCQA/mccabe) and [pyroma](https://github.com/regebro/pyroma).
+Some of these tools have seen decreasing community support recently, but it is still a good alternative, having been a defining community default for years.
 
 Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+
+Ruff can do autoformatting as well and can function as a drop-in replacement of `black` and `isort`.
 
 
 ## Testing
