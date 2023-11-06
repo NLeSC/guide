@@ -86,7 +86,7 @@ Here we list the most commonly used Bash tools that are built to manipulate
 The nice thing about these tools is that you can combine them by streaming the
 output of one tool to become the input of the next tool.
 Have a look at the
-[tutorial](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
+[tutorial](https://swcarpentry.github.io/shell-novice/04-pipefilter.html)
 for an introduction.
 This can be done by creating
 [pipelines](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pipelines)
@@ -164,7 +164,7 @@ This will bring you all the advantages of a fully-fledged programming language
 recommended programming language at the Netherlands eScience Center.
 If you do not mind having an extra dependency and would like to use the features
 and commands available in the shell from Python, the
-[sh](https://amoffat.github.io/sh/) library is a nice option.
+[sh](https://sh.readthedocs.io) library is a nice option.
 
 Disclaimer: if you are an experienced Bash developer, there might be situations
 where using a Bash script solves your problem faster or in a more portable way
