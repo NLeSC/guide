@@ -129,9 +129,12 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 
 ## Editors and IDEs
 
-* Every major text editor supports Python, either natively or through plugins. At the Netherlands eScience Center, often used editors are [atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) and [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/).
-* [PyDev](http://www.pydev.org/) is an open source IDE. The source code is available in the [PyDev GitHub repository](https://github.com/fabioz/Pydev). It has debugging, unit testing, and reporting(code analysis, code coverage) support.
-* For those seeking an IDE, JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm)  is open source. The source code is available in the [python folder of the IntelliJ repository](https://github.com/JetBrains/intellij-community/tree/master/python). It has visual debugger, unit testing and code coverage support, profiler. JetBrains provides a [list of all tools in PyCharm](https://www.jetbrains.com/pycharm/features/tools.html).
+Every major text editor supports Python, either natively or through plugins.
+At the Netherlands eScience Center, some popular editors or IDEs are:
+
+- [vscode](https://code.visualstudio.com/) holds the middle ground between a lightweight text editor and a full-fledged language-dedicated IDE.
+- [vim](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/) or `emacs` (don't forget to install plugins to get the most out of these two), two versatile classic powertools that can also be used through remote SSH connection when needed.
+- JetBrains [PyCharm](https://www.jetbrains.com/pycharm/) is the Python-specific IDE of choice. [PyCharm Community Edition](https://www.jetbrains.com/pycharm) is free and open source; the source code is available in the [python folder of the IntelliJ repository](https://github.com/JetBrains/intellij-community/tree/master/python).
 
 ## Coding style conventions
 
