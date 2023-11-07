@@ -19,6 +19,3 @@
       * [C and C++](/best_practices/language_guides/ccpp.md)
       * [Fortran](/best_practices/language_guides/fortran.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
-* NLeSC specific
-   * [Access to (Dutch) e-Infrastructure](/nlesc_specific/e-infrastructure/e-infrastructure.md)
-      * [DAS-5](/nlesc_specific/e-infrastructure/das5.md)
