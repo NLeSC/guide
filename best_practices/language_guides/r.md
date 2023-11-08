@@ -127,7 +127,7 @@ R function documentation offers plenty of space to document the functionality, i
 See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
 ### Continuous integration
-Continuous integration should be done with an [online service](../testing.md#Online-services-for-continuous-integration), see [Chapter](../testing.md) on testing.
+[Continuous integration](https://the-turing-way.netlify.app/reproducible-research/ci) should be done with an online service.
 
 ### Debugging and Profiling
 Debugging is possible in RStudio, see [link](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio). For profiling tips see [link](http://adv-r.had.co.nz/Profiling.html)
