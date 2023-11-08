@@ -1,6 +1,6 @@
 # Lychee configuration file
 # See https://github.com/lycheeverse/lychee/blob/master/lychee.example.toml
 exclude_all_private = true
-exclude_mail = true
-progress = false
-verbose = true
+include_mail = false
+no_progress = true
+verbose = "info"
