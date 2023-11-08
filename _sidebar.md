@@ -3,7 +3,6 @@
 * [Best practices](/best_practices/overview.md)
    * [Code Quality](/best_practices/code_quality.md)
    * [Code Review](/best_practices/code_review.md)
-   * [Communication](/best_practices/communication.md)
    * [Testing](/best_practices/testing.md)
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
@@ -18,6 +17,3 @@
       * [C and C++](/best_practices/language_guides/ccpp.md)
       * [Fortran](/best_practices/language_guides/fortran.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
-* NLeSC specific
-   * [Access to (Dutch) e-Infrastructure](/nlesc_specific/e-infrastructure/e-infrastructure.md)
-      * [DAS-5](/nlesc_specific/e-infrastructure/das5.md)

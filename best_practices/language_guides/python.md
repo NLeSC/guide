@@ -66,7 +66,8 @@ Installation of packages that are not using `wheel`, but have a lot of non-Pytho
 The disadvantage of Conda is that the package needs to have a Conda build recipe.
 Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
 
-There are two main distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html). Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
+There are two main "official" distributions of Conda: [Anaconda](https://docs.anaconda.com/anaconda/install/) and [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) (and variants of the latter like miniforge, explained below).
+Anaconda is large and contains a lot of common packages, like numpy and matplotlib, whereas Miniconda is very lightweight and only contains Python. If you need more, the `conda` command acts as a package manager for Python packages.
 If installation with the `conda` command is too slow for your purposes, it is recommended that you use [`mamba`](https://github.com/mamba-org/mamba) instead.
 
 For environments where you do not have admin rights (e.g. DAS-6) either Anaconda or Miniconda is highly recommended since the installation is very straightforward.
@@ -76,8 +77,8 @@ A possible downside of Anaconda is the fact that this is offered by a commercial
 Do note that since 2020, [Anaconda has started to ask money from large institutes](https://www.anaconda.com/blog/anaconda-commercial-edition-faq) for downloading packages from their [main channel (called the `default` channel)](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#what-is-a-conda-channel) through `conda`.
 This does not apply to universities and most research institutes, but could apply to some government institutes that also perform research and definitely applies to large for-profit companies.
 Be aware of this when choosing the distribution channel for your package.
-An alternative installer that avoids this problem altogether because it only installs packages from `conda-forge` by default is [miniforge](https://github.com/conda-forge/miniforge).
-There is also a mambaforge version that uses the faster `mamba` by default.
+An alternative, community-driven Conda distribution that avoids this problem altogether because it only installs packages from `conda-forge` by default is [miniforge](https://github.com/conda-forge/miniforge).
+Miniforge includes both the faster `mamba` as well as the traditional `conda`.
 
 ## Building and packaging code
 
@@ -107,7 +108,8 @@ pip install -e .
 ```
 The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
-Set up continuous integration to test your installation setup. Use `pyroma` (can be run as part of `prospector`) as a linter for your installation configuration.
+Set up continuous integration to test your installation setup.
+You can use `pyroma` as a linter for your installation configuration.
 
 ### Packaging and distributing your package
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
@@ -140,18 +142,17 @@ At the Netherlands eScience Center, some popular editors or IDEs are:
 
 The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
-Many linters exists for Python, [`prospector`](https://github.com/landscapeio/prospector) is a tool for running a suite of linters, it supports, among others:
+Many linters exists for Python.
+The most popular one is currently [Ruff](https://github.com/astral-sh/ruff).
+Although it is new (see the website for the complete function parity comparison with alternatives), it works well and has an active community.
+An alternative is [`prospector`](https://github.com/landscapeio/prospector), a tool for running a suite of linters, including, among others [pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://www.pylint.org/), [mccabe](https://github.com/PyCQA/mccabe) and [pyroma](https://github.com/regebro/pyroma).
+Some of these tools have seen decreasing community support recently, but it is still a good alternative, having been a defining community default for years.
 
-* [pycodestyle](https://github.com/PyCQA/pycodestyle)
-* [pydocstyle](https://github.com/PyCQA/pydocstyle)
-* [pyflakes](https://pypi.python.org/pypi/pyflakes)
-* [pylint](https://www.pylint.org/)
-* [mccabe](https://github.com/PyCQA/mccabe)
-* [pyroma](https://github.com/regebro/pyroma)
-
-Make sure to set strictness to `veryhigh` for best results. `prospector` has its own configuration file, like the [.prospector.yml default in the Python template](https://github.com/NLeSC/python-template/blob/main/%7B%7Bcookiecutter.directory_name%7D%7D/.prospector.yml), but also supports configuration files for any of the linters that it runs. Most of the above tools can be integrated in text editors and IDEs for convenience.
+Most of the above tools can be integrated in text editors and IDEs for convenience.
 
 Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+
+Ruff can do autoformatting as well and can function as a drop-in replacement of `black` and `isort`.
 
 
 ## Testing
@@ -291,7 +292,7 @@ It is good practice to restart the kernel and run the notebook from start to fin
 
 ### Database Interface
 
-* [psycopg](http://initd.org/psycopg/) is an [PostgreSQL](http://www.postgresql.org) adapter
+* [psycopg](https://www.psycopg.org/) is a [PostgreSQL](http://www.postgresql.org) adapter
 * [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
 * [monetdb.sql](https://www.monetdb.org/Documentation/SQLreference/Programming/Python)
 is [monetdb](https://www.monetdb.org) Python client
