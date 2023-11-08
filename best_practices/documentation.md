@@ -90,7 +90,7 @@ file describes at least how to perform the following tasks:
 * How to run [(unit) tests](testing.md#unit-tests)
 * What [code style](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html) to use
 * Reference to [code of conduct](#code-of-conduct)
-* When using a [git branching model](version_control.md#choose-one-branching-model), the choice of branching model
+* Mention the [git branching model](https://www.atlassian.com/git/tutorials/comparing-workflows) when using anything else than the [GitHub flow branching model](https://guides.github.com/introduction/flow/)
 
 An extensive example is [Angular.js's CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md). Note that [GitHub has built in support for a CONTRIBUTING.md file](https://github.com/blog/1184-contributing-guidelines).
 
