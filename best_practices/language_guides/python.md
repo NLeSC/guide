@@ -174,13 +174,13 @@ The development environment will typically accumulate (old) packages during deve
 ### Code coverage
 
 When you have tests it is also a good to see which source code is exercised by the test suite.
-[Code coverage](../testing.md#Code_Coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
+[Code coverage](https://the-turing-way.netlify.app/reproducible-research/testing/testing-guidance#aim-to-have-a-good-code-coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
 The coverage package can also generate html reports which show which line was covered.
 Most test runners have have the coverage package integrated.
 
-The code coverage reports can be published online in code quality service or code coverage services.
+The code coverage reports can be published online using a code quality service or code coverage services.
 Preferred is to use one of the code quality service which also handles code coverage listed [below](#Code_quality_analysis_tools_and_services).
-If this is not possible or does not fit then use one of the generic code coverage service list in the [software guide](../testing.md#Code_coverage_services).
+If this is not possible or does not fit then use a generic code coverage service such as [Codecov](https://about.codecov.io/) or [Coveralls](https://coveralls.io/).
 
 ## Code quality analysis tools and services
 

@@ -87,7 +87,7 @@ developer and contributor since things have to be explained only once. A good CO
 file describes at least how to perform the following tasks:
 
 * How to [install the dependencies](#documented-development-setup)
-* How to run [(unit) tests](testing.md#unit-tests)
+* How to run [(unit) tests](https://the-turing-way.netlify.app/reproducible-research/testing/testing-unittest)
 * What [code style](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html) to use
 * Reference to [code of conduct](#code-of-conduct)
 * Mention the [git branching model](https://www.atlassian.com/git/tutorials/comparing-workflows) when using anything else than the [GitHub flow branching model](https://guides.github.com/introduction/flow/)

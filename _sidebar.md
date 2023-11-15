@@ -3,7 +3,6 @@
 * [Best practices](/best_practices/overview.md)
    * [Code Quality](/best_practices/code_quality.md)
    * [Code Review](/best_practices/code_review.md)
-   * [Testing](/best_practices/testing.md)
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
