@@ -35,7 +35,7 @@
   * [cuBLAS](http://docs.nvidia.com/cuda/cublas/index.html)
   * [NVBLAS](http://docs.nvidia.com/cuda/nvblas/index.html)
   * [cuFFT](http://docs.nvidia.com/cuda/cufft/index.html)
-  * [nvGRAPH](http://docs.nvidia.com/cuda/nvgraph/index.html)
+  * [cuGRAPH](https://docs.rapids.ai/api/cugraph/stable/)
   * [cuRAND](http://docs.nvidia.com/cuda/curand/index.html)
   * [cuSPARSE](http://docs.nvidia.com/cuda/cusparse/index.html)
 
@@ -55,7 +55,7 @@
 ## Debugging and Profiling Tools
  * [Nvidia Visual Profiler](https://developer.nvidia.com/nvidia-visual-profiler) [[User Guide](http://docs.nvidia.com/cuda/profiler-users-guide)]
  * [CUDA-GDB](http://docs.nvidia.com/cuda/cuda-gdb/index.html)
- * [CUDA-MEMCHECK](http://docs.nvidia.com/cuda/cuda-memcheck/index.html)
+ * [compute-sanitizer](https://docs.nvidia.com/cuda/compute-sanitizer/index.html)
 
 
 ## Performance Optimization
