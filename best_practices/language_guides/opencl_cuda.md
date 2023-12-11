@@ -1,69 +1,131 @@
-# OpenCL & CUDA
+# GPU Programming Languages
 
 *Page maintainer: Alessio Sclocco* [@isazi](https://github.com/isazi)
 
 
-## Sources for learning
- *please add university courses and informative videos*
- * Parallel Reduction [[Slides](http://developer.download.nvidia.com/compute/cuda/1.1-Beta/x86_website/projects/reduction/doc/reduction.pdf)]
- * GPU Memory bootcamp - Tony Scudiero [[git repo](https://github.com/tscudiero/MemBootcamp)]
-   * Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5353_Scudiero_Bootcamp1.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5353.html)]
-   * Beyond the Best Practices [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S5376-Scudiero_Bootcamp2.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5376.html)]
-   * Collaborative Access Patterns [[Slides](https://github.com/tscudiero/MemBootcamp/blob/master/Slides/S6181-Scudiero_Bootcamp3.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2016/video/s6181-tony-scudiero-bootcamp-3.mp4)]
- * CUB: CUDA Collective primitives library [[Git](https://github.com/NVlabs/cub)] [[Slides](http://on-demand.gputechconf.com/gtc/2015/presentation/S5617-Duane-Merrill.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2015/video/S5617.html)]
- * Best Practices Guide by PRACE [[HTML](https://prace-ri.eu/training-support/best-practice-guides/best-practice-guide-gpgpu/)] [[PDF](https://prace-ri.eu/wp-content/uploads/Best-Practice-Guide_GPGPU.pdf)]
-
+## Learning Resources
+ 
+* Carpentries GPU Programming course
+  * [Lesson material](https://carpentries-incubator.github.io/lesson-gpu-programming/)
+* Introduction to CUDA C
+  * [Slides](http://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/cuda_language/Introduction_to_CUDA_C.pptx)
+  * [Video](http://on-demand.gputechconf.com/gtc/2012/video/S0624-Monday-Introduction-to-CUDA-C.mp4)
+* Introduction to OpenACC
+  * [Slides](http://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/openacc/Introduction_To_OpenACC.pptx)
+* Introduction to HIP Programming
+  * [Video](https://www.youtube.com/watch?v=3ejUwypP0bI)
+* SYCL Introduction and Best Practices
+  * [Video](https://www.youtube.com/watch?v=TbkrODiVDQY)
+ 
 ## Documentation
-* OpenCL specification [[1.2](https://www.khronos.org/registry/cl/sdk/1.2/docs/man/xhtml/)] [[2.0](https://www.khronos.org/registry/cl/sdk/2.0/docs/man/xhtml/)]
-* CUDA Toolkit [[latest](http://docs.nvidia.com/cuda/index.html)]
-   * [CUDA Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
-   * [CUDA Runtime API](http://docs.nvidia.com/cuda/cuda-runtime-api/index.html)
 
+* CUDA
+  * [C programming guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
+  * [Runtime API](https://docs.nvidia.com/cuda/cuda-runtime-api/)
+  * [Driver API](https://docs.nvidia.com/cuda/cuda-driver-api/index.html)
+  * [Fortran programming guide](https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html)
+* HIP
+  * [Kernel language syntax](https://rocm.docs.amd.com/projects/HIP/en/latest/reference/kernel_language.html)
+  * [Runtime API](https://rocm.docs.amd.com/projects/HIP/en/latest/.doxygen/docBin/html/modules.html)
+* SYCL
+  * [Specification](https://registry.khronos.org/SYCL/specs/sycl-2020/html/sycl-2020.html)
+  * [Reference guide](https://www.khronos.org/files/sycl/sycl-2020-reference-guide.pdf)
+* OpenCL
+  * [Guide](https://github.com/KhronosGroup/OpenCL-Guide)
+  * [API](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_API.html)
+  * [OpenCL C specification](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/OpenCL_C.html)
+  * [Reference guide](https://www.khronos.org/files/opencl30-reference-guide.pdf)
+* OpenACC
+  * [Programming guide](https://www.openacc.org/sites/default/files/inline-files/OpenACC_Programming_Guide_0_0.pdf)
+  * [Reference guide](https://www.openacc.org/sites/default/files/inline-files/API%20Guide%202.7.pdf)
+* OpenMP
+  * [Reference guide](https://www.openmp.org/wp-content/uploads/OpenMPRef-5.0-111802-web.pdf)
 
-## Source-to-source translation between CUDA and OpenCL
-* vtsynergy (https://github.com/vtsynergy)
-   * This was shown to work on DAS5 after copying /usr/include/limits.h to $PWD and commenting out the lines around # include_next (122-125) :
-   "cu2cl-tool host_code.cc device_code.cu  -- -DGPU_ON -I$PWD:/usr/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include".
-* cutocl (https://github.com/benvanwerkhoven/cutocl)
+## Source-to-source Translation
 
+* CUDA to HIP
+  * [hipify](https://github.com/ROCm/HIPIFY)
+* CUDA to SYCL
+  * [SYCLomatic](https://github.com/oneapi-src/SYCLomatic)
+* CUDA to OpenCL
+  * [cutocl](https://github.com/benvanwerkhoven/cutocl)
 
-## Overview of libraries
-* OpenCL-based libraries
-  * [CLBlast](https://github.com/CNugteren/CLBlast)
-  * [clFFT](https://github.com/clMathLibraries/clFFT)
-* CUDA-based libraries
+## Overview of Libraries
+
+* CUDA
   * [cuBLAS](http://docs.nvidia.com/cuda/cublas/index.html)
   * [NVBLAS](http://docs.nvidia.com/cuda/nvblas/index.html)
   * [cuFFT](http://docs.nvidia.com/cuda/cufft/index.html)
   * [cuGRAPH](https://docs.rapids.ai/api/cugraph/stable/)
   * [cuRAND](http://docs.nvidia.com/cuda/curand/index.html)
   * [cuSPARSE](http://docs.nvidia.com/cuda/cusparse/index.html)
+* HIP
+  * [hipBLAS](https://rocm.docs.amd.com/projects/hipBLAS/en/latest/index.html)
+  * [hipFFT](https://rocm.docs.amd.com/projects/hipFFT/en/latest/index.html)
+  * [hipRAND](https://rocm.docs.amd.com/projects/hipRAND/en/latest/index.html)
+  * [hipSPARSE](https://rocm.docs.amd.com/projects/hipSPARSE/en/latest/index.html)
+* SYCL
+  * [OneAPI BLAS](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/blas-routines.html#GUID-F277361F-49BA-437B-8100-3D2B6BBC3CC1)
+  * [OneAPI FFT](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/fourier-transform-functions.html#GUID-BB8891E9-D3D3-40B9-BBB1-2390C4340CDA)
+  * [OneAPI sparse](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/sparse-blas-routines.html#GUID-7123D31B-9C7F-4BA7-9792-02A417293E60)
+  * [OneAPI random number generators](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/random-number-generators.html#GUID-FFC80D12-C323-4A9F-83E3-D0ACDB686876)
+* OpenCL
+  * [CLBlast](https://github.com/CNugteren/CLBlast)
+  * [clFFT](https://github.com/clMathLibraries/clFFT)
 
+## Foreign Function Interfaces
 
-## Foreign Function Interfaces for CUDA and OpenCL
- * C++: [[Cuda](https://github.com/eyalroz/cuda-api-wrappers/)], [[OpenCL](https://github.com/KhronosGroup/OpenCL-CLHPP)]
- * Python: [[PyCuda](https://mathema.tician.de/software/pycuda/)], [[PyOpenCL](https://mathema.tician.de/software/pycuda/)]
- * Java: [[JCuda](http://www.jcuda.org/)], [[JOCL](http://www.jocl.org/)]
-
-
-## Testing
- * Unit Testing
-    * Example of a unit test for CUDA kernel using the [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner/blob/master/examples/cuda/test_vector_add.py)
- * [comparing floating-point results](http://docs.nvidia.com/cuda/floating-point/index.html)
-
-
-## Debugging and Profiling Tools
- * [Nvidia Visual Profiler](https://developer.nvidia.com/nvidia-visual-profiler) [[User Guide](http://docs.nvidia.com/cuda/profiler-users-guide)]
- * [CUDA-GDB](http://docs.nvidia.com/cuda/cuda-gdb/index.html)
- * [compute-sanitizer](https://docs.nvidia.com/cuda/compute-sanitizer/index.html)
-
+* C++
+  * CUDA
+    * [cudawrappers](https://github.com/nlesc-recruit/cudawrappers)
+  * OpenCL
+    * [CLHPP](https://github.com/KhronosGroup/OpenCL-CLHPP)
+* Python
+  * CUDA
+    * [PyCuda](https://mathema.tician.de/software/pycuda/)
+    * [CuPy](https://cupy.dev/)
+    * [cuda-python](https://nvidia.github.io/cuda-python/)
+  * HIP
+    * [PyHIP](https://github.com/jatinx/PyHIP)
+  * SYCL
+    * [dpctl](https://github.com/IntelPython/dpctl)
+  * OpenCL
+    * [PyOpenCL](https://mathema.tician.de/software/pycuda/)
+* Julia
+  * CUDA
+    * [CUDA.jl](https://github.com/JuliaGPU/CUDA.jl)
+  * HIP
+    * [AMDGPU.jl](https://github.com/JuliaGPU/AMDGPU.jl)
+  * SYCL
+    * [oneAPI.jl](https://github.com/JuliaGPU/oneAPI.jl)
+* Java
+  * CUDA
+    * [JCuda](http://www.jcuda.org/)
+  * OpenCL
+    * [JOCL](http://www.jocl.org/)
 
 ## Performance Optimization
- * Resources:
-     * Better Performance at Lower Occupancy [[Slides](http://www.nvidia.com/content/gtc-2010/pdfs/2238_gtc2010.pdf)] [[Video](http://on-demand.gputechconf.com/gtc/2010/video/S12238-Better-Performance-at-Lower-Occupancy.mp4)]
-     * [Maxwell Tuning Guide](http://docs.nvidia.com/cuda/maxwell-tuning-guide)
-     * [Pascal Tuning Guide](http://docs.nvidia.com/cuda/pascal-tuning-guide)
 
- * Generic Auto Tuners:
-     * [Kernel Tuner](https://github.com/benvanwerkhoven/kernel_tuner) (Python)
-     * [CLTune](https://github.com/CNugteren/CLTune) (C++)
+* [PRACE best practice guide on modern accelerators](https://zenodo.org/records/5839488)
+* [CUDA best practices](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
+* [OneAPI SYCL best practices](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-2/optimize-your-sycl-applications.html)
+
+## Debugging and Profiling Tools
+
+* CUDA
+  * [Nsight Systems](https://developer.nvidia.com/nsight-systems)
+  * [Nsight Compute](https://developer.nvidia.com/nsight-compute)
+  * [CUDA-GDB](http://docs.nvidia.com/cuda/cuda-gdb/index.html)
+  * [compute-sanitizer](https://docs.nvidia.com/compute-sanitizer/index.html)
+* HIP
+  * [omniperf](https://github.com/AMDResearch/omniperf)
+  * [rocprof](https://github.com/ROCm/rocprofiler)
+* SYCL
+  * [onetrace](https://github.com/intel/pti-gpu/tree/master/tools/onetrace)
+
+## Auto-tuning
+
+* Kernel Tuner
+  * [GitHub repository](https://github.com/KernelTuner/kernel_tuner)
+  * [Documentation](https://kerneltuner.github.io/kernel_tuner/stable/)
+  * [Tutorial](https://github.com/KernelTuner/kernel_tuner_tutorial)
