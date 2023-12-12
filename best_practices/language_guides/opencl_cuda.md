@@ -41,15 +41,6 @@
 * OpenMP
   * [Reference guide](https://www.openmp.org/wp-content/uploads/OpenMPRef-5.0-111802-web.pdf)
 
-## Source-to-source Translation
-
-* CUDA to HIP
-  * [hipify](https://github.com/ROCm/HIPIFY)
-* CUDA to SYCL
-  * [SYCLomatic](https://github.com/oneapi-src/SYCLomatic)
-* CUDA to OpenCL
-  * [cutocl](https://github.com/benvanwerkhoven/cutocl)
-
 ## Overview of Libraries
 
 * CUDA
@@ -72,6 +63,15 @@
 * OpenCL
   * [CLBlast](https://github.com/CNugteren/CLBlast)
   * [clFFT](https://github.com/clMathLibraries/clFFT)
+
+## Source-to-source Translation
+
+* CUDA to HIP
+  * [hipify](https://github.com/ROCm/HIPIFY)
+* CUDA to SYCL
+  * [SYCLomatic](https://github.com/oneapi-src/SYCLomatic)
+* CUDA to OpenCL
+  * [cutocl](https://github.com/benvanwerkhoven/cutocl)
 
 ## Foreign Function Interfaces
 
@@ -104,11 +104,14 @@
   * OpenCL
     * [JOCL](http://www.jocl.org/)
 
-## Performance Optimization
+## High-Level Abstractions
 
-* [PRACE best practice guide on modern accelerators](https://zenodo.org/records/5839488)
-* [CUDA best practices](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
-* [OneAPI SYCL best practices](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-2/optimize-your-sycl-applications.html)
+* C++
+  * [Kokkos](https://github.com/kokkos/kokkos)
+  * [Raja](https://github.com/LLNL/RAJA)
+* Python
+  * [Numba](https://numba.pydata.org/)
+  * [pykokkos](https://github.com/kokkos/pykokkos)
 
 ## Debugging and Profiling Tools
 
@@ -122,6 +125,12 @@
   * [rocprof](https://github.com/ROCm/rocprofiler)
 * SYCL
   * [onetrace](https://github.com/intel/pti-gpu/tree/master/tools/onetrace)
+
+## Performance Optimization
+
+* [PRACE best practice guide on modern accelerators](https://zenodo.org/records/5839488)
+* [CUDA best practices](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
+* [OneAPI SYCL best practices](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-2/optimize-your-sycl-applications.html)
 
 ## Auto-tuning
 
