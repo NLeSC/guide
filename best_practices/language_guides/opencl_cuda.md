@@ -124,6 +124,7 @@
   * [omniperf](https://github.com/AMDResearch/omniperf)
   * [rocprof](https://github.com/ROCm/rocprofiler)
 * SYCL
+  * [oneprof](https://github.com/intel/pti-gpu/tree/master/tools/oneprof)
   * [onetrace](https://github.com/intel/pti-gpu/tree/master/tools/onetrace)
 
 ## Performance Optimization
