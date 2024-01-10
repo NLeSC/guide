@@ -20,7 +20,7 @@ If you are interested in becoming a chapter owner for a page that is listed as *
 
 ## Editorial board
 
-The editors make sure content is in line with the scope, that it is maintainable and that it is maintained.
+The editors make sure content is in line with [the scope](#scope), that it is maintainable and that it is maintained.
 In practice they will:
 - track, lead towards satisfactory conclusion of and when necessary (in case of disagreement) decide on issues, discussions and pull requests,
 - flag content that needs to be updated or removed,
@@ -53,12 +53,13 @@ The guide contains and links to best practices we use to code and develop resear
 The main goal: having information available about research software engineering best practices for our colleagues, collaborators and other interested people.
 It can be information that you can give a colleague starting in some area, for instance, a new language or a new technology.
 
-80% of this goal will be met by the Turing Way.
+80% of this goal will be met by [the Turing Way](https://the-turing-way.netlify.app/).
 For everything else: we have the Guide.
 
 We focus on eScience Center-specific best practices.
 These can be generic and complete or specific and highly curated.
 It depends!
+For instance, eScience specific content (e.g. we prefer `git` over `svn`) should be in the Guide, while content of interest to a general audience (e.g. it is good practice to use a version control system) should go in The Turing Way.
 When in doubt, discuss your doubts in an issue.
 
 A few things are excluded:
