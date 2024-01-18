@@ -138,7 +138,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
     * `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
 
 
-#### [Build using conda](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/index.html)
+#### [Build using conda](https://conda-forge.org/docs/maintainer/adding_pkgs.html)
 * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
 * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 
