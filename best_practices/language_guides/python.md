@@ -120,13 +120,9 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
 * We recommend to configure GitHub Actions to upload the package to PyPI automatically for each release. 
     * For new repositories, it is recommended to use [trusted publishing](https://docs.pypi.org/trusted-publishers/) because it is more secure than using secret tokens from GitHub.
         * For a workflow using secret tokens instead, see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
-    * You can follow [these instructions](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/) to set up GitHub Actions workflows with trusted publishing.   
-    * We suggest a slight modification of these instructions to avoid unnecessary CI runs while keeping a healthy release pipeline:
-        1. Test locally whether your distribution can be installed: you can run `python -m build` in the root of your repository, then install your package with `pip install dist/<your_package>tar.gz.`
-        2. Publish to testpypi with a workflow that has the [`verbose`](https://github.com/marketplace/actions/pypi-publish#for-debugging) option enabled to see error messages, if there are any.
-        3. In case of errors, debug with a manual upload with twine as described below.
-        4. If the release to testpypi works fine, you can release to the real pypi.
-    * An example GitHub Actions workflow implementing this strategy is used in the [sirup package](https://github.com/ivory-tower-private-power/sirup/blob/main/.github/workflows/release.yml): publishing on testpypi is triggered manually, while publishing to pypi is triggered upon a release on github. 
+    * You can follow [these instructions](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/) to set up GitHub Actions workflows with trusted publishing. 
+        * The [`verbose`](https://github.com/marketplace/actions/pypi-publish#for-debugging) option for pypi workflows is useful to see why a workflow failed.
+        * To avoid unnecessary workflow runs, you can follow the example in the [sirup package](https://github.com/ivory-tower-private-power/sirup/blob/main/.github/workflows/release.yml): manually trigger pushes to pypi and investigate potential bugs during this process with a manual upload.
 * Manual uploads with twine 
     * Because PyPI and Test PyPI require Two-Factor Authentication per January 2024, you need to mimick GitHub's trusted publishing to publish manually with `twine`.
     * You can follow the section on "The manual way" as described [here](https://docs.pypi.org/trusted-publishers/using-a-publisher/).
