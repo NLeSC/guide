@@ -31,7 +31,7 @@ and do any other regular editing tasks.
 
 Currently the team consists of:
 - Bouwe Andela [@bouweandela](https://github.com/bouweandela) (research software engineer)
-- Carlos Martinez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)
+- Carlos Martínez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)
 - Patrick Bos [@egpbos](https://github.com/egpbos) (technology lead)
 
 
