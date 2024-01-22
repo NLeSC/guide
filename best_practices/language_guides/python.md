@@ -114,19 +114,29 @@ You can use `pyroma` as a linter for your installation configuration.
 ### Packaging and distributing your package
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
-* [Build and upload your package](https://packaging.python.org/en/latest/tutorials/packaging-projects/) to the [Python Package Index (PyPI)](https://pypi.org) so it can be installed with pip.
-  * Either do this manually by using [twine](https://github.com/pypa/twine) ([tutorial](http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/)),
-  * Or configure GitHub Actions to do it automatically for each release: see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
-  * Additional guidelines:
+#### Build via the [Python Package Index (PyPI)](https://pypi.org) so that the package can be installed with pip
+
+* [General instructions](https://packaging.python.org/en/latest/tutorials/packaging-projects/) 
+* We recommend to configure GitHub Actions to upload the package to PyPI automatically for each release. 
+    * For new repositories, it is recommended to use [trusted publishing](https://docs.pypi.org/trusted-publishers/) because it is more secure than using secret tokens from GitHub.
+        * For a workflow using secret tokens instead, see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
+    * You can follow [these instructions](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/) to set up GitHub Actions workflows with trusted publishing. 
+        * The [`verbose`](https://github.com/marketplace/actions/pypi-publish#for-debugging) option for pypi workflows is useful to see why a workflow failed.
+        * To avoid unnecessary workflow runs, you can follow the example in the [sirup package](https://github.com/ivory-tower-private-power/sirup/blob/main/.github/workflows/release.yml): manually trigger pushes to pypi and investigate potential bugs during this process with a manual upload.
+* Manual uploads with twine 
+    * Because PyPI and Test PyPI require Two-Factor Authentication per January 2024, you need to mimick GitHub's trusted publishing to publish manually with `twine`.
+    * You can follow the section on "The manual way" as described [here](https://docs.pypi.org/trusted-publishers/using-a-publisher/).
+* Additional guidelines:
     * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
     * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
     * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
     * To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
     * `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
 
-* [Build using conda](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/index.html)
-  * **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
-  * Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
+
+#### [Build using conda](https://conda-forge.org/docs/maintainer/adding_pkgs.html)
+* **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
+* Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 
 
 ## Editors and IDEs
