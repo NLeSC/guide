@@ -16,6 +16,8 @@
   * [Video](https://www.youtube.com/watch?v=3ejUwypP0bI)
 * SYCL Introduction and Best Practices
   * [Video](https://www.youtube.com/watch?v=TbkrODiVDQY)
+* CSCS GPU Programming with Julia
+  * [Course recordings](https://github.com/omlins/julia-gpu-course)
  
 ## Documentation
 
