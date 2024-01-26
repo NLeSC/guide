@@ -11,7 +11,7 @@
       * [Bash](/best_practices/language_guides/bash.md)
       * [JavaScript and TypeScript](/best_practices/language_guides/javascript.md)
       * [Python](/best_practices/language_guides/python.md)
-      * [OpenCL and CUDA](/best_practices/language_guides/opencl_cuda.md)
+      * [GPU](/best_practices/language_guides/opencl_cuda.md)
       * [R](/best_practices/language_guides/r.md)
       * [C and C++](/best_practices/language_guides/ccpp.md)
       * [Fortran](/best_practices/language_guides/fortran.md)
