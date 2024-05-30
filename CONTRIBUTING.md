@@ -40,7 +40,7 @@ Currently the team consists of:
 
 Our eScience Center _RSEs_ are the prototypical audience members, in particular those starting out in some unfamiliar area of technology.
 Some characteristics include:
-- They are interested in _intermediate to advanced level_ best practices, not the level of typical AI generated blogpost basic trivialities harvested from introduction sections of manuals.
+- They are interested in _intermediate to advanced level_ best practices. If there are already ten easily found blog posts about it, it doesn't have to be in the Guide.
 - They are a _programmer or researcher_ that is already familiar with some other programming language or software-related technology.
 - They may be generally interested (in particular topics of eScience practice and research software development in general or how this is done at the eScience Center specifically), but their main aim is towards _practical_ application, not to create a literature study of the current landscape of (research) software.
 
@@ -65,7 +65,7 @@ When in doubt, discuss your doubts in an issue.
 A few things are excluded:
 
 1. Project related practices (planning, communication, stake holders, management, etc.). These we gather on our intranet pages.
-2. Project output is gathered on the [Research Software Directory](https://research-software-directory.org/).
+2. Project output is gathered on the [Research Software Directory](https://research-software-directory.org/organisations/netherlands-escience-center?tab=software&order=is_featured).
 3. Generic research software engineering advice that can be added to [The Turing Way](https://github.com/the-turing-way/the-turing-way).
 
 In practice, this means the Guide (for now) will mostly consist of language guides and technology guides.
@@ -112,7 +112,7 @@ If you have made a significant contribution to the guide, please make sure to ad
 
 ## Create a PDF file
 
-We host a PDF version of the guide on [Zenodo](https://doi.org/10.5281/zenodo.4020565).
+We host a PDF version of the guide on [Zenodo](https://doi.org/10.5281/zenodo.4020564).
 To update it a [new release](https://github.com/NLeSC/guide/releases) needs to be made of the guide. This will trigger a GitHub action to create a new Zenodo version with the PDF file.
 
 
@@ -145,8 +145,8 @@ If you want to change anything in this part, please discuss in an issue.
 4. Don't state the obvious.
 5. Don't assume that something is obvious.
 6. Snippets are friends.
-7. When something is outdated, remove it.
-8. When something outdated is removed, update it if you have the time.
+7. Remove outdated content.
+8. Better yet, update outdated content.
 9. Your practices are just _your_ practices. Best practices are shared practices. $N>1$.
 10. Our best practices are just _our_ best practices. We don't have to agree with everyone.
 11. Best practices are timeless (at least for a year or so).
