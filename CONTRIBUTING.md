@@ -82,6 +82,16 @@ If it does not fit, please open an [issue](https://github.com/NLeSC/guide/issues
 
 # How?
 
+## Style, form
+
+A well written piece of advice should contain the following information:
+
+1. What, e.g. _version control_
+2. Why, e.g. _why version control is a good idea_
+3. Short how / tl;dr: Recommend one solution for readers who don't want to spend time reading about all possible options, e.g. _at NLeSC we use git with GitHub because..._ This is where NLeSC specific info should go if it makes sense to do so.
+4. Long how: also explain other options for implementing advice, e.g. _here's a list of some more version control programs and/or services which we can recommend_.
+
+## Technical
 Please use branches and pull requests to contribute content. If you are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ```shell
