@@ -300,15 +300,6 @@ It is good practice to restart the kernel and run the notebook from start to fin
     - [altair](https://github.com/ellisonbg/altair) is a _grammar of graphics_ style declarative statistical visualization library. It does not render visualizations itself, but rather outputs Vega-Lite JSON data. This can lead to a simplified workflow.
     - [ggplot](https://github.com/yhat/ggpy) is a plotting library imported from R.
 
-### Database Interface
-
-* [psycopg](https://www.psycopg.org/) is a [PostgreSQL](http://www.postgresql.org) adapter
-* [cx_Oracle](http://cx-oracle.sourceforge.net) enables access to [Oracle](https://www.oracle.com/database/index.html) databases
-* [monetdb.sql](https://www.monetdb.org/Documentation/SQLreference/Programming/Python)
-is [monetdb](https://www.monetdb.org) Python client
-* [pymongo](https://pymongo.readthedocs.io) and [motor](https://motor.readthedocs.io) allow for work with [MongoDB](http://www.mongodb.com) database
-* [py-leveldb](https://code.google.com/p/py-leveldb/) are thread-safe Python bindings for [LevelDb](https://github.com/google/leveldb)
-
 ### Parallelisation
 
 CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock). Note that the GIL only applies to actual Python code, so compiled modules like e.g. `numpy` do not suffer from it.
