@@ -83,26 +83,31 @@ Miniforge includes both the faster `mamba` as well as the traditional `conda`.
 ## Building and packaging code
 
 ### Making an installable package
-To create an installable Python package, use the [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html) module.
-This involves creating two files: `setup.cfg` and `pyproject.toml`.
-Our [Python template](https://github.com/NLeSC/python-template) already does this for you.
+To create an installable Python package you will have to create a `pyproject.toml` file.
+This will contain three kinds of information: metadata about your project, information on how to build and install your package, and configuration settings for any tools your project may use. Our [Python template](https://github.com/NLeSC/python-template) already does this for you.
 
-`setup.cfg` is the primary location where you should list your dependencies; use the `install_requires` argument to list them.
-Keep version constraints to a minimum; use, in order of descending preference: no constraints, lower bounds, lower + upper bounds, exact versions.
+#### Project metadata
+Your project metadata will be under the `[project]` header, and includes such information as the name, version number, description and dependencies.
+The [Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/pyproject-toml/#declaring-project-metadata-the-project-table) has more information on what else can or should be added here.
+For your dependencies, you should keep version constraints to a minimum; use, in order of descending preference: no constraints, lower bounds, lower + upper bounds, exact versions.
 Use of `requirements.txt` is discouraged, unless necessary for something specific, see the [discussion here](https://github.com/NLeSC/guide/issues/156).
-It is possible to find the currently installed packages with `pip freeze` or `conda list`, but note that this is not ideal for listing dependencies in `setup.cfg`, because it also lists all dependencies of the dependencies that you use.
-It is better to keep track of direct dependencies for your project from the start.
-Another quick way to find all direct dependencies is by running your code in a clean environment (probably by running your test suite) and installing one by one the dependencies that are missing, as reported by the ensuing errors.
 
-Most other configuration should also be in `setup.cfg`.
-`pyproject.toml` can be used to specify the build system, i.e. `setuptools` itself.
+It is best to keep track of direct dependencies for your project from the start and list these in your `pyproject.toml`
+If instead you are writing a new `pyproject.toml` for an existing project, a recommended way to find all direct dependencies is by running your code in a clean environment (probably by running your test suite) and installing one by one the dependencies that are missing, as reported by the ensuing errors.
+It is possible to find the full list of currently installed packages with `pip freeze` or `conda list`, but note that this is not ideal for listing dependencies in `pyproject.toml`, because it also lists all dependencies of the dependencies that you use.
 
-It's possible that in the future all configuration will move from `setup.cfg` to `pyproject.toml`, but as of yet this is not common practice.
-Most tools, like `pytest`, `mypy` and others do support using `pyproject.toml` already.
-The Python build system is still very much in flux, though, so be sure to look up some current practices in [authoritative blogs like this one](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html).
-One important thing to note is that use of `setup.py` has been officially deprecated and we should migrate away from that.
+#### Build system
+Besides specifying your project's own metadata, you also have to specify a build-system under the `[build-system]` header.
+We currently recommend using [`hatchling`](https://pypi.org/project/hatchling/) or Python's own [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html).
+Note that Python's build system landscape is still in flux, so be sure to look upthe some current practices in the [packaging guide's section on build backends](https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-a-build-backend) and [authoritative blogs like this one](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html).
+One important thing to note is that use of `setup.py` and `setup.cfg` has been officially deprecated and we should migrate away from that.
 
-When the `setup.cfg` is written, your package can be installed with
+#### Tool configuration
+Finally, `pyproject.toml` can be used to specify the configuration for any other tools like `pytest`, `ruff` and `mypy` your project may use.
+Each of these gets their own section in your `pyproject.toml` instead of using their own file, saving you from having dozens of such files in your project.
+
+#### Installation
+When the `pyproject.toml` is written, your package can be installed with
 ```
 pip install -e .
 ```
