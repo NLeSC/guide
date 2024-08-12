@@ -98,7 +98,7 @@ It is possible to find the full list of currently installed packages with `pip f
 
 #### Build system
 Besides specifying your project's own metadata, you also have to specify a build-system under the `[build-system]` header.
-We currently recommend using [`hatchling`](https://pypi.org/project/hatchling/) or Python's own [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html).
+We currently recommend using [`hatchling`](https://pypi.org/project/hatchling/) or [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html).
 Note that Python's build system landscape is still in flux, so be sure to look upthe some current practices in the [packaging guide's section on build backends](https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-a-build-backend) and [authoritative blogs like this one](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html).
 One important thing to note is that use of `setup.py` and `setup.cfg` has been officially deprecated and we should migrate away from that.
 
