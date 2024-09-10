@@ -10,6 +10,10 @@ You will encounter datasets in various file formats like:
 
 Or local database files like SQLite.  It is important to note, the various trade-offs between these formats.  For instance, doing a random seek is difficult with a large dataset for non-binary formats like: CSV, Excel, or JSON.  In such cases you should consider formats like Parquet, or HDF5/NetCDF.  Non-binary files can also be imported into local databases like SQLite or DuckDB.  Below we compare some options to work with datasets in these formats.
 
+It's also good to know about [Apache Arrow](https://arrow.apache.org), which is not itself a file format, but a specification for a memory layout of (binary) data.
+There is an ecosystem of libraries for all major languages to handle data in this format.
+It is used as the back-end of [many data handling projects](https://arrow.apache.org/powered_by/), among which a few others mentioned in this chapter.
+
 ## Local database
 
 When you have a relational dataset, it is recommended that you use a database.  Using local databases like SQLite and DuckDB can be very easy because of no setup requirements. But they come with some some limitations; for instance, multiple users cannot write to the database simultaneously.
