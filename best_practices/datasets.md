@@ -46,7 +46,7 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
 - Vaex
   - Vaex is an alternative that focuses on out-of-core processing (larger than memory), and has some lazy evaluation capabilities.
 - Polars
-   - This is a much newer library, mostly written in Rust.  Compared to pandas, it is multi-threaded and does lazy evaluation with query optimisation, so much more performant.  However since it is newer, documentation is not as complete.  It also allows you to write your own custom extensions in Rust.
+   - An alternative to Pandas (started in 2020), which is primarily written in Rust.  Compared to pandas, it is multi-threaded and does lazy evaluation with query optimisation, so much more performant.  However since it is newer, documentation is not as complete.  It also allows you to write your own custom extensions in Rust.
 
 ## Distributed/multi-node data processing libraries
 - Dask
