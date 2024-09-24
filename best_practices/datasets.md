@@ -1,4 +1,4 @@
-# Working with large datasets
+# Working with tabular data
 
 There are several solutions available to you as an RSE, with their own pros and cons.  You should evaluate which one works best for your project, and project partners, and pick one.  Sometimes it might be, that you need to combine two different types of technologies.  Here are some examples from our experience.
 
