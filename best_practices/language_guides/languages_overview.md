@@ -1,5 +1,5 @@
 
-*Page maintainer: unmaintained*
+*Page maintainer: Patrick Bos* [@egpbos](https://github.com/egpbos)
 
 
 This chapter provides practical info on each of the main programming languages of the Netherlands eScience Center.
