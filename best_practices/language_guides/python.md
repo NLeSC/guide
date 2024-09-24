@@ -1,6 +1,6 @@
 # Python
 
-*Page maintainer: Patrick Bos* [@egpbos](https://github.com/egpbos)
+*Page maintainer: Bouwe Andela* [@bouweandela](https://github.com/bouweandela)
 
 
 Python is the "dynamic language of choice" of the Netherlands eScience Center.

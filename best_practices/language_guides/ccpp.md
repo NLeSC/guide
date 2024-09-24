@@ -1,6 +1,6 @@
 # C and C++
 
-*Page maintainers: Johan Hidding* [@jhidding](https://github.com/jhidding) *and Patrick Bos* [@egpbos](https://github.com/egpbos)
+*Page maintainer: Johan Hidding* [@jhidding](https://github.com/jhidding)
 
 
 C++ is one of the hardest languages to learn. Entering a project where C++ coding is needed should not be taken lightly. This guide focusses on tools and documentation for use of C++ in an open-source environment.
