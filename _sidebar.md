@@ -7,6 +7,7 @@
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
    * [UX - User Experience](/best_practices/user_experience.md)
+   * [Datasets](/best_practices/datasets.md)
    * [Language Guides](/best_practices/language_guides/languages_overview.md)
       * [Bash](/best_practices/language_guides/bash.md)
       * [JavaScript and TypeScript](/best_practices/language_guides/javascript.md)
