@@ -42,6 +42,13 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
    - For both DuckDB and SQLite, unique indexes allow to ensure data integrity
    - For SQLite, indexes are crucial to improve the performance of queries. However, having more indexes makes writing new records to the database slower. So it's again a trade-off between query and write speed.
 
+# Useful libraries
+
+## Database APIs
+
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+   - In Python, interfacing to SQL databases like SQLite, MySQL or PostgreSQL is often done using [SQLAlchemy](https://www.sqlalchemy.org/), which is an Object Relational Mapper (ORM) that allows you to map tables to Python classes. Note that you still need to use a lot of manual SQL outside of Python to manage the database. However, SQLAlchemy allows you to use the data in a Pythonic way once you have the database layout figured out.
+
 ## Data processing libraries on a single machine
 - Pandas
    - The standard tool for working with dataframes, and widely used in analytics or machine learning workflows.  Note however how Pandas uses memory, because certain APIs create copies, while others do not.  So if you are chaining multiple operations, it is preferable to use APIs that avoid copies.
