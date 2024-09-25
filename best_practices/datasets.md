@@ -1,5 +1,7 @@
 # Working with tabular data
 
+*Page maintainers: Suvayu Ali* [@suvayu](https://github.com/suvayu) *, Flavio Hafner* [@f-hafner](https://github.com/f-hafner) *and Reggie Cushing* [@recap](https://github.com/recap)
+
 There are several solutions available to you as an RSE, with their own pros and cons.  You should evaluate which one works best for your project, and project partners, and pick one.  Sometimes it might be, that you need to combine two different types of technologies.  Here are some examples from our experience.
 
 You will encounter datasets in various file formats like:
@@ -44,10 +46,12 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
 - Pandas
    - The standard tool for working with dataframes, and widely used in analytics or machine learning workflows.  Note however how Pandas uses memory, because certain APIs create copies, while others do not.  So if you are chaining multiple operations, it is preferable to use APIs that avoid copies.
 - Vaex
-  - Vaex is an alternative that focuses on out-of-core processing (larger than memory), and has some lazy evaluation capabilities.
+   - Vaex is an alternative that focuses on out-of-core processing (larger than memory), and has some lazy evaluation capabilities.
 - Polars
    - An alternative to Pandas (started in 2020), which is primarily written in Rust.  Compared to pandas, it is multi-threaded and does lazy evaluation with query optimisation, so much more performant.  However since it is newer, documentation is not as complete.  It also allows you to write your own custom extensions in Rust.
-DataFusion is a very fast, extensible query engine for building high-quality data-centric systems in [Rust](http://rustlang.org/), using the [Apache Arrow](https://arrow.apache.org/) in-memory format. DataFusion offers SQL and Dataframe APIs, excellent [performance](https://benchmark.clickhouse.com/), built-in support for CSV, Parquet, JSON, and Avro, extensive customization, and a great community. More info [Apache Datafusion](https://datafusion.apache.org/)
+- [Apache Datafusion](https://datafusion.apache.org/)
+   - A very fast, extensible query engine for building high-quality data-centric systems in [Rust](http://rustlang.org/), using the [Apache Arrow](https://arrow.apache.org/) in-memory format. DataFusion offers SQL and Dataframe APIs, excellent [performance](https://benchmark.clickhouse.com/), built-in support for CSV, Parquet, JSON, and Avro, extensive customization, and a great community.
+
 ## Distributed/multi-node data processing libraries
 - Dask
    - `dask.dataframe` and `dask.array` provides the same API as pandas and numpy respectively, making it easy to switch.
