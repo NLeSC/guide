@@ -12,11 +12,12 @@ If you are looking for an overall picture of best practices, read
 [The Turing Way](https://the-turing-way.netlify.app/index.html) first.
 We joined forces with that guide for most of our generic research software
 engineering advice.
-Because The Turing Way is language agnostic, this guide mostly provides
+Because The Turing Way is programming language agnostic, this guide provides
 addtional specific
-[language guides](best_practices/language_guides/languages_overview.md).
-*Please be aware that most remaining language agnostic content is outdated,
+[language guides](language_guides/languages_overview.md).
+We also provide [technology guides](technology/technology_overview.md) on digital technologies we use often in our projects with research partners.
+*Please be aware that most remaining "best practices" content is unmaintained,
 be careful when using it.*
-We plan on removing that content (#286).
+We plan on removing that content ([#286](https://github.com/NLeSC/guide/issues/286)).
 
 If you would like to contribute to this book see [CONTRIBUTING.md](CONTRIBUTING.md).
