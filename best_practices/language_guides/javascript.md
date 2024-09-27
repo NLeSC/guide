@@ -25,7 +25,7 @@ Another source of information for JavaScript is the  MDN Web Docs
 
 https://developer.mozilla.org/en-US/docs/Learn
 
-Additionally, see the page about [JavaScript best practices](https://www.w3schools.com/js/js_best_practices.asp)
+Additionally, see the W3Schools page about [JavaScript best practices](https://www.w3schools.com/js/js_best_practices.asp)
 
 # Frameworks
 
@@ -202,15 +202,12 @@ Do not use ``--save`` for types because a production build will have been transp
 
 ## Editors and IDEs
 
-These are some good TypeScript editors:
-
-* [WebStorm](https://www.jetbrains.com/webstorm/) by JetBrains
-* [Visual Studio Code](https://code.visualstudio.com) by Microsoft
+For editing TypeScript, we recommend the same editors as for JavaScript.
 
 ## Debugging
 
 In web development, debugging is typically done in the browser.
-TypeScript cannot be run directly in web browser so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps.
+TypeScript cannot be run directly in the web browser, so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps.
 
 ## Documentation
 
