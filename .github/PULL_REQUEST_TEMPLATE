@@ -18,5 +18,5 @@ Feel free to remove what is not applicable.
 
 ## ALL contributions
 - [ ] I previewed my changes locally using e.g. `python3 -m http.server 4000` and confirmed they work correctly.
-- [ ] I checked for broken links, e.g. using the link checker GitHub Action workflow, or locally by using `docker run --init -it -v `pwd`:/docs lycheeverse/lychee /docs --config=docs/lychee.toml`, at least for the files I changed.
+- [ ] I checked for broken links, e.g. using the link checker GitHub Action workflow, or locally by using ``docker run --init -it -v `pwd`:/docs lycheeverse/lychee /docs --config=docs/lychee.toml``, at least for the files I changed.
 - [ ] My name was added to the `CITATION.cff` file.
