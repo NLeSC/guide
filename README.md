@@ -16,7 +16,7 @@ Because The Turing Way is programming language agnostic, this guide provides
 addtional specific
 [language guides](language_guides/languages_overview.md).
 We also provide [technology guides](technology/technology_overview.md) on digital technologies we use often in our projects with research partners.
-*Please be aware that most remaining "best practices" content is unmaintained,
+*Please be aware that most remaining [best practices](/best_practices/overview.md) content is unmaintained,
 be careful when using it.*
 We plan on removing that content ([#286](https://github.com/NLeSC/guide/issues/286)).
 
