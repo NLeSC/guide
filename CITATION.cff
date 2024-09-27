@@ -116,6 +116,49 @@ authors:
     name-particle: van
     given-names: Sander
     orcid: "https://orcid.org/0000-0001-6159-041X"
+  - affiliation: "Journal of Open Source Software"
+    family-names: Niemeyer
+    given-names: Kyle
+  - affiliation: "Netherlands eScience Center"
+    family-names: Wehner
+    given-names: Jens
+  - affiliation: "Netherlands eScience Center"
+    family-names: Burg
+    name-particle: van der
+    given-names: Sven
+  - affiliation: "Netherlands eScience Center"
+    family-names: Siqueira
+    given-names: Abel
+  - affiliation: "Netherlands eScience Center"
+    family-names: Vreede
+    given-names: Barbara
+  - affiliation: "Netherlands eScience Center"
+    family-names: Schnober
+    given-names: Carsten
+  - affiliation: "Netherlands eScience Center"
+    family-names: Chandramouli
+    given-names: Pranav
+  - affiliation: "Utrecht University"
+    family-names: Oberman
+    given-names: Hanne
+  - affiliation: "Netherlands eScience Center"
+    family-names: Lüken
+    given-names: Malte
+  - affiliation: "Netherlands eScience Center"
+    family-names: Isazi
+    given-names: Alessio
+  - affiliation: "Datadog, Inc."
+    family-names: Lev
+    given-names: Ofek
   - affiliation: "Netherlands eScience Center"
     family-names: Cahen
     given-names: Ewan
+  - affiliation: "Netherlands eScience Center"
+    family-names: Ali
+    given-names: Suvayu
+  - affiliation: "Netherlands eScience Center"
+    family-names: Hafner
+    given-names: Flavio
+  - affiliation: "Netherlands eScience Center"
+    family-names: Cushing
+    given-names: Reggie
