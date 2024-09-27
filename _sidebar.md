@@ -6,7 +6,6 @@
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
-   * [Datasets](/best_practices/datasets.md) <!-- Move down after https://github.com/NLeSC/guide/pull/339 is merged -->
 * [Language Guides](/language_guides/languages_overview.md)
    * [Bash](/language_guides/bash.md)
    * [JavaScript and TypeScript](/language_guides/javascript.md)
@@ -17,5 +16,5 @@
 * [Technology Guides](/technology/technology_overview.md)
    * [GPU programming](/technology/gpu.md)
    * [UX - User Experience](/technology/user_experience.md)
-   <!-- Move datasets here after https://github.com/NLeSC/guide/pull/339 is merged -->
+   * [Datasets](/technology/datasets.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
