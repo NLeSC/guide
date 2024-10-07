@@ -53,7 +53,7 @@ The guide contains and links to best practices we use to code and develop resear
 The main goal: having information available about research software engineering best practices for our colleagues, collaborators and other interested people.
 It can be information that you can give a colleague starting in some area, for instance, a new language or a new technology.
 
-80% of this goal will be met by [the Turing Way](https://the-turing-way.netlify.app/).
+80% of this goal will be met by [the Turing Way](https://book.the-turing-way.org/).
 For everything else: we have the Guide.
 
 We focus on eScience Center-specific best practices.

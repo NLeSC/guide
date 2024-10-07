@@ -189,7 +189,7 @@ The development environment will typically accumulate (old) packages during deve
 ### Code coverage
 
 When you have tests it is also a good to see which source code is exercised by the test suite.
-[Code coverage](https://the-turing-way.netlify.app/reproducible-research/testing/testing-guidance#aim-to-have-a-good-code-coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
+[Code coverage](https://book.the-turing-way.org/reproducible-research/testing/testing-guidance#aim-to-have-a-good-code-coverage) can be measured with the [coverage](https://coverage.readthedocs.io) Python package.
 The coverage package can also generate html reports which show which line was covered.
 Most test runners have have the coverage package integrated.
 
@@ -199,9 +199,9 @@ If this is not possible or does not fit then use a generic code coverage service
 
 ## Code quality analysis tools and services
 
-Code quality service is explained in the [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks).
+Code quality service is explained in the [The Turing Way](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks).
 There are multiple code quality services available for Python, all of which have their pros and cons.
-See [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-resources.html) for links to lists of possible services.
+See [The Turing Way](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-resources.html) for links to lists of possible services.
 We currently setup [Sonarcloud](https://sonarcloud.io/) by default in our [Python template](https://github.com/NLeSC/python-template).
 To reproduce the Sonarcloud pipeline locally, you can use [SonarLint](https://www.sonarlint.org/) in your IDE.
 If you use another editor, perhaps it is more convenient to pick another service like Codacy or Codecov.

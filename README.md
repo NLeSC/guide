@@ -9,7 +9,7 @@ Center, and as a basis for discussions and reaching consensus on this topic.
 **Read The Turing Way instead**
 
 If you are looking for an overall picture of best practices, read
-[The Turing Way](https://the-turing-way.netlify.app/index.html) first.
+[The Turing Way](https://book.the-turing-way.org/index.html) first.
 We joined forces with that guide for most of our generic research software
 engineering advice.
 Because The Turing Way is programming language agnostic, this guide provides
