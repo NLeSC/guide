@@ -10,7 +10,7 @@ things done faster.
 
 ### Learn how to use the command line efficiently
 
-Read the chapter on using [Bash](language_guides/bash.md).
+Read the chapter on using [Bash](/language_guides/bash.md).
 
 ### Use an editor that helps you develop
 

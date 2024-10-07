@@ -2,7 +2,7 @@
 
 Ways to improve code quality are in the [Code quality](https://book.the-turing-way.org//reproducible-research/code-quality.html) chapter on the Turing Way.
 
-There are [online software quality improvement tools](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks) see the [language guides](language_guides/languages_overview.md) for good options per language.
+There are [online software quality improvement tools](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks) see the [language guides](/language_guides/languages_overview.md) for good options per language.
 
 ## Editorconfig
 
