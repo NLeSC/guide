@@ -63,21 +63,47 @@ To create a Vue.js application use [Vue CLI](https://cli.vuejs.org/).
 
 [TypeScript Vue Starter](https://github.com/Microsoft/TypeScript-Vue-Starter#typescript-vue-starter) is a guide to write Vue applications in TypeScript.
 
-# JavaScript outside browser
+# JavaScript outside of the browser
 
-Most JavaScript is run in web browsers, but
-JavaScript can also be run on outside browsers with [Node.js](https://nodejs.org).
+Most JavaScript is run in web browsers, but if you want to run it outside of a browser (e.g. as a server or to run a script locally), you'll need a JavaScript *runtime*. These are the main runtimes available:
 
-On Ubuntu (18.04) based systems, you can use the following commands to install Node.js:
+* [Node.js](https://nodejs.org) is the most used runtime, mainly for being the only available runtime for a long time. This gives the advantage that there is a lot of documentation available (official and unofficial, e.g. forums) and that many tools are available for Node.js. It comes with a [package manager (npm)](https://www.npmjs.com/) that allows you to install packages from a huge library. Its installation instructions can be found [here](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+* [Deno](https://deno.com/) can be seen as a successor to Node.js and tries to improve on it in a few ways, most notably:
+  * [built-in support](https://docs.deno.com/runtime/fundamentals/typescript/) for TypeScript
+  * a better [security model](https://docs.deno.com/runtime/fundamentals/typescript/)
+  * built-in tooling, like a [linter and formatter](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/)
+  * [compiling](https://docs.deno.com/runtime/reference/cli/compiler/) to standalone executables
+  
+Its installation instructions can be found [here](https://docs.deno.com/runtime/getting_started/installation/)
+* [Bun](https://bun.sh/), the youngest runtime of the three. Its focus is on speed, reduced complexity and enhanced developer productivity (read more [here](https://bun.sh/docs)). Just like Deno, it comes with [built-in TypeScript support](https://bun.sh/docs/runtime/typescript), can [compile to standalone executables](https://bun.sh/docs/bundler/executables) and it aims to be fully [compatible with Node.js](https://bun.sh/docs/runtime/nodejs-apis). Its installation instructions can be found [here](https://bun.sh/docs/installation).
 
-```shell
-# system packages (Ubuntu/Debian)
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
+A more comprehensive comparison can be found [in this guide](https://zerotomastery.io/blog/deno-vs-node-vs-bun-comparison-guide/).
 
-Node.js comes with a package manager called [npm](https://www.npmjs.com/).
-The package manager uses https://www.npmjs.com/ as the package repository.
+## Which runtime to choose?
+
+To answer this question, you should consider what is important for you and your project.
+
+Choose Node.js if:
+
+* you need a stable, mature and a well established runtime with a large community around it;
+* you need to use dependencies that should most likely "just work";
+* you cannot convince the people you work with to install something else;
+* you don't need any particular feature of any of its competitors.
+
+Choose Deno if:
+
+* you want a relatively mature runtime with a lot of features built in;
+* you want out-of-the-box TypeScript support;
+* you like its security model;
+* you want a complete package with a linter and formatter included;
+* you don't mind spending some time if something does not work directly.
+
+Choose Bun if:
+
+* you are willing to take a risk using a relatively new runtime;
+* you want out-of-the-box TypeScript support;
+* you want to use one of Bun's particular features;
+* you need maximum performance (though you should benchmark for your use case first and consider using a different programming language).
 
 # Editors and IDEs
 
