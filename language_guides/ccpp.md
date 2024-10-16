@@ -287,7 +287,7 @@ This all makes xtensor a very interesting choice compared to similar older libra
 
 
 ### Parallel processing
-* [Intel TBB](https://www.threadingbuildingblocks.org) (Threading Building Blocks): template library for task parallelism
+* [oneAPI Threading Building Blocks](https://oneapi-src.github.io/oneTBB/) (oneTBB): template library for task parallelism
 * [ZeroMQ](http://zeromq.org): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
 
 
