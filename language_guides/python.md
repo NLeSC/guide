@@ -321,7 +321,7 @@ Having said that, there are many ways to run Python code in parallel:
 There are convenient Python web frameworks available:
 
 * [flask](http://flask.pocoo.org/)
-* [cherrypy](http://www.cherrypy.org/)
+* [CherryPy](https://cherrypy.dev/)
 * [Django](https://www.djangoproject.com/)
 * [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
 

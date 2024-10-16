@@ -63,7 +63,7 @@ some of the things in this *scan* could be automated with continuous integration
 
 ### Citeable
 
-Create a DOI for each release see [Making software citable](../citable_software/making_software_citable.md).
+Create a DOI for each release see [Making software citable](https://book.the-turing-way.org/communication/citable/citable-cff.html?highlight=citable).
 
 ### Dissemination
 
