@@ -33,6 +33,29 @@ Building and/or using Python 2 is probably discouraged even more than, say, usin
 * A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
 * Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
+### Type hints
+Since [PEP 484](https://peps.python.org/pep-0484/), which was first implemented in Python 3.5 (released in 2015), Python has gained the ability to add type information to variables.
+These are not types, as in typed languages; they are _hints_.
+Naively, one could say they are a new type of documentation.
+However, in practice they are far more than this, because they do have their own special syntax rules and are thus parsable.
+In fact, some tools have started to make use of this in runtime modules as well, making them more than hints for tools like Pydantic, FastAPI and Typer (all described below).
+See [this guide](https://realpython.com/python-type-checking/) to learn more about type hints.
+
+Some tools to know about that make use of type hints:
+- [Mypy](https://mypy.readthedocs.io/en/stable/index.html): tool that checks whether your code uses types correctly.
+  Python still allows functions to be called with any type of parameter, but Mypy will warn you when the type of a parameter does not match the function's type hint.
+- [Pydantic](https://docs.pydantic.dev/latest/): widely used data validation library that allows you to automatically validate instances of dataclasses at runtime. This means that for this tool the type hints are no longer just hints or a form of documentation, but have actual effects. Essentially, a fully Pydantic-enriched application (in "strict mode") is like having Mypy at runtime (there is also a "tolerant" mode that lets some common types slip through without errors). It effectively turns Python into a statically typed language.
+- Most editors nowadays make use of type hints for autocompletion.
+  If the editor knows the type of your variable, for instance, it can autocomplete attributes or methods of that class.
+
+We recommend using type hints, where possible and _practical_.
+Type hints are still being actively developed; not everything one would like to be able to express in a compact way can yet be achieved.
+This is why, for instance, NumPy arrays and ML library "tensor" types still (in 2024) have awkward type hinting.
+Crucial information that one would typically want to encode for array type input arguments are shapes, but this is not yet possible.
+Other important libraries like Matplotlib have very complex functions that take in many possible types of arguments, leading to overly complex variable types.
+Such huge types clutter your code tremendously, so they are not typically encouraged.
+
+
 ## Dependencies and package management
 
 To install Python packages use `pip` or `conda` (or both, see also [what is the difference between pip and conda?](http://stackoverflow.com/questions/20994716/what-is-the-difference-between-pip-and-conda)).
@@ -324,8 +347,9 @@ There are convenient Python web frameworks available:
 * [CherryPy](https://cherrypy.dev/)
 * [Django](https://www.djangoproject.com/)
 * [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
+* [FastAPI](https://fastapi.tiangolo.com): again, similar to flask in functionality, but uses modern Python features like async and type hints with runtime behavioral effects.
 
-We recommend `flask`.
+We have recommended `flask` in the past, but FastAPI has become more popular recently.
 
 ### NLP/text mining
 
@@ -338,3 +362,4 @@ We recommend `flask`.
 * For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
 * A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
 * Other popular libraries are [`click`](https://click.palletsprojects.com) and [`fire`](https://google.github.io/python-fire/).
+* [Typer](https://typer.tiangolo.com): make a CLI app by using type hints with runtime effects. Very low on boilerplate for simple cases, but also allows for more complex cases. Uses `click` internally.
