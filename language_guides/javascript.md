@@ -15,7 +15,7 @@ To learn about JavaScript, view the presentations by [Douglas Crockford](https:/
 In [this video](https://www.youtube.com/watch?v=c-kav7Tf834) (47m04s), Nicholas Zakas talks about sustainability aspects, such as how to write maintainable JavaScript, how to do JavaScript testing, and good programming style (much needed in JavaScript).
 Among others, he mentions the following style guides:
 
-* [Google's style guide for JavaScript](https://google.github.io/styleguide/javascriptguide.xml);
+* [Google's style guide for JavaScript](https://google.github.io/styleguide/jsguide.html);
 * [Crockford's style guide](https://www.crockford.com/code.html) integrates with [JSLint](https://www.jslint.com/), which in turn is available as a plugin for Eclipse.
 * Zakas has also written [an excellent book](https://www.oreilly.com/library/view/maintainable-javascript/9781449328092/) on writing maintainable JavaScript, also within the context of working in teams. The appendix contains a style guide with explanation.
 
@@ -29,43 +29,65 @@ Additionally, see the W3Schools page about [JavaScript best practices](https://w
 
 # Frameworks
 
-To develop a web application it is no longer enough to sprinkle some [JQuery](https://jquery.com/) calls on a HTML page, a JavaScript based front end web application framework must be used. There are very many frameworks, popularity is a good way to pick one.
-Currently the most popular frameworks are
+Before you pick a framework, you should first consider what you are trying to build.
 
-* [Angular](https://angular.io/)
-* [React](https://reactjs.org/)
+- If you're building a (more traditional) website with mostly static content, like an info page for an event or a blog, whose content doesn't adapt to the visitor, consider using a [static site generator](https://jamstack.org/generators/) like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) or [Docusaurus](https://docusaurus.io/) for writing documentation. An advantage of this is that static sites can be hosted on [GitHub for free](https://pages.github.com/), which uses Jekyll by default (but you can use other static site generators as well).
+- If you're building a website that is not very interactive, but that many people have to edit, and when a static site generator is too technical, consider using [WordPress](https://wordpress.org/). Many hosting providers support WordPress out of the box.
+- When you need light interactivity, the options above can be combined with libraries like [jQuery](https://jquery.com/), [Alpine.js](https://alpinejs.dev/), [htmx](https://htmx.org/) or you can write the JavaScript yourself.
+- When you want to build a website that has high interactivity with its users, something you would call an "application" rather than a "website", consider using [htmx](https://htmx.org/) or one of the JavaScript frameworks below.
+
+Currently, the most popular frameworks are (ordered by popularity according to the [StackOverflow 2024 Developer Survey](https://survey.stackoverflow.co/2024/technology#1-web-frameworks-and-technologies))
+
+* [React](https://react.dev/)
+* [Angular](https://angular.dev/)
 * [Vue.js](https://vuejs.org/)
+* [Svelte](https://svelte.dev/)
+* [SolidJS](https://www.solidjs.com/)
 
-All these frameworks have a command line utility to generate an application skeleton which includes the serve, build and test functionality.
-
-## Angular
-
-[Angular](https://angular.io/) is a application framework by Google written in [TypeScript](https://www.typescriptlang.org/).
-
-To create a Angular application use [Angular CLI](https://cli.angular.io/).
+A good video summary on the history of these frameworks and the problems they try to solve can be found [here](https://www.youtube.com/watch?v=EPir6uxr1o8).
 
 ## React
 
-[React](https://facebook.github.io/react/) is a library which can used to create interactive User Interfaces by combining components. It is developed by Facebook.
-Where Angular and Vue.js are frameworks, including all the rendering, routing, state management functionality inside them. React only does rendering, so other libraries must be used for routing and state management.
-[Redux](https://redux.js.org/) can be used to let state changes flow through React components. [React Router](https://reactrouter.com/) can be used to navigate the application using URLs.
+[React](https://react.dev/) is a framework which can used to create interactive User Interfaces by combining components. It is developed by Facebook. It is by far the most popular framework, resulting in a huge choice of libraries and a lot of available documentation. Contrary to most other frameworks, React apps are typically written in [JSX](https://react.dev/learn/writing-markup-with-jsx) instead of plain HTML, CSS and JS.
 
-To create a React application use the [Create React App](https://github.com/facebookincubator/create-react-app)
-How to develop the bootstrapped app further is described in the README.md.
+Where other frameworks like Angular and Vue.js include rendering, routing and, state management functionality, React only does rendering, so other libraries must be used for routing and state management.
+[Redux](https://redux.js.org/) can be used to let state changes flow through React components. [React Router](https://reactrouter.com/) can be used to navigate the application using URLs. Or you can use a so-called "[meta-framework](https://prismic.io/blog/javascript-meta-frameworks-ecosystem)" like [Next.js](https://nextjs.org/).
 
-[TypeScript React Starter](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter) is a TypeScript version of create react app.
+To create a React application, the official documentation recommends to [start with a meta-framework](https://react.dev/learn/start-a-new-react-project). Alternatively, you can use the tool [Create React App](https://create-react-app.dev/), optionally [with TypeScript](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).
+
+## Angular
+
+[Angular](https://angular.dev/) is a application framework by Google written in [TypeScript](https://www.typescriptlang.org/). It is a full-blown framework, with many features included. It is therefore more used in enterprises and probably overkill for your average scientific project. Read more about what Angular is [in the documentation](https://angular.dev/overview).
+
+To create a Angular application see the [installation docs](https://angular.dev/installation).
+
+Angular also has a meta-framework called [Analog](https://analogjs.org/).
 
 ## Vue.js
 
-[Vue.js](https://vuejs.org/) is an open-source JavaScript framework for building user interfaces.
+[Vue.js](https://vuejs.org/) is an open-source JavaScript framework for building user interfaces. Read about the use cases for Vue and reasons to use it [in their introduction](https://vuejs.org/guide/introduction.html).
 
-To create a Vue.js application use [Vue CLI](https://cli.vuejs.org/).
+To create a Vue application, read the [quick start](https://vuejs.org/guide/quick-start). It also has info on using [TypeScript with Vue](https://vuejs.org/guide/typescript/overview).
 
-[TypeScript Vue Starter](https://github.com/Microsoft/TypeScript-Vue-Starter#typescript-vue-starter) is a guide to write Vue applications in TypeScript.
+A meta-framework for Vue is [Nuxt](https://nuxt.com/).
+
+## Svelte
+
+Svelte is a UI framework, that differs with most other frameworks in that is uses a compiler before shipping JavaScript to the client. Svelte applications are written in HTML, CSS and JS. Read more about Svelte in their [overview](https://svelte.dev/docs/svelte/overview).
+
+In their [documentation](https://svelte.dev/docs/svelte/getting-started), they recommend to use their meta-framework [SvelteKit](https://svelte.dev/docs/kit/introduction) to create a Svelte application. It also [supports TypeScript](https://svelte.dev/docs/svelte/typescript).
+
+## Solid.js
+
+A UI framework that focuses on performance and being developer friendly. Like React, it uses [JSX](https://docs.solidjs.com/concepts/understanding-jsx). Read more about Solid [here](https://docs.solidjs.com/).
+
+To create a Solid application, check out the [quick start](https://docs.solidjs.com/quick-start). They also [support TypeScript](https://docs.solidjs.com/configuration/typescript).
+
+Solid has a meta-framework called [SolidStart](https://start.solidjs.com/).
 
 # JavaScript outside of the browser
 
-Most JavaScript is run in web browsers, but if you want to run it outside of a browser (e.g. as a server or to run a script locally), you'll need a JavaScript *runtime*. These are the main runtimes available:
+Most JavaScript is run in web browsers, but if you want to run it outside of a browser (e.g. as a server or to run a script locally), you'll need a JavaScript **runtime**. These are the main runtimes available:
 
 * [Node.js](https://nodejs.org) is the most used runtime, mainly for being the only available runtime for a long time. This gives the advantage that there is a lot of documentation available (official and unofficial, e.g. forums) and that many tools are available for Node.js. It comes with a [package manager (npm)](https://www.npmjs.com/) that allows you to install packages from a huge library. Its installation instructions can be found [here](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 * [Deno](https://deno.com/) can be seen as a successor to Node.js and tries to improve on it in a few ways, most notably:
@@ -109,8 +131,8 @@ Choose Bun if:
 
 These are some good JavaScript editors:
 
-* [WebStorm](https://www.jetbrains.com/webstorm/) by JetBrains
-* [Visual Studio Code](https://code.visualstudio.com) by Microsoft
+* [WebStorm](https://www.jetbrains.com/webstorm/) by JetBrains. It is free (as in monetary cost) for [non-commercial use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/); otherwise you have to buy a licence. Most of its features are also available in other IDEs of JetBrains, like [IntelliJ IDEA](https://www.jetbrains.com/idea/) ultimate, [PyCharm](https://www.jetbrains.com/pycharm/) professional and [Rider](https://www.jetbrains.com/rider/). You can compare the products of JetBrains [here](https://www.jetbrains.com/products/compare/?product=webstorm&product=idea). Note that the free version of WebStorm will [collect data](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/#anonymous-data-collection) anonymously, without the option to disable it. WebStorm comes with a lot of [functionality included](https://www.jetbrains.com/webstorm/features/), but also gives access to a [Marketplace of plugins](https://plugins.jetbrains.com/).
+* [Visual Studio Code](https://code.visualstudio.com), an open source and free (as in monetary cost) editor by Microsoft. By default, it collects [telemetry data](https://code.visualstudio.com/docs/getstarted/telemetry), but that can be [disabled](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting). VSCode has a [limited feature set](https://code.visualstudio.com/docs/editor/whyvscode) out of the box, which can be enhanced with [extensions](https://marketplace.visualstudio.com/vscode).
 
 # Debugging
 
@@ -182,6 +204,8 @@ TypeScript is a typed superset of JavaScript which compiles to plain JavaScript.
 
 At the Netherlands eScience Center we prefer TypeScript to JavaScript as it will lead to more sustainable software.
 
+This section highlights the differences with JavaScript. For topics that seem to be missing, like IDEs, code style etc., see the respective JavaScript section.
+
 ## Getting Started
 
 To learn about TypeScript, the following resources are available:
@@ -190,6 +214,7 @@ To learn about TypeScript, the following resources are available:
 * [Single video tutorial](https://www.youtube.com/watch?v=d56mG7DezGs) and [playlist tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 * Tutorials on debugging TypeScript in [Chrome](https://blog.logrocket.com/how-to-debug-typescript-chrome/) and [Firefox](https://hacks.mozilla.org/2019/09/debugging-typescript-in-firefox-devtools/). If you are using a framework, consult the documentation of that framework for additional ways of debugging
 * [The Definitive TypeScript 5.0 Guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide)
+* The [W3Schools TypeScript tutorial](https://www.w3schools.com/typescript/index.php)
 
 ## Quickstart
 
@@ -226,10 +251,6 @@ npm install --save-dev @types/react
 The ``--save-dev`` flag saves this installation to the package.json file as a development dependency.
 Do not use ``--save`` for types because a production build will have been transpiled to JavaScript and has no use for TypeScript types.
 
-## Editors and IDEs
-
-For editing TypeScript, we recommend the same editors as for JavaScript.
-
 ## Debugging
 
 In web development, debugging is typically done in the browser.
@@ -238,9 +259,3 @@ TypeScript cannot be run directly in the web browser, so it must be transpiled t
 ## Documentation
 
 It seems that [TypeDoc](https://typedoc.org/) is a good tool to use.
-
-## Style Guides
-
-[TSLint](https://github.com/palantir/tslint) is a good tool to check your code style.
-
-For the [sim-city-cs project](https://github.com/indodutch/sim-city-cs/) we use [this](https://github.com/ReGIS-org/regis/blob/develop/tslint.json) tslint.json file.
