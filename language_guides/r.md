@@ -85,6 +85,12 @@ grades |> remove_nans() |> mean() |> print()
 You can think of it as a production chain, were an object (the `grades`) passes through three machines, one that removes the `NaN`s, another one that takes the mean, and a last one that prints the result.
 
 # Recommended additional packages and libraries
+One of the strengths of `R` is its community, that creates and maintains a constellation of packages.
+Very rarely will you use just base `R`.
+Here we give you a list of usual packages, starting by one solving the first problem you'll find... how to manage that many packages!
+
+## Managing environments with `renv`
+[`renv`](https://rstudio.github.io/renv/articles/renv.html) allows you to create and manage a dependencies library on a per-project basis. It also keeps track of the specific versions of each package used in the project, which is great for reproducibility... and avoiding future headhaches!
 
 ## Plotting with basic functions and ggplot2 and ggvis
 For a generic impression of what R can do see: https://www.r-graph-gallery.com/all-graphs
