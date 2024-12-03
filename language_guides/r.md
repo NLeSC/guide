@@ -11,8 +11,13 @@ R is particularly popular in the social, health, and biological sciences where i
 One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 A few remarks for readers familiar with Python:
-* Compared with Python, R does not need a notebook to program interactively. In [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
+* R does not need a notebook to program interactively. In [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately, the user can run sections of the code by selecting them and pressing Ctrl+Enter. Consequently the user can quickly transition from working with scripts to working interactively using the Ctrl+Enter.
 * Numbering in R starts with 1 and not with 0.
+* When `x` is a list, `x[1]` is another list containing the first element, and `x[[1]]` is the **value** of it.
+* `:` is a sequence operator, not a slicing one. 
+   * `3:5` will generate the vector `c(3, 4, 5)`. 
+   * `3:` will throw an error.
+* Functions don't require explicit return statement, although it is recommended.
 
 ### Recommended sources of information
 Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R see the following resources:
