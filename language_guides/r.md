@@ -79,7 +79,8 @@ The `<-` supporters will argue that this example demonstrates that `=` should be
 From a computer science perspective it is probably best to adhere to the `<-` convention. From a domain science perspective it is understandable to use `=`. The code performs exactly the same and guarantees that new objects created as part of a function call result in an error. Please note that it is also possible to develop code with `=` syntax and to transfer it to `<-` syntax once the code is finished: the `formatR` package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
 ## `%>%` and `|>`
-The symbols `%>%` and `|>` are equivalent, and represent the pipe operator.
+The symbols `%>%` and `|>` represent the pipe operator.
+The first one is part of the `magrittr` package, and it gained so much popularity that it was added as part of native R since version 4.0.0. For the rest, they are entirely equivalent.
 They just add syntactic sugar to the way we pass a variable to a function.
 The example below shows its basic behavior:
 
