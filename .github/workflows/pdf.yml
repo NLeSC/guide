@@ -18,7 +18,7 @@ jobs:
         run: npm install docsify-pdf-converter @iomeg/zenodo-upload
       - name: Generate PDF
         run: npx docsify-pdf-converter
-      # - name: Upload PDF to Zenodo
-      #   run: npx --package @iomeg/zenodo-upload zenodo_upload 4020565 guide-nlesc.pdf "${github_ref:10}" ${{ secrets.ZENODO_TOKEN }}
-      #   env:
-      #     github_ref: ${{ github.ref }}
+      - name: Upload PDF to Zenodo
+        run: npx --package @iomeg/zenodo-upload zenodo_upload 138987 guide-nlesc.pdf "${github_ref:10}" ${{ secrets.ZENODO_TOKEN }}
+        env:
+          github_ref: ${{ github.ref }}
