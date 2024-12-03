@@ -65,6 +65,25 @@ The <- supporters will argue that this example demonstrates that = should be avo
 
 From a computer science perspective it is probably best to adhere to the <- convention. From a domain science perspective it is understandable to use =. The code performs exactly the same and guarantees that new objects created as part of a function call result in an error. Please note that it is also possible to develop code with = syntax and to transfer it to <- syntax once the code is finished, the formatR package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
 
+## `%>%` and `|>`
+The symbols `%>%` and `|>` are equivalent, and represent the pipe operator.
+They just add syntactic sugar to the way we pass a variable to a function.
+The example below shows its basic behavior:
+
+```r
+var %>% function(params)
+# Is equivalent to
+function(var, params)
+```
+
+These operators are pretty useful for composing functions, and very often appear concatenated:
+
+```r
+grades |> remove_nans() |> mean() |> print()
+```
+
+You can think of it as a production chain, were an object (the `grades`) passes through three machines, one that removes the `NaN`s, another one that takes the mean, and a last one that prints the result.
+
 # Recommended additional packages and libraries
 
 ## Plotting with basic functions and ggplot2 and ggvis
