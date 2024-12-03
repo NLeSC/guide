@@ -2,6 +2,12 @@
 
 In this chapter we give an overview of the best practices for software development at the Netherlands eScience Center, including a rationale.
 
+## Checklists
+
+An easy way to make sure you did not forget anything important is to use a well curated checklist.
+Great examples can be found via [FAIR Software NL](https://fair-software.nl/recommendations/checklist).
+[The Turing Way](https://book.the-turing-way.org) has specific topical checklists at the end of each of their chapters.
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
