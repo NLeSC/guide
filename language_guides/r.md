@@ -132,10 +132,11 @@ Use ?functionname to access fucntion documentation.
 
 # Package development
 
-### Building R packages
+## Building R packages
 There is a great tutorial written by Hadley Wickam describing all the nitty gritty of building your own package in R. It's called [R packages](http://r-pkgs.had.co.nz).
+For a quicker introduction, consider this software Carpentries' [lesson on R packages](https://carpentries-incubator.github.io/lesson-R-packaging/), originated and developed at our Center!
 
-### Package documentation
+## Package documentation
 Read [Documentation](http://r-pkgs.had.co.nz/man.html) chapter of Hadleys [R packages](http://r-pkgs.had.co.nz) book for details about documenting R code.
 
 Customary R uses `.Rd` files in `/man` directory for documentation. These files and folders are automatically created by RStudio when you create a new project from your existing R-function files.
