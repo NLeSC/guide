@@ -20,12 +20,14 @@ A few remarks for readers familiar with Python:
 * Functions don't require explicit return statement, although it is recommended.
 
 ### Recommended sources of information
-Some R packages have their own google.group. All R functions come with documentation in a standardized format. To learn R see the following resources:
+All R functions come with documentation in a standardized format. Some R packages have their own google group. Further, stackoverflow and standard search engines can lead you to answers to issues.
+
+If you prefer books, consider the following resources:
+
 * [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham,
 * [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham,
 * [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto.
 
-Further, stackoverflow and standard search engines can lead you to answers to issues.
 
 # Getting started
 
@@ -35,7 +37,7 @@ To install R check detailed description at [CRAN website](http://cran.r-project.
 #### IDE
 R programs can be written in any text editor. R code can be run from the command line or interactively within R environment, that can be started with `R` command in the shell. To quit R environment type `q()`.
 
-[RStudio](https://posit.co/products/open-source/rstudio/) is a free powerful integrated development environment (IDE) for R. It features editor with code completion, command line environment, file manager, package manager and history lookup among others. You will have to install RStudio in addition to installing R. Please note that updating RStudio does not automatically update R and the other way around.
+Said this, it is highly recommended to use an integrated development environment (IDE). The most popular one is [RStudio / Posit](https://posit.co/products/open-source/rstudio/). It is a free and quite powerful. It features editor with code completion, command line environment, file manager, package manager and history lookup among others. You will have to install RStudio in addition to installing R. Please note that updating RStudio does not automatically update R and the other way around.
 
 Within RStudio you can work on ad-hoc code or create a project. Compared with Python an R project is a bit like a virtual environment as it preserves the workspace and installed packages for that project. Creating a project is needed to build an R package. A project is created via the menu at the top of the screen.
 
@@ -118,21 +120,20 @@ There are packages that ease tidying up messy data, e.g. [tidyr](https://github.
 ## Speeding up code
 As in many computing languages loops should be avoided in R. Here is a list of tricks to speed up your code:
 
-* read.table() is sometimes faster than read.csv()
-* ifelse()
-* lapply()
-* sapply()
-* mapply()
-* grep()
-* %in% for testing whether and where values in one object occur in another object
-* aggregate()
-* which() for identifying which object indices match a certain condition
-* table() for getting a frequency table of categorical data
-* grep()
-* gsub()
-* dplyr package, see [also](http://dplyr.tidyverse.org/)
-
-Use ?functionname to access fucntion documentation.
+* `read.table()` is sometimes faster than `read.csv()`
+* `ifelse()`
+* `lapply()`
+* `sapply()`
+* `mapply()`
+* `grep()`
+* `%in%` for testing whether and where values in one object occur in another object
+* `aggregate()`
+* `which()` for identifying which object indices match a certain condition
+* `table()` for getting a frequency table of categorical data
+* `grep()`
+* `gsub()`
+* [`dplyr`](http://dplyr.tidyverse.org/) package
+* [`purrr`](https://purrr.tidyverse.org/) package. It contains many functional programming tools that can help you build optimized processes
 
 
 # Package development
