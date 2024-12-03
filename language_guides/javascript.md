@@ -2,32 +2,17 @@
 
 *Page maintainer: Ewan Cahen* [@ewan-escience](https://github.com/ewan-escience)
 
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript) (JS) is a programming language that is one of the three (together with [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/CSS)) core technologies of the web. It is essential if you want to write interactive webpages or web applications, because JavaScript is, apart from [WebAssembly](https://webassembly.org/), the only programming language that runs in modern browsers. Furthermore, JS can also run [outside of the browser](/language_guides/javascript?id=javascript-outside-of-the-browser), e.g. for running short scripts or full-blown servers.
 
-To learn about JavaScript, view the presentations by [Douglas Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford):
+A good introductory tutorial on JavaScript is [this one from W3Schools](https://www.w3schools.com/js/).
 
-* [Crockford on JavaScript](https://www.youtube.com/playlist?list=PL7664379246A246CB)
-* [JavaScript: The Good Parts](https://www.youtube.com/watch?v=hQVTIJBZook)
-* JavaScript trilogy:
-    * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) (1h50m)
-    * [Theory of the DOM](https://www.youtube.com/watch?v=Y2Y0U-2qJMs) (1h18m)
-    * [Advanced JavaScript](https://www.youtube.com/watch?v=DwYPG6vreJg) (1h07m)
-
-In [this video](https://www.youtube.com/watch?v=c-kav7Tf834) (47m04s), Nicholas Zakas talks about sustainability aspects, such as how to write maintainable JavaScript, how to do JavaScript testing, and good programming style (much needed in JavaScript).
-Among others, he mentions the following style guides:
-
-* [Google's style guide for JavaScript](https://google.github.io/styleguide/jsguide.html);
-* [Crockford's style guide](https://www.crockford.com/code.html) integrates with [JSLint](https://www.jslint.com/), which in turn is available as a plugin for Eclipse.
-* Zakas has also written [an excellent book](https://www.oreilly.com/library/view/maintainable-javascript/9781449328092/) on writing maintainable JavaScript, also within the context of working in teams. The appendix contains a style guide with explanation.
-
-[These](https://www.youtube.com/playlist?list=PLA56F6A06883A2AD8) video tutorials (totaling a couple of hours) are useful if you're just starting with learning the JavaScript language.
-
-Another source of information for JavaScript is the  MDN Web Docs
-
-https://developer.mozilla.org/en-US/docs/Learn
-
-Additionally, see the W3Schools page about [JavaScript best practices](https://www.w3schools.com/js/js_best_practices.asp)
+Another source of information for JavaScript (and web development in general) is the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn).
 
 # Frameworks
+
+Many people will jump straight to using a framework when building a web application. We, however, recommend that you learn the fundamentals first and get an impression of what problems frameworks are trying to solve for you. Read, for example, this article on [how the web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) a look at this [introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction).
+
+A good video summary on the history of frameworks and the problems they try to solve can be found [here](https://www.youtube.com/watch?v=EPir6uxr1o8).
 
 Before you pick a framework, you should first consider what you are trying to build.
 
@@ -43,8 +28,6 @@ Currently, the most popular frameworks are (ordered by popularity according to t
 * [Vue.js](https://vuejs.org/)
 * [Svelte](https://svelte.dev/)
 * [SolidJS](https://www.solidjs.com/)
-
-A good video summary on the history of these frameworks and the problems they try to solve can be found [here](https://www.youtube.com/watch?v=EPir6uxr1o8).
 
 ## React
 
@@ -131,27 +114,37 @@ Choose Bun if:
 
 These are some good JavaScript editors:
 
-* [WebStorm](https://www.jetbrains.com/webstorm/) by JetBrains. It is free (as in monetary cost) for [non-commercial use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/); otherwise you have to buy a licence. Most of its features are also available in other IDEs of JetBrains, like [IntelliJ IDEA](https://www.jetbrains.com/idea/) ultimate, [PyCharm](https://www.jetbrains.com/pycharm/) professional and [Rider](https://www.jetbrains.com/rider/). You can compare the products of JetBrains [here](https://www.jetbrains.com/products/compare/?product=webstorm&product=idea). Note that the free version of WebStorm will [collect data](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/#anonymous-data-collection) anonymously, without the option to disable it. WebStorm comes with a lot of [functionality included](https://www.jetbrains.com/webstorm/features/), but also gives access to a [Marketplace of plugins](https://plugins.jetbrains.com/).
+* [WebStorm](https://www.jetbrains.com/webstorm/) by JetBrains. It is free (as in monetary cost) for [non-commercial use](https://www.jetbrains.com/legal/docs/toolbox/license_non-commercial/); otherwise you have to buy a licence. Most of its features are also available in other IDEs of JetBrains, like [IntelliJ IDEA ultimate](https://www.jetbrains.com/idea/), [PyCharm professional](https://www.jetbrains.com/pycharm/) and [Rider](https://www.jetbrains.com/rider/). You can compare the products of JetBrains [here](https://www.jetbrains.com/products/compare/?product=webstorm&product=idea). Note that the free version of WebStorm will [collect data](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/#anonymous-data-collection) anonymously, _without_ the option to disable it. WebStorm comes with a lot of [functionality included](https://www.jetbrains.com/webstorm/features/), but also gives access to a [Marketplace of plugins](https://plugins.jetbrains.com/).
 * [Visual Studio Code](https://code.visualstudio.com), an open source and free (as in monetary cost) editor by Microsoft. By default, it collects [telemetry data](https://code.visualstudio.com/docs/getstarted/telemetry), but that can be [disabled](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting). VSCode has a [limited feature set](https://code.visualstudio.com/docs/editor/whyvscode) out of the box, which can be enhanced with [extensions](https://marketplace.visualstudio.com/vscode).
 
 # Debugging
 
-In web development, debugging is typically done in the browser.
+In web development, debugging is typically done in the browser. Read [this article from W3Schools](https://www.w3schools.com/js/js_debugging.asp) for more info.
 
-* The best debugging tool suite is currently the debugger built into the Google Chrome web browser, and its open-source counterpart, Chromium. It can watch variables, step through the code, lets you monitor network traffic, and much more. Activate the debugger through the F12 key.
-* On Firefox, use either the built-in debugging functionality (again accessible through the F12 button) or install the [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools).
-* Microsoft has a debugging toolset called 'F12' for their Internet Explorer and Edge browsers. It offers similar capability as that of Google Chrome, Chromium, and Firefox.
-* In Safari on OS X, press ⌘⌥U.
+There is documentation for each browser on their [dev tools](https://en.wikipedia.org/wiki/Web_development_tools):
 
-Sometimes the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser.
-All major browsers can now deal with this through so-called _source maps_, which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code.
+* [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/)
+* [Chrome](https://developer.chrome.com/docs/devtools)
+* [Edge](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview)
+* [Safari](https://developer.apple.com/safari/tools/)
+
+There are also debugging guides for the various JS runtimes: 
+
+* [Node.js](https://nodejs.org/en/learn/getting-started/debugging)
+* [Deno](https://docs.deno.com/runtime/fundamentals/debugging/)
+* [Bun](https://bun.sh/docs/runtime/debugger)
+
+When using a (meta-)framework, also have a look at its documentation.
+
+Sometimes, the JavaScript code in the browser is not an exact copy of the code you see in your development environment, for example because the original source code is minified/uglified or transpiled before it's loaded in the browser.
+All major browsers can now deal with this through so-called [source maps](https://web.dev/articles/source-maps), which instruct the browser which symbol/line in a javascript file corresponds to which line in the human-readable source code.
 Look for the 'create sourcemaps' option when using minification/uglification/transpiling tools.
 
 # Hosting data files
 
-To load data files with JavaScript you can't use any file system URLs due to safety restrictions.
-You should use a web server (which may still serve files that are local).
-A simple webserver can be started from the directory you want to host files with:
+To display web pages (HTML files) with JavaScript, you can't use any file system URL due to safety restrictions.
+You should use a [web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server) (which may still serve files that are local).
+A simple web server can be started from the directory you want to host files with:
 
 ```bash
 python3 -m http.server 8000
@@ -160,41 +153,59 @@ python3 -m http.server 8000
 <!-- the &#104; notation below is to avoid problems with the link checker (broken-link-checker) -->
 Then open the web browser to &#104;ttp://localhost:8000.
 
-# Documentation
+# Documentation :id=js-docs
 
-[JSDoc](https://jsdoc.app/) works similarly to JavaDoc, in that it parses your JavaScript files and automatically generates HTML documentation.
+[JSDoc](https://jsdoc.app/) (similar to [JavaDoc](https://www.baeldung.com/javadoc)), parses your JavaScript files and automatically generates HTML documentation, based on the JSDoc comments you put in the code.
 
 # Testing
 
-* [Jasmine](https://jasmine.github.io/), a behavior-driven development framework for testing JavaScript code.
-* [Karma](https://karma-runner.github.io/latest/index.html), Test runner, runs tests in web browser with code coverage. Use [PhantomJS](https://phantomjs.org/) as headless web browser on CI-servers.
-* [Tape](https://github.com/substack/tape), a minimal testing framework that helps remove some of the black-box approach of some of the other frameworks.
-* [Jest](https://github.com/facebook/jest), a test framework from Facebook which is integrated into the [Create React App](https://github.com/NLeSC/create-react-app)
+The various runtimes have testing functionality included, so you don't have to install extra dependencies:
 
-## Web based tests
+* [Node.js](https://nodejs.org/en/learn/test-runner/introduction)
+* [Deno](https://docs.deno.com/runtime/fundamentals/testing/)
+* [Bun](https://bun.sh/guides/test/run-tests)
 
-To interact with web-browsers use [Selenium](https://www.selenium.dev/).
+If these don't suffice, a nice overview of popular testing frameworks can be found [here](https://raygun.com/blog/javascript-unit-testing-frameworks/).
 
-Test with
-* Local web browser
-* Web browsers hosted by [Sauce Labs](https://saucelabs.com/), it has a matrix of web-browsers and Operating Systems. Free for open source projects.
+
+## Testing with browsers
+
+To interact with web browsers use [Selenium](https://www.selenium.dev/).
 
 # Coding style
 
-See [general front dev guidelines](https://github.com/bendc/frontend-guidelines) and [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
+## Formatters
 
-Use a linter like [eslint](https://eslint.org/) to detect errors and potential problems.
+A formatter is a tool to make your source code look consistent and easy to look at. In web development, the most used formatter is [Prettier](https://prettier.io/), which can [integrate with many editors](https://prettier.io/docs/en/editors). You could [set up a GitHub action](https://akhilaariyachandra.com/blog/prettier-in-github-actions) that rejects pull requests that are not formatted properly.
+
+When using Deno, you can also use its [built-in formatter](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/#formatting).
+
+An alternative to Prettier is [Biome](https://biomejs.dev/), which also includes a linter.
+
+In any case, remember to use tabs for indentation for the [purpose of accessibility](https://old.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/).
+
+## Linters
+
+A linter is a tool to check your code quality, in order to prevent bugs. The most used linter is [ESLint](https://eslint.org/). It has [many integrations](https://eslint.org/docs/latest/use/integrations)
+
+When using Deno, you can also use its [built-in linter](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/#linting).
+
+An alternative to ESLint is [Biome](https://biomejs.dev/), which also includes a formatter.
+
+Also have a look at the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) or the W3Schools page on [JavaScript best practices](https://www.w3schools.com/js/js_best_practices.asp).
+
+## Code quality analysis tools and services
+
+For more in-depth analyses, you can use a code quality and analysis tool.
+
+* [SonarCloud](https://sonarcloud.io) is an open platform to manage code quality which can also show code coverage and count test results over time. It easily [integrates with GitHub](https://github.com/apps/sonarcloud).
+* [Codacy](https://www.codacy.com) can analyze [many different languages](https://docs.codacy.com/getting-started/supported-languages-and-tools/) using open source tools. It also offers [GitHub integration](https://docs.codacy.com/repositories-configure/integrations/github-integration/).
+* [Code climate](https://codeclimate.com/quality) can analyze JavaScript (and Ruby, PHP). Can analyze Java (best supported), C, C++, Python, JavaScript and TypeScript.
 
 # Showing code examples
 
 You can use [jsfiddle](https://jsfiddle.net/), which shows you a live preview of your web page while you fiddle with the underlying HTML, JavaScript and CSS code.
 
-# Code quality analysis tools and services
-
-* [Code climate](https://codeclimate.com) can analyze JavaScript (and Ruby, PHP). For example project see https://codeclimate.com/github/NLeSC/PattyVis
-* [Codacy](https://www.codacy.com) can analyze [many different languages](https://docs.codacy.com/getting-started/supported-languages-and-tools/) using open source tools.
-* [SonarCloud](https://sonarcloud.io) is an open platform to manage code quality which can also show code coverage and count test results over time.
-Can analyze Java (best supported), C, C++, Python, JavaScript and TypeScript. For example project see https://sonarcloud.io/dashboard?id=e3dchem%3Amolviewer
 
 # TypeScript
 
@@ -204,7 +215,7 @@ TypeScript is a typed superset of JavaScript which compiles to plain JavaScript.
 
 At the Netherlands eScience Center we prefer TypeScript to JavaScript as it will lead to more sustainable software.
 
-This section highlights the differences with JavaScript. For topics that seem to be missing, like IDEs, code style etc., see the respective JavaScript section.
+This section highlights the differences with JavaScript. For topics without significant differences, like IDEs, code style etc., see the respective JavaScript section.
 
 ## Getting Started
 
@@ -218,24 +229,20 @@ To learn about TypeScript, the following resources are available:
 
 ## Quickstart
 
-To install TypeScript compiler run:
-
-```shell
-npm install -g typescript
-```
+To install TypeScript compiler run, check out the [official documentation](https://www.typescriptlang.org/download/). Note that Deno and Bun support TypeScript [out of the box](/language_guides/javascript?id=javascript-outside-of-the-browser).
 
 ## Dealing with Types
 
 In TypeScript, variables are typed and these types are checked.
 This implies that when using libraries, the types of these libraries need to be installed.
-More and more libraries ship with type declarations in them so they can be used directly. These libraries will have a "typings" key in their package.json.
+More and more libraries ship with type declarations in them so they can be used directly. These libraries will have a "typings" key in their `package.json`.
 When a library does not ship with type declarations then the libraries `@types/<library-name>` package must be installed using npm:
 
 ```shell
 npm install --save-dev @types/<library-name>
 ```
 
-For example say we want to use the ``react`` package which we installed using ``npm``:
+For example say we want to use the `react` package which we installed using `npm`:
 ```shell
 npm install react --save
 ```
@@ -254,8 +261,8 @@ Do not use ``--save`` for types because a production build will have been transp
 ## Debugging
 
 In web development, debugging is typically done in the browser.
-TypeScript cannot be run directly in the web browser, so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps.
+TypeScript cannot be run directly in the web browser, so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps. For more info, see the [Javascript section on debugging](/language_guides/javascript?id=debugging)
 
 ## Documentation
 
-It seems that [TypeDoc](https://typedoc.org/) is a good tool to use.
+Just like [JSDoc](/language_guides/javascript?id=js-docs) for JavaScript, [TypeDoc](https://typedoc.org/) can automatically generate HTML documentation for your code.
