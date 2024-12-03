@@ -1,10 +1,10 @@
-# Software Development
+# Best Practices for Software Development
 
 In this chapter we give an overview of the best practices for software development at the Netherlands eScience Center, including a rationale.
 
 ## Know your tools
 
-In addition to the advice on the best practices in these chapters, knowing the
+In addition to the advice on the best practices above, knowing the
 tools that are available for software development can really help you getting
 things done faster.
 
@@ -23,11 +23,10 @@ developing in.
 Below is a list of editors that support many programming languages.
 
 Integrated Development Environments (IDEs):
-- [Visual Studio Code](https://code.visualstudio.com/) - modern IDE
-- [Atom](https://atom.io/) - modern IDE
+- [Visual Studio Code](https://code.visualstudio.com/) - modern editor with extensive plugin ecosystem that can make it as powerful as most IDEs
+- [JetBrains IDEs](https://www.jetbrains.com/ides/) - specialized IDEs for Python, C++, Java and web, all using the IntelliJ framework
 - [Eclipse](https://www.eclipse.org/ide/) - a bit older but still nice
 
 Text editors:
-- [Sublime Text](https://www.sublimetext.com/) - modern text editor
 - [vim](https://www.vim.org/) - classic text editor
 - [emacs](https://www.gnu.org/software/emacs/) - classic text editor
