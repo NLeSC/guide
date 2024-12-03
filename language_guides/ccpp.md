@@ -283,7 +283,7 @@ This all makes xtensor a very interesting choice compared to similar older libra
     * [argagg](https://github.com/vietjtnguyen/argagg)
     * [Clara](https://github.com/catchorg/Clara)
 * [fmt](https://github.com/fmtlib/fmt): pythonic string formatting
-* [hdf5-cpp](https://bitbucket.hdfgroup.org/projects/HDFFV/repos/hdf5/browse): The popular HDF5 binary format C++ interface.
+* [hdf5](https://github.com/HDFGroup/hdf5): The popular HDF5 binary format C++ interface.
 
 
 ### Parallel processing
