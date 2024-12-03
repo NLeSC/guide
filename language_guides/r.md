@@ -40,6 +40,12 @@ Not needed as most functions in R are already compiled in C, nevertheless R has 
 # Coding style conventions
 It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
 
+## The `<-` operator
+
+### TL;DR
+Assigning variables with `<-` instead of `=` is recommended, although **most** of the time both are equivalent.
+
+### Details
 One point in both style conventions that has resulted in some discussion is the '<-' syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. 'a <- 3' to assign value 3 to object 'a'. Please note that R syntax 'a = 3' will preform exactly the same operation in 99.9% of situations. The = syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the = syntax avoids the risk for typos like a < -1, which will produce a boolean if 'a' exists, and a <- 1 which will produce an object 'a' with a numeric value. Further, the = syntax may be more natural for those who already use it in other computing languages.
 
 The difference between '<-' and '=' is mainly related to scoping. See the [official R definition](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html) for more information. The example below demonstrates the difference in behaviour:
