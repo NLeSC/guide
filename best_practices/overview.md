@@ -16,6 +16,12 @@ More info: [The Turing Way chapter on Version Control](https://book.the-turing-w
 
 **@ NLeSC:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx)).
 
+## Software management plans
+
+With NWO, we have authored the [practical guide to software management plans](https://doi.org/10.5281/zenodo.7248877) ([see also](https://www.esciencecenter.nl/national-guidelines-for-software-management-plans/)).
+For our projects we recommend using [our Software Sustainability Protocol](https://doi.org/10.5281/zenodo.1451750), which is based on these guidelines.
+For more information you can also [read here](https://github.com/the-turing-way/the-turing-way/issues/2419). <!-- we should point to the actual Turing Way chapter once it has been created -->
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
