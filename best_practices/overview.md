@@ -21,6 +21,11 @@ More info: [The Turing Way chapter on Version Control](https://book.the-turing-w
 Tests are important for two reasons: 1. confirming the expected workings of your code while developing for the first time and 2. making sure your features keep working when later on you or others modify the implementation.
 [The Turing Way gives an overview of the many ways to test code](https://book.the-turing-way.org/reproducible-research/testing).
 
+## Code Reviews
+
+The most effective tool for improving software quality (and sharing knowledge at the same time) is doing code reviews.
+Have a look at the [The Turing Way chapter on Code Reviewing](https://book.the-turing-way.org/reproducible-research/reviewing) to learn more about ways to do this.
+
 ## Code Quality
 
 Ways to improve code quality are described in the [Code quality](https://book.the-turing-way.org/reproducible-research/code-quality.html) chapter on the Turing Way.
