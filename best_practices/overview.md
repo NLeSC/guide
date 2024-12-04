@@ -51,6 +51,12 @@ For more information, see [The Turing Way chapter on licensing](https://the-turi
 **At the Netherlands eScience Center:** our first choice is the Apache v2 license.
 See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees) for more details on licensing and our intellectual property policies.
 
+## Software management plans
+
+The Netherlands eScience Center and [NWO](https://www.nwo.nl/en) have authored the [practical guide to software management plans](https://doi.org/10.5281/zenodo.7248877) ([see also](https://www.esciencecenter.nl/national-guidelines-for-software-management-plans/)).
+For our projects we recommend using [our Software Sustainability Protocol](https://doi.org/10.5281/zenodo.1451750), which is based on these guidelines.
+For more information you can also [read here](https://github.com/the-turing-way/the-turing-way/issues/2419). <!-- we should point to the actual Turing Way chapter once it has been created -->
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
