@@ -43,7 +43,7 @@ Since source code is protected by copyright, to allow people to use your code it
 For more information, see [The Turing Way chapter on licensing](https://the-turing-way.netlify.app/reproducible-research/licensing) or the [RSQkit Licensing software task](http://everse.software/RSQKit/licensing_software).
 
 **@ NLeSC:** our first choice is the Apache v2 license.
-See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) for more details.
+See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) for more details on licensing and our intellectual property policies.
 
 ## Know your tools
 
