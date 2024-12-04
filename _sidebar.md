@@ -12,7 +12,6 @@
    * [UX - User Experience](/technology/user_experience.md)
    * [Datasets](/technology/datasets.md)
 * [Best practices](/best_practices/overview.md)
-   * [Code Review](/best_practices/code_review.md)
    * [Releases](/best_practices/releases.md)
    * [Documentation](/best_practices/documentation.md)
    * [Standards](/best_practices/standards.md)
