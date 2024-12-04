@@ -4,7 +4,7 @@
 
 
 Python is the "dynamic language of choice" of the Netherlands eScience Center.
-We use it for data analysis and data science projects using the SciPy stack and Jupyter notebooks, and for [many other types of projects](https://github.com/NLeSC?language=python): workflow management, visualization, NLP, web-based tools and much more.
+We use it for data analysis and data science projects, and for many other types of projects: workflow management, visualization, natural language processing, web-based tools and much more.
 It is a good default choice for many kinds of projects due to its generic nature, its large and broad ecosystem of third-party modules and its compact syntax which allows for rapid prototyping.
 It is not the language of maximum performance, although in many cases performance critical components can be easily replaced by modules written in faster, compiled languages like C(++) or Cython.
 
@@ -276,24 +276,27 @@ More realistic profiling information can usually be obtained by using statistica
 
 ## Writing Documentation
 
-Python uses **Docstrings** for function level documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/).
-The default location to put HTML documentation is [Read the Docs](https://readthedocs.org). You can connect your account at Read the Docs to your GitHub account and let the HTML be generated automatically using Sphinx.
+It is recommended that you write documentation for your projects and publish it on an interactive webpage.
+A popular and recommended solution for hosting documentation is [Read the Docs](https://readthedocs.org).
+It can automatically build documentation for projects hosted on [GitHub, GitLab, and Bitbucket](https://docs.readthedocs.io/en/stable/reference/git-integration.html).
 
-### Autogenerating the documentation
 
-There are several tools that automatically generate documentation from docstrings.
-At the eScience Center, we mostly use [Sphinx](http://sphinx-doc.org), which uses reStructuredText as its markup language, but can be extended to use Markdown as well.
+### Building documentation
 
-* [Sphinx quickstart](http://www.sphinx-doc.org/en/master/usage/quickstart.html)
-* [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
-* Instead of using reST, Sphinx can also generate documentation from the more readable [NumPy style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) or [Google style](https://google.github.io/styleguide/pyguide.html) docstrings. The [Napoleon extension](http://sphinxcontrib-napoleon.readthedocs.io/) needs to be enabled.
+There are several tools for building webpages with documentation.
+At the eScience Center, we mostly use [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html) (more established) and [MkDocs](https://www.mkdocs.org/getting-started/) (newer).
 
-We recommend using the Google documentation style.
-Use `sphinx-build` to build your documentation.
+User guides and other text documents are typically written in [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) or [Markdown](https://www.markdownguide.org/getting-started/). Spinx supports both formats, while MkDocs only supports Markdown.
 
-You can also integrate entire Jupyter notebooks into your HTML Sphinx output with [nbsphinx](https://nbsphinx.readthedocs.io).
+Python uses [Docstrings](https://pandas.pydata.org/docs/development/contributing_docstring.html#about-docstrings-and-standards) for code documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/). Both Spinx and MkDocs can generate documentation from docstrings.
+There are two popular Sphinx extensions for generating documentation: [autoapi](https://sphinx-autoapi.readthedocs.io) (newer and more lightweight) and [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) (more established).
+For MkDocs the [mkdocstrings](https://mkdocstrings.github.io/) package is available.
+We recommend using the [NumPy documentation style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard), as that is widely used in the scientific Python ecosystem.
+
+You can also integrate entire Jupyter notebooks into your documentation with [nbsphinx](https://nbsphinx.readthedocs.io) or
+[mkdocs-jupyte](https://github.com/danielfrg/mkdocs-jupyter).
 This way, your demo notebooks, for instance, can double as documentation.
-Of course, the notebooks will not be interactive in the compiled HTMl, but they will include all code and output cells.
+Of course, the notebooks will not be interactive in the compiled webpage, but they will include all code and output cells and you can easily link to an interactive version from the compiled documentation.
 
 ## Recommended additional packages and libraries
 
