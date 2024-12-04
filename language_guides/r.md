@@ -143,6 +143,8 @@ As in many computing languages loops should be avoided in R. Here is a list of t
 * [`dplyr`](http://dplyr.tidyverse.org/) package
 * [`purrr`](https://purrr.tidyverse.org/) package. It contains many functional programming tools that can help you build optimized processes
 
+If you need R code that is even more performant, consider implementing functions in C++ and calling them from R via the [`Rcpp`](https://www.rcpp.org/) package.
+
 
 # Package development
 
