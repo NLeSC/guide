@@ -65,6 +65,12 @@ For publications that refer to software, refering to a specific release enhances
 See [the RSQkit task on Creating code releases](http://everse.software/RSQKit/releasing_code) for the most essential guidelines.
 The Turing Way offers many related tips in their [chapter on Making Research Objects Citable](https://book.the-turing-way.org/communication/citable), like how to make code citable with CITATION.CFF files.
 
+## Packaging
+
+A related, but separate topic is packaging, which allows users to conveniently install your released software.
+Most [languages](language_guides/languages_overview) and OS'es have their particular ways of doing this.
+The Turing Way offers advice on [making reproducible environments](https://book.the-turing-way.org/reproducible-research/renv), in which packaging is an essential component.
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
