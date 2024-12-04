@@ -18,7 +18,7 @@ More info: [The Turing Way chapter on Version Control](https://book.the-turing-w
 
 ## Software management plans
 
-With NWO, we have authored the [practical guide to software management plans](https://doi.org/10.5281/zenodo.7248877) ([see also](https://www.esciencecenter.nl/national-guidelines-for-software-management-plans/)).
+The Netherlands eScience Center and [NWO](https://www.nwo.nl/en) have authored the [practical guide to software management plans](https://doi.org/10.5281/zenodo.7248877) ([see also](https://www.esciencecenter.nl/national-guidelines-for-software-management-plans/)).
 For our projects we recommend using [our Software Sustainability Protocol](https://doi.org/10.5281/zenodo.1451750), which is based on these guidelines.
 For more information you can also [read here](https://github.com/the-turing-way/the-turing-way/issues/2419). <!-- we should point to the actual Turing Way chapter once it has been created -->
 
