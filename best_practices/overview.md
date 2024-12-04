@@ -37,6 +37,14 @@ If your programming language supports namespaces, use your organization or proje
 
 **@ NLeSC**, the recommended namespace is **nl.esciencecenter**, or adapt it to a namespace that aligns with your project's context.
 
+## Licensing
+
+Since source code is protected by copyright, to allow people to use your code it needs a license.
+For more information, see [The Turing Way chapter on licensing](https://the-turing-way.netlify.app/reproducible-research/licensing) or the [RSQkit Licensing software task](http://everse.software/RSQKit/licensing_software).
+
+**@ NLeSC:** our first choice is the Apache v2 license.
+See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) for more details.
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
