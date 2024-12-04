@@ -1,3 +1,11 @@
 # files for JetBrains editors:
 **/*.iml
 .idea
+
+# VS Code
+.vscode
+
+# Mac OS
+.DS_Store
+
+
