@@ -80,7 +80,7 @@ From a computer science perspective it is probably best to adhere to the `<-` co
 
 ## `%>%` and `|>`
 The symbols `%>%` and `|>` represent the pipe operator.
-The first one is part of the `magrittr` package, and it gained so much popularity that it was added as part of native R since version 4.0.0. For the rest, they are entirely equivalent.
+The first one is part of the `magrittr` package, and it gained so much popularity that a similar operator, `|>`, was added as part of native R since version 4.1.0. For details on the differences between the two, see this [blog post](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/).
 They just add syntactic sugar to the way we pass a variable to a function.
 The example below shows its basic behavior:
 
