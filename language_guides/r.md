@@ -13,7 +13,8 @@ One of the strengths of R is the large number of available open source statistic
 ## Some crucial differences with Python
 Are you familiar with Python? Then you'll find these remarks useful:
 
-* R does not need a notebook to program interactively. Instead we recommend to use [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately.
+* We recommend to use [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately.
+* We recommend to use knitr as a replacement for notebooks.
 * Numbering in R starts with 1 and not with 0.
 * When `x` is a list, `x[1]` is another list containing the first element, and `x[[1]]` is its **value**.
 * `:` is a sequence operator, not a slicing one. 
