@@ -14,7 +14,7 @@ Use a version control tool like `git` to track changes in your codebase.
 This allows you to retrace your steps when debugging, keep your repository clean, easily collaborate with others asynchronously and more.
 More info: [The Turing Way chapter on Version Control](https://book.the-turing-way.org/reproducible-research/vcs), [RSQkit chapter on Version Control](http://everse.software/RSQKit/version_control).
 
-**@ NLeSC:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx)).
+**At the Netherlands eScience Center:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees)).
 
 ## Testing
 
@@ -27,6 +27,7 @@ Ways to improve code quality are described in the [Code quality](https://book.th
 
 Explore [online tools for software quality improvement](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks). Additionally, check our [language guides](/language_guides/languages_overview.md) for language-specific recommendations.
 [RSQKit: Research Software Quality Kit](https://everse.software/RSQKit/) also has many useful guides including software quality. These guides are result of an international collaboration primarily focusing on research software quality.
+
 ### EditorConfig
 
 The eScience Center provides a [shared config file](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig) for IDEs and text editors. This file helps standardize coding styles across projects.
@@ -35,15 +36,15 @@ The eScience Center provides a [shared config file](https://raw.githubuserconten
 
 If your programming language supports namespaces, use your organization or project-specific namespace.
 
-**@ NLeSC**, the recommended namespace is **nl.esciencecenter**, or adapt it to a namespace that aligns with your project's context.
+**At the Netherlands eScience Center:**, the recommended namespace is **nl.esciencecenter**, or adapt it to a namespace that aligns with your project's context.
 
 ## Licensing
 
 Since source code is protected by copyright, to allow people to use your code it needs a license.
 For more information, see [The Turing Way chapter on licensing](https://the-turing-way.netlify.app/reproducible-research/licensing) or the [RSQkit Licensing software task](http://everse.software/RSQKit/licensing_software).
 
-**@ NLeSC:** our first choice is the Apache v2 license.
-See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) for more details on licensing and our intellectual property policies.
+**At the Netherlands eScience Center:** our first choice is the Apache v2 license.
+See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees) for more details on licensing and our intellectual property policies.
 
 ## Know your tools
 
