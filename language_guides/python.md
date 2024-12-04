@@ -298,6 +298,8 @@ You can also integrate entire Jupyter notebooks into your documentation with [nb
 This way, your demo notebooks, for instance, can double as documentation.
 Of course, the notebooks will not be interactive in the compiled webpage, but they will include all code and output cells and you can easily link to an interactive version from the compiled documentation.
 
+It is recommended that you [routinely test any code examples in your documentation](https://docs.pytest.org/en/stable/how-to/doctest.html).
+
 ## Recommended additional packages and libraries
 
 ### General scientific
