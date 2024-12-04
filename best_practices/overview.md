@@ -57,6 +57,14 @@ The Netherlands eScience Center and [NWO](https://www.nwo.nl/en) have authored t
 For our projects we recommend using [our Software Sustainability Protocol](https://doi.org/10.5281/zenodo.1451750), which is based on these guidelines.
 For more information you can also [read here](https://github.com/the-turing-way/the-turing-way/issues/2419). <!-- we should point to the actual Turing Way chapter once it has been created -->
 
+## Releases
+
+Releases are a way to mark or point to a particular milestone in software development.
+This is useful for users and collaborators, e.g. I found a bug running version x.
+For publications that refer to software, refering to a specific release enhances the reproducability.
+See [the RSQkit task on Creating code releases](http://everse.software/RSQKit/releasing_code) for the most essential guidelines.
+The Turing Way offers many related tips in their [chapter on Making Research Objects Citable](https://book.the-turing-way.org/communication/citable), like how to make code citable with CITATION.CFF files.
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
