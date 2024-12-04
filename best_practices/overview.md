@@ -26,7 +26,7 @@ Tests are important for two reasons: 1. confirming the expected workings of your
 Ways to improve code quality are described in the [Code quality](https://book.the-turing-way.org/reproducible-research/code-quality.html) chapter on the Turing Way.
 
 Explore [online tools for software quality improvement](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks). Additionally, check our [language guides](/language_guides/languages_overview.md) for language-specific recommendations.
-
+[RSQKit: Research Software Quality Kit](https://everse.software/RSQKit/) also has many useful guides including software quality. These guides are result of an international collaboration primarily focusing on research software quality.
 ### EditorConfig
 
 The eScience Center provides a [shared config file](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig) for IDEs and text editors. This file helps standardize coding styles across projects.
