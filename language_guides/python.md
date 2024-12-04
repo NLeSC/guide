@@ -169,6 +169,30 @@ Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`]
 
 Ruff can do autoformatting as well and can function as a drop-in replacement of `black` and `isort`.
 
+## Type hints
+
+Since [PEP 484](https://peps.python.org/pep-0484/), which was first implemented in Python 3.5 (released in 2015), Python has gained the ability to add type information to variables.
+These are not types, as in typed languages; they are _hints_.
+Naively, one could say they are a new type of documentation.
+However, in practice they are far more than this, because they do have their own special syntax rules and are thus parsable.
+In fact, some tools have started to make use of this in runtime modules as well, making them more than hints for tools like Pydantic, FastAPI and Typer (all described below).
+See [this guide](https://realpython.com/python-type-checking/) to learn more about type hints.
+
+Some tools to know about that make use of type hints:
+- [Type checkers](https://www.infoworld.com/article/2260170/4-python-type-checkers-to-keep-your-code-clean.html) are static code
+  analysis tools that check your code based on the type hints you provide. It is highly recommended that you use a type checker.
+  Choose [mypy](https://mypy-lang.org/) if you are unsure which one to choose.
+- Tools to build documentation from source code have extensions that can show type hints in the generated documentation to make your code easier to understand. Popular examples are [sphinx autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_typehints), [sphinx autapi](https://sphinx-autoapi.readthedocs.io/en/latest/how_to.html#how-to-include-type-annotations-as-types-in-rendered-docstrings), and [mkdocstrings](https://mkdocstrings.github.io/).
+- [Pydantic](https://docs.pydantic.dev/latest/) is a widely used data validation library that allows you to automatically validate instances of dataclasses at runtime. This means that for this tool the type hints are no longer just hints or a form of documentation, but have actual effects. Essentially, a fully Pydantic-enriched application (in "strict mode") is like having Mypy at runtime (there is also a "tolerant" mode that lets some common types slip through without errors). It effectively turns Python into a statically typed language.
+- Most editors nowadays make use of type hints for autocompletion.
+  If the editor knows the type of your variable, for instance, it can autocomplete attributes or methods of that class.
+
+We recommend using type hints, where possible and _practical_.
+Type hints are still being actively developed; not everything one would like to be able to express in a compact way can yet be achieved.
+This is why, for instance, [NumPy](https://numpy.org/) arrays and machine learning library (e.g. [Pytorch](https://pytorch.org/), [Tensorflow](https://www.tensorflow.org/)) "tensor" types still (in 2024) have awkward type hinting.
+Crucial information that one would typically want to encode for array type input arguments are shapes, but this is not yet possible.
+Other important libraries, like [Matplotlib](https://matplotlib.org/), have very complex functions that take in many possible types of arguments, leading to overly complex variable types.
+Such huge types clutter your code tremendously, so they are not typically encouraged.
 
 ## Testing
 
@@ -324,8 +348,9 @@ There are convenient Python web frameworks available:
 * [CherryPy](https://cherrypy.dev/)
 * [Django](https://www.djangoproject.com/)
 * [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
+* [FastAPI](https://fastapi.tiangolo.com): again, similar to flask in functionality, but uses modern Python features like async and type hints with runtime behavioral effects.
 
-We recommend `flask`.
+We have recommended `flask` in the past, but FastAPI has become more popular recently.
 
 ### NLP/text mining
 
@@ -338,3 +363,4 @@ We recommend `flask`.
 * For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
 * A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
 * Other popular libraries are [`click`](https://click.palletsprojects.com) and [`fire`](https://google.github.io/python-fire/).
+* [Typer](https://typer.tiangolo.com): make a command-line application by using type hints with runtime effects. Very low on boilerplate for simple cases, but also allows for more complex cases. Uses `click` internally.
