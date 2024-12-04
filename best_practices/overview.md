@@ -16,6 +16,11 @@ More info: [The Turing Way chapter on Version Control](https://book.the-turing-w
 
 **@ NLeSC:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx)).
 
+## Testing
+
+Tests are important for two reasons: 1. confirming the expected workings of your code while developing for the first time and 2. making sure your features keep working when later on you or others modify the implementation.
+[The Turing Way gives an overview of the many ways to test code](https://book.the-turing-way.org/reproducible-research/testing).
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
