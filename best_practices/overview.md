@@ -21,6 +21,22 @@ More info: [The Turing Way chapter on Version Control](https://book.the-turing-w
 Tests are important for two reasons: 1. confirming the expected workings of your code while developing for the first time and 2. making sure your features keep working when later on you or others modify the implementation.
 [The Turing Way gives an overview of the many ways to test code](https://book.the-turing-way.org/reproducible-research/testing).
 
+## Code Quality
+
+Ways to improve code quality are described in the [Code quality](https://book.the-turing-way.org/reproducible-research/code-quality.html) chapter on the Turing Way.
+
+Explore [online tools for software quality improvement](https://book.the-turing-way.org/reproducible-research/code-quality/code-quality-style.html#online-services-providing-software-quality-checks). Additionally, check our [language guides](/language_guides/languages_overview.md) for language-specific recommendations.
+[RSQKit: Research Software Quality Kit](https://everse.software/RSQKit/) also has many useful guides including software quality. These guides are result of an international collaboration primarily focusing on research software quality.
+### EditorConfig
+
+The eScience Center provides a [shared config file](https://raw.githubusercontent.com/NLeSC/exemplum/master/.editorconfig) for IDEs and text editors. This file helps standardize coding styles across projects.
+
+### Namespaces
+
+If your programming language supports namespaces, use your organization or project-specific namespace.
+
+**@ NLeSC**, the recommended namespace is **nl.esciencecenter**, or adapt it to a namespace that aligns with your project's context.
+
 ## Know your tools
 
 In addition to the advice on the best practices above, knowing the
