@@ -1,6 +1,6 @@
 # What is R?
 
-*Page maintainer: Malte Lüken* [@maltelueken](https://github.com/maltelueken)
+*Page maintainers: [Malte Lüken](https://github.com/maltelueken) and [Pablo Rodríguez-Sánchez](https://github.com/PabRod)* .
 
 
 R is a functional programming language and software environment for statistical computing and graphics: https://www.r-project.org/.
@@ -43,32 +43,16 @@ Within RStudio you can work on ad-hoc code or create a project. Compared with Py
 Not needed as most functions in R are already compiled in C, nevertheless R has compiling functionality as described in the [R manual](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html). See [overview by Hadley Wickham](http://r-pkgs.had.co.nz/src.html).
 
 # Coding style conventions
-It is good to follow the R style conventions as [posted](http://adv-r.had.co.nz/Style.html) by Hadley Wickham, which is seems compatible with the R style convention as posted by [Google](https://google.github.io/styleguide/Rguide.xml).
+We recommend following the [Tidyverse style guide](https://style.tidyverse.org/).
+Its guidelines can be automatically followed using linters such as:
+
+- [styler](https://github.com/r-lib/styler)
+- [lintr](https://github.com/r-lib/lintr)
 
 ## The `<-` operator
-
-### TL;DR
 Assigning variables with `<-` instead of `=` is recommended, although **most** of the time both are equivalent.
 
-### Details
-One point in both style conventions that has resulted in some discussion is the `<-` syntax for variable assignment. In the majority of R tutorials and books you will see that authors use this syntax, e.g. `a <- 3` to assign value `3` to object `a`. Please note that R syntax `a = 3` will preform exactly the same operation in 99.9% of situations. The `=` syntax has less keystrokes and could therefore be considered more efficient and readable. Further, the `=` syntax avoids the risk for typos like `a < -1`, which will produce a boolean if `a` exists, and `a <- 1` which will produce an object `a` with a numeric value. Further, the `=` syntax may be more natural for those who already use it in other computing languages.
-
-The difference between `<-` and `=` is mainly related to scoping. See the [official R definition](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html) for more information. The example below demonstrates the difference in behaviour:
-
-Define a simple function named `addone` to add 1 to the function input:
-- `addone = function(x) return(x + 1)`
-- `addone(3)`
-  - will produce `4`
-- `addone(b=3)`
-  - will throw an error message because the function does not know argument `b`
-- `addone(b<-3)`
-  - will produce `4` as it will first assign `3` to `b` and then uses `b` as value for the first argument in `addone`, which happens to be `x`
-- `addone(x=3)`
-  - will produce `4` as it will assign `3` to known function argument `x`
-
-The `<-` supporters will argue that this example demonstrates that `=` should be avoided. However, it also demonstrates that `=` syntax can work in the context of function input if `=` is only used for assigning values to input arguments that are expected by the function (`x` in the example above) and to never introduce new R objects as part of a function call (`b` in the example above).
-
-From a computer science perspective it is probably best to adhere to the `<-` convention. From a domain science perspective it is understandable to use `=`. The code performs exactly the same and guarantees that new objects created as part of a function call result in an error. Please note that it is also possible to develop code with `=` syntax and to transfer it to `<-` syntax once the code is finished: the `formatR` package offers tools for doing this. The CRAN repository for R packages accepts both forms of syntax.
+If you are interested in the controversy around assignment operators, check out this [blog post](https://csgillespie.wordpress.com/2010/11/16/assignment-operators-in-r-vs/).
 
 ## `%>%` and `|>`
 The symbols `%>%` and `|>` represent the pipe operator.
