@@ -165,7 +165,20 @@ Read more about vignettes in [Package documentation](http://r-pkgs.had.co.nz/vig
 Read more about `roxygen` syntax on it's [github page](https://github.com/yihui/roxygen2). `roxygen` will also populate `NAMESPACE` file which is necessary to manage package level imports.
 
 # Available templates
-Most of the templating is nativelly managed by the [`usethis`](https://usethis.r-lib.org/) package. Having said this, these others can serve as inspiration:
+Most of the templating is nativelly managed by the [`usethis`](https://usethis.r-lib.org/) package.
+It contains functions that create the boilerplate for you, reducing the burden on your memory and reducing chances for errors.
+In the snippet below you can see how it feels to use it.
+
+```r
+usethis::create_package()     # Creates a package structure
+usethis::use_readme_md()      # Adds a readme
+usethis::use_apache_license() # Adds an Apache License
+usethis::use_testthat()       # Adds the testing infrastructure
+usethis::use_citation()       # Adds a citation file
+# etc...
+
+```
+Having said this, these others can serve as inspiration:
 
 * https://rapporter.github.io/rapport/
 * https://shiny.posit.co/r/articles/build/templates/
