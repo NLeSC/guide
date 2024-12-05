@@ -121,7 +121,6 @@ Speeding up code always start with knowing where your bottlenecks are.
 The following profiling tools will help you doing so:
 
 * Introduction to [profiling in R](https://bookdown.org/rdpeng/rprogdatascience/profiling-r-code.html)
-* [Profiling in RStudio](https://support.posit.co/hc/en-us/articles/218221837-Profiling-R-code-with-the-RStudio-IDE)
 
 Some rules of thumb that can quickly improve your code are the follwing:
 
