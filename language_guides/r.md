@@ -117,25 +117,22 @@ Thanks to [shiny.app](https://shiny.posit.co/) it is possible to make interactiv
 There are packages that ease tidying up messy data, e.g. [tidyr](https://github.com/hadley/tidyr) and [reshape2](https://github.com/hadley/reshape). The idea of tidy and messy data is explained in a [tidy data](http://vita.had.co.nz/papers/tidy-data.html) paper by Hadley Wickham. There is also the google group [manipulatr](https://groups.google.com/forum/#!forum/manipulatr) to discuss topics related to data manipulation in R.
 
 ## Speeding up code
-As in many computing languages loops should be avoided in R. Here is a list of tricks to speed up your code:
+Speeding up code always start with knowing where your bottlenecks are.
+The following profiling tools will help you doing so:
 
-* `read.table()` is sometimes faster than `read.csv()`
-* `ifelse()`
-* `lapply()`
-* `sapply()`
-* `mapply()`
-* `grep()`
-* `%in%` for testing whether and where values in one object occur in another object
-* `aggregate()`
-* `which()` for identifying which object indices match a certain condition
-* `table()` for getting a frequency table of categorical data
-* `grep()`
-* `gsub()`
-* [`dplyr`](http://dplyr.tidyverse.org/) package
-* [`purrr`](https://purrr.tidyverse.org/) package. It contains many functional programming tools that can help you build optimized processes
+* Introduction to [profiling in R](https://bookdown.org/rdpeng/rprogdatascience/profiling-r-code.html)
+* [Profiling in RStudio](https://support.posit.co/hc/en-us/articles/218221837-Profiling-R-code-with-the-RStudio-IDE)
 
-If you need R code that is even more performant, consider implementing functions in C++ and calling them from R via the [`Rcpp`](https://www.rcpp.org/) package.
+Some rules of thumb that can quickly improve your code are the follwing:
 
+* Avoid loops, use `apply` functionals instead
+* Try to use vectorized functions
+* Checkout the [`purrr`](https://purrr.tidyverse.org/) package
+* If you are really in a hurry, consider communicating with `C++` code using [`Rcpp`](https://www.rcpp.org/).
+
+For a deeper introduction to the many optimization methods, check the free ebook:
+
+* [Efficient R programming](https://csgillespie.github.io/efficientR/), by Colin Gillespie and Robin Lovelace.
 
 # Package development
 
