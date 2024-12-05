@@ -94,8 +94,10 @@ authors:
     family-names: Maassen
     given-names: Jason
     orcid: "https://orcid.org/0000-0002-8172-4865"
-  - family-names: Rodríguez-Sánchez
+  - affiliation: "Netherlands eScience Center"
+    family-names: Rodríguez-Sánchez
     given-names: Pablo
+    orcid: "https://orcid.org/0000-0002-2855-940X"
   - affiliation: "Netherlands eScience Center"
     family-names: Klaver
     given-names: Tom
