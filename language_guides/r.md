@@ -13,15 +13,6 @@ One of the strengths of R is the large number of available open source statistic
 ## Some crucial differences with Python
 Are you familiar with Python? Then kickstart your R journey by reading this [blog post](https://towardsdatascience.com/the-starter-guide-for-transitioning-your-python-projects-to-r-8de4122b04ad).
 
-* We recommend to use [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately.
-* We recommend to use knitr as a replacement for notebooks.
-* Numbering in R starts with 1 and not with 0.
-* When `x` is a list, `x[1]` is another list containing the first element, and `x[[1]]` is its **value**.
-* `:` is a sequence operator, not a slicing one. 
-   * `3:5` will generate the vector `c(3, 4, 5)`. 
-   * `3:` will throw an error.
-* Functions don't require explicit return statement, although it is recommended to use one for clarity.
-
 ## Recommended sources of information
 All R functions come with documentation in a standardized format. Some R packages have their own google group. Further, stackoverflow and standard search engines can lead you to answers to issues.
 
