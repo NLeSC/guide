@@ -11,7 +11,7 @@ R is particularly popular in the social, health, and biological sciences where i
 One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
 
 ## Some crucial differences with Python
-Are you familiar with Python? Then you'll find these remarks useful:
+Are you familiar with Python? Then kickstart your R journey by reading this [blog post](https://towardsdatascience.com/the-starter-guide-for-transitioning-your-python-projects-to-r-8de4122b04ad).
 
 * We recommend to use [RStudio](https://posit.co/products/open-source/rstudio/), an IDE that is installed separately.
 * We recommend to use knitr as a replacement for notebooks.
