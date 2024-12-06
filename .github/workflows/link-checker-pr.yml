@@ -19,7 +19,7 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     needs: changedFiles
-    if:
+    if: >-
       ${{ needs.changedFiles.outputs.files != '' &&
       toJSON(fromJSON(needs.changedFiles.outputs.files)) != '[]' }}
     strategy:
