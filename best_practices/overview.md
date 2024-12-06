@@ -26,6 +26,12 @@ Tests are important for two reasons: 1. confirming the expected workings of your
 The most effective tool for improving software quality (and sharing knowledge at the same time) is doing code reviews.
 Have a look at the [The Turing Way chapter on Code Reviewing](https://book.the-turing-way.org/reproducible-research/reviewing) to learn more about ways to do this.
 
+## Documentation
+
+Developed programs should be documented at multiple levels, from code comments, through API documentation, to installation and usage documentation.
+Comments at each level should take into account different target audiences, from experienced developers, to end users with no programming skills.
+In the [Turing Way chapter on Code Documentation](https://book.the-turing-way.org/reproducible-research/code-documentation) you will find a great overview of the how and why of documentation.
+
 ## Code Quality
 
 Ways to improve code quality are described in the [Code quality](https://book.the-turing-way.org/reproducible-research/code-quality.html) chapter on the Turing Way.
