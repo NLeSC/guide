@@ -1,6 +1,10 @@
 cff-version: 1.0.3
 title: Software Development Guide
-abstract: This is a guide to software development and projects at the Netherlands eScience Center. It both serves as a source of information for exactly how we work at the eScience Center, and as a basis for discussions and reaching consensus on this topic.
+abstract:
+  This is a guide to software development and projects at the Netherlands
+  eScience Center. It both serves as a source of information for exactly how we
+  work at the eScience Center, and as a basis for discussions and reaching
+  consensus on this topic.
 message: If you use this guide, please cite it.
 repository-code: https://github.com/NLeSC/guide
 license: CC-BY-4.0
@@ -109,7 +113,7 @@ authors:
   - affiliation: "Netherlands eScience Center"
     family-names: Zapata
     given-names: Felipe
-    orcid:  "https://orcid.org/0000-0001-8286-677X"
+    orcid: "https://orcid.org/0000-0001-8286-677X"
   - affiliation: "Netherlands eScience Center"
     family-names: Bakker
     given-names: Tom
