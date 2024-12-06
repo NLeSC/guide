@@ -274,9 +274,9 @@ More realistic profiling information can usually be obtained by using statistica
     - http://docs.python-guide.org/en/latest/writing/logging
     - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
 
-## Writing Documentation
+## Documentation
 
-It is recommended that you write documentation for your projects and publish it on an interactive webpage.
+It is recommended that you [write documentation](https://book.the-turing-way.org/reproducible-research/code-documentation) for your projects and publish it on an interactive webpage.
 A popular and recommended solution for hosting documentation is [Read the Docs](https://readthedocs.org).
 It can automatically build documentation for projects hosted on [GitHub, GitLab, and Bitbucket](https://docs.readthedocs.io/en/stable/reference/git-integration.html).
 
@@ -286,7 +286,8 @@ It can automatically build documentation for projects hosted on [GitHub, GitLab,
 There are several tools for building webpages with documentation.
 At the eScience Center, we mostly use [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html) (more established) and [MkDocs](https://www.mkdocs.org/getting-started/) (newer).
 
-User guides and other text documents are typically written in [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) or [Markdown](https://www.markdownguide.org/getting-started/). Spinx supports both formats, while MkDocs only supports Markdown.
+User guides and other text documents are typically written in [Markdown](https://www.markdownguide.org/getting-started/) or [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). Spinx supports both formats, while MkDocs only supports Markdown. Markdown has the advantage that it easier to read
+for humans so it may be easier to work with and contribute to. reStructuredText is easier to read for computers so may be more suitable for complex projects.
 
 Python uses [Docstrings](https://pandas.pydata.org/docs/development/contributing_docstring.html#about-docstrings-and-standards) for code documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/). Both Spinx and MkDocs can generate documentation from docstrings.
 There are two popular Sphinx extensions for generating documentation: [autoapi](https://sphinx-autoapi.readthedocs.io) (newer and more lightweight) and [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) (more established).
