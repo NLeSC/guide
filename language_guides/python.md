@@ -286,16 +286,16 @@ It can automatically build documentation for projects hosted on [GitHub, GitLab,
 There are several tools for building webpages with documentation.
 At the eScience Center, we mostly use [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html) (more established) and [MkDocs](https://www.mkdocs.org/getting-started/) (newer).
 
-User guides and other text documents are typically written in [Markdown](https://www.markdownguide.org/getting-started/) or [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). Spinx supports both formats, while MkDocs only supports Markdown. Markdown has the advantage that it easier to read
+User guides and other text documents are typically written in [Markdown](https://www.markdownguide.org/getting-started/) or [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). Sphinx supports both formats, while MkDocs only supports Markdown. Markdown has the advantage that it's easier to read
 for humans so it may be easier to work with and contribute to. reStructuredText is easier to read for computers so may be more suitable for complex projects.
 
-Python uses [Docstrings](https://pandas.pydata.org/docs/development/contributing_docstring.html#about-docstrings-and-standards) for code documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/). Both Spinx and MkDocs can generate documentation from docstrings.
+Python uses [Docstrings](https://pandas.pydata.org/docs/development/contributing_docstring.html#about-docstrings-and-standards) for code documentation. You can read a detailed description of docstring usage in [PEP 257](https://www.python.org/dev/peps/pep-0257/). Both Sphinx and MkDocs can generate documentation webpages from docstrings.
 There are two popular Sphinx extensions for generating documentation: [autoapi](https://sphinx-autoapi.readthedocs.io) (newer and more lightweight) and [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) (more established).
 For MkDocs the [mkdocstrings](https://mkdocstrings.github.io/) package is available.
 We recommend using the [NumPy documentation style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard), as that is widely used in the scientific Python ecosystem.
 
 You can also integrate entire Jupyter notebooks into your documentation with [nbsphinx](https://nbsphinx.readthedocs.io) or
-[mkdocs-jupyte](https://github.com/danielfrg/mkdocs-jupyter).
+[mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter).
 This way, your demo notebooks, for instance, can double as documentation.
 Of course, the notebooks will not be interactive in the compiled webpage, but they will include all code and output cells and you can easily link to an interactive version from the compiled documentation.
 
