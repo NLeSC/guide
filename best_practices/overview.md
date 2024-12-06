@@ -49,6 +49,12 @@ If your programming language supports namespaces, use your organization or proje
 
 **At the Netherlands eScience Center:**, the recommended namespace is **nl.esciencecenter**, or adapt it to a namespace that aligns with your project's context.
 
+## Use standards
+
+Standard files and protocols should always be a primary choice.
+Using standards improves the interoperability of your software, thereby improving its usefulness.
+Examples include exchange formats like Unicode, NetCDF, and W3C web standards, and protocols like HTTP, TCP, TLS.
+
 ## Licensing
 
 Since source code is protected by copyright, to allow people to use your code it needs a license.
