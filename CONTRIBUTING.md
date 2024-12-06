@@ -96,9 +96,18 @@ Please use branches and pull requests to contribute content. If you are not part
 
 ```shell
 git clone https://github.com/NLeSC/guide.git
+cd guide
 git branch newbranch
 git checkout newbranch
 ```
+
+Please install [pre-commit](https://pre-commit.com/) and enable the pre-commit
+hooks by running
+
+```shell
+pre-commit install
+```
+to automatically format your changes when committing.
 
 Add your new awesome feature, fix bugs, make other changes.
 
