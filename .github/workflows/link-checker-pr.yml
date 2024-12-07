@@ -35,4 +35,4 @@ jobs:
       - name: Check all this file's additions for broken links
         run: |
           export base_sha=$(git rev-parse ${{ github.sha }}^)
-          git diff -U0 ${base_sha} ${{ github.event.pull_request.head.sha }} -- ${{ matrix.file }} | grep -v "+++" | grep "^+" | cut -c 2- | ./lychee --exclude nlesc.sharepoint.com --exclude support.posit.co -
+          git diff -U0 ${base_sha} ${{ github.event.pull_request.head.sha }} -- ${{ matrix.file }} | grep -v "+++" | grep "^+" | cut -c 2- | ./lychee --exclude nlesc.sharepoint.com --exclude support.posit.co --exclude www.intel.com -
