@@ -28,7 +28,7 @@
   * [Fortran programming guide](https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html)
 * HIP
   * [Kernel language syntax](https://rocm.docs.amd.com/projects/HIP/en/latest/reference/kernel_language.html)
-  * [Runtime API](https://rocm.docs.amd.com/projects/HIP/en/latest/.doxygen/docBin/html/modules.html)
+  * [Runtime API](https://rocm.docs.amd.com/projects/HIP/en/latest/reference/hip_runtime_api_reference.html)
 * SYCL
   * [Specification](https://registry.khronos.org/SYCL/specs/sycl-2020/html/sycl-2020.html)
   * [Reference guide](https://www.khronos.org/files/sycl/sycl-2020-reference-guide.pdf)
@@ -58,10 +58,10 @@
   * [hipRAND](https://rocm.docs.amd.com/projects/hipRAND/en/latest/index.html)
   * [hipSPARSE](https://rocm.docs.amd.com/projects/hipSPARSE/en/latest/index.html)
 * SYCL
-  * [OneAPI BLAS](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/blas-routines.html#GUID-F277361F-49BA-437B-8100-3D2B6BBC3CC1)
-  * [OneAPI FFT](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/fourier-transform-functions.html#GUID-BB8891E9-D3D3-40B9-BBB1-2390C4340CDA)
-  * [OneAPI sparse](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/sparse-blas-routines.html#GUID-7123D31B-9C7F-4BA7-9792-02A417293E60)
-  * [OneAPI random number generators](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2024-0/random-number-generators.html#GUID-FFC80D12-C323-4A9F-83E3-D0ACDB686876)
+  * [OneAPI BLAS](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2025-0/blas-routines.html)
+  * [OneAPI FFT](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2025-0/fourier-transform-functions.html)
+  * [OneAPI sparse](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2025-0/sparse-blas-routines.html)
+  * [OneAPI random number generators](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-dpcpp/2025-0/random-number-generators.html)
 * OpenCL
   * [CLBlast](https://github.com/CNugteren/CLBlast)
   * [clFFT](https://github.com/clMathLibraries/clFFT)
@@ -133,7 +133,7 @@
 
 * [PRACE best practice guide on modern accelerators](https://zenodo.org/records/5839488)
 * [CUDA best practices](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
-* [OneAPI SYCL best practices](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-2/optimize-your-sycl-applications.html)
+* [OneAPI SYCL best practices](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2025-0/optimize-your-sycl-applications.html)
 
 ## Auto-tuning
 
