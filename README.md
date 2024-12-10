@@ -18,13 +18,13 @@ Openness and collaboration are at the heart of the eScience Center, which is why
 ## Contents
 
 To get started, check out the checklist of generic research software engineering advice
-in the [Best Practices](best_practices/overview.md) chapter.
+in the [Best Practices](/best_practices.md) chapter.
 This chapter lists the most important overall attention points while developing research software.
 For more details, the sections refer to selected resources in community guides that we collaborate with.
 
-If you are looking for more in-depth advise on using a specific programming language, have a look at the [language guides](language_guides/languages_overview.md).
+If you are looking for more in-depth advise on using a specific programming language, have a look at the [language guides](/language_guides/languages_overview.md).
 Here we catalogue our experiences with the languages we use the most in our research software development projects.
-We also provide [technology guides](technology/technology_overview.md) on digital technologies we use often in our projects with research partners.
+We also provide [technology guides](/technology/technology_overview.md) on digital technologies we use often in our projects with research partners.
 
 ## Resources
 
@@ -40,7 +40,7 @@ Please consider contributing to this book!
 It is a great way to make long-lasting impact by sharing your time-tested knowledge and expertise.
 You'll hone your writing skills while you're at it.
 
-See the [Contributing to this Guide](CONTRIBUTING.md) chapter if you want to know more about how you can help, or ask one of the editors.
+See the [Contributing to this Guide](/CONTRIBUTING.md) chapter if you want to know more about how you can help, or ask one of the editors.
 Currently the editorial team consists of:
 - Bouwe Andela [@bouweandela](https://github.com/bouweandela) (research software engineer)
 - Carlos Martínez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)

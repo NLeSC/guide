@@ -1,5 +1,6 @@
 
 * [Introduction](/README.md)
+* [Best practices](/best_practices.md)
 * [Language Guides](/language_guides/languages_overview.md)
    * [Bash](/language_guides/bash.md)
    * [JavaScript and TypeScript](/language_guides/javascript.md)
@@ -11,5 +12,4 @@
    * [GPU programming](/technology/gpu.md)
    * [UX - User Experience](/technology/user_experience.md)
    * [Datasets](/technology/datasets.md)
-* [Best practices](/best_practices/overview.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
