@@ -80,7 +80,7 @@ The Turing Way offers many related tips in their [chapter on Making Research Obj
 ## Packaging
 
 A related, but separate topic is packaging, which allows users to conveniently install your released software.
-Most [languages](language_guides/languages_overview) and OS'es have their particular ways of doing this.
+Most [languages](/language_guides/languages_overview) and OS'es have their particular ways of doing this.
 The Turing Way offers advice on [making reproducible environments](https://book.the-turing-way.org/reproducible-research/renv), in which packaging is an essential component.
 
 ## Know your tools
