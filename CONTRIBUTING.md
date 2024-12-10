@@ -1,4 +1,4 @@
-# Contributing to the Guide
+# Contributing to this Guide
 - [Who? You!](#who_you)
 - [Audience](#audience)
 - [Scope](#scope)
