@@ -12,5 +12,4 @@
    * [UX - User Experience](/technology/user_experience.md)
    * [Datasets](/technology/datasets.md)
 * [Best practices](/best_practices/overview.md)
-   * [Standards](/best_practices/standards.md)
 * [Contributing to this Guide](/CONTRIBUTING.md)
