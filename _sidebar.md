@@ -12,3 +12,4 @@
   - [UX - User Experience](/technology/user_experience.md)
   - [Datasets](/technology/datasets.md)
 - [Contributing to this Guide](/CONTRIBUTING.md)
+- [Privacy](/privacy.md)
