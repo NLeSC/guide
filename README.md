@@ -6,6 +6,7 @@ This is a guide to research software development at the Netherlands eScience Cen
 It is a living document, written by and for our research software engineers (RSEs) and our collaborators.
 
 We write it for two reasons:
+
 1. To have a trusted source for quickly getting started on selected software development topics.
    We hope this will help RSEs (including our future selves!) to get off to a flying start on new projects in software/technological areas they are not yet familiar with.
 2. To discuss and reach consensus on such topics/areas.
@@ -42,6 +43,7 @@ You'll hone your writing skills while you're at it.
 
 See the [Contributing to this Guide](/CONTRIBUTING.md) chapter if you want to know more about how you can help, or ask one of the editors.
 Currently the editorial team consists of:
+
 - Bouwe Andela [@bouweandela](https://github.com/bouweandela) (research software engineer)
 - Carlos Martínez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)
 - Patrick Bos [@egpbos](https://github.com/egpbos) (technology lead)

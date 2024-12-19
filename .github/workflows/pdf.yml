@@ -16,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install uploader
         run: npm install @iomeg/zenodo-upload
@@ -33,7 +33,7 @@ jobs:
             --user $(id -u):$(id -g) \
             -e "PDF_OUTPUT_NAME=guide-nlesc.pdf" \
             ghcr.io/kernoeb/docker-docsify-pdf:latest
-        
+
       - name: Upload PDF as an artifact
         if: always()
         uses: actions/upload-artifact@v4

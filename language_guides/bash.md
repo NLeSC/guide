@@ -1,7 +1,6 @@
 # Bash
 
-*Page maintainer: Bouwe Andela* [@bouweandela](https://github.com/bouweandela)
-
+_Page maintainer: Bouwe Andela_ [@bouweandela](https://github.com/bouweandela)
 
 Bash is both a command line interface,
 also known as a **shell**, and a scripting language.
@@ -41,19 +40,22 @@ learn
 - the name and function of [commonly used command line tools](#Commonly-used-command-line-tools)
 
 ### Bash keyboard shortcuts
+
 An introduction to
 [bash keyboard shortcuts](https://www.tecmint.com/linux-command-line-bash-shortcut-keys/)
 can be found here.
-Note that Bash can also be configured such that it uses the *vi* keyboard
-shortcuts instead of the default *emacs* ones, which can be useful if you
+Note that Bash can also be configured such that it uses the _vi_ keyboard
+shortcuts instead of the default _emacs_ ones, which can be useful if you
 [prefer vi](https://skeptics.stackexchange.com/questions/17492/does-emacs-cause-emacs-pinky).
 
 ### Bash aliases
+
 [Bash aliases](https://linuxize.com/post/how-to-create-bash-aliases/)
 allow you to define shorthands for commands you use often.
 Typically these are defined in the `~/.bashrc` or `~/.bash_aliases` file.
 
 ### Commonly used command line tools
+
 It is recommended that you know at least the names and use of the following
 command line tools.
 The details of how to use a tool exactly can easily be found by searching the
@@ -82,7 +84,7 @@ efficient if you already know the name of the command you are looking for.
 **Working with text**
 
 Here we list the most commonly used Bash tools that are built to manipulate
-*lines of text*.
+_lines of text_.
 The nice thing about these tools is that you can combine them by streaming the
 output of one tool to become the input of the next tool.
 Have a look at the
@@ -103,7 +105,7 @@ like `>` for output and `<` for input to a command from a text file.
 - `cat` - Print the content of a file
 - `head` - Print the first n lines
 - `tail` - Print the last n lines
-- `tee`	- Read from standard input and write to standard output and file
+- `tee` - Read from standard input and write to standard output and file
 - `less` - Read text
 - `sort` - Sort lines of text
 - `uniq` - Keep unique lines
@@ -179,9 +181,11 @@ to make sure that your bash script is as likely to do what you think it should
 do as possible.
 
 In addition to that, always start the script with
+
 ```bash
 set -euo pipefail
 ```
+
 this will stop the script if there is
 
 - `-e` a command that exits with a non-zero exit code
@@ -191,6 +195,7 @@ this will stop the script if there is
 an exit code other than zero usually indicates that an error occurred.
 If needed, you can temporarily allow this kind of error for a single line by
 wrapping it like this
+
 ```bash
 set +e
 false  # A command that returns a non-zero exit code

@@ -1,11 +1,11 @@
 # Contributing to this Guide
+
 - [Who? You!](#who_you)
 - [Audience](#audience)
 - [Scope](#scope)
 - [How?](#how)
 - [Technical details (docsify)](#technical-details)
 - [Zen of the Guide](#zen-of-the-guide)
-
 
 # Who? You!
 
@@ -16,12 +16,13 @@ Contributions by anyone (also outside the Center) are most welcome!
 
 While everybody is encouraged to contribute where they can, we appoint maintainers for specific pages to regularly keep things up to date and think along with contributors.
 To see who is responsible for which part of the guide see the maintainer listed at the top of a page.
-If you are interested in becoming a chapter owner for a page that is listed as *unmaintained*, please open a pull request to add your name instead of *unmaintained*.
+If you are interested in becoming a chapter owner for a page that is listed as _unmaintained_, please open a pull request to add your name instead of _unmaintained_.
 
 ## Editorial board
 
 The editors make sure content is in line with [the scope](#scope), that it is maintainable and that it is maintained.
 In practice they will:
+
 - track, lead towards satisfactory conclusion of and when necessary (in case of disagreement) decide on issues, discussions and pull requests,
 - flag content that needs to be updated or removed,
 - ask for input from page maintainers or other contributors,
@@ -30,20 +31,19 @@ In practice they will:
 and do any other regular editing tasks.
 
 Currently the team consists of:
+
 - Bouwe Andela [@bouweandela](https://github.com/bouweandela) (research software engineer)
 - Carlos Martínez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)
 - Patrick Bos [@egpbos](https://github.com/egpbos) (technology lead)
-
-
 
 # Audience
 
 Our eScience Center _RSEs_ are the prototypical audience members, in particular those starting out in some unfamiliar area of technology.
 Some characteristics include:
+
 - They are interested in _intermediate to advanced level_ best practices. If there are already ten easily found blog posts about it, it doesn't have to be in the Guide.
 - They are a _programmer or researcher_ that is already familiar with some other programming language or software-related technology.
 - They may be generally interested (in particular topics of eScience practice and research software development in general or how this is done at the eScience Center specifically), but their main aim is towards _practical_ application, not to create a literature study of the current landscape of (research) software.
-
 
 # Scope
 
@@ -73,12 +73,11 @@ In practice, this means the Guide (for now) will mostly consist of language guid
 It can also sometimes function as a staging/draft area for eventually moving content to the Turing Way.
 However, we will urge you to contribute to the Turing Way directly.
 
-
 ## For significant changes / additions, especially new chapters
+
 Please check if your contribution fits in [The Turing Way](https://github.com/the-turing-way/the-turing-way) before considering contributing to this guide.
 Feel free to ask the [editors](#editorial-board) if you are unsure or open an [issue](https://github.com/NLeSC/guide/issues) to discuss it.
 If it does not fit, please open an [issue](https://github.com/NLeSC/guide/issues) to discuss your planned contribution before starting to work on it, to avoid disappointment later.
-
 
 # How?
 
@@ -92,13 +91,24 @@ A well written piece of advice should contain the following information:
 4. Long how: also explain other options for implementing advice, e.g. _here's a list of some more version control programs and/or services which we can recommend_.
 
 ## Technical
+
 Please use branches and pull requests to contribute content. If you are not part of the Netherlands eScience Center organization but would still like to contribute please do by submitting a pull request from a fork.
 
 ```shell
 git clone https://github.com/NLeSC/guide.git
+cd guide
 git branch newbranch
 git checkout newbranch
 ```
+
+Please install [pre-commit](https://pre-commit.com/) and enable the pre-commit
+hooks by running
+
+```shell
+pre-commit install
+```
+
+to automatically format your changes when committing.
 
 Add your new awesome feature, fix bugs, make other changes.
 
@@ -116,7 +126,7 @@ To check if there are any broken links use [lychee](https://github.com/lycheever
 docker run --init -it -v `pwd`:/docs lycheeverse/lychee /docs --config=docs/lychee.toml
 ```
 
-If everything works as it should, ``git add``, ``commit`` and ``push`` like normal.
+If everything works as it should, `git add`, `commit` and `push` like normal.
 
 If you have made a significant contribution to the guide, please make sure to add yourself to the `CITATION.cff` file so your name can be included in the list of authors of the guide.
 
@@ -125,7 +135,6 @@ If you have made a significant contribution to the guide, please make sure to ad
 We host a PDF version of the guide on [Zenodo](https://doi.org/10.5281/zenodo.4020564).
 To update it a [new release](https://github.com/NLeSC/guide/releases) needs to be made of the guide. This will trigger a GitHub action to create a new Zenodo version with the PDF file.
 
-
 # Technical details
 
 The basics of how the Guide is implemented.
@@ -133,18 +142,19 @@ The basics of how the Guide is implemented.
 The Guide is rendered by [docsify](https://docsify.js.org) and hosted on GitHub Pages.
 Deployment is "automatic" from the main branch, because docsify requires no build step into static HTML pages, but rather generates HTML dynamically from the MarkDown files in the Guide repository.
 The only configuration that was necessary for this automatic deployment is:
+
 1. The [index.html](https://github.com/NLeSC/guide/blob/main/index.html) file in the root directory that loads docsify.
 2. The empty [.nojekyll](https://github.com/NLeSC/guide/blob/main/.nojekyll) file, which tells GitHub that we're not dealing with Jekyll here (the GitHub Pages default).
 3. Telling GitHub in the Settings -> Pages menu to load the Pages content from the root directory.
-4. The [_sidebar.md](https://github.com/NLeSC/guide/blob/main/_sidebar.md) file for the table of contents.
+4. The [\_sidebar.md](https://github.com/NLeSC/guide/blob/main/_sidebar.md) file for the table of contents.
 
 Plugins that we use:
+
 - The [docsify full text search plugin](https://docsify.js.org/#/plugins?id=full-text-search)
 - The [docsify Google Analytics plugin](https://docsify.js.org/#/plugins?id=google-analytics)
 - [Prism](https://docsify.js.org/#/language-highlight) is used for language highlighting.
 
 If you want to change anything in this part, please discuss in an issue.
-
 
 # Zen of the Guide
 

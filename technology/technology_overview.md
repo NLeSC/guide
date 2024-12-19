@@ -1,6 +1,6 @@
 # Technology Guides
 
-*Page maintainer: Patrick Bos* [@egpbos](https://github.com/egpbos)
+_Page maintainer: Patrick Bos_ [@egpbos](https://github.com/egpbos)
 
 These chapters are based on our experiences with using specific software technologies.
 
