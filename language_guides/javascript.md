@@ -201,7 +201,7 @@ Also have a look at the [Airbnb JavaScript Style Guide](https://github.com/airbn
 
 For more in-depth analyses, you can use a code quality and analysis tool.
 
-- [SonarCloud](https://sonarcloud.io) is an open platform to manage code quality which can also show code coverage and count test results over time. It easily [integrates with GitHub](https://github.com/apps/sonarcloud).
+- [SonarCloud](https://sonarcloud.io) is an open platform to manage code quality which can also show code coverage and count test results over time. It easily [integrates with GitHub](https://github.com/marketplace/sonarcloud).
 - [Codacy](https://www.codacy.com) can analyze [many different languages](https://docs.codacy.com/getting-started/supported-languages-and-tools/) using open source tools. It also offers [GitHub integration](https://docs.codacy.com/repositories-configure/integrations/github-integration/).
 - [Code climate](https://codeclimate.com/quality) can analyze JavaScript (and Ruby, PHP). Can analyze Java (best supported), C, C++, Python, JavaScript and TypeScript.
 
