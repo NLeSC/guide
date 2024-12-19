@@ -1,7 +1,6 @@
 # Language Guides
 
-*Page maintainer: Patrick Bos* [@egpbos](https://github.com/egpbos)
-
+_Page maintainer: Patrick Bos_ [@egpbos](https://github.com/egpbos)
 
 This chapter provides practical info on each of the main programming languages of the Netherlands eScience Center.
 
@@ -22,7 +21,6 @@ Each chapter should contain:
 - Writing documentation
 - Recommended additional packages and libraries
 - Available templates
-
 
 ## Preferred Languages
 

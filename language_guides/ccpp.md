@@ -1,19 +1,21 @@
 # C and C++
 
-*Page maintainer: Johan Hidding* [@jhidding](https://github.com/jhidding)
-
+_Page maintainer: Johan Hidding_ [@jhidding](https://github.com/jhidding)
 
 C++ is one of the hardest languages to learn. Entering a project where C++ coding is needed should not be taken lightly. This guide focusses on tools and documentation for use of C++ in an open-source environment.
 
 ### Standards
+
 The latest ratified standard of C++ is C++17. The first standardised version of C++ is from 1998. The next version of C++ is scheduled for 2020. With these updates (especially the 2011 one) the preferred style of C++ changed drastically. As a result, a program written in 1998 looks very different from one from 2018, but it still compiles. There are many videos on Youtube describing some of these changes and how they can be used to make your code look better (i.e. more maintainable). This goes with a warning: Don't try to be too smart; other people still have to understand your code.
 
 ## Practical use
+
 ### Compilers
+
 There are two main-stream open-source C++ compilers.
 
-* [GCC](https://gcc.gnu.org/)
-* [LLVM - CLANG](http://llvm.org/)
+- [GCC](https://gcc.gnu.org/)
+- [LLVM - CLANG](http://llvm.org/)
 
 Overall, these compilers are more or less similar in terms of features, language support, compile times and (perhaps most importantly) performance of the generated binaries.
 The generated binary performance does differ for specific algorithms.
@@ -26,25 +28,27 @@ If you need every last erg of performance, some cluster environments have the In
 
 These compilers come with a lot of options. Some basic literacy in GCC and CLANG:
 
-* `-O` changes optimisation levels
-* `-std=c++xx` sets the C++ standard used
-* `-I*path*` add path to search for include files
-* `-o*file*` output file
-* `-c` only compile, do not link
-* `-Wall` be more verbose with warnings
+- `-O` changes optimisation levels
+- `-std=c++xx` sets the C++ standard used
+- `-I*path*` add path to search for include files
+- `-o*file*` output file
+- `-c` only compile, do not link
+- `-Wall` be more verbose with warnings
 
 And linker flags:
 
-* `-l*library*` links to a library
-* `-L*path*` add path to search for libraries
-* `-shared` make a shared library
-* `-Wl,-z,defs` ensures all symbols are accounted for when linking to a shared object
+- `-l*library*` links to a library
+- `-L*path*` add path to search for libraries
+- `-shared` make a shared library
+- `-Wl,-z,defs` ensures all symbols are accounted for when linking to a shared object
 
 ### Interpreter
+
 There **is** a C++ interpreter called [Cling](https://rawgit.com/vgvassilev/cling/master/www/index.html).
 This also comes with a [Jupyter notebook kernel](http://jupyter.org/try).
 
 ### Build systems
+
 There are several build systems that handle C/C++.
 Currently, [the CMake system is most popular](https://www.jetbrains.com/research/devecosystem-2018/cpp/).
 It is not actually a build system itself; it generates build files based on (in theory) platform-independent and compiler-independent configuration files.
@@ -53,7 +57,7 @@ Some popular IDEs keep automatic count for CMake, or are even completely built a
 The major drawback of CMake is the confusing documentation, but this is generally made up for in terms of community support.
 When Googling for ways to write your CMake files, make sure you look for "modern CMake", which is a style that has been gaining traction in the last few years and makes everything better (e.g. dependency management, but also just the CMake files themselves).
 
-Traditionally, the auto-tools suite (AutoConf and AutoMake) was *the* way to build things on Unix; you'll probably know the three command salute:
+Traditionally, the auto-tools suite (AutoConf and AutoMake) was _the_ way to build things on Unix; you'll probably know the three command salute:
 
     > ./configure --prefix=~/.local
         ...
@@ -68,37 +72,38 @@ Microsoft Visual Studio has its own project model / build system and a library l
 We do not recommend these if you don't also supply an option for building with CMake or Autotools.
 Another modern alternative that has been gaining attention mainly in the GNU/Gnome/Linux world is [Meson](http://mesonbuild.com/), which is also based on [Ninja](https://ninja-build.org/).
 
-
 ### Package management
+
 There is no standard package manager like `pip`, `npm` or `gem` for C++.
 This means that you will have to choose depending on your particular circumstances what tool to use for installing libraries and, possibly, packaging the tools you yourself built.
 Some important factors include:
+
 - Whether or not you have root/admin access to your system
 - What kind of environment/ecosystem you are working in. For instance:
-    * There are many tools targeted specifically at HPC/cluster environments.
-    * Specific communities (e.g. NLP research or bioinformatics) may have gravitated towards specific tools, so you'll probably want to use those for maximum impact.
+  - There are many tools targeted specifically at HPC/cluster environments.
+  - Specific communities (e.g. NLP research or bioinformatics) may have gravitated towards specific tools, so you'll probably want to use those for maximum impact.
 - Whether software is packaged at all; many C/C++ tools only come in source form, hopefully with [build setup configuration](#build-systems).
 
-
 #### Yes root access
+
 If you have root/admin access to your system, the first go-to for libraries may be your OS package manager.
 If the target package is not in there, try to see if there is an equivalent library that is, and see what kind of software uses it.
 
-
 #### No root access
+
 A good, cross-platform option nowadays is to use [`miniconda`](https://conda.io/miniconda.html), which works on Linux, macOS and Windows.
 The `conda-forge` channel especially has a lot of C++ libraries.
 Specify that you want to use this channel with command line option `-c conda-forge`.
 The `bioconda` channel in turn builds upon the `conda-forge` libraries, hosting a lot of bioinformatics tools.
 
-
 #### Managing non-packaged software
-If you do have to install a programm, which depends on a specific version of a library which depends on a specific version of another library, you enter what is called *dependency hell*.
+
+If you do have to install a programm, which depends on a specific version of a library which depends on a specific version of another library, you enter what is called _dependency hell_.
 Some agility in compiling and installing libraries is essential.
 
 You can install libraries in `/usr/local` or in `${HOME}/.local` if you aren't root, but there you have no package management.
 
-Many HPC administrations provide [environment modules](https://modules.readthedocs.io/en/latest/) (`module avail`), which allow you to easily populate your `$PATH` and other environment variables to find the respective package. You can also write your own module files to solve your *dependency hell*.
+Many HPC administrations provide [environment modules](https://modules.readthedocs.io/en/latest/) (`module avail`), which allow you to easily populate your `$PATH` and other environment variables to find the respective package. You can also write your own module files to solve your _dependency hell_.
 
 A lot of libraries come with a package description for `pkg-config`.
 These descriptions are installed in `/usr/lib/pkgconfig`.
@@ -110,10 +115,11 @@ If you want to keep things organized on systems where you use multiple versions 
 You install each library in its own directory (`~/.local/pkg/<package>` for instance), then running `xstow` will create symlinks to the files in the `~/.local` directory (one above the XStow package directory).
 Using XStow in this way alows you to keep a single additional search path when compiling your next library.
 
-
 #### Packaging software
+
 In case you find the manual compilation too cumbersome, or want to conveniently distribute software (your own or perhaps one of your project's dependencies that the author did not package themselves), you'll have to build your own package.
 The above solutions are good defaults for this, but there are some additional options that are widely used.
+
 - For distribution to root/admin users: system package managers (Linux: `apt`, `yum`, `pacman`, macOS: Homebrew, Macports)
 - For distribution to any users: [Conda](https://conda.io/miniconda.html) and [Conan](https://conan.io/) are cross-platform (Linux, macOS, Windows)
 - For distribution to HPC/cluster users: see options below
@@ -122,14 +128,15 @@ When choosing which system to build your package for, it is imporant to consider
 If any of these tools are already widely used in your audience, pick that one.
 If not, it is really up to your personal preferences, as all tools have their pros and cons.
 Some general guidelines could be:
+
 - prefer multi-platform over single platform
 - prefer widely used over obscure (even if it's technically magnificent, if nobody uses it, it's useless for distributing your software)
 - prefer multi-language over single language (especially for C++, because it is so often used to build libraries that power higher level languages)
 
 But, as the state of the package management ecosystem shows, in practice, there will be many exceptions to these guidelines.
 
-
 #### HPC/cluster environments
+
 One way around this if the system does use `module` is to use [Easybuild](https://easybuild.readthedocs.io/en/latest/), which makes installing modules in your home directory quite easy.
 Many recipes (called Easyblocks) for building packages or whole toolchains are [available online](https://easybuild.readthedocs.io/en/latest/version-specific/Supported_software.html).
 These are written in Python.
@@ -148,33 +155,34 @@ Note that C++20 will bring Modules, which can be used as an alternative to inclu
 This will allow for easier packaging and will probably cause the package management landscape to change considerably.
 For this reason, it may be wise at this time to keep your options open and keep an eye on developments within the different package management solutions.
 
-
-
 ### Editors
+
 This is largely a matter of taste, but not always.
 
 In theory, given that there are many good command line tools available for working with C(++) code, any code editor will do to write C(++).
 Some people also prefer to avoid relying on IDEs too much; by helping your memory they can also help you to write less maintainable code.
 People of this persuasion would usually recommend any of the following editors:
-* Vim, recommended plugins:
-  + [NERDTree](https://github.com/scrooloose/nerdtree) file explorer.
-  + [editorconfig](https://github.com/editorconfig/editorconfig-vim)
-  + [stl.vim](https://www.vim.org/scripts/script.php?script_id=4293) adds STL to syntax highlighting
-  + [Syntastic](https://github.com/scrooloose/syntastic)
-  + Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
-* Emacs:
-  + Has GDB mode for debugging.
-* More modern editors: Atom / Sublime Text / VS Code
-  + Rich plugin ecosystem
-  + Easier on the eyes... I mean modern OS/GUI integration
+
+- Vim, recommended plugins:
+  - [NERDTree](https://github.com/scrooloose/nerdtree) file explorer.
+  - [editorconfig](https://github.com/editorconfig/editorconfig-vim)
+  - [stl.vim](https://www.vim.org/scripts/script.php?script_id=4293) adds STL to syntax highlighting
+  - [Syntastic](https://github.com/scrooloose/syntastic)
+  - Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
+- Emacs:
+  - Has GDB mode for debugging.
+- More modern editors: Atom / Sublime Text / VS Code
+  - Rich plugin ecosystem
+  - Easier on the eyes... I mean modern OS/GUI integration
 
 In practice, sometimes you run into large/complex existing projects and navigating these can be really hard, especially when you just start working on the project.
 In these cases, an IDE can really help.
 Intelligent code suggestions, easy jumping between code segments in different files, integrated debugging, testing, VCS, etc. can make the learning curve a lot less steep.
 Good/popular IDEs are
-* CLion
-* Visual Studio (Windows only, but many people swear by it)
-* Eclipse
+
+- CLion
+- Visual Studio (Windows only, but many people swear by it)
+- Eclipse
 
 ### Code and program quality analysis
 
@@ -185,48 +193,61 @@ C++ (and C) compilers come with built in linters and tools to check that your pr
 While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines.
 
 #### Static code analysis with GCC
+
 To use the GCC linter, use the following set of compiler flags when compiling C++ code:
+
 ```
 -O2 -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2
 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast
 -Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel
 -Wstrict-overflow=5 -Wswitch-default -Wundef -Wno-unused
 ```
+
 and these flags when compiling C code:
+
 ```
 -O2 -Wall -Wextra -Wformat-nonliteral -Wcast-align -Wpointer-arith -Wbad-function-cast
 -Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations -Winline -Wundef
 -Wnested-externs -Wcast-qual -Wshadow -Wwrite-strings -Wno-unused-parameter
 -Wfloat-equal
 ```
+
 Use at least optimization level 2 (`-O2`) to have GCC perform code analysis up to a level where you get all warnings. Use the `-Werror` flag to turn warnings into errors, i.e. your code won't compile if you have warnings. See this [post](https://stackoverflow.com/questions/5088460/flags-to-enable-thorough-and-verbose-g-warnings) for an explanation of why this is a reasonable selection of warning flags.
 
 #### Static code analysis with Clang (LLVM)
+
 Clang has the very convenient flag
+
 ```
 -Weverything
 ```
+
 A good strategy is probably to start out using this flag and then disable any warnings that you do not find useful.
 
 #### Static code analysis with cppcheck
+
 An additional good tool that detects many issues is cppcheck. Most editors/IDEs have plugins to use it automatically.
 
 #### Dynamic program analysis using `-fsanitize`
+
 Both GCC and Clang allow you to compile your code with the `-fsanitize=` flag, which will instrument your program to detect various errors quickly. The most useful option is probably
+
 ```
 -fsanitize=address -O2 -fno-omit-frame-pointer -g
 ```
+
 which is a fast memory error detector. There are also other options available like `-fsanitize=thread` and `-fsanitize=undefined`. See the GCC man page or the [Clang online manual](https://clang.llvm.org/docs/index.html) for more information.
 
 #### Dynamic program analysis using the valgrind suite of tools
-The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical  profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
+
+The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
 
 ### Automated code refactoring
 
 Sometimes you have to update large parts of your code base a little bit, like when you move from one standard to another or you changed a function definition. Although this can be accomplished with a `sed` command using regular expressions, this approach is dangerous, if you use macros, your code is not formatted properly etc.... [Clang-tidy](https://clang.llvm.org/extra/clang-tidy/) can do these things and many more by using the abstract syntax tree of the compiler instead of the source code files to refactor your code and thus is much more robust but also powerful.
 
-
 ### Debugging
+
 Most of your time programming C(++) will probably be spent on debugging.
 At some point, surrounding every line of your code with `printf("here %d", i++);` will no longer avail you and you will need a more powerful tool.
 With a debugger, you can inspect the program while it is running.
@@ -235,96 +256,108 @@ When paused, you can inspect the current values of variables, manually step forw
 Learning to use these powerful tools is a very good time investment.
 There are some really good CppCon videos about debugging on YouTube.
 
-* GDB - the GNU Debugger, many graphical front-ends are based on GDB.
-* LLDB - the LLVM debugger. This is the go-to GDB alternative for the LLVM toolchain, especially on macOS where GDB is hard to setup.
-* DDD - primitive GUI frontend for GDB.
-* The IDEs mentioned above either have custom built-in debuggers or provide an interface to GDB or LLDB.
-
+- GDB - the GNU Debugger, many graphical front-ends are based on GDB.
+- LLDB - the LLVM debugger. This is the go-to GDB alternative for the LLVM toolchain, especially on macOS where GDB is hard to setup.
+- DDD - primitive GUI frontend for GDB.
+- The IDEs mentioned above either have custom built-in debuggers or provide an interface to GDB or LLDB.
 
 ## Libraries
+
 Historically, many C and C++ projects have seemed rather hestitant about using external dependencies (perhaps due to the poor dependency management situation mentioned above).
 However, many good (scientific) computing libraries are available today that you should consider using if applicable.
 Here follows a list of libraries that we recommend and/or have experience with.
 These can typically be installed from a wide range of [package managers](#package-management).
 
 ### Usual suspects
+
 These scientific libraries are well known, widely used and have a lot of good online documentation.
 
-* [GNU Scientific library (GSL)](https://www.gnu.org/software/gsl/doc/html/index.html)
-* [FFTW](http://www.fftw.org): Fastest Fourier Transform in the West
-* [OpenMPI](https://www.open-mpi.org). Use with caution, since it will strongly define the structure of your code, which may or may not be desirable.
+- [GNU Scientific library (GSL)](https://www.gnu.org/software/gsl/doc/html/index.html)
+- [FFTW](http://www.fftw.org): Fastest Fourier Transform in the West
+- [OpenMPI](https://www.open-mpi.org). Use with caution, since it will strongly define the structure of your code, which may or may not be desirable.
 
 ### Boost
+
 This is what the Google style guide has to say about Boost:
 
->  * **Definition:** The Boost library collection is a popular collection of peer-reviewed, free, open-source C++ libraries.
->  * **Pros:** Boost code is generally very high-quality, is widely portable, and fills many important gaps in the C++ standard library, such as type traits and better binders.
->  * **Cons:** Some Boost libraries encourage coding practices which can hamper readability, such as metaprogramming and other advanced template techniques, and an excessively "functional" style of programming.
+> - **Definition:** The Boost library collection is a popular collection of peer-reviewed, free, open-source C++ libraries.
+> - **Pros:** Boost code is generally very high-quality, is widely portable, and fills many important gaps in the C++ standard library, such as type traits and better binders.
+> - **Cons:** Some Boost libraries encourage coding practices which can hamper readability, such as metaprogramming and other advanced template techniques, and an excessively "functional" style of programming.
 
 As a general rule, don't use Boost when there is equivalent STL functionality.
 
 ### xtensor
+
 [xtensor](http://github.com/xtensor-stack/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
 It aims for maximum performance (and in most cases it succeeds) and has an active development community.
 This library features, among other things:
-* Lazy-evaluation: only calculate when necessary.
-* Extensible template expressions: automatically optimize many subsequent operations into one "kernel".
-* NumPy style syntax, including broadcasting.
-* C++ STL style interfaces for easy integration with STL functionality.
-* [Very low-effort integration with today's main data science languages Python](https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef?gi=23ebfce3ae77), R and Julia.
-This all makes xtensor a very interesting choice compared to similar older libraries like Eigen and Armadillo.
 
+- Lazy-evaluation: only calculate when necessary.
+- Extensible template expressions: automatically optimize many subsequent operations into one "kernel".
+- NumPy style syntax, including broadcasting.
+- C++ STL style interfaces for easy integration with STL functionality.
+- [Very low-effort integration with today's main data science languages Python](https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef?gi=23ebfce3ae77), R and Julia.
+  This all makes xtensor a very interesting choice compared to similar older libraries like Eigen and Armadillo.
 
 ### General purpose, I/O
-* Configuration file reading and writing:
-    * [yaml-cpp](https://github.com/jbeder/yaml-cpp): A YAML parser and emitter in C++
-    * [JSON for Modern C++](https://nlohmann.github.io/json/)
-* Command line argument parsing:
-    * [argagg](https://github.com/vietjtnguyen/argagg)
-    * [Clara](https://github.com/catchorg/Clara)
-* [fmt](https://github.com/fmtlib/fmt): pythonic string formatting
-* [hdf5](https://github.com/HDFGroup/hdf5): The popular HDF5 binary format C++ interface.
 
+- Configuration file reading and writing:
+  - [yaml-cpp](https://github.com/jbeder/yaml-cpp): A YAML parser and emitter in C++
+  - [JSON for Modern C++](https://nlohmann.github.io/json/)
+- Command line argument parsing:
+  - [argagg](https://github.com/vietjtnguyen/argagg)
+  - [Clara](https://github.com/catchorg/Clara)
+- [fmt](https://github.com/fmtlib/fmt): pythonic string formatting
+- [hdf5](https://github.com/HDFGroup/hdf5): The popular HDF5 binary format C++ interface.
 
 ### Parallel processing
-* [oneAPI Threading Building Blocks](https://oneapi-src.github.io/oneTBB/) (oneTBB): template library for task parallelism
-* [ZeroMQ](http://zeromq.org): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
 
+- [oneAPI Threading Building Blocks](https://oneapi-src.github.io/oneTBB/) (oneTBB): template library for task parallelism
+- [ZeroMQ](http://zeromq.org): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
 
 ## Style
+
 ### Style guides
+
 Good style is not just about layout and linting on trailing whitespace. It will mean the difference between a blazing fast code and a broken one.
 
-* [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-* [Guidelines Support Library](https://github.com/Microsoft/GSL)
-* [Google Style Guide](https://google.github.io/styleguide/cppguide.html)
-* [Google Style Guide - github](https://github.com/google/styleguide) Contains the CppLint linter.
+- [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- [Guidelines Support Library](https://github.com/Microsoft/GSL)
+- [Google Style Guide](https://google.github.io/styleguide/cppguide.html)
+- [Google Style Guide - github](https://github.com/google/styleguide) Contains the CppLint linter.
 
 ### Project layout
+
 A C++ project will usually have directories `/src` for source codes, `/doc` for Doxygen output, `/test` for testing code. Some people like to put header files in `/include`. In C++ though, many header files will contain functioning code (templates and inline functions). This makes the separation between code and interface a bit murky.
 In this case, it can make more sense to put headers and implementation in the same tree, but different communities will have different opinions on this.
 A third option that is sometimes used is to make separate "template implementation" header files.
 
 ## Sustainability
+
 ### Testing
+
 Use [Google Test](https://github.com/google/googletest).
 It is light-weight, good and is used a lot.
 [Catch2](https://github.com/catchorg/Catch2) is also pretty good, well maintained and has native support in the CLion
 IDE.
 
 ### Documentation
+
 Use [Doxygen](http://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
 
 A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
 
 ## Resources
+
 ### Online
-* [CppCon videos](https://www.youtube.com/user/CppCon): Many really good talks recorded at the various CppCon meetings.
-* [CppReference.com](http://en.cppreference.com/w/)
-* [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/)
-* [CPlusPlus.com](http://www.cplusplus.com/)
-* [Modern C++, according to Microsoft](https://msdn.microsoft.com/en-us/library/hh279654.aspx)
+
+- [CppCon videos](https://www.youtube.com/user/CppCon): Many really good talks recorded at the various CppCon meetings.
+- [CppReference.com](http://en.cppreference.com/w/)
+- [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/)
+- [CPlusPlus.com](http://www.cplusplus.com/)
+- [Modern C++, according to Microsoft](https://msdn.microsoft.com/en-us/library/hh279654.aspx)
 
 ### Books
-* Bjarne Soustrup - The C++ Language
-* Scott Meyers - Effective Modern C++
+
+- Bjarne Soustrup - The C++ Language
+- Scott Meyers - Effective Modern C++

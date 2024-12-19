@@ -1,13 +1,13 @@
 # User Experience (UX)
 
-*Page maintainer: Jesus Garcia* [@ctwhome](https://github.com/ctwhome)
-
+_Page maintainer: Jesus Garcia_ [@ctwhome](https://github.com/ctwhome)
 
 User Experience Design (UX) is a broad, holistic science that combines many cognitive and brain sciences disciplines like psychology and sociology, content strategies, and arts and aesthetics by following human-center approaches.
 
 > Human-centred design is an approach to interactive systems development that aims to make systems usable and useful by focusing on the users, their needs and requirements, and applying human factors/ergonomics and usability knowledge and techniques. This approach enhances effectiveness and efficiency, improves human well-being, user satisfaction, accessibility, sustainability, and counteracts possible adverse effects on human health, safety, and performance. [HCDSociety](https://human-centered-design.org/about/)
 
 ## Table of content
+
 - UX disciplines
 - Design thinking process
 - Designing software
@@ -30,20 +30,19 @@ The known UX umbrella diagram represents the different disciplines of UX:
 
 <img src="https://user-images.githubusercontent.com/4195550/100587866-681a6700-32f1-11eb-87d2-c40616d45c4f.png" width="800" />
 
-*Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
-
-
+_Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0_
 
 ### Design Thinking
+
 Design thinking is an approach, mindset, or ideology for product development. According to the [IxF(Interaction Design Foundation](https://interaction-design.org), Design thinking achieves all these advantages at the same time:
 
-*   It is a user-centered process that starts with user data, creates design artifacts that address real and not imaginary user needs, and then tests those artifacts with real users.
-*   It leverages the collective expertise and establishes a shared language and buy-in amongst your team.
-*   It encourages innovation by exploring multiple avenues for the same problem.
+- It is a user-centered process that starts with user data, creates design artifacts that address real and not imaginary user needs, and then tests those artifacts with real users.
+- It leverages the collective expertise and establishes a shared language and buy-in amongst your team.
+- It encourages innovation by exploring multiple avenues for the same problem.
 
 <img src="https://user-images.githubusercontent.com/4195550/99543973-13532400-29b4-11eb-9179-f74db459dfbe.png" width="700"/>
 
-*Author/Copyright holder: Teo Yu Siang and Interaction Design Foundation. Copyright licence: CC BY-NC-SA 3.0*
+_Author/Copyright holder: Teo Yu Siang and Interaction Design Foundation. Copyright licence: CC BY-NC-SA 3.0_
 
 You can find more information about Design Thinking on the [IxF page](https://www.interaction-design.org/literature/topics/design-thinking).
 
@@ -57,15 +56,14 @@ When delivering software iteratively, one of the common approaches to follow is 
 
  <img src="https://user-images.githubusercontent.com/4195550/99543638-ad669c80-29b3-11eb-92c6-1754fa9c837c.png" width="800" />
 
- *Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0*
+_Author/Copyright holder: J.G. Gonzalez and The Netherlands eScience Center. Copyright: Apache License 2.0_
 
 While MVP (Minumun Product Value) focuses on provide users with a way to explore the product and understand its main intent, MLP (Minimun Loveable Product) approach focuses on essential features instead of the bare minimum expected from a class software. Going beyond the bare functionality, the attention is driven towards a great user experience. The outcomes mush contains all elements in the pyramid being **functional, reliable, usable, and pleasurable.**
-
 
 ### Tools and resources
 
 Design tools used for Visual Design, Prototyping, and IxD testing collaborative, real-time, online, and multiplatform.
 
-*   [Figma](https://www.figma.com/)
-*   [Miro](https://miro.com/)
-*   [Whimsical](https://whimsical.com/)
+- [Figma](https://www.figma.com/)
+- [Miro](https://miro.com/)
+- [Whimsical](https://whimsical.com/)

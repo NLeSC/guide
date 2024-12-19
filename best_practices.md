@@ -104,10 +104,12 @@ developing in.
 Below is a list of editors that support many programming languages.
 
 Integrated Development Environments (IDEs):
+
 - [Visual Studio Code](https://code.visualstudio.com/) - modern editor with extensive plugin ecosystem that can make it as powerful as most IDEs
 - [JetBrains IDEs](https://www.jetbrains.com/ides/) - specialized IDEs for Python, C++, Java and web, all using the IntelliJ framework
 - [Eclipse](https://www.eclipse.org/ide/) - a bit older but still nice
 
 Text editors:
+
 - [vim](https://www.vim.org/) - classic text editor
 - [emacs](https://www.gnu.org/software/emacs/) - classic text editor

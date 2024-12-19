@@ -1,7 +1,6 @@
 # Python
 
-*Page maintainer: Bouwe Andela* [@bouweandela](https://github.com/bouweandela)
-
+_Page maintainer: Bouwe Andela_ [@bouweandela](https://github.com/bouweandela)
 
 Python is the "dynamic language of choice" of the Netherlands eScience Center.
 We use it for data analysis and data science projects, and for many other types of projects: workflow management, visualization, natural language processing, web-based tools and much more.
@@ -23,15 +22,15 @@ It is possible to write Python that is both Python 2 and Python 3 compatible (e.
 If you need Python 2 because of old, incompatible Python 2 libraries, strongly consider upgrading those libraries to Python 3 or replacing them altogether.
 Building and/or using Python 2 is probably discouraged even more than, say, using Fortran 77, since at least Fortran 77 compilers are still being maintained.
 
-* [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
-* [Six](https://pypi.org/project/six/): Python 2 and 3 Compatibility Library
-* [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
-* [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
+- [Things you’re probably not using in Python 3 – but should](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/)
+- [Six](https://pypi.org/project/six/): Python 2 and 3 Compatibility Library
+- [2to3](https://docs.python.org/2/library/2to3.html): Automated Python 2 to 3 code translation
+- [python-modernize](https://github.com/mitsuhiko/python-modernize): wrapper around 2to3
 
 ## Learning Python
 
-* A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
-* Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
+- A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
+- Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
 ## Dependencies and package management
 
@@ -45,10 +44,10 @@ We strongly recommend creating isolated "virtual environments" for each Python p
 These can be created with `venv` or with `conda`.
 Advantages over installing packages system-wide or in a single user folder:
 
-* Installs Python modules when you are not root.
-* Contains all Python dependencies so the environment keeps working after an upgrade.
-* Keeps environments clean for each project, so you don't get more than you need (and can easily reproduce that minimal working situation).
-* Lets you select the Python version per environment, so you can test code compatibility between Python versions
+- Installs Python modules when you are not root.
+- Contains all Python dependencies so the environment keeps working after an upgrade.
+- Keeps environments clean for each project, so you don't get more than you need (and can easily reproduce that minimal working situation).
+- Lets you select the Python version per environment, so you can test code compatibility between Python versions
 
 ### Pip + a virtual environment
 
@@ -83,10 +82,12 @@ Miniforge includes both the faster `mamba` as well as the traditional `conda`.
 ## Building and packaging code
 
 ### Making an installable package
+
 To create an installable Python package you will have to create a `pyproject.toml` file.
 This will contain three kinds of information: metadata about your project, information on how to build and install your package, and configuration settings for any tools your project may use. Our [Python template](https://github.com/NLeSC/python-template) already does this for you.
 
 #### Project metadata
+
 Your project metadata will be under the `[project]` header, and includes such information as the name, version number, description and dependencies.
 The [Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/pyproject-toml/#declaring-project-metadata-the-project-table) has more information on what else can or should be added here.
 For your dependencies, you should keep version constraints to a minimum; use, in order of descending preference: no constraints, lower bounds, lower + upper bounds, exact versions.
@@ -97,52 +98,57 @@ If instead you are writing a new `pyproject.toml` for an existing project, a rec
 It is possible to find the full list of currently installed packages with `pip freeze` or `conda list`, but note that this is not ideal for listing dependencies in `pyproject.toml`, because it also lists all dependencies of the dependencies that you use.
 
 #### Build system
+
 Besides specifying your project's own metadata, you also have to specify a build-system under the `[build-system]` header.
 We currently recommend using [`hatchling`](https://pypi.org/project/hatchling/) or [`setuptools`](https://setuptools.pypa.io/en/latest/build_meta.html).
 Note that Python's build system landscape is still in flux, so be sure to look upthe some current practices in the [packaging guide's section on build backends](https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-a-build-backend) and [authoritative blogs like this one](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html).
 One important thing to note is that use of `setup.py` and `setup.cfg` has been officially deprecated and we should migrate away from that.
 
 #### Tool configuration
+
 Finally, `pyproject.toml` can be used to specify the configuration for any other tools like `pytest`, `ruff` and `mypy` your project may use.
 Each of these gets their own section in your `pyproject.toml` instead of using their own file, saving you from having dozens of such files in your project.
 
 #### Installation
+
 When the `pyproject.toml` is written, your package can be installed with
+
 ```
 pip install -e .
 ```
-The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location  instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
+
+The `-e` flag will install your package in editable mode, i.e. it will create a symlink to your package in the installation location instead of copying the package. This is convenient when developing, because any changes you make to the source code will immediately be available for use in the installed version.
 
 Set up continuous integration to test your installation setup.
 You can use `pyroma` as a linter for your installation configuration.
 
 ### Packaging and distributing your package
+
 For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
 #### Build via the [Python Package Index (PyPI)](https://pypi.org) so that the package can be installed with pip
 
-* [General instructions](https://packaging.python.org/en/latest/tutorials/packaging-projects/) 
-* We recommend to configure GitHub Actions to upload the package to PyPI automatically for each release. 
-    * For new repositories, it is recommended to use [trusted publishing](https://docs.pypi.org/trusted-publishers/) because it is more secure than using secret tokens from GitHub.
-        * For a workflow using secret tokens instead, see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
-    * You can follow [these instructions](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/) to set up GitHub Actions workflows with trusted publishing. 
-        * The [`verbose`](https://github.com/marketplace/actions/pypi-publish#for-debugging) option for pypi workflows is useful to see why a workflow failed.
-        * To avoid unnecessary workflow runs, you can follow the example in the [sirup package](https://github.com/ivory-tower-private-power/sirup/blob/main/.github/workflows/release.yml): manually trigger pushes to pypi and investigate potential bugs during this process with a manual upload.
-* Manual uploads with twine 
-    * Because PyPI and Test PyPI require Two-Factor Authentication per January 2024, you need to mimick GitHub's trusted publishing to publish manually with `twine`.
-    * You can follow the section on "The manual way" as described [here](https://docs.pypi.org/trusted-publishers/using-a-publisher/).
-* Additional guidelines:
-    * Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
-    * For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
-    * When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
-    * To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
-    * `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
-
+- [General instructions](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- We recommend to configure GitHub Actions to upload the package to PyPI automatically for each release.
+  - For new repositories, it is recommended to use [trusted publishing](https://docs.pypi.org/trusted-publishers/) because it is more secure than using secret tokens from GitHub.
+    - For a workflow using secret tokens instead, see this [example workflow in DIANNA](https://github.com/dianna-ai/dianna/blob/main/.github/workflows/release.yml).
+  - You can follow [these instructions](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/) to set up GitHub Actions workflows with trusted publishing.
+    - The [`verbose`](https://github.com/marketplace/actions/pypi-publish#for-debugging) option for pypi workflows is useful to see why a workflow failed.
+    - To avoid unnecessary workflow runs, you can follow the example in the [sirup package](https://github.com/ivory-tower-private-power/sirup/blob/main/.github/workflows/release.yml): manually trigger pushes to pypi and investigate potential bugs during this process with a manual upload.
+- Manual uploads with twine
+  - Because PyPI and Test PyPI require Two-Factor Authentication per January 2024, you need to mimick GitHub's trusted publishing to publish manually with `twine`.
+  - You can follow the section on "The manual way" as described [here](https://docs.pypi.org/trusted-publishers/using-a-publisher/).
+- Additional guidelines:
+  - Packages should be uploaded to PyPI using [your own account](https://pypi.org/account/register)
+  - For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
+  - When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
+  - To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
+  - `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
 
 #### [Build using conda](https://conda-forge.org/docs/maintainer/adding_pkgs.html)
-* **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
-* Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 
+- **Make use of [conda-forge](https://conda-forge.org/) whenever possible**, since it provides many automated build services that save you tons of work, compared to using your own conda repository. It also has a very active community for when you need help.
+- Use BioConda or custom channels (hosted on GitHub) as alternatives if need be.
 
 ## Editors and IDEs
 
@@ -179,6 +185,7 @@ In fact, some tools have started to make use of this in runtime modules as well,
 See [this guide](https://realpython.com/python-type-checking/) to learn more about type hints.
 
 Some tools to know about that make use of type hints:
+
 - [Type checkers](https://www.infoworld.com/article/2260170/4-python-type-checkers-to-keep-your-code-clean.html) are static code
   analysis tools that check your code based on the type hints you provide. It is highly recommended that you use a type checker.
   Choose [mypy](https://mypy-lang.org/) if you are unsure which one to choose.
@@ -230,56 +237,54 @@ We currently setup [Sonarcloud](https://sonarcloud.io/) by default in our [Pytho
 To reproduce the Sonarcloud pipeline locally, you can use [SonarLint](https://www.sonarlint.org/) in your IDE.
 If you use another editor, perhaps it is more convenient to pick another service like Codacy or Codecov.
 
-
 ## Debugging and profiling
 
 ### Debugging
 
-* Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
-* [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
-* If you are looking for IDEs with debugging capabilities, see the [Editors and IDEs section](#editors-and-ides).
-* If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
-* If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with `vim`, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
+- Python has its own debugger called [pdb](https://docs.python.org/3/library/pdb.html). It is a part of the Python distribution.
+- [pudb](https://github.com/inducer/pudb) is a console-based Python debugger which can easily be installed using pip.
+- If you are looking for IDEs with debugging capabilities, see the [Editors and IDEs section](#editors-and-ides).
+- If you are using Windows, [Python Tools for Visual Studio](https://github.com/Microsoft/PTVS) adds Python support for Visual Studio.
+- If you would like to integrate [pdb](https://docs.python.org/3/library/pdb.html) with `vim`, you can use [Pyclewn](https://sourceforge.net/projects/pyclewn).
 
-* List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
+- List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
 
-* If you are looking for some tutorials to get started:
+- If you are looking for some tutorials to get started:
 
-    - https://pymotw.com/2/pdb
-    - https://github.com/spiside/pdb-tutorial
-    - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
-    - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
-    - http://www.pydev.org/manual_101_run.html
+  - https://pymotw.com/2/pdb
+  - https://github.com/spiside/pdb-tutorial
+  - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
+  - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
+  - http://www.pydev.org/manual_101_run.html
 
 ### Profiling
 
 There are a number of available profiling tools that are suitable for different situations.
 
-* [cProfile](https://docs.python.org/2/library/profile.html) measures number of function calls and how much CPU time they take. The output can be further analyzed using the `pstats` module.
-* For more fine-grained, line-by-line CPU time profiling, two modules can be used:
-    - [line_profiler](https://github.com/rkern/line_profiler) provides a function decorator that measures the time spent on each line inside the function.
-    - [pprofile](https://github.com/vpelletier/pprofile) is less intrusive; it simply times entire Python scripts line-by-line. It can give output in callgrind format, which allows you to study the statistics and call tree in `kcachegrind` (often used for analyzing c(++) profiles from `valgrind`).
+- [cProfile](https://docs.python.org/2/library/profile.html) measures number of function calls and how much CPU time they take. The output can be further analyzed using the `pstats` module.
+- For more fine-grained, line-by-line CPU time profiling, two modules can be used:
+  - [line_profiler](https://github.com/rkern/line_profiler) provides a function decorator that measures the time spent on each line inside the function.
+  - [pprofile](https://github.com/vpelletier/pprofile) is less intrusive; it simply times entire Python scripts line-by-line. It can give output in callgrind format, which allows you to study the statistics and call tree in `kcachegrind` (often used for analyzing c(++) profiles from `valgrind`).
 
 More realistic profiling information can usually be obtained by using statistical or sampling profilers. The profilers listed below all create nice flame graphs.
 
-* [vprof](https://github.com/nvdv/vprof)
-* [Pyflame](https://github.com/uber/pyflame)
-* [nylas-perftools](https://github.com/nylas/nylas-perftools)
+- [vprof](https://github.com/nvdv/vprof)
+- [Pyflame](https://github.com/uber/pyflame)
+- [nylas-perftools](https://github.com/nylas/nylas-perftools)
 
 ## Logging
 
-* [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
-* Tutorials:
-    - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
-    - http://docs.python-guide.org/en/latest/writing/logging
-    - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
+- [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
+- Tutorials:
+  - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+  - http://docs.python-guide.org/en/latest/writing/logging
+  - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
 
 ## Documentation
 
 It is recommended that you [write documentation](https://book.the-turing-way.org/reproducible-research/code-documentation) for your projects and publish it on an interactive webpage.
 A popular and recommended solution for hosting documentation is [Read the Docs](https://readthedocs.org).
 It can automatically build documentation for projects hosted on [GitHub, GitLab, and Bitbucket](https://docs.readthedocs.io/en/stable/reference/git-integration.html).
-
 
 ### Building documentation
 
@@ -305,18 +310,18 @@ It is recommended that you [routinely test any code examples in your documentati
 
 ### General scientific
 
-* [NumPy](http://www.numpy.org/)
-* [SciPy](https://www.scipy.org/)
-* [Pandas](http://pandas.pydata.org/) data analysis toolkit
-* [scikit-learn](http://scikit-learn.org/): machine learning in Python
-* [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
-* [dask](http://dask.pydata.org) larger than memory arrays and parallel execution
+- [NumPy](http://www.numpy.org/)
+- [SciPy](https://www.scipy.org/)
+- [Pandas](http://pandas.pydata.org/) data analysis toolkit
+- [scikit-learn](http://scikit-learn.org/): machine learning in Python
+- [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
+- [dask](http://dask.pydata.org) larger than memory arrays and parallel execution
 
 ### IPython and Jupyter notebooks (aka IPython notebooks)
 
 [IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](http://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
 
-[Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting.  [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
+[Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting. [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 [Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
 [JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools.
 
@@ -327,46 +332,47 @@ It is good practice to restart the kernel and run the notebook from start to fin
 
 ### Visualization
 
-* [Matplotlib](http://matplotlib.org) has been the standard in scientific visualization. It supports quick-and-dirty plotting through the `pyplot` submodule. Its object oriented interface can be somewhat arcane, but is highly customizable and runs natively on many platforms, making it compatible with all major OSes and environments. It supports most sources of data, including native Python objects, Numpy and Pandas.
-    - [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is a Python visualisation library based on Matplotlib and aimed towards statistical analysis. It supports numpy, pandas, scipy and statmodels.
-* Web-based:
-    - [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
-    - [Plotly](https://plot.ly/) is another platform for interactive plotting through a web browser, including in Jupyter notebooks.
-    - [altair](https://github.com/ellisonbg/altair) is a _grammar of graphics_ style declarative statistical visualization library. It does not render visualizations itself, but rather outputs Vega-Lite JSON data. This can lead to a simplified workflow.
-    - [ggplot](https://github.com/yhat/ggpy) is a plotting library imported from R.
+- [Matplotlib](http://matplotlib.org) has been the standard in scientific visualization. It supports quick-and-dirty plotting through the `pyplot` submodule. Its object oriented interface can be somewhat arcane, but is highly customizable and runs natively on many platforms, making it compatible with all major OSes and environments. It supports most sources of data, including native Python objects, Numpy and Pandas.
+  - [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is a Python visualisation library based on Matplotlib and aimed towards statistical analysis. It supports numpy, pandas, scipy and statmodels.
+- Web-based:
+  - [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
+  - [Plotly](https://plot.ly/) is another platform for interactive plotting through a web browser, including in Jupyter notebooks.
+  - [altair](https://github.com/ellisonbg/altair) is a _grammar of graphics_ style declarative statistical visualization library. It does not render visualizations itself, but rather outputs Vega-Lite JSON data. This can lead to a simplified workflow.
+  - [ggplot](https://github.com/yhat/ggpy) is a plotting library imported from R.
 
 ### Parallelisation
 
 CPython (the official and mainstream Python implementation) is not built for parallel processing due to the [global interpreter lock](https://wiki.python.org/moin/GlobalInterpreterLock). Note that the GIL only applies to actual Python code, so compiled modules like e.g. `numpy` do not suffer from it.
 
 Having said that, there are many ways to run Python code in parallel:
-* The [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module is the standard way to do parallel executions in one or multiple machines, it circumvents the GIL by creating multiple Python processess.
-* A much simpler alternative in Python 3 is the [`concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) module.
-* [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
-* Many modules have parallel capabilities or can be compiled to have them.
-* At the eScience Center, we have developed the [Noodles package](https://research-software-directory.org/software/noodles) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
+
+- The [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module is the standard way to do parallel executions in one or multiple machines, it circumvents the GIL by creating multiple Python processess.
+- A much simpler alternative in Python 3 is the [`concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) module.
+- [IPython / Jupyter notebooks have built-in parallel and distributed computing capabilities](https://ipython.org/ipython-doc/3/parallel/)
+- Many modules have parallel capabilities or can be compiled to have them.
+- At the eScience Center, we have developed the [Noodles package](https://research-software-directory.org/software/noodles) for creating computational workflows and automatically parallelizing it by dispatching independent subtasks to parallel and/or distributed systems.
 
 ### Web Frameworks
 
 There are convenient Python web frameworks available:
 
-* [flask](http://flask.pocoo.org/)
-* [CherryPy](https://cherrypy.dev/)
-* [Django](https://www.djangoproject.com/)
-* [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
-* [FastAPI](https://fastapi.tiangolo.com): again, similar to flask in functionality, but uses modern Python features like async and type hints with runtime behavioral effects.
+- [flask](http://flask.pocoo.org/)
+- [CherryPy](https://cherrypy.dev/)
+- [Django](https://www.djangoproject.com/)
+- [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
+- [FastAPI](https://fastapi.tiangolo.com): again, similar to flask in functionality, but uses modern Python features like async and type hints with runtime behavioral effects.
 
 We have recommended `flask` in the past, but FastAPI has become more popular recently.
 
 ### NLP/text mining
 
-* [nltk](http://www.nltk.org/) Natural Language Toolkit
-* [Pattern](https://github.com/clips/pattern): web/text mining module
-* [gensim](https://radimrehurek.com/gensim/): Topic modeling
+- [nltk](http://www.nltk.org/) Natural Language Toolkit
+- [Pattern](https://github.com/clips/pattern): web/text mining module
+- [gensim](https://radimrehurek.com/gensim/): Topic modeling
 
 ### Creating programs with command line arguments
 
-* For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
-* A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
-* Other popular libraries are [`click`](https://click.palletsprojects.com) and [`fire`](https://google.github.io/python-fire/).
-* [Typer](https://typer.tiangolo.com): make a command-line application by using type hints with runtime effects. Very low on boilerplate for simple cases, but also allows for more complex cases. Uses `click` internally.
+- For run-time configuration via command-line options, the built-in [`argparse`](https://docs.python.org/library/argparse.html) module usually suffices.
+- A more complete solution is [`ConfigArgParse`](https://github.com/bw2/ConfigArgParse). This (almost) drop-in replacement for `argparse` allows you to not only specify configuration options via command-line options, but also via (ini or yaml) configuration files and via environment variables.
+- Other popular libraries are [`click`](https://click.palletsprojects.com) and [`fire`](https://google.github.io/python-fire/).
+- [Typer](https://typer.tiangolo.com): make a command-line application by using type hints with runtime effects. Very low on boilerplate for simple cases, but also allows for more complex cases. Uses `click` internally.
