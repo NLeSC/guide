@@ -9,7 +9,7 @@ numerical compute workloads, with no existing alternative. In this case it is re
 
 ## Recommended sources of information
 
-- [Fortran90 official documentation](http://www.fortran90.org/)
+- [Fortran90 best practices](https://github.com/certik/fortran90.org/blob/master/src/best-practices.rst).
 - [Fortran wiki](http://fortranwiki.org/fortran/show/HomePage)
 - [Fortran90 handbook](http://micro.ustc.edu.cn/Fortran/Fortran%2090%20Handbook.pdf)
 
@@ -35,7 +35,7 @@ completion and refactoring tools one might consider the [CBFortran](http://cbfor
 ## Coding style conventions
 
 If working on an existing code base, adopt the existing conventions. Otherwise we recommend the
-standard conventions, described in the [official documentation](http://www.fortran90.org/src/best-practices.html#fortran-style-guide) and the [Fortran company style guide](http://www.fortran.com/). We would like to add the following advice:
+standard conventions, described in the [official documentation](https://github.com/certik/fortran90.org/blob/master/src/best-practices.rst#fortran-style-guide) and the [Fortran company style guide](http://www.fortran.com/). We would like to add the following advice:
 
 - Use free-form text input style (the default), with a maximal line width well below the 132 characters imposed by the Fortran90 standard.
 - When a method does not need to alter any data in any module and returns a single value, use a function for it, otherwise use a subroutine. Minimize the latter to reasonable extent.
