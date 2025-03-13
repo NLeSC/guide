@@ -33,6 +33,11 @@
         g.src = u + "matomo.js";
         s.parentNode.insertBefore(g, s);
       })();
+      window.addEventListener("hashchange", function () {
+        _paq.push(["setCustomUrl", "/" + window.location.hash]);
+        _paq.push(["setDocumentTitle", document.title]);
+        _paq.push(["trackPageView"]);
+      });
     </script>
     <!-- End Matomo Code -->
   </head>
