@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 2
       - name: download Lychee
         run: |
-          wget https://github.com/lycheeverse/lychee/releases/download/nightly/lychee-x86_64-unknown-linux-gnu.tar.gz
+          wget https://github.com/lycheeverse/lychee/releases/download/lychee-v0.18.1/lychee-x86_64-unknown-linux-gnu.tar.gz
           tar xzf lychee-x86_64-unknown-linux-gnu.tar.gz
       - name: Check all this file's additions for broken links
         run: |
