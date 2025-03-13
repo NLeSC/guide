@@ -33,6 +33,11 @@
         g.src = u + "matomo.js";
         s.parentNode.insertBefore(g, s);
       })();
+      window.addEventListener("hashchange", function () {
+        _paq.push(["setCustomUrl", "/" + window.location.hash]);
+        _paq.push(["setDocumentTitle", document.title]);
+        _paq.push(["trackPageView"]);
+      });
     </script>
     <!-- End Matomo Code -->
   </head>
@@ -51,12 +56,9 @@
         relativePath: true,
       };
     </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"
-      data-ga="UA-55088238-8"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   </body>
 </html>
