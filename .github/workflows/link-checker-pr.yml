@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Get changed markdown files
         id: changed-markdown-files
-        uses: tj-actions/changed-files@v45
+        uses: tj-actions/changed-files@v46
         with:
           # Avoid using single or double quotes for multiline patterns
           files: |
