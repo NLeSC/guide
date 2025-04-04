@@ -34,7 +34,8 @@
         s.parentNode.insertBefore(g, s);
       })();
       window.addEventListener("hashchange", function () {
-        _paq.push(["setCustomUrl", "/" + window.location.hash]);
+        console.log("logging hash change in Matomo");
+        _paq.push(["setCustomUrl", "/" + window.location.hash.substr(1)]);
         _paq.push(["setDocumentTitle", document.title]);
         _paq.push(["trackPageView"]);
       });
