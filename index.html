@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- Matomo -->
-    <script>
+    <!-- <script>
       var _paq = (window._paq = window._paq || []);
       _paq.push(["disableCookies"]); // Call disableCookies before calling trackPageView
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -38,7 +38,7 @@
         _paq.push(["setDocumentTitle", document.title]);
         _paq.push(["trackPageView"]);
       });
-    </script>
+    </script> -->
     <!-- End Matomo Code -->
   </head>
 
@@ -54,11 +54,59 @@
           "/.*/_sidebar.md": "/_sidebar.md",
         },
         relativePath: true,
+        matomo: {
+          host: '//matomo.research.software',
+          id: 5
+        },
       };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+     <!-- custom version of Matomo plugin, modified from https://github.com/docsifyjs/docsify/blob/develop/src/plugins/matomo.js -->
+    <script>
+      function appendScript(options) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = options.host + '/matomo.js';
+        document.body.appendChild(script);
+      }
+
+      function init(options) {
+        window._paq = window._paq || [];
+        window._paq.push(["disableCookies"]); // Call disableCookies before calling trackPageView
+        window._paq.push(['trackPageView']);
+        window._paq.push(['enableLinkTracking']);
+        setTimeout(() => {
+          appendScript(options);
+          window._paq.push(['setTrackerUrl', options.host + '/matomo.php']);
+          window._paq.push(['setSiteId', String(options.id)]);
+        }, 0);
+      }
+
+      function collect() {
+        if (!window._paq) {
+          init($docsify.matomo);
+        }
+
+        window._paq.push(['setCustomUrl', window.location.hash.substr(1)]);
+        window._paq.push(['setDocumentTitle', document.title]);
+        window._paq.push(['trackPageView']);
+      }
+
+      const install = function (hook) {
+        if (!$docsify.matomo) {
+          // eslint-disable-next-line no-console
+          console.error('[Docsify] matomo is required.');
+          return;
+        }
+
+        hook.beforeEach(collect);
+      };
+
+      window.$docsify = window.$docsify || {};
+      $docsify.plugins = [install, ...($docsify.plugins || [])];
+    </script>
   </body>
 </html>
