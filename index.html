@@ -57,6 +57,7 @@
         matomo: {
           host: "//matomo.research.software",
           id: 5,
+          disableCookies: true,
         },
       };
     </script>
@@ -75,7 +76,9 @@
 
       function init(options) {
         window._paq = window._paq || [];
-        window._paq.push(["disableCookies"]); // Call disableCookies before calling trackPageView
+        if (options.disableCookies) {
+          window._paq.push(["disableCookies"]); // Call disableCookies before calling trackPageView
+        }
         window._paq.push(["trackPageView"]);
         window._paq.push(["enableLinkTracking"]);
         setTimeout(() => {
