@@ -55,8 +55,8 @@
         },
         relativePath: true,
         matomo: {
-          host: '//matomo.research.software',
-          id: 5
+          host: "//matomo.research.software",
+          id: 5,
         },
       };
     </script>
@@ -64,24 +64,24 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-     <!-- custom version of Matomo plugin, modified from https://github.com/docsifyjs/docsify/blob/develop/src/plugins/matomo.js -->
+    <!-- custom version of Matomo plugin, modified from https://github.com/docsifyjs/docsify/blob/develop/src/plugins/matomo.js -->
     <script>
       function appendScript(options) {
-        const script = document.createElement('script');
+        const script = document.createElement("script");
         script.async = true;
-        script.src = options.host + '/matomo.js';
+        script.src = options.host + "/matomo.js";
         document.body.appendChild(script);
       }
 
       function init(options) {
         window._paq = window._paq || [];
         window._paq.push(["disableCookies"]); // Call disableCookies before calling trackPageView
-        window._paq.push(['trackPageView']);
-        window._paq.push(['enableLinkTracking']);
+        window._paq.push(["trackPageView"]);
+        window._paq.push(["enableLinkTracking"]);
         setTimeout(() => {
           appendScript(options);
-          window._paq.push(['setTrackerUrl', options.host + '/matomo.php']);
-          window._paq.push(['setSiteId', String(options.id)]);
+          window._paq.push(["setTrackerUrl", options.host + "/matomo.php"]);
+          window._paq.push(["setSiteId", String(options.id)]);
         }, 0);
       }
 
@@ -90,15 +90,15 @@
           init($docsify.matomo);
         }
 
-        window._paq.push(['setCustomUrl', window.location.hash.substr(1)]);
-        window._paq.push(['setDocumentTitle', document.title]);
-        window._paq.push(['trackPageView']);
+        window._paq.push(["setCustomUrl", window.location.hash.substr(1)]);
+        window._paq.push(["setDocumentTitle", document.title]);
+        window._paq.push(["trackPageView"]);
       }
 
       const install = function (hook) {
         if (!$docsify.matomo) {
           // eslint-disable-next-line no-console
-          console.error('[Docsify] matomo is required.');
+          console.error("[Docsify] matomo is required.");
           return;
         }
 
