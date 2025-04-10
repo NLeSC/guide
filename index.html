@@ -84,7 +84,7 @@
       };
 
       // only load Matomo if there's no opt-out cookie:
-      if (document.cookie.indexOf('mtm_consent_removed=') == -1) {
+      if (document.cookie.indexOf("mtm_consent_removed=") == -1) {
         window.$docsify = window.$docsify || {};
         $docsify.plugins = [install, ...($docsify.plugins || [])];
       }
