@@ -10,11 +10,11 @@ programming language but over the last few years it's ecosystem has grown
 considerably and Rust is being adopted as a general programming language.
 
 It is however a **low-level** language, which gives you direct control over
-hardware and memory (like [C/C++](./ccpp)). For comparison, [Python](./python)
+hardware and memory (like [C/C++](./ccpp.md)). For comparison, [Python](./python.md)
 is a **high-level** language that prioritizes readability by abstracting these
 details - in Python you don't ever need to think about cleaning variables from memory,
 but in a **low-level** language you need to manage it yourself. Because Rust
-runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp).
+runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp.md).
 
 Here are some of Rust's key characteristics:
 
