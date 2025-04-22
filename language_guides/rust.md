@@ -3,8 +3,9 @@
 _Page maintainer: [Rodrigo V. Honorato](https://github.com/rvhonorato)_
 
 Rust is a modern programming language designed to provide both high
-performance and designed to provide high performance while enforcing memory. Developed by Mozilla and first released in
-2015, Rust has rapidly gained popularity for its ability to prevent common
+performance while enforcing memory safety through its unique ownership system
+and borrow checker. Developed by Mozilla and first released in 2015,
+Rust has rapidly gained popularity for its ability to prevent common
 programming errors at compile time. It is commonly categorized as a systems
 programming language but over the last few years its ecosystem has grown
 considerably and Rust is being adopted as a general programming language.
@@ -19,7 +20,8 @@ researchers focus on science, not on debugging.
 It is however a **low-level** language, which gives you direct control over
 hardware and memory (like [C/C++](./ccpp.md)). For comparison, [Python](./python.md)
 is a **high-level** language that prioritizes readability by abstracting these
-details - in Python you don't ever need to think about allocating or freeing memory as the interpreter takes care of it, making the code slower but much easier to program.
+details - in Python you don't ever need to think about allocating or freeing
+memory as the interpreter takes care of it, making the code slower but much easier to program.
 In a **low-level** language you need to manage it yourself. Because Rust
 runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp.md)
 while avoiding common memory-safety and concurrency bugs.
