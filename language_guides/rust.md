@@ -9,14 +9,25 @@ programming errors at compile time. It is commonly categorized as a systems
 programming language but over the last few years its ecosystem has grown
 considerably and Rust is being adopted as a general programming language.
 
+Rust is increasingly adopted in **research software** for its unique blend of
+speed, safety, and modern tooling. It powers everything from
+high-throughput DNA sequencing pipelines to climate simulations, where even
+minor memory errors could invalidate results. By eliminating entire classes
+of bugs (e.g., null pointers, race conditions, type mismatches), Rust lets
+researchers focus on science, not on debugging.
+
 It is however a **low-level** language, which gives you direct control over
 hardware and memory (like [C/C++](./ccpp.md)). For comparison, [Python](./python.md)
 is a **high-level** language that prioritizes readability by abstracting these
-details - in Python you don't ever need to think about cleaning variables from memory,
-but in a **low-level** language you need to manage it yourself. Because Rust
-runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp.md).
+details - in Python you don't ever need to think about allocating or freeing memory as the interpreter takes care of it, making the code slower but much easier to program.
+In a **low-level** language you need to manage it yourself. Because Rust
+runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp.md)
+while avoiding common memory-safety and concurrency bugs.
 
 Here are some of Rust's key characteristics:
+
+- **Memory Safety**: Rust's unique ownership system guarantees memory safety at compile
+  time, eliminating crashes from null pointers, dangling references, or leaks.
 
 - **Type Safety**: Strict compile-time checks ensure variables, data types,
   and operations are error-free, so there will be no surprises at runtime.
@@ -35,10 +46,7 @@ Here are some of Rust's key characteristics:
 
 - **Rich Ecosystem**: Tools like [Cargo](https://doc.rust-lang.org/cargo/)
   (package manager), [Clippy](https://doc.rust-lang.org/stable/clippy/usage.html)
-  (linting), and [crates.io](https://crates.io) (libraries) streamline development.
-
-- **Memory Safety**: Rust's unique ownership system guarantees memory safety at compile
-  time, eliminating crashes from null pointers, dangling references, or leaks.
+  (linting), [crates.io](https://crates.io) (libraries) streamline development and [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) (documentation).
 
 ```rust
 // Ownership in action: the compiler tracks who "owns" data.
@@ -58,13 +66,6 @@ fn calculate_length(s: &str) -> usize {
 }
 ```
 
-Rust is increasingly adopted in **research software** for its unique blend of
-speed, safety, and modern tooling. It powers everything from
-high-throughput DNA sequencing pipelines to climate simulations, where even
-minor memory errors could invalidate results. By eliminating entire classes
-of bugs (e.g., null pointers, race conditions, type mismatches), Rust lets
-researchers focus on science, not on debugging.
-
 ## Getting started
 
 To get started you will first need to install Rust, this can be done via [`rustup`](https://rustup.rs)
@@ -76,7 +77,7 @@ On Linux/MacOs:
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
-On Windows, [see the instructions here](https://rust-book.cs.brown.edu/ch01-01-installation.html#installing-rustup-on-windows).
+On Windows, [see the instructions here](https://forge.rust-lang.org/infra/other-installation-methods.html#other-ways-to-install-rustup).
 
 Cargo is Rust's build system and package manager and is installed by `rustup`.
 You can use it to create a project:
@@ -100,17 +101,16 @@ cargo build --release # using --release will build the optimized binary
 It's unique approach to memory management (ownership, borrowing and lifetimes) and
 the strict compiler can feel daunting at fist - especially if you are accustomed
 to high-level languages like [python](./python.md) or [javascript](./javascript.md).
-You **will** wrestle with the borrow checker and some concepts may take time to be
-internalized.
+Learning Rust can be challenging as some new concepts, such as the borrow checker, may take time to be internalized.
 
 > Keep in mind that in the long run all the effort pays off. The code produced
-> will have _fewer bugs_ (thanks to the opinionated compiler), you will learn
+> will be faster while having _fewer bugs_ (thanks to the opinionated compiler), you will learn
 > _transferable skills_ that will make you a better programmer in other
 > languages. The general mindset should be **start small and embrace the compiler**.
 
 To learn it, you only need:
 
-- [The Rust Book](https://rust-book.cs.brown.edu/ch00-00-introduction.html): This
+- [The Rust Book](https://doc.rust-lang.org/book/): This
   is the official book and it is very well written and easy to follow. It contains
   all the information you need to gain a deep understanding of Rust. It contains
   a fully guided tutorial on how to write a Guessing game as your first project.
@@ -121,5 +121,6 @@ To learn it, you only need:
   that will help you get used to the syntax and the concepts of the language -
   it is paired with the book, so you should be doing the exercises as you go
   through the book.
+- [Rust Playground](https://play.rust-lang.org/): Let's you experiment with Rust online in your browser
 
 🦀
