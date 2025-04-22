@@ -2,11 +2,11 @@
 
 _Page maintainer: [Rodrigo V. Honorato](https://github.com/rvhonorato)_
 
-Rust is a modern, programming language designed to provide both high
-performance and robust memory safety. Developed by Mozilla and first released in
+Rust is a modern programming language designed to provide both high
+performance and designed to provide high performance while enforcing memory. Developed by Mozilla and first released in
 2015, Rust has rapidly gained popularity for its ability to prevent common
 programming errors at compile time. It is commonly categorized as a systems
-programming language but over the last few years it's ecosystem has grown
+programming language but over the last few years its ecosystem has grown
 considerably and Rust is being adopted as a general programming language.
 
 It is however a **low-level** language, which gives you direct control over
@@ -53,7 +53,7 @@ fn main() {
     println!("'{}' has length {}", s, len);
 }
 
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &str) -> usize {
     s.len()
 }
 ```
