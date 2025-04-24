@@ -7,6 +7,7 @@
   - [R](/language_guides/r.md)
   - [C and C++](/language_guides/ccpp.md)
   - [Fortran](/language_guides/fortran.md)
+  - [Rust](/language_guides/rust.md)
 - [Technology Guides](/technology/technology_overview.md)
   - [GPU programming](/technology/gpu.md)
   - [UX - User Experience](/technology/user_experience.md)
