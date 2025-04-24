@@ -21,10 +21,11 @@ It is however a **low-level** language, which gives you direct control over
 hardware and memory (like [C/C++](./ccpp.md)). For comparison, [Python](./python.md)
 is a **high-level** language that prioritizes readability by abstracting these
 details - in Python you don't ever need to think about allocating or freeing
-memory as the interpreter takes care of it, making the code slower but much easier to program.
-In a **low-level** language you need to manage it yourself. Because Rust
-runs "closer to the metal", it achieves blazing-fast performance - similar to [C/C++](./ccpp.md)
-while avoiding common memory-safety and concurrency bugs.
+memory as the interpreter takes care of it, making the code slower but much
+easier to program. In a **low-level** language you need to manage it yourself.
+Because Rust runs "closer to the metal", it achieves blazing-fast performance -
+similar to [C/C++](./ccpp.md) while avoiding common memory-safety and
+concurrency bugs.
 
 Here are some of Rust's key characteristics:
 
@@ -48,7 +49,9 @@ Here are some of Rust's key characteristics:
 
 - **Rich Ecosystem**: Tools like [Cargo](https://doc.rust-lang.org/cargo/)
   (package manager), [Clippy](https://doc.rust-lang.org/stable/clippy/usage.html)
-  (linting), [crates.io](https://crates.io) (libraries) streamline development and [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) (documentation).
+  (linting), [crates.io](https://crates.io) (libraries)
+  and [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) (documentation)
+  streamline development.
 
 ```rust
 // Ownership in action: the compiler tracks who "owns" data.
@@ -100,15 +103,17 @@ cargo build --release # using --release will build the optimized binary
 
 ## Learning
 
-It's unique approach to memory management (ownership, borrowing and lifetimes) and
+Its unique approach to memory management (ownership, borrowing and lifetimes) and
 the strict compiler can feel daunting at fist - especially if you are accustomed
 to high-level languages like [python](./python.md) or [javascript](./javascript.md).
-Learning Rust can be challenging as some new concepts, such as the borrow checker, may take time to be internalized.
+Learning Rust can be challenging as some new concepts, such as the borrow checker
+, may take time to be internalized.
 
 > Keep in mind that in the long run all the effort pays off. The code produced
-> will be faster while having _fewer bugs_ (thanks to the opinionated compiler), you will learn
-> _transferable skills_ that will make you a better programmer in other
-> languages. The general mindset should be **start small and embrace the compiler**.
+> will be faster while having _fewer bugs_ (thanks to the opinionated compiler),
+> you will learn _transferable skills_ that will make you a better programmer
+> in other languages. The general mindset should be **start small and embrace
+> the compiler**.
 
 To learn it, you only need:
 
@@ -123,6 +128,7 @@ To learn it, you only need:
   that will help you get used to the syntax and the concepts of the language -
   it is paired with the book, so you should be doing the exercises as you go
   through the book.
-- [Rust Playground](https://play.rust-lang.org/): Let's you experiment with Rust online in your browser
+- [Rust Playground](https://play.rust-lang.org/): Lets you experiment with Rust
+  online in your browser
 
 🦀
