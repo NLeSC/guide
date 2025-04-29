@@ -22,7 +22,7 @@ jobs:
         run: npm install @iomeg/zenodo-upload
 
       - name: Pull Docker image
-        run: docker pull ghcr.io/kernoeb/docker-docsify-pdf:latest
+        run: docker pull ghcr.io/kernoeb/docker-docsify-pdf:main
 
       - name: Generate PDF using the Docker image
         run: |
@@ -32,7 +32,8 @@ jobs:
             -v "${{ github.workspace }}/images/pdf-cover.pdf":/home/node/resources/cover.pdf:rw \
             --user $(id -u):$(id -g) \
             -e "PDF_OUTPUT_NAME=guide-nlesc.pdf" \
-            ghcr.io/kernoeb/docker-docsify-pdf:latest
+            -e "NO_SANDBOX=true" \
+            ghcr.io/kernoeb/docker-docsify-pdf:main
 
       - name: Upload PDF as an artifact
         if: always()
