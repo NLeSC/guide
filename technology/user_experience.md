@@ -4,7 +4,7 @@ _Page maintainer: Jesus Garcia_ [@ctwhome](https://github.com/ctwhome)
 
 User Experience Design (UX) is a broad, holistic science that combines many cognitive and brain sciences disciplines like psychology and sociology, content strategies, and arts and aesthetics by following human-center approaches.
 
-> Human-centred design is an approach to interactive systems development that aims to make systems usable and useful by focusing on the users, their needs and requirements, and applying human factors/ergonomics and usability knowledge and techniques. This approach enhances effectiveness and efficiency, improves human well-being, user satisfaction, accessibility, sustainability, and counteracts possible adverse effects on human health, safety, and performance. [HCDSociety](https://human-centered-design.org/about/)
+> Human-centred design is an approach to interactive systems development that aims to make systems usable and useful by focusing on the users, their needs and requirements, and applying human factors/ergonomics and usability knowledge and techniques. This approach enhances effectiveness and efficiency, improves human well-being, user satisfaction, accessibility, sustainability, and counteracts possible adverse effects on human health, safety, and performance. [Wikipedia](https://en.wikipedia.org/wiki/Human-centered_design)
 
 ## Table of content
 
