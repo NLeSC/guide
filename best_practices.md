@@ -12,7 +12,7 @@ Great examples can be found via [FAIR Software NL](https://fair-software.nl/reco
 
 Use a version control tool like `git` to track changes in your codebase.
 This allows you to retrace your steps when debugging, keep your repository clean, easily collaborate with others asynchronously and more.
-More info: [The Turing Way chapter on Version Control](https://book.the-turing-way.org/reproducible-research/vcs), [RSQkit chapter on Version Control](http://everse.software/RSQKit/version_control).
+More info: [The Turing Way chapter on Version Control](https://book.the-turing-way.org/reproducible-research/vcs), [RSQkit chapter on Version Control](http://everse.software/RSQKit/using_version_control).
 
 **At the Netherlands eScience Center:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees)).
 
@@ -74,7 +74,7 @@ For more information you can also [read here](https://github.com/the-turing-way/
 Releases are a way to mark or point to a particular milestone in software development.
 This is useful for users and collaborators, e.g. I found a bug running version x.
 For publications that refer to software, refering to a specific release enhances the reproducability.
-See [the RSQkit task on Creating code releases](http://everse.software/RSQKit/releasing_code) for the most essential guidelines.
+See [the RSQkit task on Creating code releases](http://everse.software/RSQKit/releasing_software) for the most essential guidelines.
 The Turing Way offers many related tips in their [chapter on Making Research Objects Citable](https://book.the-turing-way.org/communication/citable), like how to make code citable with CITATION.CFF files.
 
 ## Packaging
