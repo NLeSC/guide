@@ -3,17 +3,17 @@
 
 cff-version: 1.2.0
 title: Software Development Guide
-message: 'If you use this guide, please cite it.'
+message: "If you use this guide, please cite it."
 type: software
 authors:
   - affiliation: Netherlands eScience Center
     family-names: Drost
     given-names: Niels
-    orcid: 'https://orcid.org/0000-0001-9795-7981'
+    orcid: "https://orcid.org/0000-0001-9795-7981"
   - affiliation: Netherlands eScience Center
     family-names: Spaaks
     given-names: Jurriaan H.
-    orcid: 'https://orcid.org/0000-0002-7064-4069'
+    orcid: "https://orcid.org/0000-0002-7064-4069"
   - affiliation: Netherlands eScience Center
     family-names: Andela
     given-names: Bouwe
@@ -24,44 +24,44 @@ authors:
     family-names: Zwaan
     name-particle: van der
     given-names: Janneke M.
-    orcid: 'https://orcid.org/0000-0002-8329-7000'
+    orcid: "https://orcid.org/0000-0002-8329-7000"
   - affiliation: Netherlands eScience Center
     family-names: Verhoeven
     given-names: Stefan
-    orcid: 'https://orcid.org/0000-0002-5821-2060'
+    orcid: "https://orcid.org/0000-0002-5821-2060"
   - affiliation: Netherlands eScience Center
     family-names: Bos
     given-names: Patrick
   - family-names: Kuzak
     given-names: Mateusz
-    orcid: 'https://orcid.org/0000-0003-0087-6021'
+    orcid: "https://orcid.org/0000-0003-0087-6021"
   - affiliation: Netherlands eScience Center
     family-names: Werkhoven
     name-particle: van
     given-names: Ben
-    orcid: 'https://orcid.org/0000-0002-7508-3272'
+    orcid: "https://orcid.org/0000-0002-7508-3272"
   - affiliation: Netherlands eScience Center
     family-names: Attema
     given-names: Jisk
-    orcid: 'https://orcid.org/0000-0002-0948-1176'
+    orcid: "https://orcid.org/0000-0002-0948-1176"
   - affiliation: Netherlands eScience Center
     family-names: Hidding
     given-names: Johannes
   - family-names: Hees
     name-particle: van
     given-names: Vincent
-    orcid: 'https://orcid.org/0000-0003-0182-9008'
+    orcid: "https://orcid.org/0000-0003-0182-9008"
   - affiliation: Netherlands eScience Center
     family-names: Martinez-Ortiz
     given-names: Carlos
-    orcid: 'https://orcid.org/0000-0001-5565-7577'
+    orcid: "https://orcid.org/0000-0001-5565-7577"
   - affiliation: Netherlands eScience Center
     family-names: Spreeuw
     given-names: Hanno
-    orcid: 'https://orcid.org/0000-0002-5057-0322'
+    orcid: "https://orcid.org/0000-0002-5057-0322"
   - family-names: Borgdorff
     given-names: Joris
-    orcid: 'https://orcid.org/0000-0001-7911-9490'
+    orcid: "https://orcid.org/0000-0001-7911-9490"
   - family-names: Leinweber
     given-names: Katrin
   - affiliation: Netherlands eScience Center
@@ -74,11 +74,11 @@ authors:
   - affiliation: Netherlands eScience Center
     family-names: Goncalves
     given-names: Romulo
-    orcid: 'https://orcid.org/0000-0003-2225-1428'
+    orcid: "https://orcid.org/0000-0003-2225-1428"
   - affiliation: Netherlands eScience Center
     family-names: Kuzniar
     given-names: Arnold
-    orcid: 'https://orcid.org/0000-0003-1711-7961'
+    orcid: "https://orcid.org/0000-0003-1711-7961"
   - affiliation: Netherlands eScience Center
     family-names: Kuppevelt
     name-particle: van
@@ -92,11 +92,11 @@ authors:
   - affiliation: Netherlands eScience Center
     family-names: Maassen
     given-names: Jason
-    orcid: 'https://orcid.org/0000-0002-8172-4865'
+    orcid: "https://orcid.org/0000-0002-8172-4865"
   - affiliation: Netherlands eScience Center
     family-names: Rodríguez-Sánchez
     given-names: Pablo
-    orcid: 'https://orcid.org/0000-0002-2855-940X'
+    orcid: "https://orcid.org/0000-0002-2855-940X"
   - affiliation: Netherlands eScience Center
     family-names: Klaver
     given-names: Tom
@@ -104,11 +104,11 @@ authors:
     family-names: Hage
     name-particle: van
     given-names: Willem Robert
-    orcid: 'https://orcid.org/0000-0002-6478-3003'
+    orcid: "https://orcid.org/0000-0002-6478-3003"
   - affiliation: Netherlands eScience Center
     family-names: Zapata
     given-names: Felipe
-    orcid: 'https://orcid.org/0000-0001-8286-677X'
+    orcid: "https://orcid.org/0000-0001-8286-677X"
   - affiliation: Netherlands eScience Center
     family-names: Bakker
     given-names: Tom
@@ -116,7 +116,7 @@ authors:
     family-names: Rijn
     name-particle: van
     given-names: Sander
-    orcid: 'https://orcid.org/0000-0001-6159-041X'
+    orcid: "https://orcid.org/0000-0001-6159-041X"
   - affiliation: Journal of Open Source Software
     family-names: Niemeyer
     given-names: Kyle
@@ -148,7 +148,7 @@ authors:
   - affiliation: Netherlands eScience Center
     family-names: Isazi
     given-names: Alessio
-  - affiliation: 'Datadog, Inc.'
+  - affiliation: "Datadog, Inc."
     family-names: Lev
     given-names: Ofek
   - affiliation: Netherlands eScience Center
@@ -166,12 +166,12 @@ authors:
   - affiliation: Netherlands eScience Center
     family-names: Kasalica
     given-names: Vedran
-    orcid: 'https://orcid.org/0000-0002-0097-1056'
+    orcid: "https://orcid.org/0000-0002-0097-1056"
   - affiliation: Utrecht University
     family-names: Vargas Honorato
     given-names: Rodrigo
-    orcid: 'https://orcid.org/0000-0001-5267-3002'
-repository-code: 'https://github.com/NLeSC/guide'
+    orcid: "https://orcid.org/0000-0001-5267-3002"
+repository-code: "https://github.com/NLeSC/guide"
 abstract: >-
   This is a guide to software development and projects at
   the Netherlands eScience Center. It both serves as a
@@ -179,5 +179,5 @@ abstract: >-
   eScience Center, and as a basis for discussions and
   reaching consensus on this topic.
 license: CC-BY-4.0
-version: '2019-08-07'
-date-released: '2019-08-07'
+version: "2019-08-07"
+date-released: "2019-08-07"
