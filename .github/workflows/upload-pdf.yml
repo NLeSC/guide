@@ -1,0 +1,49 @@
+# Generates a PDF for the full guide and uploads it to Zenodo
+## This action triggers when there is a new release of the guide
+## Manual release of this action also triggers upload to the Zenodo Sandbox
+name: Generate PDF
+on:
+  # Trigger manually via the Actions tab
+  workflow_dispatch:
+  # Trigger when you publish a release via GitHub's release page
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout the contents of your repository
+          uses: actions/checkout@v4
+
+        - name: Change absolute paths to relative
+          run: perl -pi -e 's@\]\(\/@\]\(@' _sidebar.md
+  
+        - name: Pull Docker image
+          run: docker pull ghcr.io/kernoeb/docker-docsify-pdf:main
+
+        - name: Generate PDF using the Docker image
+          run: |
+            docker run --rm --privileged \
+              -v "${{ github.workspace }}/":/home/node/docs:rw \
+              -v "${{ github.workspace }}/":/home/node/pdf:rw \
+              -v "${{ github.workspace }}/images/pdf-cover.pdf":/home/node/resources/cover.pdf:rw \
+              --user $(id -u):$(id -g) \
+              -e "PDF_OUTPUT_NAME=guide-nlesc.pdf" \
+              -e "NO_SANDBOX=true" \
+              ghcr.io/kernoeb/docker-docsify-pdf:main
+           
+        - name: Create a draft snapshot of your repository contents as a new
+                version in concept 14965744 on Zenodo Sandbox using metadata
+                from repository file .zenodo.json
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
+          uses: zenodraft/action@0.13.3
+          with:
+            concept: 14965744
+            metadata: .zenodo.json
+            publish: false
+            sandbox: true
+            filenames: guide-nlesc.pdf
