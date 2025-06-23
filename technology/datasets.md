@@ -25,7 +25,6 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
 
 - DuckDB can also create views (virtual tables) from other sources like files, other databases, but with SQLite you always have to import the data before running any queries.
 - DuckDB is multi-threaded. This can be an advantage for large databases, where aggregation queries tend to be faster than sqlite.
-
   - However if you have a really large dataset, say 100Ms of rows, and want to perform a deeply nested query, it would require substantial amount of memory, making it unfeasible to run on personal laptops.
   - There are options to customize memory handling, and push what is possible on a single machine.
 
@@ -44,7 +43,6 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
   Note, if your query is deeply nested, you should have sufficient disk space for DuckDB to use; e.g. for 4 nested levels of `INNER JOIN` combined with a `GROUP BY`, we observed a disk spill over of 30x the original dataset. However we found this was not always reliable.
 
   In this kind of borderline cases, it might be possible to address the limitation by splitting the workload into chunks, and aggregating later, or by considering one of the alternatives mentioned below.
-
   - You can also optimize the queries for DuckDB, but that requires a deeper dive into the documentation, and understanding how DuckDB query optimisation works.
 
 - Both databases support setting (unique) indexes. Indexes are useful and sometimes necessary
