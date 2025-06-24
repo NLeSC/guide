@@ -42,7 +42,7 @@ jobs:
           ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
         uses: zenodraft/action@0.13.3
         with:
-          concept: 14965744
+          # concept: 14965744 # must be replaced when the record has been created the first time
           metadata: .zenodo.json
           publish: false
           sandbox: true
