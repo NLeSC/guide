@@ -34,9 +34,9 @@ jobs:
             -e "NO_SANDBOX=true" \
             ghcr.io/kernoeb/docker-docsify-pdf:main
 
-      - name: Create a draft snapshot of your repository contents as a new
-          version in concept 14965744 on Zenodo Sandbox using metadata
+      - name: Create a draft snapshot on Zenodo Sandbox using metadata
           from repository file .zenodo.json
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
@@ -46,4 +46,17 @@ jobs:
           metadata: .zenodo.json
           publish: false
           sandbox: true
+          filenames: guide-nlesc.pdf
+
+      - name: Create a new snapshot in the Zenodo record
+        if: github.event_name == 'release'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
+        uses: zenodraft/action@0.13.3
+        with:
+          concept: 4020622
+          metadata: .zenodo.json
+          publish: false  # let the user press the publish button manually
+          sandbox: false
           filenames: guide-nlesc.pdf
