@@ -57,6 +57,6 @@ jobs:
         with:
           concept: 4020622
           metadata: .zenodo.json
-          publish: false  # let the user press the publish button manually
+          publish: false # let the user press the publish button manually
           sandbox: false
           filenames: guide-nlesc.pdf
