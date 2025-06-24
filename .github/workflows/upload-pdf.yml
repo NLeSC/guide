@@ -1,7 +1,7 @@
 # Generates a PDF for the full guide and uploads it to Zenodo
 ## This action triggers when there is a new release of the guide
 ## Manual release of this action also triggers upload to the Zenodo Sandbox
-name: Generate PDF
+name: Generate PDF and upload to Zenodo
 on:
   # Trigger manually via the Actions tab
   workflow_dispatch:
