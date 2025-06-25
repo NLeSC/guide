@@ -54,7 +54,6 @@ jobs:
           sandbox: true
           filenames: guide-nlesc.pdf
           metadata: .zenodo.json
-          verbose: true
 
       - name: Create a new snapshot in the Zenodo record
         if: github.event_name == 'release'
