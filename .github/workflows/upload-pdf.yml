@@ -63,9 +63,9 @@ jobs:
           ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
         uses: zenodraft/action@0.13.3
         with:
-          # N.B.: the actual concept ID of the guide is 4020622!
+          # N.B.: the actual first concept ID of the guide is 4020564!
           # The -1 is a workaround for https://github.com/zenodraft/action/issues/30
-          concept: 4020621
+          concept: 4020563
           publish: false # let the user press the publish button manually
           sandbox: false
           filenames: guide-nlesc.pdf
