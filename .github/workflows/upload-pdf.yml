@@ -61,7 +61,7 @@ jobs:
           ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
         uses: zenodraft/action@0.13.3
         with:
-          concept: 4020564
+          concept: 4020563
           publish: false # let the user press the publish button manually
           sandbox: false
           filenames: guide-nlesc.pdf
