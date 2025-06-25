@@ -47,7 +47,7 @@ jobs:
         uses: zenodraft/action@0.13.3
         with:
           concept:
-            277497 # doesn't matter which it is, it is only for testing
+            277498 # doesn't matter which it is, it is only for testing
             # N.B.: the actual Sandbox concept ID of the guide is 277498!
             # The -1 is a workaround for https://github.com/zenodraft/action/issues/30
           publish: false
