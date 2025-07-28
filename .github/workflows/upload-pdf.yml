@@ -39,23 +39,21 @@ jobs:
         with:
           args: "--format zenodo --outfile .zenodo.json"
 
-      # - name: Create a draft snapshot on Zenodo Sandbox
-      #   if: github.event_name == 'workflow_dispatch'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
-      #   uses: zenodraft/action@0.13.3
-      #   with:
-      #     concept:
-      #       277497 # doesn't matter which it is, it is only for testing
-      #     publish: false
-      #     sandbox: true
-      #     filenames: guide-nlesc.pdf
-      #     metadata: .zenodo.json
-
-      - name: Create a new snapshot in the Zenodo record
-        # if: github.event_name == 'release'
+      - name: Create a draft snapshot on Zenodo Sandbox
         if: github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
+        uses: zenodraft/action@0.13.3
+        with:
+          concept: 277497 # doesn't matter which it is, it is only for testing
+          publish: false
+          sandbox: true
+          filenames: guide-nlesc.pdf
+          metadata: .zenodo.json
+
+      - name: Create a new draft snapshot in the Zenodo record
+        if: github.event_name == 'release'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
@@ -66,4 +64,3 @@ jobs:
           sandbox: false
           filenames: guide-nlesc.pdf
           metadata: .zenodo.json
-          verbose: true
