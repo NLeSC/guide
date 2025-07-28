@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Software Development Guide
+title: Netherlands eScience Center - Software Development Guide
 message: "If you use this guide, please cite it."
 type: software
 authors:
@@ -32,6 +32,7 @@ authors:
   - affiliation: Netherlands eScience Center
     family-names: Bos
     given-names: Patrick
+    orcid: "https://orcid.org/0000-0002-6033-960X"
   - family-names: Kuzak
     given-names: Mateusz
     orcid: "https://orcid.org/0000-0003-0087-6021"
