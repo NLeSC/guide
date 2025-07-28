@@ -249,7 +249,6 @@ If you use another editor, perhaps it is more convenient to pick another service
 - List of other available software can be found on the [Python wiki page on debugging tools](https://wiki.python.org/moin/PythonDebuggingTools).
 
 - If you are looking for some tutorials to get started:
-
   - https://pymotw.com/2/pdb
   - https://github.com/spiside/pdb-tutorial
   - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
