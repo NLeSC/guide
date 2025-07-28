@@ -47,7 +47,7 @@ jobs:
           ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
         uses: egpbos/zenodraft-action@output_version_id
         with:
-          concept: 277497 # doesn't matter which it is, it is only for testing
+          concept: 3000000 # doesn't matter which it is, it is only for testing
           publish: false
           sandbox: true
           filenames: guide-nlesc.pdf
