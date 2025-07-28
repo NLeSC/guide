@@ -41,16 +41,21 @@ jobs:
 
       - name: Create a draft snapshot on Zenodo Sandbox
         if: github.event_name == 'workflow_dispatch'
+        id: zenodraft_sandbox
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_SANDBOX_ACCESS_TOKEN: ${{ secrets.ZENODO_SANDBOX_ACCESS_TOKEN }}
-        uses: zenodraft/action@0.13.3
+        uses: egpbos/zenodraft-action@output_version_id
         with:
           concept: 277497 # doesn't matter which it is, it is only for testing
           publish: false
           sandbox: true
           filenames: guide-nlesc.pdf
           metadata: .zenodo.json
+
+      - name: NICE OUTPUT TEST
+        if: github.event_name == 'workflow_dispatch'
+        run: echo "Review your draft and publish at https://sandbox.zenodo.org/uploads/${{ steps.zenodraft_sandbox.outputs.version_id }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Create a new draft snapshot in the Zenodo record
         if: github.event_name == 'release'
