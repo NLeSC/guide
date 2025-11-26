@@ -6,7 +6,7 @@ jobs:
     outputs:
       files: ${{ steps.changed-markdown-files.outputs.all_changed_files }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Get changed markdown files
         id: changed-markdown-files
         uses: tj-actions/changed-files@v46
@@ -25,7 +25,7 @@ jobs:
         file: ${{ fromJSON(needs.changedFiles.outputs.files) }}
       fail-fast: false
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 2
       - name: download Lychee
