@@ -172,6 +172,10 @@ authors:
     family-names: Vargas Honorato
     given-names: Rodrigo
     orcid: "https://orcid.org/0000-0001-5267-3002"
+  - affiliation: Netherlands eScience Center
+    family-names: Bakhshi
+    given-names: Rena
+    orcid: "https://orcid.org/0000-0002-2932-3028"
 repository-code: "https://github.com/NLeSC/guide"
 abstract: >-
   This is a guide to software development and projects at
