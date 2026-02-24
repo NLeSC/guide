@@ -14,7 +14,7 @@ Use a version control tool like `git` to track changes in your codebase.
 This allows you to retrace your steps when debugging, keep your repository clean, easily collaborate with others asynchronously and more.
 More info: [The Turing Way chapter on Version Control](https://book.the-turing-way.org/reproducible-research/vcs), [RSQkit chapter on Version Control](http://everse.software/RSQKit/using_version_control).
 
-**At the Netherlands eScience Center:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees)).
+**At the Netherlands eScience Center:** we always use version control and we preferably use GitHub as our online repository and collaboration platform (see the [Project Management Protocol of the Netherlands eScience Center](https://doi.org/10.5281/zenodo.17117777).
 
 ## Testing
 
@@ -61,7 +61,7 @@ Since source code is protected by copyright, to allow people to use your code it
 For more information, see [The Turing Way chapter on licensing](https://the-turing-way.netlify.app/reproducible-research/licensing) or the [RSQkit Licensing software task](http://everse.software/RSQKit/licensing_software).
 
 **At the Netherlands eScience Center:** our first choice is the Apache v2 license.
-See the [Project Management Protocol on our intranet](https://nlesc.sharepoint.com/sites/home/SitePages/Project-procedures.aspx) (only accessible to Netherlands eScience Center employees) for more details on licensing and our intellectual property policies.
+See the [our Project Management Protocol](https://doi.org/10.5281/zenodo.17117777) for more details on licensing and our intellectual property policies.
 
 ## Software management plans
 
