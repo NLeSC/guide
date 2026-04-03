@@ -15,7 +15,7 @@ The latest ratified standard of C++ is C++17. The first standardised version of 
 There are two main-stream open-source C++ compilers.
 
 - [GCC](https://gcc.gnu.org/)
-- [LLVM - CLANG](http://llvm.org/)
+- [LLVM - CLANG](https://llvm.org/)
 
 Overall, these compilers are more or less similar in terms of features, language support, compile times and (perhaps most importantly) performance of the generated binaries.
 The generated binary performance does differ for specific algorithms.
@@ -44,8 +44,8 @@ And linker flags:
 
 ### Interpreter
 
-There **is** a C++ interpreter called [Cling](https://rawgit.com/vgvassilev/cling/master/www/index.html).
-This also comes with a [Jupyter notebook kernel](http://jupyter.org/try).
+There **is** a C++ interpreter called [Cling](https://rawcdn.githack.com/root-project/cling/master/www/index.html).
+This also comes with a [Jupyter notebook kernel](https://jupyter.org/try).
 
 ### Build systems
 
@@ -53,7 +53,7 @@ There are several build systems that handle C/C++.
 Currently, [the CMake system is most popular](https://www.jetbrains.com/research/devecosystem-2018/cpp/).
 It is not actually a build system itself; it generates build files based on (in theory) platform-independent and compiler-independent configuration files.
 It can generate Makefiles, but also [Ninja](https://ninja-build.org/) files, which gives much faster build times, NMake files for Windows and more.
-Some popular IDEs keep automatic count for CMake, or are even completely built around it ([CLion](http://www.jetbrains.com/clion/)).
+Some popular IDEs keep automatic count for CMake, or are even completely built around it ([CLion](https://www.jetbrains.com/clion/)).
 The major drawback of CMake is the confusing documentation, but this is generally made up for in terms of community support.
 When Googling for ways to write your CMake files, make sure you look for "modern CMake", which is a style that has been gaining traction in the last few years and makes everything better (e.g. dependency management, but also just the CMake files themselves).
 
@@ -70,7 +70,7 @@ With either one of these two (CMake or Autotools), any moderately experienced us
 There are many other systems.
 Microsoft Visual Studio has its own project model / build system and a library like Qt also forces its own build system on you.
 We do not recommend these if you don't also supply an option for building with CMake or Autotools.
-Another modern alternative that has been gaining attention mainly in the GNU/Gnome/Linux world is [Meson](http://mesonbuild.com/), which is also based on [Ninja](https://ninja-build.org/).
+Another modern alternative that has been gaining attention mainly in the GNU/Gnome/Linux world is [Meson](https://mesonbuild.com/), which is also based on [Ninja](https://ninja-build.org/).
 
 ### Package management
 
@@ -111,7 +111,7 @@ You can point `pkg-config` to your additional libraries by setting the `PKG_CONF
 This also helps for instance when trying to automatically locate dependencies from CMake, which has `pkg-config` support as a fallback for when libraries don't support CMake's `find_package`.
 
 If you want to keep things organized on systems where you use multiple versions of the same software for different projects, a simple solution is to use something like `xstow`.
-[XStow](http://xstow.sourceforge.net/) is a poor-mans package manager.
+[XStow](https://xstow.sourceforge.net/) is a poor-mans package manager.
 You install each library in its own directory (`~/.local/pkg/<package>` for instance), then running `xstow` will create symlinks to the files in the `~/.local` directory (one above the XStow package directory).
 Using XStow in this way alows you to keep a single additional search path when compiling your next library.
 
@@ -168,7 +168,7 @@ People of this persuasion would usually recommend any of the following editors:
   - [editorconfig](https://github.com/editorconfig/editorconfig-vim)
   - [stl.vim](https://www.vim.org/scripts/script.php?script_id=4293) adds STL to syntax highlighting
   - [Syntastic](https://github.com/scrooloose/syntastic)
-  - Integrated debugging using [Clewn](http://clewn.sourceforge.net/)
+  - Integrated debugging using [Clewn](https://clewn.sourceforge.net/)
 - Emacs:
   - Has GDB mode for debugging.
 - More modern editors: Atom / Sublime Text / VS Code
@@ -190,7 +190,7 @@ C++ (and C) compilers come with built in linters and tools to check that your pr
 
 #### Automatic Formatting with clang-format
 
-While most IDEs and some editors offer automatic formatting of files, [clang-format](http://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines.
+While most IDEs and some editors offer automatic formatting of files, [clang-format](https://clang.llvm.org/docs/ClangFormat.html) is a standalone tool, which offers sensible defaults and a huge range of customisation options. Integrating it into the CI workflow guarantees that checked in code adheres to formatting guidelines.
 
 #### Static code analysis with GCC
 
@@ -240,7 +240,7 @@ which is a fast memory error detector. There are also other options available li
 
 #### Dynamic program analysis using the valgrind suite of tools
 
-The [valgrind suite of tools](http://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
+The [valgrind suite of tools](https://valgrind.org/info/tools.html) has tools similar to what is provided by the `-fsanitize` compiler flag as well as various profiling tools. Using the valgrind tool memcheck to detect memory errors is typically slower than using compiler provided option, so this might be something you will want to do less often. You will probably want to compile your code with debug symbols enabled (`-g`) in order to get useful output with memcheck. When using the profilers, keep in mind that a [statistical profiler](https://en.wikipedia.org/wiki/Profiling_%28computer_programming%29#Statistical_profilers) may give you more realistic results.
 
 ### Automated code refactoring
 
@@ -273,7 +273,7 @@ These can typically be installed from a wide range of [package managers](#packag
 These scientific libraries are well known, widely used and have a lot of good online documentation.
 
 - [GNU Scientific library (GSL)](https://www.gnu.org/software/gsl/doc/html/index.html)
-- [FFTW](http://www.fftw.org): Fastest Fourier Transform in the West
+- [FFTW](https://www.fftw.org/): Fastest Fourier Transform in the West
 - [OpenMPI](https://www.open-mpi.org). Use with caution, since it will strongly define the structure of your code, which may or may not be desirable.
 
 ### Boost
@@ -288,7 +288,7 @@ As a general rule, don't use Boost when there is equivalent STL functionality.
 
 ### xtensor
 
-[xtensor](http://github.com/xtensor-stack/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
+[xtensor](https://github.com/xtensor-stack/xtensor) is a modern (C++14) N-dimensional tensor (array, matrix, etc) library for numerical work in the style of Python's NumPy.
 It aims for maximum performance (and in most cases it succeeds) and has an active development community.
 This library features, among other things:
 
@@ -313,7 +313,7 @@ This library features, among other things:
 ### Parallel processing
 
 - [oneAPI Threading Building Blocks](https://oneapi-src.github.io/oneTBB/) (oneTBB): template library for task parallelism
-- [ZeroMQ](http://zeromq.org): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
+- [ZeroMQ](https://zeromq.org/): lower level flexible communication library with a unified interface for message passing between threads and processes, but also between separate machines via TCP.
 
 ## Style
 
@@ -321,7 +321,7 @@ This library features, among other things:
 
 Good style is not just about layout and linting on trailing whitespace. It will mean the difference between a blazing fast code and a broken one.
 
-- [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [Guidelines Support Library](https://github.com/Microsoft/GSL)
 - [Google Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Google Style Guide - github](https://github.com/google/styleguide) Contains the CppLint linter.
@@ -343,18 +343,18 @@ IDE.
 
 ### Documentation
 
-Use [Doxygen](http://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
+Use [Doxygen](https://www.doxygen.nl/). It is the de-facto standard way of inlining documentation into comment sections of your code. The output is very ugly. Mini-tutorial: run `doxygen -g` (preferably inside a `doc` folder) in a new project to set things up, from then on, run `doxygen` to (re-)generate the documentation.
 
-A newer but less mature option is [cldoc](http://jessevdk.github.io/cldoc/).
+A newer but less mature option is [cldoc](https://jessevdk.github.io/cldoc/).
 
 ## Resources
 
 ### Online
 
 - [CppCon videos](https://www.youtube.com/user/CppCon): Many really good talks recorded at the various CppCon meetings.
-- [CppReference.com](http://en.cppreference.com/w/)
+- [CppReference.com](https://en.cppreference.com/w/)
 - [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/)
-- [CPlusPlus.com](http://www.cplusplus.com/)
+- [CPlusPlus.com](https://cplusplus.com/)
 - [Modern C++, according to Microsoft](https://msdn.microsoft.com/en-us/library/hh279654.aspx)
 
 ### Books

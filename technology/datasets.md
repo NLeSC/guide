@@ -65,7 +65,7 @@ SQLite is a transactional database, so if you have a dataset that is changing wi
 - Polars
   - An alternative to Pandas (started in 2020), which is primarily written in Rust. Compared to pandas, it is multi-threaded and does lazy evaluation with query optimisation, so much more performant. However since it is newer, documentation is not as complete. It also allows you to write your own custom extensions in Rust.
 - [Apache Datafusion](https://datafusion.apache.org/)
-  - A very fast, extensible query engine for building high-quality data-centric systems in [Rust](http://rustlang.org/), using the [Apache Arrow](https://arrow.apache.org/) in-memory format. DataFusion offers SQL and Dataframe APIs, excellent [performance](https://benchmark.clickhouse.com/), built-in support for CSV, Parquet, JSON, and Avro, extensive customization, and a great community.
+  - A very fast, extensible query engine for building high-quality data-centric systems in [Rust](https://rust-lang.org/), using the [Apache Arrow](https://arrow.apache.org/) in-memory format. DataFusion offers SQL and Dataframe APIs, excellent [performance](https://benchmark.clickhouse.com/), built-in support for CSV, Parquet, JSON, and Avro, extensive customization, and a great community.
 
 ## Distributed/multi-node data processing libraries
 

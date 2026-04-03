@@ -10,7 +10,7 @@ R is a functional programming language and software environment for statistical 
 
 R is particularly popular in the social, health, and biological sciences where it is used for statistical modeling. R can also be used for signal processing (e.g. FFT), machine learning, image analyses, and natural language processing. The R syntax is similar to that of Matlab and Python in terms of compactness and readability, which makes it a good prototyping language for science.
 
-One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](http://rug.mnhn.fr/seewave/) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](http://cran.r-project.org).
+One of the strengths of R is the large number of available open source statistical packages, often developed by domain experts. For example, R-package [Seewave](https://jeromeecoac.r-universe.dev/seewave) is specialised in sound analyses. Packages are typically released on CRAN [The Comprehensive R Archive Network](https://cran.r-project.org/).
 
 ### Some crucial differences with Python
 
@@ -24,13 +24,13 @@ If you prefer books, consider the following resources:
 
 - [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham,
 - [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham,
-- [Writing better R code](http://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto.
+- [Writing better R code](https://www.bioconductor.org/help/course-materials/2013/CSAMA2013/friday/afternoon/R-programming.pdf) by Laurent Gatto.
 
 ## Getting started
 
 ### Setting up R
 
-To install R check detailed description at [CRAN website](http://cran.r-project.org).
+To install R check detailed description at [CRAN website](https://cran.r-project.org/).
 
 #### IDE
 
@@ -46,7 +46,7 @@ Within RStudio you can work on ad-hoc code or create a project. Compared with Py
 
 ### Installing compilers and runtimes
 
-Not needed as most functions in R are already compiled in C, nevertheless R has compiling functionality as described in the [R manual](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html). See [overview by Hadley Wickham](http://r-pkgs.had.co.nz/src.html).
+Not needed as most functions in R are already compiled in C, nevertheless R has compiling functionality as described in the [R manual](https://stat.ethz.ch/R-manual/R-devel/library/compiler/html/compile.html). See [overview by Hadley Wickham](https://r-pkgs.org/setup.html#setup-tools).
 
 ## Coding style conventions
 
@@ -97,7 +97,7 @@ Here we give you a list of usual packages, starting by one solving the first pro
 
 For a generic impression about plotting with R, see: https://www.r-graph-gallery.com/all-graphs
 
-The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. There is a [Statmethods.net tutorial with some examples of plotting options in R](http://www.statmethods.net/graphs/index.html).
+The basic R installation comes with a wide range of functions to plot data to a window on your screen or to a file. If you need to quickly inspect your data or create a custom-made static plot then the basic functions offer the building blocks to do the job. There is a [DataCamp overview of different graphing options](https://www.datacamp.com/doc/r/category/graphs).
 
 However, externally contributed plotting packages may offer easier syntax or convenient templates for creating plots. The most popular and powerful contributed graphics package is [ggplot2](https://ggplot2.tidyverse.org/). Interactive plots can be made with [ggvis](https://github.com/rstudio/ggvis) package and embeded in web application, and this [tutorial](https://www.statmethods.net/advgraphs/ggplot2.html).
 
@@ -113,7 +113,7 @@ Thanks to [shiny.app](https://shiny.posit.co/) it is possible to make interactiv
 
 ### Preparing data for analysis
 
-There are packages that ease tidying up messy data, e.g. [tidyr](https://github.com/hadley/tidyr) and [reshape2](https://github.com/hadley/reshape). The idea of tidy and messy data is explained in a [tidy data](http://vita.had.co.nz/papers/tidy-data.html) paper by Hadley Wickham. There is also the google group [manipulatr](https://groups.google.com/forum/#!forum/manipulatr) to discuss topics related to data manipulation in R.
+There are packages that ease tidying up messy data, e.g. [tidyr](https://github.com/hadley/tidyr) and [reshape2](https://github.com/hadley/reshape). The idea of tidy and messy data is explained in a [tidy data](https://vita.had.co.nz/papers/tidy-data.html) paper by Hadley Wickham.
 
 ### Speeding up code
 
@@ -137,12 +137,12 @@ For a deeper introduction to the many optimization methods, check the free ebook
 
 ### Building R packages
 
-There is a great tutorial written by Hadley Wickam describing all the nitty gritty of building your own package in R. It's called [R packages](http://r-pkgs.had.co.nz).
+There is a great tutorial written by Hadley Wickam describing all the nitty gritty of building your own package in R. It's called [R packages](https://r-pkgs.org/).
 For a quicker introduction, consider this software Carpentries' [lesson on R packages](https://carpentries-incubator.github.io/lesson-R-packaging/), originated and developed at our Center!
 
 ### Package documentation
 
-Read [Documentation](http://r-pkgs.had.co.nz/man.html) chapter of Hadleys [R packages](http://r-pkgs.had.co.nz) book for details about documenting R code.
+Read [Documentation](https://r-pkgs.org/man.html) chapter of Hadleys [R packages](https://r-pkgs.org/) book for details about documenting R code.
 
 Customary R uses `.Rd` files in `/man` directory for documentation. These files and folders are automatically created by RStudio when you create a new project from your existing R-function files.
 
@@ -150,8 +150,8 @@ Function level comments starting with `#'` are used by `roxygen` to automaticall
 
 R function documentation offers plenty of space to document the functionality, including code examples, literature references, and links to related functions. Nevertheless, it can sometimes be helpful for the user to also have a more generic description of the package with for example use-cases. You can do this with a `vignette`.
 
-Read more about vignettes in [Package documentation](http://r-pkgs.had.co.nz/vignettes.html) chapter of Hadleys [R packages](http://r-pkgs.had.co.nz) book.
-Read more about `roxygen` syntax on it's [github page](https://github.com/yihui/roxygen2). `roxygen` will also populate `NAMESPACE` file which is necessary to manage package level imports.
+Read more about vignettes in [Package documentation](https://r-pkgs.org/vignettes.html) chapter of Hadleys [R packages](https://r-pkgs.org/) book.
+Read more about `roxygen` syntax on its [GitHub page](https://github.com/yihui/roxygen2). `roxygen` will also populate `NAMESPACE` file which is necessary to manage package level imports.
 
 ## Available templates
 
@@ -179,9 +179,9 @@ Having said this, these others can serve as inspiration:
 
 ### Testing and checking
 
-[Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](http://r-pkgs.had.co.nz/tests.html) of a book [R packages](http://r-pkgs.had.co.nz) describes in detail testing process in R with use of `testthat`. Further, [testthat: Get Started with Testing](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf) by Whickham may also provide a good starting point.
+[Testthat](https://github.com/hadley/testthat) is a testing package by Hadley Wickham. [Testing chapter](https://r-pkgs.org/testing-basics.html) of a book [R packages](https://r-pkgs.org/) describes in detail testing process in R with use of `testthat`. Further, [testthat: getting started with testing](https://vita.had.co.nz/papers/testthat.pdf) by Whickham may also provide a good starting point.
 
-See also [checking](http://r-pkgs.had.co.nz/check.html) and [testing](http://r-pkgs.had.co.nz/tests.html) R packages. note that within RStudio R package check and R package test can be done via simple toolbar clicks.
+See also [checking](https://r-pkgs.org/workflow101#sec-workflow101-r-cmd-check) and [testing](https://r-pkgs.org/testing-basics.html) R packages. Note that within RStudio R package check and R package test can be done via simple toolbar clicks.
 
 ### Continuous integration
 

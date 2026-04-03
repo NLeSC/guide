@@ -7,10 +7,9 @@ _Page maintainer: Alessio Sclocco_ [@isazi](https://github.com/isazi)
 - Carpentries GPU Programming course
   - [Lesson material](https://carpentries-incubator.github.io/lesson-gpu-programming/)
 - Introduction to CUDA C
-  - [Slides](http://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/cuda_language/Introduction_to_CUDA_C.pptx)
-  - [Video](http://on-demand.gputechconf.com/gtc/2012/video/S0624-Monday-Introduction-to-CUDA-C.mp4)
+  - [Slides](https://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/cuda_language/Introduction_to_CUDA_C.pptx)
 - Introduction to OpenACC
-  - [Slides](http://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/openacc/Introduction_To_OpenACC.pptx)
+  - [Slides](https://developer.download.nvidia.com/compute/developertrainingmaterials/presentations/openacc/Introduction_To_OpenACC.pptx)
 - Introduction to HIP Programming
   - [Video](https://www.youtube.com/watch?v=3ejUwypP0bI)
 - SYCL Introduction and Best Practices
@@ -45,12 +44,12 @@ _Page maintainer: Alessio Sclocco_ [@isazi](https://github.com/isazi)
 ## Overview of Libraries
 
 - CUDA
-  - [cuBLAS](http://docs.nvidia.com/cuda/cublas/index.html)
-  - [NVBLAS](http://docs.nvidia.com/cuda/nvblas/index.html)
-  - [cuFFT](http://docs.nvidia.com/cuda/cufft/index.html)
+  - [cuBLAS](https://docs.nvidia.com/cuda/cublas/index.html)
+  - [NVBLAS](https://docs.nvidia.com/cuda/nvblas/index.html)
+  - [cuFFT](https://docs.nvidia.com/cuda/cufft/index.html)
   - [cuGRAPH](https://docs.rapids.ai/api/cugraph/stable/)
-  - [cuRAND](http://docs.nvidia.com/cuda/curand/index.html)
-  - [cuSPARSE](http://docs.nvidia.com/cuda/cusparse/index.html)
+  - [cuRAND](https://docs.nvidia.com/cuda/curand/index.html)
+  - [cuSPARSE](https://docs.nvidia.com/cuda/cusparse/index.html)
 - HIP
   - [hipBLAS](https://rocm.docs.amd.com/projects/hipBLAS/en/latest/index.html)
   - [hipFFT](https://rocm.docs.amd.com/projects/hipFFT/en/latest/index.html)
@@ -101,7 +100,7 @@ _Page maintainer: Alessio Sclocco_ [@isazi](https://github.com/isazi)
     - [oneAPI.jl](https://github.com/JuliaGPU/oneAPI.jl)
 - Java
   - CUDA
-    - [JCuda](http://www.jcuda.org/)
+    - [JCuda](https://javagl.de/jcuda.org/)
   - OpenCL
     - [JOCL](http://www.jocl.org/)
 
@@ -119,7 +118,7 @@ _Page maintainer: Alessio Sclocco_ [@isazi](https://github.com/isazi)
 - CUDA
   - [Nsight Systems](https://developer.nvidia.com/nsight-systems)
   - [Nsight Compute](https://developer.nvidia.com/nsight-compute)
-  - [CUDA-GDB](http://docs.nvidia.com/cuda/cuda-gdb/index.html)
+  - [CUDA-GDB](https://docs.nvidia.com/cuda/cuda-gdb/index.html)
   - [compute-sanitizer](https://docs.nvidia.com/compute-sanitizer/index.html)
 - HIP
   - [omniperf](https://github.com/AMDResearch/omniperf)
