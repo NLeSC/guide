@@ -10,8 +10,8 @@ numerical compute workloads, with no existing alternative. In this case it is re
 ## Recommended sources of information
 
 - [Fortran90 best practices](https://github.com/certik/fortran90.org/blob/master/src/best-practices.rst).
-- [Fortran wiki](http://fortranwiki.org/fortran/show/HomePage)
-- [Fortran90 handbook](http://micro.ustc.edu.cn/Fortran/Fortran%2090%20Handbook.pdf)
+- [Fortran wiki](https://fortranwiki.org/fortran/show/HomePage)
+- [Fortran90 handbook](https://micro.ustc.edu.cn/Fortran/Fortran%2090%20Handbook.pdf)
 
 ## Compilers
 
@@ -30,12 +30,12 @@ There exist many commercial performance profiling tools by Intel and the Portlan
 ## Editors and IDEs
 
 Most lightweight editors provide Fortran syntax highlighting. Vim and emacs are most widely used, but for code
-completion and refactoring tools one might consider the [CBFortran](http://cbfortran.sourceforge.net/) distribution of Code::Blocks.
+completion and refactoring tools one might consider the [CBFortran](https://cbfortran.sourceforge.io/) distribution of Code::Blocks.
 
 ## Coding style conventions
 
 If working on an existing code base, adopt the existing conventions. Otherwise we recommend the
-standard conventions, described in the [official documentation](https://github.com/certik/fortran90.org/blob/master/src/best-practices.rst#fortran-style-guide) and the [Fortran company style guide](http://www.fortran.com/). We would like to add the following advice:
+standard conventions, described in the [official documentation](https://github.com/certik/fortran90.org/blob/master/src/best-practices.rst#fortran-style-guide) and the [Fortran company style guide](https://www.fortran.com/). We would like to add the following advice:
 
 - Use free-form text input style (the default), with a maximal line width well below the 132 characters imposed by the Fortran90 standard.
 - When a method does not need to alter any data in any module and returns a single value, use a function for it, otherwise use a subroutine. Minimize the latter to reasonable extent.

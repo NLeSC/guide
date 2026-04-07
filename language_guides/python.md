@@ -28,12 +28,12 @@ Building and/or using Python 2 is probably discouraged even more than, say, usin
 
 ## Learning Python
 
-- A popular way to learn Python is by doing it the hard way at http://learnpythonthehardway.org/
+- A popular way to learn Python is by doing it the hard way at https://learnpythonthehardway.org/
 - Using [`pylint`](https://www.pylint.org) and [`yapf`](https://github.com/google/yapf) while learning Python is an easy way to get familiar with best practices and commonly used coding styles
 
 ## Dependencies and package management
 
-To install Python packages use `pip` or `conda` (or both, see also [what is the difference between pip and conda?](http://stackoverflow.com/questions/20994716/what-is-the-difference-between-pip-and-conda)).
+To install Python packages use `pip` or `conda` (or both, see also [what is the difference between pip and conda?](https://stackoverflow.com/questions/20994716/what-is-the-difference-between-pip-and-conda)).
 
 If you are planning on distributing your code at a later stage, be aware that your choice of package management may affect your packaging process. See [Building and packaging](#building-and-packaging-code) for more info.
 
@@ -53,13 +53,13 @@ Advantages over installing packages system-wide or in a single user folder:
 If you don't want to use `conda`, create isolated Python environments with the standard library [`venv`](https://docs.python.org/3/library/venv.html) module.
 If you are still using Python 2, [`virtualenv`](https://virtualenv.pypa.io/en/latest/) and [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.org) can be used instead.
 
-With `venv` and `virtualenv`, `pip` is used to install all dependencies. An increasing number of packages are using [`wheel`](http://pythonwheels.com), so `pip` downloads and installs them as binaries. This means they have no build dependencies and are much faster to install.
+With `venv` and `virtualenv`, `pip` is used to install all dependencies. An increasing number of packages are using [`wheel`](https://pythonwheels.com), so `pip` downloads and installs them as binaries. This means they have no build dependencies and are much faster to install.
 
 If the installation of a package fails because of its non-Python extensions or system library dependencies and you are not root, you could switch to `conda` (see below).
 
 ### Conda
 
-[Conda](http://conda.pydata.org/docs/) can be used instead of venv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries.
+[Conda](https://docs.conda.io/en/latest/) can be used instead of venv and pip, since it is both an environment manager and a package manager. It easily installs binary dependencies, like Python itself or system libraries.
 Installation of packages that are not using `wheel`, but have a lot of non-Python code, is much faster with Conda than with `pip` because Conda does not compile the package, it only downloads compiled packages.
 The disadvantage of Conda is that the package needs to have a Conda build recipe.
 Many Conda build recipes already exist, but they are less common than the `setuptools` configuration that generally all Python packages have.
@@ -123,7 +123,7 @@ You can use `pyroma` as a linter for your installation configuration.
 
 ### Packaging and distributing your package
 
-For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](http://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
+For packaging your code, you can either use `pip` or `conda`. Neither of them is [better than the other](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) -- they are different; use the one which is more suitable for your project. `pip` may be more suitable for distributing pure python packages, and it provides some support for binary dependencies using [`wheels`](https://pythonwheels.com). `conda` may be more suitable when you have external dependencies which cannot be packaged in a wheel.
 
 #### Build via the [Python Package Index (PyPI)](https://pypi.org) so that the package can be installed with pip
 
@@ -142,7 +142,7 @@ For packaging your code, you can either use `pip` or `conda`. Neither of them is
   - For packages developed in a team or organization, it is recommended that you create a team or organizational account on PyPI and add that as a collaborator with the owner rule. This will allow your team or organization to maintain the package even if individual contributors at some point move on to do other things. At the Netherlands eScience Center, we are a fairly small organization, so we use a single backup account (`nlesc`).
   - When distributing code through PyPI, non-python files (such as `requirements.txt`) will not be packaged automatically, you need to [add them to](https://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py) a `MANIFEST.in` file.
   - To test whether your distribution will work correctly before uploading to PyPI, you can run `python -m build` in the root of your repository. Then try installing your package with `pip install dist/<your_package>tar.gz.`
-  - `python -m build` will also build [Python wheels](http://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
+  - `python -m build` will also build [Python wheels](https://pythonwheels.com/), the current standard for [distributing](https://packaging.python.org/distributing/#wheels) Python packages. This will work out of the box for pure Python code, without C extensions. If C extensions are used, each OS needs to have its own wheel. The [manylinux](https://github.com/pypa/manylinux) Docker images can be used for building wheels compatible with multiple Linux distributions. Wheel building can be automated using GitHub Actions or another CI solution, where you can build on all three major platforms using a build matrix.
 
 #### [Build using conda](https://conda-forge.org/docs/maintainer/adding_pkgs.html)
 
@@ -160,7 +160,7 @@ At the Netherlands eScience Center, some popular editors or IDEs are:
 
 ## Coding style conventions
 
-The style guide for Python code is [PEP8](http://www.python.org/dev/peps/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
+The style guide for Python code is [PEP8](https://peps.python.org/pep-0008/) and for docstrings it is [PEP257](https://www.python.org/dev/peps/pep-0257/). We highly recommend following these conventions, as they are widely agreed upon to improve readability. To make following them significantly easier, we recommend using a linter.
 
 Many linters exists for Python.
 The most popular one is currently [Ruff](https://github.com/astral-sh/ruff).
@@ -170,7 +170,7 @@ Some of these tools have seen decreasing community support recently, but it is s
 
 Most of the above tools can be integrated in text editors and IDEs for convenience.
 
-Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](http://timothycrosley.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
+Autoformatting tools like [`yapf`](https://github.com/google/yapf) and [`black`](https://black.readthedocs.io/en/stable/index.html) can automatically format code for optimal readability. `yapf` is configurable to suit your (team's) preferences, whereas `black` enforces the style chosen by the `black` authors. The [`isort`](https://pycqa.github.io/isort/) package automatically formats and groups all imports in a standard, readable way.
 
 Ruff can do autoformatting as well and can function as a drop-in replacement of `black` and `isort`.
 
@@ -253,7 +253,7 @@ If you use another editor, perhaps it is more convenient to pick another service
   - https://github.com/spiside/pdb-tutorial
   - https://www.jetbrains.com/help/pycharm/2016.3/debugging.html
   - https://waterprogramming.wordpress.com/2015/09/10/debugging-in-python-using-pycharm/
-  - http://www.pydev.org/manual_101_run.html
+  - https://www.pydev.org/manual_101_run.html
 
 ### Profiling
 
@@ -275,7 +275,7 @@ More realistic profiling information can usually be obtained by using statistica
 - [logging](https://docs.python.org/3/library/logging.html) module is the most commonly used tool to track events in Python code.
 - Tutorials:
   - [Official Python Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
-  - http://docs.python-guide.org/en/latest/writing/logging
+  - https://docs.python-guide.org/writing/logging/
   - [Python logging best practices](https://www.datadoghq.com/blog/python-logging-best-practices/)
 
 ## Documentation
@@ -287,7 +287,7 @@ It can automatically build documentation for projects hosted on [GitHub, GitLab,
 ### Building documentation
 
 There are several tools for building webpages with documentation.
-At the eScience Center, we mostly use [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html) (more established) and [MkDocs](https://www.mkdocs.org/getting-started/) (newer).
+At the eScience Center, we mostly use [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html) (more established) and [MkDocs](https://www.mkdocs.org/getting-started/) (newer).
 
 User guides and other text documents are typically written in [Markdown](https://www.markdownguide.org/getting-started/) or [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). Sphinx supports both formats, while MkDocs only supports Markdown. Markdown has the advantage that it's easier to read
 for humans so it may be easier to work with and contribute to. reStructuredText is easier to read for computers so may be more suitable for complex projects.
@@ -308,30 +308,30 @@ It is recommended that you [routinely test any code examples in your documentati
 
 ### General scientific
 
-- [NumPy](http://www.numpy.org/)
+- [NumPy](https://numpy.org/)
 - [SciPy](https://www.scipy.org/)
-- [Pandas](http://pandas.pydata.org/) data analysis toolkit
-- [scikit-learn](http://scikit-learn.org/): machine learning in Python
-- [Cython](http://cython.org/) speed up Python code by using C types and calling C functions
-- [dask](http://dask.pydata.org) larger than memory arrays and parallel execution
+- [Pandas](https://pandas.pydata.org/) data analysis toolkit
+- [scikit-learn](https://scikit-learn.org/stable/): machine learning in Python
+- [Cython](https://cython.org/) speed up Python code by using C types and calling C functions
+- [dask](https://docs.dask.org/en/stable/) larger than memory arrays and parallel execution
 
 ### IPython and Jupyter notebooks (aka IPython notebooks)
 
-[IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](http://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
+[IPython](https://ipython.org/) is an interactive Python interpreter -- very much the same as the standard Python interactive interpreter, but with some [extra features](https://ipython.readthedocs.io/en/stable/interactive/index.html) (tab completion, shell commands, in-line help, etc).
 
-[Jupyter](http://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting. [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
+[Jupyter](https://jupyter.org/) notebooks (formerly know as IPython notebooks) are browser based interactive Python enviroments. It incorporates the same features as the IPython console, plus some extras like in-line plotting. [Look at some examples](https://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) to find out more. Within a notebook you can alternate code with Markdown comments (and even LaTeX), which is great for reproducible research.
 [Notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions) adds extra functionalities to notebooks.
 [JupyterLab](https://github.com/jupyterlab/jupyterlab) is a web-based environment with a lot of improvements and integrated tools.
 
 Jupyter notebooks contain data that makes it hard to nicely keep track of code changes using version control. If you are using git,
-you can [add filters that automatically remove output cells and unneeded metadata from your notebooks](http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
+you can [add filters that automatically remove output cells and unneeded metadata from your notebooks](https://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/).
 If you do choose to keep output cells in the notebooks (which can be useful to showcase your code's capabilities statically from GitHub) use [ReviewNB](https://www.reviewnb.com/) to automatically create nice visual diffs in your GitHub pull request threads.
 It is good practice to restart the kernel and run the notebook from start to finish in one go before saving and committing, so you are sure that everything works as expected.
 
 ### Visualization
 
-- [Matplotlib](http://matplotlib.org) has been the standard in scientific visualization. It supports quick-and-dirty plotting through the `pyplot` submodule. Its object oriented interface can be somewhat arcane, but is highly customizable and runs natively on many platforms, making it compatible with all major OSes and environments. It supports most sources of data, including native Python objects, Numpy and Pandas.
-  - [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) is a Python visualisation library based on Matplotlib and aimed towards statistical analysis. It supports numpy, pandas, scipy and statmodels.
+- [Matplotlib](https://matplotlib.org/) has been the standard in scientific visualization. It supports quick-and-dirty plotting through the `pyplot` submodule. Its object oriented interface can be somewhat arcane, but is highly customizable and runs natively on many platforms, making it compatible with all major OSes and environments. It supports most sources of data, including native Python objects, Numpy and Pandas.
+  - [Seaborn](https://seaborn.pydata.org/index.html) is a Python visualisation library based on Matplotlib and aimed towards statistical analysis. It supports numpy, pandas, scipy and statmodels.
 - Web-based:
   - [Bokeh](https://github.com/bokeh/bokeh) is Interactive Web Plotting for Python.
   - [Plotly](https://plot.ly/) is another platform for interactive plotting through a web browser, including in Jupyter notebooks.
@@ -354,17 +354,17 @@ Having said that, there are many ways to run Python code in parallel:
 
 There are convenient Python web frameworks available:
 
-- [flask](http://flask.pocoo.org/)
+- [flask](https://flask.palletsprojects.com/en/stable/)
 - [CherryPy](https://cherrypy.dev/)
 - [Django](https://www.djangoproject.com/)
-- [bottle](http://bottlepy.org/) (similar to flask, but a bit more light-weight for a JSON-REST service)
+- [bottle](https://bottlepy.org/docs/dev/) (similar to flask, but a bit more light-weight for a JSON-REST service)
 - [FastAPI](https://fastapi.tiangolo.com): again, similar to flask in functionality, but uses modern Python features like async and type hints with runtime behavioral effects.
 
 We have recommended `flask` in the past, but FastAPI has become more popular recently.
 
 ### NLP/text mining
 
-- [nltk](http://www.nltk.org/) Natural Language Toolkit
+- [nltk](https://www.nltk.org/) Natural Language Toolkit
 - [Pattern](https://github.com/clips/pattern): web/text mining module
 - [gensim](https://radimrehurek.com/gensim/): Topic modeling
 

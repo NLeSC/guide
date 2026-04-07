@@ -32,7 +32,7 @@ We also provide [technology guides](/technology/technology_overview.md) on digit
 All of the text in this guide is backed by our own experiences in developing high quality research software.
 However, we also learn from and share knowledge with other community-driven research software guides.
 The two most important of these are [The Turing Way](https://book.the-turing-way.org/index.html) and the
-[Research Software Quality Kit](http://everse.software/RSQKit/).
+[Research Software Quality Kit](https://everse.software/RSQKit/).
 Their scope is slightly different, but we collaborate with them when we can.
 
 ## Contributing

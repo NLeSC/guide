@@ -74,7 +74,7 @@ Solid has a meta-framework called [SolidStart](https://start.solidjs.com/).
 
 Most JavaScript is run in web browsers, but if you want to run it outside of a browser (e.g. as a server or to run a script locally), you'll need a JavaScript **runtime**. These are the main runtimes available:
 
-- [Node.js](https://nodejs.org) is the most used runtime, mainly for being the only available runtime for a long time. This gives the advantage that there is a lot of documentation available (official and unofficial, e.g. forums) and that many tools are available for Node.js. It comes with a [package manager (npm)](https://www.npmjs.com/) that allows you to install packages from a huge library. Its installation instructions can be found [here](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+- [Node.js](https://nodejs.org) is the most used runtime, mainly for being the only available runtime for a long time. This gives the advantage that there is a lot of documentation available (official and unofficial, e.g. forums) and that many tools are available for Node.js. It comes with a [package manager (npm)](https://www.npmjs.com/) that allows you to install packages from a huge library. Its installation instructions can be found [here](https://nodejs.org/en/download).
 - [Deno](https://deno.com/) can be seen as a successor to Node.js and tries to improve on it in a few ways, most notably:
   - [built-in support](https://docs.deno.com/runtime/fundamentals/typescript/) for TypeScript
   - a better [security model](https://docs.deno.com/runtime/fundamentals/typescript/)
