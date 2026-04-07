@@ -1,6 +1,8 @@
 # Lychee configuration file
-# See https://github.com/lycheeverse/lychee/blob/master/lychee.example.toml
+# See https://lychee.cli.rs/guides/config/
 exclude_all_private = true
 include_mail = false
 no_progress = true
 verbose = "info"
+root_dir = "./"
+preprocess = { command = "./preprocess-lychee.sh" }
