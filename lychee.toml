@@ -5,4 +5,5 @@ include_mail = false
 no_progress = true
 verbose = "info"
 root_dir = "./"
-preprocess = { command = "./preprocess-lychee.sh" }
+#preprocess = { command = "./preprocess-lychee.sh" }
+scheme = ["https", "http"]
