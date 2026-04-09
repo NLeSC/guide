@@ -2,7 +2,7 @@
 
 _Page maintainer: Ewan Cahen_ [@ewan-escience](https://github.com/ewan-escience)
 
-[JavaScript](https://en.wikipedia.org/wiki/JavaScript) (JS) is a programming language that is one of the three (together with [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/CSS)) core technologies of the web. It is essential if you want to write interactive webpages or web applications, because JavaScript is, apart from [WebAssembly](https://webassembly.org/), the only programming language that runs in modern browsers. Furthermore, JS can also run [outside of the browser](/language_guides/javascript?id=javascript-outside-of-the-browser), e.g. for running short scripts or full-blown servers.
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript) (JS) is a programming language that is one of the three (together with [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/CSS)) core technologies of the web. It is essential if you want to write interactive webpages or web applications, because JavaScript is, apart from [WebAssembly](https://webassembly.org/), the only programming language that runs in modern browsers. Furthermore, JS can also run [outside of the browser](/language_guides/javascript.md?id=javascript-outside-of-the-browser), e.g. for running short scripts or full-blown servers.
 
 ## Getting started
 
@@ -231,7 +231,7 @@ To learn about TypeScript, the following resources are available:
 
 ### Quickstart
 
-To install TypeScript compiler run, check out the [official documentation](https://www.typescriptlang.org/download/). Note that Deno and Bun support TypeScript [out of the box](/language_guides/javascript?id=javascript-outside-of-the-browser).
+To install TypeScript compiler run, check out the [official documentation](https://www.typescriptlang.org/download/). Note that Deno and Bun support TypeScript [out of the box](/language_guides/javascript.md?id=javascript-outside-of-the-browser).
 
 ### Dealing with Types
 
@@ -264,8 +264,8 @@ Do not use `--save` for types because a production build will have been transpil
 ### Debugging
 
 In web development, debugging is typically done in the browser.
-TypeScript cannot be run directly in the web browser, so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps. For more info, see the [Javascript section on debugging](/language_guides/javascript?id=debugging)
+TypeScript cannot be run directly in the web browser, so it must be transpiled to JavaScript. To map a breakpoint in the browser to a line in the original TypeScript file [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) are required. Most frameworks have a project build system which generate source maps. For more info, see the [Javascript section on debugging](/language_guides/javascript.md?id=debugging)
 
 ### Documentation
 
-Just like [JSDoc](/language_guides/javascript?id=js-docs) for JavaScript, [TypeDoc](https://typedoc.org/) can automatically generate HTML documentation for your code.
+Just like [JSDoc](/language_guides/javascript.md?id=js-docs) for JavaScript, [TypeDoc](https://typedoc.org/) can automatically generate HTML documentation for your code.
