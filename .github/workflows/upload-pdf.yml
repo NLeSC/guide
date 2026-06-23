@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the contents of your repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Change absolute paths to relative
         run: perl -pi -e 's@\]\(\/@\]\(@' _sidebar.md
