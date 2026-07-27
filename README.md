@@ -46,4 +46,4 @@ Currently the editorial team consists of:
 
 - Bouwe Andela [@bouweandela](https://github.com/bouweandela) (research software engineer)
 - Carlos Martínez Ortiz [@c-martinez](https://github.com/c-martinez) (community manager)
-- Patrick Bos [@egpbos](https://github.com/egpbos) (technology lead)
+- Elena Ranguelova [@elboyran](https://github.com/elboyran) (technology officer)
