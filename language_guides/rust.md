@@ -144,6 +144,7 @@ Run the tests with `cargo test`.
 - [`tokio`](https://tokio.rs): most common async runtime, needed for networked or otherwise concurrent I/O-bound code.
 - [`rayon`](https://docs.rs/rayon): trivially parallelize existing iterator-based code across CPU cores.
 - [`ndarray`](https://docs.rs/ndarray): n-dimensional arrays for numerical/scientific computing, roughly Rust's equivalent of NumPy.
+- [`polars`](https://docs.rs/polars): DataFrame library, similar API with pandas.
 
 ## Learning
 
