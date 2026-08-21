@@ -2,13 +2,9 @@
 
 _Page maintainer: [Rodrigo V. Honorato](https://github.com/rvhonorato)_
 
-Rust is a modern programming language designed to provide both high
-performance while enforcing memory safety through its unique ownership system
-and borrow checker. Developed by Mozilla and first released in 2015,
-Rust has rapidly gained popularity for its ability to prevent common
-programming errors at compile time. It is commonly categorized as a systems
-programming language but over the last few years its ecosystem has grown
-considerably and Rust is being adopted as a general programming language.
+Rust is a modern programming language designed to provide both high performance while enforcing memory safety through its unique ownership system and borrow checker. Originally developed at Mozilla and first released in 2015, Rust is now stewarded by the independent [Rust Foundation](https://rustfoundation.org/) (founded 2021 by AWS, Google, Huawei, Microsoft and Mozilla).
+Rust has rapidly gained popularity for its ability to prevent common programming errors at compile time. 
+It is commonly categorized as a systems programming language but over the last few years its ecosystem has grown considerably and Rust is being adopted as a general programming language.
 
 Rust is increasingly adopted in **research software** for its unique blend of
 speed, safety, and modern tooling. It powers everything from
@@ -101,13 +97,58 @@ cargo build --release # using --release will build the optimized binary
 ./target/release/rust_project # execute the binary
 ```
 
+Once inside `rust_project`, there are a few commands you will use frequently: `run`, `fmt`, `test` and `clippy`.
+
+- `cargo run`: build and run (this is meant for debugging, not final release)
+- `cargo test` run unit and doc tests
+- `cargo fmt`: auto-format the code
+- `cargo clippy`: check for common mistakes and non-idiomatic code
+
+Cargo will keep track of two files: `Cargo.toml`, where you declare dependencies and metadata, and `Cargo.lock`, the resolved, exact dependency tree.
+
+You may commit both to version control; for a library, `Cargo.lock` is usually left out of version control so downstream users resolve their own compatible versions.
+
+## Testing
+
+Rust has a test runner built into Cargo, and unit tests can live next to the code they test, inside a `#[cfg(test)]` module definition:
+
+```rust
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_adds() {
+        let observed = add(2, 2);
+        let expected = 4;
+        assert_eq!(observed, expected);
+    }
+}
+```
+
+Run the tests with `cargo test`.
+
+## Coding style and code quality
+
+- [`rustfmt`](https://github.com/rust-lang/rustfmt) (`cargo fmt`) is the standard formatter and ships with `rustup`.
+- [`clippy`](https://doc.rust-lang.org/stable/clippy/) (`cargo clippy`) is the standard linter and catches both bugs and non-idiomatic patterns that the compiler itself won't flag.
+
+## Recommended additional packages and libraries
+
+- [`serde`](https://serde.rs): a widely used (de)serialization framework (JSON, YAML, TOML, ...).
+- [`clap`](https://docs.rs/clap): command-line argument parsing.
+- [`tokio`](https://tokio.rs): most common async runtime, needed for networked or otherwise concurrent I/O-bound code.
+- [`rayon`](https://docs.rs/rayon): trivially parallelize existing iterator-based code across CPU cores.
+- [`ndarray`](https://docs.rs/ndarray): n-dimensional arrays for numerical/scientific computing, roughly Rust's equivalent of NumPy.
+
 ## Learning
 
-Its unique approach to memory management (ownership, borrowing and lifetimes) and
-the strict compiler can feel daunting at fist - especially if you are accustomed
-to high-level languages like [python](./python.md) or [javascript](./javascript.md).
-Learning Rust can be challenging as some new concepts, such as the borrow checker
-, may take time to be internalized.
+Its unique approach to memory management (ownership, borrowing and lifetimes) and the strict compiler can feel daunting at first - especially if you are accustomed to high-level languages like [python](./python.md) or [javascript](./javascript.md).
+Learning Rust can be challenging as some new concepts, such as the borrow checker, may take time to be internalized.
 
 > Keep in mind that in the long run all the effort pays off. The code produced
 > will be faster while having _fewer bugs_ (thanks to the opinionated compiler),
