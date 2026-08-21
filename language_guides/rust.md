@@ -3,7 +3,7 @@
 _Page maintainer: [Rodrigo V. Honorato](https://github.com/rvhonorato)_
 
 Rust is a modern programming language designed to provide both high performance while enforcing memory safety through its unique ownership system and borrow checker. Originally developed at Mozilla and first released in 2015, Rust is now stewarded by the independent [Rust Foundation](https://rustfoundation.org/) (founded 2021 by AWS, Google, Huawei, Microsoft and Mozilla).
-Rust has rapidly gained popularity for its ability to prevent common programming errors at compile time. 
+Rust has rapidly gained popularity for its ability to prevent common programming errors at compile time.
 It is commonly categorized as a systems programming language but over the last few years its ecosystem has grown considerably and Rust is being adopted as a general programming language.
 
 Rust is increasingly adopted in **research software** for its unique blend of
