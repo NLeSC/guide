@@ -176,6 +176,10 @@ authors:
     family-names: Bakhshi
     given-names: Rena
     orcid: "https://orcid.org/0000-0002-2932-3028"
+  - affiliation: Netherlands eScience Center
+    family-names: Mussmann
+    given-names: Ole
+    orcid: "https://orcid.org/0000-0002-3803-4287"
 repository-code: "https://github.com/NLeSC/guide"
 abstract: >-
   This is a guide to software development and projects at
