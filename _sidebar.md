@@ -12,5 +12,6 @@
   - [GPU programming](/technology/gpu.md)
   - [UX - User Experience](/technology/user_experience.md)
   - [Datasets](/technology/datasets.md)
+  - [Generative AI](/technology/genAI.md)
 - [Contributing to this Guide](/CONTRIBUTING.md)
 - [Privacy](/privacy.md)
