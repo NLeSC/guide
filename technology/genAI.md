@@ -4,11 +4,11 @@ _Page maintainers: Ole Mussmann_ [@OleMussmann](https://github.com/OleMussmann)
 
 ## Coding Agents
 
-Use coding agents instead of e.g. ChatGPT or claude.ai website. An agent sees your actual code and can run tests to check its own work. The trade-off is that it can also act, which is why the safety section (below) exists.
+Use coding agents instead of e.g. [ChatGPT](https://chatgpt.com/) or [claude.ai](https://claude.ai/) website. An agent sees your actual code and can run tests to check its own work. The trade-off is that it can also act, which is why the safety section (below) exists.
 
 > agent = model + harness
 
-A **model** is, in this context, a Large Language Model (LLM) that predicts the next token (we can imagine it, simplified, as "words") of a stream of words. The **harness** is the tooling that gives the LLM eyes, hands, and tools. Examples would be Claude Code, OpenCode, or the Pi harness. These programs can not only output text, they can call command line tools, run scripts, read the output, and iterate on their approach.
+A **model** is, in this context, a Large Language Model (LLM) that predicts the next token (we can imagine it, simplified, as "words") of a stream of words. The **harness** is the tooling that gives the LLM eyes, hands, and tools. Examples would be [Claude Code](https://claude.com/product/claude-code), [OpenCode](https://opencode.ai/), or the [Pi harness](https://pi.dev). These programs can not only output text, they can call command line tools, run scripts, read the output, and iterate on their approach.
 
 ## Subscription vs Tokens
 
@@ -60,7 +60,7 @@ Use git and commit before the agent starts. Read all changes as if it were a Pul
 
 #### Instruction Files
 
-Files like AGENTS.md and CLAUDE.md can be used locally (a specific project) or globally (all projects on a specifig machine) to give additional instructions to any new agentic coding session. Those can contain information on how to work with a certain code-base (e.g. how to run tests, which coding standards to adhere to, etc.), but also instructions _not_ to read files, like `.env` or other files that could contain secrets.
+Files like [AGENTS.md](https://agents.md/) and [CLAUDE.md](https://code.claude.com/docs/en/memory) can be used locally (a specific project) or globally (all projects on a specifig machine) to give additional instructions to any new agentic coding session. Those can contain information on how to work with a certain code-base (e.g. how to run tests, which coding standards to adhere to, etc.), but also instructions _not_ to read files, like `.env` or other files that could contain secrets.
 
 Treat those as strong suggestions. The agent reads them and usually follows them, but it can forget or misread them, and text it comes across elsewhere can talk it out of them.
 
@@ -92,7 +92,7 @@ In the end, you are responsible for any LLM output that you use. For some use-ca
 
 The legal frameworks are not fully developed yet, but the indications are that LLM generated code is not copyrightable in the EU and US. This means that any license you apply to LLM generated code will have nothing to enforce. Keep your personal efforts separate from LLM generations, e.g. with separate git commits.
 
-The code that the LLM creates _can_ be verbatim already licensed code. It is _your responsibility_ to not violate licenses of the original author. There is no mature tooling available yet that can reliably detect this. You can start with SCANOSS' (https://scanoss.com/) free public API, but it has usage limits and its knowledge-base is hosted by SCANOSS, so your code will be sent to their servers.
+The code that the LLM creates _can_ be verbatim already licensed code. It is _your responsibility_ to not violate licenses of the original author. There is no mature tooling available yet that can reliably detect this. You can start with SCANOSS' (https://scanoss.com/) free public API (use via [scanoss.py](https://github.com/scanoss/scanoss.py)), but it has usage limits and its knowledge-base is hosted by SCANOSS, so your code will be sent to their servers.
 
 ## Strengths and Weaknesses
 
