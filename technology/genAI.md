@@ -92,7 +92,7 @@ In the end, you are responsible for any LLM output that you use. For some use-ca
 
 The legal frameworks are not fully developed yet, but the indications are that LLM generated code is not copyrightable in the EU and US. This means that any license you apply to LLM generated code will have nothing to enforce. Keep your personal efforts separate from LLM generations, e.g. with separate git commits.
 
-The code that the LLM creates _can_ be verbatim already licensed code. It is _your responsibility_ to not violate licenses of the original author. There is no mature tooling available yet that can reliably detect this. You can start with SCANOSS' (https://scanoss.com/) free public API (use via [scanoss.py](https://github.com/scanoss/scanoss.py)), but it has usage limits and its knowledge-base is hosted by SCANOSS, so your code will be sent to their servers.
+The code that the LLM creates _can_ be verbatim already licensed code. It is _your responsibility_ to not violate licenses of the original author. There is no mature tooling available yet that can reliably detect this. You can start with SCANOSS' (https://scanoss.com/) free public API (use via [scanoss.py](https://github.com/scanoss/scanoss.py)), but it has unspecified usage limits.
 
 ## Strengths and Weaknesses
 
