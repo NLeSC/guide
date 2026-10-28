@@ -80,9 +80,10 @@ Use both Instruction Files and Harness Guardrails for your everyday work with no
 
 When working with highly sensitive data, _avoid_ agentic coding with direct access to that data. You can use LLMs to spar about architecture, or analyze pasted code snippets in, for example, the ChatGPT or claude.ai website. _Never paste real records, though, not even a few rows as an example_.You can also develop the code with synthetic data first, and then test it on the private data afterwards.
 
+When you want an agent to work on a task autonomically, for example let it run overnight then make sure to run in a sandbox or even better in full isolation. 
 ## Bias and Output Verification
 
-LLM output usually sounds very confident, but that does not mean it's correct or unbiased. The models are trained on biased real-world data, which can reenforce existing biases. Furthermore, if a model does not "know" the answer to a specific problem, it could make up something that sounds plausible. This is commonly called "hallucination".
+LLM output usually sounds very confident, but that does not mean it's correct or unbiased. The models are trained on biased real-world data, which can reenforce existing biases. Furthermore, if a model does not "know" the answer to a specific problem, it could make up something that sounds plausible. This is commonly called "hallucination" or more precise "confabulation" .
 
 > Plausible is not the same as correct.
 
